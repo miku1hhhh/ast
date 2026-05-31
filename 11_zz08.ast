@@ -1,0 +1,1210 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ここからオート「A」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "0122_00001",
+		line = 3,
+	},
+	["0122_00001"] = {
+		{"savetitle", text="没シナリオ08"},
+		{"eval", exp="g.11_zz08=1"},
+		{"fg", file="kouki_01m_00001", file1="kouki_01m_00101", file2="kouki_01m_00207", path=":fg/kouki_01m/", id=17, lv=17, head="kouki_01m", ch_origin="光姫", ch="光姫17", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"fg", file="kouki_01m_00001", file1="kouki_01m_00101", file2="kouki_01m_00207", path=":fg/kouki_01m/", id=17, lv=17, head="kouki_01m", ch_origin="光姫", ch="光姫17", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"extrans", sync=0, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kouki0204", path=":vo/", ch="kouki"},
+			},
+			ja = {
+				{
+					name = {"光姫"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"光姫", "Kouki"},
+					"“Mic test, one, two, zero, zero",
+					{"gaiji", text="①"},
+					" What you’re about to see is an unused script! This scene was cut due to its length, or maybe its girth!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"光姫"},
+					"“麦克风测试，一、二、零、零",
+					{"gaiji", text="①"},
+					"以下是删减片段！是因为片长或各种问题而被删减的场景！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"光姫"},
+					"「麥克風測試，一、二、零、零",
+					{"gaiji", text="①"},
+					"以下是刪減片段！是因為片長或各種問題而被刪減的場景！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "0122_00002",
+		line = 22,
+	},
+	["0122_00002"] = {
+		{"fg", file="kouki_01m_00002", file1="kouki_01m_00101", file2="kouki_01m_00202", path=":fg/kouki_01m/", id=17, lv=17, head="kouki_01m", ch_origin="光姫", ch="光姫17", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kouki0205", path=":vo/", ch="kouki"},
+			},
+			ja = {
+				{
+					name = {"光姫"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"光姫", "Kouki"},
+					"“You won’t find this content in the main game, so do with this information what you will. Enjoy!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"光姫"},
+					"“请注意，这些内容并不会在本篇中出现。那就开始吧！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"光姫"},
+					"「請注意，這些內容並不會在本篇中出現。那就開始吧！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00001",
+		linknext = "0122_00003",
+		line = 37,
+	},
+	["0122_00003"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fg", mode=-1, id=17, ch="光姫17", ch_origin="光姫", lv=17, time=0, sync=0},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_043_00000"},
+		{"ex", time=1000, func="wait"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bg", id=1, file="bg18_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg18_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_033_00000"},
+		{"bgm", file="bgm01", vol=100},
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00201", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I’m home!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我回来了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我回來了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00002",
+		linknext = "0122_00004",
+		line = 65,
+	},
+	["0122_00004"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Oh, hey, Nanase. You’re cleaning my room for me, again? Thanks, I really appreciate it.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“喔，奈奈濑，你又帮我整理房间了吗？感谢你一直以来的帮助。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「哦，奈奈瀨，又幫我整理了嗎？謝謝，總是麻煩妳。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00003",
+		linknext = "0122_00005",
+		line = 77,
+	},
+	["0122_00005"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"transitiontime", time=0},
+		{"ex", time=500, func="wait"},
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00219", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...Nanase?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……奈奈濑？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……奈奈瀨？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00004",
+		linknext = "0122_00006",
+		line = 93,
+	},
+	["0122_00006"] = {
+		{"bgm", stop=1},
+		{"transitiontime", time=300},
+		{"fg", file="nanase_01m_00002", file1="nanase_01m_00101", file2="nanase_01m_00202", path=":fg/nanase_01m/", id=4, lv=4, head="nanase_01m", alpha=0, ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=1, a_chr151=1, mode=3, x=-5, y=95},
+		{"fgact", ch="奈々瀬4", id=4, lv=4, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="奈々瀬4", id=4, act="移動", x=0, y=-100, time=700},
+		{"text"},
+		delay = {
+			[2500] = {
+				{"fgact", ch="奈々瀬4", id=4, act="振動下", loop=4, size=7.5, time=100, ease="easeinout_sine", timestamp=1, delay2=2500},
+			},
+			[3500] = {
+				{"fg", file="nanase_01m_00002", file1="nanase_01m_00101", file2="nanase_01m_00212", path=":fg/nanase_01m/", id=4, lv=4, head="nanase_01m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, timestamp=2, delay2=3500, mode=3, x=-5, y=-5},
+			},
+			[3499] = {
+				{"transitiontime", time=300, timestamp=2, delay2=3500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="nanase1091", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Ahh, hey, Jun. Welc—pfft... Welcome home!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“啊，淳。欢……噗……欢迎回来。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「啊，淳。歡……噗……歡迎回家。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00005",
+		linknext = "0122_00007",
+		line = 114,
+	},
+	["0122_00007"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00102", file2="jun_01f_00217", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...? What are you reading?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……！？你在看什么！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……！？妳在看什麼！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00006",
+		linknext = "0122_00008",
+		line = 126,
+	},
+	["0122_00008"] = {
+		{"fg", file="nanase_02m_00002", file1="nanase_02m_00101", file2="nanase_02m_00210", path=":fg/nanase_02m/", id=4, lv=4, head="nanase_02m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase1092", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Oh, just this dirty manga of yours.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“就你的〇〇漫画啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「就你的成人漫畫啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00007",
+		linknext = "0122_00009",
+		line = 141,
+	},
+	["0122_00009"] = {
+		{"bgm", file="bgm25", vol=100},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"fgact", ch="奈々瀬4", id=4, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="jun_01f_00002", file1="jun_01f_00102", file2="jun_01f_00222", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=4, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I thought we agreed not to get in the way of each other’s alone time!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不是约好不碰那些东西吗！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不是約好不能碰那些東西嗎！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00008",
+		linknext = "0122_00010",
+		line = 157,
+	},
+	["0122_00010"] = {
+		{"fg", file="nanase_02m_00002", file1="nanase_02m_00101", file2="nanase_02m_00202", path=":fg/nanase_02m/", id=4, lv=4, head="nanase_02m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[2600] = {
+				{"fg", file="nanase_02m_00002", file1="nanase_02m_00101", file2="nanase_02m_00212", path=":fg/nanase_02m/", id=4, lv=4, head="nanase_02m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, timestamp=3, delay2=2600, mode=3, x=-5, y=-5},
+			},
+			[2599] = {
+				{"transitiontime", time=300, timestamp=3, delay2=2600},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="nanase1093", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“But this is about a total sl*t! I thought you hated sl*ts like this, Jun!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“因为这本漫画是辣妹〇题材的。你不是讨厌〇〇吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「因為這是辣妹婊類型的。你不是討厭婊子嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00009",
+		linknext = "0122_00011",
+		line = 175,
+	},
+	["0122_00011"] = {
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"fgact", ch="奈々瀬4", id=4, act="振動下", loop=1, size=-15, time=150, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a106"},
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00228", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=4, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Dirty manga isn’t the same thing as reality! Honestly, this is the trouble with sl*ts, can’t even tell the damn difference between—”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“〇〇漫画跟现实世界是不一样的！居然连这么基本的事都无法区分，所以我才讨厌〇〇……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「成人漫畫跟現實世界是不一樣的！居然連這麼基本的事都無法區分，所以我才說妳這種婊子──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00010",
+		linknext = "0122_00012",
+		line = 190,
+	},
+	["0122_00012"] = {
+		{"bgm", stop=1},
+		{"fg", file="nanase_02m_00002", file1="nanase_02m_00101", file2="nanase_02m_00220", path=":fg/nanase_02m/", id=4, lv=4, head="nanase_02m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[6000] = {
+				{"fg", file="nanase_02m_00002", file1="nanase_02m_00103", file2="nanase_02m_00212", path=":fg/nanase_02m/", id=4, lv=4, head="nanase_02m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, timestamp=4, delay2=6000, mode=3, x=-5, y=-5},
+			},
+			[5999] = {
+				{"transitiontime", time=300, timestamp=4, delay2=6000},
+			},
+			[9400] = {
+				{"fg", file="nanase_02m_00002", file1="nanase_02m_00103", file3="nanase_02m_00310", path=":fg/nanase_02m/", id=4, lv=4, head="nanase_02m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, timestamp=5, delay2=9400, mode=3, x=-5, y=-5},
+			},
+			[9399] = {
+				{"transitiontime", time=300, timestamp=5, delay2=9400},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="nanase1094", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Oh, this is toootally different, huh...? So you never, ever think to yourself that you’d want me to do something like this to you... in ",
+					{"exfont", style="italic"},
+					"real life[/i]?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“哦～？不一样啊……那你是不想在现实世界被我做这些事情喽？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「哦～？不一樣啊……那你不會想在現實世界被我做這些事情嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00011",
+		linknext = "0122_00013",
+		line = 212,
+	},
+	["0122_00013"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00102", file2="jun_01f_00209", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=4},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Wha—! Where are you going with this...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“咦？干、干嘛突然问这个……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「咦？幹、幹嘛突然問這個……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00012",
+		linknext = "0122_00014",
+		line = 224,
+	},
+	["0122_00014"] = {
+		{"bg", id=1, file="bg18_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=805, ay=455, bx=-5, by=-5},
+		{"fg", file="nanase_01l_00002", file1="nanase_01l_00103", file2="nanase_01l_00212", path=":fg/nanase_01l/", id=4, lv=4, head="nanase_01l", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[1600] = {
+				{"fg", file="nanase_01l_00002", file1="nanase_01l_00103", file2="nanase_01l_00226", path=":fg/nanase_01l/", id=4, lv=4, head="nanase_01l", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, timestamp=6, delay2=1600, mode=3, x=-5, y=-5},
+			},
+			[1599] = {
+				{"transitiontime", time=300, timestamp=6, delay2=1600},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="nanase1095", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“...C’mon, be honest. Are you interested in this kinda thing?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“……到底想不想？你对这种事有兴趣吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「……到底想不想？你對這種事有興趣嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00013",
+		linknext = "0122_00015",
+		line = 244,
+	},
+	["0122_00015"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00104", file2="jun_01f_00218", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=4},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Well, uhh... I mean, I wouldn’t say no...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“这……也不是没有……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「這……也不是沒有……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00014",
+		linknext = "0122_00016",
+		line = 256,
+	},
+	["0122_00016"] = {
+		{"fg", file="nanase_01l_00002", file1="nanase_01l_00103", file2="nanase_01l_00212", path=":fg/nanase_01l/", id=4, lv=4, head="nanase_01l", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[6000] = {
+				{"fg", file="nanase_01l_00002", file1="nanase_01l_00103", file2="nanase_01l_00220", path=":fg/nanase_01l/", id=4, lv=4, head="nanase_01l", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, timestamp=7, delay2=6000, mode=3, x=-5, y=-5},
+			},
+			[5999] = {
+				{"transitiontime", time=300, timestamp=7, delay2=6000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="nanase1096", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Huh... I see. So you’ve got an interest... In that case... could you close your eyes for a sec?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“哦……原来如此。你有兴趣啊……既然如此……可以闭一下眼睛吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「哦……原來如此。你有興趣啊……既然如此……你可以閉一下眼睛嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00015",
+		linknext = "0122_00017",
+		line = 274,
+	},
+	["0122_00017"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00102", file2="jun_01f_00219", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=4},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Huh...? What for...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“眼睛……？干嘛突然要我闭眼睛……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「眼睛……？幹嘛突然……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00016",
+		linknext = "0122_00018",
+		line = 286,
+	},
+	["0122_00018"] = {
+		{"fg", file="nanase_01ll_00002", file1="nanase_01ll_00103", file2="nanase_01ll_00222", path=":fg/nanase_01ll/", id=4, lv=4, head="nanase_01ll", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase1097", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Just close your eyes, okay?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“别说了……闭上吧。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「別說了……閉上吧？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00017",
+		linknext = "0122_00019",
+		line = 301,
+	},
+	["0122_00019"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00104", file2="jun_01f_00203", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=4},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“O-Okay...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“好、好吧……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「喔、喔……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00018",
+		linknext = "0122_00020",
+		line = 313,
+	},
+	["0122_00020"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=4, ch="奈々瀬4", ch_origin="奈々瀬", lv=4, time=0, sync=0},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_020_00000"},
+		{"ex", time=500, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Swept up in the enticing offer, I do as I’m told.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我被难以形容的气氛所影响，乖乖地闭上了眼。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我被難以形容的氣氛影響，乖乖地閉上眼。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00019",
+		linknext = "0122_00021",
+		line = 353,
+	},
+	["0122_00021"] = {
+		{"se", id=0, loop=0, file="se_a272"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Then, with my eyes shut, I hear the sound of rustling clothes.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"接着，前方传来衣物摩擦的声音。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"接著，前方傳來衣服摩擦的聲音。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00020",
+		linknext = "0122_00022",
+		line = 364,
+	},
+	["0122_00022"] = {
+		{"se", id=1, loop=0, file="se_a268"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Wait... Is this really happening...?",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"咦……？开玩笑的吧……？",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"咦……？開玩笑的吧……？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00021",
+		linknext = "0122_00023",
+		line = 375,
+	},
+	["0122_00023"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Is Nanase... really gonna...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"难道……奈奈濑真的────",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這難道是……奈奈瀨真的────",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00022",
+		linknext = "0122_00024",
+		line = 385,
+	},
+	["0122_00024"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase1098", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“...Jun... You can... open your eyes now...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“呜……淳……可以……睁开眼睛了……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「嗚……淳……可以……張開眼睛了……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00023",
+		linknext = "0122_00025",
+		line = 399,
+	},
+	["0122_00025"] = {
+		{"ex", time=800, func="wait"},
+		{"bgm", file="bgm12", vol=100},
+		{"bg", id=1, file="bg10_1l_00000", x=0, y=0, lv=1, path=":bg/", sync=1, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="misaki_01ll_00000", file1="misaki_01ll_00105", file2="misaki_01ll_00220", path=":fg/misaki_01ll/", id=6, lv=6, head="misaki_01ll", alpha=0, ch_origin="美岬", ch="美岬6", mw="mw", sync=1, a_chr151=1, mode=3, x=0, y=0},
+		{"cgact", file="cgact", id=1, lv=1, act="表示アクション", a1=0, a2=255, time=100, a_chr=151, alpha=255},
+		{"fgact", ch="美岬6", id=6, lv=6, act="表示アクション", a1=0, a2=255, time=100, a_chr=151, alpha=255},
+		{"se", id=0, loop=0, file="se_a340"},
+		{"se", id=1, loop=0, file="se_b101", vol=50},
+		{"cgact", act="ズームループ", time=150, zoom=150, id=1, loop=4, lv=1},
+		{"fgact", act="ズームループ", time=150, zoom=150, id=6, ch="美岬6", lv=6, loop=4},
+		{"bg", id=21, file="syuchu_00001", x=0, y=0, lv=21, path=":cg/syuchu/", ev=1, ax=805, ay=455, bx=-5, by=-5},
+		{"cgact", file="cgact", id=21, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, lv=21, x=0, y=0},
+		{"fg", file="asane_02f_00001", file1="asane_02f_00104", file2="asane_02f_00221", path=":fg/asane_02f/", id=30, ch="麻沙音", lv=22, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		delay = {
+			[200] = {
+				{"bg", id=22, file="syuchu_00002", x=0, y=0, lv=22, path=":cg/syuchu/", ev=1, timestamp=8, delay2=200, ax=805, ay=455, bx=-5, by=-5},
+				{"cgact", file="cgact", id=22, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, timestamp=8, delay2=200, lv=22, x=0, y=0},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="asane1635", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					{"exfont", size="f4"},
+					name = {"麻沙音"},
+					"*テキスト*",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			en = {
+				{
+					{"exfont", size="f4"},
+					name = {"麻沙音", "Asane"},
+					"“N-No...!”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			cn = {
+				{
+					{"exfont", size="f4"},
+					name = {"麻沙音"},
+					"“什、什么──！！”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			tw = {
+				{
+					{"exfont", size="f4"},
+					name = {"麻沙音"},
+					"「什、什麼──！！」",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+		},
+		linkback = "0122_00024",
+		linknext = "0122_00026",
+		line = 429,
+	},
+	["0122_00026"] = {
+		{"cgact", file="cgact", id=1, act="移動", x=145, y=-5, time=400, lv=1},
+		{"fgact", ch="美岬6", id=6, act="移動", x=145, y=-5, time=400},
+		{"fg", file="asane_02f_00001", file1="asane_02f_00102", file2="asane_02f_00219", path=":fg/asane_02f/", id=30, ch="麻沙音", lv=6, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		delay = {
+			[700] = {
+				{"cgact", file="cgact", id=1, act="移動", x=-300, y=0, time=500, timestamp=9, delay2=700, lv=1},
+				{"fgact", ch="美岬6", id=6, act="移動", x=-300, y=0, time=500, timestamp=10, delay2=700},
+			},
+			[1500] = {
+				{"cgact", file="cgact", id=1, act="移動", x=150, y=0, time=500, timestamp=11, delay2=1500, lv=1},
+				{"fgact", ch="美岬6", id=6, act="移動", x=150, y=0, time=500, timestamp=12, delay2=1500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="asane1636", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asane"},
+					"“Not good! Stop...!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音"},
+					"“这、这是……！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音"},
+					"「這、這是……！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0122_00025",
+		linknext = "0122_00027",
+		line = 448,
+	},
+	["0122_00027"] = {
+		{"ex", time=600, func="wait"},
+		{"bg", id=1, file="bg10_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"fg", file="asane_02ll_00001", file1="asane_02ll_00102", file3="asane_02ll_00302", path=":fg/asane_02ll/", id=6, lv=6, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音6", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"transitiontime", time=200},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=15, time=75, ease="easeinout_sine", lv=1},
+		{"fgact", ch="麻沙音6", id=6, act="浮遊", loop=2, size=15, time=75, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane1637", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					{"exfont", size="f4"},
+					name = {"麻沙音"},
+					"*テキスト*",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			en = {
+				{
+					{"exfont", size="f4"},
+					name = {"麻沙音", "Asane"},
+					"“WHY IS THE P*RN GONE?!”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			cn = {
+				{
+					{"exfont", size="f4"},
+					name = {"麻沙音"},
+					"“我刚才在看的〇〇影片呢！？”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			tw = {
+				{
+					{"exfont", size="f4"},
+					name = {"麻沙音"},
+					"「我剛才在看的成人影片呢！？」",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+		},
+		linkback = "0122_00026",
+		line = 470,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

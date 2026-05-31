@@ -1,0 +1,70 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"RAN_01LL",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="ran_01ll_00001", file1="ran_01ll_00103", file2="ran_01ll_00210", file4="ran_01ll_00401", path=":fg/ran_01ll/", id=2, lv=5, head="ran_01ll", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01LL.s25,0,0,0,m,01,03,10,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="ran_01ll_00001", file1="ran_01ll_00104", file2="ran_01ll_00210", file4="ran_01ll_00401", path=":fg/ran_01ll/", id=2, lv=5, head="ran_01ll", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01LL.s25,0,0,0,m,01,04,10,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="ran_01ll_00001", file1="ran_01ll_00104", file2="ran_01ll_00210", file4="ran_01ll_00401", path=":fg/ran_01ll/", id=2, lv=5, head="ran_01ll", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01LL.s25,0,0,0,m,01,04,10,-1,1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		line = 14,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

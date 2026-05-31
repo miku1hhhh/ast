@@ -1,0 +1,2296 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle"},
+		{"eval", exp="g.11_zz03=1"},
+		{"fg", file="kouki_01m_00001", file1="kouki_01m_00101", file2="kouki_01m_00207", path=":fg/kouki_01m/", id=17, lv=17, head="kouki_01m", ch_origin="光姫", ch="光姫17", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"fg", file="kouki_01m_00001", file1="kouki_01m_00101", file2="kouki_01m_00207", path=":fg/kouki_01m/", id=17, lv=17, head="kouki_01m", ch_origin="光姫", ch="光姫17", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"extrans", sync=0, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kouki0204", path=":vo/", ch="kouki"},
+			},
+			ja = {
+				{
+					name = {"光姫"},
+					"「マイクテス、ワン・ツー・ゼロ・ゼロ",
+					{"gaiji", text="①"},
+					"　こちらは没シナリオです！　尺とかいろんな問題でカットされたシーンとなっておます！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"光姫", "Kouki"},
+				},
+			},
+			cn = {
+				{
+					name = {"光姫"},
+				},
+			},
+			tw = {
+				{
+					name = {"光姫"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 10,
+	},
+	block_00001 = {
+		{"fg", file="kouki_01m_00002", file1="kouki_01m_00101", file2="kouki_01m_00202", path=":fg/kouki_01m/", id=17, lv=17, head="kouki_01m", ch_origin="光姫", ch="光姫17", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kouki0205", path=":vo/", ch="kouki"},
+			},
+			ja = {
+				{
+					name = {"光姫"},
+					"「本編には収録されませんので、あらかじめご了承ください。それでは！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"光姫", "Kouki"},
+				},
+			},
+			cn = {
+				{
+					name = {"光姫"},
+				},
+			},
+			tw = {
+				{
+					name = {"光姫"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 17,
+	},
+	block_00002 = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fg", mode=-1, id=17, ch="光姫17", ch_origin="光姫", lv=17, time=0, sync=0},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_043_00000"},
+		{"ex", time=2000, func="wait"},
+		{"bg", id=1, file="bg15_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg15_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_033_00000"},
+		{"bg", id=2, file="bg15_1l_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="gmoba0190", path=":vo/", ch="gmob"},
+			},
+			ja = {
+				{
+					name = {"モブ女A", "簡易性交女子"},
+					"「チン来るぅ～",
+					{"gaiji", text="①"},
+					"　マンきも～",
+					{"gaiji", text="①"},
+					"　マジ",
+					{"ruby", text="い"},
+					"絶頂",
+					{"/ruby"},
+					"～",
+					{"gaiji", text="①"},
+					{"gaiji", text="①"},
+					"」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"モブ女A", "簡易性交女子"},
+				},
+			},
+			cn = {
+				{
+					name = {"モブ女A", "簡易性交女子"},
+				},
+			},
+			tw = {
+				{
+					name = {"モブ女A", "簡易性交女子"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 34,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="bmobd0071", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"モブ男D", "簡易性交男子"},
+					"「めオラ！　めオラ！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"モブ男D", "簡易性交男子"},
+				},
+			},
+			cn = {
+				{
+					name = {"モブ男D", "簡易性交男子"},
+				},
+			},
+			tw = {
+				{
+					name = {"モブ男D", "簡易性交男子"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 38,
+	},
+	block_00004 = {
+		{"bgm", file="bgm02", vol=100},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, lv=2, time=300, alphadel=1, style="reset"},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00214", path=":fg/jun_01f/", id=30, ch="淳之介", lv=2, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「なに言ってるんだアレ」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 45,
+	},
+	block_00005 = {
+		{"fg", file="susuko_02m_00002", file1="susuko_02m_00101", file2="susuko_02m_00220", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", alpha=0, ch_origin="スス子", ch="スス子11", mw="mw", sync=1, a_chr151=1, mode=3, x=-205, y=-5},
+		{"fgact", ch="スス子11", id=11, lv=11, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="スス子11", id=11, act="移動", x=200, y=0, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="susuko0599", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子"},
+					"「略語を用いたインすタントセックすが流行ってるらしいっすよ？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝子"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲子"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 52,
+	},
+	block_00006 = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00206", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「“はら”しか略せてなくない……？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 56,
+	},
+	block_00007 = {
+		{"fg", file="susuko_02m_00002", file1="susuko_02m_00101", file2="susuko_02m_00224", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", ch_origin="スス子", ch="スス子11", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="susuko0600", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子"},
+					[[「たしか"はら"は『腹』を連想させるから『腹を隠す』つまりは相手の健康を気遣うから縁起がいいらしく」]],
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝子"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲子"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 63,
+	},
+	block_00008 = {
+		{"fg", file="susuko_02m_00002", file1="susuko_02m_00101", file2="susuko_02m_00204", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", ch_origin="スス子", ch="スス子11", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="susuko0601", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子"},
+					[[「逆に"め"を略す行為は『目無し』を意味して大変縁起が悪いと言われてるらしいっす」]],
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝子"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲子"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 70,
+	},
+	block_00009 = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00214", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「偽マナーが生まれている……」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 74,
+	},
+	block_00010 = {
+		{"fgact", ch="スス子11", id=11, lv=11, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こうやって儲けてる大人がいるんだろうなぁ……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 78,
+	},
+	block_00011 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=9, time=300, alphadel=1, style="reset"},
+		{"bg", id=2, file="bg15_1l_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[6000] = {
+				{"cgact", file="cgact", id=2, act="浮遊横", loop=15, size=5, time=50, ease="easeinout_sine", timestamp=1, delay2=6000, lv=2},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="gmobc0107", path=":vo/", ch="gmob"},
+			},
+			ja = {
+				{
+					name = {"モブ女C", "マナー講師風の女"},
+					"「知っていますか？　濡れそぼったおまんこにおちんこを挿入しないのは、実はマナー違反でんほぉおおおお",
+					{"gaiji", text="①"},
+					"」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"モブ女C", "マナー講師風の女"},
+				},
+			},
+			cn = {
+				{
+					name = {"モブ女C", "マナー講師風の女"},
+				},
+			},
+			tw = {
+				{
+					name = {"モブ女C", "マナー講師風の女"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 87,
+	},
+	block_00012 = {
+		{"text"},
+		delay = {
+			[4500] = {
+				{"cgact", file="cgact", id=2, act="浮遊", loop=2, size=7.5, time=125, ease="easeinout_sine", timestamp=3, delay2=4500, lv=2},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="bmobb0107", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"モブ男B", "就職活動に疲れた男"},
+					"「テメェは今からママー講師だ！　ママッ、とっくりの反対側チンポで子宮2回ノックするね！　こんこん失礼します！　おいマナーじゃなくて僕との子供作れ！　孕めオラァ！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"モブ男B", "就職活動に疲れた男"},
+				},
+			},
+			cn = {
+				{
+					name = {"モブ男B", "就職活動に疲れた男"},
+				},
+			},
+			tw = {
+				{
+					name = {"モブ男B", "就職活動に疲れた男"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 92,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"反旗を翻していた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 94,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ああいう人材にこそ、次の世代を担ってほしいものだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 96,
+	},
+	block_00015 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, lv=2, time=300, alphadel=1, style="reset"},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00102", file2="jun_01f_00216", path=":fg/jun_01f/", id=30, ch="淳之介", lv=2, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「しかし“性帝”の仕事をこなせと言われてもなぁ……」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 102,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺がこの並行世界に訪れて、早数日。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 104,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"未だに慣れないことばかりだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 106,
+	},
+	block_00018 = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00218", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「花丸委員長、何か仕事とか残って――」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 110,
+	},
+	block_00019 = {
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="ran_01m_00001", file1="ran_01m_00102", file2="ran_01m_00209", file4="ran_01m_00401", path=":fg/ran_01m/", id=13, lv=13, head="ran_01m", ch_origin="蘭", ch="蘭13", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="蘭13", id=13, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"fg", file="ran_01m_00001", file1="ran_01m_00104", file2="ran_01m_00206", file4="ran_01m_00401", path=":fg/ran_01m/", id=13, lv=13, head="ran_01m", ch_origin="蘭", ch="蘭13", mw="mw", sync=0, timestamp=4, delay2=1500, mode=3, x=-5, y=-5},
+				{"fgact", ch="蘭13", id=13, act="浮遊横", loop=-1, size=2.5, time=50, ease="easeinout_sine", timestamp=4, delay2=1500},
+			},
+			[1499] = {
+				{"transitiontime", time=300, timestamp=4, delay2=1500},
+			},
+			[5000] = {
+				{"fgact", id=13, ch="蘭13", act="stopact", timestamp=5, delay2=5000},
+				{"fg", file="ran_01m_00001", file1="ran_01m_00104", file2="ran_01m_00210", file4="ran_01m_00401", path=":fg/ran_01m/", id=13, lv=13, head="ran_01m", ch_origin="蘭", ch="蘭13", mw="mw", sync=0, timestamp=5, delay2=5000, mode=3, x=-5, y=-5},
+				{"fgact", ch="蘭13", id=13, act="移動", x=0, y=200, time=700, timestamp=5, delay2=5000},
+				{"fgact", ch="蘭13", id=13, act="浮遊横", loop=3, size=5, time=125, ease="easeinout_sine", timestamp=5, delay2=5000},
+				{"fgact", ch="蘭13", id=13, lv=13, act="表示アクション", alpha=0, alphadel=1, style="reset", time=600, timestamp=5, delay2=5000},
+			},
+			[4999] = {
+				{"transitiontime", time=300, timestamp=5, delay2=5000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ran0223", path=":vo/", ch="ran"},
+			},
+			ja = {
+				{
+					name = {"蘭"},
+					"「性帝しゃま！？　しっ、仕事はっ、仕事はありまんこぉおおおおんぅ",
+					{"gaiji", text="①"},
+					{"gaiji", text="①"},
+					{"gaiji", text="①"},
+					"」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"蘭", "Ran"},
+				},
+			},
+			cn = {
+				{
+					name = {"蘭", "兰"},
+				},
+			},
+			tw = {
+				{
+					name = {"蘭"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 129,
+	},
+	block_00020 = {
+		{"se", id=0, loop=0, file="se_a135"},
+		{"cgact", file="cgact", id=1, act="浮遊横", loop=5, size=5, time=50, ease="easeinout_sine", lv=1},
+		{"fg", file="susuko_02m_00002", file1="susuko_02m_00101", file2="susuko_02m_00220", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", alpha=0, ch_origin="スス子", ch="スス子11", mw="mw", sync=1, a_chr151=1, mode=3, x=195, y=-5},
+		{"fgact", ch="スス子11", id=11, lv=11, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="スス子11", id=11, act="移動", x=-200, y=0, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="susuko0602", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子"},
+					"「あ、",
+					{"ruby", text="い"},
+					"絶頂",
+					{"/ruby"},
+					"ってしもうた」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝子"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲子"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 138,
+	},
+	block_00021 = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00208", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「まともに会話すらしてもらえないのか、今の俺は……！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 142,
+	},
+	block_00022 = {
+		{"se", id=0, loop=0, file="se_a005"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"やはり“帝王”というのは、いつでも孤独なのであった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 145,
+	},
+	block_00023 = {
+		{"bgm", stop=1},
+		{"fgact", ch="スス子11", id=11, act="移動", x=-400, y=0, time=800},
+		{"se", id=0, stop=1, time=1000},
+		{"fg", file="schubert_01m_00002", file1="schubert_01m_00102", file2="schubert_01m_00223", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", alpha=0, ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=1, a_chr151=1, mode=3, x=595, y=-5},
+		{"fgact", ch="シューベルト12", id=12, lv=12, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="シューベルト12", id=12, act="移動", x=-200, y=0, time=700},
+		{"text"},
+		delay = {
+			[2000] = {
+				{"fg", file="schubert_01m_00001", file1="schubert_01m_00102", file2="schubert_01m_00203", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, timestamp=6, delay2=2000, mode=3, x=395, y=-5},
+			},
+			[1999] = {
+				{"transitiontime", time=300, timestamp=6, delay2=2000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="schubert0419", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト"},
+					"「大変だ大変だー！　性帝、こんなところにいたのか……！？　とにかく大変なんだ！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schubert"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 158,
+	},
+	block_00024 = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00214", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「どうしたデーベルト、またシュータなくしたか？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 162,
+	},
+	block_00025 = {
+		{"bgm", file="bgm12", vol=100},
+		{"fg", file="schubert_01m_00002", file1="schubert_01m_00102", file2="schubert_01m_00204", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="schubert0420", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト"},
+					"「違うんだ！　さっきなぜ突くと丸くなるダンゴムシと丸くならないダンゴムシがいるのか、データを集めていたんだが……！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schubert"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 170,
+	},
+	block_00026 = {
+		{"fg", file="susuko_02m_00002", file1="susuko_02m_00101", file2="susuko_02m_00222", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", ch_origin="スス子", ch="スス子11", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="susuko0603", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子"},
+					"「Wiki●ediaでも読めよ……」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝子"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲子"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 177,
+	},
+	block_00027 = {
+		{"fg", file="schubert_01m_00002", file1="schubert_01m_00102", file2="schubert_01m_00215", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="schubert0421", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト"},
+					"「そしたら凛くんが裏の倉庫に古今東西様々な書物を集め、うず高く積み上げていて――！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schubert"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 184,
+	},
+	block_00028 = {
+		{"fg", mode=-1, id=11, ch="スス子11", ch_origin="スス子", lv=11, time=0, sync=0},
+		{"fg", mode=-1, id=12, ch="シューベルト12", ch_origin="シューベルト", lv=12, time=0, sync=0},
+		{"bg", id=1, file="bg31_1l_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"bg", id=1, file="bg31_1l_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=300, rule="eff_008_00000"},
+		{"se", id=0, loop=0, file="se_a217"},
+		{"fg", file="rin_01m_00001", file1="rin_01m_00101", file2="rin_01m_00215", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", ch_origin="凛", ch="凛14", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[7000] = {
+				{"fg", file="rin_01l_00001", file1="rin_01l_00101", file2="rin_01l_00226", path=":fg/rin_01l/", id=14, lv=14, head="rin_01l", ch_origin="凛", ch="凛14", mw="mw", sync=0, timestamp=8, delay2=7000, mode=3, x=-5, y=-5},
+				{"fgact", ch="凛14", id=14, act="振動下", loop=2, size=12.5, time=200, ease="easeinout_sine", timestamp=8, delay2=7000},
+			},
+			[6999] = {
+				{"transitiontime", time=300, timestamp=8, delay2=7000},
+			},
+			[9000] = {
+				{"fg", file="rin_01l_00001", file1="rin_01l_00101", file2="rin_01l_00224", path=":fg/rin_01l/", id=14, lv=14, head="rin_01l", ch_origin="凛", ch="凛14", mw="mw", sync=0, timestamp=10, delay2=9000, mode=3, x=-5, y=-5},
+				{"fgact", ch="凛14", id=14, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=10, delay2=9000},
+				{"se", id=0, loop=0, file="se_b145", timestamp=10, delay2=9000},
+			},
+			[8999] = {
+				{"transitiontime", time=300, timestamp=10, delay2=9000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rin0429", path=":vo/", ch="rin"},
+			},
+			ja = {
+				{
+					name = {"凛"},
+					"「この世で讃えられるべき花丸な神は“ドスケベ神”の“セクロス様”のみ……！　それ以外はこうしてこうしてっ、すべて焚書としてやりましょう――！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"凛", "Rin"},
+				},
+			},
+			cn = {
+				{
+					name = {"凛"},
+				},
+			},
+			tw = {
+				{
+					name = {"凛"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 209,
+	},
+	block_00029 = {
+		{"fg", mode=-1, id=14, ch="凛14", ch_origin="凛", lv=14, time=0, sync=0},
+		{"bg", id=1, file="bg15_1l_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="schubert_01m_00002", file1="schubert_01m_00102", file2="schubert_01m_00214", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"fg", file="susuko_02m_00002", file1="susuko_02m_00102", file2="susuko_02m_00215", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", ch_origin="スス子", ch="スス子11", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"bg", id=1, file="bg15_1l_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="schubert_01m_00002", file1="schubert_01m_00102", file2="schubert_01m_00214", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"fg", file="susuko_02m_00002", file1="susuko_02m_00102", file2="susuko_02m_00215", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", ch_origin="スス子", ch="スス子11", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=200, rule="eff_008_00000"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="schubert0422", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト"},
+					"「ガソリンをぶちまけて火をつけ、高笑いを浮かべていたんだ――！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schubert"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 224,
+	},
+	block_00030 = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00214", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「すんげぇサイコパスじゃん……」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 228,
+	},
+	block_00031 = {
+		{"fg", mode=-1, id=11, ch="スス子11", ch_origin="スス子", lv=11, time=0, sync=0},
+		{"fg", mode=-1, id=12, ch="シューベルト12", ch_origin="シューベルト", lv=12, time=0, sync=0},
+		{"bg", id=1, file="bg31_1l_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="rin_01m_00001", file1="rin_01m_00101", file3="rin_01m_00302", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", ch_origin="凛", ch="凛14", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"bg", id=1, file="bg31_1l_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="rin_01m_00001", file1="rin_01m_00101", file3="rin_01m_00302", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", ch_origin="凛", ch="凛14", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=200, rule="eff_008_00000"},
+		{"text"},
+		delay = {
+			[4200] = {
+				{"fg", file="rin_01m_00001", file1="rin_01m_00101", file2="rin_01m_00216", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", ch_origin="凛", ch="凛14", mw="mw", sync=0, timestamp=11, delay2=4200, mode=3, x=-5, y=-5},
+				{"fgact", ch="凛14", id=14, act="振動下", loop=10, size=12.5, time=235, ease="easeinout_sine", timestamp=11, delay2=4200},
+			},
+			[4199] = {
+				{"transitiontime", time=300, timestamp=11, delay2=4200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rin0430", path=":vo/", ch="rin"},
+			},
+			ja = {
+				{
+					name = {"凛"},
+					"「これでセクロス様は必ず私に御真言をくださいます……",
+					{"ruby", text="いん"},
+					"淫",
+					{"/ruby"},
+					"・",
+					{"rt2"},
+					{"ruby", text="にょう"},
+					"尿",
+					{"/ruby"},
+					"・",
+					{"ruby", text="ろう"},
+					"漏",
+					{"/ruby"},
+					"・",
+					{"ruby", text="しゃ"},
+					"射",
+					{"/ruby"},
+					"・",
+					{"ruby", text="かい"},
+					"快",
+					{"/ruby"},
+					"・",
+					{"ruby", text="ちん"},
+					"珍",
+					{"/ruby"},
+					"・",
+					{"ruby", text="けつ"},
+					"尻",
+					{"/ruby"},
+					"・",
+					{"ruby", text="ざい"},
+					"座位",
+					{"/ruby"},
+					"・",
+					{"ruby", text="ぜん"},
+					"前",
+					{"/ruby"},
+					"・",
+					{"ruby", text="ぎ"},
+					"戯",
+					{"/ruby"},
+					"……！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"凛", "Rin"},
+				},
+			},
+			cn = {
+				{
+					name = {"凛"},
+				},
+			},
+			tw = {
+				{
+					name = {"凛"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 248,
+	},
+	block_00032 = {
+		{"fg", file="rin_01m_00001", file1="rin_01m_00101", file3="rin_01m_00307", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", ch_origin="凛", ch="凛14", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[2000] = {
+				{"se", id=1, loop=1, file="se_b146", vol=40, timestamp=14, delay2=2000},
+				{"fg", file="rin_01m_00001", file1="rin_01m_00102", file2="rin_01m_00209", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", ch_origin="凛", ch="凛14", mw="mw", sync=0, timestamp=14, delay2=2000, mode=3, x=-5, y=-5},
+				{"fgact", ch="凛14", id=14, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=14, delay2=2000},
+				{"cgact", file="cgact", id=1, act="浮遊横", loop=-1, size=2.5, time=50, ease="easeinout_sine", timestamp=13, delay2=2000, lv=1},
+			},
+			[1999] = {
+				{"transitiontime", time=300, timestamp=14, delay2=2000},
+			},
+			[6000] = {
+				{"fg", file="rin_01m_00001", file1="rin_01m_00102", file3="rin_01m_00306", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", ch_origin="凛", ch="凛14", mw="mw", sync=0, timestamp=15, delay2=6000, mode=3, x=-5, y=-5},
+			},
+			[5999] = {
+				{"transitiontime", time=300, timestamp=15, delay2=6000},
+			},
+			[7000] = {
+				{"fg", file="rin_01m_00001", file1="rin_01m_00102", file2="rin_01m_00227", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", ch_origin="凛", ch="凛14", mw="mw", sync=0, timestamp=17, delay2=7000, mode=3, x=-5, y=-5},
+				{"fgact", ch="凛14", id=14, lv=14, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300, timestamp=17, delay2=7000},
+				{"fgact", ch="凛14", id=14, act="移動", x=200, y=0, time=630, timestamp=17, delay2=7000},
+				{"se", id=0, loop=0, file="se_a020", timestamp=17, delay2=7000},
+			},
+			[6999] = {
+				{"transitiontime", time=300, timestamp=17, delay2=7000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rin0431", path=":vo/", ch="rin"},
+			},
+			ja = {
+				{
+					name = {"凛"},
+					"「ふぅ、お祈りもおわっうわぁっちゃァ！！　やべぇ思ったよりも燃えがってしまいました！　あちちちっ、私だけでも早く避難しなくては――！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"凛", "Rin"},
+				},
+			},
+			cn = {
+				{
+					name = {"凛"},
+				},
+			},
+			tw = {
+				{
+					name = {"凛"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 271,
+	},
+	block_00033 = {
+		{"se", id=1, loop=1, file="se_b146", vol=30},
+		{"se", id=0, stop=1, time=1000},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"cgact", file="cgact", id=1, act="stopact", lv=1},
+		{"bg", id=1, file="bg15_1l_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="schubert_01m_00002", file1="schubert_01m_00102", file2="schubert_01m_00209", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"fg", file="susuko_02m_00003", file1="susuko_02m_00102", file2="susuko_02m_00209", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", ch_origin="スス子", ch="スス子11", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"bg", id=1, file="bg15_1l_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="schubert_01m_00002", file1="schubert_01m_00102", file2="schubert_01m_00209", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"fg", file="susuko_02m_00003", file1="susuko_02m_00102", file2="susuko_02m_00209", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", ch_origin="スス子", ch="スス子11", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=300, rule="eff_008_00000"},
+		{"fgact", ch="スス子11", id=11, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"fgact", ch="シューベルト12", id=12, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="susuko0604", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子"},
+					"「うぉああっ！？　ちょっ、煙上がってるっすよ！？　このままだと校舎にも燃え移っちゃうっす！！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝子"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲子"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 290,
+	},
+	block_00034 = {
+		{"fgact", ch="スス子11", id=11, lv=11, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="シューベルト12", id=12, lv=12, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bg", id=2, file="bg15_1l_00000", x=-300, y=0, lv=2, path=":bg/", sync=1, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=2, lv=2, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"cgact", file="cgact", id=2, act="移動", x=595, y=-5, time=10000, lv=2},
+		{"se", id=0, loop=0, file="se_a041"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="gmoba0191", path=":vo/", ch="gmob"},
+			},
+			ja = {
+				{
+					name = {"モブ女A", "簡易性交女子"},
+					"「火事くる～",
+					{"gaiji", text="①"},
+					"　マジヤバ～",
+					{"gaiji", text="①"},
+					"　いま危機ぃ～",
+					{"gaiji", text="①"},
+					"」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"モブ女A", "簡易性交女子"},
+				},
+			},
+			cn = {
+				{
+					name = {"モブ女A", "簡易性交女子"},
+				},
+			},
+			tw = {
+				{
+					name = {"モブ女A", "簡易性交女子"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 304,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="bmobd0072", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"モブ男D", "簡易性交男子"},
+					"「めラ！　めラ！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"モブ男D", "簡易性交男子"},
+				},
+			},
+			cn = {
+				{
+					name = {"モブ男D", "簡易性交男子"},
+				},
+			},
+			tw = {
+				{
+					name = {"モブ男D", "簡易性交男子"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 308,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"生徒たちが当惑しながら逃げ出しはじめる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 310,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しかし混乱が起きた廊下では、その誘導すらままならない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 312,
+	},
+	block_00038 = {
+		{"se", id=0, stop=1, time=1000},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, lv=2, time=300, alphadel=1, style="reset", x=595, y=-5},
+		{"fg", file="schubert_01m_00002", file1="schubert_01m_00102", file2="schubert_01m_00203", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, mode=3, x=595, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="schubert0423", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト"},
+					"「どうする性帝、今から避難勧告を出したとしても間に合うかどうか――！？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schubert"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 321,
+	},
+	block_00039 = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00102", file2="jun_01f_00216", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「消化器は！？　いやっ、その程度では消えないか――！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 325,
+	},
+	block_00040 = {
+		{"fg", file="rin_01m_00001", file1="rin_01m_00101", file2="rin_01m_00204", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", alpha=0, ch_origin="凛", ch="凛14", mw="mw", sync=1, a_chr151=1, mode=3, x=195, y=-5},
+		{"fgact", ch="凛14", id=14, lv=14, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="凛14", id=14, act="移動", x=-200, y=0, time=700},
+		{"text"},
+		delay = {
+			[7000] = {
+				{"fg", file="rin_01m_00001", file1="rin_01m_00101", file2="rin_01m_00222", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", ch_origin="凛", ch="凛14", mw="mw", sync=0, timestamp=18, delay2=7000, mode=3, x=-5, y=-5},
+			},
+			[6999] = {
+				{"transitiontime", time=300, timestamp=18, delay2=7000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rin0432", path=":vo/", ch="rin"},
+			},
+			ja = {
+				{
+					name = {"凛"},
+					"「そうですどうするんですか性帝？　SHO特別監査役補佐としてそのお手並みを拝見するとしましょう。生徒に危害を加えればはなマラポイント大幅マイナスですよ！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"凛", "Rin"},
+				},
+			},
+			cn = {
+				{
+					name = {"凛"},
+				},
+			},
+			tw = {
+				{
+					name = {"凛"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 335,
+	},
+	block_00041 = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file3="jun_01f_00304", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「後で絶対泣かすからなお前……！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 339,
+	},
+	block_00042 = {
+		{"bgm", stop=1},
+		{"fgact", ch="シューベルト12", id=12, lv=12, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="凛14", id=14, lv=14, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しかし、どうする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 346,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"このまま手をこまねいていれば、大事件になるかもしれない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 348,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それにこの校舎には、俺の“元仲間たち”だって――",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 350,
+	},
+	block_00045 = {
+		{"bgm", file="bgm13.5", vol=100},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"bg", id=2, file="bg15_1l_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"cgact", file="cgact", id=2, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", lv=2},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00102", file2="jun_01f_00228", path=":fg/jun_01f/", id=30, ch="淳之介", lv=2, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「……そうだ！　花丸委員長は！？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 359,
+	},
+	block_00046 = {
+		{"se", id=0, loop=0, file="se_a092"},
+		{"fg", file="ran_01l_00001", file1="ran_01l_00102", file2="ran_01l_00210", file4="ran_01l_00401", path=":fg/ran_01l/", id=13, lv=13, head="ran_01l", ch_origin="蘭", ch="蘭13", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ran0224", path=":vo/", ch="ran"},
+			},
+			ja = {
+				{
+					name = {"蘭"},
+					"「ひゃいっ！　お呼びでしょうか、性帝さ――」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"蘭", "Ran"},
+				},
+			},
+			cn = {
+				{
+					name = {"蘭", "兰"},
+				},
+			},
+			tw = {
+				{
+					name = {"蘭"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 366,
+	},
+	block_00047 = {
+		{"se", id=0, loop=0, file="se_a133"},
+		{"se", id=2, loop=0, file="se_a021"},
+		{"fg", file="ran_01l_00001", file1="ran_01l_00104", file2="ran_01l_00209", file4="ran_01l_00401", path=":fg/ran_01l/", id=13, lv=13, head="ran_01l", ch_origin="蘭", ch="蘭13", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="蘭13", id=13, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=1, act="移動", x=95, y=-5, time=300, lv=1},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"fg", file="ran_01l_00001", file1="ran_01l_00104", file2="ran_01l_00206", file4="ran_01l_00401", path=":fg/ran_01l/", id=13, lv=13, head="ran_01l", ch_origin="蘭", ch="蘭13", mw="mw", sync=0, timestamp=21, delay2=1500, mode=3, x=-5, y=-5},
+				{"se", id=0, loop=0, file="se_a005", timestamp=21, delay2=1500},
+				{"cgact", file="cgact", id=2, act="浮遊", loop=-1, size=2.5, time=100, ease="easeinout_sine", timestamp=20, delay2=1500, lv=2},
+				{"cgact", file="cgact", id=2, lv=2, act="汎用アクション", zoom=150, time=150, ax=800, ay=450, timestamp=20, delay2=1500},
+				{"fgact", ch="蘭13", id=13, lv=13, act="汎用アクション", zoom=150, time=150, ax=805, ay=455, timestamp=21, delay2=1500},
+				{"fgact", ch="蘭13", id=13, act="浮遊", loop=-1, size=2.5, time=100, ease="easeinout_sine", timestamp=21, delay2=1500},
+			},
+			[1499] = {
+				{"transitiontime", time=300, timestamp=21, delay2=1500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ran0224b", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"蘭"},
+					"「えっ、ちょちょちょ待ってくださいどうして私を窓から突き落とそうとするんですか何か悪いことしましたか！？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"蘭", "Ran"},
+				},
+			},
+			cn = {
+				{
+					name = {"蘭", "兰"},
+				},
+			},
+			tw = {
+				{
+					name = {"蘭"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 385,
+	},
+	block_00048 = {
+		{"se", id=0, loop=0, file="se_a171"},
+		{"se", id=2, loop=0, file="se_a098"},
+		{"se", id=3, loop=0, file="se_a031"},
+		{"se", id=0, stop=1, time=1000},
+		{"bg", id=26, file="bg15_1l_00000", x=300, y=-300, lv=26, path=":bg/", sync=0, style="blur", blurx=1, blury=44, ax=1290, ay=730, bx=-490, by=-280},
+		{"bg", id=26, file="bg15_1l_00000", x=300, y=-300, lv=26, path=":bg/", sync=0, style="blur", blurx=1, blury=44, time=150, rule="eff_009_00000", a_chr60=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"bg", id=27, file="jci2_l0203-105-1", x=265, y=-1789, path=":cg/jci2_l/", lv=27, ev=1, bx=800, by=450},
+		{"bg", id=27, file="jci2_l0203-105-1", x=265, y=-1789, path=":cg/jci2_l/", lv=27, ev=1, time=150, sync=0, rule="eff_009_00000", a_chr60=1, bx=800, by=450},
+		{"cgact", file="cgact", id=26, act="移動", x=-405, y=395, time=300, lv=26},
+		{"cgact", file="cgact", id=27, act="移動", x=-1200, y=1200, time=300, lv=27},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file3="jun_01f_00307", path=":fg/jun_01f/", id=30, ch="淳之介", lv=29, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		delay = {
+			[500] = {
+				{"cgdel", id=26, lv=26, time=200, alphadel=1, timestamp=27, delay2=500},
+				{"cgact", file="cgact", act="表示アクション", alpha=0, id=27, lv=27, time=200, alphadel=1, style="reset", timestamp=28, delay2=500, x=-1200, y=1200},
+				{"se", id=0, loop=0, file="se_a298", timestamp=29, delay2=500},
+				{"bg", id=29, file="be3_00004", x=0, y=0, lv=29, path=":cg/be3/", ev=1, timestamp=29, delay2=500, ax=847, ay=480, bx=-47, by=-30},
+				{"bg", id=29, file="be3_00004", x=0, y=0, lv=29, path=":cg/be3/", ev=1, timestamp=29, delay2=500, time=100, sync=0, rule="eff_048_00000", a_chr60=1, ax=847, ay=480, bx=-47, by=-30},
+				{"cgact", file="cgact", id=29, act="浮遊横", loop=4, size=15, time=50, ease="easeinout_sine", timestamp=29, delay2=500, lv=29, x=0, y=0},
+			},
+			[499] = {
+				{"transitiontime", time=1, timestamp=29, delay2=500},
+			},
+		},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「こいつを、喰らえ――！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 408,
+	},
+	block_00049 = {
+		{"se", id=0, loop=0, file="se_a174"},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=29, lv=29, time=300, alphadel=1, style="reset", x=0, y=0},
+		{"bg", id=17, file="syuchu_00001", x=0, y=0, lv=17, path=":cg/syuchu/", ev=1, ax=805, ay=455, bx=-5, by=-5},
+		{"cgact", file="cgact", id=17, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, lv=17, x=0, y=0},
+		{"cgact", file="cgact", id=2, act="stopact", lv=2, zoom=150},
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"bg", id=2, file="bg15_1l_00000", x=450, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fgact", id=13, ch="蘭13", act="stopact"},
+		{"fg", file="ran_01ll_00001", file1="ran_01ll_00104", file2="ran_01ll_00210", file4="ran_01ll_00401", path=":fg/ran_01ll/", id=13, lv=13, head="ran_01ll", ch_origin="蘭", ch="蘭13", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"fgact", ch="蘭13", id=13, act="浮遊横", loop=-1, size=10, time=50, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[200] = {
+				{"bg", id=18, file="syuchu_00002", x=0, y=0, lv=18, path=":cg/syuchu/", ev=1, timestamp=30, delay2=200, ax=805, ay=455, bx=-5, by=-5},
+				{"cgact", file="cgact", id=18, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, timestamp=30, delay2=200, lv=18, x=0, y=0},
+			},
+			[199] = {
+				{"transitiontime", time=300, timestamp=30, delay2=200},
+				{"transitiontime", time=300, timestamp=30, delay2=200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ran0225", path=":vo/", ch="ran"},
+			},
+			ja = {
+				{
+					{"exfont", size="f4"},
+					name = {"蘭"},
+					"「おちんぽぉおおおおおおおおおおんぅ」",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			en = {
+				{
+					{"exfont", size="f4"},
+					name = {"蘭", "Ran"},
+					{"exfont"},
+				},
+			},
+			cn = {
+				{
+					{"exfont", size="f4"},
+					name = {"蘭", "兰"},
+					{"exfont"},
+				},
+			},
+			tw = {
+				{
+					{"exfont", size="f4"},
+					name = {"蘭"},
+					{"exfont"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 428,
+	},
+	block_00050 = {
+		{"cgact", file="cgact", id=17, act="stopact", lv=17, x=0, y=0},
+		{"cgdel", id=17, time=0, alphadel=1, lv=17},
+		{"cgact", file="cgact", id=18, act="stopact", lv=18, x=0, y=0},
+		{"cgdel", id=18, time=0, alphadel=1, lv=18},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, lv=2, time=300, alphadel=1, style="reset"},
+		{"fgact", id=13, ch="蘭13", act="stopact"},
+		{"fgact", ch="蘭13", id=13, lv=13, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fg", file="susuko_02m_00001", file1="susuko_02m_00102", file2="susuko_02m_00215", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", ch_origin="スス子", ch="スス子11", mw="mw", sync=0, mode=3, x=-505, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="スス子11", id=11, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="susuko0605", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子"},
+					"「おー……綺麗な虹がかかったっすねぇ……」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝子"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲子"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 443,
+	},
+	block_00051 = {
+		{"fg", file="schubert_01m_00002", file1="schubert_01m_00102", file2="schubert_01m_00209", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, mode=3, x=495, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="シューベルト12", id=12, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"fg", file="schubert_01m_00001", file1="schubert_01m_00102", file2="schubert_01m_00203", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, timestamp=31, delay2=1500, mode=3, x=495, y=-5},
+			},
+			[1499] = {
+				{"transitiontime", time=300, timestamp=31, delay2=1500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="schubert0424", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト"},
+					"「そうか……！　蘭くんは性帝の調教によってイチモツ形のものを見ると潮を噴き絶頂するようになっている！　その水圧を用いて――！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schubert"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 453,
+	},
+	block_00052 = {
+		{"fgact", ch="スス子11", id=11, lv=11, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="シューベルト12", id=12, lv=12, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"bg", id=17, file="syuchu_00001", x=0, y=0, lv=17, path=":cg/syuchu/", ev=1, ax=805, ay=455, bx=-5, by=-5},
+		{"cgact", file="cgact", id=17, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, lv=17, x=0, y=0},
+		{"bg", id=2, file="bg15_1l_00000", x=450, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file3="jun_01f_00307", path=":fg/jun_01f/", id=30, ch="淳之介", lv=2, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		delay = {
+			[200] = {
+				{"bg", id=18, file="syuchu_00002", x=0, y=0, lv=18, path=":cg/syuchu/", ev=1, timestamp=32, delay2=200, ax=805, ay=455, bx=-5, by=-5},
+				{"cgact", file="cgact", id=18, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, timestamp=32, delay2=200, lv=18, x=0, y=0},
+			},
+			[199] = {
+				{"transitiontime", time=300, timestamp=32, delay2=200},
+			},
+		},
+		text = {
+			ja = {
+				{
+					{"exfont", size="f4"},
+					name = {"淳之介"},
+					"「まだまだぁああああああ！！」",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			en = {
+				{
+					{"exfont", size="f4"},
+					name = {"淳之介", "Junnosuke"},
+					{"exfont"},
+				},
+			},
+			cn = {
+				{
+					{"exfont", size="f4"},
+					name = {"淳之介"},
+					{"exfont"},
+				},
+			},
+			tw = {
+				{
+					{"exfont", size="f4"},
+					name = {"淳之介"},
+					{"exfont"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 469,
+	},
+	block_00053 = {
+		{"se", id=0, loop=0, file="se_a174"},
+		{"fg", file="ran_01ll_00001", file1="ran_01ll_00103", file2="ran_01ll_00210", file4="ran_01ll_00401", path=":fg/ran_01ll/", id=13, lv=13, head="ran_01ll", ch_origin="蘭", ch="蘭13", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"transitiontime", time=300},
+		{"fgact", ch="蘭13", id=13, act="浮遊横", loop=-1, size=10, time=50, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ran0226", path=":vo/", ch="ran"},
+			},
+			ja = {
+				{
+					{"exfont", size="f4"},
+					name = {"蘭"},
+					"「はなみゃるぅううううううううううん」",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			en = {
+				{
+					{"exfont", size="f4"},
+					name = {"蘭", "Ran"},
+					{"exfont"},
+				},
+			},
+			cn = {
+				{
+					{"exfont", size="f4"},
+					name = {"蘭", "兰"},
+					{"exfont"},
+				},
+			},
+			tw = {
+				{
+					{"exfont", size="f4"},
+					name = {"蘭"},
+					{"exfont"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 478,
+	},
+	block_00054 = {
+		{"bgm", stop=1},
+		{"cgact", file="cgact", id=17, act="stopact", lv=17, x=0, y=0},
+		{"cgdel", id=17, time=0, alphadel=1, lv=17},
+		{"cgact", file="cgact", id=18, act="stopact", lv=18, x=0, y=0},
+		{"cgdel", id=18, time=0, alphadel=1, lv=18},
+		{"fgact", id=13, ch="蘭13", act="stopact"},
+		{"fgact", ch="蘭13", id=13, lv=13, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"潮を噴き続けること3分。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 487,
+	},
+	block_00055 = {
+		{"se", id=0, stop=1, time=1000},
+		{"se", id=1, stop=1, time=1000},
+		{"se", id=5, stop=1, time=1000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ようやく、燃え盛る火は静まった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 492,
+	},
+	block_00056 = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bg", id=3, file="bg31_1l_00000", x=-300, y=0, lv=3, path=":bg/", sync=1, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=3, lv=3, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"cgact", file="cgact", id=3, act="移動", x=595, y=-5, time=10000, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"残ったのは本の燃えカスと、黒焦げになってしまった体育倉庫。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 499,
+	},
+	block_00057 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=3, lv=3, time=300, alphadel=1, style="reset", x=595, y=-5},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, lv=2, time=300, alphadel=1, style="reset"},
+		{"fg", file="schubert_01m_00002", file1="schubert_01m_00102", file2="schubert_01m_00209", file4="schubert_01m_00402", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, mode=3, x=495, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="シューベルト12", id=12, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="schubert0425", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト"},
+					"「火事を女性器ひとつで消火してしまうなんて――！　ここまでの機転すら兼ね備えているなんて、僕のデータになかったぞ……！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schubert"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯特"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 510,
+	},
+	block_00058 = {
+		{"fg", file="susuko_02m_00002", file1="susuko_02m_00101", file2="susuko_02m_00202", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", ch_origin="スス子", ch="スス子11", mw="mw", sync=0, mode=3, x=-505, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="susuko0606", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子"},
+					"「なかなかできることじゃないすよぉ！　さすがは我らが性帝様っす！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝子"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲子"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 516,
+	},
+	block_00059 = {
+		{"se", id=0, loop=0, file="se_a236"},
+		{"fgact", ch="スス子11", id=11, lv=11, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="シューベルト12", id=12, lv=12, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"周囲から、盛大な拍手があがる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 523,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"……こっちの世界は何をしても褒めてもらえるし、なんか複雑だなぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 525,
+	},
+	block_00061 = {
+		{"se", id=0, stop=1, time=1000},
+		{"fg", file="rin_01m_00001", file1="rin_01m_00101", file2="rin_01m_00215", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", ch_origin="凛", ch="凛14", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="凛14", id=14, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rin0433", path=":vo/", ch="rin"},
+			},
+			ja = {
+				{
+					name = {"凛"},
+					"「ちっ、姉さんったら余計なことを……！　火事の責任を性帝になすりつけSHOに報告し失脚させあわよくば出世できるというハナマリティプランが台無しです……！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"凛", "Rin"},
+				},
+			},
+			cn = {
+				{
+					name = {"凛"},
+				},
+			},
+			tw = {
+				{
+					name = {"凛"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 533,
+	},
+	block_00062 = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00214", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「お前他に言うことないの？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 537,
+	},
+	block_00063 = {
+		{"fg", file="rin_01m_00001", file1="rin_01m_00101", file3="rin_01m_00301", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", ch_origin="凛", ch="凛14", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[1000] = {
+				{"fg", file="rin_01m_00001", file1="rin_01m_00101", file3="rin_01m_00302", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", ch_origin="凛", ch="凛14", mw="mw", sync=0, timestamp=33, delay2=1000, mode=3, x=-5, y=-5},
+				{"fgact", ch="凛14", id=14, act="振動下", loop=1, size=12.5, time=500, ease="easeinout_sine", timestamp=33, delay2=1000},
+			},
+			[999] = {
+				{"transitiontime", time=300, timestamp=33, delay2=1000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rin0434", path=":vo/", ch="rin"},
+			},
+			ja = {
+				{
+					name = {"凛"},
+					"「……これが本当のチン火でぇございます」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"凛", "Rin"},
+				},
+			},
+			cn = {
+				{
+					name = {"凛"},
+				},
+			},
+			tw = {
+				{
+					name = {"凛"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 548,
+	},
+	block_00064 = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file3="jun_01f_00304", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"「やかましいわ」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 552,
+	},
+	block_00065 = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=2},
+		{"cgdel", id=3, time=0, alphadel=1, lv=3},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=14, ch="凛14", ch_origin="凛", lv=14, time=0, sync=0},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_043_00000"},
+		{"ex", time=3000, func="wait"},
+		{"text"},
+		linkback = "block_00064",
+		line = 584,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

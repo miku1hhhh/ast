@@ -1,0 +1,1714 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"MISAKI_01L",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="misaki_01l_00000", file1="misaki_01l_00101", file2="misaki_01l_00207", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,0,01,07,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file3="misaki_01l_00305", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,01,-1,05,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file3="misaki_01l_00309", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,01,-1,09,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file3="misaki_01l_00310", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,01,-1,10,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 18,
+	},
+	block_00005 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00201", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,01,01,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 22,
+	},
+	block_00006 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00202", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,01,02,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 26,
+	},
+	block_00007 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00203", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,01,03,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 30,
+	},
+	block_00008 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00212", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,01,12,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 34,
+	},
+	block_00009 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00220", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,01,20,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 38,
+	},
+	block_00010 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00222", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,01,22,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 42,
+	},
+	block_00011 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00224", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,01,24,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 46,
+	},
+	block_00012 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00226", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,01,26,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 50,
+	},
+	block_00013 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file3="misaki_01l_00303", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,02,-1,03,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 54,
+	},
+	block_00014 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file3="misaki_01l_00304", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,02,-1,04,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 58,
+	},
+	block_00015 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00203", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,02,03,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 62,
+	},
+	block_00016 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00206", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,02,06,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 66,
+	},
+	block_00017 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00209", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,02,09,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 70,
+	},
+	block_00018 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00224", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,02,24,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 74,
+	},
+	block_00019 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00228", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,02,28,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 78,
+	},
+	block_00020 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00209", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,02,9,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 82,
+	},
+	block_00021 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00211", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,03,11,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 86,
+	},
+	block_00022 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00104", file2="misaki_01l_00220", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,04,20,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 90,
+	},
+	block_00023 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00104", file2="misaki_01l_00223", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,04,23,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 94,
+	},
+	block_00024 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00104", file2="misaki_01l_00227", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,04,27,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 98,
+	},
+	block_00025 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00105", file2="misaki_01l_00220", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,05,20,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 102,
+	},
+	block_00026 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file3="misaki_01l_00310", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,-1,10",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 106,
+	},
+	block_00027 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file3="misaki_01l_00302", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,-1,2",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 110,
+	},
+	block_00028 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file3="misaki_01l_00303", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,-1,3",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 114,
+	},
+	block_00029 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file3="misaki_01l_00304", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,-1,4",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 118,
+	},
+	block_00030 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file3="misaki_01l_00305", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,-1,5",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 122,
+	},
+	block_00031 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file3="misaki_01l_00308", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,-1,8",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 126,
+	},
+	block_00032 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file3="misaki_01l_00309", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,-1,9",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 130,
+	},
+	block_00033 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00205", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,05,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 134,
+	},
+	block_00034 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00217", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,17,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 138,
+	},
+	block_00035 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00202", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,2,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 142,
+	},
+	block_00036 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00220", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,20,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 146,
+	},
+	block_00037 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00221", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,21,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 150,
+	},
+	block_00038 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00222", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,22,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 154,
+	},
+	block_00039 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00222", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,22,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 158,
+	},
+	block_00040 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00222", file4="misaki_01l_00401", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,22,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 162,
+	},
+	block_00041 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00223", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,23,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 166,
+	},
+	block_00042 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00223", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,23,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 170,
+	},
+	block_00043 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00224", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,24,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 174,
+	},
+	block_00044 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00225", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,25,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 178,
+	},
+	block_00045 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00226", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,26,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 182,
+	},
+	block_00046 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00203", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,3,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 186,
+	},
+	block_00047 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00204", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,4,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 190,
+	},
+	block_00048 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00204", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,4,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 194,
+	},
+	block_00049 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00206", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,6,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 198,
+	},
+	block_00050 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00209", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,1,9,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 202,
+	},
+	block_00051 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00213", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,2,13,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 206,
+	},
+	block_00052 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00215", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,2,15,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 210,
+	},
+	block_00053 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00222", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,2,22,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 214,
+	},
+	block_00054 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00224", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,2,24,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 218,
+	},
+	block_00055 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00203", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,2,3,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 222,
+	},
+	block_00056 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00205", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,2,5,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 226,
+	},
+	block_00057 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00206", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,2,6,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 230,
+	},
+	block_00058 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00102", file2="misaki_01l_00209", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,2,9,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 234,
+	},
+	block_00059 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file3="misaki_01l_00301", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,-1,1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 238,
+	},
+	block_00060 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file3="misaki_01l_00310", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,-1,10",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 242,
+	},
+	block_00061 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file3="misaki_01l_00312", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,-1,12",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 246,
+	},
+	block_00062 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file3="misaki_01l_00303", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,-1,3",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 250,
+	},
+	block_00063 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file3="misaki_01l_00304", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,-1,4",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 254,
+	},
+	block_00064 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file3="misaki_01l_00306", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,-1,6",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 258,
+	},
+	block_00065 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file3="misaki_01l_00307", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,-1,7",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 262,
+	},
+	block_00066 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file3="misaki_01l_00308", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,-1,8",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 266,
+	},
+	block_00067 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file3="misaki_01l_00309", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,-1,9",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 270,
+	},
+	block_00068 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00201", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 274,
+	},
+	block_00069 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00214", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,14,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 278,
+	},
+	block_00070 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00218", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,18,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 282,
+	},
+	block_00071 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00219", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,19,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 286,
+	},
+	block_00072 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00202", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,2,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 290,
+	},
+	block_00073 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00202", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,2,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 294,
+	},
+	block_00074 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00220", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,20,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 298,
+	},
+	block_00075 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00221", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,21,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 302,
+	},
+	block_00076 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00222", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,22,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 306,
+	},
+	block_00077 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00223", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,23,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 310,
+	},
+	block_00078 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00226", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,26,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 314,
+	},
+	block_00079 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00226", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,26,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 318,
+	},
+	block_00080 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00103", file2="misaki_01l_00207", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,3,7,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 322,
+	},
+	block_00081 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00104", file3="misaki_01l_00305", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,4,-1,5",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 326,
+	},
+	block_00082 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00104", file2="misaki_01l_00211", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,4,11,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 330,
+	},
+	block_00083 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00104", file2="misaki_01l_00223", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,4,23,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 334,
+	},
+	block_00084 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00104", file2="misaki_01l_00223", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,4,23,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 338,
+	},
+	block_00085 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00104", file2="misaki_01l_00225", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,4,25,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 342,
+	},
+	block_00086 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00104", file2="misaki_01l_00227", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,4,27,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 346,
+	},
+	block_00087 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00104", file2="misaki_01l_00206", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,4,6,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 350,
+	},
+	block_00088 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00104", file2="misaki_01l_00209", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,4,9,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 354,
+	},
+	block_00089 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00105", file3="misaki_01l_00304", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,5,-1,4",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 358,
+	},
+	block_00090 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00105", file3="misaki_01l_00307", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,5,-1,7",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 362,
+	},
+	block_00091 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00105", file3="misaki_01l_00308", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,5,-1,8",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 366,
+	},
+	block_00092 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00105", file2="misaki_01l_00211", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,5,11,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 370,
+	},
+	block_00093 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00105", file2="misaki_01l_00214", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,5,14,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 374,
+	},
+	block_00094 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00105", file2="misaki_01l_00202", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,5,2,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 378,
+	},
+	block_00095 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00105", file2="misaki_01l_00220", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,5,20,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 382,
+	},
+	block_00096 = {
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00106", file2="misaki_01l_00227", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,01,6,27,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 386,
+	},
+	block_00097 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00101", file2="misaki_01l_00202", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,01,02,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 390,
+	},
+	block_00098 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00102", file2="misaki_01l_00209", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,02,09,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 394,
+	},
+	block_00099 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00102", file2="misaki_01l_00211", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,02,11,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 398,
+	},
+	block_00100 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00102", file2="misaki_01l_00222", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,02,22,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 402,
+	},
+	block_00101 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00101", file2="misaki_01l_00214", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,1,14,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 406,
+	},
+	block_00102 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00101", file2="misaki_01l_00218", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,1,18,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 410,
+	},
+	block_00103 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00101", file2="misaki_01l_00222", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,1,22,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 414,
+	},
+	block_00104 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00101", file2="misaki_01l_00204", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,1,4,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 418,
+	},
+	block_00105 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00102", file2="misaki_01l_00211", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,2,11,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 422,
+	},
+	block_00106 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00102", file2="misaki_01l_00215", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,2,15,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 426,
+	},
+	block_00107 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00102", file2="misaki_01l_00224", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,2,24,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 430,
+	},
+	block_00108 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00102", file2="misaki_01l_00204", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,2,4,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 434,
+	},
+	block_00109 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00103", file3="misaki_01l_00301", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,3,-1,1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 438,
+	},
+	block_00110 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00105", file3="misaki_01l_00312", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,5,-1,12",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 442,
+	},
+	block_00111 = {
+		{"fg", file="misaki_01l_00002", file1="misaki_01l_00106", file2="misaki_01l_00211", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,02,6,11,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 446,
+	},
+	block_00112 = {
+		{"fg", file="misaki_01l_00004", file1="misaki_01l_00101", file2="misaki_01l_00222", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,04,1,22,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 450,
+	},
+	block_00113 = {
+		{"fg", file="misaki_01l_00004", file1="misaki_01l_00101", file2="misaki_01l_00226", path=":fg/misaki_01l/", id=2, lv=5, head="misaki_01l", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_01L.s25,0,0,0,m,04,1,26,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		line = 454,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

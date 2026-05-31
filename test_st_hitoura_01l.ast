@@ -1,0 +1,214 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"HITOURA_01L",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="hitoura_01l_00001", file2="hitoura_01l_00201", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,-1,01,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="hitoura_01l_00001", file2="hitoura_01l_00209", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,-1,09,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="hitoura_01l_00001", file2="hitoura_01l_00213", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,-1,13,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="hitoura_01l_00001", file2="hitoura_01l_00215", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,-1,15,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 18,
+	},
+	block_00005 = {
+		{"fg", file="hitoura_01l_00001", file2="hitoura_01l_00217", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,-1,17,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 22,
+	},
+	block_00006 = {
+		{"fg", file="hitoura_01l_00001", file2="hitoura_01l_00219", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,-1,19,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 26,
+	},
+	block_00007 = {
+		{"fg", file="hitoura_01l_00001", file2="hitoura_01l_00202", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,-1,2,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 30,
+	},
+	block_00008 = {
+		{"fg", file="hitoura_01l_00001", file2="hitoura_01l_00204", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,-1,4,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 34,
+	},
+	block_00009 = {
+		{"fg", file="hitoura_01l_00001", file1="hitoura_01l_00102", file2="hitoura_01l_00205", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,02,05,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 38,
+	},
+	block_00010 = {
+		{"fg", file="hitoura_01l_00001", file1="hitoura_01l_00102", file2="hitoura_01l_00209", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,02,09,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 42,
+	},
+	block_00011 = {
+		{"fg", file="hitoura_01l_00001", file1="hitoura_01l_00102", file2="hitoura_01l_00216", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,02,16,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 46,
+	},
+	block_00012 = {
+		{"fg", file="hitoura_01l_00001", file1="hitoura_01l_00102", file2="hitoura_01l_00209", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,2,09,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 50,
+	},
+	block_00013 = {
+		{"fg", file="hitoura_01l_00001", file1="hitoura_01l_00102", file2="hitoura_01l_00203", path=":fg/hitoura_01l/", id=2, lv=5, head="hitoura_01l", ch_origin="仁浦", ch="仁浦2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HITOURA_01L.s25,0,0,0,m,01,2,3,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		line = 54,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

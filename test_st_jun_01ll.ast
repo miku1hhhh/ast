@@ -1,0 +1,79 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"JUN_01LL",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="jun_01ll_00000", file1="jun_01ll_00101", file2="jun_01ll_00202", file4="jun_01ll_00401", path=":fg/jun_01ll/", id=2, lv=5, head="jun_01ll", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01LL.s25,0,0,0,m,00,01,02,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="jun_01ll_00003", file1="jun_01ll_00101", file3="jun_01ll_00307", file4="jun_01ll_00402", path=":fg/jun_01ll/", id=2, lv=5, head="jun_01ll", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01LL.s25,0,0,0,m,03,01,-1,07,02",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="jun_01ll_00006", file1="jun_01ll_00101", file2="jun_01ll_00216", path=":fg/jun_01ll/", id=2, lv=5, head="jun_01ll", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01LL.s25,0,0,0,m,06,01,16,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="jun_01ll_00006", file1="jun_01ll_00101", file2="jun_01ll_00227", path=":fg/jun_01ll/", id=2, lv=5, head="jun_01ll", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01LL.s25,0,0,0,m,06,1,27,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		line = 18,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

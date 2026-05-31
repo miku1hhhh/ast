@@ -1,0 +1,49 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"HAME_02L",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="hame_02l_00001", path=":fg/hame_02l/", id=2, lv=5, head="hame_02l", ch_origin="ハメ", ch="ハメ2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HAME_02L.s25,0,0,0,m,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="hame_02l_00002", path=":fg/hame_02l/", id=2, lv=5, head="hame_02l", ch_origin="ハメ", ch="ハメ2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HAME_02L.s25,0,0,0,m,02",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		line = 10,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

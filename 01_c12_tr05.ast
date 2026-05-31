@@ -1,0 +1,6303 @@
+astver = 2.0
+ast = {
+	["0020_00001"] = {
+		{"savetitle", text="01_c12_tr05", ja="冷泉問答 - 再 -", en="The Reizei Dialogue -Revisited-", cn="冷泉问答 - 再 -", tw="冷泉問答 - 再 -"},
+		{"eval", exp="g.01_c12_tr05=1"},
+		{"eval", exp="f.route=1"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bg", id=1, file="bg32_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg32_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_033_00000"},
+		{"se", id=0, loop=0, file="se_a149"},
+		{"cgact", file="cgact", id=1, act="振動下", loop=1, size=2.5, time=500, ease="easeinout_sine", lv=1},
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00216", path=":fg/jun_01f/", id=30, ch="淳之介", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Phew... I need a break.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“呼呜呜呜──休息、休息了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「呼嗚嗚嗚──休息、休息了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "0020_00002",
+		line = 24,
+	},
+	["0020_00002"] = {
+		{"bgm", file="bgm04", vol=100},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m done here, so I’m gonna get something to drink.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"告一段落后，我去拿饮料。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"告一段落後，我去拿飲料。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00001",
+		linknext = "0020_00003",
+		line = 35,
+	},
+	["0020_00003"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Developing TAEs really uses up your sugar reserves.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"果然T-A-E开发需要糖份。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"果然T-A-E開發需要糖份。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00002",
+		linknext = "0020_00004",
+		line = 45,
+	},
+	["0020_00004"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I need to make myself a super sweet tea to recover my brain.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这里应该做点甜到腻的红茶来恢复大脑。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這裡應該做點甜到膩的紅茶來恢復大腦。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00003",
+		linknext = "0020_00005",
+		line = 55,
+	},
+	["0020_00005"] = {
+		{"se", id=0, loop=0, file="se_a002"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bg", id=1, file="bg33_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg33_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_013_00000"},
+		{"se", id=0, stop=1, time=1000},
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00219", path=":fg/jun_01f/", id=30, ch="淳之介", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Touka?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“…………桐香？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「…………桐香？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00004",
+		linknext = "0020_00006",
+		line = 76,
+	},
+	["0020_00006"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"As I enter the room, I see Touka sitting at the table where I usually eat.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我前往大厅，桐香坐在平常吃饭的桌子旁。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我前往大廳，桐香坐在平常吃飯的桌子旁。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00005",
+		linknext = "0020_00007",
+		line = 86,
+	},
+	["0020_00007"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00201", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=250, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0470", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Oh, hello, Tachibana, How’s the development going?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“唉呀，学长辛苦了。开发还顺利吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「唉呀，學長辛苦了。開發還順利嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00006",
+		linknext = "0020_00008",
+		line = 101,
+	},
+	["0020_00008"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00219", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Slowly, but steadily... Why did you throw those documents around? Did you lose something? Can I help?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“慢慢进行中……怎么了，这么多文件散成一团？是有文件不见了吗？要帮忙吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「慢慢進行中……怎麼了，這麼多文件散成一團？是有文件不見了嗎？要幫忙嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00007",
+		linknext = "0020_00009",
+		line = 113,
+	},
+	["0020_00009"] = {
+		{"fg", file="tohka_01m_00004", file1="tohka_01m_00101", file2="tohka_01m_00202", path=":fg/tohka_01m/", id=8, lv=8, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0471", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“No, it’s nothing. My desk is just too small, so I was working here.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“不，只是因为我房间的书桌很小，所以才在这边工作。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「不，只是因為我房間的書桌很小，所以才在這邊工作。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00008",
+		linknext = "0020_00010",
+		line = 128,
+	},
+	["0020_00010"] = {
+		{"se", id=0, loop=0, file="se_a141"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"When I take a closer look, I see that these are the documents that the younger Hanamaru brought earlier.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"仔细一看，这是刚才花丸妹妹她们拿来的文件堆。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"仔細一看，這是剛才花丸妹妹她們拿來的文件堆。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00009",
+		linknext = "0020_00011",
+		line = 139,
+	},
+	["0020_00011"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I was sure that someone finished this task already...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我原本以为，一定有谁刚才把它做完了……。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我原本以為，一定有誰剛才把它做完了……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00010",
+		linknext = "0020_00012",
+		line = 149,
+	},
+	["0020_00012"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00102", file2="jun_01f_00219", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I thought it was already done.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……原来还没做完吗。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……原來還沒做完嗎。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00011",
+		linknext = "0020_00013",
+		line = 161,
+	},
+	["0020_00013"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00202", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=250, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0472", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Hehe! If we worked any longer, it would hinder us tomorrow. I need you all to take a rest, right?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“呵呵，再工作下去会影响明天的，得要让大家休息啊？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「呵呵，再工作下去會影響明天的，得要讓大家休息啊？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00012",
+		linknext = "0020_00014",
+		line = 177,
+	},
+	["0020_00014"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"So she pretended that everything was done and was going to finish it up herself.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"假装成已经全部做完，最后自己再来收拾残局。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"假裝成已經全部做完，最後自己再來收拾殘局。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00013",
+		linknext = "0020_00015",
+		line = 187,
+	},
+	["0020_00015"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even though she told the FS members to go to sleep earlier because it would be a busy day tomorrow.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"明明刚才对FS说，为了准备明天的事要早点睡的……。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"明明剛才對FS說，為了準備明天的事要早點睡的……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00014",
+		linknext = "0020_00016",
+		line = 197,
+	},
+	["0020_00016"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00205", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“They told me that you were still in your uniform... So you didn’t just remember that you still had some work to do, huh?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“既然你还穿着制服……不是刚才突然想到才这么做的吧。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「既然妳還穿著制服……不是剛才突然想到才這麼做的吧。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00015",
+		linknext = "0020_00017",
+		line = 209,
+	},
+	["0020_00017"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"You need to put on your gloves to work with a needle.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"想用“丝线”就要戴手套。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"想用「絲線」就要戴手套。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00016",
+		linknext = "0020_00018",
+		line = 219,
+	},
+	["0020_00018"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This is probably the reason why she was saying that she wanted to stay in her uniform.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"刚才还说想穿制服……所以一开始就打算这么做了吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"剛才還說想穿制服……所以一開始就打算這麼做了吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00017",
+		linknext = "0020_00019",
+		line = 229,
+	},
+	["0020_00019"] = {
+		{"fg", file="tohka_01m_00004", file1="tohka_01m_00101", file2="tohka_01m_00202", path=":fg/tohka_01m/", id=8, lv=8, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0473", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“This is my job, to begin with. I am the student council president.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“这本来就是我的工作。而且我是学生会长啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「這本來就是我的工作。而且我是學生會長啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00018",
+		linknext = "0020_00020",
+		line = 244,
+	},
+	["0020_00020"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"No matter how I look at it, this questionnaire is simply harassment from the SHO management.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"怎么想这些都是SHO高层在恶搞。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"怎麼想這些都是SHO高層在惡搞。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00019",
+		linknext = "0020_00021",
+		line = 254,
+	},
+	["0020_00021"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That the Seiran Homeland Organization set the deadline for tomorrow is clear proof of their ulterior motive—to obstruct the event.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"而且说什么明天就要交，只是想妨害活动进行的企图完全可以看出来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"而且說什麼明天就要交，只是想妨害活動進行的企圖完全可以看出來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00020",
+		linknext = "0020_00022",
+		line = 264,
+	},
+	["0020_00022"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This must be their revenge for the other day.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"大概是之前那事件的报复吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"大概是之前那事件的報復吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00021",
+		linknext = "0020_00023",
+		line = 274,
+	},
+	["0020_00023"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And this is what’s so hard about being the representative—you can’t ignore it.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不过也不能完全无视……这就是负责人的辛苦之处了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不過也不能完全無視……這就是負責人的辛苦之處了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00022",
+		linknext = "0020_00024",
+		line = 284,
+	},
+	["0020_00024"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00218", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“When you spoke your opinion to shut them up earlier... Were those your real thoughts?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“那时让他们闭嘴的意见……是你的真心话吧？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「那時讓他們閉嘴的意見……是妳的真心話吧？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00023",
+		linknext = "0020_00025",
+		line = 296,
+	},
+	["0020_00025"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00212", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0474", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Yeah... That’s not incorrect. To a certain degree, I was following the way of thinking of myself from this world. That’s why it wouldn’t be a faulty statement to say that it was my opinion.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“是啊……某种程度上是抄这世界的我自己的想法，所以说那是我的意见，也不算太有语病吧。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「是啊……某種程度上是抄這世界的我自己的想法，所以說那是我的意見，也不算太有語病吧。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00024",
+		linknext = "0020_00026",
+		line = 311,
+	},
+	["0020_00026"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Followed the way of thinking? Is that even possible?",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"抄想法……这种事办得到吗？",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"抄想法……這種事辦得到嗎？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00025",
+		linknext = "0020_00027",
+		line = 321,
+	},
+	["0020_00027"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Wow. I have no idea what the me of this world thinks.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我完全不知道这世界的我在想什么……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我完全不知道這世界的我在想什麼……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00026",
+		linknext = "0020_00028",
+		line = 332,
+	},
+	["0020_00028"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Touka suggests that maybe my environment in both worlds is simply too different.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"桐香补充道，因为我跟学长的遭遇完全不同吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"桐香補充道，因為我跟學長的遭遇完全不同吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00027",
+		linknext = "0020_00029",
+		line = 342,
+	},
+	["0020_00029"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00201", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0475", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“The biggest factor is that I’m already quite synchronized with the me here.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“还有一点是──我想，我跟这世界的自己的同化很有进展的关系。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「還有一點是──我想，我跟這世界的自己的同化很有進展的關係。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00028",
+		linknext = "0020_00030",
+		line = 357,
+	},
+	["0020_00030"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Memory synchronization.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"记忆同化。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"記憶同化。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00029",
+		linknext = "0020_00031",
+		line = 367,
+	},
+	["0020_00031"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It means that she has started becoming herself from this world.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"也就是成为这个世界的自己。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"也就是成為這個世界的自己。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00030",
+		linknext = "0020_00032",
+		line = 377,
+	},
+	["0020_00032"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I don’t know if this is the world’s ability to correct itself or what... but it’s terrifying.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我不知道什么世界的自我校正……但真的很可怕。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我不知道什麼世界的自我校正……但真的很可怕。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00031",
+		linknext = "0020_00033",
+		line = 387,
+	},
+	["0020_00033"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00214", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=350, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0476", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Still, I am far from understanding what my self from this world was thinking exactly...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“……即使如此，还是很难说自己真的正确地了解了这边的我在想什么。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「……即使如此，還是很難說自己真的正確地了解了這邊的我在想什麼。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00032",
+		linknext = "0020_00034",
+		line = 403,
+	},
+	["0020_00034"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00201", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0477", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“It’s obvious that when you hold so many events and try to reinforce the FS, there will be opposition. Even in our old world, I always had to be conscious of the balance of power.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“举办这么多的活动，加强FS的力量的话，引起反弹也是自然的。事实上我在原本世界也相当重视权力制衡。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「舉辦這麼多的活動，加強FS的力量的話，引起反彈也是自然的。事實上我在原本世界也相當重視權力制衡。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00033",
+		linknext = "0020_00035",
+		line = 418,
+	},
+	["0020_00035"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file3="tohka_02m_00303", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0478", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Still, she was trying to tip the scales her way so much that she went so far as to file these documents... Personally, I don’t get it at all.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“虽说如此，但竟想掌权到做出那种文件……我还是很不了解这边的自己啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「雖說如此，但竟想掌權到做出那種文件……我還是很不了解這邊的自己啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00034",
+		linknext = "0020_00036",
+		line = 433,
+	},
+	["0020_00036"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s wearing a strange expression on her face.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她脸上露出了不可思议的表情。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她臉上露出了不可思議的表情。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00035",
+		linknext = "0020_00037",
+		line = 443,
+	},
+	["0020_00037"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"In a sense, it’s like she’s being burdened by the responsibilities of herself from another world.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"某种意义上，就是背上了其他世界的自己的债吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"某種意義上，就是背上了其他世界的自己的債吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00036",
+		linknext = "0020_00038",
+		line = 453,
+	},
+	["0020_00038"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00202", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=400, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[10000] = {
+				{"fg", file="tohka_01m_00004", file1="tohka_01m_00101", file2="tohka_01m_00228", path=":fg/tohka_01m/", id=8, lv=8, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=2, delay2=10000, mode=3, x=-5, y=-5},
+				{"fgact", ch="桐香8", id=8, act="振動下", loop=2, size=12.5, time=300, ease="easeinout_sine", timestamp=2, delay2=10000},
+				{"se", id=0, loop=0, file="se_a142", timestamp=2, delay2=10000},
+			},
+			[9999] = {
+				{"transitiontime", time=300, timestamp=2, delay2=10000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="tohka0479", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“But there’s no point in complaining that I don’t understand, so let’s make this event a roaring success. In order to go back to our world... Hehehe♪”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“说自己不懂也改变不了什么，所以我们只能让活动成功了。为了回到原本的世界……呵哼──♪”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「說自己不懂也改變不了什麼，所以我們只能讓活動成功了。為了回到原本的世界……呵哼──♪」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00037",
+		linknext = "0020_00039",
+		line = 474,
+	},
+	["0020_00039"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She hums as she gets back to work.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她一边哼着歌，再度开始工作。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她一邊哼著歌，再度開始工作。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00038",
+		linknext = "0020_00040",
+		line = 484,
+	},
+	["0020_00040"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even though she’s so weary, the student council president secretly continues to work.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"明明那么累，却像这样在暗处悄悄继续工作。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"明明那麼累，卻像這樣在暗處悄悄繼續工作。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00039",
+		linknext = "0020_00041",
+		line = 494,
+	},
+	["0020_00041"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"How can she be so eager during the preparations?",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"为什么可以这么热心地准备呢。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"為什麼可以這麼熱心地準備呢。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00040",
+		linknext = "0020_00042",
+		line = 504,
+	},
+	["0020_00042"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I know it’s necessary, but...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然我明白这是必要的……。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然我明白這是必要的……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00041",
+		linknext = "0020_00043",
+		line = 514,
+	},
+	["0020_00043"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Touka is apparently always having fun doing her job.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"即使如此，桐香还是总感觉相当开心。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"即使如此，桐香還是總感覺相當開心。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00042",
+		linknext = "0020_00044",
+		line = 524,
+	},
+	["0020_00044"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Despite it being such a workload...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"明明身上背负如此辛苦的重担。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"明明身上背負如此辛苦的重擔。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00043",
+		linknext = "0020_00045",
+		line = 534,
+	},
+	["0020_00045"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It feels weird to be next to her.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在身边的我觉得相当不可思议。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在身邊的我覺得相當不可思議。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00044",
+		linknext = "0020_00046",
+		line = 544,
+	},
+	["0020_00046"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00205", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“You don’t have to push yourself so hard.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不用勉强喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不用勉強喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00045",
+		linknext = "0020_00047",
+		line = 556,
+	},
+	["0020_00047"] = {
+		{"text"},
+		delay = {
+			[2000] = {
+				{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00209", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=3, delay2=2000, mode=3, x=-5, y=-5},
+				{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=3, delay2=2000},
+			},
+			[1999] = {
+				{"transitiontime", time=300, timestamp=3, delay2=2000},
+			},
+			[6000] = {
+				{"fg", file="tohka_01m_00004", file1="tohka_01m_00101", file2="tohka_01m_00213", path=":fg/tohka_01m/", id=8, lv=8, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=4, delay2=6000, mode=3, x=-5, y=-5},
+			},
+			[5999] = {
+				{"transitiontime", time=300, timestamp=4, delay2=6000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="tohka0480", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“I’m not... Ah, but if I said that I am, would you join the FS in our world? If so, I’m pushing myself very much.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“我没在勉强……啊，要是说勉强，学长在原本世界是加入FS的吧？如果是这样的话，在这边应该很勉强吧？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「我沒在勉強……啊，要是說勉強，學長在原本世界是加入FS的吧？如果是這樣的話，在這邊應該很勉強吧？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00046",
+		linknext = "0020_00048",
+		line = 575,
+	},
+	["0020_00048"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00207", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I’m telling you that’s completely against reason.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“所以我说那件事不该用道理来思考。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「所以我說那件事不該用道理來思考。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00047",
+		linknext = "0020_00049",
+		line = 587,
+	},
+	["0020_00049"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00212", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0481", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Against reason... Well, you never disclosed to me any cause except that you don’t want to. What is the reason?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“道理……这么说来除了说不喜欢，好像没有听你讲过确切的理由。为什么？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「道理……這麼說來除了說不喜歡，好像沒有聽你講過確切的理由。為什麼？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00048",
+		linknext = "0020_00050",
+		line = 602,
+	},
+	["0020_00050"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00211", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I once destroyed the FS.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我是曾经毁灭过FS的男人。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我是曾經毀滅過FS的男人。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00049",
+		linknext = "0020_00051",
+		line = 614,
+	},
+	["0020_00051"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m the guy who took the FS’s place away.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我曾经夺走过FS成员的容身之处。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我曾經奪走過FS成員的容身之處。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00050",
+		linknext = "0020_00052",
+		line = 624,
+	},
+	["0020_00052"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I tried to destroy someone else’s peace of mind in order to imbue them with my righteousness, while I understood nothing.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"什么都不懂，只是想贯彻自己的正义……为了破坏别人的安宁。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"什麼都不懂，只是想貫徹自己的正義……為了破壞別人的安寧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00051",
+		linknext = "0020_00053",
+		line = 634,
+	},
+	["0020_00053"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Such a person can’t join the FS in our world.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这种人在原本世界是不该加入FS的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這種人在原本世界是不該加入FS的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00052",
+		linknext = "0020_00054",
+		line = 644,
+	},
+	["0020_00054"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00204", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0482", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“In the end, the FS was revived, and I think everyone is grateful to you.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“但就结果来说FS复活了，大家也很感谢学长啊……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「但就結果來說FS復活了，大家也很感謝學長啊……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00053",
+		linknext = "0020_00055",
+		line = 659,
+	},
+	["0020_00055"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00211", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“This is a matter of reason. You don’t understand it. If I joined the FS, that would be nothing but deception.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“是脉络的问题。大家并不知道这些事，要是我趁机加入FS，那就是欺骗了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「是脈絡的問題。大家並不知道這些事，要是我趁機加入FS，那就是欺騙了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00054",
+		linknext = "0020_00056",
+		line = 671,
+	},
+	["0020_00056"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That’s why I can’t do that.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但我做不到。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但我做不到。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00055",
+		linknext = "0020_00057",
+		line = 681,
+	},
+	["0020_00057"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file3="jun_01f_00301", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Actually, I... did enter the FS once and betrayed all of you.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“现在我……一度加入了FS，形式上已经背叛了大家就是。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「現在我……一度加入了FS，形式上已經背叛了大家就是。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00056",
+		linknext = "0020_00058",
+		line = 693,
+	},
+	["0020_00058"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00209", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file3="jun_01f_00309", path=":fg/jun_01f/", id=30, ch="淳之介", lv=8, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I don’t wanna do that again.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……我可不想再发生第二次了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……我可不想再發生第二次了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00057",
+		linknext = "0020_00059",
+		line = 708,
+	},
+	["0020_00059"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This is one rule the mature Junnosuke Tachibana wants to follow.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这是稍微有些成长的橘淳之介，无论如何都想守住的底线。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這是稍微有些成長的橘淳之介，無論如何都想守住的底線。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00058",
+		linknext = "0020_00060",
+		line = 718,
+	},
+	["0020_00060"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00204", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00202", path=":fg/jun_01f/", id=30, ch="淳之介", lv=8, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“That’s why I’m happy with my current life.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“所以我其实很喜欢现在的生活喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「所以我其實很喜歡現在的生活喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00059",
+		linknext = "0020_00061",
+		line = 733,
+	},
+	["0020_00061"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I don’t have ties with anyone here, so it feels like I went back to the FS of the past.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“这里的大家没有那些过往……好像当时的FS回来了一样。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「這裡的大家沒有那些過往……好像當時的FS回來了一樣。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00060",
+		linknext = "0020_00062",
+		line = 744,
+	},
+	["0020_00062"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The training was harsh back then.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那时的训练很辛苦。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那時的訓練很辛苦。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00061",
+		linknext = "0020_00063",
+		line = 754,
+	},
+	["0020_00063"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Plus, I saw her as an enemy I needed to defeat, so, of course, my opinion was biased.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"因为当时的我认为他们是必须打倒的敌人，当然也有所偏见……。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"因為當時的我認為他們是必須打倒的敵人，當然也有所偏見……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00062",
+		linknext = "0020_00064",
+		line = 764,
+	},
+	["0020_00064"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Maybe I didn’t actually hate that place called the FS.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"……但我或许意外地不讨厌FS这个地方。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"……但我或許意外地不討厭FS這個地方。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00063",
+		linknext = "0020_00065",
+		line = 774,
+	},
+	["0020_00065"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That’s why I will never do it again.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"所以我不会再一次破坏它。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"所以我不會再一次破壞它。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00064",
+		linknext = "0020_00066",
+		line = 784,
+	},
+	["0020_00066"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I won’t repeat my old mistakes.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不能再重蹈当时的覆辙。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不能再重蹈當時的覆轍。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00065",
+		linknext = "0020_00067",
+		line = 794,
+	},
+	["0020_00067"] = {
+		{"fg", file="tohka_01m_00004", file1="tohka_01m_00101", file2="tohka_01m_00202", path=":fg/tohka_01m/", id=8, lv=8, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=500, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0483", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“I see. If you’re putting it that way, then I won’t push you anymore. It’s a shame, but I’ll give up.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“这样啊。……这样的话我也不能再继续拜托你了，真可惜，我会放弃的。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「這樣啊。……這樣的話我也不能再繼續拜託你了，真可惜，我會放棄的。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00066",
+		linknext = "0020_00068",
+		line = 810,
+	},
+	["0020_00068"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She shrugs her shoulders and gives me a smile. She looks sorry from the bottom of her heart, but also not THAT sorry at the same time.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"桐香像是真心可惜般，用着也没那么严重的笑容耸肩。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"桐香像是真心可惜般，用著也沒那麼嚴重的笑容聳肩。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00067",
+		linknext = "0020_00069",
+		line = 820,
+	},
+	["0020_00069"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00219", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=8},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Actually... Why do you want me to join the FS, Touka?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“相反地……桐香为什么这么想让我加入FS啊？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「相反地……桐香為什麼這麼想讓我加入FS啊？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00068",
+		linknext = "0020_00070",
+		line = 832,
+	},
+	["0020_00070"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I ask her.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我问道。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我問道。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00069",
+		linknext = "0020_00071",
+		line = 842,
+	},
+	["0020_00071"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I know that she has a kind of her own philosophy when it comes to mutual understanding.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"因为相互理解，我知道她拥有某种程度的个人哲学。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"因為相互理解，我知道她擁有某種程度的個人哲學。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00070",
+		linknext = "0020_00072",
+		line = 852,
+	},
+	["0020_00072"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Rei and Ikuko also told me that her sympathy for me may be a bit twisted.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"也从另外两人那里知道，她对于我的事有些不一样的关心。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"也從另外兩人那裡知道，她對於我的事有些不一樣的關心。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00071",
+		linknext = "0020_00073",
+		line = 862,
+	},
+	["0020_00073"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I know that she thinks that I’m having a hard time because of money.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我知道她认为我金钱方面有些困难。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我知道她認為我金錢方面有些困難。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00072",
+		linknext = "0020_00074",
+		line = 872,
+	},
+	["0020_00074"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But why me?",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但，为何是我？",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但，為何是我？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00073",
+		linknext = "0020_00075",
+		line = 882,
+	},
+	["0020_00075"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Why is she so considerate of me?",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"为何要这么担心我？",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"為何要這麼擔心我？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00074",
+		linknext = "0020_00076",
+		line = 892,
+	},
+	["0020_00076"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00212", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=500, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0484", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Yeah... I’ve never thought about that... Hm...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“这个嘛……我没想过这种事……嗯ー”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「這個嘛……我沒想過這種事……嗯ー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00075",
+		linknext = "0020_00077",
+		line = 908,
+	},
+	["0020_00077"] = {
+		{"bgm", stop=1},
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00202", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0485", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Maybe because I just selfishly want you to be like me.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“一定是因为……不希望你变得像我一样，也说不定。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「一定是因為……不希望你變得像我一樣，也說不定。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00076",
+		linknext = "0020_00078",
+		line = 924,
+	},
+	["0020_00078"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She states.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她这么说。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她這麼說。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00077",
+		linknext = "0020_00079",
+		line = 934,
+	},
+	["0020_00079"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00201", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"As I look at her, she stops working and smiles slightly.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我用视线催促，桐香停下手边工作小小微笑。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我用視線催促，桐香停下手邊工作小小微笑。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00078",
+		linknext = "0020_00080",
+		line = 947,
+	},
+	["0020_00080"] = {
+		{"bgm", file="bgm21", vol=100},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0486", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“I never had anyone who would look after me, so I was passed around from place to place. And so, I ended up in the Sakimori family.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“我从小时开始就没有人要领养，一直被各个地方踢来踢去的，最后一个待的地方就是那个驻防家。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「我從小時開始就沒有人要領養，一直被各個地方踢來踢去的，最後一個待的地方就是那個駐防家。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00079",
+		linknext = "0020_00081",
+		line = 960,
+	},
+	["0020_00081"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00218", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=8},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“At old Sakimori’s base, right? The place that’s supposed to be Sparta for servants.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“就是驻防长老──培育仆人的大本营吗。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「就是駐防長老──培育僕人的大本營嗎。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00080",
+		linknext = "0020_00082",
+		line = 972,
+	},
+	["0020_00082"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The little Touka Reizeiin was treated like a slave there.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"小时候冷泉院桐香确实在那里被当成“驻防家的仆人”。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"小時候冷泉院桐香確實在那裡被當成「駐防家的僕人」。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00081",
+		linknext = "0020_00083",
+		line = 982,
+	},
+	["0020_00083"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And slaves don’t need something like their own “self.” They’re only required to loyally serve their duty.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那里需要没有自我，只会忠实完成任务的“驻防家的仆人”。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那裡需要沒有自我，只會忠實完成任務的「駐防家的僕人」。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00082",
+		linknext = "0020_00084",
+		line = 992,
+	},
+	["0020_00084"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00201", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0487", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“However, they branded me as incapable, so I wasn’t able to live even as a servant.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“但我在那边被烙上无能的烙印，连“驻防家的仆人”都当不了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「但我在那邊被烙上無能的烙印，連「駐防家的僕人」都當不了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00083",
+		linknext = "0020_00085",
+		line = 1007,
+	},
+	["0020_00085"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A girl who has nothing.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"什么都没有的少女。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"什麼都沒有的少女。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00084",
+		linknext = "0020_00086",
+		line = 1017,
+	},
+	["0020_00086"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A girl from a monastery, with no family, no ego, and no individuality.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"没有家世也没有自我和个性，只是个伽蓝堂的女孩子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"沒有家世也沒有自我和個性，只是個伽藍堂的女孩子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00085",
+		linknext = "0020_00087",
+		line = 1027,
+	},
+	["0020_00087"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The only thing she had...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这样的她所拥有的只有一个东西──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這樣的她所擁有的只有一個東西──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00086",
+		linknext = "0020_00088",
+		line = 1037,
+	},
+	["0020_00088"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00202", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0488", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“The only thing I had was my name. It means ‘paulownia tree flower.’ My parents wanted me to make people smile at its wonderful smell.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“如桐花般芬芳，笑如花般美丽──只有加入父母这样愿望的名字而已。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「如桐花般芬芳，笑如花般美麗──只有加入父母這樣願望的名字而已。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00087",
+		linknext = "0020_00089",
+		line = 1052,
+	},
+	["0020_00089"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This is the story behind her name “Touka” that she received from her late parents.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"──桐香一名，蕴藏了已故双亲的爱。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"──桐香一名，蘊藏了已故雙親的愛。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00088",
+		linknext = "0020_00090",
+		line = 1062,
+	},
+	["0020_00090"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The only thing that allowed her to keep her identity.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"也是她唯一拥有的自我。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"也是她唯一擁有的自我。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00089",
+		linknext = "0020_00091",
+		line = 1072,
+	},
+	["0020_00091"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That’s Touka Reizeiin.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这就是过去的冷泉院桐香。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這就是過去的冷泉院桐香。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00090",
+		linknext = "0020_00092",
+		line = 1082,
+	},
+	["0020_00092"] = {
+		{"text"},
+		delay = {
+			[6000] = {
+				{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00228", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=5, delay2=6000, mode=3, x=-5, y=-5},
+				{"fgact", ch="桐香8", id=8, act="振動下", loop=2, size=12.5, time=150, ease="easeinout_sine", timestamp=5, delay2=6000},
+			},
+			[5999] = {
+				{"transitiontime", time=300, timestamp=5, delay2=6000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="tohka0489", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Probably this is why I always want to smile. Hehe. I was scolded so many times for grinning like an idiot.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“所以我希望一直都能带着笑容……呵呵，常常被怒骂太过轻浮就是了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「所以我希望一直都能帶著笑容……呵呵，常常被怒罵太過輕浮就是了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00091",
+		linknext = "0020_00093",
+		line = 1098,
+	},
+	["0020_00093"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But even she could find a rescue.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"而这样的她心中的救赎。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"而這樣的她心中的救贖。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00092",
+		linknext = "0020_00094",
+		line = 1108,
+	},
+	["0020_00094"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Her older sister.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那就是姐姐。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那就是姐姐。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00093",
+		linknext = "0020_00095",
+		line = 1118,
+	},
+	["0020_00095"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00202", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0490", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“My sister always understood me. She knew exactly what I was thinking.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“姐姐很理解我，也马上就知道我在想什么。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「姐姐很理解我，也馬上就知道我在想什麼。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00094",
+		linknext = "0020_00096",
+		line = 1133,
+	},
+	["0020_00096"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00201", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[7000] = {
+				{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00211", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=6, delay2=7000, mode=3, x=-5, y=-5},
+				{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=300, ease="easeinout_sine", timestamp=6, delay2=7000},
+			},
+			[6999] = {
+				{"transitiontime", time=300, timestamp=6, delay2=7000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="tohka0491", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“She never spoke much, but she kissed me a lot. On the cheek or the forehead, of course.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“姐姐的话虽然很少，但常常会亲我……啊，亲只是亲脸颊或额头喔？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「姐姐的話雖然很少，但常常會親我……啊，親只是親臉頰或額頭喔？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00095",
+		linknext = "0020_00097",
+		line = 1152,
+	},
+	["0020_00097"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file3="jun_01f_00309", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=8},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Why are you acting so modestly now?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“你干嘛解释啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「妳幹嘛解釋啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00096",
+		linknext = "0020_00098",
+		line = 1164,
+	},
+	["0020_00098"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That was the way for Touka’s sister to express her love.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"桐香的姐姐是借此表现出她的爱吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"桐香的姐姐是藉此表現出她的愛吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00097",
+		linknext = "0020_00099",
+		line = 1174,
+	},
+	["0020_00099"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Still, Touka didn’t know what her sister was thinking.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"即使如此，她还是不知道姐姐在想些什么。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"即使如此，她還是不知道姐姐在想些什麼。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00098",
+		linknext = "0020_00100",
+		line = 1184,
+	},
+	["0020_00100"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She couldn’t comprehend whether her sister pities her, sympathizes with her, or simply loves her.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"是觉得可怜呢，还是悲伤呢，还是只是爱着她呢，都没有办法理解。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"是覺得可憐呢，還是悲傷呢，還是只是愛著她呢，都沒有辦法理解。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00099",
+		linknext = "0020_00101",
+		line = 1194,
+	},
+	["0020_00101"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00201", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0492", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“That’s why I thought this. If my sister understands me when she kisses me on the cheek, then maybe the failure that I am will also understand her when I kiss her on the lips.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“所以我能透过姐姐亲脸颊来了解自我……可能就算是我这么笨拙的人，亲嘴的话就能理解了也说不定，我是这样想的。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「所以我能透過姐姐親臉頰來了解自我……可能就算是我這麼笨拙的人，親嘴的話就能理解了也說不定，我是這樣想的。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00100",
+		linknext = "0020_00102",
+		line = 1209,
+	},
+	["0020_00102"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file3="jun_01f_00301", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=8},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Mutual understanding, huh...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……也就是相互理解吗。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……也就是相互理解嗎。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00101",
+		linknext = "0020_00103",
+		line = 1221,
+	},
+	["0020_00103"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Well, her concept is basically correct.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"形成桐香思想根基的是和他者的相互理解。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"形成桐香思想根基的是和他者的相互理解。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00102",
+		linknext = "0020_00104",
+		line = 1231,
+	},
+	["0020_00104"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She truly wants to understand the other person.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"能够毫无误会地和对方相互理解。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"能夠毫無誤會地和對方相互理解。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00103",
+		linknext = "0020_00105",
+		line = 1241,
+	},
+	["0020_00105"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Apparently, only after she came to this island, did she get to know that you can understand your partner easier when your mucous membrane touch.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她透过黏膜接触来理解别人，我是来到这座岛上才知道的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她透過黏膜接觸來理解別人，我是來到這座島上才知道的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00104",
+		linknext = "0020_00106",
+		line = 1251,
+	},
+	["0020_00106"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She wanted to be like her sister.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她想成为姐姐那样的人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她想成為姐姐那樣的人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00105",
+		linknext = "0020_00107",
+		line = 1261,
+	},
+	["0020_00107"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She wanted to be a person who’s kind and can understand other people’s feelings.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"想成为温柔又能理解他人的人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"想成為溫柔又能理解他人的人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00106",
+		linknext = "0020_00108",
+		line = 1271,
+	},
+	["0020_00108"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It hasn’t changed even after she was sold to this island where she’s being treated like a goddess.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"即使被卖到这座岛上，被当成超人或天才，也没有改变。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"即使被賣到這座島上，被當成超人或天才，也沒有改變。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00107",
+		linknext = "0020_00109",
+		line = 1281,
+	},
+	["0020_00109"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"However, there’s no such person on Seiran Island who would understand her as her sister did.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"青蓝岛上没有像姐姐那样理解自己的人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"青藍島上沒有像姐姐那樣理解自己的人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00108",
+		linknext = "0020_00110",
+		line = 1291,
+	},
+	["0020_00110"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She found comrades who are eager to support her, but everyone approaches her with awe, respect, or fear.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然有支持自己的伙伴，但她们对自己抱持敬畏，甚至是畏惧，来跟她相处。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然有支持自己的夥伴，但她們對自己抱持敬畏，甚至是畏懼，來跟她相處。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00109",
+		linknext = "0020_00111",
+		line = 1301,
+	},
+	["0020_00111"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file3="tohka_02m_00313", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0493", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Rei and Ikuko are well aware that they’re my subordinates. This is necessary to maintain balance in an organization.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“礼或郁子，为了保持组织平衡，所以才当我的部下。当然我也知道。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「禮或郁子，為了保持組織平衡，所以才當我的部下。當然我也知道。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00110",
+		linknext = "0020_00112",
+		line = 1316,
+	},
+	["0020_00112"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"However, there was no one but her sister who could try to know the real Touka Reizeiin.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但是没有人想理解真正的冷泉院桐香。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但是沒有人想理解真正的冷泉院桐香。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00111",
+		linknext = "0020_00113",
+		line = 1326,
+	},
+	["0020_00113"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"No... probably even her sister couldn’t understand her.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不……或许连那个姐姐也不是真的理解她也说不定。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不……或許連那個姐姐也不是真的理解她也說不定。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00112",
+		linknext = "0020_00114",
+		line = 1336,
+	},
+	["0020_00114"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s always been alone.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她──总是一个人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她──總是一個人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00113",
+		linknext = "0020_00115",
+		line = 1346,
+	},
+	["0020_00115"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The only one on the top.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"顶点，只会有一个人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"頂點，只會有一個人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00114",
+		linknext = "0020_00116",
+		line = 1356,
+	},
+	["0020_00116"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00201", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0494", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“That’s why I didn’t want to find such a person... I didn’t want anyone to become like me.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“所以我不希望打造出这样的人……不想要做出跟我一样的人。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「所以我不希望打造出這樣的人……不想要做出跟我一樣的人。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00115",
+		linknext = "0020_00117",
+		line = 1371,
+	},
+	["0020_00117"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00213", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0495", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“I didn’t want that for you either.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“也不希望你变得像我。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「也不希望你變得像我。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00116",
+		linknext = "0020_00118",
+		line = 1386,
+	},
+	["0020_00118"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But she couldn’t realize it.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但是该说是她没有自觉吗。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但是該說是她沒有自覺嗎。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00117",
+		linknext = "0020_00119",
+		line = 1396,
+	},
+	["0020_00119"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She was just blindly acting based on her obsession that some things have to be done a particular way.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"只是根据着“应该这样做”的强迫观念在含糊地行动。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"只是根據著「應該這樣做」的強迫觀念在含糊地行動。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00118",
+		linknext = "0020_00120",
+		line = 1406,
+	},
+	["0020_00120"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This behavioral pattern may be called both genius and one of habit.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"该说是天才还是习性般的行动模式。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"該說是天才還是習性般的行動模式。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00119",
+		linknext = "0020_00121",
+		line = 1416,
+	},
+	["0020_00121"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The cause of an “initial impulse” is said to be the most fierce.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"最激烈而被称为“原始冲动”的理由。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"最激烈而被稱為「原始衝動」的理由。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00120",
+		linknext = "0020_00122",
+		line = 1426,
+	},
+	["0020_00122"] = {
+		{"fg", file="tohka_01m_00004", file1="tohka_01m_00101", file2="tohka_01m_00202", path=":fg/tohka_01m/", id=8, lv=8, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0496", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“You were the ones who made me notice it, Tachibana.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“注意到这点的只有你们喔，学长？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「注意到這點的只有你們喔，學長？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00121",
+		linknext = "0020_00123",
+		line = 1441,
+	},
+	["0020_00123"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00102", file2="jun_01f_00219", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=8},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Really...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我、们……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我、們……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00122",
+		linknext = "0020_00124",
+		line = 1453,
+	},
+	["0020_00124"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It happened on the boat that was taking the FS members back.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这是在FS的成员们被强制遣返回国时，发生在那艘遣返船上的事。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這是在FS的成員們被強制遣返回國時，發生在那艘遣返船上的事。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00123",
+		linknext = "0020_00125",
+		line = 1463,
+	},
+	["0020_00125"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"What Hinami said back then was right on the mark.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"当时雏见不经意的一句话──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"當時雛見不經意的一句話──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00124",
+		linknext = "0020_00126",
+		line = 1473,
+	},
+	["0020_00126"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She described Touka’s heart perfectly, in a way even Touka herself could never do.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"说中了连自己都不清楚的少女的心。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"說中了連自己都不清楚的少女的心。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00125",
+		linknext = "0020_00127",
+		line = 1483,
+	},
+	["0020_00127"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Touka, who sees the world with pure eyes, would never be able to put it into words.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那不带一丝阴霾的眼睛看着世界，看着少女。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那不帶一絲陰霾的眼睛看著世界，看著少女。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00126",
+		linknext = "0020_00128",
+		line = 1493,
+	},
+	["0020_00128"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But Hinami saw right through her.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"完全看透了她的心。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"完全看透了她的心。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00127",
+		linknext = "0020_00129",
+		line = 1503,
+	},
+	["0020_00129"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00201", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0497", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“That’s why there was a meaning to that battle.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“所以才说那场战争也有其意义。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「所以才說那場戰爭也有其意義。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00128",
+		linknext = "0020_00130",
+		line = 1518,
+	},
+	["0020_00130"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She ponders.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她说道。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她說道。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00129",
+		linknext = "0020_00131",
+		line = 1528,
+	},
+	["0020_00131"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00202", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0498", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“There was a meaning to all those days we spent fighting you. There was a meaning to the days when we couldn’t understand each other.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“和你们战争的日子，是有意义的。互相无法理解的日子也有意义──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「和你們戰爭的日子，是有意義的。互相無法理解的日子也有意義──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00130",
+		linknext = "0020_00132",
+		line = 1543,
+	},
+	["0020_00132"] = {
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00228", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=300, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0499", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“And I’m really happy about that.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“……这对我来说是非常高兴的事。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「……這對我來說是非常高興的事。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00131",
+		linknext = "0020_00133",
+		line = 1559,
+	},
+	["0020_00133"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Understanding another person by connecting with their mucous membranes.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"──透过黏膜接触来理解对手。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"──透過黏膜接觸來理解對手。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00132",
+		linknext = "0020_00134",
+		line = 1569,
+	},
+	["0020_00134"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Normally, that’s not possible.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这可不是普通能办到的事。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這可不是普通能辦到的事。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00133",
+		linknext = "0020_00135",
+		line = 1579,
+	},
+	["0020_00135"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But if it was, she would have figured it out with her brilliant deduction.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"要是能办到，大概也是因为她天生的洞察力导出的结论吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"要是能辦到，大概也是因為她天生的洞察力導出的結論吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00134",
+		linknext = "0020_00136",
+		line = 1589,
+	},
+	["0020_00136"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Still, I felt like saying that aloud would be awful.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"把这些想法说出口，感觉实在太过残酷。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"把這些想法說出口，感覺實在太過殘酷。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00135",
+		linknext = "0020_00137",
+		line = 1599,
+	},
+	["0020_00137"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s not something I should say when she wants to understand another person from the bottom of her heart.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"因为过去的孤独，少女打从心底想要理解其他人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"因為過去的孤獨，少女打從心底想要理解其他人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00136",
+		linknext = "0020_00138",
+		line = 1609,
+	},
+	["0020_00138"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Ironically, because of her brilliance, she absolutely lacks the ability to sympathize with other people.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但讽刺的是她却因为天才性，完全缺乏这样的能力。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但諷刺的是她卻因為天才性，完全缺乏這樣的能力。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00137",
+		linknext = "0020_00139",
+		line = 1619,
+	},
+	["0020_00139"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This is how the student council president, Touka Reizeiin, is.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不了解人心的学生会长，冷泉院桐香。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不了解人心的學生會長，冷泉院桐香。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00138",
+		linknext = "0020_00140",
+		line = 1629,
+	},
+	["0020_00140"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"In spite of the fact that what she wants the most is mutual understanding, she can’t possibly be further from achieving it.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"过去生存的地方，是最不寻求相互理解的场所。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"過去生存的地方，是最不尋求相互理解的場所。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00139",
+		linknext = "0020_00141",
+		line = 1639,
+	},
+	["0020_00141"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"At the end of the day, she keeps living not being able to gain understanding, and always remains alone.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就算终于能好好面对无法相互理解的日子，也还是很孤独。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就算終於能好好面對無法相互理解的日子，也還是很孤獨。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00140",
+		linknext = "0020_00142",
+		line = 1649,
+	},
+	["0020_00142"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file3="jun_01f_00301", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=8},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……………………”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……………………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00141",
+		linknext = "0020_00143",
+		line = 1661,
+	},
+	["0020_00143"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m certain that only people close to her know the truth.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"应该只有亲近的人才知道这些事。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"應該只有親近的人才知道這些事。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00142",
+		linknext = "0020_00144",
+		line = 1671,
+	},
+	["0020_00144"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"In that sense, there are very few individuals who can understand her.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在这个层面上，果然",
+					{"ruby", text="・・・・・"},
+					"理解她的人",
+					{"/ruby"},
+					"相当少。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在這個層面上，果然",
+					{"ruby", text="・・・・・"},
+					"理解她的人",
+					{"/ruby"},
+					"相當少。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00143",
+		linknext = "0020_00145",
+		line = 1681,
+	},
+	["0020_00145"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"There’s a side to her that has incredible charisma, exceptional fighting skills, and an ability to attract everyone around her...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"发挥领袖魅力并拥有一骑当千的战斗能力，吸引周遭的人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"發揮領袖魅力並擁有一騎當千的戰鬥能力，吸引周遭的人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00144",
+		linknext = "0020_00146",
+		line = 1691,
+	},
+	["0020_00146"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And the completely opposite side that is unable to perform daily activities, is sloppy in everything she does, and unintentionally irritates people.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"没有办法好好过日常生活，做什么都麻烦，无意识会惹怒人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"沒有辦法好好過日常生活，做什麼都麻煩，無意識會惹怒人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00145",
+		linknext = "0020_00147",
+		line = 1701,
+	},
+	["0020_00147"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"No one would believe it if I told them that. Just like the FS members didn’t earlier today.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就算说出口也不会有人信的吧，就像刚才的FS们那样。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就算說出口也不會有人信的吧，就像剛才的FS們那樣。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00146",
+		linknext = "0020_00148",
+		line = 1711,
+	},
+	["0020_00148"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even I wouldn’t have known her, had I not become her babysitter.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我要是没有照顾桐香，也不会这么了解她。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我要是沒有照顧桐香，也不會這麼了解她。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00147",
+		linknext = "0020_00149",
+		line = 1721,
+	},
+	["0020_00149"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Still, both sides of Touka belong to the same person after all.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"即使如此，果然哪一边的桐香都是她自己。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"即使如此，果然哪一邊的桐香都是她自己。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00148",
+		linknext = "0020_00150",
+		line = 1731,
+	},
+	["0020_00150"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This crooked balance is what makes her imperfect and puts her at risk.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这种不平衡造成她的不安定感，也带有一些扭曲──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這種不平衡造成她的不安定感，也帶有一些扭曲──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00149",
+		linknext = "0020_00151",
+		line = 1741,
+	},
+	["0020_00151"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That’s exactly why she’s so lonely.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"──所以她非常地孤独。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"──所以她非常地孤獨。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00150",
+		linknext = "0020_00152",
+		line = 1751,
+	},
+	["0020_00152"] = {
+		{"fg", file="tohka_01m_00004", file1="tohka_01m_00101", file2="tohka_01m_00208", path=":fg/tohka_01m/", id=8, lv=8, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=300, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0500", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Phew... I feel so tired. I probably talked too much.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“呼啊ー总觉得有点疲倦，因为说太多话了吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「呼啊ー總覺得有點疲倦，因為說太多話了嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00151",
+		linknext = "0020_00153",
+		line = 1767,
+	},
+	["0020_00153"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Of course there was meaning to those fighting days.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那些战斗的日子当然有意义。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那些戰鬥的日子當然有意義。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00152",
+		linknext = "0020_00154",
+		line = 1777,
+	},
+	["0020_00154"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I earned various things. I can’t say that it ended badly for me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我也赢得很多东西，不认为那样有错。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我也贏得很多東西，不認為那樣有錯。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00153",
+		linknext = "0020_00155",
+		line = 1787,
+	},
+	["0020_00155"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But I wonder if it really had a point for her.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但那对她来说真的有意义吗？",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但那對她來說真的有意義嗎？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00154",
+		linknext = "0020_00156",
+		line = 1797,
+	},
+	["0020_00156"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"What meaning did it have for me, her caretaker, and for our relationship?",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					{"ruby", text="・・・・・・・・"},
+					"对于跟她相处的我",
+					{"/ruby"},
+					"，还有我们的关系来说，究竟有什么意义呢？",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					{"ruby", text="・・・・・・・・"},
+					"對於跟她相處的我",
+					{"/ruby"},
+					"，還有我們的關係來說，究竟有什麼意義呢？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00155",
+		linknext = "0020_00157",
+		line = 1807,
+	},
+	["0020_00157"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Honestly, I don’t know at the moment.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"现在的我，老实说并不清楚。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"現在的我，老實說並不清楚。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00156",
+		linknext = "0020_00158",
+		line = 1817,
+	},
+	["0020_00158"] = {
+		{"fg", file="tohka_01m_00004", file1="tohka_01m_00101", file2="tohka_01m_00219", path=":fg/tohka_01m/", id=8, lv=8, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=250, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0501", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“I could work some more if someone hugged me though...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“要是你紧抱我一下，我还可以再努力一下喔ー？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「要是你緊抱我一下，我還可以再努力一下喔ー？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00157",
+		linknext = "0020_00159",
+		line = 1833,
+	},
+	["0020_00159"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00207", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=8},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“A’ight, come ’ere!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……好，来吧！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……好，來吧！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00158",
+		linknext = "0020_00160",
+		line = 1845,
+	},
+	["0020_00160"] = {
+		{"se", id=0, loop=0, file="se_a098"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=8, ch="桐香8", ch_origin="桐香", lv=8, time=0, sync=0},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"evset", file="tcg03_1", set="tcg03_1", path=":ev/tcg03_1/"},
+		{"evset", file="tcg03_1l01040105-1", set="tcg03_1l0", path=":ev/tcg03_1l0/"},
+		{"bg", id=18, file="tcg03_1l01040105-1", x=-1250, y=-408.5, path=":cg/tcg03_1l/", lv=18, ev=1, alpha=0, sync=1, a_chr151=1, bx=800, by=450},
+		{"cgact", file="cgact", id=18, lv=18, act="表示アクション", a1=0, a2=255, time=1000, a_chr=151, alpha=255, x=-1250, y=-408.5},
+		{"cgact", file="cgact", id=18, act="移動", x=-100, y=-200.5, time=1000, lv=18},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0502", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Aaaaaah! It’s so healing...!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“呼啊啊啊……被治愈了──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「呼啊啊啊……被治癒了──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00159",
+		linknext = "0020_00161",
+		line = 1886,
+	},
+	["0020_00161"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She always looks like she’s laughing.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她像是平常那样笑着。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她像是平常那樣笑著。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00160",
+		linknext = "0020_00162",
+		line = 1896,
+	},
+	["0020_00162"] = {
+		{"evset", file="tcg03_1", set="tcg03_1", path=":ev/tcg03_1/"},
+		{"evset", file="tcg03_1l01040206-1", set="tcg03_1l0", path=":ev/tcg03_1l0/"},
+		{"bg", id=19, file="tcg03_1l01040206-1", x=-1350, y=-608.5, path=":cg/tcg03_1l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0503", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Hehe! I could get addicted to this... Mmm...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“呵呵……这个，真让人沉迷啊……嗯呜ー”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「呵呵……這個，真讓人沉迷啊……嗯嗚ー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00161",
+		linknext = "0020_00163",
+		line = 1913,
+	},
+	["0020_00163"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00210", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=8},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“You finally understood, huh? Idiot.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“你终于明白了吗，这个小笨蛋……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「妳終於明白了嗎，這個小笨蛋……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00162",
+		linknext = "0020_00164",
+		line = 1925,
+	},
+	["0020_00164"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Maybe this is because she unconsciously wants to make her parents’ wish hidden in her name come true.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"或许是她无意识地觉得──想要实现父母的愿望，那个加诸于名字的愿望也说不定。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"或許是她無意識地覺得──想要實現父母的願望，那個加諸於名字的願望也說不定。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00163",
+		linknext = "0020_00165",
+		line = 1935,
+	},
+	["0020_00165"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That’s why she wants everyone to smile as well.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"所以她才会希望一直对大家笑着。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"所以她才會希望一直對大家笑著。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00164",
+		linknext = "0020_00166",
+		line = 1945,
+	},
+	["0020_00166"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But... people’s hearts can’t always be smiling.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但是──在心里不可能一直笑着才对。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但是──在心裡不可能一直笑著才對。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00165",
+		linknext = "0020_00167",
+		line = 1955,
+	},
+	["0020_00167"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Environmental changes affect her genius nature and her abnormalities, even if she’s the object of everyone’s awe and respect caused by her genius.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"环境跟当时不同了，拥有天才性跟超常特质，成为所有人都感到畏惧的对象。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"環境跟當時不同了，擁有天才性跟超常特質，成為所有人都感到畏懼的對象。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00166",
+		linknext = "0020_00168",
+		line = 1965,
+	},
+	["0020_00168"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"No one could truly understand her.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"没有人能成为理解她的人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"沒有人能成為理解她的人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00167",
+		linknext = "0020_00169",
+		line = 1975,
+	},
+	["0020_00169"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even Rei and Ikuko. They are aware that they can’t understand Touka.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"即使是礼前辈或郁子，也都像她们自觉的那样，没有打算理解真正的桐香。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"即使是禮前輩或郁子，也都像她們自覺的那樣，沒有打算理解真正的桐香。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00168",
+		linknext = "0020_00170",
+		line = 1985,
+	},
+	["0020_00170"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"From their point of view, they’re her subordinates, so they aren’t actually her equals.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"因为是部下，不是真正意义上的对等存在，那两人是这样想的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"因為是部下，不是真正意義上的對等存在，那兩人是這樣想的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00169",
+		linknext = "0020_00171",
+		line = 1995,
+	},
+	["0020_00171"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Now, I know what I must do.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那么我。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那麼我。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00170",
+		linknext = "0020_00172",
+		line = 2005,
+	},
+	["0020_00172"] = {
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_024_00000"},
+		{"colortone", style="sepia", sync=1},
+		{"bg", id=2, file="bg33_3_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file2="ikuko_02m_00229", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"fg", file="rei_01m_00008", file1="rei_01m_00101", file2="rei_01m_00207", path=":fg/rei_01m/", id=9, lv=9, head="rei_01m", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=2, file="bg33_3_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file2="ikuko_02m_00229", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"fg", file="rei_01m_00008", file1="rei_01m_00101", file2="rei_01m_00207", path=":fg/rei_01m/", id=9, lv=9, head="rei_01m", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_024_00000"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei0416", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“So... Please become her real supporter who understands her, Junnosuke.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“所以……淳之介，请你成为桐香大人真正的理解者吧。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「所以……淳之介，請你成為桐香大人真正的理解者吧。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00171",
+		linknext = "0020_00173",
+		line = 2054,
+	},
+	["0020_00173"] = {
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=10, ch="郁子10", ch_origin="郁子", lv=10, time=0, sync=0},
+		{"fg", mode=-1, id=9, ch="礼9", ch_origin="礼", lv=9, time=0, sync=0},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_024_00000"},
+		{"colortone", style="reset", sync=1},
+		{"bg", id=1, file="bg33_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00228", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"bg", id=1, file="bg33_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"fg", file="tohka_02m_00004", file1="tohka_02m_00101", file2="tohka_02m_00228", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_024_00000"},
+		{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=350, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka0504", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Hehe... I’ll do my best now, Tachibana.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“呵呵……我要再开始努力工作啰，学长？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「呵呵……我要再開始努力工作囉，學長？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00172",
+		linknext = "0020_00174",
+		line = 2088,
+	},
+	["0020_00174"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She used to be my enemy.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"过去的敌人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"過去的敵人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00173",
+		linknext = "0020_00175",
+		line = 2098,
+	},
+	["0020_00175"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We were leaders of opposing organizations.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"应该打倒的组织的领袖。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"應該打倒的組織的領袖。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00174",
+		linknext = "0020_00176",
+		line = 2108,
+	},
+	["0020_00176"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But now I’m here fighting right beside her.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"现在却和她一起战斗的我。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"現在卻和她一起戰鬥的我。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00175",
+		linknext = "0020_00177",
+		line = 2118,
+	},
+	["0020_00177"] = {
+		{"fg", file="jun_01f_00003", file1="jun_01f_00101", file2="jun_01f_00202", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=8},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Yep! You can do it, Touka!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……啊啊，加油，桐香！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……啊啊，加油，桐香！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00176",
+		linknext = "0020_00178",
+		line = 2130,
+	},
+	["0020_00178"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Maybe I can truly understand her?",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"能成为真正的理解者吗？",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"能成為真正的理解者嗎？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0020_00177",
+		linknext = "block_00178",
+		line = 2140,
+	},
+	block_00178 = {
+		{"bgm", stop=1},
+		{"bgm", stop=1},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fg", mode=-1, id=8, ch="桐香8", ch_origin="桐香", lv=8, time=0, sync=0},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_043_00000"},
+		{"ex", time=3000, func="wait"},
+		{"excall", file="01_c13"},
+		{"text"},
+		linkback = "0020_00178",
+		line = 2157,
+	},
+	label = {
+		top = { block="0020_00001", label=1 },
+	},
+}

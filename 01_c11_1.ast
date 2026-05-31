@@ -1,0 +1,6577 @@
+astver = 2.0
+ast = {
+	["0014_00001"] = {
+		{"savetitle", text="01_c11_1", ja="異世界性触道１", en="Isekai Dilemma 1", cn="异世界性爱道1", tw="異世界性愛道1"},
+		{"eval", exp="g.01_c11_1=1"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"se", id=0, loop=0, file="se_a137"},
+		{"bg", id=1, file="bg14_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg14_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_033_00000"},
+		{"transitiontime", time=0},
+		{"ex", time=1500, func="wait"},
+		{"se", id=1, loop=1, file="se_d008", vol=50},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The class bursts into an uproar as soon as the bell rings.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"钟声响起，教室瞬间被喧哗声给淹没。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"鐘聲響起，教室瞬間被喧嘩聲給淹沒。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "0014_00002",
+		line = 23,
+	},
+	["0014_00002"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Time for lunch break, the brief moment of respite we students are given to satisfy our hunger, whether physical or sexual.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"午休时间到了。对学生们来说，这短暂的休息时间，是用来满足食欲和性欲的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"午休時間到了。對學生們來說，這短暫的休息時間，是用來滿足食慾和性慾的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00001",
+		linknext = "0014_00003",
+		line = 33,
+	},
+	["0014_00003"] = {
+		{"se", id=0, stop=1, time=1000},
+		{"se", id=1, loop=1, file="se_d011", vol=50},
+		{"bg", id=2, file="bg14_1l_00000", x=0, y=-150, lv=2, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="gmoba0066", path=":vo/", ch="gmob"},
+			},
+			ja = {
+				{
+					name = {"モブ女A", "城姫系女子A"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"モブ女A", "Shirohime-like Girl A"},
+					"“Mmfff❤ Every opening in my body’s fortress is being blocked! I’m getting worn out through attrition❤ Nooo❤ The keep past my ass is gonna faaalll❤❤”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"モブ女A", "城堡公主型女子A"},
+					"“喔嗯",
+					{"gaiji", text="①"},
+					"身体所有的洞都被塞满，被围城攻击了",
+					{"gaiji", text="①"},
+					"不行",
+					{"gaiji", text="①"},
+					"屁股里的本阵要被攻下了",
+					{"gaiji", text="①"},
+					{"gaiji", text="①"},
+					"”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"モブ女A", "城堡公主型女子A"},
+					"「喔嗯",
+					{"gaiji", text="①"},
+					"身體所有的洞都被塞滿，被圍城攻擊了",
+					{"gaiji", text="①"},
+					"不行",
+					{"gaiji", text="①"},
+					"屁股裡的本陣要被攻下了",
+					{"gaiji", text="①"},
+					{"gaiji", text="①"},
+					"」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00002",
+		linknext = "0014_00004",
+		line = 49,
+	},
+	["0014_00004"] = {
+		{"text"},
+		delay = {
+			[10000] = {
+				{"se", id=0, loop=0, file="se_b112", timestamp=1, delay2=10000},
+				{"cgact", file="cgact", id=2, act="浮遊", loop=6, size=15, time=50, ease="easeinout_sine", timestamp=1, delay2=10000, lv=2},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="bmobb0030", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"モブ男B", "股下勃起遅漏"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"モブ男B", "Came in Pants"},
+					"“Did you really think you could protect your lord with an asshole this loose?! I’m conquering all your barriers in this genital siege. Not a single drop of blood will be shed! Get pregnant, wench!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"モブ男B", "胯下勃起晚泄"},
+					"“你这么松的屁眼还以为可以守住城主吗！？我就用我股间的一夜城来帮你无血开城吧，我已经把信长大人的肉棒放在怀中用体温热好了，就从后城门让你怀孕吧喂！狩猎女体！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"モブ男B", "胯下勃起晚洩"},
+					"「妳這麼鬆的屁眼還以為可以守住城主嗎！？我就用我股間的一夜城來幫妳無血開城吧，我已經把信長大人的肉棒放在懷中用體溫熱好了，就從後城門讓妳懷孕吧喂！狩獵女體！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00003",
+		linknext = "0014_00005",
+		line = 63,
+	},
+	["0014_00005"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"se", id=1, stop=1, time=5000},
+		{"se", id=0, loop=0, file="se_a084"},
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"bg", id=1, file="bg15_1_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg15_1_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_008_00000"},
+		{"se", id=5, loop=1, file="se_d012", vol=50},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I walk out into the hallway, passing by students having perverted sex while reviewing our earlier lesson.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我瞥了一眼一面温习刚才上课的内容，一面做色色的事的同学们，走出了教室。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我瞥了一眼一面溫習剛才上課的內容，一面做色色的事的同學們，走出了教室。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00004",
+		linknext = "0014_00006",
+		line = 85,
+	},
+	["0014_00006"] = {
+		{"fg", file="susuko_02m_00001", file1="susuko_02m_00101", file2="susuko_02m_00201", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", alpha=0, ch_origin="スス子", ch="スス子11", mw="mw", sync=1, a_chr151=1, mode=3, x=-605, y=-5},
+		{"fgact", ch="スス子11", id=11, lv=11, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="スス子11", id=11, act="移動", x=200, y=0, time=700},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"fg", file="susuko_02m_00001", file1="susuko_02m_00101", file2="susuko_02m_00202", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", ch_origin="スス子", ch="スス子11", mw="mw", sync=0, timestamp=2, delay2=1500, mode=3, x=-405, y=-5},
+			},
+			[1499] = {
+				{"transitiontime", time=300, timestamp=2, delay2=1500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="susuko0118", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susuko"},
+					"“Sir! ’Bana! Let’s eat together and start slogging away at our Ultimate Pussy Breakout Game work!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝子"},
+					"“Sir丝！阿橘！一起吃午餐边讨论大蜜穴逃脱吧！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲子"},
+					"「Sir絲！阿橘！一起吃午餐邊討論大蜜穴逃脫吧！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00005",
+		linknext = "0014_00007",
+		line = 103,
+	},
+	["0014_00007"] = {
+		{"fg", file="schubert_01m_00002", file2="schubert_01m_00207", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", alpha=0, ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=1, a_chr151=1, mode=3, x=595, y=-5},
+		{"fgact", ch="シューベルト12", id=12, lv=12, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="シューベルト12", id=12, act="移動", x=-200, y=0, time=700},
+		{"text"},
+		delay = {
+			[3500] = {
+				{"fg", file="schubert_01m_00002", file2="schubert_01m_00205", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, timestamp=3, delay2=3500, mode=3, x=395, y=-5},
+			},
+			[3499] = {
+				{"transitiontime", time=300, timestamp=3, delay2=3500},
+			},
+			[6400] = {
+				{"fg", file="schubert_01m_00002", file2="schubert_01m_00202", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=12, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, timestamp=4, delay2=6400, mode=3, x=395, y=-5},
+				{"fgact", ch="シューベルト12", id=12, act="振動下", loop=2, size=5, time=200, ease="easeinout_sine", timestamp=4, delay2=6400},
+			},
+			[6399] = {
+				{"transitiontime", time=300, timestamp=4, delay2=6400},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="schubert0099", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schubert"},
+					"“There is a high probability that a fried egg will be a part of lunch today. My data won’t stop going on about how hungry it is... Come on, you don’t need to rush...!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯特"},
+					"“今天的便当很有可能有煎蛋。我的数据只要肚子饿就会喧闹不已……喂喂，别那么急啊……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯特"},
+					"「今天的便當很有可能有玉子燒。我的數據只要肚子餓就會喧鬧不已……喂喂，別那麼急啊……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00006",
+		linknext = "0014_00008",
+		line = 125,
+	},
+	["0014_00008"] = {
+		{"fg", file="susuko_02m_00001", file1="susuko_02m_00102", file2="susuko_02m_00212", path=":fg/susuko_02m/", id=11, lv=11, head="susuko_02m", ch_origin="スス子", ch="スス子11", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"fgact", ch="スス子11", id=11, act="移動", x=-200, y=0, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="susuko0119", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susuko"},
+					"“This guy’s started speaking to his data now... Seems terminal, if you ask me...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝子"},
+					"“这个人老是不自觉就讲起数据的话题……时间没有很多耶……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲子"},
+					"「這個人老是不自覺就講起數據的話題……時間沒有很多耶……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00007",
+		linknext = "0014_00009",
+		line = 140,
+	},
+	["0014_00009"] = {
+		{"fg", file="rin_01m_00001", file1="rin_01m_00101", file2="rin_01m_00202", path=":fg/rin_01m/", id=14, lv=14, head="rin_01m", alpha=0, ch_origin="凛", ch="凛14", mw="mw", sync=1, a_chr151=1, mode=3, x=-5, y=195},
+		{"fgact", ch="凛14", id=14, lv=14, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="凛14", id=14, act="移動", x=0, y=-200, time=700},
+		{"fgact", ch="シューベルト12", id=12, act="移動", x=200, y=0, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rin0099", path=":vo/", ch="rin"},
+			},
+			ja = {
+				{
+					name = {"凛"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"凛", "Rin"},
+					"“Ah, the three stooges. I just received a divine revelation telling me to piss in the bath to give an indirect golden shower to any perverted coed bathers. You may join me this once if you want.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"凛"},
+					"“唉呀这不是三笨蛋吗。刚才我受到天启，正打算公告要大家在温泉里放尿、进行色色混浴，让其他人间接玩到放尿Play，我可以特别允许你们加入喔？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"凛"},
+					"「唉呀這不是三笨蛋嗎。剛才我受到天啟，正打算公告要大家在溫泉裡放尿、進行色色混浴，讓其他人間接玩到放尿Play，我可以特別允許你們加入喔？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00008",
+		linknext = "0014_00010",
+		line = 156,
+	},
+	["0014_00010"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00211", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Sorry, I’ve got a little something to do today...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“抱歉，我今天有点事──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「抱歉，我今天有點事──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00009",
+		linknext = "0014_00011",
+		line = 168,
+	},
+	["0014_00011"] = {
+		{"se", id=5, stop=1, time=1000},
+		{"fgact", ch="スス子11", id=11, lv=11, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="シューベルト12", id=12, lv=12, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="凛14", id=14, lv=14, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"se", id=0, loop=0, file="se_a003"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I turn down the FS’s invitation—as well as another strange one I think I heard—and proceed down the hall alone.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我拒绝了FS等人的邀请──也包含了怪人的──一个人走在走廊上。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我拒絕了FS等人的邀請──也包含了怪人的──一個人走在走廊上。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00010",
+		linknext = "0014_00012",
+		line = 186,
+	},
+	["0014_00012"] = {
+		{"se", id=5, stop=1, time=1000},
+		{"se", id=0, stop=1, time=1000},
+		{"bg", id=2, file="bg15_1l_00000", x=-300, y=-50, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I eventually arrive in front of the elevator.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我抵达的是电梯前。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我抵達的是電梯前。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00011",
+		linknext = "0014_00013",
+		line = 200,
+	},
+	["0014_00013"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’ve used it so many times before, but it feels like it’s been so long since I last did this.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"明明已经搭过无数次，却觉得相当怀念。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"明明已經搭過無數次，卻覺得相當懷念。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00012",
+		linknext = "0014_00014",
+		line = 210,
+	},
+	["0014_00014"] = {
+		{"se", id=0, loop=0, file="se_a112"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1000, rule="eff_023_00000"},
+		{"ex", time=500, func="wait"},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00204", path=":fg/jun_01f/", id=30, ch="淳之介", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“If it’s in this state, let’s go up, up, down, down, left, right, left, right...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“在这个状态下，按上・上・下・下・左・右・左・右──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「在這個狀態下，按上・上・下・下・左・右・左・右──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00013",
+		linknext = "0014_00015",
+		line = 253,
+	},
+	["0014_00015"] = {
+		{"se", id=0, loop=0, file="se_a113"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I input the specific sequence of button presses, and then...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"按下特定的按键，然后──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"按下特定的按鍵，然後──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00014",
+		linknext = "0014_00016",
+		line = 264,
+	},
+	["0014_00016"] = {
+		{"ex", time=800, func="wait"},
+		{"se", id=0, loop=0, file="se_a112"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bg", id=1, file="bg12_2_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg12_2_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_044_00000"},
+		{"se", id=1, loop=0, file="se_a126"},
+		{"ex", time=500, func="wait"},
+		{"bg", id=1, file="bg12_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg12_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"extrans", sync=0, time=1000},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00209", path=":fg/jun_01f/", id=30, ch="淳之介", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“──────”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「──────」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00015",
+		linknext = "0014_00017",
+		line = 291,
+	},
+	["0014_00017"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I knew it’d be here.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"果然有。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"果然有。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00016",
+		linknext = "0014_00018",
+		line = 301,
+	},
+	["0014_00018"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The NLNS’s operations room has been operational.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"NLNS的作战室还维持着机能。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"NLNS的作戰室還維持著機能。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00017",
+		linknext = "0014_00019",
+		line = 311,
+	},
+	["0014_00019"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It wouldn’t make sense for most of them to be missing during sex classes otherwise.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"如果没有这个，在上H课时，除了一部分的人以外都没被路人目击到也太奇怪了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"如果沒有這個，在上H課時，除了一部分的人以外都沒被路人目擊到也太奇怪了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00018",
+		linknext = "0014_00020",
+		line = 321,
+	},
+	["0014_00020"] = {
+		{"bg", id=2, file="bg12_3l_00000", x=400, y=0, lv=2, path=":bg/", sync=1, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=2, lv=2, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"cgact", file="cgact", id=2, act="移動", x=-805, y=-5, time=20000, lv=2},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file3="jun_01f_00309", path=":fg/jun_01f/", id=30, ch="淳之介", lv=2, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“It’s basically the exact same...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“几乎没怎么变呢──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「幾乎沒怎麼變呢──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00019",
+		linknext = "0014_00021",
+		line = 336,
+	},
+	["0014_00021"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"While it does feel like a few objects have been moved around, it’s basically the exact same space that I know.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然感觉摆设的位置有点变了，但跟我印象中的样子几乎一样。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然感覺擺設的位置有點變了，但跟我印象中的樣子幾乎一樣。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00020",
+		linknext = "0014_00022",
+		line = 346,
+	},
+	["0014_00022"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The air. The smell. The atmosphere.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这股空气。这种气味。这种氛围。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這股空氣。這種氣味。這種氛圍。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00021",
+		linknext = "0014_00023",
+		line = 356,
+	},
+	["0014_00023"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This place that was just for us. It only exists in my memories in World A, now that we can no longer enter inside.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在A世界中我已经不能进去，只留在回忆中的、只属于我们的场所。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在A世界中我已經不能進去，只留在回憶中的、只屬於我們的場所。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00022",
+		linknext = "0014_00024",
+		line = 366,
+	},
+	["0014_00024"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But in this world, the NLNS’s secret base is still alive and well...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在这边的世界，NLNS的秘密基地还在──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在這邊的世界，NLNS的秘密基地還在──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00023",
+		linknext = "0014_00025",
+		line = 376,
+	},
+	["0014_00025"] = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, lv=2, time=300, alphadel=1, style="reset", x=-805, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0028", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ", "？？？"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "???"},
+					"“...Huh?! Really, Misaki?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "？？？"},
+					"“……呃呃，这是真的吗，美岬酱！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "？？？"},
+					"「……呃呃，這是真的嗎，美岬醬！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00024",
+		linknext = "0014_00026",
+		line = 390,
+	},
+	["0014_00026"] = {
+		{"se", id=0, loop=0, file="se_a098"},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=1, size=5, time=150, ease="easeinout_sine", lv=1},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00102", file2="jun_01f_00209", path=":fg/jun_01f/", id=30, ch="淳之介", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“──────！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「──────！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00025",
+		linknext = "0014_00027",
+		line = 404,
+	},
+	["0014_00027"] = {
+		{"se", id=0, loop=0, file="se_a112"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The elevator opens.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"电梯门开了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"電梯門開了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00026",
+		linknext = "0014_00028",
+		line = 415,
+	},
+	["0014_00028"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Shit. Someone’s here.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不妙，有人来了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不妙，有人來了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00027",
+		linknext = "0014_00029",
+		line = 425,
+	},
+	["0014_00029"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I need to find somewhere to hide—",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"有没有地方可以躲──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"有沒有地方可以躲──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00028",
+		linknext = "0014_00030",
+		line = 435,
+	},
+	["0014_00030"] = {
+		{"se", id=0, loop=0, file="se_a088"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=2},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=300, rule="eff_009_00000"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I rush to escape inside of a locker full of sex toys.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我急忙躲进收纳成人玩具的柜子中。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我急忙躲進收納成人玩具的櫃子中。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00029",
+		linknext = "0014_00031",
+		line = 475,
+	},
+	["0014_00031"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Another awfully nostalgic feeling.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这种感觉也非常怀念。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這種感覺也非常懷念。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00030",
+		linknext = "0014_00032",
+		line = 485,
+	},
+	["0014_00032"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I peek through the locker’s vents.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"然后我从柜子的透气孔偷窥外面。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"然後我從櫃子的透氣孔偷窺外面。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00031",
+		linknext = "0014_00033",
+		line = 495,
+	},
+	["0014_00033"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bg", id=18, file="nozokiana_l_00000", x=0, y=0, lv=18, path=":cg/nozokiana_l/", sync=0, ev=1, ax=960, ay=540, bx=-160, by=-90},
+		{"bg", id=1, file="bg12_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg12_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=18, file="nozokiana_l_00000", x=0, y=0, lv=18, path=":cg/nozokiana_l/", sync=0, ev=1, ax=960, ay=540, bx=-160, by=-90},
+		{"extrans", sync=0, time=600},
+		{"se", id=0, loop=0, file="se_a042", vol=50},
+		{"fg", file="fumino_01m_00007", file1="fumino_01m_00101", file2="fumino_01m_00201", path=":fg/fumino_01m/", id=7, lv=7, head="fumino_01m", ch_origin="文乃", ch="文乃7", mw="mw", sync=0, mode=3, x=595, y=-105},
+		{"fgact", ch="文乃7", id=7, act="移動", x=-1400, y=100, time=4000},
+		{"fgact", ch="文乃7", id=7, act="振動下", loop=5, size=10, time=250, ease="easeinout_sine"},
+		{"transitiontime", time=0},
+		{"ex", time=1300, func="wait"},
+		{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file3="misaki_01m_00308", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=595, y=-105},
+		{"fgact", ch="美岬6", id=6, act="移動", x=-1400, y=100, time=4000},
+		{"fgact", ch="美岬6", id=6, act="振動下", loop=5, size=10, time=250, ease="easeinout_sine"},
+		{"transitiontime", time=0},
+		{"ex", time=1600, func="wait"},
+		{"fg", file="nanase_01m_00001", file1="nanase_01m_00101", file2="nanase_01m_00207", path=":fg/nanase_01m/", id=4, lv=4, head="nanase_01m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, mode=3, x=595, y=-105},
+		{"fgact", ch="奈々瀬4", id=4, act="移動", x=-1400, y=100, time=4000},
+		{"fgact", ch="奈々瀬4", id=4, act="振動下", loop=5, size=10, time=250, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"fg", file="hinami_02m_00001", file1="hinami_02m_00101", file2="hinami_02m_00202", path=":fg/hinami_02m/", id=5, lv=5, head="hinami_02m", ch_origin="ヒナミ", ch="ヒナミ5", mw="mw", sync=0, timestamp=5, delay2=1500, mode=3, x=595, y=-105},
+				{"fgact", ch="ヒナミ5", id=5, act="移動", x=-1400, y=100, time=4000, timestamp=5, delay2=1500},
+				{"fgact", ch="ヒナミ5", id=5, act="振動下", loop=5, size=10, time=250, ease="easeinout_sine", timestamp=5, delay2=1500},
+			},
+		},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Everyone in the NLNS exits the elevator, with the exception of Asa.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"除了麻沙酱以外的所有NLNS的成员，纷纷从电梯走了出来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"除了麻沙醬以外的所有NLNS的成員，紛紛從電梯走了出來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00032",
+		linknext = "0014_00034",
+		line = 530,
+	},
+	["0014_00034"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"They’re all holding lunches.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"手上拿着便当。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"手上拿著便當。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00033",
+		linknext = "0014_00035",
+		line = 540,
+	},
+	["0014_00035"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Seems like it’s time to eat.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"看来是要来吃午餐的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"看來是要來吃午餐的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00034",
+		linknext = "0014_00036",
+		line = 550,
+	},
+	["0014_00036"] = {
+		{"bgm", file="bgm07", vol=100},
+		{"se", id=0, stop=1, time=1000},
+		{"fg", mode=-1, id=4, ch="奈々瀬4", ch_origin="奈々瀬", lv=4, time=0, sync=0},
+		{"fg", mode=-1, id=5, ch="ヒナミ5", ch_origin="ヒナミ", lv=5, time=0, sync=0},
+		{"fg", mode=-1, id=6, ch="美岬6", ch_origin="美岬", lv=6, time=0, sync=0},
+		{"fg", mode=-1, id=7, ch="文乃7", ch_origin="文乃", lv=7, time=0, sync=0},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=1, file="bg12_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg12_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_049_00000"},
+		{"ex", time=300, func="wait"},
+		{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file3="misaki_01m_00309", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[2000] = {
+				{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file2="misaki_01m_00226", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, timestamp=6, delay2=2000, mode=3, x=-5, y=-5},
+			},
+			[1999] = {
+				{"transitiontime", time=300, timestamp=6, delay2=2000},
+			},
+			[5700] = {
+				{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file3="misaki_01m_00301", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, timestamp=7, delay2=5700, mode=3, x=-5, y=-5},
+			},
+			[5699] = {
+				{"transitiontime", time=300, timestamp=7, delay2=5700},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="misaki0040", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“...But it’s true! I was training with a vise to make my ass stronger and a sound came out of my butt that sounded just like a wind instrument playing a D!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“……真的真的！之前做了加强臀肌的万力训练后，屁股就能发出类似管乐器的Re的声音了！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「……真的真的！之前做了加強臀肌的萬力訓練後，屁股就能發出類似管樂器的Re的聲音了！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00035",
+		linknext = "0014_00037",
+		line = 588,
+	},
+	["0014_00037"] = {
+		{"fg", file="nanase_02m_00001", file1="nanase_02m_00101", file2="nanase_02m_00210", path=":fg/nanase_02m/", id=4, lv=4, head="nanase_02m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, mode=3, x=595, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="奈々瀬4", id=4, act="振動下", loop=1, size=12.5, time=450, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase0027", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Whaaat? Are you sure you didn’t just put too much strength into it and fart?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“欸～？不是单纯因为使力，所以漏了点屁吗～？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「欸～？不是單純因為使力，所以漏了點屁嗎～？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00036",
+		linknext = "0014_00038",
+		line = 603,
+	},
+	["0014_00038"] = {
+		{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file3="misaki_01m_00304", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[3800] = {
+				{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file2="misaki_01m_00202", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, timestamp=8, delay2=3800, mode=3, x=-5, y=-5},
+				{"fgact", ch="美岬6", id=6, act="振動下", loop=6, size=-15, time=150, ease="easeinout_sine", timestamp=8, delay2=3800},
+			},
+			[3799] = {
+				{"transitiontime", time=300, timestamp=8, delay2=3800},
+			},
+			[5600] = {
+				{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file2="misaki_01m_00204", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, timestamp=9, delay2=5600, mode=3, x=-5, y=-5},
+			},
+			[5599] = {
+				{"transitiontime", time=300, timestamp=9, delay2=5600},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="misaki0041", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“That’s the thing, though! I saw online that there’s a lot of medieval art of people with trumpets up their butts, and I think they were on to something...!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“关于这点啊，我看到旧留言板上有人写，好像一面大喊‘和上低音号令人惊讶地相似’，一面拿蒟篛打自己的屁股就可以有这种效果……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「關於這點啊，我看到舊留言板上有人寫，好像一面大喊『和上低音號令人驚訝地相似』，一面拿蒟篛打自己的屁股就可以有這種效果……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00037",
+		linknext = "0014_00039",
+		line = 625,
+	},
+	["0014_00039"] = {
+		{"fg", file="fumino_01m_00007", file1="fumino_01m_00101", file2="fumino_01m_00201", path=":fg/fumino_01m/", id=7, lv=7, head="fumino_01m", ch_origin="文乃", ch="文乃7", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino0043", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Indubitably... The grip area of a tuba is in fact twisted in much the same way as the large intestine...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“唔……因为上低音号的握把部分，像大肠那样弯来弯去的吧……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「唔……因為上低音號的握把部分，像大腸那樣彎來彎去的吧……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00038",
+		linknext = "0014_00040",
+		line = 639,
+	},
+	["0014_00040"] = {
+		{"fgact", ch="奈々瀬4", id=4, act="移動", x=-600, y=0, time=1000},
+		{"fgact", ch="美岬6", id=6, act="移動", x=-600, y=0, time=1000},
+		{"fgact", ch="文乃7", id=7, lv=7, act="表示アクション", alpha=0, alphadel=1, style="reset", time=400},
+		{"fgact", ch="文乃7", id=7, act="移動", x=-200, y=0, time=700},
+		{"fg", file="hinami_02m_00001", file1="hinami_02m_00101", file3="hinami_02m_00302", path=":fg/hinami_02m/", id=5, lv=5, head="hinami_02m", alpha=0, ch_origin="ヒナミ", ch="ヒナミ5", mw="mw", sync=1, a_chr151=1, mode=3, x=795, y=-5},
+		{"fgact", ch="ヒナミ5", id=5, lv=5, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ヒナミ5", id=5, act="移動", x=-200, y=0, time=700},
+		{"text"},
+		delay = {
+			[3500] = {
+				{"fg", file="hinami_02m_00001", file1="hinami_02m_00101", file2="hinami_02m_00202", path=":fg/hinami_02m/", id=5, lv=5, head="hinami_02m", ch_origin="ヒナミ", ch="ヒナミ5", mw="mw", sync=0, timestamp=10, delay2=3500, mode=3, x=595, y=-5},
+			},
+			[3499] = {
+				{"transitiontime", time=300, timestamp=10, delay2=3500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="hinami0029", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Wow, so there’s an instrument inside your butt, Misaki? That’s amazing!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“也就是美岬酱的肚子里有乐器吗，好厉害喔！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「也就是美岬醬的肚子裡有樂器嗎，好厲害喔！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00039",
+		linknext = "0014_00041",
+		line = 662,
+	},
+	["0014_00041"] = {
+		{"fg", file="misaki_02m_00001", file1="misaki_02m_00101", file2="misaki_02m_00222", path=":fg/misaki_02m/", id=6, lv=6, head="misaki_02m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=100},
+		{"fgact", ch="美岬6", id=6, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0042", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“Hey, who are you calling such a fatty that she’s a taiko rump master?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“谁会胖到有那种能放进乐器的巨大太鼓肚子啊！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「誰會胖到有那種能放進樂器的巨大太鼓肚子啊！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00040",
+		linknext = "0014_00042",
+		line = 678,
+	},
+	["0014_00042"] = {
+		{"fg", file="hinami_01m_00001", file1="hinami_01m_00102", file2="hinami_01m_00221", path=":fg/hinami_01m/", id=5, lv=5, head="hinami_01m", ch_origin="ヒナミ", ch="ヒナミ5", mw="mw", sync=0, mode=3, x=595, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="ヒナミ5", id=5, act="振動下", loop=1, size=12.5, time=250, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0030", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“I-I didn’t call anyone that...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“我、我没说啊……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「我、我沒說啊……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00041",
+		linknext = "0014_00043",
+		line = 694,
+	},
+	["0014_00043"] = {
+		{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file3="misaki_01m_00308", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[4000] = {
+				{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file3="misaki_01m_00301", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, timestamp=11, delay2=4000, mode=3, x=-605, y=-5},
+			},
+			[3999] = {
+				{"transitiontime", time=300, timestamp=11, delay2=4000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="misaki0043", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“Still, doesn’t it feel like people who play instruments are good at sex for whatever reason? Like, they must really know how to use their fingers.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“但感觉玩乐器的人，好像都有种很擅长做爱的感觉嘛？好像手指会很厉害不是吗。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「但感覺玩樂器的人，好像都有種很擅長做愛的感覺嘛？好像手指會很厲害不是嗎。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00042",
+		linknext = "0014_00044",
+		line = 712,
+	},
+	["0014_00044"] = {
+		{"fg", file="nanase_01m_00001", file1="nanase_01m_00101", file3="nanase_01m_00306", path=":fg/nanase_01m/", id=4, lv=4, head="nanase_01m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[2000] = {
+				{"fg", file="nanase_01m_00001", file1="nanase_01m_00101", file2="nanase_01m_00210", path=":fg/nanase_01m/", id=4, lv=4, head="nanase_01m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, timestamp=12, delay2=2000, mode=3, x=-5, y=-5},
+			},
+			[1999] = {
+				{"transitiontime", time=300, timestamp=12, delay2=2000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="nanase0028", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“You’re being way too prejudiced here. Wind instruments train your lung capacity, so maybe people who play them can go for a longer time with their mouth.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“喂这也太偏见了吧。管乐器因为能锻炼肺活量，所以用嘴巴做的时候可以撑很久，像这类的吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「喂這也太偏見了吧。管樂器因為能鍛鍊肺活量，所以用嘴巴做的時候可以撐很久，像這類的嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00043",
+		linknext = "0014_00045",
+		line = 730,
+	},
+	["0014_00045"] = {
+		{"fg", file="misaki_02m_00001", file1="misaki_02m_00101", file2="misaki_02m_00202", path=":fg/misaki_02m/", id=6, lv=6, head="misaki_02m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0044", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“Just look at the name of the trombone! It’s like an instrument for serious perverts only, a dick ready to get hard at any moment!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“长号这种光是名字就很像有点勃起的棒棒，感觉就是超色的人专用的乐器啊！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「長號這種光是名字就很像有點勃起的棒棒，感覺就是超色的人專用的樂器啊！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00044",
+		linknext = "0014_00046",
+		line = 745,
+	},
+	["0014_00046"] = {
+		{"fg", file="nanase_02m_00001", file1="nanase_02m_00101", file2="nanase_02m_00204", path=":fg/nanase_02m/", id=4, lv=4, head="nanase_02m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"fg", file="nanase_02m_00001", file1="nanase_02m_00101", file2="nanase_02m_00221", path=":fg/nanase_02m/", id=4, lv=4, head="nanase_02m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, timestamp=13, delay2=1500, mode=3, x=-5, y=-5},
+			},
+			[1499] = {
+				{"transitiontime", time=300, timestamp=13, delay2=1500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="nanase0029", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“The word tuba kinda sounds perverted too, don’t you think?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“低音号也是总觉得名字听起来有点色呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「低音號也是總覺得名字聽起來有點色呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00045",
+		linknext = "0014_00047",
+		line = 763,
+	},
+	["0014_00047"] = {
+		{"fg", file="misaki_02m_00001", file1="misaki_02m_00101", file2="misaki_02m_00223", path=":fg/misaki_02m/", id=6, lv=6, head="misaki_02m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=100},
+		{"fgact", ch="美岬6", id=6, act="振動下", loop=2, size=12.5, time=175, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It seems that even Nanase starts telling dirty jokes when she’s only around other girls.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"如果只有女性在场的话，就连奈奈濑好像也相当会开黄色笑话。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"如果只有女性在場的話，就連奈奈瀨好像也相當會開黃色笑話。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00046",
+		linknext = "0014_00048",
+		line = 777,
+	},
+	["0014_00048"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Though we’ve known each other for so long, I’m learning this here for the first time.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然认识很久了，但今天第一次知道。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然認識很久了，但今天第一次知道。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00047",
+		linknext = "0014_00049",
+		line = 787,
+	},
+	["0014_00049"] = {
+		{"fgact", ch="奈々瀬4", id=4, lv=4, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="ヒナミ5", id=5, lv=5, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="美岬6", id=6, lv=6, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The girls loudly chat away as they move to the rec room and begin eating lunch.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"吵闹聊天的女孩子们往休憩室移动，开始吃起了午餐。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"吵鬧聊天的女孩子們往休憩室移動，開始吃起了午餐。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00048",
+		linknext = "0014_00050",
+		line = 803,
+	},
+	["0014_00050"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=12, time=0, alphadel=1, lv=5},
+		{"cgdel", id=13, time=0, alphadel=1, lv=5},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"cgdel", id=15, time=0, alphadel=1, lv=5},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=18, file="oldkcg10_00003", x=0, y=0, lv=18, path=":cg/oldkcg10/", ev=1, ax=805, ay=453, bx=-5, by=-3},
+		{"bg", id=1, file="bg12_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=18, file="oldkcg10_00003", x=0, y=0, lv=18, path=":cg/oldkcg10/", ev=1, ax=805, ay=453, bx=-5, by=-3},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=800, rule="eff_009_00000"},
+		{"fg", file="hinami_01f_00001", file1="hinami_01f_00101", file2="hinami_01f_00212", path=":fg/hinami_01f/", id=30, ch="ヒナミ", lv=18, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0031", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Still, Misaki. Where on the internet do you see things like that? I go online a lot myself, but I’ve never seen anything dirty before.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“话说美岬酱，你是在什么网站看到这种东西的啊？我也常上网，但好像没看过色色的东西啊？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「話說美岬醬，妳是在什麼網站看到這種東西的啊？我也常上網，但好像沒看過色色的東西啊？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00049",
+		linknext = "0014_00051",
+		line = 857,
+	},
+	["0014_00051"] = {
+		{"fg", file="fumino_01f_00007", file1="fumino_01f_00101", file2="fumino_01f_00201", path=":fg/fumino_01f/", id=30, ch="文乃", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino0044", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Perhaps your mother has configured it so that you can’t, out of concern for you...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“难道家长没有设定挡掉这类网站的东西吗……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「難道家長沒有設定擋掉這類網站的東西嗎……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00050",
+		linknext = "0014_00052",
+		line = 870,
+	},
+	["0014_00052"] = {
+		{"fg", file="nanase_02f_00001", file1="nanase_02f_00101", file2="nanase_02f_00202", path=":fg/nanase_02f/", id=30, ch="奈々瀬", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase0030", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Oh, a child lock...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“喔喔，儿童安全上网防制……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「喔喔，兒童安全上網防制……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00051",
+		linknext = "0014_00053",
+		line = 883,
+	},
+	["0014_00053"] = {
+		{"fg", file="hinami_02f_00001", file1="hinami_02f_00101", file2="hinami_02f_00218", path=":fg/hinami_02f/", id=30, ch="ヒナミ", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=18},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0032", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“But I’m not a child!!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“但我不是小孩啊！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「但我不是小孩啊！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00052",
+		linknext = "0014_00054",
+		line = 896,
+	},
+	["0014_00054"] = {
+		{"fg", file="misaki_01f_00001", file1="misaki_01f_00101", file2="misaki_01f_00226", path=":fg/misaki_01f/", id=30, ch="美岬", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0045", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“Allow me to explain! Long ago, a message board and link aggregator that specialized in fellatio known as Cumthing Awful gave rise to a new era.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“我来说明一下！很久以前有口交专用的留言板连结串，叫做‘舔藏’。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「我來說明一下！很久以前有口交專用的留言板連結串，叫做『舔藏』。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00053",
+		linknext = "0014_00055",
+		line = 909,
+	},
+	["0014_00055"] = {
+		{"fg", file="misaki_01f_00001", file1="misaki_01f_00101", file3="misaki_01f_00304", path=":fg/misaki_01f/", id=30, ch="美岬", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0046", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“After that, a group of extreme anal masturbators created a thread-based message board called PooChannel, and that style of website began to dominate.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“后来，过激派屁眼爱好者制作的匿名留言板‘",
+					{"ruby", text="肛资"},
+					"ｋ２",
+					{"/ruby"},
+					"channel’变成了主流。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「後來，過激派屁眼愛好者製作的匿名留言板『",
+					{"ruby", text="肛資"},
+					"ｋ２",
+					{"/ruby"},
+					"channel』變成了主流。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00054",
+		linknext = "0014_00056",
+		line = 922,
+	},
+	["0014_00056"] = {
+		{"fg", file="misaki_01f_00001", file1="misaki_01f_00101", file3="misaki_01f_00309", path=":fg/misaki_01f/", id=30, ch="美岬", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0047", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“They’ve since turned over a new leaf to become a global all-purpose perversion board known as WhoreChan, now the leading edge of perverted copulation!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“然后最近，重新改名再出发的色色综合留言板‘",
+					{"ruby", text="尻尻"},
+					"４５",
+					{"/ruby"},
+					"channel’，正式站上变态交尾的最前线啰！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「然後最近，重新改名再出發的色色綜合留言板『",
+					{"ruby", text="尻尻"},
+					"４５",
+					{"/ruby"},
+					"channel』，正式站上變態交尾的最前線囉！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00055",
+		linknext = "0014_00057",
+		line = 935,
+	},
+	["0014_00057"] = {
+		{"fg", file="fumino_02f_00007", file1="fumino_02f_00101", file2="fumino_02f_00214", path=":fg/fumino_02f/", id=30, ch="文乃", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino0045", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Indubitably...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“嗯嗯……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「嗯嗯……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00056",
+		linknext = "0014_00058",
+		line = 948,
+	},
+	["0014_00058"] = {
+		{"fg", file="hinami_01f_00001", file1="hinami_01f_00101", file2="hinami_01f_00201", path=":fg/hinami_01f/", id=30, ch="ヒナミ", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=18},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0033", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Wow, Misaki! Of course you’d know more about perverted stuff than anyone else here...!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“不愧是美岬酱！在我们这群人之中，最熟悉色色的事情……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「不愧是美岬醬！在我們這群人之中，最熟悉色色的事情……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00057",
+		linknext = "0014_00059",
+		line = 961,
+	},
+	["0014_00059"] = {
+		{"fg", file="nanase_01f_00001", file1="nanase_01f_00102", file2="nanase_01f_00205", path=":fg/nanase_01f/", id=30, ch="奈々瀬", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase0031", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Er, I get the feeling that this is some kind of online world that you can only connect to via Misaki’s computer...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“不我觉得这世界应该只有美岬的电脑才能连结到吧……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「不我覺得這世界應該只有美岬的電腦才能連結到吧……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00058",
+		linknext = "0014_00060",
+		line = 974,
+	},
+	["0014_00060"] = {
+		{"fg", file="misaki_01f_00001", file1="misaki_01f_00101", file3="misaki_01f_00308", path=":fg/misaki_01f/", id=30, ch="美岬", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0048", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“And so, everyone! I want you to all hear for yourselves whether or not there really is a wind instrument in my ass!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“所以大家！请大家亲耳确认，我的屁股里是不是真的有管乐器吧！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「所以大家！請大家親耳確認，我的屁股裡是不是真的有管樂器吧！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00059",
+		linknext = "0014_00061",
+		line = 987,
+	},
+	["0014_00061"] = {
+		{"fg", file="nanase_02f_00001", file1="nanase_02f_00101", file2="nanase_02f_00210", path=":fg/nanase_02f/", id=30, ch="奈々瀬", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase0032", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Huh? So you want us to get up close to your butthole and listen closely?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“咦？你是要我们把脸凑近屁股听吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「咦？妳是要我們把臉湊近屁股聽嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00060",
+		linknext = "0014_00062",
+		line = 1000,
+	},
+	["0014_00062"] = {
+		{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file2="misaki_01m_00226", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0049", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“Yes, you’re about to all experience the true brown note... Thank you, I’ll be here all night.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“这正是真正的‘菊纹’……殿下也同意你们这么做喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「這正是真正的『菊紋』……殿下也同意妳們這麼做喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00061",
+		linknext = "0014_00063",
+		line = 1014,
+	},
+	["0014_00063"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I can hear Misaki laugh smugly.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"一脸得意的美岬不禁让大家笑了出来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"一臉得意的美岬不禁讓大家笑了出來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00062",
+		linknext = "0014_00064",
+		line = 1024,
+	},
+	["0014_00064"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Some of the others are even clapping and cheering her on.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"甚至还拍手大叫说得好。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"甚至還拍手大叫說得好。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00063",
+		linknext = "0014_00065",
+		line = 1034,
+	},
+	["0014_00065"] = {
+		{"bgm", stop=1},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=6, ch="美岬6", ch_origin="美岬", lv=6, time=0, sync=0},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_050_00000"},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file3="jun_01f_00309", path=":fg/jun_01f/", id=30, ch="淳之介", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Heh. Misaki’s the same as ever...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“哈哈，美岬还真是老样子啊……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「哈哈，美岬還真是老樣子啊……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00064",
+		linknext = "0014_00066",
+		line = 1076,
+	},
+	["0014_00066"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even I find myself laughing.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"连我都忍不住笑了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"連我都忍不住笑了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00065",
+		linknext = "0014_00067",
+		line = 1086,
+	},
+	["0014_00067"] = {
+		{"bg", id=18, file="oldkcg10_00003", x=0, y=0, lv=18, path=":cg/oldkcg10/", ev=1, style="blur", blurx=15, blury=15, ax=805, ay=453, bx=-5, by=-3},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=18, file="oldkcg10_00003", x=0, y=0, lv=18, path=":cg/oldkcg10/", ev=1, style="blur", blurx=15, blury=15, ax=805, ay=453, bx=-5, by=-3},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1000, rule="eff_049_00000"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"They’re all so shockingly similar to the NLNS members I know.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"跟我过去所知道的她们，一模一样地令人吃惊。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"跟我過去所知道的她們，一模一樣地令人吃驚。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00066",
+		linknext = "0014_00068",
+		line = 1101,
+	},
+	["0014_00068"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My comrades who I know better than anyone else.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我比谁都清楚她们，这些伙伴们应有的样子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我比誰都清楚她們，這些夥伴們應有的樣子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00067",
+		linknext = "0014_00069",
+		line = 1111,
+	},
+	["0014_00069"] = {
+		{"bg", file="oldkcg10_00003", path=":cg/oldkcg10/", id=19, lv=19, alpha=100, time=0, ax=805, ay=453, bx=-5, by=-3},
+		{"cgact", act="移動", id=19, zoom=110, time=50, lv=19},
+		{"cgact", act="浮遊横", id=19, size=20, loop=20, time=25, lv=19},
+		{"cgact", act="浮遊", id=19, size=20, loop=25, time=20, lv=19},
+		{"se", id=0, loop=0, file="se_a105"},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00102", file2="jun_01f_00208", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		delay = {
+			[600] = {
+				{"cgdel", id=19, time=100, lv=5},
+			},
+		},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00068",
+		linknext = "0014_00070",
+		line = 1131,
+	},
+	["0014_00070"] = {
+		{"se", id=2, loop=1, file="se_a105"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"When I see this playing out.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"看到眼前出现这样的光景。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"看到眼前出現這樣的光景。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00069",
+		linknext = "0014_00071",
+		line = 1142,
+	},
+	["0014_00071"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00102", file3="jun_01f_00304", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...Stay calm.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“…………要冷静。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「…………要冷靜。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00070",
+		linknext = "0014_00072",
+		line = 1154,
+	},
+	["0014_00072"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I can’t help but want to scream.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"忍不住就想大叫出声。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"忍不住就想大叫出聲。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00071",
+		linknext = "0014_00073",
+		line = 1164,
+	},
+	["0014_00073"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I want them to know. I’m right here.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"大叫──我就在这里啊。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"大叫──我就在這裡啊。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00072",
+		linknext = "0014_00074",
+		line = 1174,
+	},
+	["0014_00074"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="oldkcg10_00003", x=0, y=0, lv=18, path=":cg/oldkcg10/", ev=1, ax=805, ay=453, bx=-5, by=-3},
+		{"transitiontime", time=1000},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0034", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“This event is going to be tough, though. It’s taking place across the whole island. Will we be able to get away from it...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“但这次的活动很辛苦呢，竟然要用整个岛来玩，我们逃得掉吗……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「但這次的活動很辛苦呢，竟然要用整個島來玩，我們逃得掉嗎……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00073",
+		linknext = "0014_00075",
+		line = 1190,
+	},
+	["0014_00075"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="oldkcg10_00003", x=0, y=0, lv=18, path=":cg/oldkcg10/", ev=1, style="blur", blurx=5, blury=5, ax=805, ay=453, bx=-5, by=-3},
+		{"transitiontime", time=1000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I want them to know. I’m their comrade who’s fought alongside them.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我才是跟你们一同战斗的伙伴啊──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我才是跟妳們一同戰鬥的夥伴啊──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00074",
+		linknext = "0014_00076",
+		line = 1204,
+	},
+	["0014_00076"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0050", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+					"*テキスト*",
+					{"rt2"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“You’re right... I wonder if we’ll all be able to protect our virginity. I’m so plain that I can just fade into the shadows, but preppy sluts like Nanase shine so brightly that they stand out...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“就是啊……大家真的能平安保住处女吗？唉，我因为很不起眼，所以只要躲在暗处就可以了，但受欢迎的辣妹婊子奈奈濑就……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「就是啊……大家真的能平安保住處女嗎？唉，我因為很不起眼，所以只要躲在暗處就可以了，但受歡迎的辣妹婊子奈奈瀨就……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00075",
+		linknext = "0014_00077",
+		line = 1220,
+	},
+	["0014_00077"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="oldkcg10_00003", x=0, y=0, lv=18, path=":cg/oldkcg10/", ev=1, style="blur", blurx=10, blury=10, ax=805, ay=453, bx=-5, by=-3},
+		{"transitiontime", time=1000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I want them to know. I’m their leader.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我才是你们的领袖啊──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我才是妳們的領袖啊──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00076",
+		linknext = "0014_00078",
+		line = 1234,
+	},
+	["0014_00078"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase0033", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“I wonder how long they’re going to get that wrong about me... What if it’s for the rest of my life...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“我的误会要什么时候才会解开呢……该不会一辈子就是这样……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「我的誤會要什麼時候才會解開呢……該不會一輩子就是這樣……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00077",
+		linknext = "0014_00079",
+		line = 1246,
+	},
+	["0014_00079"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="oldkcg10_00003", x=0, y=0, lv=18, path=":cg/oldkcg10/", ev=1, style="blur", blurx=15, blury=15, ax=805, ay=453, bx=-5, by=-3},
+		{"transitiontime", time=1000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I want them to know—that it should be me who’s been with them for all this time.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"跟你们一同战斗过的，明明应该是我才对的──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"跟妳們一同戰鬥過的，明明應該是我才對的──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00078",
+		linknext = "0014_00080",
+		line = 1260,
+	},
+	["0014_00080"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino0046", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Do not worry... I will protect all of you. I am a strong woman...!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“还请安心吧……我会守住大家的。文乃我可是很强的……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「還請安心吧……我會守住大家的。文乃我可是很強的……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00079",
+		linknext = "0014_00081",
+		line = 1272,
+	},
+	["0014_00081"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I want to leap out at this very moment and shout the words.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我现在就想跳出去大喊。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我現在就想跳出去大喊。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00080",
+		linknext = "0014_00082",
+		line = 1282,
+	},
+	["0014_00082"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00102", file2="jun_01f_00224", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“It’s fine, don’t worry...!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“没事的，冷静下来──！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「沒事的，冷靜下來──！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00081",
+		linknext = "0014_00083",
+		line = 1294,
+	},
+	["0014_00083"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I want it back.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"然后想回到那样的日子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"然後想回到那樣的日子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00082",
+		linknext = "0014_00084",
+		line = 1304,
+	},
+	["0014_00084"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="oldkcg10_00003", x=0, y=0, lv=18, path=":cg/oldkcg10/", ev=1, style="blur", blurx=20, blury=20, ax=805, ay=453, bx=-5, by=-3},
+		{"transitiontime", time=1000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That time in my life when I was there with them, smiling and laughing over nothing in particular.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"想回到在那群体里恣意笑着的日常。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"想回到在那群體裡恣意笑著的日常。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00083",
+		linknext = "0014_00085",
+		line = 1318,
+	},
+	["0014_00085"] = {
+		{"se", id=0, loop=0, file="se_a204"},
+		{"se", id=1, loop=0, file="se_b047"},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00102", file2="jun_01f_00208", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Agh...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“唔────────”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「唔────────」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00084",
+		linknext = "0014_00086",
+		line = 1332,
+	},
+	["0014_00086"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I somehow manage to stifle the impulse.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我只能努力压下这股冲动。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我只能努力壓下這股衝動。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00085",
+		linknext = "0014_00087",
+		line = 1342,
+	},
+	["0014_00087"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I bite down on my uniform to keep the sobs from leaking out of my mouth.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我咬着制服，忍下几乎要脱口而出的呜咽声。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我咬著制服，忍下幾乎要脫口而出的嗚咽聲。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00086",
+		linknext = "0014_00088",
+		line = 1352,
+	},
+	["0014_00088"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Not yet.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"现在还不行。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"現在還不行。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00087",
+		linknext = "0014_00089",
+		line = 1362,
+	},
+	["0014_00089"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We have a mission too. So for now...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"为了达成目的，现在我──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"為了達成目的，現在我──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00088",
+		linknext = "0014_00090",
+		line = 1372,
+	},
+	["0014_00090"] = {
+		{"se", id=0, stop=1, time=1000},
+		{"se", id=1, stop=1, time=1000},
+		{"se", id=2, stop=1, time=1000},
+		{"se", id=0, loop=0, file="se_a137"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=1, file="bg12_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg12_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_033_00000"},
+		{"ex", time=1000, func="wait"},
+		{"fg", file="hinami_01m_00001", file1="hinami_01m_00101", file2="hinami_01m_00212", path=":fg/hinami_01m/", id=5, lv=5, head="hinami_01m", ch_origin="ヒナミ", ch="ヒナミ5", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[2000] = {
+				{"fg", file="hinami_01m_00001", file1="hinami_01m_00101", file2="hinami_01m_00202", path=":fg/hinami_01m/", id=5, lv=5, head="hinami_01m", ch_origin="ヒナミ", ch="ヒナミ5", mw="mw", sync=0, timestamp=14, delay2=2000, mode=3, x=-5, y=-5},
+			},
+			[1999] = {
+				{"transitiontime", time=300, timestamp=14, delay2=2000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="hinami0035", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Oh, it’s time already... Let’s all hurry back. I’m gonna be real mad at you if you’re late for class, okay?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“啊，时间到了……大家也快点回去吧？要是迟到，前辈们可不会接受的。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「啊，時間到了……大家也快點回去吧？要是遲到，前輩們可不會接受的。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00089",
+		linknext = "0014_00091",
+		line = 1401,
+	},
+	["0014_00091"] = {
+		{"se", id=0, loop=0, file="se_a032", vol=80},
+		{"fg", file="fumino_01m_00007", file1="fumino_01m_00101", file2="fumino_01m_00201", path=":fg/fumino_01m/", id=7, lv=7, head="fumino_01m", alpha=0, ch_origin="文乃", ch="文乃7", mw="mw", sync=1, a_chr151=1, mode=3, x=-605, y=-5},
+		{"fgact", ch="文乃7", id=7, lv=7, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="文乃7", id=7, act="移動", x=200, y=0, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino0047", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Please wait a moment, Miss Wata... There is food stuck to your face.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“请等一下，渡渡……你的嘴边有饭粒喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「請等一下，渡渡……妳的嘴邊有飯粒喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00090",
+		linknext = "0014_00092",
+		line = 1417,
+	},
+	["0014_00092"] = {
+		{"fg", file="hinami_01m_00001", file1="hinami_01m_00101", file3="hinami_01m_00303", path=":fg/hinami_01m/", id=5, lv=5, head="hinami_01m", ch_origin="ヒナミ", ch="ヒナミ5", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"fg", file="nanase_01m_00001", file1="nanase_01m_00101", file2="nanase_01m_00202", path=":fg/nanase_01m/", id=4, lv=4, head="nanase_01m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, mode=3, x=595, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[300] = {
+				{"fgact", ch="文乃7", id=7, act="振動下", loop=2, size=10, time=250, ease="easeinout_sine", timestamp=15, delay2=300},
+			},
+			[2500] = {
+				{"fg", file="nanase_01m_00001", file1="nanase_01m_00101", file2="nanase_01m_00201", path=":fg/nanase_01m/", id=4, lv=4, head="nanase_01m", ch_origin="奈々瀬", ch="奈々瀬4", mw="mw", sync=0, timestamp=16, delay2=2500, mode=3, x=595, y=-5},
+			},
+			[2499] = {
+				{"transitiontime", time=300, timestamp=16, delay2=2500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="nanase0034", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Heh, what a cute little big sister she is. Okay, everyone. See you again after class.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“呵呵，真是可爱的大姐姐呢。那么大家放学见。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「呵呵，真是可愛的大姐姐呢。那麼大家放學見。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00091",
+		linknext = "0014_00093",
+		line = 1437,
+	},
+	["0014_00093"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"se", id=0, loop=0, file="se_a042"},
+		{"fgact", ch="奈々瀬4", id=4, lv=4, act="表示アクション", alpha=0, alphadel=1, style="reset", time=400},
+		{"fgact", ch="奈々瀬4", id=4, act="移動", x=200, y=0, time=600},
+		{"fgact", ch="ヒナミ5", id=5, lv=5, act="表示アクション", alpha=0, alphadel=1, style="reset", time=400},
+		{"fgact", ch="ヒナミ5", id=5, act="移動", x=200, y=0, time=600},
+		{"fgact", ch="文乃7", id=7, lv=7, act="表示アクション", alpha=0, alphadel=1, style="reset", time=400},
+		{"fgact", ch="文乃7", id=7, act="移動", x=200, y=0, time=600},
+		{"transitiontime", time=0},
+		{"se", id=0, stop=1, time=4000},
+		{"ex", time=1500, func="wait"},
+		{"se", id=1, loop=0, file="se_a112"},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_023_00000"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The elevator doors draw shut.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"电梯再度关上。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"電梯再度關上。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00092",
+		linknext = "0014_00094",
+		line = 1468,
+	},
+	["0014_00094"] = {
+		{"se", id=1, loop=0, file="se_a113"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I hear a quiet mechanical noise indicating that it’s rising up.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"沉静的机械音，让人知道电梯缓缓上升了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"沉靜的機械音，讓人知道電梯緩緩上升了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00093",
+		linknext = "0014_00095",
+		line = 1479,
+	},
+	["0014_00095"] = {
+		{"se", id=0, stop=1, time=1000},
+		{"se", id=1, stop=1, time=2000},
+		{"se", id=2, loop=0, file="se_a087"},
+		{"bg", id=1, file="bg12_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"transitiontime", time=300},
+		{"cgact", file="cgact", id=1, act="振動下", loop=1, size=-5, time=250, ease="easeinout_sine", lv=1},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00211", path=":fg/jun_01f/", id=30, ch="淳之介", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...Phew.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……呼。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……呼。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00094",
+		linknext = "0014_00096",
+		line = 1498,
+	},
+	["0014_00096"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I finally exit the locker and steady my breath.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我终于从柜子里出来，平复呼吸。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我終於從櫃子裡出來，平復呼吸。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00095",
+		linknext = "0014_00097",
+		line = 1508,
+	},
+	["0014_00097"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My fingernails have gouged into my palms, leaving a few drops of blood behind.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我一直捏着掌心的肉，已经微微出血。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我一直捏著掌心的肉，已經微微出血。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00096",
+		linknext = "0014_00098",
+		line = 1518,
+	},
+	["0014_00098"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m going back to my world no matter what.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我一定会回到原本的世界。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我一定會回到原本的世界。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00097",
+		linknext = "0014_00099",
+		line = 1528,
+	},
+	["0014_00099"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And I’m getting all of them back.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"然后回到大家身边。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"然後回到大家身邊。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00098",
+		linknext = "0014_00100",
+		line = 1538,
+	},
+	["0014_00100"] = {
+		{"bgm", file="bgm07", vol=100},
+		{"bg", id=2, file="bg12_3l_00000", x=0, y=100, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00203", path=":fg/jun_01f/", id=30, ch="淳之介", lv=2, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...Hey. I know you’re listening, you easy chair boomer. Come out here, we need to talk.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“──喂，安乐椅的老头，你在听吧？给我出来，我有话要说。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「──喂，安樂椅的老頭，你在聽吧？給我出來，我有話要說。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00099",
+		linknext = "0014_00101",
+		line = 1553,
+	},
+	["0014_00101"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This is what I’ve come here for.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我是为此来到这里的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我是為此來到這裡的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00100",
+		linknext = "0014_00102",
+		line = 1563,
+	},
+	["0014_00102"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I look at the corner of the ceiling and say the words.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我朝着房间的天花板一角出声。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我朝著房間的天花板一角出聲。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00101",
+		linknext = "0014_00103",
+		line = 1573,
+	},
+	["0014_00103"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A few seconds pass.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"经过数秒。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"經過數秒。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00102",
+		linknext = "0014_00104",
+		line = 1583,
+	},
+	["0014_00104"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I continue to glare at the corner.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我一直瞪着那一角。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我一直瞪著那一角。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00103",
+		linknext = "0014_00105",
+		line = 1593,
+	},
+	["0014_00105"] = {
+		{"cgact", file="cgact", id=2, act="移動", x=195, y=-5, time=1000, lv=2},
+		{"se", id=0, loop=0, file="se_b032"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Then, after a few seconds of static, an image slowly appears on the monitor.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"而萤幕在几秒的杂讯后，缓缓出现了影像。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"而螢幕在幾秒的雜訊後，緩緩出現了影像。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00104",
+		linknext = "0014_00106",
+		line = 1605,
+	},
+	["0014_00106"] = {
+		{"se", id=0, stop=1, time=3000},
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"bg", id=2, file="bg12_3l_00000", x=195, y=95, lv=2, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=800, draw2=1},
+		{"ex", time=700, func="wait"},
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00201", file3="sakimori_01f_00301", path=":fg/sakimori_01f/", id=30, ch="防人老人", lv=2, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0000", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人", "？？？"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "???"},
+					"“Who the hell are you...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "？？？"},
+					"‘你这家伙，到底是什么人──？’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "？？？"},
+					"『你這傢伙，到底是什麼人──？』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00105",
+		linknext = "0014_00107",
+		line = 1624,
+	},
+	["0014_00107"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"These are the first words from the man on the other side of the screen.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"男人透过画面的第一句话就是这个。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"男人透過畫面的第一句話就是這個。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00106",
+		linknext = "0014_00108",
+		line = 1634,
+	},
+	["0014_00108"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00201", file3="sakimori_01f_00301", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0001", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人", "？？？"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "???"},
+					"“You infiltrate this base that only those little girls should know about, and you even know where this device is located...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "？？？"},
+					"‘不只闯入只有那些小女孩知道的基地，还掌握了机器的位置──’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "？？？"},
+					"『不只闖入只有那些小女孩知道的基地，還掌握了機器的位置──』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00107",
+		linknext = "0014_00109",
+		line = 1647,
+	},
+	["0014_00109"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file3="jun_01f_00302", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“It’s kind of complicated... Sakimori.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我有些特殊原因啦──驻防老爷子。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我有些特殊原因啦──駐防老爺子。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00108",
+		linknext = "0014_00110",
+		line = 1659,
+	},
+	["0014_00110"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I say the man’s name.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我叫出了男人的名字。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我叫出了男人的名字。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00109",
+		linknext = "0014_00111",
+		line = 1669,
+	},
+	["0014_00111"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"While it’s too dark to see clearly, I can tell that his body twitches.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然在暗处所以看不清楚，但可以看见那躯体微微一僵。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然在暗處所以看不清楚，但可以看見那軀體微微一僵。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00110",
+		linknext = "0014_00112",
+		line = 1679,
+	},
+	["0014_00112"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00210", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0002", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“Ah, and you know who I am... Seems like you’re more than just some snotty little boy. Who are you, then?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘哦，你知道我的事啊……看来不只是普通的嚣张小鬼而已……你是什么人？’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『哦，你知道我的事啊……看來不只是普通的囂張小鬼而已……你是什麼人？』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00111",
+		linknext = "0014_00113",
+		line = 1692,
+	},
+	["0014_00113"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00211", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“It doesn’t matter who I am. You wouldn’t understand even if I did tell you.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我是什么人都没差。反正说了你也不会理解的。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我是什麼人都沒差。反正說了你也不會理解的。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00112",
+		linknext = "0014_00114",
+		line = 1704,
+	},
+	["0014_00114"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00204", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0003", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“Then why did you summon me? If who you are doesn’t matter, why should we bother talking?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘那为何要叫我？既然无关的话，应该也没什么话好说吧。’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『那為何要叫我？既然無關的話，應該也沒什麼話好說吧。』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00113",
+		linknext = "0014_00115",
+		line = 1717,
+	},
+	["0014_00115"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00203", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Because I need your help.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我需要你的帮助。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我需要你的幫助。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00114",
+		linknext = "0014_00116",
+		line = 1729,
+	},
+	["0014_00116"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00202", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0004", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“What a funny thing to say. Why should I have to help the likes of you? Tell me, boy. What exactly is the reason for that?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘你可说了真奇怪的话啊。为何我必须要帮助你呢？有什么理由帮你，嗯？小鬼。’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『你可說了真奇怪的話啊。為何我必須要幫助你呢？有什麼理由幫你，嗯？小鬼。』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00115",
+		linknext = "0014_00117",
+		line = 1742,
+	},
+	["0014_00117"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file3="jun_01f_00302", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“You sure you want me to tell the Yakuza about you?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“如果我把你的存在告诉黑道们也没关系吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「如果我把你的存在告訴黑道們也沒關係嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00116",
+		linknext = "0014_00118",
+		line = 1754,
+	},
+	["0014_00118"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00203", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“The SHO wiped out the Yakuza hiding on Seiran Island, but I’m sure that everyone here contributed to that behind the scenes.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“潜藏在青蓝岛上的黑道们已经都被SHO消灭了，但背后想必是受到了这里的人协助才对。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「潛藏在青藍島上的黑道們已經都被SHO消滅了，但背後想必是受到了這裡的人協助才對。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00117",
+		linknext = "0014_00119",
+		line = 1766,
+	},
+	["0014_00119"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"There’d be no other way for the SHO to find her that easily after all the time they spent investigating desperately.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"要不然，曾经花了那么长时间拼命调查的SHO，不会如此轻易发现。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"要不然，曾經花了那麼長時間拚命調查的SHO，不會如此輕易發現。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00118",
+		linknext = "0014_00120",
+		line = 1776,
+	},
+	["0014_00120"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file3="jun_01f_00302", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“That too is all because you were pulling the strings behind the scenes—it was all to find Fumino and shelter her.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“而这也全都是你在背后牵线造成的结果──为了找出文乃，并且保护她。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「而這也全都是你在背後牽線造成的結果──為了找出文乃，並且保護她。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00119",
+		linknext = "0014_00121",
+		line = 1788,
+	},
+	["0014_00121"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even the old man shrinks when I bring out Fumino’s name.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"扛出文乃这个名字后，即使是老人也动摇了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"扛出文乃這個名字後，即使是老人也動搖了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00120",
+		linknext = "0014_00122",
+		line = 1798,
+	},
+	["0014_00122"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00203", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“There should still be some Yakuza holdouts left on this island.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“这座岛上应该还有黑道的残党才对。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「這座島上應該還有黑道的殘黨才對。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00121",
+		linknext = "0014_00123",
+		line = 1810,
+	},
+	["0014_00123"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00203", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“You need to work with me unless you want them to find out about your plans and be forced to live a life on the run.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“你如果不想要自己的计划被泄露出去，过着逃亡生活的话，就帮我。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「你如果不想要自己的計劃被洩露出去，過著逃亡生活的話，就幫我。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00122",
+		linknext = "0014_00124",
+		line = 1822,
+	},
+	["0014_00124"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"...I don’t want to have to rely on someone like him.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"──其实我当然是不想拜托这种人的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"──其實我當然是不想拜託這種人的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00123",
+		linknext = "0014_00125",
+		line = 1832,
+	},
+	["0014_00125"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I hate the thought of asking something from the very person responsible for doing all of that to Fumino.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不想要拜托让文乃遇上那种事的罪魁祸首。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不想要拜託讓文乃遇上那種事的罪魁禍首。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00124",
+		linknext = "0014_00126",
+		line = 1842,
+	},
+	["0014_00126"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I still haven’t forgiven this old man.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我还没有原谅这个老人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我還沒有原諒這個老人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00125",
+		linknext = "0014_00127",
+		line = 1852,
+	},
+	["0014_00127"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00211", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“In exchange...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“作为交换条件──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「作為交換條件──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00126",
+		linknext = "0014_00128",
+		line = 1864,
+	},
+	["0014_00128"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But... In a way, he’s a lot like me too.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但是──某方面来说，他跟我非常相似。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但是──某方面來說，他跟我非常相似。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00127",
+		linknext = "0014_00129",
+		line = 1874,
+	},
+	["0014_00129"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"While I imagine I’ll never come to trust him... Well, I’m at least able to talk to him.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然永远不会信任他……但如果只是谈谈，还是可以的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然永遠不會信任他……但如果只是談談，還是可以的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00128",
+		linknext = "0014_00130",
+		line = 1884,
+	},
+	["0014_00130"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"For example.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"例如。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"例如。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00129",
+		linknext = "0014_00131",
+		line = 1894,
+	},
+	["0014_00131"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00203", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...I’ll tell you everything I know about Fumika Kotoyose.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……我可以把我所知道的‘琴寄文歌’的事全部告诉你。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……我可以把我所知道的『琴寄文歌』的事全部告訴你。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00130",
+		linknext = "0014_00132",
+		line = 1906,
+	},
+	["0014_00132"] = {
+		{"bgm", stop=1},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=12, time=0, alphadel=1, lv=5},
+		{"cgdel", id=13, time=0, alphadel=1, lv=5},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"cgdel", id=15, time=0, alphadel=1, lv=5},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"cgdel", id=1, lv=1, time=0, alphadel=1},
+		{"bg", id=1, file="eyecatch2_00002", x=0, y=0, lv=1, path=":bg/"},
+		{"bg", id=1, file="eyecatch2_00002", x=0, y=0, lv=1, path=":bg/"},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=800, rule="eff_001_00000"},
+		{"ex", time=1000, func="wait"},
+		{"bg", id=1, file="bg12_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg12_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=800, rule="eff_001_00000"},
+		{"se", id=0, loop=0, file="se_a137"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I finish speaking just as the sixth period bell goes off.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我的话声几乎和第六节课的上课钟声同时结束。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我的話聲幾乎和第六節課的上課鐘聲同時結束。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00131",
+		linknext = "0014_00133",
+		line = 1966,
+	},
+	["0014_00133"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I decided to be honest and tell him everything.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我决定坦白说出一切。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我決定坦白說出一切。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00132",
+		linknext = "0014_00134",
+		line = 1976,
+	},
+	["0014_00134"] = {
+		{"se", id=0, stop=1, time=1000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Though I doubt he was able to understand what I said, I just didn’t want to lie.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然说了未必对方能理解，但我不想说谎。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然說了未必對方能理解，但我不想說謊。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00133",
+		linknext = "0014_00135",
+		line = 1987,
+	},
+	["0014_00135"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Still, I don’t hide anything from him.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"所以我毫无保留地说了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"所以我毫無保留地說了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00134",
+		linknext = "0014_00136",
+		line = 1997,
+	},
+	["0014_00136"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I tell him about the fate of a kind and affectionate woman... who saved a boy in despair.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"说出了那温柔的女性──拯救了绝望少年的女性的结局。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"說出了那溫柔的女性──拯救了絕望少年的女性的結局。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00135",
+		linknext = "0014_00137",
+		line = 2007,
+	},
+	["0014_00137"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00205", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0005", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘……………………’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『……………………』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00136",
+		linknext = "0014_00138",
+		line = 2020,
+	},
+	["0014_00138"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Sakimori stays silent after I finish speaking.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我说完后，驻防老人沉默了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我說完後，駐防老人沉默了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00137",
+		linknext = "0014_00139",
+		line = 2030,
+	},
+	["0014_00139"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"There’s no way he could begin to understand what I just told him, and I doubt he’d want to understand it.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我所说的东西，他应该无法理解，也不想理解吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我所說的東西，他應該無法理解，也不想理解吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00138",
+		linknext = "0014_00140",
+		line = 2040,
+	},
+	["0014_00140"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Still, my words must have rung true.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但我的话应该带有真实感才对。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但我的話應該帶有真實感才對。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00139",
+		linknext = "0014_00141",
+		line = 2050,
+	},
+	["0014_00141"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"How could they not? Everything I said is a fact in my world.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那是当然的，因为在我的世界中，这些都是事实。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那是當然的，因為在我的世界中，這些都是事實。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00140",
+		linknext = "0014_00142",
+		line = 2060,
+	},
+	["0014_00142"] = {
+		{"bgm", file="bgm07", vol=100},
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00201", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0006", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“...You’re crazy. How could I possibly believe any of that?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘……你是个强人啊。这种话，要人如何相信？’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『……你是個強人啊。這種話，要人如何相信？』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00141",
+		linknext = "0014_00143",
+		line = 2074,
+	},
+	["0014_00143"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00203", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Yeah, crazy about getting this job done. It’s the only reason I’m dealing with you again. You’re even able to make deals with major politicians.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“没错。我是很强韧的。所以才会和你再次对上，也能跟大人物的政治家交易。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「沒錯。我是很強韌的。所以才會和你再次對上，也能跟大人物的政治家交易。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00142",
+		linknext = "0014_00144",
+		line = 2086,
+	},
+	["0014_00144"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00204", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0007", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“Wordplay at a time like this...? The most I can do for you is write a letter of introduction for a mental clinic.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘别玩文字游戏了……我能做的顶多是帮你写写医院的转诊信而已。’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『別玩文字遊戲了……我能做的頂多是幫你寫寫醫院的轉診信而已。』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00143",
+		linknext = "0014_00145",
+		line = 2099,
+	},
+	["0014_00145"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00203", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“That’s not what I need. How about you give me something by tomorrow instead? It should be easy enough for you to get.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我才不需要那种东西。相对地，我有想要明天之前拿到的东西，如果是你应该可以轻易准备才对。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我才不需要那種東西。相對地，我有想要明天之前拿到的東西，如果是你應該可以輕易準備才對。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00144",
+		linknext = "0014_00146",
+		line = 2111,
+	},
+	["0014_00146"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Sakimori’s eyes shine dully.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"驻防老人的眼睛闪出隐约的光芒。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"駐防老人的眼睛閃出隱約的光芒。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00145",
+		linknext = "0014_00147",
+		line = 2121,
+	},
+	["0014_00147"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"He doesn’t trust what I say.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我的话无法信任。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我的話無法信任。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00146",
+		linknext = "0014_00148",
+		line = 2131,
+	},
+	["0014_00148"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But for whatever reason, it seems like he’s being swayed by this young man’s uncompromising attitude...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但是，对少年强硬的态度，却似乎有些动摇ー",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但是，對少年強硬的態度，卻似乎有些動搖ー",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00147",
+		linknext = "0014_00149",
+		line = 2141,
+	},
+	["0014_00149"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"...Like I’m finally getting a glimpse at this old man’s human side.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"──我感觉第一次稍微窥见了这老人带有人味的一面。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"──我感覺第一次稍微窺見了這老人帶有人味的一面。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00148",
+		linknext = "0014_00150",
+		line = 2151,
+	},
+	["0014_00150"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00201", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0008", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“...My only wish is to stamp out the perverted sex law and destroy Seiran Island.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘……我的希望只有破坏变态条例，以及青蓝岛而已。’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『……我的希望只有破壞變態條例，以及青藍島而已。』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00149",
+		linknext = "0014_00151",
+		line = 2164,
+	},
+	["0014_00151"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file3="jun_01f_00305", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Not on my watch. I’m not letting you use Fumino to crush the perverted sex law.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我可不会让你这么做。我不会原谅你想要利用文乃来破坏变态条例的想法。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我可不會讓你這麼做。我不會原諒你想要利用文乃來破壞變態條例的想法。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00150",
+		linknext = "0014_00152",
+		line = 2176,
+	},
+	["0014_00152"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00213", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0009", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“You immature little boy—you sound just like the other one. How infuriating.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘这黄口小儿──你也说了跟那个年轻人一样的话，真烦。’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『這黃口小兒──你也說了跟那個年輕人一樣的話，真煩。』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00151",
+		linknext = "0014_00153",
+		line = 2189,
+	},
+	["0014_00153"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00204", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“The other one? Are you talking about the leader of the Birds of a Feather?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“那个年轻人──是说‘Tori公’的领袖吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「那個年輕人──是說『Tori公』的領袖嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00152",
+		linknext = "0014_00154",
+		line = 2201,
+	},
+	["0014_00154"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00201", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0010", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“Indeed I am. Refusing to hand over Fumino after all the painstaking work it took to get her... We may have the same goals, but there’s no controlling a hot-blooded youth.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘没错。我可是费尽苦心才得到文乃的，他竟然拒绝把她交出来……我们明明目的一样，只能说血气方刚的年轻人就是难以驾驭。’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『沒錯。我可是費盡苦心才得到文乃的，他竟然拒絕把她交出來……我們明明目的一樣，只能說血氣方剛的年輕人就是難以駕馭。』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00153",
+		linknext = "0014_00155",
+		line = 2214,
+	},
+	["0014_00155"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00203", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“You’re going to tell me where I can find this guy. Give me all the details you know.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“告诉我那个少年的事。在你知道的范围里，尽量详细点。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「告訴我那個少年的事。在你知道的範圍裡，盡量詳細點。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00154",
+		linknext = "0014_00156",
+		line = 2226,
+	},
+	["0014_00156"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00205", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0011", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“Details are not something I have.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘我不知道详情。’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『我不知道詳情。』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00155",
+		linknext = "0014_00157",
+		line = 2239,
+	},
+	["0014_00157"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00204", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Why not? Aren’t you the one funding the Birds of a Feather?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“为何？‘Tori公’不是你出资的吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「為何？『Tori公』不是你出資的嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00156",
+		linknext = "0014_00158",
+		line = 2251,
+	},
+	["0014_00158"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00201", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0012", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“I gave them this base. As far as funds, though, I only provided them initially.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘我是提供了基地。但资金只赞助到前期而已。’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『我是提供了基地。但資金只贊助到前期而已。』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00157",
+		linknext = "0014_00159",
+		line = 2264,
+	},
+	["0014_00159"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00204", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“So you’re saying that this team is nearly independent...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“也就是说，那个队伍几乎是独立活动的状态──？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「也就是說，那個隊伍幾乎是獨立活動的狀態──？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00158",
+		linknext = "0014_00160",
+		line = 2276,
+	},
+	["0014_00160"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0013", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“While I did look through the Academy’s data for a time, I can’t find a match.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘我曾经让他们去找学园的情报，但双方没办法达成一致──’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『我曾經讓他們去找學園的情報，但雙方沒辦法達成一致──』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00159",
+		linknext = "0014_00161",
+		line = 2288,
+	},
+	["0014_00161"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00226", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Ugh. Useless old man...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“啧，真是派不上用场的老头……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「嘖，真是派不上用場的老頭……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00160",
+		linknext = "0014_00162",
+		line = 2300,
+	},
+	["0014_00162"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00213", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0014", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“Consider choosing your words with a little more tact... Honestly, kids these days... No respect for their elders...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘你注意一下自己的语气吧……真是的，所以说最近的年轻人……真是没有敬老之心……’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『你注意一下自己的語氣吧……真是的，所以說最近的年輕人……真是沒有敬老之心……』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00161",
+		linknext = "0014_00163",
+		line = 2313,
+	},
+	["0014_00163"] = {
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Sakimori starts to mutter curses.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"驻防老人不断碎念，露出不悦的态度。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"駐防老人不斷碎念，露出不悅的態度。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00162",
+		linknext = "0014_00164",
+		line = 2324,
+	},
+	["0014_00164"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It seems that the leader in this world has given him a good bit of trouble.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"看来这里的领袖让他很伤脑筋。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"看來這裡的領袖讓他很傷腦筋。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00163",
+		linknext = "0014_00165",
+		line = 2334,
+	},
+	["0014_00165"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"In that case, I can be the one to hear him out instead.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那我就代替他来问问这人吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那我就代替他來問問這人吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00164",
+		linknext = "0014_00166",
+		line = 2344,
+	},
+	["0014_00166"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Why did he do it?",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"为什么要做这种事？",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"為什麼要做這種事？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00165",
+		linknext = "0014_00167",
+		line = 2354,
+	},
+	["0014_00167"] = {
+		{"bgm", file="bgm12", vol=100},
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00203", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“So? I’m waiting for an answer.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“那，让我听听你的回答吧。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「那，讓我聽聽你的回答吧。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00166",
+		linknext = "0014_00168",
+		line = 2367,
+	},
+	["0014_00168"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00216", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0015", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“...Fine, I’ll go along with your ravings. I may not believe you, but more pawns under my control could never hurt.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘……我就姑且接受你的疯话吧。虽然我并不信任你，但棋子不嫌多。’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『……我就姑且接受你的瘋話吧。雖然我並不信任你，但棋子不嫌多。』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00167",
+		linknext = "0014_00169",
+		line = 2380,
+	},
+	["0014_00169"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file3="jun_01f_00302", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Just don’t forget that it’s those very same pawns who slit your windpipe.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“也请别忘了这棋子可是掐着你的咽喉啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「也請別忘了這棋子可是掐著你的咽喉啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00168",
+		linknext = "0014_00170",
+		line = 2392,
+	},
+	["0014_00170"] = {
+		{"fg", file="sakimori_01f_00001", file2="sakimori_01f_00210", path=":fg/sakimori_01f/", id=30, ch="防人老人", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sakimori0016", path=":vo/", ch="sakimori"},
+			},
+			ja = {
+				{
+					name = {"防人老人"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"防人老人", "Sakimori"},
+					"“Oh, just listen to you... Very well. Tell me about these things you claim to need.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"防人老人", "驻防老人"},
+					"‘可真嚣张……那么，就让我听听你需要的东西是什么吧。’",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"防人老人", "駐防老人"},
+					"『可真囂張……那麼，就讓我聽聽你需要的東西是什麼吧。』",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00169",
+		linknext = "0014_00171",
+		line = 2405,
+	},
+	["0014_00171"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00211", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Okay. First...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“啊啊，首先是──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「啊啊，首先是──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0014_00170",
+		linknext = "block_00171",
+		line = 2417,
+	},
+	block_00171 = {
+		{"bgm", stop=1},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_043_00000"},
+		{"ex", time=3000, func="wait"},
+		{"excall", file="01_c11_rt03", cond="f.route==2"},
+		{"excall", file="01_c11_io03", cond="f.route==3"},
+		{"excall", file="01_c11_tr03"},
+		{"text"},
+		linkback = "0014_00171",
+		line = 2453,
+	},
+	label = {
+		top = { block="0014_00001", label=1 },
+	},
+}

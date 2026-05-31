@@ -1,0 +1,3618 @@
+astver = 2.0
+ast = {
+	["0056_00001"] = {
+		{"savetitle", text="02_c24_io12", ja="今、そこにいるイク", en="Not While I'm Cumming", cn="燃眉高潮", tw="迫切的高潮"},
+		{"eval", exp="g.02_c24_io12=1"},
+		{"eval", exp="f.route=3"},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"transitiontime", time=100, draw2=1},
+		{"ex", time=800, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The circumstances surrounding the “Parallel Pussy Incident” that stemmed from my epic wank have been brought to a close with an update to the permit.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"由我自慰而引起的〝世界线飞机杯〞事件[|伴随着许]可证的更新而完全地落幕了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"由我自慰而引起的〝世界線飛機杯〞事件[|伴隨著許]可證的更新而完全地落幕了。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "0056_00002",
+		line = 17,
+	},
+	["0056_00002"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Obviously, the permit is still developing alongside current regulations, but for now that’s a big deal.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"当然，那个许可证还在制定过程中，就像现在的条例一样──暂且有了一个很大的突破。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"當然，那個許可證還在製定過程中，就像現在的條例一樣──暫且有了一個很大的突破。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00001",
+		linknext = "0056_00003",
+		line = 27,
+	},
+	["0056_00003"] = {
+		{"bg", id=1, file="bg22_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg22_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_033_00000"},
+		{"ex", time=500, func="wait"},
+		{"bgm", file="bgm29", vol=100},
+		{"fg", file="ikuko_01m_00002", file1="ikuko_01m_00103", file2="ikuko_01m_00202", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", alpha=0, ch_origin="郁子", ch="郁子10", mw="mw", sync=1, a_chr151=1, mode=3, x=195, y=-5},
+		{"fgact", ch="郁子10", id=10, lv=10, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="郁子10", id=10, act="移動", x=-200, y=0, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1167", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Here ya go, Junnosuke. Coffee milk.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“给你！淳之介君，咖啡牛奶喔”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「給你！淳之介君，咖啡牛奶喔」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00002",
+		linknext = "0056_00004",
+		line = 49,
+	},
+	["0056_00004"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Oh, thanks.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“喔，3Q”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「喔，3Q」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00003",
+		linknext = "0056_00005",
+		line = 61,
+	},
+	["0056_00005"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I take the bottle from Ikuko as we walk side-by-side.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"从郁子手中接过塑料瓶，我们两人肩并肩的走着。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"從郁子手中接過寶特瓶，我們兩人肩並肩的走著。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00004",
+		linknext = "0056_00006",
+		line = 71,
+	},
+	["0056_00006"] = {
+		{"fg", file="ikuko_01m_00002", file1="ikuko_01m_00101", file2="ikuko_01m_00211", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1168", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Nobody’s doing sexy stuff, huh.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“都没人在做爱呢”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「都沒人在做愛呢」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00005",
+		linknext = "0056_00007",
+		line = 86,
+	},
+	["0056_00007"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Well, this is District B.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“因为是在B区嘛”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「因為是在B區嘛」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00006",
+		linknext = "0056_00008",
+		line = 98,
+	},
+	["0056_00008"] = {
+		{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00103", file3="ikuko_02m_00311", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1169", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“We actually made it back, huh?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“已经回来了呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「已經回來了呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00007",
+		linknext = "0056_00009",
+		line = 113,
+	},
+	["0056_00009"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“That we did.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“是啊，回来了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「是啊，回來了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00008",
+		linknext = "0056_00010",
+		line = 125,
+	},
+	["0056_00010"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I open the bottle lid and take a swig of the sweet coffee milk.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我打开了瓶盖，喝了口香甜的咖啡牛奶。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我打開了瓶蓋，喝了口香甜的咖啡牛奶。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00009",
+		linknext = "0056_00011",
+		line = 135,
+	},
+	["0056_00011"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Coffee milk was never something I would drink regularly, but I’ve become somewhat addicted to the flavor. Probably a result of Ikuko’s influence.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"以前不常喝的东西，不过也许是受郁子的影响，最近对这种味道上瘾了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"以前不常喝的東西，不過也許是受郁子的影響，最近對這種味道上癮了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00010",
+		linknext = "0056_00012",
+		line = 145,
+	},
+	["0056_00012"] = {
+		{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00103", file2="ikuko_02m_00210", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She looks at me and smiles, her own bottle in hand.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"郁子一手拿着相同的瓶子，看着我笑嘻嘻的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"郁子一手拿著相同的瓶子，看著我笑嘻嘻的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00011",
+		linknext = "0056_00013",
+		line = 158,
+	},
+	["0056_00013"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Despite nothing particularly interesting happening, Ikuko looks delighted.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然没有什么有趣的事情,但是表情看起来很幸福。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然沒有什麽有趣的事情,但是表情看起來很幸福。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00012",
+		linknext = "0056_00014",
+		line = 168,
+	},
+	["0056_00014"] = {
+		{"fg", mode=-1, id=10, ch="郁子10", ch_origin="郁子", lv=10, time=0, sync=0},
+		{"bg", id=11, file="bg25_3l_00000", x=470, y=270, lv=11, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"bg", id=1, file="bg22_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=11, file="bg25_3l_00000", x=470, y=270, lv=11, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"extrans", sync=0, time=800},
+		{"ex", time=500, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She spins and turns her back to me, then looks up at the starry night sky.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"然后转过身，仰望远方的星空。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"然後轉過身，仰望遠方的星空。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00013",
+		linknext = "0056_00015",
+		line = 185,
+	},
+	["0056_00015"] = {
+		{"fg", file="ikuko_02f_00007", file1="ikuko_02f_00103", file3="ikuko_02f_00310", path=":fg/ikuko_02f/", id=30, ch="郁子", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1170", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Y’know, I used to think there was a coffee cow when I was little.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“以前啊，还以为有一种叫咖啡[|牛的牛在]呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「以前啊，還以為有一種叫咖啡[|牛的牛在]呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00014",
+		linknext = "0056_00016",
+		line = 198,
+	},
+	["0056_00016"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00219", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“A coffee cow?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“咖啡牛？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「咖啡牛？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00015",
+		linknext = "0056_00017",
+		line = 210,
+	},
+	["0056_00017"] = {
+		{"fg", file="ikuko_01f_00002", file1="ikuko_01f_00103", file2="ikuko_01f_00229", path=":fg/ikuko_01f/", id=30, ch="郁子", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1171", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Mhm. I knew about coffee milk before I knew what coffee was, so I believed there was a cow that squirted coffee milk.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“嗯。我比起咖啡最先知道咖啡牛奶。深信着只要挤咖啡牛的奶就会出现咖啡牛奶。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「嗯。我比起咖啡最先知道咖啡牛奶。深信著只要擠咖啡牛的奶就會出現咖啡牛奶。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00016",
+		linknext = "0056_00018",
+		line = 223,
+	},
+	["0056_00018"] = {
+		{"fg", file="ikuko_01f_00002", file1="ikuko_01f_00103", file2="ikuko_01f_00202", path=":fg/ikuko_01f/", id=30, ch="郁子", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1172", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“The white and brown cows. You know the ones? I thought those were the coffee cows.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“你看，是棕白相间的斑点。有的对吧？还以为那就是咖啡牛了呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「你看，是棕白相間的斑點。有的對吧？還以為那就是咖啡牛了呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00017",
+		linknext = "0056_00019",
+		line = 236,
+	},
+	["0056_00019"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file3="jun_01f_00309", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“That sounds like a weirdly fancy worldview.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“还真是奇幻的世界观呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「還真是奇幻的世界觀呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00018",
+		linknext = "0056_00020",
+		line = 248,
+	},
+	["0056_00020"] = {
+		{"fg", file="ikuko_02f_00007", file1="ikuko_02f_00103", file3="ikuko_02f_00301", path=":fg/ikuko_02f/", id=30, ch="郁子", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1173", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“It’s cute right?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“很可爱对吧？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「很可愛對吧？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00019",
+		linknext = "0056_00021",
+		line = 261,
+	},
+	["0056_00021"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Crazy cute.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“很可爱喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「很可愛喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00020",
+		linknext = "0056_00022",
+		line = 273,
+	},
+	["0056_00022"] = {
+		{"fg", file="ikuko_01f_00002", file1="ikuko_01f_00103", file2="ikuko_01f_00229", path=":fg/ikuko_01f/", id=30, ch="郁子", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1174", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“I always wanted to try some freshly squeezed coffee milk straight from the coffee cow back then.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“小的时候，还想着要喝1次咖啡牛的鲜榨牛奶呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「小的時候，還想著要喝1次咖啡牛的鮮榨牛奶呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00021",
+		linknext = "0056_00023",
+		line = 286,
+	},
+	["0056_00023"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Even though coffee cows weren’t real?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“没喝成呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「沒喝成呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00022",
+		linknext = "0056_00024",
+		line = 298,
+	},
+	["0056_00024"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=11, lv=11, time=1300, alphadel=1, style="reset"},
+		{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00103", file2="ikuko_02m_00229", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", alpha=0, ch_origin="郁子", ch="郁子10", mw="mw", sync=1, a_chr151=1, mode=3, x=-5, y=-5},
+		{"fgact", ch="郁子10", id=10, lv=10, act="表示アクション", a1=0, a2=255, time=1, a_chr=151, alpha=255},
+		{"transitiontime", time=0},
+		{"ex", time=1800, func="wait"},
+		{"fg", file="ikuko_02f_00007", file1="ikuko_02f_00103", file2="ikuko_02f_00229", path=":fg/ikuko_02f/", id=30, ch="郁子", lv=10, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1175", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Even though they weren’t real.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“嗯，没喝成。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「嗯，沒喝成。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00023",
+		linknext = "0056_00025",
+		line = 319,
+	},
+	["0056_00025"] = {
+		{"fg", file="ikuko_01m_00002", file1="ikuko_01m_00103", file2="ikuko_01m_00214", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She relaxes her face and takes a sip of her coffee milk.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"松了松脸颊，郁子喝了一口咖啡牛奶。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"鬆了鬆臉頰，郁子喝了一口咖啡牛奶。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00024",
+		linknext = "0056_00026",
+		line = 332,
+	},
+	["0056_00026"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s always summer on the island, but the days are growing cooler, making it much more comfortable to pass time outside once the sun goes down.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"岛上万年不变的夏天最近变得有些凉爽，太阳下山后的天气也很宜人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"島上萬年不變的夏天最近變得有些涼爽，太陽下山後的天氣也很宜人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00025",
+		linknext = "0056_00027",
+		line = 342,
+	},
+	["0056_00027"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Walking with Ikuko and having idle conversations like this is nice. And yet my heart is still racing.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"像这样和郁子边走边聊些不着边际的话，光是这样就让我很安心──然而，我的心跳得更快了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"像這樣和郁子邊走邊聊些不著邊際的話，光是這樣就讓我很安心──然而，我的心跳得更快了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00026",
+		linknext = "0056_00028",
+		line = 352,
+	},
+	["0056_00028"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fg", mode=-1, id=10, ch="郁子10", ch_origin="郁子", lv=10, time=0, sync=0},
+		{"bg", id=1, file="bg07_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg07_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_009_00000"},
+		{"ex", time=500, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We wind up at the amusement park.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"然后，我们来到了夜晚的游乐园。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"然後，我們來到了夜晚的遊樂園。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00027",
+		linknext = "0056_00029",
+		line = 372,
+	},
+	["0056_00029"] = {
+		{"fg", file="ikuko_01m_00002", file1="ikuko_01m_00103", file2="ikuko_01m_00202", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1176", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Ooh, look over there! It’s a giant Hamedori! I used to love coming to Hamedori Land.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“啊……你看你看。巨大Hamedori君！好怀念啊，有Hamedori君在的游乐园。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「啊……你看你看。巨大Hamedori君！好懷念啊，有Hamedori君在的遊樂園。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00028",
+		linknext = "0056_00030",
+		line = 386,
+	},
+	["0056_00030"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I bet.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“真的呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「真的呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00029",
+		linknext = "0056_00031",
+		line = 398,
+	},
+	["0056_00031"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I never thought I’d see the day when looking up at this hideously weird looking bird would fill me with a sense of ease, but here I am.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我没想过有一天，当看到这只设计的恶心的鸟时，会放下心来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我沒想過有一天，當看到這隻設計的噁心的鳥時，會放下心來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00030",
+		linknext = "0056_00032",
+		line = 408,
+	},
+	["0056_00032"] = {
+		{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00103", file3="ikuko_02m_00310", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1177", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“It’s like it was all a dream—cumming my way into a parallel dimension where there’s no Hamedori and everyone’s calling you His Sexellency.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“就算是……在做梦一样。因为自慰而跨越平行世界，然后淳之介居然被称为性帝，而且Hamedori君不见了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「就算是……在做夢一樣。因為自慰而跨越平行世界，然後淳之介居然被稱為性帝，而且Hamedori君不見了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00031",
+		linknext = "0056_00033",
+		line = 423,
+	},
+	["0056_00033"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file3="jun_01f_00309", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Asane and the others were my enemy too. Then just when you thought you’d smoked out the leader, Hamedori showed up.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“麻沙音跟大家都与我为敌──当我以为能将首脑揪出来时，Hanedori君就出现了呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「麻沙音跟大家都與我為敵──當我以爲能將首腦揪出來時，Hanedori君就出現了呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00032",
+		linknext = "0056_00034",
+		line = 435,
+	},
+	["0056_00034"] = {
+		{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00103", file2="ikuko_02m_00229", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1178", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Being beaten to bits by him was pretty disheartening.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“真是受不了，结果被Hamedori君狠狠的修理了一顿。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「真是受不了，結果被Hamedori君狠狠的修理了一頓。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00033",
+		linknext = "0056_00035",
+		line = 450,
+	},
+	["0056_00035"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00220", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“More than that, being duped and labeled a traitor by the FS was pretty unbearable.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不仅如此，还被巧妙地利用，甚至被FS视为叛徒……真是吃不消啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不僅如此，還被巧妙地利用，甚至被FS視為叛徒……真是吃不消啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00034",
+		linknext = "0056_00036",
+		line = 462,
+	},
+	["0056_00036"] = {
+		{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00103", file2="ikuko_02m_00222", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1179", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“But you never once gave up. You picked us up and recruited the NLNS to our cause, one by one.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“即便如此，淳之介君也没放弃呢。不仅激励了我们，更把NLNS的人一个个的拉回来……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「即便如此，淳之介君也沒放棄呢。不僅激勵了我們，更把NLNS的人一個個的拉回來……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00035",
+		linknext = "0056_00037",
+		line = 477,
+	},
+	["0056_00037"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00211", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Fumino, Misaki, Hinami, Nanase... They became our friends all over again. We got the FS back on our side.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不管是文乃、美岬、雏见或是奈奈濑……都再一次的成为了我们的伙伴。FS的伙伴也都回来了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不管是文乃、美岬、雛見或是奈奈瀨……都再一次的成爲了我們的夥伴。FS的夥伴也都回來了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00036",
+		linknext = "0056_00038",
+		line = 489,
+	},
+	["0056_00038"] = {
+		{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00103", file3="ikuko_02m_00311", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1180", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“And you never gave up on Asane when she was the only one left. You clung to her desperately all that time.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“最后只剩下麻沙音，也是绝对不会放弃她……淳之介君发了疯似地拥抱她呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「最後只剩下麻沙音，也是絕對不會放棄她……淳之介君發了瘋似地擁抱她呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00037",
+		linknext = "0056_00039",
+		line = 504,
+	},
+	["0056_00039"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Then with everyone together, we won the final battle and made it back to our own world.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“是啊──然后，终于将大家聚集起来……赢得了最后的战役，回到了原来的世界了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「是啊──然後，終於將大家聚集起來……贏得了最後的戰役，回到了原來的世界了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00038",
+		linknext = "0056_00040",
+		line = 516,
+	},
+	["0056_00040"] = {
+		{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00103", file3="ikuko_02m_00310", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1181", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Our home, the one where you and your friends changed the law.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“淳之介君你们将原世界的条例给改变了……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「淳之介君你們將原世界的條例給改變了……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00039",
+		linknext = "0056_00041",
+		line = 531,
+	},
+	["0056_00041"] = {
+		{"fg", file="ikuko_01m_00002", file1="ikuko_01m_00103", file2="ikuko_01m_00229", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1182", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Ahaha, yeah. I remember everything...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“啊哈哈……我记得呢。全部都记得……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「啊哈哈……我記得呢。全部都記得……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00040",
+		linknext = "0056_00042",
+		line = 546,
+	},
+	["0056_00042"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Yeah. Me too. Everything.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“是啊──全部都记得呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「是啊──全部都記得呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00041",
+		linknext = "0056_00043",
+		line = 558,
+	},
+	["0056_00043"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Everything that happened on this world and the other one. I remember it all clear as day.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不论是在这世界生活过得记忆，又或是在那世界做过的事──全部都记得清清楚楚。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不論是在這世界生活過得記憶，又或是在那世界做過的事──全部都記得清清楚楚。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00042",
+		linknext = "0056_00044",
+		line = 568,
+	},
+	["0056_00044"] = {
+		{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00103", file2="ikuko_02m_00202", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1183", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“It’s weird. I’m happy... Like, really happy...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“怎么说呢……真开心呢……真的非常开心喔……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「怎麼說呢……真開心呢……真的非常開心喔……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00043",
+		linknext = "0056_00045",
+		line = 583,
+	},
+	["0056_00045"] = {
+		{"fgact", ch="郁子10", id=10, lv=10, act="表示アクション", alpha=0, alphadel=1, style="reset", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It wasn’t just a dream.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这一切都不是如梦一场。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這一切都不是如夢一場。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00044",
+		linknext = "0056_00046",
+		line = 595,
+	},
+	["0056_00046"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And neither was that promise I made to her.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那天──和郁子相互许下的约定。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那天──和郁子相互許下的約定。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00045",
+		linknext = "0056_00047",
+		line = 605,
+	},
+	["0056_00047"] = {
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I can’t leave that unfulfilled.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"所以──现在正是，必须要履行那个约定的时候了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"所以──現在正是，必須要履行那個約定的時候了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00046",
+		linknext = "0056_00048",
+		line = 616,
+	},
+	["0056_00048"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Ikuko takes her eyes off of the glistening lights of the park and turns her head to look at me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"郁子她盯着有闪闪发光的灯饰的游乐园，回过头忘向了我。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"郁子她盯著有閃閃發光的燈飾的遊樂園，回過頭忘向了我。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00047",
+		linknext = "0056_00049",
+		line = 626,
+	},
+	["0056_00049"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=11},
+		{"cgdel", id=12, time=0, alphadel=1, lv=5},
+		{"cgdel", id=13, time=0, alphadel=1, lv=5},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"cgdel", id=15, time=0, alphadel=1, lv=5},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"evset", file="icg04", set="icg04", path=":ev/icg04/"},
+		{"evset", file="icg04_l0101", set="icg04_l01", path=":ev/icg04_l01/"},
+		{"bg", id=18, file="icg04_l0101", x=0, y=0, path=":cg/icg04_l/", lv=18, ev=1, bx=800, by=450},
+		{"bg", id=1, file="bg07_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=18, file="icg04_l0101", x=0, y=0, path=":cg/icg04_l/", lv=18, ev=1, bx=800, by=450},
+		{"extrans", sync=0, time=1500},
+		{"ex", time=500, func="wait"},
+		{"bgm", file="bgm26", vol=100},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1184", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“I love you, Junnosuke.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“……我啊。喜欢纯之介。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「……我啊。喜歡純之介。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00048",
+		linknext = "0056_00050",
+		line = 683,
+	},
+	["0056_00050"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"There they are again. Those words she shared that day.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那是和那一天相同的话语。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那是和那一天相同的話語。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00049",
+		linknext = "0056_00051",
+		line = 693,
+	},
+	["0056_00051"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But this time there’s no sorrow or hesitation. She says it without any doubt that her feelings are her own.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不论是忧郁或迷茫──对自己的感情丝毫没有怀疑与谎言，那是郁子的感情。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不論是憂鬱或迷茫──對自己的感情絲毫沒有懷疑與謊言，那是郁子的感情。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00050",
+		linknext = "0056_00052",
+		line = 703,
+	},
+	["0056_00052"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00203", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我────”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我────」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00051",
+		linknext = "0056_00053",
+		line = 715,
+	},
+	["0056_00053"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I start as I meant to continue before.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"现在，就在这里──重新开始那时后的事。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"現在，就在這裡──重新開始那時後的事。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00052",
+		linknext = "0056_00054",
+		line = 725,
+	},
+	["0056_00054"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00211", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“We’ve spent a lot of time together up to now, Ikuko.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“────一直都和郁子在一起。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「────一直都和郁子在一起。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00053",
+		linknext = "0056_00055",
+		line = 737,
+	},
+	["0056_00055"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I want to let her know how I really feel.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就毫不掩饰的把自己的想法，传达给郁子吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就毫不掩飾的把自己的想法，傳達給郁子吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00054",
+		linknext = "0056_00056",
+		line = 747,
+	},
+	["0056_00056"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Do you remember the first time we met?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“还记得吗？第一次见面时的事──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「還記得嗎？第一次見面時的事──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00055",
+		linknext = "0056_00057",
+		line = 759,
+	},
+	["0056_00057"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file3="jun_01f_00309", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I’d just transferred here and you said something like ‘I call dibs’ and I thought to myself, there’s no way we’re gonna get along.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“对着才刚转学过来的我说‘把你的第一次给我’之类的……还觉得我绝对跟这家伙处不来的。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「對著才剛轉學過來的我說『把你的第一次給我』之類的……還覺得我絕對跟這傢伙處不來的。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00056",
+		linknext = "0056_00058",
+		line = 771,
+	},
+	["0056_00058"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Even after we became enemies, you were so freaking strong and you were always targeting me. You drove me nuts, seriously.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“即使变成了像敌对关系，也是强得吓人，又只攻击我一个──你真的是个狠难缠的对手呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「即使變成了像敵對關係，也是強得嚇人，又只攻擊我一個──你真的是個狠難纏的對手呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00057",
+		linknext = "0056_00059",
+		line = 782,
+	},
+	["0056_00059"] = {
+		{"evset", file="icg04", set="icg04", path=":ev/icg04/"},
+		{"evset", file="icg04_l0102", set="icg04_l01", path=":ev/icg04_l01/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="icg04_l0102", x=0, y=0, path=":cg/icg04_l/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Ikuko closes her eyes, recalling the moments I’m talking about.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"郁子闭上双眼──像是回想一般的听着我说话。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"郁子閉上雙眼──像是回想一般的聽著我說話。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00058",
+		linknext = "0056_00060",
+		line = 799,
+	},
+	["0056_00060"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00211", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“And that’s what led to you almost being chased off the island. Because of me...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“然后……因为我的关系，被驱逐出了岛──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「然後……因為我的關係，被驅逐出了島──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00059",
+		linknext = "0056_00061",
+		line = 811,
+	},
+	["0056_00061"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“And in spite of that, you came running to save me when I was in a pinch.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“即使如此……在最危急之时，还是赶来帮助了我。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「即使如此……在最危急之時，還是趕來幫助了我。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00060",
+		linknext = "0056_00062",
+		line = 823,
+	},
+	["0056_00062"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I didn’t plan to say so much, but I can’t stop my feelings from coming out.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"明明没打算说这么多话，但心里却充满了话语。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"明明沒打算說這麼多話，但心裡卻充滿了話語。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00061",
+		linknext = "0056_00063",
+		line = 833,
+	},
+	["0056_00063"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file3="jun_01f_00309", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Then for some reason, we got stuck in a parallel universe.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“然后……不知为何，一起去到了平行世界。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「然後……不知為何，一起去到了平行世界。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00062",
+		linknext = "0056_00064",
+		line = 845,
+	},
+	["0056_00064"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The days Ikuko and I spent together, the way her voice sounds, the expressions she makes—they run around in my mind like a carousel.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"和郁子一起度过的那些日子，她的声音、她的表情──像走马灯一样在脑海中闪过。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"和郁子一起度過的那些日子，她的聲音、她的表情──像走馬燈一樣在腦海中閃過。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00063",
+		linknext = "0056_00065",
+		line = 855,
+	},
+	["0056_00065"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file3="jun_01f_00309", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Neither of us knew what was happening.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“真的是，不知道发生了什么事。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「真的是，不知道發生了什麼事。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00064",
+		linknext = "0056_00066",
+		line = 867,
+	},
+	["0056_00066"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Putting each thought that comes to mind into words gives them shape.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"每当我编织词语时,心中所想的都会一一成形。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"每當我編織詞語時,心中所想的都會一一成形。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00065",
+		linknext = "0056_00067",
+		line = 877,
+	},
+	["0056_00067"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“You burned me a few times even on that world. You’re always so unleashed, it makes you quite a handful.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“在那边也依旧过得很辛苦呢……郁子总是那么 直率，所以受了很多苦呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「在那邊也依舊過得很辛苦呢……郁子總是那麼 直率，所以受了很多苦呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00066",
+		linknext = "0056_00068",
+		line = 889,
+	},
+	["0056_00068"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"There wasn’t really any one event or particular trigger that made me feel this way.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"也不是有特别的事情或是明确的契机。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"也不是有特別的事情或是明確的契機。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00067",
+		linknext = "0056_00069",
+		line = 899,
+	},
+	["0056_00069"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00211", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“You were there to pick me up in my darkest moments. You helped make me stronger when I was feeling weak and stupid.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……在我沮丧的时，是你扶持了我。在我又笨又弱时，即使这样你依旧锻炼着我。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……在我沮喪的時，是你扶持了我。在我又笨又弱時，即使這樣你依舊鍛鍊著我。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00068",
+		linknext = "0056_00070",
+		line = 911,
+	},
+	["0056_00070"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Now I understand, finally reaching this point after all those empty days that piled on top of each other.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"现在才知道，再反覆不断的日子里兜兜转转地最终还是回到了这里。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"現在才知道，再反覆不斷的日子裡兜兜轉轉地最終還是回到了這裡。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00069",
+		linknext = "0056_00071",
+		line = 921,
+	},
+	["0056_00071"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Before I knew it, I felt like I couldn’t not be at your side.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不知何时开始……变成了必须陪伴在右的那种存在。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不知何時開始……變成了必須陪伴在右的那種存在。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00070",
+		linknext = "0056_00072",
+		line = 933,
+	},
+	["0056_00072"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00211", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“That’s why...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“所以────”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「所以────」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00071",
+		linknext = "0056_00073",
+		line = 945,
+	},
+	["0056_00073"] = {
+		{"evset", file="icg04", set="icg04", path=":ev/icg04/"},
+		{"evset", file="icg04_l0103", set="icg04_l01", path=":ev/icg04_l01/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="icg04_l0103", x=0, y=0, path=":cg/icg04_l/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Ikuko beams silently at me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"郁子静静的[|露出微笑]。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"郁子靜靜的[|露出微笑]。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00072",
+		linknext = "0056_00074",
+		line = 962,
+	},
+	["0056_00074"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I gaze back at her beautiful face.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"从正面直盯盯盯地看着，她漂亮的脸庞。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"從正面直盯盯盯地看著，她漂亮的臉龐。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00073",
+		linknext = "0056_00075",
+		line = 972,
+	},
+	["0056_00075"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The sight makes my heart skip a beat.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"光是这样做，心跳就会微微加快。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"光是這樣做，心跳就會微微加快。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00074",
+		linknext = "0056_00076",
+		line = 982,
+	},
+	["0056_00076"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My face feels like it’s gonna split at the seams and my chest is strangely warm.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"满脸通红，胸口有股奇妙的暖流。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"滿臉通紅，胸口有股奇妙的暖流。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00075",
+		linknext = "0056_00077",
+		line = 992,
+	},
+	["0056_00077"] = {
+		{"ex", time=500, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That’s why...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"所以────",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"所以────",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00076",
+		linknext = "0056_00078",
+		line = 1003,
+	},
+	["0056_00078"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00203", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I want to be by your side, Ikuko. Now and forever.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“从今往后，一直……都想和郁子在一起。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「從今往後，一直……都想和郁子在一起。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00077",
+		linknext = "0056_00079",
+		line = 1015,
+	},
+	["0056_00079"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1185", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Me too.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“嗯……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「嗯……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00078",
+		linknext = "0056_00080",
+		line = 1027,
+	},
+	["0056_00080"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Ikuko takes my hand and holds it gently in her own.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"郁子纤细的双手包住了我的手。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"郁子纖細的雙手包住了我的手。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00079",
+		linknext = "0056_00081",
+		line = 1037,
+	},
+	["0056_00081"] = {
+		{"evset", file="icg04", set="icg04", path=":ev/icg04/"},
+		{"evset", file="icg040102", set="icg040102", path=":ev/icg040102/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="icg040102", x=-5, y=-2.5, path=":cg/icg04/", lv=18, ev=1, bx=800, by=450},
+		{"bg", id=1, file="bg07_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=18, file="icg040102", x=-5, y=-2.5, path=":cg/icg04/", lv=18, ev=1, bx=800, by=450},
+		{"extrans", sync=0, time=1500},
+		{"ex", time=500, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She touches it against her warm chest.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那只手触摸着温暖的胸口。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那只手觸摸著溫暖的胸口。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00080",
+		linknext = "0056_00082",
+		line = 1057,
+	},
+	["0056_00082"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1186", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Can you feel my heartbeat?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“心跳的声音，感受到了吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「心跳的聲音，感受到了嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00081",
+		linknext = "0056_00083",
+		line = 1069,
+	},
+	["0056_00083"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00211", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I can.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……是啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……是啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00082",
+		linknext = "0056_00084",
+		line = 1081,
+	},
+	["0056_00084"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s faint, but I can feel the soft beating of her heart through my palm.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然只有一点点，但从掌心可以感受到心脏跳动的跳动。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然只有一點點，但從掌心可以感受到心臟跳動的跳動。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00083",
+		linknext = "0056_00085",
+		line = 1091,
+	},
+	["0056_00085"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1187", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“This is how fast it beats when you’re around. It’s the sound that tells me I’m in love. That I’m in love with you, Junnosuke.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“只有和淳之介在一起的时候，才会如此激动。这是恋爱的声音……是喜欢淳之介的声音……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「只有和淳之介在一起的時候，才會如此激動。這是戀愛的聲音……是喜歡淳之介的聲音……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00084",
+		linknext = "0056_00086",
+		line = 1103,
+	},
+	["0056_00086"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00211", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Yeah.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“是啊──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「是啊──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00085",
+		linknext = "0056_00087",
+		line = 1115,
+	},
+	["0056_00087"] = {
+		{"evset", file="icg04", set="icg04", path=":ev/icg04/"},
+		{"evset", file="icg040103", set="icg040103", path=":ev/icg040103/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="icg040103", x=-5, y=-2.5, path=":cg/icg04/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1188", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“You’ve said a whole lot of words, but I don’t want fancy proclamations about ‘now and forever.’ I just want you to tell me how you feel.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“说了这么多，还是想和你在一起……淳之介还是一如往常般地帅气呢。希望你能告诉我更直接地感受？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「說了這麼多，還是想和你在一起……淳之介還是一如往常般地帥氣呢。希望你能告訴我更直接地感受？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00086",
+		linknext = "0056_00088",
+		line = 1134,
+	},
+	["0056_00088"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Saying how I feel is embarrassing.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然要把隐藏起来的真心话说出来，很难为情。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然要把隱藏起來的真心話說出來，很難為情。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00087",
+		linknext = "0056_00089",
+		line = 1144,
+	},
+	["0056_00089"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But if that’s what she wants, I have to answer honestly.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"如果郁子这么说了，那就必须要回答了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"如果郁子這麼說了，那就必須要回答了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00088",
+		linknext = "0056_00090",
+		line = 1154,
+	},
+	["0056_00090"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="icg04_l0103", x=0, y=0, path=":cg/icg04_l/", lv=18, ev=1, bx=800, by=450},
+		{"bg", id=1, file="bg07_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=18, file="icg04_l0103", x=0, y=0, path=":cg/icg04_l/", lv=18, ev=1, bx=800, by=450},
+		{"extrans", sync=0, time=800},
+		{"ex", time=1300, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I look directly into her eyes.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"从正面看着郁子的脸。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"從正面看著郁子的臉。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00089",
+		linknext = "0056_00091",
+		line = 1171,
+	},
+	["0056_00091"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I refuse to look away.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"绝对不会移开视线。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"絕對不會移開視線。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00090",
+		linknext = "0056_00092",
+		line = 1181,
+	},
+	["0056_00092"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I don’t even blink.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"连眼都不眨。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"連眼都不眨。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00091",
+		linknext = "0056_00093",
+		line = 1191,
+	},
+	["0056_00093"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00092",
+		linknext = "0056_00094",
+		line = 1201,
+	},
+	["0056_00094"] = {
+		{"fg", file="jun_01f_00002", file1="jun_01f_00101", file2="jun_01f_00203", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I love you Ikuko. Will you go out with me?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我喜欢郁子。想要和你交往。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我喜歡郁子。想要和你交往。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00093",
+		linknext = "0056_00095",
+		line = 1213,
+	},
+	["0056_00095"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="icg04_l0101", x=0, y=0, path=":cg/icg04_l/", lv=18, ev=1, bx=800, by=450},
+		{"bg", id=1, file="bg07_3_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=18, file="icg04_l0101", x=0, y=0, path=":cg/icg04_l/", lv=18, ev=1, bx=800, by=450},
+		{"extrans", sync=0, time=800},
+		{"ex", time=1300, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A smile brightens her face like no other.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"郁子露出了极其开心的笑容。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"郁子露出了極其開心的笑容。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00094",
+		linknext = "0056_00096",
+		line = 1230,
+	},
+	["0056_00096"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1189", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Of course.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“……好啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「……好啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00095",
+		linknext = "0056_00097",
+		line = 1242,
+	},
+	["0056_00097"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And that...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就这样。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就這樣。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00096",
+		linknext = "0056_00098",
+		line = 1252,
+	},
+	["0056_00098"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"...is how Ikuko and I became lovers.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我和郁子变成了一对恋人了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我和郁子變成了一對戀人了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0056_00097",
+		linknext = "block_00098",
+		line = 1262,
+	},
+	block_00098 = {
+		{"bgm", stop=1},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=12, time=0, alphadel=1, lv=5},
+		{"cgdel", id=13, time=0, alphadel=1, lv=5},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"cgdel", id=15, time=0, alphadel=1, lv=5},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=2000, rule="eff_043_00000"},
+		{"cgdel", id=1, lv=1, time=0, alphadel=1},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"ex", time=3000, func="wait"},
+		{"excall", file="05_io13"},
+		{"text"},
+		linkback = "0056_00098",
+		line = 1312,
+	},
+	label = {
+		top = { block="0056_00001", label=1 },
+	},
+}

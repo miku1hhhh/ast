@@ -1,0 +1,1582 @@
+astver = 2.0
+ast = {
+	["0045_00001"] = {
+		{"savetitle", text="02_c21_io10", ja="Strike Force", en="Strike Force", cn="Strike Force", tw="Strike Force"},
+		{"eval", exp="g.02_c21_io10=1"},
+		{"eval", exp="f.route=3"},
+		{"se", id=1, loop=1, file="se_d031", vol=50},
+		{"bg", id=1, file="bg27_2_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg27_2_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1000, rule="eff_033_00000"},
+		{"ex", time=500, func="wait"},
+		{"bgm", file="bgm03", vol=100},
+		{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file2="ikuko_01m_00214", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[3200] = {
+				{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file2="ikuko_01m_00201", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=1, delay2=3200, mode=3, x=-5, y=-5},
+			},
+			[3199] = {
+				{"transitiontime", time=300, timestamp=1, delay2=3200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ikuko1093", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Geez, you really are a bunch of dummies. Here, have a banana.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“真是的，大只酱们真的是大笨蛋呢。来，香蕉。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「真是的，大隻醬們真的是大笨蛋呢。來，香蕉。」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "0045_00002",
+		line = 28,
+	},
+	["0045_00002"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="gmoba0107", path=":vo/", ch="gmob"},
+			},
+			ja = {
+				{
+					name = {"モブ女A", "ゴリマス"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"モブ女A", "Gorillina"},
+					"“Whoohoo! A banana from the squad commander!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"モブ女A", "大只女"},
+					"“喔吼！队长大人的香蕉！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"モブ女A", "大隻女"},
+					"「喔吼！隊長大人的香蕉！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00001",
+		linknext = "0045_00003",
+		line = 40,
+	},
+	["0045_00003"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="gmobc0070", path=":vo/", ch="gmob"},
+			},
+			ja = {
+				{
+					name = {"モブ女C", "クールフール"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"モブ女C", "Cool Fool"},
+					"“Commander One-butt... I’m sorry for being such a detriment to the strike force. I will hold my breath for 15 minutes as punishment for my uselessness.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"モブ女C", "蠢酷"},
+					"“田中队长……做为强袭队的一员真的深感抱歉。虽然这种事算不上是种道歉，但我会停止呼吸15分钟的。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"モブ女C", "蠢酷"},
+					"「田中隊長……做為強襲隊的一員真的深感抱歉。雖然這種事算不上是種道歉，但我會停止呼吸15分鐘的。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00002",
+		linknext = "0045_00004",
+		line = 52,
+	},
+	["0045_00004"] = {
+		{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file2="ikuko_01m_00205", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1094", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Just making sure you know: 15 minutes is not the same as 1500 seconds, okay?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“为了慎重起见提醒你,15分并不是1500秒吧？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「為了慎重起見提醒你,15分並不是1500秒吧？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00003",
+		linknext = "0045_00005",
+		line = 67,
+	},
+	["0045_00005"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="gmobc0071", path=":vo/", ch="gmob"},
+			},
+			ja = {
+				{
+					name = {"モブ女C", "クールフール"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"モブ女C", "Cool Fool"},
+					"“Heh, Commander One-butt, you’re always so full of sage-like wisdom. Now, please behold... HUP!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"モブ女C", "蠢酷"},
+					"“嘻……田中队长还是那么富有哲理性的说话,大家看着吧──嘶！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"モブ女C", "蠢酷"},
+					"「嘻……田中隊長還是那麽富有哲理性的說話,大家看著吧──嘶！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00004",
+		linknext = "0045_00006",
+		line = 79,
+	},
+	["0045_00006"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Ikuko’s warning having gone right over her head, Cooly Fooly starts holding her breath.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在没有听懂郁子指正的情况下,库尔弗开始屏气。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在沒有聽懂郁子指正的情況下,庫爾弗開始屏氣。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00005",
+		linknext = "0045_00007",
+		line = 89,
+	},
+	["0045_00007"] = {
+		{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file3="ikuko_02m_00301", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300, draw2=1},
+		{"ex", time=600, func="wait"},
+		{"bg", id=20, file="whiteback_00000", x=0, y=0, lv=20, path=":bg/", sync=0},
+		{"cgact", file="cgact", id=20, act="アルファフェード点滅", loop=1, alpha="0,256", time=100, alphadel=1, lv=20},
+		{"se", id=0, loop=0, file="se_a200"},
+		{"text"},
+		delay = {
+			[800] = {
+				{"cgdel", id=20, lv=20, time=0, alphadel=1, timestamp=2, delay2=800},
+				{"bg", id=20, file="whiteback_00000", x=0, y=0, lv=20, path=":bg/", sync=0, timestamp=2, delay2=800},
+				{"cgact", file="cgact", id=20, act="アルファフェード点滅", loop=1, alpha="0,256", time=100, alphadel=1, timestamp=2, delay2=800, lv=20},
+				{"se", id=0, loop=0, file="se_a200", timestamp=2, delay2=800},
+			},
+		},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Finding the trivial exchange to actually be pretty funny, Ikuko takes photos with the pair.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"郁子忍不住享受起这种无用的交流，并与她们两人合照留念。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"郁子忍不住享受起這種無用的交流，並與她們兩人合照留念。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00006",
+		linknext = "0045_00008",
+		line = 111,
+	},
+	["0045_00008"] = {
+		{"cgdel", id=20, time=0, alphadel=1, lv=20},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Seeing them laughing together like this gives me strength.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"看着她这样笑着,那就是我的活力所在。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"看著她這樣笑著,那就是我的活力所在。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00007",
+		linknext = "0045_00009",
+		line = 123,
+	},
+	["0045_00009"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00207", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I’m glad that worked out.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“──太好了呢，郁子。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「──太好了呢，郁子。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00008",
+		linknext = "0045_00010",
+		line = 135,
+	},
+	["0045_00010"] = {
+		{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file2="ikuko_02m_00222", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="郁子10", id=10, act="振動下", loop=1, size=12.5, time=300, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file3="ikuko_01m_00312", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=3, delay2=1500, mode=3, x=-5, y=-5},
+			},
+			[1499] = {
+				{"transitiontime", time=300, timestamp=3, delay2=1500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ikuko1095", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Me too. Gorilina, Cooly, get ready to leave.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“嗯，太好了……。大只酱、库尔酱，要准备出门了喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「嗯，太好了……。大隻醬、庫爾醬，要準備出門了喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00009",
+		linknext = "0045_00011",
+		line = 154,
+	},
+	["0045_00011"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="gmoba0108", path=":vo/", ch="gmob"},
+			},
+			ja = {
+				{
+					name = {"モブ女A", "ゴリマス"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"モブ女A", "Gorillina"},
+					"“Aye-aye-aye! Understood!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"モブ女A", "大只女"},
+					"“A-5，了解。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"モブ女A", "大隻女"},
+					"「A-5，了解。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00010",
+		linknext = "0045_00012",
+		line = 166,
+	},
+	["0045_00012"] = {
+		{"se", id=0, loop=0, file="se_a052"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The strike force duo nod to each other and make off in the wrong direction, Cooly Fooly still holding her breath.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"强袭部队的两人点了点头，而库尔弗则停止呼吸并朝着错误的方向跑去。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"強襲部隊的兩人點了點頭，而庫爾弗則停止呼吸並朝著錯誤的方向跑去。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00011",
+		linknext = "0045_00013",
+		line = 177,
+	},
+	["0045_00013"] = {
+		{"ex", time=500, func="wait"},
+		{"se", id=0, stop=1, time=1000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"They were quickly captured by the first squad.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"马上就被第一中队的同伴们抓回去了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"馬上就被第一中隊的同伴們抓回去了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00012",
+		linknext = "0045_00014",
+		line = 189,
+	},
+	["0045_00014"] = {
+		{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file3="ikuko_01m_00306", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It worked out, but... the strike force seems to be a sandwich or two short of a picnic.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"太好了……强袭部队，似乎并不是全员都是那样子的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"太好了……強襲部隊，似乎並不是全員都是那樣子的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00013",
+		linknext = "0045_00015",
+		line = 202,
+	},
+	["0045_00015"] = {
+		{"fgact", ch="郁子10", id=10, act="振動下", loop=2, size=12.5, time=300, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a123"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Ikuko gazes at them nostalgically, typing away frantically on her tablet.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"郁子一边怀念地凝视着这样的光景,一边迅速地在平板上输入文字。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"郁子一邊懷念地凝視著這樣的光景,一邊迅速地在平板上輸入文字。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00014",
+		linknext = "0045_00016",
+		line = 214,
+	},
+	["0045_00016"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s probably sending orders to the team.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我想这也是在写给部队的指示内容吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我想這也是在寫給部隊的指示內容吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00015",
+		linknext = "0045_00017",
+		line = 224,
+	},
+	["0045_00017"] = {
+		{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file2="ikuko_01m_00214", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="郁子10", id=10, act="振動下", loop=1, size=12.5, time=400, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[1000] = {
+				{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file2="ikuko_01m_00229", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=4, delay2=1000, mode=3, x=-5, y=-5},
+			},
+			[999] = {
+				{"transitiontime", time=300, timestamp=4, delay2=1000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ikuko1096", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Phew... I know I said we’d be fine as long as we have you, Junnosuke. But it is nice to have everyone together.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“呵……有淳之介在的话就没问题了，该怎么说呢……果然，还是大家在一起比较好。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「呵……有淳之介在的話就沒問題了，該怎麼說呢……果然，還是大家在一起比較好。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00016",
+		linknext = "0045_00018",
+		line = 243,
+	},
+	["0045_00018"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00207", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Yeah, I’m inclined to agree.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“是啊──的确是这样呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「是啊──的確是這樣呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00017",
+		linknext = "0045_00019",
+		line = 255,
+	},
+	["0045_00019"] = {
+		{"bgm", stop=1},
+		{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file2="ikuko_01m_00223", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1097", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“We’re not done yet though, are we?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“不过……这还不够喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「不過……這還不夠喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00018",
+		linknext = "0045_00020",
+		line = 271,
+	},
+	["0045_00020"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s right.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"说的没错啊。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"說的沒錯啊。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00019",
+		linknext = "0045_00021",
+		line = 281,
+	},
+	["0045_00021"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Fumino believed in me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"文乃相信了我。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"文乃相信了我。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00020",
+		linknext = "0045_00022",
+		line = 291,
+	},
+	["0045_00022"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Misaki, Hinami... Nanase too. They all called out for me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"美岬、雏见──奈奈濑，都再次回应了我的呼唤。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"美岬、雛見──奈奈瀨，都再次回應了我的呼喚。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00021",
+		linknext = "0045_00023",
+		line = 301,
+	},
+	["0045_00023"] = {
+		{"ex", time=500, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But there’s still something missing.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"尽管如此，仍然存在缺口。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"盡管如此，仍然存在缺口。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00022",
+		linknext = "0045_00024",
+		line = 312,
+	},
+	["0045_00024"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I can’t start anything without the girl who was with me from the very beginning.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"如果没有那个在一切开始前就一直在一起的孩子──就不会开始。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"如果沒有那個在一切開始前就一直在一起的孩子──就不會開始。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00023",
+		linknext = "0045_00025",
+		line = 322,
+	},
+	["0045_00025"] = {
+		{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file3="ikuko_02m_00306", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1098", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Junnosuke... Seeing you look sad makes me sad too.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“……淳之介君看起来很哀伤呢，怎么觉得我也哀伤了起来。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「……淳之介君看起來很哀傷呢，怎麼覺得我也哀傷了起來。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00024",
+		linknext = "0045_00026",
+		line = 337,
+	},
+	["0045_00026"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We may have the FS back, but that doesn’t change this feeling of hopelessness.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就算FS回来了，状况依然十分绝望。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就算FS回來了，狀況依然十分絕望。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00025",
+		linknext = "0045_00027",
+		line = 347,
+	},
+	["0045_00027"] = {
+		{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00103", file3="ikuko_02m_00311", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1099", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“And seeing you smile makes me smile too.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“淳之介君要是笑了的话，我也会跟着笑得。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「淳之介君要是笑了的話，我也會跟著笑得。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00026",
+		linknext = "0045_00028",
+		line = 362,
+	},
+	["0045_00028"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She smiles at me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"尽管如此，郁子还是笑了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"盡管如此，郁子還是笑了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00027",
+		linknext = "0045_00029",
+		line = 372,
+	},
+	["0045_00029"] = {
+		{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file3="ikuko_02m_00310", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[8000] = {
+				{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file2="ikuko_02m_00224", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=5, delay2=8000, mode=3, x=-5, y=-5},
+			},
+			[7999] = {
+				{"transitiontime", time=300, timestamp=5, delay2=8000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ikuko1100", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“So if I can make you smile by doing my best, then you bet your bottom I’ll do everything in my power to help you. I know it hurts... being treated that way by your own family.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“所以啊。我要是努力一点，淳之介君要是对我笑的话……无论怎样都会成为我的力量。……被珍视的家人打击……很难受呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「所以啊。我要是努力一點，淳之介君要是對我笑的話……無論怎樣都會成為我的力量。……被珍視的家人打擊……很難受呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00028",
+		linknext = "0045_00030",
+		line = 390,
+	},
+	["0045_00030"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m at a loss for words, but I still manage to smile back.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"无意中陷入了这个词──我笑了起来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"無意中陷入了這個詞──我笑了起來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00029",
+		linknext = "0045_00031",
+		line = 400,
+	},
+	["0045_00031"] = {
+		{"fg", file="jun_01f_00006", file1="jun_01f_00101", file2="jun_01f_00202", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I’m counting on you, Ikuko.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我很依赖你喔──郁子。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我很依賴你喔──郁子。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00030",
+		linknext = "0045_00032",
+		line = 412,
+	},
+	["0045_00032"] = {
+		{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00103", file3="ikuko_02m_00311", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=100},
+		{"fgact", ch="郁子10", id=10, act="振動下", loop=1, size=12.5, time=400, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"If Ikuko will smile for me, then I’ll keep on smiling too.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"如果这能让郁子欢笑的话──我会一直笑着下去的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"如果這能讓郁子歡笑的話──我會一直笑著下去的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00031",
+		linknext = "0045_00033",
+		line = 426,
+	},
+	["0045_00033"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Asane attacked me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"麻沙音攻击了我。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"麻沙音攻擊了我。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00032",
+		linknext = "0045_00034",
+		line = 436,
+	},
+	["0045_00034"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My only family came at me with intent to kill.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"独一无二的家人对自己动了杀机。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"獨一無二的家人對自己動了殺機。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00033",
+		linknext = "0045_00035",
+		line = 446,
+	},
+	["0045_00035"] = {
+		{"ex", time=500, func="wait"},
+		{"bg", id=1, file="bg27_2_00000", x=0, y=0, lv=1, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=805, ay=455, bx=-5, by=-5},
+		{"transitiontime", time=600},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But I won’t let that break me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"即便如此，我也不会屈服。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"即便如此，我也不會屈服。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00034",
+		linknext = "0045_00036",
+		line = 460,
+	},
+	["0045_00036"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I won’t run away with my tail between my legs.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不会因为害怕而逃跑。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不會因為害怕而逃跑。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00035",
+		linknext = "0045_00037",
+		line = 470,
+	},
+	["0045_00037"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And I’m not going to let it keep me down.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然会闷闷不乐，也不会驻足不前。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然會悶悶不樂，也不會駐足不前。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00036",
+		linknext = "0045_00038",
+		line = 480,
+	},
+	["0045_00038"] = {
+		{"bg", id=2, file="bg27_2l_00000", x=0, y=100, lv=2, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00103", file3="ikuko_02l_00311", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=600},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I wonder if you’re aware, Asa. No matter how mean your words might get, your brother has people that support him.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"麻沙酱，你知道吗。不论你说的话有多过分，你的哥哥都会支持着你的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"麻沙醬，你知道嗎。不論你說的話有多過分，你的哥哥都會支持著你的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00037",
+		linknext = "0045_00039",
+		line = 494,
+	},
+	["0045_00039"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"They’re trying to help you too.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那个人也在试图帮助你啊。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那個人也在試圖幫助你啊。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00038",
+		linknext = "0045_00040",
+		line = 504,
+	},
+	["0045_00040"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I may not have any other family in this world besides Asane...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我的家人就只有一人──在这世上就只有麻沙音了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我的家人就只有一人──在這世上就只有麻沙音了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00039",
+		linknext = "0045_00041",
+		line = 514,
+	},
+	["0045_00041"] = {
+		{"fg", file="ikuko_01l_00001", file1="ikuko_01l_00103", file3="ikuko_01l_00311", path=":fg/ikuko_01l/", id=10, lv=10, head="ikuko_01l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko1101", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Hehe. Well, if you’re counting on me then I guess I’ll have to go all-out!♪”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“嗳嘿嘿。要是淳之介君依赖我的话，我会无限地努力的♪”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「嗳嘿嘿。要是淳之介君依賴我的話，我會無限地努力的♪」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00040",
+		linknext = "0045_00042",
+		line = 529,
+	},
+	["0045_00042"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But I feel a bond just as strong with Ikuko.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"郁子感受到了与此同样强烈的羁绊。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"郁子感受到了與此同樣強烈的羈絆。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0045_00041",
+		linknext = "block_00042",
+		line = 539,
+	},
+	block_00042 = {
+		{"bgm", stop=1},
+		{"se", id=1, stop=1, time=3000},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=10, ch="郁子10", ch_origin="郁子", lv=10, time=0, sync=0},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=12, time=0, alphadel=1, lv=5},
+		{"cgdel", id=13, time=0, alphadel=1, lv=5},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"cgdel", id=15, time=0, alphadel=1, lv=5},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_043_00000"},
+		{"ex", time=3000, func="wait"},
+		{"excall", file="02_c21_2"},
+		{"text"},
+		linkback = "0045_00042",
+		line = 586,
+	},
+	label = {
+		top = { block="0045_00001", label=1 },
+	},
+}

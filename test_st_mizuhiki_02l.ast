@@ -1,0 +1,79 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"MIZUHIKI_02L",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="mizuhiki_02l_00001", file1="mizuhiki_02l_00101", file2="mizuhiki_02l_00205", path=":fg/mizuhiki_02l/", id=2, lv=5, head="mizuhiki_02l", ch_origin="水引", ch="水引2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MIZUHIKI_02L.s25,0,0,0,m,01,01,05,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="mizuhiki_02l_00001", file1="mizuhiki_02l_00101", file2="mizuhiki_02l_00206", path=":fg/mizuhiki_02l/", id=2, lv=5, head="mizuhiki_02l", ch_origin="水引", ch="水引2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MIZUHIKI_02L.s25,0,0,0,m,01,01,06,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="mizuhiki_02l_00001", file1="mizuhiki_02l_00101", file2="mizuhiki_02l_00207", path=":fg/mizuhiki_02l/", id=2, lv=5, head="mizuhiki_02l", ch_origin="水引", ch="水引2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MIZUHIKI_02L.s25,0,0,0,m,01,01,07,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="mizuhiki_02l_00001", file1="mizuhiki_02l_00101", file2="mizuhiki_02l_00227", path=":fg/mizuhiki_02l/", id=2, lv=5, head="mizuhiki_02l", ch_origin="水引", ch="水引2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MIZUHIKI_02L.s25,0,0,0,m,01,01,27,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		line = 18,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

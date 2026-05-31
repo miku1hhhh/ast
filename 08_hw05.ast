@@ -1,0 +1,5203 @@
+astver = 2.0
+ast = {
+	["0100_00001"] = {
+		{"savetitle", text="08_hw05", ja="ハメのロリコン王国", en="Loli Lovers Unite", cn="梦幻萝莉控王国", tw="夢幻蘿莉控王國"},
+		{"eval", exp="g.08_hw05=1"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bg", id=1, file="bg25_1l_00000", x=-30, y=200, lv=1, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"bg", id=1, file="bg25_1l_00000", x=-30, y=200, lv=1, path=":bg/", sync=0, time=800, rule="eff_009_00000", a_chr60=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=1, act="移動", x=55, y=-5, time=10000, lv=1},
+		{"ex", time=1000, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The days I spend with Hinami are full of happiness, never tiring, and always lively.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"与雏见一起度过的日子充满了幸福、一点也不觉得无聊，每天都过得非常充实。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"與雛見一起度過的日子充滿了幸福、一點也不覺得無聊，每天都過得非常充實。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "0100_00002",
+		line = 19,
+	},
+	["0100_00002"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And happy times sure do fly by.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"幸福的日子就像飞箭一样快速流逝。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"幸福的日子就像飛箭一樣快速流逝。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00001",
+		linknext = "0100_00003",
+		line = 29,
+	},
+	["0100_00003"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A month passes, then six months, then a year...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"过了一个月、半年，然后一年过去了──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"過了一個月、半年，然後一年過去了──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00002",
+		linknext = "0100_00004",
+		line = 39,
+	},
+	["0100_00004"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Hinami eventually graduated and went to college on the mainland. I graduated Minotsuki Academy the following year and enrolled in a school nearby.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"雏见毕业后去本岛读书，隔年我也从水乃月学园毕业，到她附近的学校念书。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雛見畢業後去本島讀書，隔年我也從水乃月學園畢業，到她附近的學校唸書。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00003",
+		linknext = "0100_00005",
+		line = 49,
+	},
+	["0100_00005"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Little by little the island has been changing, and so have we. How we are, where we stand...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不管是岛还是我们──我们的模样与立场都在一点一点地改变着。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不管是島還是我們──我們的模樣與立場都在一點一點地改變著。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00004",
+		linknext = "0100_00006",
+		line = 59,
+	},
+	["0100_00006"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But there are some things that never change.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"尽管如此，仍有不变的事。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"儘管如此，仍有不變的事。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00005",
+		linknext = "0100_00007",
+		line = 69,
+	},
+	["0100_00007"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Our relationship has stayed great all this time.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那就是我们的关系──始终都好得不得了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那就是我們的關係──始終都好得不得了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00006",
+		linknext = "0100_00008",
+		line = 79,
+	},
+	["0100_00008"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Every year, we commemorate and celebrate our special day that Hinami made.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我们都一直记得雏见设下的“特别的日子”，然后每年都会庆祝这天。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我們都一直記得雛見設下的「特別的日子」，然後每年都會慶祝這天。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00007",
+		linknext = "0100_00009",
+		line = 89,
+	},
+	["0100_00009"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s an ordinary day for everyone else, but that makes it even more special for both of us.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然对这世界来说，这真的是普通的一天，但正是因为这样，对我们来说才特别有感觉。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然對這世界來說，這真的是普通的一天，但正是因為這樣，對我們來說才特別有感覺。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00008",
+		linknext = "0100_00010",
+		line = 99,
+	},
+	["0100_00010"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Speaking of unchanging things, Hinami also has hardly changed since I met her.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"说到其他没变的地方，雏见从我们第一次见面到现在都没什么变。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"說到其他沒變的地方，雛見從我們第一次見面到現在都沒什麼變。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00009",
+		linknext = "0100_00011",
+		line = 109,
+	},
+	["0100_00011"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s still struggling to increase her bust size like she always has, but so far she has seen no success, and often looks down at her flat chest in disappointment.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她还是在为丰胸孤军奋斗，但依旧没什么效果，每次摸着那片飞机场都很沮丧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她還是在為豐胸孤軍奮鬥，但依舊沒什麼效果，每次摸著那片飛機場都很沮喪。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00010",
+		linknext = "0100_00012",
+		line = 119,
+	},
+	["0100_00012"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even so, apparently there has been some miniscule amount growth.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"尽管如此，她的胸部也是有些微的成长。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"儘管如此，她的胸部也是有些微的成長。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00011",
+		linknext = "0100_00013",
+		line = 129,
+	},
+	["0100_00013"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"When there is even a fraction of a change, she rushes over to tell me the big story. Things like that are the same as always.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"只要有以厘米为单位的变化，她就会兴高采烈地来向我报告这件事──这真的是从以前到现在都没变过。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"只要有以釐米為單位的變化，她就會興高采烈地來向我報告這件事──這真的是從以前到現在都沒變過。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00012",
+		linknext = "0100_00014",
+		line = 139,
+	},
+	["0100_00014"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s this unchanging Hinami who I’ve always loved so dearly.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"永远不变的雏见对我来说，非常得可爱。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"永遠不變的雛見對我來說，非常得可愛。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00013",
+		linknext = "0100_00015",
+		line = 149,
+	},
+	["0100_00015"] = {
+		{"bg", id=2, file="whiteback_00000", x=0, y=0, lv=2, path=":bg/", sync=1, alpha=0, a_chr151=1},
+		{"cgact", file="cgact", id=2, lv=2, act="表示アクション", a1=0, a2=255, time=800, a_chr=151, alpha=255},
+		{"ex", time=2000, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But today, our relationship is about to change significantly.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"然而──在今天，我们的关系将发生巨大的变化。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"然而──在今天，我們的關係將發生巨大的變化。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00014",
+		linknext = "0100_00016",
+		line = 162,
+	},
+	["0100_00016"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=12, time=0, alphadel=1, lv=5},
+		{"cgdel", id=13, time=0, alphadel=1, lv=5},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"cgdel", id=15, time=0, alphadel=1, lv=5},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"evset", file="hcg02", set="hcg02", path=":ev/hcg02/"},
+		{"evset", file="hcg0201-101", set="hcg0201-1", path=":ev/hcg0201-1/"},
+		{"bg", id=18, file="hcg0201-101", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"bg", id=1, file="bg25_1l_00000", x=25, y=195, lv=1, path=":bg/", sync=0, time=800, ax=1290, ay=730, bx=-490, by=-280},
+		{"bg", id=18, file="hcg0201-101", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=2500, rule="eff_033_00000"},
+		{"ex", time=500, func="wait"},
+		{"bgm", file="bgm29", vol=100},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0932", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Hehe... It’s like I’m living in a dream.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“呵呵⋯⋯好像在做梦一样。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「呵呵⋯⋯好像在做夢一樣。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00015",
+		linknext = "0100_00017",
+		line = 220,
+	},
+	["0100_00017"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“It sure feels like it.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“是啊⋯⋯就是说⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「是啊⋯⋯就是說⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00016",
+		linknext = "0100_00018",
+		line = 231,
+	},
+	["0100_00018"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“But this is real.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不过──这是现实喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不過──這是現實喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00017",
+		linknext = "0100_00019",
+		line = 242,
+	},
+	["0100_00019"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0933", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Yeah... it’s all real.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“嗯⋯⋯没错，是真的呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「嗯⋯⋯沒錯，是真的呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00018",
+		linknext = "0100_00020",
+		line = 254,
+	},
+	["0100_00020"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m dressed in a tuxedo, and Hinami in front of me is wearing a dazzling dress.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我穿着一身穿不习惯的燕尾服──而我的面前，是穿着华丽礼服的雏见。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我穿著一身穿不習慣的燕尾服──而我的面前，是穿著華麗禮服的雛見。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00019",
+		linknext = "0100_00021",
+		line = 264,
+	},
+	["0100_00021"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We’re both so restless and nervous. We can’t believe this is really happening.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我们一起站起来──这真的，一点真实感都没有。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我們一起站起來──這真的，一點真實感都沒有。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00020",
+		linknext = "0100_00022",
+		line = 274,
+	},
+	["0100_00022"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Today we are to be wedded as husband and wife.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我们将在今天举行婚礼，从恋人晋升为夫妇。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我們將在今天舉行婚禮，從戀人晉升為夫婦。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00021",
+		linknext = "0100_00023",
+		line = 284,
+	},
+	["0100_00023"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Well, “wedded” might be the wrong word to describe it. We filled out our paperwork this morning, so legally we’re already married.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不──说是要成为夫妇，这样不太准确。早上我们已经登记结婚了，所以现在我们早就不是恋人、而是夫妇了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不──説是要成為夫婦，這樣不太準確。早上我們已經登記結婚了，所以現在我們早就不是戀人、而是夫婦了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00022",
+		linknext = "0100_00024",
+		line = 294,
+	},
+	["0100_00024"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The thought of all this is making my heart bounce as I look at Hinami dressed in all white.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"想到这里，光是看着身着纯白礼服的雏见，我的心就怦怦直跳。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"想到這裡，光是看著身著純白禮服的雛見，我的心就怦怦直跳。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00023",
+		linknext = "0100_00025",
+		line = 304,
+	},
+	["0100_00025"] = {
+		{"evset", file="hcg02", set="hcg02", path=":ev/hcg02/"},
+		{"evset", file="hcg0201103", set="hcg020110", path=":ev/hcg020110/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201103", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0934", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Jun, what’s wrong? Are you not well?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“淳君？怎么了吗？我这样穿很奇怪吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「淳君？怎麼了嗎？我這樣穿很奇怪嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00024",
+		linknext = "0100_00026",
+		line = 323,
+	},
+	["0100_00026"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Um, well... It feels so strange to think that you’re my wife.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“啊、没有⋯⋯我只是在想着雏见要成为我的老婆，怎么想都觉得有点怪怪的。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「啊、沒有⋯⋯我只是在想著雛見要成為我的老婆，怎麼想都覺得有點怪怪的。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00025",
+		linknext = "0100_00027",
+		line = 334,
+	},
+	["0100_00027"] = {
+		{"evset", file="hcg02", set="hcg02", path=":ev/hcg02/"},
+		{"evset", file="hcg0201-104", set="hcg0201-1", path=":ev/hcg0201-1/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-104", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0935", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Hehe, I totally understand. Thinking that you’re my husband is tickling my heart.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“啊哈哈哈⋯⋯我懂喔。一想到淳君要变成我的老公，我就有种心痒痒的感觉呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「啊哈哈哈⋯⋯我懂喔。一想到淳君要變成我的老公，我就有種心癢癢的感覺呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00026",
+		linknext = "0100_00028",
+		line = 353,
+	},
+	["0100_00028"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“You too, huh.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“是吗，雏见你也一样啊⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「是嗎，雛見妳也一樣啊⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00027",
+		linknext = "0100_00029",
+		line = 364,
+	},
+	["0100_00029"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“But not just that, the idea that you’re now a ‘wife’ is just... so...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不过，说到变成老婆啊⋯⋯雏见──你要变成人妻了呢⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不過，說到變成老婆啊⋯⋯雛見──妳要變成人妻了呢⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00028",
+		linknext = "0100_00030",
+		line = 375,
+	},
+	["0100_00030"] = {
+		{"evset", file="hcg02", set="hcg02", path=":ev/hcg02/"},
+		{"evset", file="hcg02010103", set="hcg020101", path=":ev/hcg020101/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg02010103", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		delay = {
+			[1000] = {
+				{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1, timestamp=1, delay2=1000},
+				{"bg", id=18, file="hcg0201-101", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, timestamp=1, delay2=1000, bx=800, by=450},
+			},
+			[999] = {
+				{"transitiontime", time=400, timestamp=1, delay2=1000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="hinami0936", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“...You’re right! I am a wife! A married woman! Hehe... that makes me sound so adulty!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“啊⋯⋯嗯，对耶！我是人妻了！欸嘿嘿、人妻⋯⋯感觉能散发出一种成熟大人的魅力了呢！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「啊⋯⋯嗯，對耶！我是人妻了！欸嘿嘿、人妻⋯⋯感覺能散發出一種成熟大人的魅力了呢！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00029",
+		linknext = "0100_00031",
+		line = 398,
+	},
+	["0100_00031"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Man, this is making me so excited.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“惨了我超心动的⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「慘了我超心動的⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00030",
+		linknext = "0100_00032",
+		line = 409,
+	},
+	["0100_00032"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"More of our usual dumb conversations we’ve had countless times.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我跟雏见白痴的互动已经多到数不清了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我跟雛見白痴的互動已經多到數不清了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00031",
+		linknext = "0100_00033",
+		line = 419,
+	},
+	["0100_00033"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Usually, we get interrupted by someone at around this point, but...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在平常，通常在这时候就会被旁边的人吐槽才对，不过──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在平常，通常在這時候就會被旁邊的人吐槽才對，不過──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00032",
+		linknext = "0100_00034",
+		line = 429,
+	},
+	["0100_00034"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2272", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“...!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“………………！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「………………！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00033",
+		linknext = "0100_00035",
+		line = 441,
+	},
+	["0100_00035"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The usual interrupter is glaring at a piece of paper like her life depends on it.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"本来应该要吐槽的人，现在正皱着眉仔细盯着书面文件看。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"本來應該要吐槽的人，現在正皺著眉仔細盯著書面文件看。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00034",
+		linknext = "0100_00036",
+		line = 451,
+	},
+	["0100_00036"] = {
+		{"evset", file="hcg02", set="hcg02", path=":ev/hcg02/"},
+		{"evset", file="hcg0201-103", set="hcg0201-1", path=":ev/hcg0201-1/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-103", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0937", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Rei! Hey, Rei!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“礼酱？喂喂──礼酱？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「禮醬？喂喂──禮醬？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00035",
+		linknext = "0100_00037",
+		line = 470,
+	},
+	["0100_00037"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Rei, what’s up with that serious face? Look over here, I’m being aroused by the idea of Hinami being a married woman.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“礼前辈？你为什么要臭着脸？雏见的人妻属性让我很兴奋耶？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「禮前輩？妳為什麼要臭著臉？雛見的人妻屬性讓我很興奮耶？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00036",
+		linknext = "0100_00038",
+		line = 481,
+	},
+	["0100_00038"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2273", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Don’t talk to me right now!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“烦死了，现在不要跟我说话⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「煩死了，現在不要跟我說話⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00037",
+		linknext = "0100_00039",
+		line = 493,
+	},
+	["0100_00039"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2274", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Um... I met Hinami back when... okay... When I met Tachibana... I mean Junnosuke... was when I was the president of FS, and...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“那个⋯⋯我认识新娘雏见的时间要回溯到⋯⋯嗯⋯⋯跟新郎橘⋯⋯啊⋯⋯是淳之介相遇的时候，那时我身为FS的风纪委员长⋯⋯唔唔⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「那個⋯⋯我認識新娘雛見的時間要回溯到⋯⋯嗯⋯⋯跟新郎橘⋯⋯啊⋯⋯是淳之介相遇的時候，那時我身為FS的風紀委員長⋯⋯唔唔⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00038",
+		linknext = "0100_00040",
+		line = 505,
+	},
+	["0100_00040"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-104", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0938", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“She’s been nervous like this all day.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“她一直绷紧神经耶⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「她一直繃緊神經耶⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00039",
+		linknext = "0100_00041",
+		line = 521,
+	},
+	["0100_00041"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“And she’s not even the one getting married.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“简直都不像她了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「簡直都不像她了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00040",
+		linknext = "0100_00042",
+		line = 532,
+	},
+	["0100_00042"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We asked Rei to do the introductory speech for the ceremony, and now she’s all focused on making sure to do it just right. I don’t think she can even hear us.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"因为拜托了礼前辈在仪式上进行盛大的致词──她今天就一直是这个样子，紧张到连我们的声音都听不见似的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"因為拜託了禮前輩在儀式上進行盛大的致詞──她今天就一直是這個樣子，緊張到連我們的聲音都聽不見似的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00041",
+		linknext = "0100_00043",
+		line = 542,
+	},
+	["0100_00043"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Hinami, blow into her ear.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“雏见，注意听。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「雛見，注意聽。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00042",
+		linknext = "0100_00044",
+		line = 553,
+	},
+	["0100_00044"] = {
+		{"evset", file="hcg02", set="hcg02", path=":ev/hcg02/"},
+		{"evset", file="hcg02_l01-106", set="hcg02_l01", path=":ev/hcg02_l01/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg02_l01-106", x=-7, y=-3, path=":cg/hcg02_l/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=800},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0939", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Fwooo...❤”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“呼⋯⋯",
+					{"gaiji", text="①"},
+					"”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「呼⋯⋯",
+					{"gaiji", text="①"},
+					"」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00043",
+		linknext = "0100_00045",
+		line = 572,
+	},
+	["0100_00045"] = {
+		{"evset", file="hcg02", set="hcg02", path=":ev/hcg02/"},
+		{"evset", file="hcg0201-106", set="hcg0201-1", path=":ev/hcg0201-1/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-106", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"cgact", file="cgact", id=18, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=18, x=-5, y=-2.5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2275", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					{"exfont", size="f4"},
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			en = {
+				{
+					{"exfont", size="f4"},
+					name = {"礼", "Rei"},
+					"“Nyah?!”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			cn = {
+				{
+					{"exfont", size="f4"},
+					name = {"礼"},
+					"“喵啊！？”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			tw = {
+				{
+					{"exfont", size="f4"},
+					name = {"礼", "禮"},
+					"「喵啊！？」",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+		},
+		linkback = "0100_00044",
+		linknext = "0100_00046",
+		line = 593,
+	},
+	["0100_00046"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I think she just said ‘nyah’.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“她刚刚说了‘喵’耶。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「她剛剛說了『喵』耶。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00045",
+		linknext = "0100_00047",
+		line = 604,
+	},
+	["0100_00047"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-104", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0940", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“That was so cute.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“太可爱了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「太可愛了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00046",
+		linknext = "0100_00048",
+		line = 620,
+	},
+	["0100_00048"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2276", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“What the hell was that, a tornado?! Tachibana, Hinami, you two get out of here now! I’ll handle this!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“怎么会突然有龙卷风！？橘、雏见你们快逃跑啊！让我来阻止它吧！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「怎麼會突然有龍捲風！？橘、雛見你們快逃跑啊！讓我來阻止它吧！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00047",
+		linknext = "0100_00049",
+		line = 632,
+	},
+	["0100_00049"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Who else would react like this after getting her ear blown on?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“还有戴上耳罩就会变成这样的人吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「還有戴上耳罩就會變成這樣的人嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00048",
+		linknext = "0100_00050",
+		line = 643,
+	},
+	["0100_00050"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-101", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0941", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Hehe, Rei never changes.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“呵呵⋯⋯真的很有礼酱的风格呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「呵呵⋯⋯真的很有禮醬的風格呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00049",
+		linknext = "0100_00051",
+		line = 659,
+	},
+	["0100_00051"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2277", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Blow on my ear? What, are you teasing me or something?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“耳罩⋯⋯？什、什么东西？我是被揶揄了吗！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「耳罩⋯⋯？什、什麼東西？我是被揶揄了嗎！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00050",
+		linknext = "0100_00052",
+		line = 671,
+	},
+	["0100_00052"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I would’ve never thought you’d confuse it with a tornado.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我不会被龙卷风误导的喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我不會被龍捲風誤導的喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00051",
+		linknext = "0100_00053",
+		line = 682,
+	},
+	["0100_00053"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-103", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0942", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“You’ve been looking tense all day. Today’s supposed to be a happy day.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“因为礼酱的脸色一直都很难看嘛⋯⋯这是个难得的大好日子耶。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「因為禮醬的臉色一直都很難看嘛⋯⋯這是個難得的大好日子耶。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00052",
+		linknext = "0100_00054",
+		line = 698,
+	},
+	["0100_00054"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2278", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Uh... s-sorry... But you have to understand the immense pressure of having to do the opening speech!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“呃⋯⋯抱、抱歉⋯⋯不过我今天啊！因为要当致词代表所以真的压力山大⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「呃⋯⋯抱、抱歉⋯⋯不過我今天啊！因為要當致詞代表所以真的壓力山大⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00053",
+		linknext = "0100_00055",
+		line = 710,
+	},
+	["0100_00055"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-101", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0943", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“You’ll be fine. You had no problem talking to all those people when you were the disciplinary committee president.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“礼酱你不用担心啦！你以前当风纪委员长的时候，不是也时常在大家面前说话吗。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「禮醬妳不用擔心啦！妳以前當風紀委員長的時候，不是也時常在大家面前說話嗎。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00054",
+		linknext = "0100_00056",
+		line = 726,
+	},
+	["0100_00056"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Yeah, just let loose like you used to during our FS training.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“对啊。你在训练FS的时候可是正当光明的讲了一连串淫语不是吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「對啊。妳在訓練FS的時候可是正當光明的講了一連串淫語不是嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00055",
+		linknext = "0100_00057",
+		line = 737,
+	},
+	["0100_00057"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2279", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“The hell I will! You want me to ruin your wedding?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“怎么可能这样啦白痴喔！这样会把婚礼给毁了吧！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「怎麼可能這樣啦白癡喔！這樣會把婚禮給毀了吧！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00056",
+		linknext = "0100_00058",
+		line = 749,
+	},
+	["0100_00058"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Yeah, we might never be able to have a social life if something like that went viral.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“要是真的传出去的话大概就无法做人了呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「要是真的傳出去的話大概就無法做人了呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00057",
+		linknext = "0100_00059",
+		line = 760,
+	},
+	["0100_00059"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2280", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Not just that, but... it’s your one and only ceremony. I want to make sure it’s the best it can be.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“那也是考量的一点⋯⋯不过这可是雏见跟橘、你们一生只有一次的高光时刻⋯⋯我想要它成为一场最棒的婚礼。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「那也是考量的一點⋯⋯不過這可是雛見跟橘、你們一生只有一次的高光時刻⋯⋯我想要它成為一場最棒的婚禮。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00058",
+		linknext = "0100_00060",
+		line = 772,
+	},
+	["0100_00060"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-104", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0944", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Hehe, the fact you feel that way is why you’re the best, Rei.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“⋯⋯呵呵⋯⋯你有这个心就已经是最棒的了呦，礼酱。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「⋯⋯呵呵⋯⋯妳有這個心就已經是最棒的了呦，禮醬。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00059",
+		linknext = "0100_00061",
+		line = 788,
+	},
+	["0100_00061"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“It really is.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“⋯⋯对啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「⋯⋯對啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00060",
+		linknext = "0100_00062",
+		line = 799,
+	},
+	["0100_00062"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Don’t worry. Just cry like a river on stage like you did during graduation. Everyone’ll get sentimental and the whole thing’ll work out.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不用担心啦，礼前辈。要是你像毕业典礼那样哭起来的话，大家也会被气氛感染跟着一起哭出来的。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不用擔心啦，禮前輩。要是妳像畢業典禮那樣哭起來的話，大家也會被氣氛感染跟著一起哭出來的。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00061",
+		linknext = "0100_00063",
+		line = 810,
+	},
+	["0100_00063"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2281", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Don’t remind me about that! You have no idea how much it traumatized me!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“喂，白痴喔现在不要跟我提这个啦！那个对我造成不小的创伤了好吗！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「喂，白癡喔現在不要跟我提這個啦！那個對我造成不小的創傷了好嗎！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00062",
+		linknext = "0100_00064",
+		line = 822,
+	},
+	["0100_00064"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-101", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		delay = {
+			[9000] = {
+				{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1, timestamp=2, delay2=9000},
+				{"bg", id=18, file="hcg0201-104", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, timestamp=2, delay2=9000, bx=800, by=450},
+			},
+			[8999] = {
+				{"transitiontime", time=400, timestamp=2, delay2=9000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="hinami0945", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“It was amazing, though. I still like to rewatch it sometimes. Everyone from the FS was crying too. They were so amazed to see the drill sergeant from hell in tears like that.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“那真的很棒耶。我到现在偶尔都还会用电视重播来看喔。FS的大家、每个都在哭呢⋯⋯呵呵⋯⋯‘就算是鳄鱼也会流眼泪’，常常会被人这样讲呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「那真的很棒耶。我到現在偶爾都還會用電視重播來看喔。FS的大家、每個都在哭呢⋯⋯呵呵⋯⋯『就算是鱷魚也會流眼淚』，常常會被人這樣講呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00063",
+		linknext = "0100_00065",
+		line = 842,
+	},
+	["0100_00065"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“She gets into tears a lot when she’s with us, though.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不过她很常在我们面前哭就是了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不過她很常在我們面前哭就是了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00064",
+		linknext = "0100_00066",
+		line = 853,
+	},
+	["0100_00066"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2282", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Grr... Am I doomed to be teased like this by you two for the rest of my life?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“啧⋯⋯怎样啦，我就要一辈子被你们揶揄吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「嘖⋯⋯怎樣啦，我就要一輩子被你們揶揄嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00065",
+		linknext = "0100_00067",
+		line = 865,
+	},
+	["0100_00067"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Yes.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“对。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「對。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00066",
+		linknext = "0100_00068",
+		line = 876,
+	},
+	["0100_00068"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2283", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Don’t yes me! Show some respect for your superior! Don’t make me have to punish you!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“对个头啦！你对上司也放尊重点！小心我更用力职场霸凌你喔！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「對個頭啦！你對上司也放尊重點！小心我更用力職場霸凌你喔！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00067",
+		linknext = "0100_00069",
+		line = 888,
+	},
+	["0100_00069"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Superior? We’re just both in the SHO. It’s not like I’m directly working under you or anything.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“就算你说你是我上司⋯⋯但我们只是同在SHO里面而已，你又不是我的直属⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「就算妳說妳是我上司⋯⋯但我們只是同在SHO裡面而已，妳又不是我的直屬⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00068",
+		linknext = "0100_00070",
+		line = 899,
+	},
+	["0100_00070"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2284", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Humph, I can always have you repositioned to general affairs if I want to.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“哼，要是我想的话，我也可以把你调到总务课去喔！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「哼，要是我想的話，我也可以把你調到總務課去喔！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00069",
+		linknext = "0100_00071",
+		line = 911,
+	},
+	["0100_00071"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Try it. If you get me out of PR then all the problems caused by Senba are gonna have to be mopped up by Ran.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“你可以试看看啊⋯⋯要是我不在公关部的话，收拾仙波小姐乱来的烂摊子的责任就会全部落在兰身上喔⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「妳可以試看看啊⋯⋯要是我不在公關部的話，收拾仙波小姐亂來的爛攤子的責任就會全部落在蘭身上喔⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00070",
+		linknext = "0100_00072",
+		line = 922,
+	},
+	["0100_00072"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2285", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Ugh... I can’t let Ran bear all that burden. Damn it, you and your dirty tricks again...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“啧⋯⋯把那个全都交给兰一个人处理的话责任太重了⋯⋯可恶，你还是一样手段很卑鄙⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「嘖⋯⋯把那個全都交給蘭一個人處理的話責任太重了⋯⋯可惡，你還是一樣手段很卑鄙⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00071",
+		linknext = "0100_00073",
+		line = 934,
+	},
+	["0100_00073"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-101", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0946", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Come on, today’s the day to celebrate, not the day to look mad. Come this way.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“是是是。但今天是大喜之日，礼酱你就别再顶着那张恐怖的脸了，好了，来这边吧──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「是是是。但今天是大喜之日，禮醬妳就別再頂著那張恐怖的臉了，好了，來這邊吧──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00072",
+		linknext = "0100_00074",
+		line = 950,
+	},
+	["0100_00074"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Hinami gives Rei a big hug to ease her from the anxiety from the pressure of the opening speech... and my teasing.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"雏见一点也不退缩地拥抱了被致词代表的责任感还有我的挑衅给弄得焦虑不已的礼前辈。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雛見一點也不退縮地擁抱了被致詞代表的責任感還有我的挑釁給弄得焦慮不已的禮前輩。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00073",
+		linknext = "0100_00075",
+		line = 960,
+	},
+	["0100_00075"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-104", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0947", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“There there... It’s all gonna be okay.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“乖乖⋯⋯没事喔、乖⋯⋯好乖好乖⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「乖乖⋯⋯沒事喔、乖⋯⋯好乖好乖⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00074",
+		linknext = "0100_00076",
+		line = 976,
+	},
+	["0100_00076"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2286", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Urr... I can’t believe you’d do this to me at a moment like this...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“啊、嗯⋯⋯雏见，直到这时候都还⋯⋯呜呜。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「啊、嗯⋯⋯雛見，直到這時候都還⋯⋯嗚嗚。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00075",
+		linknext = "0100_00077",
+		line = 988,
+	},
+	["0100_00077"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"At first Rei seems embarrassed, but as she gets petted by Hinami, her tense face soon begins to crumble.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"一开始礼前辈还有点尴尬，但随着雏见的抚摸，她紧绷的脸色也逐渐放松了下来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"一開始禮前輩還有點尷尬，但隨著雛見的撫摸，她緊繃的臉色也逐漸放鬆了下來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00076",
+		linknext = "0100_00078",
+		line = 998,
+	},
+	["0100_00078"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2287", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Ahh... this is amazing... all this motherly love is sending my straight back to babyhood...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“啊啊⋯⋯啊啊啊⋯⋯太棒了⋯⋯我被当小宝贝一样地安抚了⋯⋯被妈妈安抚可以无限的哭闹⋯⋯好像回到小孩子的时候了⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「啊啊⋯⋯啊啊啊⋯⋯太棒了⋯⋯我被當小寶貝一樣地安撫了⋯⋯被媽媽安撫可以無限的哭鬧⋯⋯好像回到小孩子的時候了⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00077",
+		linknext = "0100_00079",
+		line = 1010,
+	},
+	["0100_00079"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-101", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0948", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“It’s what I do for a living!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“因为这是我的本行嘛！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「因為這是我的本行嘛！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00078",
+		linknext = "0100_00080",
+		line = 1026,
+	},
+	["0100_00080"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Man, I wish I could attend your kindergarten.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“好好噢⋯⋯我也想要去上雏见当老师的那间幼稚园⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「好好噢⋯⋯我也想要去上雛見當老師的那間幼稚園⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00079",
+		linknext = "0100_00081",
+		line = 1037,
+	},
+	["0100_00081"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-104", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0949", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Hehe, but you DO attend sometimes, right?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“欸嘿嘿⋯⋯你说什么啊。你不是时不时在上吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「欸嘿嘿⋯⋯你說什麼啊。你不是時不時在上嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00080",
+		linknext = "0100_00082",
+		line = 1053,
+	},
+	["0100_00082"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Heh, I guess so.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“呵──也是呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「呵──也是呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00081",
+		linknext = "0100_00083",
+		line = 1064,
+	},
+	["0100_00083"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2288", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Huh? What do you mean?! You’re attending Hinami’s kindergarten?! Can I too?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“咦？怎么回事？橘上了雏见在的幼稚园吗？我也要去！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「咦？怎麼回事？橘上了雛見在的幼稚園嗎？我也要去！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00082",
+		linknext = "0100_00084",
+		line = 1076,
+	},
+	["0100_00084"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“How’s your speech practice going?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“你打招呼的练习不要紧吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「妳打招呼的練習不要緊嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00083",
+		linknext = "0100_00085",
+		line = 1087,
+	},
+	["0100_00085"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2289", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Oh, yes you’re right! Ahem... I’d like to thank all of you for gathering...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“啊啊对耶！我想想，今天在百忙之中请大家过来⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「啊啊對耶！我想想，今天在百忙之中請大家過來⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00084",
+		linknext = "0100_00086",
+		line = 1099,
+	},
+	["0100_00086"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I won’t tell her about Hinami and I going to Baby Me Creche occasionally.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我们对我定期去上雏见的妈咪幼稚园的事闭口不提。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我們對我定期去上雛見的媽咪幼稚園的事閉口不提。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00085",
+		linknext = "0100_00087",
+		line = 1109,
+	},
+	["0100_00087"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-101", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0950", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Hehe, it’s so nice to be able to get back with everyone since we parted ways after graduation.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“呵呵⋯⋯但是，我真的很开心喔。毕业之后，我们曾经分开了⋯⋯不过大家又像这样回到岛上了呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「呵呵⋯⋯但是，我真的很開心喔。畢業之後，我們曾經分開了⋯⋯不過大家又像這樣回到島上了呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00086",
+		linknext = "0100_00088",
+		line = 1125,
+	},
+	["0100_00088"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Well, our home is here, Asa’s here, and...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“嗯，这里有我们家、也有麻沙酱在，还有朋友们，而且──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「嗯，這裡有我們家、也有麻沙醬在，還有朋友們，而且──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00087",
+		linknext = "0100_00089",
+		line = 1136,
+	},
+	["0100_00089"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I really like this island now.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我真的⋯⋯很喜欢这座岛。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我真的⋯⋯很喜歡這座島。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00088",
+		linknext = "0100_00090",
+		line = 1147,
+	},
+	["0100_00090"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-104", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0951", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Yeah, I love this island too.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“呵呵⋯⋯对啊。我也最喜欢青蓝岛了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「呵呵⋯⋯對啊。我也最喜歡青藍島了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00089",
+		linknext = "0100_00091",
+		line = 1163,
+	},
+	["0100_00091"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Hinami looks really happy when I tell her that I like this island.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"每当我说自己喜欢这座岛时，雏见总会露出开心的笑容。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"每當我說自己喜歡這座島時，雛見總會露出開心的笑容。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00090",
+		linknext = "0100_00092",
+		line = 1173,
+	},
+	["0100_00092"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s where I met Hinami, Rei, and all of my precious friends.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这里是我遇见了雏见、遇见了礼前辈，还有那些无可取代的伙伴们的地方。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這裡是我遇見了雛見、遇見了禮前輩，還有那些無可取代的夥伴們的地方。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00091",
+		linknext = "0100_00093",
+		line = 1183,
+	},
+	["0100_00093"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We made more FS friends afterwards...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在那之后，我也结交了新的FS的朋友们──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在那之後，我也結交了新的FS的朋友們──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00092",
+		linknext = "0100_00094",
+		line = 1193,
+	},
+	["0100_00094"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And so many things happened, but now I can truly say that I love this island.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"回望过往，虽然发生了很多事，但我现在可以发自内心地说──我真的很喜欢这座岛。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"回望過往，雖然發生了很多事，但我現在可以發自內心地說──我真的很喜歡這座島。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00093",
+		linknext = "0100_00095",
+		line = 1203,
+	},
+	["0100_00095"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-103", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0952", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Wait, how’s Asane doing? I hope she hasn’t overslept.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“话说回来，麻沙酱不要紧吗？不会又睡过头吧？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「話說回來，麻沙醬不要緊嗎？不會又睡過頭吧？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00094",
+		linknext = "0100_00096",
+		line = 1219,
+	},
+	["0100_00096"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Don’t worry, I woke her up and got her dressed up before I left.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“没事的。出门前我就把她叫醒了，还帮她换好了衣服⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「沒事的。出門前我就把她叫醒了，還幫她換好了衣服⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00095",
+		linknext = "0100_00097",
+		line = 1230,
+	},
+	["0100_00097"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“What a sweet little sister, making her brother pamper her on the day of his wedding...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“让身为婚礼主角的哥哥在结婚当天还要照顾她⋯⋯真是的，还真是惹人疼爱的妹妹呢⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「讓身為婚禮主角的哥哥在結婚當天還要照顧她⋯⋯真是的，還真是惹人疼愛的妹妹呢⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00096",
+		linknext = "0100_00098",
+		line = 1241,
+	},
+	["0100_00098"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2290", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“It’s amazing she was able to graduate though. It must’ve been tough after you went back to the mainland for university.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“不过，她是能好好毕业。不过橘要去本岛念大学，这样没问题吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「不過，她是能好好畢業。不過橘要去本島念大學，這樣沒問題嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00097",
+		linknext = "0100_00099",
+		line = 1253,
+	},
+	["0100_00099"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I can thank Susuko for that. She gave her lots of attention for being my sister when they became classmates.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“这个嘛……多亏有丝丝子呢。她们在同一班，听说是我的妹妹就对她吧百般照故的样子。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「這個嘛……多虧有絲絲子呢。她們在同一班，聽說是我的妹妹就對她吧百般照故的樣子。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00098",
+		linknext = "0100_00100",
+		line = 1264,
+	},
+	["0100_00100"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"About 20-30% was me setting it all up, of course.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然有大约2到3成，不过多半不是我吩咐的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然有大約2到3成，不過多半不是我吩咐的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00099",
+		linknext = "0100_00101",
+		line = 1274,
+	},
+	["0100_00101"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"As for Asa, she said she’s not interested in noisy, airheaded girls, and also she’s “big”.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"而且对麻沙酱来说，没有所谓又吵又无脑的女人，也没有胖女人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"而且對麻沙醬來說，沒有所謂又吵又無腦的女人，也沒有胖女人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00100",
+		linknext = "0100_00102",
+		line = 1284,
+	},
+	["0100_00102"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"By the way, Asa is now officially a NEET, but...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"顺带一提，最近麻沙酱变成了名符其实的废宅──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"順帶一提，最近麻沙醬變成了名符其實的廢宅──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00101",
+		linknext = "0100_00103",
+		line = 1294,
+	},
+	["0100_00103"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The income from the sex technology developed with her raw skills is much more than what I make.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不过，以她用天赋写出的的色情科技的收入其实比我高得多。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不過，以她用天賦寫出的的色情科技的收入其實比我高得多。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00102",
+		linknext = "0100_00104",
+		line = 1304,
+	},
+	["0100_00104"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Our home was raided by police once because she posted a URL of a website that generated an infinite loop or something, but all in all things are going just fine.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"似乎是因为她PO了一个无限循环的网址，所以被警察来家里搜查，不过她还挺乐在其中的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"似乎是因為她PO了一個無限循環的網址，所以被警察來家裡搜查，不過她還挺樂在其中的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00103",
+		linknext = "0100_00105",
+		line = 1314,
+	},
+	["0100_00105"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-101", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0953", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Asane’s coming, and Nanase and Misaki and Fumino too, so... Wow, the whole NLNS gang is gathering again!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“有麻沙音酱⋯⋯今天奈奈濑酱跟美岬酱还有文乃酱也会来，是久违的NLNS全员集合呢！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「有麻沙音醬⋯⋯今天奈奈瀨醬跟美岬醬還有文乃醬也會來，是久違的NLNS全員集合呢！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00104",
+		linknext = "0100_00106",
+		line = 1330,
+	},
+	["0100_00106"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Yeah... it’s been a while since I heard that name.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“是啊⋯⋯这个名子也让人好怀念啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「是啊⋯⋯這個名子也讓人好懷念啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00105",
+		linknext = "0100_00107",
+		line = 1341,
+	},
+	["0100_00107"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"May days have passed since I left the academy, but hearing the name NLNS makes me remember those days as clear as yesterday.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"尽管已经离开学校相当长的时间了，一直到如今，听到NLNS5这个名字，那时的画面都还历历在目。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"儘管已經離開學校相當長的時間了，一直到如今，聽到NLNS5這個名字，那時的畫面都還歷歷在目。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00106",
+		linknext = "0100_00108",
+		line = 1351,
+	},
+	["0100_00108"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We struggled so hard to achieve our one goal.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那些不顾一切，只为了一个目的持续抗战的日子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那些不顧一切，只為了一個目的持續抗戰的日子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00107",
+		linknext = "0100_00109",
+		line = 1361,
+	},
+	["0100_00109"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"There were times we suffered so badly I wanted to just run away, but the happiness I’m experiencing now tells me that we made the right choice.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然当时也有艰难到想要逃跑的时候──不过现在回想起来，那也是另一种幸福⋯⋯我果然还是觉得，当时的选择并没有错。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然當時也有艱難到想要逃跑的時候──不過現在回想起來，那也是另一種幸福⋯⋯我果然還是覺得，當時的選擇並沒有錯。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00108",
+		linknext = "0100_00110",
+		line = 1371,
+	},
+	["0100_00110"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2291", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Oh yes, Hotori said she’s going to put on a special performance. She said it’s gonna be hilarious so you better not miss it.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“啊对了。我听说畔想要搞个余兴节目。她说会超有趣所以要我们好好期待。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「啊對了。我聽說畔想要搞個餘興節目。她說會超有趣所以要我們好好期待。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00109",
+		linknext = "0100_00111",
+		line = 1383,
+	},
+	["0100_00111"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“It’s amazing that I can’t imagine it being anything but a disaster.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“真可怕，我已经有不祥的预感了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「真可怕，我已經有不祥的預感了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00110",
+		linknext = "0100_00112",
+		line = 1394,
+	},
+	["0100_00112"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-103", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0954", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“I just saw Fumino mumbling about indubi-something. Indubiana Jones, Indubilorious Bastards, and stuff like that.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“啊、我从刚才就看到文乃一直嘀咕着‘原来原来’的。像是什么灵异教师原～来～，妖魔鬼怪原来⋯⋯之类的喔？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「啊、我從剛才就看到文乃一直嘀咕著『原來原來』的。像是什麼靈異教師原～來～，妖魔鬼怪原來⋯⋯之類的喔？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00111",
+		linknext = "0100_00113",
+		line = 1410,
+	},
+	["0100_00113"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Is Hotori toying with her again?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“她还是被畔当成玩具啊⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「她還是被畔當成玩具啊⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00112",
+		linknext = "0100_00114",
+		line = 1421,
+	},
+	["0100_00114"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I feel sorry for Fumino, but maybe she’s having fun in her own way.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我忍不住同情她起来──不过，因为文乃是文乃，所以她实际上也乐在其中也说不定。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我忍不住同情她起來──不過，因為文乃是文乃，所以她實際上也樂在其中也說不定。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00113",
+		linknext = "0100_00115",
+		line = 1431,
+	},
+	["0100_00115"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2292", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Miss Touka said she’s going to do a performance too. This you can look forward to!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“桐香大人也要我们好好期待她的演出呢。你们可以好好期待喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「桐香大人也要我們好好期待她的演出呢。你們可以好好期待喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00114",
+		linknext = "0100_00116",
+		line = 1443,
+	},
+	["0100_00116"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Too bad now Hotori’s doomed to be used for Touka’s own devices.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“看样子畔注定是要沦为陪衬了啊⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「看樣子畔註定是要淪為陪襯了啊⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00115",
+		linknext = "0100_00117",
+		line = 1454,
+	},
+	["0100_00117"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-101", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0955", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Is Nanase gonna do a performance too?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“奈奈濑酱好像也会搞些什么的样子喔？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「奈奈瀨醬好像也會搞些什麼的樣子喔？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00116",
+		linknext = "0100_00118",
+		line = 1470,
+	},
+	["0100_00118"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2293", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“I haven’t heard as much from her, but she did say she would like to speak to Tachibana about something after the ceremony.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“我没有听她说过啊⋯⋯啊啊，不过她是说过等婚礼告一段落后，有话想要对橘说啦。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「我沒有聽她說過啊⋯⋯啊啊，不過她是說過等婚禮告一段落後，有話想要對橘說啦。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00117",
+		linknext = "0100_00119",
+		line = 1482,
+	},
+	["0100_00119"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“To me? I wonder what it’s about.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“奈奈濑有话要对我说？她想说什么⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「奈奈瀨有話要對我說？她想說什麼⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00118",
+		linknext = "0100_00120",
+		line = 1493,
+	},
+	["0100_00120"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2294", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“I don’t know. Something about it being overdue.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“我哪知道？搞不好就是时间到了才想说的话啊⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「我哪知道？搞不好就是時間到了才想說的話啊⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00119",
+		linknext = "0100_00121",
+		line = 1505,
+	},
+	["0100_00121"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I don’t know what’s overdue, but she’s an old friend I haven’t met in a while.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"时间到了⋯⋯虽然不知道会是什么事，不过那也是许久未见的伙伴之间的谈话。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"時間到了⋯⋯雖然不知道會是什麼事，不過那也是許久未見的夥伴之間的談話。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00120",
+		linknext = "0100_00122",
+		line = 1515,
+	},
+	["0100_00122"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’ll give her all the time she needs.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就让我们坐下来好好聊聊吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就讓我們坐下來好好聊聊吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00121",
+		linknext = "0100_00123",
+		line = 1525,
+	},
+	["0100_00123"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2295", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Uh-oh, I better get going. Anyway, good luck you two! I want both of you to live happily ever after, got it?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“──啊、不好。我差不多也该出去了。那么⋯⋯你们两个，要幸福喔！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「──啊、不好。我差不多也該出去了。那麼⋯⋯妳們兩個，要幸福喔！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00122",
+		linknext = "0100_00124",
+		line = 1537,
+	},
+	["0100_00124"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-104", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0956", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Got it! And you too!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“当然啊！礼酱也是喔！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「當然啊！禮醬也是喔！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00123",
+		linknext = "0100_00125",
+		line = 1553,
+	},
+	["0100_00125"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2296", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Hey, if you two are happy then I’m happy.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“哼⋯⋯只要你们过得幸福的话，我就很幸福了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「哼⋯⋯只要你們過得幸福的話，我就很幸福了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00124",
+		linknext = "0100_00126",
+		line = 1565,
+	},
+	["0100_00126"] = {
+		{"se", id=0, loop=0, file="se_a078"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She gives us a carefree smile and leaves the waiting room.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"礼前辈带着幸福洋溢的笑容，离开了休息室。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"禮前輩帶著幸福洋溢的笑容，離開了休息室。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00125",
+		linknext = "0100_00127",
+		line = 1576,
+	},
+	["0100_00127"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg0201-101", x=-5, y=-2.5, path=":cg/hcg02/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0957", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“For us to be happy, huh? That’s so Rei.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“只要我们过得幸福吗⋯⋯嘻嘻，还真是礼酱会说的话。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「只要我們過得幸福嗎⋯⋯嘻嘻，還真是禮醬會說的話。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00126",
+		linknext = "0100_00128",
+		line = 1592,
+	},
+	["0100_00128"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Yeah. We better live happily ever after, for Rei too.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“真拿她没办法⋯⋯那我们可要为了礼前辈，一直幸福下去才行呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「真拿她沒辦法⋯⋯那我們可要為了禮前輩，一直幸福下去才行呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00127",
+		linknext = "0100_00129",
+		line = 1603,
+	},
+	["0100_00129"] = {
+		{"evset", file="hcg02", set="hcg02", path=":ev/hcg02/"},
+		{"evset", file="hcg02_l01-101", set="hcg02_l01", path=":ev/hcg02_l01/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg02_l01-101", x=-7, y=-3, path=":cg/hcg02_l/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=800},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0958", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“I’ll be happy ever after as long as you’re beside me.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“只要淳君在我的身边，我就一直都很幸福喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「只要淳君在我的身邊，我就一直都很幸福喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00128",
+		linknext = "0100_00130",
+		line = 1622,
+	},
+	["0100_00130"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Me too. I’ll be happy forever if you’re by my side.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我才是。只要有雏见你在我身边，我就可以幸福到永远。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我才是。只要有雛見妳在我身邊，我就可以幸福到永遠。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00129",
+		linknext = "0100_00131",
+		line = 1633,
+	},
+	["0100_00131"] = {
+		{"evset", file="hcg02", set="hcg02", path=":ev/hcg02/"},
+		{"evset", file="hcg02_l01-104", set="hcg02_l01", path=":ev/hcg02_l01/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="hcg02_l01-104", x=-7, y=-3, path=":cg/hcg02_l/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0959", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Then we’ll definitely be happy forever!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“那我们要一直直幸福下去喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「那我們要一直直幸福下去喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00130",
+		linknext = "0100_00132",
+		line = 1652,
+	},
+	["0100_00132"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Absolutely.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“那当然。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「那當然。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00131",
+		linknext = "0100_00133",
+		line = 1663,
+	},
+	["0100_00133"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I smile back, and hold her small hand.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我也笑着，并握住了雏见的小手。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我也笑著，並握住了雛見的小手。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00132",
+		linknext = "0100_00134",
+		line = 1673,
+	},
+	["0100_00134"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A blissful warmth travels from her hand to mine, warming my heart.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"从她的手心传来了幸福的暖意，温暖了我的心。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"從她的手心傳來了幸福的暖意，溫暖了我的心。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00133",
+		linknext = "0100_00135",
+		line = 1683,
+	},
+	["0100_00135"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The special day Hinami made for us.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这个雏见定下的、特别的日子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這個雛見定下的、特別的日子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00134",
+		linknext = "0100_00136",
+		line = 1693,
+	},
+	["0100_00136"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Today, that day is about to become our wedding anniversary.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在今天，成为了我与雏见的结婚纪念日。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在今天，成為了我與雛見的結婚紀念日。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00135",
+		linknext = "0100_00137",
+		line = 1703,
+	},
+	["0100_00137"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m sure that we will be celebrating this day next year, the year after, and for many more years to come.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"无论是明年还是后年，接下来──我们两一定，每年都能用笑容来迎接这个日子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"無論是明年還是後年，接下來──我們兩一定，每年都能用笑容來迎接這個日子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00136",
+		linknext = "0100_00138",
+		line = 1713,
+	},
+	["0100_00138"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"No matter how many years may pass, no matter how old and frail we may get, our feelings will be forever unchanged.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不管是时光如何流逝、岁月如何增长，就算我们变老了──这样的想法永远不会改变。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不管是時光如何流逝、歲月如何增長，就算我們變老了──這樣的想法永遠不會改變。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00137",
+		linknext = "0100_00139",
+		line = 1723,
+	},
+	["0100_00139"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Because we are going to be with each other forever.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我们俩，会一直、一直在一起。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我們倆，會一直、一直在一起。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00138",
+		linknext = "0100_00140",
+		line = 1733,
+	},
+	["0100_00140"] = {
+		{"ex", time=500, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Forever and ever...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"一直，到永远────",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"一直，到永遠────",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0100_00139",
+		linknext = "block_00140",
+		line = 1744,
+	},
+	block_00140 = {
+		{"bgm", stop=1},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=12, time=0, alphadel=1, lv=5},
+		{"cgdel", id=13, time=0, alphadel=1, lv=5},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"cgdel", id=15, time=0, alphadel=1, lv=5},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=3200, rule="eff_043_00000"},
+		{"ex", time=5000, func="wait"},
+		{"movie", id=1, lv=1, path=":mv/", cancel=1, file="ed2"},
+		{"ex", time=5000, func="wait"},
+		{"eval", exp="g.hinamiclear=1"},
+		{"タイトル"},
+		{"text"},
+		linkback = "0100_00140",
+		line = 1793,
+	},
+	label = {
+		top = { block="0100_00001", label=1 },
+	},
+}

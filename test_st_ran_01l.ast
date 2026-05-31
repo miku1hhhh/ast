@@ -1,0 +1,427 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"RAN_01L",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00101", file2="ran_01l_00201", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,01,01,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00101", file2="ran_01l_00202", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,01,02,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00101", file2="ran_01l_00203", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,01,03,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00101", file2="ran_01l_00203", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,01,03,-1,1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 18,
+	},
+	block_00005 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00101", file2="ran_01l_00206", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,01,06,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 22,
+	},
+	block_00006 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00101", file2="ran_01l_00207", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,01,07,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 26,
+	},
+	block_00007 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00101", file2="ran_01l_00209", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,01,09,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 30,
+	},
+	block_00008 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00101", file2="ran_01l_00210", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,01,10,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 34,
+	},
+	block_00009 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00101", file2="ran_01l_00217", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,01,17,-1,1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 38,
+	},
+	block_00010 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00101", file2="ran_01l_00206", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,01,6,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 42,
+	},
+	block_00011 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00102", file2="ran_01l_00203", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,02,03,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 46,
+	},
+	block_00012 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00102", file2="ran_01l_00206", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,02,06,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 50,
+	},
+	block_00013 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00102", file2="ran_01l_00208", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,02,08,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 54,
+	},
+	block_00014 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00102", file2="ran_01l_00209", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,02,09,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 58,
+	},
+	block_00015 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00102", file2="ran_01l_00210", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,02,10,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 62,
+	},
+	block_00016 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00102", file2="ran_01l_00210", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,02,10,-1,1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 66,
+	},
+	block_00017 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00102", file2="ran_01l_00220", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,02,20,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 70,
+	},
+	block_00018 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00102", file2="ran_01l_00221", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,02,21,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 74,
+	},
+	block_00019 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00102", file2="ran_01l_00209", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,02,9,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 78,
+	},
+	block_00020 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00103", file2="ran_01l_00210", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,03,10,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 82,
+	},
+	block_00021 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00104", file2="ran_01l_00206", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,04,06,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 86,
+	},
+	block_00022 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00104", file2="ran_01l_00209", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,04,09,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 90,
+	},
+	block_00023 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00104", file2="ran_01l_00210", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,04,10,-1,1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 94,
+	},
+	block_00024 = {
+		{"fg", file="ran_01l_00001", file1="ran_01l_00104", file2="ran_01l_00221", file4="ran_01l_00401", path=":fg/ran_01l/", id=2, lv=5, head="ran_01l", ch_origin="蘭", ch="蘭2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"AN_01L.s25,0,0,0,m,01,04,21,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		line = 98,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}
