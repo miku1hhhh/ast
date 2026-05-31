@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AST 积木式编写器 · 导入即解析</title>
+  <style>
+    :root {
+      --bg: #0a0a16; --panel-bg: #111128; --text: #d4cfc4;
+      --accent: #c8a87c; --accent2: #6fa8b8; --border: #2a2a48;
+      --font-mono: 'Cascadia Code', 'Fira Code', monospace;
+      --font-ui: 'Segoe UI', 'PingFang SC', sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--bg);color:var(--text);font-family:var(--font-ui);height:100vh;display:flex;overflow:hidden}
+    #cmd-panel{
+      width:220px; background:var(--panel-bg); border-right:1px solid var(--border);
+      display:flex; flex-direction:column; overflow-y:auto; z-index:5;
+    }
+    #cmd-panel-header{padding:12px;border-bottom:1px solid var(--border);font-weight:700;color:var(--accent2)}
+    #cmd-list{padding:8px;display:flex;flex-direction:column;gap:6px}
+    .cmd-card{
+      background:rgba(255,255,255,0.05); border:1px solid var(--border);
+      border-radius:8px; padding:10px; cursor:pointer; transition:0.2s;
+      display:flex; align-items:center; gap:8px; font-size:12px;
+    }
+    .cmd-card:hover{background:rgba(255,255,255,0.1); border-color:var(--accent2)}
+    .cmd-card .icon{width:24px;height:24px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#fff;font-weight:bold}
+    .icon.bg{background:#4f7faf} .icon.fg{background:#7f6faf} .icon.audio{background:#af6f6f}
+    .icon.effect{background:#6faf7f} .icon.text{background:#afaf4f} .icon.delay{background:#af6faf}
+    #edit-panel{flex:1; display:flex; flex-direction:column; border-right:1px solid var(--border);}
+    #edit-header{padding:12px; border-bottom:1px solid var(--border); display:flex; gap:8px; align-items:center;}
+    #scene-name{font-weight:700;color:var(--accent2)}
+    #block-container{flex:1; overflow-y:auto; padding:12px; display:flex; flex-direction:column; gap:8px;}
+    .instruction-block{
+      background:rgba(255,255,255,0.03); border:1px solid var(--border);
+      border-radius:8px; padding:8px; transition:0.2s; position:relative; user-select:none;
+    }
+    .instruction-block.collapsed .block-params{display:none}
+    .block-header{display:flex; align-items:center; gap:8px; cursor:pointer;}
+    .block-header .block-type{font-weight:700; color:var(--accent); font-size:13px; min-width:60px;}
+    .block-header .block-summary{flex:1; color:#aaa; font-size:11px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+    .block-actions{display:flex; gap:4px; margin-left:auto;}
+    .block-actions button{background:none;border:none;color:#aaa;cursor:pointer;font-size:14px;padding:0 4px;}
+    .block-actions button:hover{color:#fff}
+    .block-params{margin-top:8px; padding-top:8px; border-top:1px solid var(--border); display:flex; flex-wrap:wrap; gap:6px;}
+    .param-row{display:flex; align-items:center; gap:4px; font-size:11px;}
+    .param-row label{color:#999; min-width:30px; cursor:help; text-decoration: underline dotted;}
+    .param-row input, .param-row select{
+      width:100px; background:rgba(0,0,0,0.4); border:1px solid var(--border);
+      color:#ddd; padding:2px 4px; border-radius:4px; font-size:10px;
+    }
+    #preview-panel{width:300px; background:var(--panel-bg); display:flex; flex-direction:column; border-left:1px solid var(--border); z-index:5;}
+    #preview-header{padding:12px;border-bottom:1px solid var(--border);font-weight:700;color:var(--accent2)}
+    #preview-code{flex:1;overflow-y:auto;padding:12px;font-family:var(--font-mono);font-size:11px;white-space:pre-wrap}
+    .toolbar{padding:8px;display:flex;gap:6px;border-bottom:1px solid var(--border)}
+    .btn{
+      padding:4px 10px;font-size:10px;border:1px solid rgba(255,255,255,0.2);
+      background:rgba(0,0,0,0.35);color:#ccc;border-radius:12px;cursor:pointer;transition:0.2s;
+    }
+    .btn:hover{background:rgba(255,255,255,0.1);color:#fff}
+    .btn.accent{background:var(--accent);color:#1a1a2e;border-color:var(--accent);font-weight:700}
+  </style>
+</head>
+<body>
+<div id="cmd-panel">
+  <div id="cmd-panel-header">🧱 指令积木</div>
+  <div id="cmd-list"></div>
+</div>
+<div id="edit-panel">
+  <div class="toolbar">
+    <button class="btn" onclick="addScene()">+ 场景</button>
+    <button class="btn" onclick="deleteScene()">🗑 删除场景</button>
+    <select id="scene-select" onchange="switchScene(this.value)" style="background:#1a1a2e;color:#ddd;border:1px solid var(--border);border-radius:4px;padding:4px;"></select>
+    <span style="flex:1"></span>
+    <button class="btn" onclick="importAST()">📥 导入</button>
+    <button class="btn" onclick="exportAST()">📤 导出</button>
+    <button class="btn" onclick="downloadAST()">💾 下载</button>
+  </div>
+  <div id="edit-header">
+    <span id="scene-name">当前场景：无</span>
+  </div>
+  <div id="block-container"></div>
+</div>
+<div id="preview-panel">
+  <div id="preview-header">📄 AST 预览</div>
+  <div id="preview-code"></div>
+  <div style="padding:8px;"><button class="btn accent" onclick="copyAST()">📋 复制</button></div>
+</div>
+
+<script>
+// 指令积木定义
+const cmdBlocks = [
+  { type:'bg', icon:'bg', label:'背景 (bg)', desc:'设置背景图片', params:[
+    {name:'file', desc:'图片文件名 (不含扩展名)'},{name:'path', desc:'资源路径，如 :bg/'},{name:'id', desc:'图层ID'},{name:'lv', desc:'图层层级'},{name:'x', desc:'X坐标偏移'},{name:'y', desc:'Y坐标偏移'}
+  ]},
+  { type:'fg', icon:'fg', label:'立绘 (fg)', desc:'添加前景立绘', params:[
+    {name:'file', desc:'基础立绘文件名'},{name:'file1', desc:'表情差分1'},{name:'file2', desc:'表情差分2'},{name:'path', desc:'资源路径'},{name:'id', desc:'角色ID'},{name:'mode', desc:'显示模式 (3=大立绘, 1=小头像)'},{name:'ch', desc:'角色标识名'}
+  ]},
+  { type:'bgm', icon:'audio', label:'背景音乐 (bgm)', desc:'播放背景音乐', params:[
+    {name:'file', desc:'音乐文件名'},{name:'vol', desc:'音量 (0-100)'},{name:'stop', desc:'1=停止播放'}
+  ]},
+  { type:'vo', icon:'audio', label:'语音 (vo)', desc:'播放角色语音', params:[
+    {name:'file', desc:'语音文件名'},{name:'path', desc:'资源路径'},{name:'ch', desc:'角色标识名'}
+  ]},
+  { type:'se', icon:'audio', label:'音效 (se)', desc:'播放音效', params:[
+    {name:'file', desc:'音效文件名'},{name:'id', desc:'音效通道ID'},{name:'loop', desc:'1=循环播放'}
+  ]},
+  { type:'cgdel', icon:'effect', label:'删除CG (cgdel)', desc:'删除CG图层', params:[
+    {name:'id', desc:'图层ID'},{name:'lv', desc:'图层层级'},{name:'time', desc:'淡出时间(ms)'},{name:'alphadel', desc:'1=透明度渐变删除'}
+  ]},
+  { type:'transitiontime', icon:'effect', label:'过渡时间', desc:'设置过渡时长', params:[
+    {name:'time', desc:'过渡时间(ms)'}
+  ]},
+  { type:'fgact', icon:'effect', label:'立绘动作 (fgact)', desc:'立绘动画', params:[
+    {name:'ch', desc:'角色标识名'},{name:'id', desc:'角色ID'},{name:'act', desc:'动作名称'},{name:'loop', desc:'循环次数'},{name:'size', desc:'震动幅度(px)'},{name:'time', desc:'动画时长(ms)'},{name:'ease', desc:'缓动函数'}
+  ]},
+  { type:'evset', icon:'effect', label:'事件CG注册', desc:'注册事件CG', params:[
+    {name:'file', desc:'CG文件名'},{name:'set', desc:'CG集合ID'},{name:'path', desc:'资源路径'}
+  ]},
+  { type:'text', icon:'text', label:'文本 (text)', desc:'显示对话文本', params:[], special:'text' },
+  { type:'delay', icon:'delay', label:'延迟动作 (delay)', desc:'延时触发指令', params:[], special:'delay' },
+];
+
+let scenes = {};
+let currentSceneId = null;
+
+// 初始化示例
+function init() {
+  scenes['0001_00001'] = {
+    commands: [
+      { type:'bg', file:'bg22_1_00000', path:':bg/', id:1, lv:1, x:0, y:0 },
+      { type:'text', cn:'你好世界', ja:'', en:'', tw:'', name_cn:'主角' },
+    ],
+    linknext:'', linkback:'', line:10
+  };
+  currentSceneId = '0001_00001';
+  renderCmdPanel();
+  renderSceneSelect();
+  renderBlocks();
+  updatePreview();
+}
+
+// 渲染指令面板
+function renderCmdPanel() {
+  const list = document.getElementById('cmd-list');
+  list.innerHTML = '';
+  cmdBlocks.forEach(block => {
+    const card = document.createElement('div');
+    card.className = 'cmd-card';
+    card.innerHTML = `<span class="icon ${block.icon}">${block.label[0]}</span> ${block.label}`;
+    card.title = block.desc;
+    card.addEventListener('click', () => addCommand(block.type));
+    list.appendChild(card);
+  });
+}
+
+// 添加指令积木
+function addCommand(type) {
+  if (!currentSceneId) { alert('请先创建场景'); return; }
+  const scene = scenes[currentSceneId];
+  if (!scene) return;
+  const newCmd = { type };
+  if (type === 'text') {
+    newCmd.cn = ''; newCmd.ja = ''; newCmd.en = ''; newCmd.tw = ''; newCmd.name_cn = '';
+  } else if (type === 'delay') {
+    newCmd.delayItems = [];
+  } else {
+    const template = cmdBlocks.find(b => b.type === type);
+    if (template && template.params) {
+      template.params.forEach(p => newCmd[p.name] = '');
+    }
+  }
+  scene.commands.push(newCmd);
+  renderBlocks();
+  updatePreview();
+}
+
+// 场景列表渲染
+function renderSceneSelect() {
+  const sel = document.getElementById('scene-select');
+  sel.innerHTML = '';
+  for (const id of Object.keys(scenes)) {
+    const opt = document.createElement('option');
+    opt.value = id; opt.textContent = id;
+    if (id === currentSceneId) opt.selected = true;
+    sel.appendChild(opt);
+  }
+}
+
+function switchScene(id) { currentSceneId = id; renderBlocks(); updatePreview(); }
+function addScene() {
+  const id = prompt('输入场景ID (如 0001_00002):');
+  if (!id) return;
+  if (scenes[id]) { alert('场景已存在'); return; }
+  scenes[id] = { commands:[], linknext:'', linkback:'', line:0 };
+  currentSceneId = id;
+  renderSceneSelect();
+  renderBlocks();
+  updatePreview();
+}
+function deleteScene() {
+  if (!currentSceneId) return;
+  if (!confirm(`确定删除场景 ${currentSceneId}？`)) return;
+  delete scenes[currentSceneId];
+  const ids = Object.keys(scenes);
+  currentSceneId = ids.length > 0 ? ids[0] : null;
+  if (!currentSceneId) { scenes['0001_00001'] = { commands:[], linknext:'', linkback:'', line:0 }; currentSceneId='0001_00001'; }
+  renderSceneSelect();
+  renderBlocks();
+  updatePreview();
+}
+
+// 渲染指令块
+function renderBlocks() {
+  const container = document.getElementById('block-container');
+  if (!currentSceneId || !scenes[currentSceneId]) {
+    container.innerHTML = '<p style="color:#666;">无场景</p>'; return;
+  }
+  const scene = scenes[currentSceneId];
+  document.getElementById('scene-name').textContent = '当前场景：' + currentSceneId;
+  let html = '';
+  scene.commands.forEach((cmd, idx) => {
+    const blockDef = cmdBlocks.find(b => b.type === cmd.type) || { label: cmd.type };
+    const summary = getCmdSummary(cmd);
+    html += `
+    <div class="instruction-block" data-idx="${idx}">
+      <div class="block-header" onclick="toggleBlock(this)">
+        <span class="block-type">${blockDef.label.split('(')[0]}</span>
+        <span class="block-summary">${summary}</span>
+        <div class="block-actions">
+          <button onclick="event.stopPropagation();deleteBlock(${idx})" title="删除">🗑</button>
+          <button onclick="event.stopPropagation();moveBlock(${idx}, -1)" title="上移">▲</button>
+          <button onclick="event.stopPropagation();moveBlock(${idx}, 1)" title="下移">▼</button>
+        </div>
+      </div>
+      <div class="block-params">${renderBlockParams(cmd, idx, blockDef)}</div>
+    </div>`;
+  });
+  html += '<div style="text-align:center;padding:12px;color:#666;">从左侧面板点击指令添加到此处</div>';
+  container.innerHTML = html;
+}
+
+function getCmdSummary(cmd) {
+  switch(cmd.type) {
+    case 'bg': return cmd.file || '(未设置背景)';
+    case 'fg': return cmd.file || '(未设置立绘)';
+    case 'bgm': return cmd.file || '(未设置BGM)';
+    case 'vo': return cmd.file || '(未设置语音)';
+    case 'se': return cmd.file || '(未设置音效)';
+    case 'text': return (cmd.cn || cmd.ja || '').substring(0,20) || '(空文本)';
+    case 'delay': return `延迟 ${cmd.delayItems?.length || 0} 个动作`;
+    default: return '';
+  }
+}
+
+function renderBlockParams(cmd, idx, blockDef) {
+  if (cmd.type === 'text') {
+    return `
+      <div class="param-row"><label title="说话人名称（中文）">说话人</label><input value="${cmd.name_cn||''}" onchange="updateCmd(${idx},'name_cn',this.value)" placeholder="主角"></div>
+      <div class="param-row"><label title="简体中文文本">CN</label><input value="${cmd.cn||''}" onchange="updateCmd(${idx},'cn',this.value)" placeholder="你好"></div>
+      <div class="param-row"><label title="日文文本">JA</label><input value="${cmd.ja||''}" onchange="updateCmd(${idx},'ja',this.value)" placeholder="こんにちは"></div>
+      <div class="param-row"><label title="英文文本">EN</label><input value="${cmd.en||''}" onchange="updateCmd(${idx},'en',this.value)" placeholder="Hello"></div>
+      <div class="param-row"><label title="繁体中文文本">TW</label><input value="${cmd.tw||''}" onchange="updateCmd(${idx},'tw',this.value)" placeholder="你好"></div>
+    `;
+  } else if (cmd.type === 'delay') {
+    return '<div class="param-row"><label>延迟块</label><span>(点击编辑延迟内容)</span></div>';
+  } else if (blockDef && blockDef.params) {
+    return blockDef.params.map(p => `
+      <div class="param-row">
+        <label title="${p.desc}">${p.name}</label>
+        <input value="${cmd[p.name]||''}" onchange="updateCmd(${idx},'${p.name}',this.value)" placeholder="${p.desc}">
+      </div>
+    `).join('');
+  }
+  return '';
+}
+
+function toggleBlock(header) { header.parentElement.classList.toggle('collapsed'); }
+function updateCmd(idx, param, value) {
+  scenes[currentSceneId].commands[idx][param] = value;
+  updatePreview();
+}
+function deleteBlock(idx) {
+  scenes[currentSceneId].commands.splice(idx,1);
+  renderBlocks();
+  updatePreview();
+}
+function moveBlock(idx, direction) {
+  const cmds = scenes[currentSceneId].commands;
+  const newIdx = idx + direction;
+  if (newIdx < 0 || newIdx >= cmds.length) return;
+  [cmds[idx], cmds[newIdx]] = [cmds[newIdx], cmds[idx]];
+  renderBlocks();
+  updatePreview();
+}
+
+// ========== AST 生成 ==========
+function generateAST() {
+  if (Object.keys(scenes).length === 0) return 'ast = {\n}';
+  let out = 'ast = {\n';
+  for (const [id, scene] of Object.entries(scenes)) {
+    out += `  ["${id}"] = {\n`;
+    scene.commands.forEach(cmd => {
+      switch(cmd.type) {
+        case 'bg': out += `    {"bg", file="${cmd.file||''}", path="${cmd.path||':bg/'}"${cmd.id?', id='+cmd.id:''}${cmd.lv?', lv='+cmd.lv:''}${cmd.x?', x='+cmd.x:''}${cmd.y?', y='+cmd.y:''}},\n`; break;
+        case 'fg': out += `    {"fg", file="${cmd.file||''}"${cmd.file1?', file1="'+cmd.file1+'"':''}${cmd.file2?', file2="'+cmd.file2+'"':''}, path="${cmd.path||':fg/'}"${cmd.id?', id='+cmd.id:''}, mode=${cmd.mode||3}${cmd.ch?', ch="'+cmd.ch+'"':''}},\n`; break;
+        case 'bgm': out += `    {"bgm", file="${cmd.file||''}", vol=${cmd.vol||100}${cmd.stop==1?', stop=1':''}},\n`; break;
+        case 'vo': out += `    {"vo", file="${cmd.file||''}", path="${cmd.path||':vo/'}"${cmd.ch?', ch="'+cmd.ch+'"':''}},\n`; break;
+        case 'se': out += `    {"se", file="${cmd.file||''}", id=${cmd.id||0}, loop=${cmd.loop||0}},\n`; break;
+        case 'cgdel': out += `    {"cgdel", id=${cmd.id||0}, lv=${cmd.lv||0}, time=${cmd.time||0}, alphadel=${cmd.alphadel||0}},\n`; break;
+        case 'transitiontime': out += `    {"transitiontime", time=${cmd.time||300}},\n`; break;
+        case 'fgact': out += `    {"fgact", ch="${cmd.ch||''}", id=${cmd.id||0}, act="${cmd.act||''}", loop=${cmd.loop||1}, size=${cmd.size||10}, time=${cmd.time||200}, ease="${cmd.ease||'easeinout_sine'}"},\n`; break;
+        case 'evset': out += `    {"evset", file="${cmd.file||''}", set="${cmd.set||''}", path="${cmd.path||':ev/'}"},\n`; break;
+        case 'text': out += '    {"text"},\n'; break;
+      }
+    });
+    const texts = scene.commands.filter(c => c.type === 'text');
+    if (texts.length > 0) {
+      out += '    text = {\n';
+      for (const lang of ['cn','ja','en','tw']) {
+        const langTexts = texts.filter(t => t[lang]);
+        if (langTexts.length > 0) {
+          out += `      ${lang} = {\n`;
+          langTexts.forEach(t => {
+            const name = t.name_cn || '';
+            const text = t[lang] || '';
+            if (name) out += `        { name = {"${name}"}, "${text}", {"rt2"} },\n`;
+            else out += `        { "${text}", {"rt2"} },\n`;
+          });
+          out += '      },\n';
+        }
+      }
+      out += '    },\n';
+    }
+    if (scene.linknext) out += `    linknext = "${scene.linknext}",\n`;
+    if (scene.linkback) out += `    linkback = "${scene.linkback}",\n`;
+    if (scene.line) out += `    line = ${scene.line},\n`;
+    out += '  },\n';
+  }
+  out += '}';
+  return out;
+}
+
+function updatePreview() { document.getElementById('preview-code').textContent = generateAST(); }
+function copyAST() { navigator.clipboard.writeText(generateAST()).then(() => alert('已复制')); }
+function downloadAST() {
+  const blob = new Blob([generateAST()], {type:'text/plain'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = 'script.ast'; a.click();
+}
+function exportAST() { updatePreview(); alert('已生成，可复制或下载'); }
+
+// ========== 导入 AST 并解析为积木 ==========
+function importAST() {
+  const text = prompt('粘贴AST文本:');
+  if (!text) return;
+  try {
+    const newScenes = parseASTToScenes(text);
+    if (Object.keys(newScenes).length === 0) { alert('未识别到任何场景'); return; }
+    scenes = newScenes;
+    currentSceneId = Object.keys(scenes)[0];
+    renderSceneSelect();
+    renderBlocks();
+    updatePreview();
+    alert(`导入成功！已加载 ${Object.keys(scenes).length} 个场景。`);
+  } catch(e) {
+    alert('解析失败：' + e.message);
+  }
+}
+
+// 简易AST解析器（前端）
+function parseASTToScenes(text) {
+  const scenes = {};
+  const sceneRegex = /\["(\w+)"\]\s*=\s*\{/g;
+  let match;
+  while ((match = sceneRegex.exec(text)) !== null) {
+    const sceneId = match[1];
+    const start = match.index + match[0].length;
+    let depth = 1;
+    let pos = start;
+    while (depth > 0 && pos < text.length) {
+      if (text[pos] === '{') depth++;
+      else if (text[pos] === '}') depth--;
+      pos++;
+    }
+    const block = text.substring(start, pos - 1);
+    const scene = parseSceneBlock(block);
+    scenes[sceneId] = scene;
+  }
+  return scenes;
+}
+
+function parseSceneBlock(block) {
+  const commands = [];
+  let linknext = '', linkback = '', line = 0;
+  const lines = block.split('\n');
+  let i = 0;
+  while (i < lines.length) {
+    const ln = lines[i].trim();
+    if (!ln) { i++; continue; }
+    if (ln.startsWith('linknext')) linknext = extractStr(ln);
+    else if (ln.startsWith('linkback')) linkback = extractStr(ln);
+    else if (ln.startsWith('line')) line = parseInt((ln.match(/\d+/)||[0])[0]) || 0;
+    else if (ln.startsWith('text = {') || ln === 'text = {') {
+      // 跳过文本块（已在后续解析中处理）
+      while (i < lines.length && !lines[i].trim().startsWith('}')) i++;
+    }
+    else if (ln.startsWith('{"') || ln.startsWith('{')) {
+      const cmd = parseCommand(ln);
+      if (cmd) commands.push(cmd);
+    }
+    i++;
+  }
+  // 解析文本块
+  const textMatch = block.match(/text\s*=\s*\{([^}]+)\}/s);
+  if (textMatch) {
+    const textContent = textMatch[1];
+    const langRegex = /(\w{2})\s*=\s*\{([^}]+)\}/g;
+    let langMatch;
+    const textEntries = {};
+    while ((langMatch = langRegex.exec(textContent)) !== null) {
+      const lang = langMatch[1];
+      const content = langMatch[2];
+      const entryRegex = /\{[^}]*\}/g;
+      let entryMatch;
+      const entries = [];
+      while ((entryMatch = entryRegex.exec(content)) !== null) {
+        const entryStr = entryMatch[0];
+        const nameMatch = entryStr.match(/name\s*=\s*\{([^}]*)\}/);
+        const name = nameMatch ? nameMatch[1].match(/"([^"]*)"/)?.[0]?.replace(/"/g,'') : '';
+        const strings = entryStr.match(/"([^"]*)"/g);
+        const texts = strings ? strings.map(s => s.replace(/"/g,'')).filter(s => !['rt2','exfont','rt','exfontend'].includes(s) && !s.startsWith('*')) : [];
+        const text = texts.length > 0 ? texts[0] : '';
+        entries.push({ name, text });
+      }
+      entries.forEach((entry, idx) => {
+        if (!textEntries[idx]) textEntries[idx] = { type:'text', cn:'', ja:'', en:'', tw:'', name_cn:'' };
+        textEntries[idx][lang] = entry.text;
+        if (entry.name && lang === 'cn') textEntries[idx].name_cn = entry.name;
+      });
+    }
+    // 将文本块插入到 {"text"} 指令之后
+    const textCmdIndex = commands.findIndex(c => c.type === 'text');
+    if (textCmdIndex !== -1) {
+      Object.values(textEntries).forEach(t => commands.splice(textCmdIndex + 1, 0, t));
+    }
+  }
+  return { commands, linknext, linkback, line };
+}
+
+function parseCommand(s) {
+  const m = s.match(/\{"(\w+)"/);
+  if (!m) return null;
+  const cmd = { type: m[1] };
+  const rest = s.substring(m[0].length);
+  const pairs = rest.match(/(\w+)\s*=\s*(-?\d+|"[^"]*"|[^,}]+)/g);
+  if (pairs) {
+    pairs.forEach(p => {
+      const eq = p.indexOf('=');
+      const key = p.substring(0, eq).trim();
+      let val = p.substring(eq+1).trim();
+      if (val.startsWith('"') && val.endsWith('"')) val = val.slice(1, -1);
+      else if (!isNaN(val)) val = Number(val);
+      cmd[key] = val;
+    });
+  }
+  // 统一参数名
+  if (cmd.type === 'fg') {
+    if (cmd.file1 === undefined) cmd.file1 = '';
+    if (cmd.file2 === undefined) cmd.file2 = '';
+  }
+  return cmd;
+}
+
+function extractStr(s) {
+  const m = s.match(/"([^"]*)"/);
+  return m ? m[1] : '';
+}
+
+init();
+</script>
+</body>
+</html>

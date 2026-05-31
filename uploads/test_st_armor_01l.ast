@@ -1,0 +1,49 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ARMOR_01L",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="armor_01l_00001", path=":fg/armor_01l/", id=2, lv=5, head="armor_01l", ch_origin="armor", ch="armor2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ARMOR_01L.s25,0,0,0,m,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="armor_01l_00002", path=":fg/armor_01l/", id=2, lv=5, head="armor_01l", ch_origin="armor", ch="armor2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ARMOR_01L.s25,0,0,0,m,02",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		line = 10,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Galgame 检视器 · 最终版</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="file-panel">
+  <div id="file-header">
+    <span>📁 脚本</span>
+    <input type="file" id="fileUpload" accept=".lua,.txt,.ast" style="display:none">
+    <button class="btn" onclick="document.getElementById('fileUpload').click()">📂</button>
+    <button class="btn accent" id="btnSample">📋 示例</button>
+  </div>
+  <div id="file-list"></div>
+  <div id="resource-config">
+    <label>📁 资源根路径</label>
+    <input type="text" id="resource-path" placeholder="/resources" value="/resources">
+    <div id="test-url-bar">
+      <input type="text" id="test-url-input" placeholder="粘贴URL测试">
+      <button class="btn" onclick="testImageUrl()">🔍 测试</button>
+    </div>
+  </div>
+  <div class="config-group">
+    <div class="config-row">
+      <label>VO音量</label>
+      <input type="range" id="voVolume" min="0" max="100" value="80" oninput="updateVoVolume()">
+      <span id="voVolLabel">80</span>
+    </div>
+    <div class="config-row">
+      <label>TTS音量</label>
+      <input type="range" id="ttsVolume" min="0" max="100" value="80" oninput="updateTtsVolume()">
+      <span id="ttsVolLabel">80</span>
+    </div>
+    <div class="config-row">
+      <label>TTS语速</label>
+      <input type="range" id="ttsRate" min="0.5" max="2" step="0.1" value="0.9" oninput="updateTtsRate()">
+      <span id="ttsRateLabel">0.9</span>
+    </div>
+  </div>
+  <div id="debug-panel"></div>
+</div>
+
+<div id="ast-panel">
+  <div id="ast-header">🌳 AST 结构</div>
+  <div id="ast-tree"></div>
+</div>
+
+<div id="game-wrapper">
+  <div id="game-container" onclick="advance()">
+    <div id="bg-layer"></div>
+    <div id="chara-sprite"></div>
+    <div id="scene-info"></div>
+    <div id="lang-bar">
+      <button data-lang="cn" class="active">简中</button>
+      <button data-lang="tw">繁中</button>
+      <button data-lang="ja">日本語</button>
+      <button data-lang="en">EN</button>
+    </div>
+    <div id="text-box">
+      <div id="name-tag"></div>
+      <div id="dialogue-text"></div>
+    </div>
+    <div id="click-hint">▼ 点击继续</div>
+    <div id="game-ctrl">
+      <button onclick="event.stopPropagation();prevScene()">◀</button>
+      <button id="btnAuto" onclick="event.stopPropagation();toggleAuto()">自动</button>
+      <button id="btnTTS" onclick="event.stopPropagation();toggleTTS()">🔊语音</button>
+      <button id="btnMute" onclick="event.stopPropagation();toggleMute()">🔇静音</button>
+    </div>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
