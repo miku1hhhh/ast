@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Galgame AST 检视器 · GitHub Pages</title>
+  <style>
+    :root {
+      --bg: #0a0a16; --panel-bg: #111128; --text: #d4cfc4; --accent: #c8a87c; --accent2: #6fa8b8; --border: #2a2a48;
+      --node-cmd: #4f6f8f; --node-txt: #5f9f7f; --node-link: #9f8f5f;
+      --font-serif: 'Georgia', 'Noto Serif SC', serif; --font-mono: 'Cascadia Code', monospace; --font-ui: 'Segoe UI', sans-serif;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:var(--bg); color:var(--text); font-family:var(--font-ui); height:100vh; display:flex; overflow:hidden; }
+    #file-panel { width:230px; min-width:170px; background:var(--panel-bg); border-right:1px solid var(--border); display:flex; flex-direction:column; resize:horizontal; overflow:hidden; z-index:5; }
+    #file-header { padding:10px 12px; border-bottom:1px solid var(--border); display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+    #file-header span { font-size:13px; font-weight:700; color:var(--accent2); }
+    .btn { padding:5px 11px; font-size:10px; border:1px solid rgba(255,255,255,0.2); background:rgba(0,0,0,0.35); color:#ccc; border-radius:13px; cursor:pointer; transition:0.2s; font-family:inherit; white-space:nowrap; }
+    .btn:hover { background:rgba(255,255,255,0.1); color:#fff; }
+    .btn.accent { background:var(--accent); color:#1a1a2e; border-color:var(--accent); font-weight:700; }
+    #file-list { flex:1; overflow-y:auto; padding:4px 0; }
+    .file-item { padding:7px 14px; cursor:pointer; font-size:11px; border-left:3px solid transparent; display:flex; align-items:center; gap:6px; transition:0.15s; }
+    .file-item:hover { background:rgba(255,255,255,0.04); }
+    .file-item.active { background:rgba(200,168,124,0.14); border-left-color:var(--accent); font-weight:600; }
+    .config-group { padding:8px 12px; border-top:1px solid var(--border); display:flex; flex-direction:column; gap:8px; font-size:10px; }
+    .config-row { display:flex; align-items:center; gap:6px; }
+    .config-row label { flex:0 0 60px; color:#aaa; }
+    .config-row input[type="range"] { flex:1; accent-color:var(--accent); }
+    .config-row span { flex:0 0 30px; text-align:right; color:#ccc; }
+    #resource-config { padding:8px 12px; border-top:1px solid var(--border); display:flex; flex-direction:column; gap:5px; }
+    #resource-config label { font-size:10px; color:#aaa; }
+    #resource-path { background:rgba(0,0,0,0.4); border:1px solid var(--border); color:#ddd; padding:4px 8px; border-radius:4px; font-size:11px; width:100%; }
+    #test-url-bar { display:flex; gap:4px; margin-top:4px; }
+    #test-url-input { flex:1; background:rgba(0,0,0,0.4); border:1px solid var(--border); color:#ddd; padding:4px 8px; border-radius:4px; font-size:10px; }
+    #debug-panel { padding:8px 12px; border-top:1px solid var(--border); max-height:150px; overflow-y:auto; font-family:var(--font-mono); font-size:9px; color:#aaa; display:none; }
+    #ast-panel { width:340px; min-width:220px; background:#0f0f24; border-right:1px solid var(--border); display:flex; flex-direction:column; resize:horizontal; overflow:hidden; z-index:5; }
+    #ast-header { padding:10px 14px; border-bottom:1px solid var(--border); font-size:12px; font-weight:700; color:var(--accent2); }
+    #ast-tree { flex:1; overflow-y:auto; padding:3px 0; font-family:var(--font-mono); font-size:10px; }
+    .tree-node { cursor:pointer; }
+    .node-row { display:flex; align-items:center; padding:2px 8px; gap:4px; border-left:3px solid transparent; min-height:22px; font-size:10px; transition:0.1s; }
+    .node-row:hover { background:rgba(255,255,255,0.04); }
+    .node-row.active { background:rgba(200,168,124,0.2); border-left-color:var(--accent); }
+    .node-toggle { width:14px; text-align:center; font-size:8px; color:#777; flex-shrink:0; }
+    .node-icon { width:13px; height:13px; border-radius:3px; display:flex; align-items:center; justify-content:center; font-size:7px; font-weight:bold; color:#fff; flex-shrink:0; }
+    .node-icon.scene { background:#4f7faf; } .node-icon.cmd { background:var(--node-cmd); } .node-icon.txt { background:var(--node-txt); } .node-icon.link { background:var(--node-link); color:#1a1a2e; }
+    .node-label { flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#bbb; }
+    .node-children { margin-left:14px; border-left:1px dotted rgba(255,255,255,0.1); }
+    .node-children.collapsed { display:none; }
+
+    #game-wrapper { flex:1; display:flex; align-items:center; justify-content:center; background:#040410; position:relative; overflow:hidden; }
+    #game-container { width:800px; height:600px; max-width:95%; max-height:95%; position:relative; border-radius:14px; overflow:hidden; box-shadow:0 0 70px rgba(0,0,0,0.8); cursor:pointer; }
+    #bg-layer { position:absolute; inset:0; background:radial-gradient(ellipse at 40% 45%, rgba(30,50,80,0.7) 0%, transparent 70%), linear-gradient(180deg, #0d1a2d 0%, #0f1f38 50%, #0a1525 100%); transition:background 0.8s ease; z-index:0; }
+    #bg-layer img { width:100%; height:100%; object-fit:cover; }
+    #chara-sprite { position:absolute; bottom:10px; left:10px; width:200px; height:260px; z-index:10; pointer-events:none; opacity:0; transition:opacity 0.5s; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.3); border-radius:12px; border:1px solid rgba(200,168,124,0.3); }
+    #chara-sprite.visible { opacity:1; }
+    #chara-sprite img { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:contain; display:block; }
+    .full-chara-container {
+      position:absolute; bottom:20px; width:30%; min-width:200px; max-width:45%; height:90%;
+      opacity:0; transition:opacity 0.5s; z-index:2; pointer-events:none;
+      display:flex; align-items:flex-end; justify-content:center;
+    }
+    .full-chara-container.visible { opacity:1; }
+    .full-chara-container img { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:contain; display:block; }
+
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    .fade-in { animation:fadeIn 0.3s ease forwards; }
+    @keyframes shakeDownSmall { 0%,100% { transform:translateY(0); } 50% { transform:translateY(var(--shake-size,10px)); } }
+
+    #text-box { position:absolute; bottom:0; left:0; right:0; min-height:135px; background:rgba(8,8,20,0.9); backdrop-filter:blur(10px); border-top:1px solid rgba(200,168,124,0.3); padding:16px 22px 16px 230px; z-index:5; }
+    #name-tag { display:inline-block; font-size:13px; font-weight:700; color:var(--accent); background:rgba(0,0,0,0.55); padding:4px 16px; border-radius:4px; margin-bottom:8px; border:1px solid rgba(200,168,124,0.35); }
+    #name-tag:empty { display:none; }
+    #dialogue-text { font-family:var(--font-serif); font-size:17px; line-height:1.75; color:#e8e0d4; }
+    #lang-bar { position:absolute; top:10px; right:14px; display:flex; gap:4px; z-index:6; }
+    #lang-bar button { padding:3px 9px; font-size:10px; border:1px solid rgba(255,255,255,0.18); background:rgba(0,0,0,0.4); color:#999; border-radius:12px; cursor:pointer; }
+    #lang-bar button.active { background:var(--accent); color:#1a1a2e; border-color:var(--accent); font-weight:700; }
+    #scene-info { position:absolute; top:10px; left:16px; font-size:10px; color:rgba(255,255,255,0.4); z-index:4; pointer-events:none; font-family:var(--font-mono); }
+    #click-hint { position:absolute; bottom:12px; right:20px; font-size:10px; color:rgba(255,255,255,0.3); animation:hintBlink 1.8s infinite; z-index:6; pointer-events:none; }
+    @keyframes hintBlink { 0%,100%{opacity:0.3;} 50%{opacity:0.9;} }
+    #game-ctrl { position:absolute; bottom:8px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:6; opacity:0; transition:0.3s; }
+    #game-container:hover #game-ctrl { opacity:1; }
+    #game-ctrl button { padding:4px 10px; font-size:10px; border:1px solid rgba(255,255,255,0.2); background:rgba(0,0,0,0.5); color:#ccc; border-radius:12px; cursor:pointer; }
+    #game-ctrl button.on { background:var(--accent2); color:#1a1a2e; border-color:var(--accent2); font-weight:700; }
+  </style>
+</head>
+<body>
+<div id="file-panel">
+  <div id="file-header">
+    <span>📁 脚本</span>
+    <input type="file" id="fileUpload" accept=".lua,.txt,.ast" style="display:none">
+    <button class="btn" onclick="document.getElementById('fileUpload').click()">📂</button>
+    <button class="btn accent" id="btnSample">📋 示例</button>
+  </div>
+  <div id="file-list"></div>
+  <div id="resource-config">
+    <label>📁 资源根路径</label>
+    <input type="text" id="resource-path" placeholder="./resources" value="./resources">
+    <div id="test-url-bar">
+      <input type="text" id="test-url-input" placeholder="粘贴URL测试">
+      <button class="btn" onclick="testImageUrl()">🔍 测试</button>
+    </div>
+  </div>
+  <div class="config-group">
+    <div class="config-row">
+      <label>VO音量</label>
+      <input type="range" id="voVolume" min="0" max="100" value="80" oninput="updateVoVolume()">
+      <span id="voVolLabel">80</span>
+    </div>
+    <div class="config-row">
+      <label>TTS音量</label>
+      <input type="range" id="ttsVolume" min="0" max="100" value="80" oninput="updateTtsVolume()">
+      <span id="ttsVolLabel">80</span>
+    </div>
+    <div class="config-row">
+      <label>TTS语速</label>
+      <input type="range" id="ttsRate" min="0.5" max="2" step="0.1" value="0.9" oninput="updateTtsRate()">
+      <span id="ttsRateLabel">0.9</span>
+    </div>
+  </div>
+  <div id="debug-panel"></div>
+</div>
+
+<div id="ast-panel">
+  <div id="ast-header">🌳 AST 结构</div>
+  <div id="ast-tree"></div>
+</div>
+
+<div id="game-wrapper">
+  <div id="game-container" onclick="advance()">
+    <div id="bg-layer"></div>
+    <div id="chara-sprite"></div>
+    <div id="scene-info"></div>
+    <div id="lang-bar">
+      <button data-lang="cn" class="active">简中</button>
+      <button data-lang="tw">繁中</button>
+      <button data-lang="ja">日本語</button>
+      <button data-lang="en">EN</button>
+    </div>
+    <div id="text-box">
+      <div id="name-tag"></div>
+      <div id="dialogue-text"></div>
+    </div>
+    <div id="click-hint">▼ 点击继续</div>
+    <div id="game-ctrl">
+      <button onclick="event.stopPropagation();prevScene()">◀</button>
+      <button id="btnAuto" onclick="event.stopPropagation();toggleAuto()">自动</button>
+      <button id="btnTTS" onclick="event.stopPropagation();toggleTTS()">🔊语音</button>
+      <button id="btnMute" onclick="event.stopPropagation();toggleMute()">🔇静音</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ==================== Lua AST 解析器 (JavaScript) ====================
+function parseAST(text) {
+  const scenes = {};
+  const pattern = /\["(\w+)"\]\s*=\s*\{/g;
+  let m;
+  while ((m = pattern.exec(text)) !== null) {
+    const sid = m[1];
+    const start = m.index + m[0].length;
+    let depth = 1, pos = start;
+    while (depth > 0 && pos < text.length) {
+      if (text[pos] === '{') depth++;
+      else if (text[pos] === '}') depth--;
+      pos++;
+    }
+    const block = text.substring(start, pos - 1);
+    const scene = parseSceneBlock(block);
+    if (scene) scenes[sid] = scene;
+  }
+  return { scenes };
+}
+
+function parseSceneBlock(block) {
+  const commands = [], texts = [];
+  let linknext = null, linkback = null, line = null, delay = null;
+  const lines = block.split('\n');
+  let i = 0;
+  while (i < lines.length) {
+    const ln = lines[i].trim();
+    if (!ln) { i++; continue; }
+    if (ln.startsWith('text = {') || ln === 'text = {') {
+      let buf = ln.substring(ln.indexOf('{'));
+      let depth = (buf.match(/{/g)||[]).length - (buf.match(/}/g)||[]).length;
+      while (depth > 0 && i < lines.length - 1) {
+        i++;
+        const nextLine = lines[i].trim();
+        buf += '\n' + nextLine;
+        depth = (buf.match(/{/g)||[]).length - (buf.match(/}/g)||[]).length;
+      }
+      texts.push(...parseTextBlock(buf));
+    } else if (ln.startsWith('delay = {')) {
+      let buf = ln.substring(ln.indexOf('{'));
+      let depth = (buf.match(/{/g)||[]).length - (buf.match(/}/g)||[]).length;
+      while (depth > 0 && i < lines.length - 1) {
+        i++;
+        const nextLine = lines[i].trim();
+        buf += '\n' + nextLine;
+        depth = (buf.match(/{/g)||[]).length - (buf.match(/}/g)||[]).length;
+      }
+      delay = parseDelayBlock(buf);
+    } else if (ln.startsWith('linknext')) linknext = extractString(ln);
+    else if (ln.startsWith('linkback')) linkback = extractString(ln);
+    else if (ln.startsWith('line')) {
+      const num = ln.match(/\d+/);
+      if (num) line = parseInt(num[0]);
+    } else if (ln.startsWith('{"') || ln.startsWith('{')) {
+      const cmd = parseCommand(ln);
+      if (cmd) commands.push(cmd);
+    }
+    i++;
+  }
+  return { commands, texts, linknext, linkback, line, delay };
+}
+
+function parseDelayBlock(content) {
+  const entries = [];
+  const pattern = /\[(\d+)\]\s*=\s*\{/g;
+  let m;
+  while ((m = pattern.exec(content)) !== null) {
+    const t_ms = parseInt(m[1]);
+    const start = m.index + m[0].length;
+    let depth = 1, pos = start;
+    while (depth > 0 && pos < content.length) {
+      if (content[pos] === '{') depth++;
+      else if (content[pos] === '}') depth--;
+      pos++;
+    }
+    const block = content.substring(start, pos - 1);
+    const cmds = [];
+    const cmdRe = /(\{"(\w+)"\s*,[^}]+\})/g;
+    let cm;
+    while ((cm = cmdRe.exec(block)) !== null) {
+      const cmd = parseCommand(cm[1]);
+      if (cmd) cmds.push(cmd);
+    }
+    entries.push({ time: t_ms, commands: cmds });
+  }
+  entries.sort((a, b) => a.time - b.time);
+  return entries;
+}
+
+function parseCommand(s) {
+  const m = s.match(/\{"(\w+)"/);
+  if (!m) return null;
+  const cmd = { cmd: m[1] };
+  const rest = s.substring(m.index + m[0].length);
+  const pairs = rest.match(/(\w+)\s*=\s*(-?\d+|"[^"]*"|[^,}]+)/g);
+  if (pairs) {
+    pairs.forEach(p => {
+      const eq = p.indexOf('=');
+      const key = p.substring(0, eq).trim();
+      let val = p.substring(eq + 1).trim();
+      if (val.startsWith('"') && val.endsWith('"')) val = val.slice(1, -1);
+      else if (!isNaN(val)) val = Number(val);
+      cmd[key] = val;
+    });
+  }
+  return cmd;
+}
+
+function parseTextBlock(content) {
+  const results = [], voCommands = [];
+  const langRe = /(\w+)\s*=\s*\{/g;
+  let m;
+  while ((m = langRe.exec(content)) !== null) {
+    const lang = m[1];
+    const start = m.index + m[0].length;
+    let depth = 1, pos = start;
+    while (depth > 0 && pos < content.length) {
+      if (content[pos] === '{') depth++;
+      else if (content[pos] === '}') depth--;
+      pos++;
+    }
+    const block = content.substring(start, pos - 1);
+    if (lang === 'vo') {
+      voCommands.push(...parseVoEntries(block));
+    } else {
+      const entries = parseLangEntries(block, lang);
+      entries.forEach(e => { e._lang = lang; results.push(e); });
+    }
+  }
+  const merged = [], idxMap = {};
+  results.forEach(e => {
+    const idx = e._idx;
+    if (!idxMap[idx]) { idxMap[idx] = {}; merged.push(idxMap[idx]); }
+    idxMap[idx][e._lang] = e._text || '';
+    if (e.name) idxMap[idx].name = Object.assign(idxMap[idx].name || {}, e.name);
+  });
+  const valid = merged.filter(item => {
+    return ['cn','ja','en','tw'].some(l => {
+      const t = item[l] || '';
+      return t && !t.startsWith('*') && !['rt2','exfont','rt','exfontend','vo'].includes(t);
+    });
+  });
+  if (voCommands.length && valid.length) valid[0].vo = voCommands;
+  return valid;
+}
+
+function parseVoEntries(block) {
+  const entries = [];
+  const voRe = /\{("vo")\s*,\s*([^}]+)\}/g;
+  let m;
+  while ((m = voRe.exec(block)) !== null) {
+    const cmd = { cmd: 'vo' };
+    const pairs = m[2].match(/(\w+)\s*=\s*"([^"]*)"/g);
+    if (pairs) pairs.forEach(p => {
+      const eq = p.indexOf('=');
+      cmd[p.substring(0, eq).trim()] = p.substring(eq + 1).trim().replace(/"/g, '');
+    });
+    entries.push(cmd);
+  }
+  return entries;
+}
+
+function parseLangEntries(block, lang) {
+  const entries = [];
+  const entryRe = /\{/g;
+  let m;
+  while ((m = entryRe.exec(block)) !== null) {
+    const start = m.index;
+    let depth = 1, pos = start + 1;
+    while (depth > 0 && pos < block.length) {
+      if (block[pos] === '{') depth++;
+      else if (block[pos] === '}') depth--;
+      pos++;
+    }
+    const entryStr = block.substring(start + 1, pos - 1);
+    const entry = parseEntry(entryStr, lang);
+    if (entry) {
+      entry._idx = entries.length;
+      entries.push(entry);
+    }
+  }
+  return entries;
+}
+
+function parseEntry(s, lang) {
+  const result = {};
+  const nameMatch = s.match(/name\s*=\s*(\{[^}]*\}|"[^"]*")/);
+  let remaining = s;
+  if (nameMatch) {
+    let part = nameMatch[1];
+    if (part.startsWith('{')) {
+      const names = part.match(/"([^"]*)"/g)?.map(n => n.replace(/"/g, ''));
+      if (names) {
+        const nameObj = {};
+        if (names[0]) nameObj[lang] = names[0];
+        if (names[1]) nameObj['en'] = names[1];
+        result.name = nameObj;
+      }
+    } else {
+      result.name = { [lang]: part.replace(/"/g, '') };
+    }
+    remaining = s.substring(0, nameMatch.index) + s.substring(nameMatch.index + nameMatch[0].length);
+  }
+  const pattern = /"([^"]*)"|\{("gaiji")\s*,\s*([^}]+)\}|\{("exfont")\s*,[^}]+\}|\{("exfontend")\s*\}|\{("rt2")\s*\}|\{("rt")\s*\}/g;
+  const fragments = [];
+  let fm;
+  while ((fm = pattern.exec(remaining)) !== null) {
+    if (fm[1] !== undefined) {
+      const txt = fm[1];
+      if (!['rt2','exfont','rt','exfontend','vo'].includes(txt) && !txt.startsWith('*')) {
+        fragments.push(txt);
+      }
+    } else if (fm[2] === 'gaiji') {
+      const t = fm[3].match(/text\s*=\s*"([^"]*)"/);
+      if (t) fragments.push(t[1]);
+    }
+  }
+  if (fragments.length) {
+    result._text = fragments.join('').trim();
+  } else {
+    const allStrings = remaining.match(/"([^"]*)"/g)?.map(s => s.replace(/"/g, ''));
+    const skipTags = ['rt2','exfont','rt','exfontend','vo'];
+    const candidates = allStrings?.filter(t => !skipTags.includes(t) && !t.startsWith('*'));
+    if (candidates?.length) result._text = candidates[0];
+  }
+  return (result._text || result.name) ? result : null;
+}
+
+function extractString(s) {
+  const m = s.match(/"([^"]*)"/);
+  return m ? m[1] : null;
+}
+
+// ==================== IPT 解析器 ====================
+async function loadIptLayers(baseUrl, container) {
+  try {
+    const iptUrl = baseUrl + '.ipt';
+    const resp = await fetch(iptUrl);
+    if (!resp.ok) return false;
+    const text = await resp.text();
+    const data = parseIpt(text);
+    container.innerHTML = '';
+    const iptDir = baseUrl.substring(0, baseUrl.lastIndexOf('/'));
+    data.layers.forEach(layer => {
+      const img = document.createElement('img');
+      img.src = `${iptDir}/${layer.file}.png`;
+      img.style.position = 'absolute';
+      img.style.left = (layer.x || 0) + 'px';
+      img.style.top = (layer.y || 0) + 'px';
+      img.onerror = () => { img.style.display = 'none'; };
+      container.appendChild(img);
+    });
+    return true;
+  } catch (e) { return false; }
+}
+
+function parseIpt(text) {
+  const layers = [];
+  const modeMatch = text.match(/mode\s*=\s*"(\w+)"/);
+  const mode = modeMatch ? modeMatch[1] : 'diff';
+  const baseMatch = text.match(/base\s*=\s*\{([^}]+)\}/);
+  if (baseMatch) {
+    const content = baseMatch[1].trim();
+    const fileMatch = content.match(/"([^"]+)"/);
+    const wMatch = content.match(/w\s*=\s*(\d+)/);
+    const hMatch = content.match(/h\s*=\s*(\d+)/);
+    layers.push({
+      type: 'base',
+      file: fileMatch ? fileMatch[1] : '',
+      w: wMatch ? parseInt(wMatch[1]) : null,
+      h: hMatch ? parseInt(hMatch[1]) : null
+    });
+  }
+  const layerRe = /\{\s*id\s*=\s*(\d+)\s*,\s*file\s*=\s*"([^"]+)"\s*,\s*x\s*=\s*(-?\d+)\s*,\s*y\s*=\s*(-?\d+)\s*\}/g;
+  let lm;
+  while ((lm = layerRe.exec(text)) !== null) {
+    layers.push({
+      type: 'layer',
+      id: parseInt(lm[1]),
+      file: lm[2],
+      x: parseInt(lm[3]),
+      y: parseInt(lm[4])
+    });
+  }
+  return { mode, layers };
+}
+
+// ==================== 全局状态 ====================
+let sceneData = {};
+let curFile = null, curScene = null, curLang = 'cn';
+let isAuto = false, isMuted = false, isTTS = false;
+let autoPending = null;
+const expanded = new Set();
+let currentBGM = null, currentVO = null;
+let voVolume = 0.8, ttsVolume = 0.8, ttsRate = 0.9;
+let delayTimers = [];
+let fgContainers = [];
+
+const $ = id => document.getElementById(id);
+const fileList = $('file-list'), astTree = $('ast-tree'), bgLayer = $('bg-layer');
+const charaSmall = $('chara-sprite');
+const nameTag = $('name-tag'), dialogue = $('dialogue-text'), sceneInfo = $('scene-info');
+const resourcePathInput = $('resource-path'), debugPanel = $('debug-panel');
+const btnAuto = $('btnAuto'), btnTTS = $('btnTTS'), btnMute = $('btnMute');
+const gameContainer = $('game-container');
+
+window.updateVoVolume = () => { voVolume = $('voVolume').value/100; $('voVolLabel').textContent = $('voVolume').value; };
+window.updateTtsVolume = () => { ttsVolume = $('ttsVolume').value/100; $('ttsVolLabel').textContent = $('ttsVolume').value; };
+window.updateTtsRate = () => { ttsRate = parseFloat($('ttsRate').value); $('ttsRateLabel').textContent = ttsRate.toFixed(1); };
+
+function buildBaseUrl(cmd, fileKey) {
+  const base = (resourcePathInput.value || './resources').replace(/\/+$/, '');
+  const filename = cmd[fileKey] || '';
+  if (cmd.path) {
+    let dir = cmd.path.replace(/^:/, '').replace(/\/+$/, '');
+    if (!dir.startsWith('/')) dir = '/' + dir;
+    return `${base}${dir}/${filename}`;
+  }
+  return `${base}/${filename}`;
+}
+function buildAudioUrl(cmd, fileKey) { return buildBaseUrl(cmd, fileKey) + '.ogg'; }
+window.testImageUrl = () => {
+  const url = document.getElementById('test-url-input').value.trim();
+  if (!url) return;
+  const img = new Image();
+  img.onload = () => alert('✅ 资源加载成功！');
+  img.onerror = () => alert('❌ 资源加载失败');
+  img.src = url;
+};
+function stopAllAudio() { if(currentVO){currentVO.pause(); currentVO=null;} if(currentBGM){currentBGM.pause(); currentBGM=null;} }
+function playAudio(url, loop=false) {
+  if (isMuted) return;
+  const audio = new Audio(url);
+  audio.loop = loop; audio.volume = voVolume;
+  audio.play().catch(e=>console.warn('音频播放被阻止'));
+  return audio;
+}
+function speakText(txt) {
+  if (!window.speechSynthesis || !isTTS) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(txt);
+  const langMap = { cn:'zh-CN', tw:'zh-TW', ja:'ja-JP', en:'en-US' };
+  u.lang = langMap[curLang] || 'zh-CN';
+  u.rate = ttsRate; u.volume = ttsVolume;
+  speechSynthesis.speak(u);
+}
+function getText(scene, lang) {
+  if (!scene || !scene.texts || !scene.texts.length) return '';
+  const block = scene.texts[0];
+  return block ? (block[lang] || block['cn'] || block['ja'] || block['en'] || block['tw'] || '') : '';
+}
+function getSpeaker(scene, lang) {
+  if (!scene || !scene.texts) return '';
+  const block = scene.texts[0];
+  return block?.name ? (block.name[lang] || block.name['cn'] || '') : '';
+}
+function findNearestBg(sceneId) {
+  const ids = Object.keys(sceneData).sort();
+  const idx = ids.indexOf(sceneId);
+  if (idx === -1) return null;
+  for (let i = idx; i >= 0; i--) {
+    const scene = sceneData[ids[i]];
+    const allBg = (scene.commands||[]).filter(c => c.cmd === 'bg' && c.file);
+    if (allBg.length) return allBg[allBg.length - 1];
+  }
+  return null;
+}
+
+function getCurrentTranslation(el) {
+  const style = window.getComputedStyle(el);
+  const matrix = new DOMMatrixReadOnly(style.transform);
+  return { x: matrix.m41, y: matrix.m42 };
+}
+function removeAnimation(container) {
+  container.classList.remove('anim-shake-down-small');
+  container.style.animation = '';
+  container.style.transition = '';
+  container.style.removeProperty('--shake-size');
+  container.style.removeProperty('--shake-duration');
+  if (container === charaSmall) {
+    container.style.transform = '';
+  } else {
+    if (container.style.left === '50%' || container.style.transform.includes('translateX(-50%)')) {
+      container.style.transform = 'translateX(-50%)';
+    } else {
+      container.style.transform = '';
+    }
+  }
+}
+function loadFgLayers(fgCmd, container, allLayers = true) {
+  removeAnimation(container);
+  container.innerHTML = '';
+  if (!fgCmd || fgCmd.mode === -1) { container.classList.remove('visible'); return; }
+  let layerKeys;
+  if (allLayers) {
+    layerKeys = Object.keys(fgCmd).filter(k => /^file\d*$/.test(k)).sort((a,b) => {
+      const numA = a === 'file' ? 0 : parseInt(a.replace('file',''));
+      const numB = b === 'file' ? 0 : parseInt(b.replace('file',''));
+      return numA - numB;
+    });
+    if (!layerKeys.length && fgCmd.file) layerKeys = ['file'];
+  } else {
+    layerKeys = ['file'].filter(k => fgCmd[k]);
+    if (!layerKeys.length) {
+      if (fgCmd.file1) layerKeys = ['file1'];
+      else if (fgCmd.file2) layerKeys = ['file2'];
+    }
+  }
+  if (!layerKeys.length) {
+    container.innerHTML = '<div class="error-msg">无立绘文件</div>';
+    container.classList.add('visible');
+    return;
+  }
+  layerKeys.forEach(key => {
+    const baseUrl = buildBaseUrl(fgCmd, key);
+    const img = new Image();
+    img.src = baseUrl + '.png';
+    img.onerror = () => { img.src = baseUrl + '.ipt'; };
+    img.style.position = 'absolute';
+    img.style.top = '0'; img.style.left = '0';
+    img.style.width = '100%'; img.style.height = '100%';
+    img.style.objectFit = 'contain';
+    img.classList.add('fade-in');
+    container.appendChild(img);
+  });
+  container.classList.add('visible');
+}
+
+function clearDelayTimers() {
+  delayTimers.forEach(t => clearTimeout(t));
+  delayTimers = [];
+  fgContainers.forEach(c => removeAnimation(c));
+  removeAnimation(charaSmall);
+}
+function findContainerById(id) {
+  if (id === 30) return charaSmall;
+  return fgContainers.find(c => c.dataset.fgId === String(id)) || null;
+}
+
+function executeFgAct(cmd) {
+  const container = findContainerById(cmd.id);
+  if (!container) return;
+  const act = cmd.act;
+  if (act === '振動下') {
+    container.classList.remove('anim-shake-down-small');
+    container.style.animation = '';
+    const size = Math.abs(cmd.size || 10);
+    const duration = (cmd.time || 400) / 1000;
+    const loop = cmd.loop || 1;
+    container.style.setProperty('--shake-size', size + 'px');
+    container.style.animation = `shakeDownSmall ${duration}s ease-in-out ${loop}`;
+    container.classList.add('anim-shake-down-small');
+    const onEnd = () => {
+      container.classList.remove('anim-shake-down-small');
+      container.style.animation = '';
+      container.style.removeProperty('--shake-size');
+      container.removeEventListener('animationend', onEnd);
+    };
+    container.addEventListener('animationend', onEnd);
+  } else if (act === '移動' || act === '移动') {
+    container.style.transition = '';
+    const current = getCurrentTranslation(container);
+    const x = Number(cmd.x) || 0;
+    const y = Number(cmd.y) || 0;
+    const time = Number(cmd.time) || 1000;
+    const ease = cmd.ease || 'ease';
+    const targetX = current.x + x;
+    const targetY = current.y + y;
+    let baseTransform = '';
+    if (container.style.left === '50%' || container.style.transform.includes('translateX(-50%)')) {
+      baseTransform = 'translateX(-50%)';
+    }
+    container.style.transition = `transform ${time}ms ${ease}`;
+    container.style.transform = `${baseTransform} translate(${targetX}px, ${targetY}px)`;
+    const onEnd = () => {
+      container.style.transition = '';
+      container.style.transform = `${baseTransform} translate(${targetX}px, ${targetY}px)`;
+      container.removeEventListener('transitionend', onEnd);
+    };
+    container.addEventListener('transitionend', onEnd);
+  }
+}
+
+function executeDelayCommand(cmd) {
+  if (cmd.cmd === 'fg') {
+    const container = findContainerById(cmd.id);
+    if (container) {
+      const allLayers = (cmd.mode !== 1 && cmd.id !== 30);
+      loadFgLayers(cmd, container, allLayers);
+    }
+  } else if (cmd.cmd === 'fgact') {
+    executeFgAct(cmd);
+  }
+}
+
+function setupDelayActions(delayArray) {
+  clearDelayTimers();
+  if (!delayArray || !delayArray.length) return;
+  delayArray.forEach(item => {
+    const timer = setTimeout(() => {
+      item.commands.forEach(cmd => executeDelayCommand(cmd));
+      delayTimers = delayTimers.filter(t => t !== timer);
+    }, item.time);
+    delayTimers.push(timer);
+  });
+}
+
+function scheduleAutoAdvance() {
+  if (!isAuto) return;
+  if (autoPending) { clearTimeout(autoPending); autoPending = null; }
+  let delay = 5000;
+  if (currentVO && !currentVO.ended) {
+    if (currentVO.duration && isFinite(currentVO.duration)) {
+      delay = Math.ceil(currentVO.duration * 1000) + 300;
+    } else {
+      delay = 10000;
+    }
+    const onEnd = () => {
+      currentVO.removeEventListener('ended', onEnd);
+      if (isAuto) advance();
+    };
+    currentVO.addEventListener('ended', onEnd);
+  }
+  autoPending = setTimeout(() => { if (isAuto) advance(); }, delay);
+}
+
+async function updateGame() {
+  clearDelayTimers();
+  const scene = sceneData[curScene];
+  if (!scene) {
+    nameTag.textContent = ''; dialogue.textContent = '请选择场景';
+    sceneInfo.textContent = '';
+    charaSmall.innerHTML = '';
+    fgContainers.forEach(c => c.remove());
+    fgContainers = [];
+    bgLayer.innerHTML = ''; debugPanel.style.display = 'none';
+    return;
+  }
+  sceneInfo.textContent = `${curScene} · line ${scene.line || '?'}`;
+  nameTag.textContent = getSpeaker(scene, curLang);
+  dialogue.textContent = getText(scene, curLang);
+
+  // 背景
+  bgLayer.innerHTML = '';
+  const allBgCmds = (scene.commands||[]).filter(c => c.cmd === 'bg' && c.file);
+  let bgCmd = allBgCmds.length ? allBgCmds[allBgCmds.length - 1] : null;
+  if (!bgCmd) bgCmd = findNearestBg(curScene);
+  if (bgCmd) {
+    const baseUrl = buildBaseUrl(bgCmd, 'file');
+    const isCG = bgCmd.path && bgCmd.path.includes(':cg/');
+    if (isCG) {
+      const loaded = await loadIptLayers(baseUrl, bgLayer);
+      if (!loaded) {
+        const img = new Image();
+        img.src = baseUrl + '.ipt';
+        img.onerror = () => { img.src = baseUrl + '.png'; };
+        img.style.width = '100%'; img.style.height = '100%'; img.style.objectFit = 'cover';
+        bgLayer.appendChild(img);
+      }
+    } else {
+      const img = new Image();
+      img.src = baseUrl + '.png';
+      img.onerror = () => { img.src = baseUrl + '.ipt'; };
+      img.style.width = '100%'; img.style.height = '100%'; img.style.objectFit = 'cover';
+      bgLayer.appendChild(img);
+    }
+  }
+
+  // 立绘
+  charaSmall.innerHTML = '';
+  fgContainers.forEach(c => c.remove());
+  fgContainers = [];
+  const fgCmds = (scene.commands||[]).filter(c => c.cmd === 'fg' && c.mode !== -1);
+  for (const fgCmd of fgCmds) {
+    const isSmall = (fgCmd.mode === 1 || fgCmd.id === 30);
+    if (isSmall) {
+      loadFgLayers(fgCmd, charaSmall, false);
+    } else {
+      const container = document.createElement('div');
+      container.className = 'full-chara-container';
+      container.dataset.fgId = fgCmd.id;
+      const x = fgCmd.x || 0;
+      container.style.bottom = (5 - (fgCmd.y || 0)) + 'px';
+      if (x > 100) { container.style.right = '10px'; container.style.left = 'auto'; container.style.transform = 'none'; }
+      else if (x < -100) { container.style.left = '10px'; container.style.right = 'auto'; container.style.transform = 'none'; }
+      else { container.style.left = '50%'; container.style.transform = 'translateX(-50%)'; }
+      gameContainer.appendChild(container);
+      fgContainers.push(container);
+      loadFgLayers(fgCmd, container, true);
+    }
+  }
+  if (charaSmall.children.length) charaSmall.classList.add('visible');
+  else charaSmall.classList.remove('visible');
+
+  // 初始 fgact
+  const fgActCmds = (scene.commands||[]).filter(c => c.cmd === 'fgact');
+  fgActCmds.forEach(cmd => executeFgAct(cmd));
+
+  // 音频
+  if (currentVO) { currentVO.pause(); currentVO = null; }
+  const textBlock = scene.texts && scene.texts[0];
+  let voCmd = textBlock?.vo?.[0] || (scene.commands||[]).find(c => c.cmd === 'vo' && c.file);
+  if (!voCmd) {
+    const seCmd = (scene.commands||[]).find(c => c.cmd === 'se' && c.file && c.path && c.path.includes(':vo/'));
+    if (seCmd) voCmd = seCmd;
+  }
+  if (voCmd) currentVO = playAudio(buildAudioUrl(voCmd, 'file'), false);
+  const bgmCmd = (scene.commands||[]).find(c => c.cmd === 'bgm' && c.file);
+  if (bgmCmd) {
+    if (currentBGM) { currentBGM.pause(); currentBGM = null; }
+    currentBGM = playAudio(buildAudioUrl(bgmCmd, 'file'), true);
+  }
+
+  if (isTTS) { const txt = getText(scene, curLang); if (txt) speakText(txt); }
+  setupDelayActions(scene.delay);
+  if (isAuto) scheduleAutoAdvance();
+}
+
+function jumpScene(id) { curScene = id; updateGame(); highlightNode(id); }
+window.advance = () => {
+  clearDelayTimers();
+  if (autoPending) { clearTimeout(autoPending); autoPending = null; }
+  if (!curScene || !sceneData[curScene]) return;
+  const scene = sceneData[curScene];
+  if (scene.linknext && sceneData[scene.linknext]) jumpScene(scene.linknext);
+  if (isAuto) scheduleAutoAdvance();
+};
+window.prevScene = () => {
+  if (!curScene || !sceneData[curScene]) return;
+  const scene = sceneData[curScene];
+  if (scene.linkback && sceneData[scene.linkback]) jumpScene(scene.linkback);
+};
+
+// ==================== 文件加载与列表 ====================
+function loadASTText(text, filename = '') {
+  const data = parseAST(text);
+  sceneData = data.scenes || {};
+  curFile = filename;
+  renderAST();
+  const first = Object.keys(sceneData)[0];
+  if (first) jumpScene(first);
+}
+
+async function loadRemoteFile(filename) {
+  try {
+    const resp = await fetch(filename);
+    if (!resp.ok) throw new Error('文件加载失败');
+    const text = await resp.text();
+    loadASTText(text, filename);
+    document.querySelectorAll('.file-item').forEach(el => el.classList.remove('active'));
+    const items = [...fileList.children];
+    const target = items.find(el => el.textContent.trim() === filename);
+    if (target) target.classList.add('active');
+  } catch (e) { alert('无法加载文件: ' + e.message); }
+}
+
+// 尝试加载 filelist.json 并填充列表
+async function loadFileListFromJson() {
+  try {
+    const resp = await fetch('filelist.json');
+    if (!resp.ok) return;
+    const files = await resp.json();
+    fileList.innerHTML = '';
+    files.forEach(f => {
+      const div = document.createElement('div');
+      div.className = 'file-item';
+      div.textContent = f;
+      div.onclick = () => loadRemoteFile(f);
+      fileList.appendChild(div);
+    });
+  } catch (e) {
+    console.log('未找到 filelist.json，将使用手动上传。');
+  }
+}
+
+// 示例数据
+function loadSample() {
+  const sample = `
+ast = {
+  ["0096_00004"] = {
+    {"bgm", file="bgm08", vol=100},
+    {"bg", id=2, file="bg05_1_00000", path=":bg/"},
+    {"fg", file="hinami_02m_00002", file1="hinami_02m_00101", file2="hinami_02m_00202", path=":fg/hinami_02m/", id=5, mode=3, x=395},
+    {"fg", file="rei_02m_00002", file1="rei_02m_00101", file3="rei_02m_00310", path=":fg/rei_02m/", id=9, mode=3, x=-405},
+    {"text"},
+    text = {
+      cn = { { name = {"淳之介", "淳之介・雏见・礼"}, "“““是海耶！！！”””" } },
+    },
+    linknext = "0096_00005",
+    line = 64,
+  },
+}
+`;
+  loadASTText(sample, '内置示例');
+}
+document.getElementById('btnSample').addEventListener('click', loadSample);
+document.getElementById('fileUpload').addEventListener('change', (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => loadASTText(reader.result, file.name);
+  reader.readAsText(file);
+});
+
+// AST 树
+function renderAST() {
+  astTree.innerHTML = '';
+  if (!sceneData || !Object.keys(sceneData).length) {
+    astTree.innerHTML = '<div style="padding:10px;color:#888;">暂无场景数据</div>';
+    return;
+  }
+  for (const [id, scene] of Object.entries(sceneData)) {
+    const node = document.createElement('div');
+    node.className = 'tree-node';
+    const row = document.createElement('div');
+    row.className = 'node-row';
+    row.dataset.scene = id;
+    row.innerHTML = `<span class="node-toggle">▶</span><span class="node-icon scene">S</span><span class="node-label">${id}</span>`;
+    row.onclick = (e) => { e.stopPropagation(); jumpScene(id); toggleNode(node); };
+    const children = document.createElement('div');
+    children.className = 'node-children collapsed';
+    if (expanded.has(id)) children.classList.remove('collapsed');
+    (scene.commands||[]).forEach(c => {
+      const cr = document.createElement('div');
+      cr.className = 'node-row';
+      cr.innerHTML = `<span class="node-toggle" style="visibility:hidden">▶</span><span class="node-icon cmd">C</span><span class="node-label">${c.cmd}</span>`;
+      children.appendChild(cr);
+    });
+    (scene.texts||[]).forEach((t,i) => {
+      const tr = document.createElement('div');
+      tr.className = 'node-row';
+      const preview = (t.cn || t.ja || t.en || '').substring(0, 20);
+      tr.innerHTML = `<span class="node-toggle" style="visibility:hidden">▶</span><span class="node-icon txt">T</span><span class="node-label">${preview || '...'}</span>`;
+      children.appendChild(tr);
+    });
+    if (scene.linknext || scene.linkback) {
+      const lr = document.createElement('div');
+      lr.className = 'node-row';
+      lr.innerHTML = `<span class="node-toggle" style="visibility:hidden">▶</span><span class="node-icon link">L</span><span class="node-label">next:${scene.linknext||'?'} back:${scene.linkback||'?'}</span>`;
+      children.appendChild(lr);
+    }
+    node.appendChild(row); node.appendChild(children);
+    astTree.appendChild(node);
+  }
+}
+function toggleNode(nodeDiv) {
+  const ch = nodeDiv.querySelector('.node-children');
+  ch.classList.toggle('collapsed');
+  const id = nodeDiv.querySelector('.node-row').dataset.scene;
+  if (ch.classList.contains('collapsed')) expanded.delete(id);
+  else expanded.add(id);
+  const tg = nodeDiv.querySelector('.node-toggle');
+  tg.textContent = ch.classList.contains('collapsed') ? '▶' : '▼';
+}
+function highlightNode(sceneId) {
+  document.querySelectorAll('.node-row').forEach(r => r.classList.remove('active'));
+  const row = document.querySelector(`.node-row[data-scene="${sceneId}"]`);
+  if (row) { row.classList.add('active'); row.scrollIntoView({block:'center', behavior:'smooth'}); }
+}
+
+window.toggleAuto = () => {
+  isAuto = !isAuto; btnAuto.classList.toggle('on', isAuto);
+  if (isAuto) { scheduleAutoAdvance(); }
+  else { if (autoPending) { clearTimeout(autoPending); autoPending = null; } }
+};
+window.toggleTTS = () => {
+  isTTS = !isTTS; btnTTS.classList.toggle('on', isTTS);
+  if (isTTS) { const scene = sceneData[curScene]; if (scene) { const txt = getText(scene, curLang); if (txt) speakText(txt); } }
+  else { window.speechSynthesis?.cancel(); }
+};
+window.toggleMute = () => { isMuted = !isMuted; btnMute.classList.toggle('on', isMuted); if (isMuted) stopAllAudio(); };
+document.querySelectorAll('#lang-bar button').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    document.querySelectorAll('#lang-bar button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    curLang = btn.dataset.lang;
+    updateGame();
+  });
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); advance(); }
+  if (e.key === 'ArrowRight') advance();
+  if (e.key === 'ArrowLeft') prevScene();
+});
+
+// 初始化
+updateVoVolume(); updateTtsVolume(); updateTtsRate();
+resourcePathInput.addEventListener('input', updateGame);
+loadFileListFromJson();
+// 如果filelist.json存在则不会加载示例，否则自动加载示例
+setTimeout(() => {
+  if (!fileList.children.length) {
+    loadSample();
+  }
+}, 500);
+</script>
+</body>
+</html>
