@@ -6,7 +6,6 @@
   <meta name="referrer" content="origin">
   <title>Galgame AST 检视器 · 最终版</title>
   <style>
-    /* ... 样式部分保持不变 ... */
     :root {
       --bg: #0a0a16; --panel-bg: #111128; --text: #d4cfc4; --accent: #c8a87c; --accent2: #6fa8b8; --border: #2a2a48;
       --node-cmd: #4f6f8f; --node-txt: #5f9f7f; --node-link: #9f8f5f;
@@ -439,22 +438,17 @@ window.updateTtsRate = () => { ttsRate = parseFloat($('ttsRate').value); $('ttsR
 
 // ========== 智能构建资源URL (适配 raw.githubusercontent.com) ==========
 function buildBaseUrl(cmd, fileKey) {
+  // 获取并规范化用户配置的资源基路径
   let base = resourcePathInput.value.replace(/\/+$/, '');
   const filename = cmd[fileKey] || '';
   let path = cmd.path ? cmd.path.replace(/^:/, '') : '';
   
-  const isCG = path && path.startsWith('cg/');
-  
-  let fullPath;
-  if (isCG) {
-    let resourcePath = path;
-    if (!resourcePath.startsWith('resources/')) {
-      resourcePath = 'resources/' + resourcePath;
-    }
-    fullPath = `${base}/${resourcePath}${filename}`;
-  } else {
-    fullPath = `${base}/${path}${filename}`;
+  // 修复：强制为所有图片资源（bg, fg, cg）统一加上 "/resources/" 前缀
+  let resourcePath = path;
+  if (!resourcePath.startsWith('resources/')) {
+    resourcePath = 'resources/' + resourcePath;
   }
+  const fullPath = `${base}/${resourcePath}${filename}`;
   
   console.log(`[buildBaseUrl] ${fileKey} -> ${fullPath}`);
   return fullPath;
