@@ -374,7 +374,11 @@ function extractString(s) {
 async function loadIptLayers(baseUrl, container) {
   try {
     const iptUrl = baseUrl + '.ipt';
-    const resp = await fetch(iptUrl, { referrerPolicy: 'origin' });
+    const resp = await fetch(iptUrl, { 
+      referrerPolicy: 'origin',
+      mode: 'cors',
+      credentials: 'omit'
+    });
     if (!resp.ok) return false;
     const text = await resp.text();
     const data = parseIpt(text);
@@ -382,6 +386,7 @@ async function loadIptLayers(baseUrl, container) {
     const iptDir = baseUrl.substring(0, baseUrl.lastIndexOf('/'));
     data.layers.forEach(layer => {
       const img = document.createElement('img');
+      img.setAttribute('crossOrigin', 'anonymous');
       img.src = `${iptDir}/${layer.file}.png`;
       img.style.position = 'absolute';
       img.style.left = (layer.x||0)+'px';
@@ -436,13 +441,13 @@ window.updateVoVolume = () => { voVolume = $('voVolume').value/100; $('voVolLabe
 window.updateTtsVolume = () => { ttsVolume = $('ttsVolume').value/100; $('ttsVolLabel').textContent = $('ttsVolume').value; };
 window.updateTtsRate = () => { ttsRate = parseFloat($('ttsRate').value); $('ttsRateLabel').textContent = ttsRate.toFixed(1); };
 
-// ========== 智能构建资源URL (适配 media.githubusercontent.com) ==========
+// ========== 智能构建资源URL (使用 media.githubusercontent.com) ==========
 function buildBaseUrl(cmd, fileKey) {
   let base = resourcePathInput.value.replace(/\/+$/, '');
   const filename = cmd[fileKey] || '';
   let path = cmd.path ? cmd.path.replace(/^:/, '') : '';
   
-  // 强制为所有图片资源（bg, fg, cg）加上 "/resources/" 前缀
+  // 为所有图片资源（bg, fg, cg）加上 "/resources/" 前缀
   let resourcePath = path;
   if (!resourcePath.startsWith('resources/')) {
     resourcePath = 'resources/' + resourcePath;
@@ -466,6 +471,7 @@ window.testImageUrl = () => {
   const url = document.getElementById('test-url-input').value.trim();
   if (!url) return;
   const img = new Image();
+  img.setAttribute('crossOrigin', 'anonymous');
   img.onload = () => alert('✅ 资源加载成功！');
   img.onerror = () => alert('❌ 资源加载失败');
   img.src = url;
@@ -557,6 +563,7 @@ function loadFgLayers(fgCmd, container, allLayers = true) {
   layerKeys.forEach(key => {
     const baseUrl = buildBaseUrl(fgCmd, key);
     const img = new Image();
+    img.setAttribute('crossOrigin', 'anonymous');
     img.src = baseUrl + '.png';
     img.onerror = () => { img.src = baseUrl + '.ipt'; };
     img.style.position = 'absolute';
@@ -695,6 +702,7 @@ async function updateGame() {
       const loaded = await loadIptLayers(baseUrl, bgLayer);
       if (!loaded) {
         const img = new Image();
+        img.setAttribute('crossOrigin', 'anonymous');
         img.src = baseUrl + '.png';
         img.onerror = () => { console.warn(`Failed to load CG background: ${baseUrl}.png`); };
         img.style.width = '100%'; img.style.height = '100%'; img.style.objectFit = 'cover';
@@ -702,6 +710,7 @@ async function updateGame() {
       }
     } else {
       const img = new Image();
+      img.setAttribute('crossOrigin', 'anonymous');
       img.src = baseUrl + '.png';
       img.onerror = () => { console.warn(`Failed to load background: ${baseUrl}.png`); };
       img.style.width = '100%'; img.style.height = '100%'; img.style.objectFit = 'cover';
