@@ -1,0 +1,4877 @@
+astver = 2.0
+ast = {
+	["0067_00001"] = {
+		{"savetitle", text="03_tr20", ja="冷泉問答 - エピローグ -", en="The Reizei Dialogue -Epilogue-", cn="冷泉问答 - 终 -", tw="冷泉問答 - 終 -"},
+		{"eval", exp="g.03_tr20=1"},
+		{"se", id=5, loop=1, file="se_d001"},
+		{"bg", id=29, file="blackband_00000", x=0, y=0, lv=29, path=":bg/", sync=0},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bg", id=20, file="bg18_1l_00000", x=-300, y=0, lv=20, path=":bg/", sync=1, style="blur", blurx=11, blury=11, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=20, lv=20, act="表示アクション", a1=0, a2=255, time=2000, a_chr=151, alpha=255},
+		{"cgact", file="cgact", id=20, act="移動", x=595, y=-5, time=20000, lv=20},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Much time has passed since the Lewd War and the events that followed.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"──……那之后，过了很多年。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"──……那之後，過了很多年。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "0067_00002",
+		line = 21,
+	},
+	["0067_00002"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"For years, I experienced it all. I spent plenty of my days arguing, fighting, and blowing up at the others. I also did my fair share looking after everyone in the process.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"因为很多事情而生气、发怒、斥责，就这样一边照顾她日子一边过。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"因為很多事情而生氣、發怒、斥責，就這樣一邊照顧她日子一邊過。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00001",
+		linknext = "0067_00003",
+		line = 31,
+	},
+	["0067_00003"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Now that I think about it, almost 10 years have gone by.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"注意到时，已经过了10年了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"注意到時，已經過了10年了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00002",
+		linknext = "0067_00004",
+		line = 41,
+	},
+	["0067_00004"] = {
+		{"cgdel", id=20, lv=20, time=0, alphadel=1},
+		{"se", id=0, loop=0, file="se_a002"},
+		{"bg", id=21, file="bg18_1l_00000", x=300, y=250, lv=21, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=1000},
+		{"cgact", file="cgact", id=21, act="移動", x=-605, y=-505, time=20000, lv=21},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Oh, shit! I’m gonna be late!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“……糟了，要迟到了──！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「……糟了，要遲到了──！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00003",
+		linknext = "0067_00005",
+		line = 58,
+	},
+	["0067_00005"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Thanks to the help of Nanase, Ikuko, and all of the others, I somehow managed to get into the school’s advanced levels after all.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那之后，我在奈奈濑、郁子以及大家的帮助下，总算进入了特进课程。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那之後，我在奈奈瀨、郁子以及大家的幫助下，總算進入了特進課程。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00004",
+		linknext = "0067_00006",
+		line = 68,
+	},
+	["0067_00006"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"As a third-year student, Hinami and the others continued to tutor me. Because of that, I scraped by and barely managed to get into the university of my choice.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就算升上A等部三年级，还是得让雏见他们教我功课，才让我勉强得以走在想走的路上──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就算升上A等部三年級，還是得讓雛見他們教我功課，才讓我勉強得以走在想走的路上──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00005",
+		linknext = "0067_00007",
+		line = 78,
+	},
+	["0067_00007"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But after all was said and done, I returned to Seiran Island.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"最后，却还是回到了青蓝岛。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"最後，卻還是回到了青藍島。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00006",
+		linknext = "0067_00008",
+		line = 88,
+	},
+	["0067_00008"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"You might think that I came back here to make sure that the tyrannical rule of the perverted sex laws would never rise again. However, that was more of an afterthought in my decision.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"为了对被我改过的变态条例负责──这也是一个理由，但只是顺带的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"為了對被我改過的變態條例負責──這也是一個理由，但只是順帶的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00007",
+		linknext = "0067_00009",
+		line = 98,
+	},
+	["0067_00009"] = {
+		{"cgdel", id=21, lv=21, time=0, alphadel=1},
+		{"se", id=5, stop=1, time=5000},
+		{"se", id=0, loop=0, file="se_a080"},
+		{"bg", id=22, file="bg19_1l_00000", x=0, y=-250, lv=22, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=1000},
+		{"cgact", file="cgact", id=22, act="移動", x=-5, y=495, time=20000, lv=22},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I’m running way behind—oh! Morning, you two!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“──……来晚了，早安两位！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「──……來晚了，早安兩位！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00008",
+		linknext = "0067_00010",
+		line = 116,
+	},
+	["0067_00010"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Day after day of exhausting work has left me worrying about my hairline. I hope I’m not going bald.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"可能因为繁忙的事务，我最近开始在意起我的头皮。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"可能因為繁忙的事務，我最近開始在意起我的頭皮。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00009",
+		linknext = "0067_00011",
+		line = 126,
+	},
+	["0067_00011"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My former NLNS allies tell me that I’ve been working out too much. But I just can’t stop. If I try to cut back, I start to feel a noticeable drop in my physical strength.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然原NLNS成员们说我重训太超过了，但因为感到体力的衰退，让我更加无法放弃重训。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然原NLNS成員們說我重訓太超過了，但因為感到體力的衰退，讓我更加無法放棄重訓。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00010",
+		linknext = "0067_00012",
+		line = 136,
+	},
+	["0067_00012"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"More importantly, I need to stay strong for the sake of my loved ones.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"毕竟我有必须要背负的人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"畢竟我有必須要背負的人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00011",
+		linknext = "0067_00013",
+		line = 146,
+	},
+	["0067_00013"] = {
+		{"bgm", file="bgm26", vol=100},
+		{"cgdel", id=20, time=0, alphadel=1, lv=5},
+		{"cgdel", id=21, time=0, alphadel=1, lv=5},
+		{"cgdel", id=22, lv=22, time=0, alphadel=1},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l0104-1-1", set="tcg07_l01", path=":ev/tcg07_l01/"},
+		{"bg", id=19, file="tcg07_l0104-1-1", x=-702, y=-859, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=1000},
+		{"cgact", file="cgact", id=19, act="移動", x=0, y=400, time=10000, lv=19},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1666", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Hehe, did my sleepyhead finally wake up? You really slept in late!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“呵呵，唉呀……今天睡过头很久呢？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「呵呵，唉呀……今天睡過頭很久呢？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00012",
+		linknext = "0067_00014",
+		line = 193,
+	},
+	["0067_00014"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I know... Sorry about that, Touka.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“啊啊，抱歉──桐香。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「啊啊，抱歉──桐香。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00013",
+		linknext = "0067_00015",
+		line = 204,
+	},
+	["0067_00015"] = {
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg070105-1-1", set="tcg070105", path=":ev/tcg070105/"},
+		{"bg", id=18, file="tcg070105-1-1", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=1000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Touka hasn’t changed a bit.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"桐香真的一点都没有变。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"桐香真的一點都沒有變。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00014",
+		linknext = "0067_00016",
+		line = 221,
+	},
+	["0067_00016"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"No matter how many years pass, when I look at her I still see the same amazing young woman who was standing at the podium addressing us on the first day of school.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就算经过这么多年，她还是跟当年站在台上的样子一模一样。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就算經過這麼多年，她還是跟當年站在台上的樣子一模一樣。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00015",
+		linknext = "0067_00017",
+		line = 231,
+	},
+	["0067_00017"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Touka is living out her dreams now—together with me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"桐香将来的梦想，就是这个。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"桐香將來的夢想，就是這個。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00016",
+		linknext = "0067_00018",
+		line = 241,
+	},
+	["0067_00018"] = {
+		{"se", id=0, loop=0, file="se_a002"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"One of those dreams just happened to be a result of, for lack of a better term, some wild sex.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然似乎不需要说。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然似乎不需要說。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00017",
+		linknext = "0067_00019",
+		line = 252,
+	},
+	["0067_00019"] = {
+		{"se", id=0, stop=1, time=1000},
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l02040101", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"bg", id=19, file="tcg07_l02040101", x=-1102, y=-459, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=1000},
+		{"cgact", file="cgact", id=19, act="移動", x=700, y=0, time=10000, lv=19},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0000", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“I was about to drag you out of bed today, too! You should thank your lucky stars to have a daughter like me!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“唉，今天也起不来，所以变成我去床边背呢……应该好好感谢女儿吧……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「唉，今天也起不來，所以變成我去床邊背呢……應該好好感謝女兒吧……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00018",
+		linknext = "0067_00020",
+		line = 271,
+	},
+	["0067_00020"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Considering the timing of Touka’s pregnancy, things were tough.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那之后，怀了孩子的时间点之类的……",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那之後，懷了孩子的時間點之類的……",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00019",
+		linknext = "0067_00021",
+		line = 281,
+	},
+	["0067_00021"] = {
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg0702050101", set="tcg070205", path=":ev/tcg070205/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702050101", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=1000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We struggled a lot, but we made it through somehow.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"因为会有点麻烦，还是别提了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"因為會有點麻煩，還是別提了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00020",
+		linknext = "0067_00022",
+		line = 300,
+	},
+	["0067_00022"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I know that we put everyone in the NLNS and FS through a whole lot of trouble in the process, but all of us are still very close even now.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"也给原NLNS或FS的大家也添了不少麻烦，但大家还是感情很好。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"也給原NLNS或FS的大家也添了不少麻煩，但大家還是感情很好。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00021",
+		linknext = "0067_00023",
+		line = 310,
+	},
+	["0067_00023"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I feel really blessed to have so many amazing people in my life.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这样的伙伴们，让我更加觉得贵重。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這樣的夥伴們，讓我更加覺得貴重。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00022",
+		linknext = "0067_00024",
+		line = 320,
+	},
+	["0067_00024"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“What’s this? You made me breakfast again today...?! Heh, this has to be true love!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“什么，今天也为了我做了料理吗……！？呵，这是‘爱’吧──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「什麼，今天也為了我做了料理嗎……！？呵，這是『愛』吧──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00023",
+		linknext = "0067_00025",
+		line = 331,
+	},
+	["0067_00025"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1667", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Seasoned to perfection with the unmistakable spice of true love❤”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“没错，是爱的礼物",
+					{"gaiji", text="①"},
+					"”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「沒錯，是愛的禮物",
+					{"gaiji", text="①"},
+					"」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00024",
+		linknext = "0067_00026",
+		line = 343,
+	},
+	["0067_00026"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg0702050501", set="tcg070205", path=":ev/tcg070205/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702050501", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0001", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“Mom! Don’t take all the credit! I’m the one who seasoned the food! If you did it, it’d taste all weird! On top of that, you destroyed the cutting board with your threads!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“由妈咪试味道的话又会变得很奇怪，所以是女儿调整的喔……！妈咪根本只是用线把沾板切碎而已嘛……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「由媽咪試味道的話又會變得很奇怪，所以是女兒調整的喔……！媽咪根本只是用線把沾板切碎而已嘛……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00025",
+		linknext = "0067_00027",
+		line = 362,
+	},
+	["0067_00027"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Off of the island, Touka would still struggle in most aspects of daily life.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"桐香就算离开这座岛，也还是什么都不会。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"桐香就算離開這座島，也還是什麼都不會。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00026",
+		linknext = "0067_00028",
+		line = 372,
+	},
+	["0067_00028"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That much never changed.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她无法成长。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她無法成長。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00027",
+		linknext = "0067_00029",
+		line = 382,
+	},
+	["0067_00029"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But she’s still just as strong, beautiful, and incredibly endearing as she has always been.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"只有从出生就自带的坚强、美丽及可爱。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"只有從出生就自帶的堅強、美麗及可愛。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00028",
+		linknext = "0067_00030",
+		line = 392,
+	},
+	["0067_00030"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It seems that Seiran Island is where she truly belongs after all.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"所以，她只能待在这里。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"所以，她只能待在這裡。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00029",
+		linknext = "0067_00031",
+		line = 402,
+	},
+	["0067_00031"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She sometimes buzzes back and forth to the SHO Headquarters to help out with particularly tricky tasks. Or when I’m overwhelmed with work.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"偶尔悠哉的晃到SHO本社大楼，处理了麻烦的事或我负责的大量工作然后离开。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"偶爾悠哉的晃到SHO本社大樓，處理了麻煩的事或我負責的大量工作然後離開。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00030",
+		linknext = "0067_00032",
+		line = 412,
+	},
+	["0067_00032"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"With all of her charisma and talent, Touka would be the perfect candidate to lead the SHO. However, she doesn’t have the slightest interest in such ambitions.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那领袖气质让她被视为下个领导者，但她还是一样一点出风头的意思都没有。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那領袖氣質讓她被視為下個領導者，但她還是一樣一點出風頭的意思都沒有。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00031",
+		linknext = "0067_00033",
+		line = 422,
+	},
+	["0067_00033"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"In her words, having a place to belong—and protecting it—is far more important than a career.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"比起工作，她更想要好好重视自己的生活之处。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"比起工作，她更想要好好重視自己的生活之處。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00032",
+		linknext = "0067_00034",
+		line = 432,
+	},
+	["0067_00034"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"So if that’s what really makes her happy, then I have absolutely no regrets about settling down on Seiran Island.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她这么跟我说，让我觉得选择这个岛，一点都不后悔。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她這麼跟我說，讓我覺得選擇這個島，一點都不後悔。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00033",
+		linknext = "0067_00035",
+		line = 442,
+	},
+	["0067_00035"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg0702051101", set="tcg070205", path=":ev/tcg070205/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702051101", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0002", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“Mom, you were supposed to be in charge of the toast! Now it’s getting all burnt because you’re too busy being all lovey-dovey with Daddy! And the eggs! Ew, can you even call these eggs anymore?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“欸等等，妈咪，在你调情的时候，你负责的烤吐司要焦掉了！？这边的荷包蛋也……这是荷包蛋吗……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「欸等等，媽咪，在妳調情的時候，妳負責的烤吐司要焦掉了！？這邊的荷包蛋也……這是荷包蛋嗎……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00034",
+		linknext = "0067_00036",
+		line = 461,
+	},
+	["0067_00036"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It wasn’t just Touka’s looks that remained unchanged. Her personality and quirks are the same as ever, too.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"然后，没变的不止外表，内在也是。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"然後，沒變的不止外表，內在也是。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00035",
+		linknext = "0067_00037",
+		line = 471,
+	},
+	["0067_00037"] = {
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702050501", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0003", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“You’re hopeless, Mom! I’ll take care of it—just sit down already! Ugh... Do I have to do everything around here...?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“啊啊真是的，之后我来弄，你坐好！……妈咪真的是什么都不会呢……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「啊啊真是的，之後我來弄，妳坐好！……媽咪真的是什麼都不會呢……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00036",
+		linknext = "0067_00038",
+		line = 487,
+	},
+	["0067_00038"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1668", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“I know. The only thing that Mommy managed to do right was make a beautiful daughter with Daddy❤”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“没错，妈咪只能给爹地生小孩之外，其他什么都做不来",
+					{"gaiji", text="①"},
+					"”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「沒錯，媽咪只能給爹地生小孩之外，其他什麼都做不來",
+					{"gaiji", text="①"},
+					"」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00037",
+		linknext = "0067_00039",
+		line = 499,
+	},
+	["0067_00039"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l02040501", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"bg", id=19, file="tcg07_l02040501", x=-1102, y=-159, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Look, Touka! I salvaged part of the toast. This little piece isn’t burnt. Open up and say ‘ahhh!’❤”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“来，桐香，这是还没炭化的面包喔，捏一块吃吧，啊──",
+					{"gaiji", text="①"},
+					"”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「來，桐香，這是還沒炭化的麵包喔，捏一塊吃吧，啊──",
+					{"gaiji", text="①"},
+					"」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00038",
+		linknext = "0067_00040",
+		line = 515,
+	},
+	["0067_00040"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l02050501", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=19, file="tcg07_l02050501", x=-1102, y=-159, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1669", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Ahhh!❤ Mmm-mmm! Howm-mmm!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“啊──",
+					{"gaiji", text="①"},
+					"嚼嚼。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「啊──",
+					{"gaiji", text="①"},
+					"嚼嚼。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00039",
+		linknext = "0067_00041",
+		line = 534,
+	},
+	["0067_00041"] = {
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702050501", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l02050301", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"text"},
+		delay = {
+			[6000] = {
+				{"bg", id=19, file="tcg07_l02050301", x=-2, y=-159, path=":cg/tcg07_l/", lv=19, ev=1, timestamp=2, delay2=6000, bx=800, by=450},
+				{"cgact", file="cgact", id=19, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=2, delay2=6000, lv=19, x=-2, y=-159},
+				{"se", id=0, loop=0, file="se_a098", timestamp=2, delay2=6000},
+			},
+			[5999] = {
+				{"transitiontime", time=300, timestamp=2, delay2=6000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="kirika0004", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“Could you two keep your hands off of each other for two seconds?! Why are you all over each other in front of your teenage daughter anyway?! Besides, you’re getting crumbs everywhere! UGH!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“不要一脸傻笑的在小孩子面前讲这种话，到底在想什么啊？有想过思春期的女儿会怎么想吗？然后吃面包的时候不要掉屑屑啊，这都几次了啊爹地──！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「不要一臉傻笑的在小孩子面前講這種話，到底在想什麼啊？有想過思春期的女兒會怎麼想嗎？然後吃麵包的時候不要掉屑屑啊，這都幾次了啊爹地──！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00040",
+		linknext = "0067_00042",
+		line = 559,
+	},
+	["0067_00042"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Our daughter is a complete daddy’s girl—but I’m not sure if that’s a good thing or not.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"……因此，虽然是女儿但也跟我很亲，不知道是好是坏。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"……因此，雖然是女兒但也跟我很親，不知道是好是壞。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00041",
+		linknext = "0067_00043",
+		line = 569,
+	},
+	["0067_00043"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m not complaining, though. I am much happier to be loved by my daughter than despised.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但比起被最爱的女儿讨厌，还是被她喜欢更幸福，这件事是无庸置疑的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但比起被最愛的女兒討厭，還是被她喜歡更幸福，這件事是無庸置疑的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00042",
+		linknext = "0067_00044",
+		line = 579,
+	},
+	["0067_00044"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“There there, my little princess! It looks like your mother has wounded your delicate little teenaged heart...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“噢──乖乖，抱歉啊，妈妈伤害了你这颗思春期的心……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「噢──乖乖，抱歉啊，媽媽傷害了妳這顆思春期的心……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00043",
+		linknext = "0067_00045",
+		line = 590,
+	},
+	["0067_00045"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l020509-1", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=19, file="tcg07_l020509-1", x=-2, y=-159, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0005", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“I’m all right... but if it comes right down to it, you’ll abandon Mom and run away with me, right...? And I’ll be your widdle princess forever and ever, right Daddy?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“没关系，不用介意爹地……但真的发生什么事时，就丢下妈咪两个人生活吧……？所以要把女儿好好养大、好好爱护女儿喔……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「沒關係，不用介意爹地……但真的發生什麼事時，就丟下媽咪兩個人生活吧……？所以要把女兒好好養大、好好愛護女兒喔……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00044",
+		linknext = "0067_00046",
+		line = 609,
+	},
+	["0067_00046"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"For some reason, Kirika takes after Asa much more than her mother and me. Maybe it’s because the two of them spend so much time together?",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"……不知道为什么，比起我跟桐香，雾香反而更像麻沙酱，可能因为她们常常待在一起吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"……不知道為什麼，比起我跟桐香，霧香反而更像麻沙醬，可能因為她們常常待在一起吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00045",
+		linknext = "0067_00047",
+		line = 619,
+	},
+	["0067_00047"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My younger sister was completely devastated when Touka and I got married. Because of that, she threw herself into her studies.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我那妹妹因为异常害怕桐香嫁给我，所以也非常努力的读书了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我那妹妹因為異常害怕桐香嫁給我，所以也非常努力的讀書了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00046",
+		linknext = "0067_00048",
+		line = 629,
+	},
+	["0067_00048"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"As a result, she became fiercely independent—compared to me, at least. I suppose you could call that a lucky break.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"结果，她居然因此能够自力更生，可以说是歪打正着。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"結果，她居然因此能夠自力更生，可以說是歪打正著。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00047",
+		linknext = "0067_00049",
+		line = 639,
+	},
+	["0067_00049"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"After that, Asa ended up finding her perfect career. Now she works in tech designing and selling apps.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"是跟网络相关的工作──制作App然后由公司贩卖──是相当适合麻沙酱的工作。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"是跟網路相關的工作──製作App然後由公司販賣──是相當適合麻沙醬的工作。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00048",
+		linknext = "0067_00050",
+		line = 649,
+	},
+	["0067_00050"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even though my little sister is so busy with work, she still manages to make it over to our house about every other day. That’s why Kirika thinks that Asa would make a much better mother than her own.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但我亲爱的妹妹还是两天会到我家一次，女儿更是将她当作母亲一般。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但我親愛的妹妹還是兩天會到我家一次，女兒更是將她當作母親一般。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00049",
+		linknext = "0067_00051",
+		line = 659,
+	},
+	["0067_00051"] = {
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg0702040101", set="tcg070204", path=":ev/tcg070204/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702040101", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1670", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“But don’t you think Mommy has improved a bit, Kirika? Lately I’ve been able to make it up most of the stairs without throwing up if I’m really careful!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“但是妈咪最近也有点进步了唷雾香，最近虽然只有一点点，但稍微可以自己一个人爬楼梯了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「但是媽咪最近也有點進步了唷霧香，最近雖然只有一點點，但稍微可以自己一個人爬樓梯了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00050",
+		linknext = "0067_00052",
+		line = 680,
+	},
+	["0067_00052"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg0702040501", set="tcg070204", path=":ev/tcg070204/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702040501", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0006", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“You can’t call two stairs ‘most,’ Mom! If you were a baseball player, you’d be batting less than 0.200! You’d be cut from the team! If you don’t shape up, you’re gonna get cut from this family, too!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“爬楼梯也只有两格吧，占整体比例也只有两成啊，如果是打击者的话不擅长防守也会被Fire的，妈咪会防守吗？不会吧？那这样就只能从家族成员名单中被Fire了……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「爬樓梯也只有兩格吧，佔整體比例也只有兩成啊，如果是打擊者的話不擅長防守也會被Fire的，媽咪會防守嗎？不會吧？那這樣就只能從家族成員名單中被Fire了……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00051",
+		linknext = "0067_00053",
+		line = 699,
+	},
+	["0067_00053"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07020505-1", set="tcg070205", path=":ev/tcg070205/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg07020505-1", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1671", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Oh, but your mother really knows how to handle a bat! Hehe, just ask your father all about it!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“唉呀，但棒子的话我可是用得很顺手呢？呵呵，让爹地跟你说说，我怀你的时候的事吧。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「唉呀，但棒子的話我可是用得很順手呢？呵呵，讓爹地跟妳說說，我懷妳的時候的事吧。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00052",
+		linknext = "0067_00054",
+		line = 718,
+	},
+	["0067_00054"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg0702050701", set="tcg070205", path=":ev/tcg070205/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702050701", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[7000] = {
+				{"se", id=0, loop=0, file="se_b013", timestamp=3, delay2=7000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="kirika0007", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“Ew! Daddy! Why would you marry someone like this?! Did she force you? Or did you feel bad for her? It would be a shame if something happened to her... I can make it look like an accident...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“爹地为什么会跟这种人结婚呢……？威胁？还是被她抓到弱点……？我会伪装成事故，想办法处理掉她吧……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「爹地為什麼會跟這種人結婚呢……？威脅？還是被她抓到弱點……？我會偽裝成事故，想辦法處理掉她吧……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00053",
+		linknext = "0067_00055",
+		line = 738,
+	},
+	["0067_00055"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I married your mother because I love her. Now, Kirika... put that thread away.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“这全部都是爱呀，雾香……所以收起线吧……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「這全部都是愛呀，霧香……所以收起線吧……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00054",
+		linknext = "0067_00056",
+		line = 749,
+	},
+	["0067_00056"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s really bizarre how good Kirika is at using that thread as a weapon. In fact, she can master just about any trick short of pulling a rabbit out of a hat. She is definitely her mother’s child.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但那异常擅长使用线，以及变出鸽子的手法以外其他都擅长的部分，这些都在在显示她真的是桐香的孩子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但那異常擅長使用線，以及變出鴿子的手法以外其他都擅長的部分，這些都在在顯示她真的是桐香的孩子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00055",
+		linknext = "0067_00057",
+		line = 759,
+	},
+	["0067_00057"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Who taught you how to use that thing, anyway? It’s dangerous.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“还有，是谁教你这么危险的念头的……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「還有，是誰教妳這麼危險的念頭的……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00056",
+		linknext = "0067_00058",
+		line = 770,
+	},
+	["0067_00058"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l02051001", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"bg", id=19, file="tcg07_l02051001", x=-2, y=-59, path=":cg/tcg07_l/", lv=19, ev=1, alpha=0, sync=1, a_chr151=1, bx=800, by=450},
+		{"cgact", file="cgact", id=19, lv=19, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255, x=-2, y=-59},
+		{"cgact", file="cgact", id=19, act="移動", x=0, y=-900, time=30000, lv=19},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0008", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“Miss Ikuko. She said she’d share you with me—fifty-fifty. But Auntie Rei started crying and made us stop. Then she started crying even more because I called her ‘Auntie.’ Wata consoled her...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“郁子小姐……她说成功了的话爹地就一人一半……但被礼阿姨哭着阻止了……然后因为叫她‘阿姨’她哭得更惨了……渡酱安慰她了……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「郁子小姐……她說成功了的話爹地就一人一半……但被禮阿姨哭著阻止了……然後因為叫她『阿姨』她哭得更慘了……渡醬安慰她了……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00057",
+		linknext = "0067_00059",
+		line = 788,
+	},
+	["0067_00059"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Our daughter is naturally gifted with physical abilities. She’s being trained day in and day out by the fearsome Rei and Ikuko.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那过高的体能，则是由礼前辈及郁子锻炼出来的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那過高的體能，則是由禮前輩及郁子鍛鍊出來的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00058",
+		linknext = "0067_00060",
+		line = 798,
+	},
+	["0067_00060"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"When it comes to hand-to-hand combat, I bet my daughter could have even taken me down when I was in my prime.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"真的要说的话，她的战斗力可能比我全盛时期还要更强了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"真的要說的話，她的戰鬥力可能比我全盛時期還要更強了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00059",
+		linknext = "0067_00061",
+		line = 808,
+	},
+	["0067_00061"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Speaking of Rei and Ikuko—both of them are working on Seiran Island now, too.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"礼前辈跟郁子现在也在青蓝岛工作。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"禮前輩跟郁子現在也在青藍島工作。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00060",
+		linknext = "0067_00062",
+		line = 818,
+	},
+	["0067_00062"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Rei found a steady job in order to help put her younger siblings through school. She’s hard at work recruiting for the SHO.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"礼前辈为了弟弟们的学费，便就任已确立的工作岗位，现在也在训练SHO的新兵们。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"禮前輩為了弟弟們的學費，便就任已確立的工作崗位，現在也在訓練SHO的新兵們。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00061",
+		linknext = "0067_00063",
+		line = 828,
+	},
+	["0067_00063"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The once-feared disciplinary committee president herself has been reduced to a puddle of mush by her beloved Touka’s daughter. She’s head-over-heels for Kirika—so now she’s just doting “Auntie Rei.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然是魔鬼教官，但对桐香的女儿雾香却非常宠爱。所以被当成好搞定的阿姨。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然是魔鬼教官，但對桐香的女兒霧香卻非常寵愛。所以被當成好搞定的阿姨。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00062",
+		linknext = "0067_00064",
+		line = 838,
+	},
+	["0067_00064"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"As for Ikuko, she got a full-ride scholarship to study at a big university on the mainland. But she found herself back on Seiran Island after that.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"郁子的话，有领了奖学金去首都的大学念书，却跟我一样又回到了青蓝岛。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"郁子的話，有領了獎學金去首都的大學唸書，卻跟我一樣又回到了青藍島。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00063",
+		linknext = "0067_00065",
+		line = 848,
+	},
+	["0067_00065"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She began her career as the commander of the SHO Strike Force. However, due of her outstanding performance and academic record, she was promoted all the way to a stuffy management position.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"最初是担任SHO强袭部队的队长，但因为高学历的关系，马上就成功晋升成管理阶层。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"最初是擔任SHO強襲部隊的隊長，但因為高學歷的關係，馬上就成功晉升成管理階層。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00064",
+		linknext = "0067_00066",
+		line = 858,
+	},
+	["0067_00066"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Ikuko said it herself that she would much rather be fighting in the trenches than working in a boring old office. But there are no wars to fight on Seiran Island these days.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然本人常常碎碎念“不能进行实战很无聊！”，但基本上现在的青蓝岛本来就没有战斗的机会。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然本人常常碎碎念「不能進行實戰很無聊！」，但基本上現在的青藍島本來就沒有戰鬥的機會。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00065",
+		linknext = "0067_00067",
+		line = 868,
+	},
+	["0067_00067"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But when I asked her why she had returned to the island during peace time, she replied, “I guess I just like being here with everyone after all.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"问她为什么回来，她就说“还是跟大家在一起最棒了”。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"問她為什麼回來，她就說「還是跟大家在一起最棒了」。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00066",
+		linknext = "0067_00068",
+		line = 878,
+	},
+	["0067_00068"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"To this day, Hinami hasn’t changed a bit, either. She actually became one of Kirika’s playmates, too.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"然后容貌一点都没变的雏见，不知道为什么跟女儿很亲密，还常一起出去玩。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"然後容貌一點都沒變的雛見，不知道為什麼跟女兒很親密，還常一起出去玩。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00067",
+		linknext = "0067_00069",
+		line = 888,
+	},
+	["0067_00069"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Hinami is now working in the childcare field.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"雏见的工作是与幼教有关。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雛見的工作是與幼教有關。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00068",
+		linknext = "0067_00070",
+		line = 898,
+	},
+	["0067_00070"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Rather than becoming a nursery school teacher, Hinami is using data she collects in order to develop safer playground equipment and baby products.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但并非幼稚园老师，而是以在当地取得的资料为基础，开发安全的游乐设施或宝宝用品等。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但並非幼稚園老師，而是以在當地取得的資料為基礎，開發安全的遊樂設施或寶寶用品等。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00069",
+		linknext = "0067_00071",
+		line = 908,
+	},
+	["0067_00071"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"When she used to volunteer at Baby Me Creche, she was always saying how much she loved playing with kids.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"本人是说“跟小孩子玩很快乐！”，也很常去母爱幼稚园当志工。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"本人是說「跟小孩子玩很快樂！」，也很常去母愛幼稚園當志工。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00070",
+		linknext = "0067_00072",
+		line = 918,
+	},
+	["0067_00072"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Come to think of it, Hinami is basically just a big kid herself. That’s probably why she went into childcare. But no matter what the reason, she was a huge help to us when Kirika was growing up.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"好像是因为“本人那样就很像小孩了”这样的理由被采用，但也是好好发挥了她的优点，女儿小时候也受到她很多的照顾。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"好像是因為「本人那樣就很像小孩了」這樣的理由被採用，但也是好好發揮了她的優點，女兒小時候也受到她很多的照顧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00071",
+		linknext = "0067_00073",
+		line = 928,
+	},
+	["0067_00073"] = {
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg0702041001", set="tcg070204", path=":ev/tcg070204/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702041001", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=1000},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1672", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Hehe, if you get any stronger, I think you’ll have to become the student council president just like your mother!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“呵呵，变那么强的话，雾香未来也可能会变成水乃月的学生会长呢？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「呵呵，變那麼強的話，霧香未來也可能會變成水乃月的學生會長呢？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00072",
+		linknext = "0067_00074",
+		line = 949,
+	},
+	["0067_00074"] = {
+		{"bg", id=19, file="tcg07_l02040101", x=-2, y=-259, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=500},
+		{"cgact", file="cgact", id=19, act="移動", x=0, y=200, time=10000, lv=19},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0009", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“No way! I wanna be a cool working woman like Nanase! I’m gonna have style, a career, and a family! I’ll be the perfect woman, and Daddy and I will leave you behind on this stupid island!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“才不要！我要像奈奈濑小姐一样变成工作能力强的女子！工作、时髦、家务全都完美的帅气大人，然后跟爹地一起离开这座岛！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「才不要！我要像奈奈瀨小姐一樣變成工作能力強的女子！工作、時髦、家事全都完美的帥氣大人，然後跟爹地一起離開這座島！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00073",
+		linknext = "0067_00075",
+		line = 964,
+	},
+	["0067_00075"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Nanase is working her ass off at a huge company outside of the island.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"奈奈濑在岛外的大企业，认真的工作。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"奈奈瀨在島外的大企業，認真的工作。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00074",
+		linknext = "0067_00076",
+		line = 974,
+	},
+	["0067_00076"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She must be moving up in the company, because she’s making a ton of money. When I asked her about her salary, it was more than twice what any of us are making on this island.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"好像发展得也很不错，年收入大概是我们的2.5倍，令人惊讶。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"好像發展得也很不錯，年收入大概是我們的2.5倍，令人驚訝。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00075",
+		linknext = "0067_00077",
+		line = 984,
+	},
+	["0067_00077"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even so, she takes trips back to the island on weekends. Whenever she comes back, she treats us all to her elaborate home-cooked meals.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就算这样，周末也还是会回到这里，做好吃的料理给我们吃。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就算這樣，週末也還是會回到這裡，做好吃的料理給我們吃。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00076",
+		linknext = "0067_00078",
+		line = 994,
+	},
+	["0067_00078"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She and Touka are attending the same cooking class and getting along really well with one another, too. Touka even listens to Nanase’s work troubles from time to time.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"跟桐香的料理教室也还在持续，感情还不错，她偶尔也会听奈奈濑抱怨工作。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"跟桐香的料理教室也還在持續，感情還不錯，她偶爾也會聽奈奈瀨抱怨工作。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00077",
+		linknext = "0067_00079",
+		line = 1004,
+	},
+	["0067_00079"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“B-But Kirika! Your mom was an amazing student council president!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“但、但是妈咪以前当会长的时候，也很帅啊……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「但、但是媽咪以前當會長的時候，也很帥啊……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00078",
+		linknext = "0067_00080",
+		line = 1015,
+	},
+	["0067_00080"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“That’s why Susuko, Schubert, and Mizuhiki always come to visit you! Besides, the SHO aren’t all bad...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“而且丝丝子、舒君、水引酱也会来玩啊……SHO没有那么糟……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「而且絲絲子、舒君、水引醬也會來玩啊……SHO沒有那麼糟……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00079",
+		linknext = "0067_00081",
+		line = 1026,
+	},
+	["0067_00081"] = {
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702040501", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=1000},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0010", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“There’s no way I want to end up like Mom! And the SHO is totally lame anyway. If I join them, my head will start to rot just like Auntie Misaki!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“绝对不要！SHO已经退流行了！进到那边的话脑袋会变得跟美岬阿姨一样！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「絕對不要！SHO已經退流行了！進到那邊的話腦袋會變得跟美岬阿姨一樣！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00080",
+		linknext = "0067_00082",
+		line = 1044,
+	},
+	["0067_00082"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“If I tell Ms. Fumino what you just said, she’s gonna be really angry with you...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“你这样说会惹文乃生气喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「妳這樣說會惹文乃生氣喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00081",
+		linknext = "0067_00083",
+		line = 1055,
+	},
+	["0067_00083"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg0702040801", set="tcg070204", path=":ev/tcg070204/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702040801", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0011", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“Eep...! Forget I said anything! Ms. Fumino has never been anything but nice to me... but for some reason she freaks me out right down to the cellular level!!!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“嗯咕……！明明没有怎样，记忆中也只有被疼爱的部分，但为什么细胞却这么害怕文乃老师……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「嗯咕……！明明沒有怎樣，記憶中也只有被疼愛的部分，但為什麼細胞卻這麼害怕文乃老師……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00082",
+		linknext = "0067_00084",
+		line = 1074,
+	},
+	["0067_00084"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She definitely gets her fear of Fumino from her mother.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"看起来对文乃的恐惧，是来自妈妈的遗传。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"看起來對文乃的恐懼，是來自媽媽的遺傳。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00083",
+		linknext = "0067_00085",
+		line = 1084,
+	},
+	["0067_00085"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s like an instinct that has been passed down through the Reizeiin family’s very DNA.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"可能是刻在冷泉院的细胞里吧……",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"可能是刻在冷泉院的細胞裡吧……",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00084",
+		linknext = "0067_00086",
+		line = 1094,
+	},
+	["0067_00086"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"These days, Fumino is teaching flower arrangement, tea ceremony, and etiquette courses on Seiran Island.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"文乃是青蓝岛的花道、茶道、插花等，还有舞蹈教室的老师。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"文乃是青藍島的花道、茶道、插花等，還有舞蹈教室的老師。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00085",
+		linknext = "0067_00087",
+		line = 1104,
+	},
+	["0067_00087"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Her lessons are wildly popular. Kirika attends as well, but these days all of the classes are full.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那里非常繁盛，女儿也有去，每天都有很多学生。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那裡非常繁盛，女兒也有去，每天都有很多學生。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00086",
+		linknext = "0067_00088",
+		line = 1114,
+	},
+	["0067_00088"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Nowadays, the island’s horny Joan of Arc is getting along well with everyone.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她被称为变态贞德老师，受到学生们的喜爱。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她被稱為變態貞德老師，受到學生們的喜愛。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00087",
+		linknext = "0067_00089",
+		line = 1124,
+	},
+	["0067_00089"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"If I start to get swamped with work, Fumino swoops in to clean or do just about anything else that needs doing. She still has a heart of gold.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"现在也是，在我很忙的时候，来帮忙打扫、做很多事。一如往常是个温柔的人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"現在也是，在我很忙的時候，來幫忙打掃、做很多事。一如往常是個溫柔的人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00088",
+		linknext = "0067_00090",
+		line = 1134,
+	},
+	["0067_00090"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And as for Misaki? I’ll admit that I used to think of her as little more than our group’s eccentric pet.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"顺带一提，至于美岬，可能就被当作是只有趣的宠物的样子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"順帶一提，至於美岬，可能就被當作是隻有趣的寵物的樣子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00089",
+		linknext = "0067_00091",
+		line = 1144,
+	},
+	["0067_00091"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But she became a freelance consultant and got filthy rich. Now she is collaborating with Asane to analyze stock prices and fluctuation.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但其实她也很会赚钱，跟麻沙音一起以自由人的身份进行股价分析、评论等。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但其實她也很會賺錢，跟麻沙音一起以自由人的身份進行股價分析、評論等。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00090",
+		linknext = "0067_00092",
+		line = 1154,
+	},
+	["0067_00092"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Misaki is world-class when it comes to anal... ysis.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"理由是因为“分析师”这个名称跟后穴发音相近。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"理由是因為「分析師」這個名稱跟後穴發音相近。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00091",
+		linknext = "0067_00093",
+		line = 1164,
+	},
+	["0067_00093"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg0702050801", set="tcg070205", path=":ev/tcg070205/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702050801", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1673", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Hehehe, my little Kirika is the cutest! Your uniform looks perfect—and your face is just gorgeous! At this rate, you’re going to steal your daddy right out from under me! You mustn’t get any cuter!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“呵呵呵，你这么可爱又这么适合穿制服，脸蛋又完美，可不能就这样抢走爹地啊？你认真起来的话，妈咪会输的。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「呵呵呵，妳這麼可愛又這麼適合穿制服，臉蛋又完美，可不能就這樣搶走爹地啊？妳認真起來的話，媽咪會輸的。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00092",
+		linknext = "0067_00094",
+		line = 1183,
+	},
+	["0067_00094"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07020506-1", set="tcg070205", path=":ev/tcg070205/"},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg07020506-1", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0012", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“Mom, stop! I’m not THAT cute! If you search for ‘schoolgirls’ online, they look way sexier. And their skirts are much shorter! If my skirt was shorter, maybe Daddy would give me more allowance...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“咦？真讨厌啦妈咪。我真的那么可爱吗？在网络上穿制服直播，就会有有钱又有闲的特殊爹地们给我零用钱吗……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「咦？真討厭啦媽咪。我真的那麼可愛嗎？在網路上穿制服直播，就會有有錢又有閒的特殊爹地們給我零用錢嗎……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00093",
+		linknext = "0067_00095",
+		line = 1202,
+	},
+	["0067_00095"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Oh, no... Has Auntie Asa been letting you use the internet by yourself again...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“又是听麻沙姑姑讲了一堆有的没的了吧……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「又是聽麻沙姑姑講了一堆有的沒的了吧……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00094",
+		linknext = "0067_00096",
+		line = 1213,
+	},
+	["0067_00096"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Though it may not always seem like it, Touka and Kirika have a very close mother-daughter relationship.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就算是这样，母女相处还是像朋友一般感情很好。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就算是這樣，母女相處還是像朋友一般感情很好。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00095",
+		linknext = "0067_00097",
+		line = 1223,
+	},
+	["0067_00097"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The two of them actually love going out together without me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"意外的还常排除我，母女两个人一起出门。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"意外的還常排除我，母女兩個人一起出門。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00096",
+		linknext = "0067_00098",
+		line = 1233,
+	},
+	["0067_00098"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That’s because for Touka, there really is nothing more important than family.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"对桐香而言，家人比什么都还重要。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"對桐香而言，家人比什麼都還重要。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00097",
+		linknext = "0067_00099",
+		line = 1243,
+	},
+	["0067_00099"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She loves us with all her heart, but she doesn’t play favorites. She loves us both equally.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"所以对于“新的家人”的爱，也跟原本的大家是同等级的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"所以對於「新的家人」的愛，也跟原本的大家是同等級的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00098",
+		linknext = "0067_00100",
+		line = 1253,
+	},
+	["0067_00100"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’ve started to suspect that Touka argues with Kirika on purpose—in order to push Kirika closer to me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"所以说不定跟女儿拌嘴，也只是为了让女儿跟父亲感情更亲密的作战也说不定。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"所以說不定跟女兒拌嘴，也只是為了讓女兒跟父親感情更親密的作戰也說不定。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00099",
+		linknext = "0067_00101",
+		line = 1263,
+	},
+	["0067_00101"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"After all, once Touka finds something that she wants, she’s the kind of woman that will stop at absolutely nothing to get it.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"毕竟她可是非常坚强的，对想要的事物便会不择手段的人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"畢竟她可是非常堅強的，對想要的事物便會不擇手段的人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00100",
+		linknext = "0067_00102",
+		line = 1273,
+	},
+	["0067_00102"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l02010601", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"bg", id=19, file="tcg07_l02010601", x=-1102, y=-59, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1674", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Hehe, I think it’s about time to go upstairs and start today’s stairway practice! Would you accompany me?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“呵呵，为了练习差不多来准备去二楼了吧。好吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「呵呵，為了練習差不多來準備去二樓了吧。好嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00101",
+		linknext = "0067_00103",
+		line = 1290,
+	},
+	["0067_00103"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Let’s do this!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“好的，来了！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「好的，來了！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00102",
+		linknext = "0067_00104",
+		line = 1301,
+	},
+	["0067_00104"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l02010701", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=19, file="tcg07_l02010701", x=-1102, y=-59, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"cgact", file="cgact", id=19, act="移動", x=1100, y=0, time=300, lv=19},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0013", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“Eh? Let’s NOT! Besides, aren’t you late for work?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“咦？不该是好的来了吧，不是要迟到了吗……！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「咦？不該是好的來了吧，不是要遲到了嗎……！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00103",
+		linknext = "0067_00105",
+		line = 1320,
+	},
+	["0067_00105"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Ah, to hell with work! If it would please my lovely wife, I’d give those bastards at the SHO up in a heartbeat!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“没问题，为了桐香，SHO什么的谁管他啊──！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「沒問題，為了桐香，SHO什麼的誰管他啊──！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00104",
+		linknext = "0067_00106",
+		line = 1331,
+	},
+	["0067_00106"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l02050701", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=19, file="tcg07_l02050701", x=-302, y=-59, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"cgact", file="cgact", id=19, act="移動", x=-800, y=0, time=300, lv=19},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1675", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“You mean to tell me that you would abandon your career and your social standing just to stay by my side?! Oh! I love you so much! Take me now!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“抛弃社会关系、立场就只为了待在我身边……喜欢，请抱抱我吧……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「拋棄社會關係、立場就只為了待在我身邊……喜歡，請抱抱我吧……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00105",
+		linknext = "0067_00107",
+		line = 1350,
+	},
+	["0067_00107"] = {
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=18, file="tcg0702050101", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0014", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“Gross! Cut it out already, Mom! If you keep using your feminine wiles on Daddy, he’s going to be under your control forever! I have to hurry and break the spell to save him from you!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“不行了，就是因为有这样的妈咪才有这样的爹地，真是不堪入眼啊，应该要让他清醒才对，果然还是要赶快长大，让我来帮助爹地才对……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「不行了，就是因為有這樣的媽咪才有這樣的爹地，真是不堪入眼啊，應該要讓他清醒才對，果然還是要趕快長大，讓我來幫助爹地才對……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00106",
+		linknext = "0067_00108",
+		line = 1368,
+	},
+	["0067_00108"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I scoop Touka up into my arms.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我抱起了对方。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我抱起了對方。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00107",
+		linknext = "0067_00109",
+		line = 1378,
+	},
+	["0067_00109"] = {
+		{"se", id=0, loop=0, file="se_a098"},
+		{"se", id=1, loop=0, file="se_a148"},
+		{"se", id=2, loop=0, file="se_a149"},
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l02050101", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"bg", id=19, file="tcg07_l02050101", x=-1102, y=-459, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"cgact", file="cgact", id=19, act="振動下", loop=1, size=12.5, time=500, ease="easeinout_sine", lv=19, x=-1102, y=-459},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Come here, you!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“嘿咻──！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「嘿咻──！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00108",
+		linknext = "0067_00110",
+		line = 1398,
+	},
+	["0067_00110"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l02020101", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=19, file="tcg07_l02020101", x=-1102, y=-59, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1676", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Mmm! No matter how many times you hold me like this, it always feels like the first time...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“嗯……果然这个拥抱是什么都无法代替的让人感到畅快呢……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「嗯……果然這個擁抱是什麼都無法代替的讓人感到暢快呢……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00109",
+		linknext = "0067_00111",
+		line = 1417,
+	},
+	["0067_00111"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I feel the weight of my wife as I hold her tight.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她的重量传递到全身。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她的重量傳遞到全身。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00110",
+		linknext = "0067_00112",
+		line = 1427,
+	},
+	["0067_00112"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The feeling of Touka in my embrace hasn’t changed after all these years.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这是从数年前开始便没有变化的拥抱。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這是從數年前開始便沒有變化的擁抱。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00111",
+		linknext = "0067_00113",
+		line = 1437,
+	},
+	["0067_00113"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s as precious to me now as when we first embraced.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不管拥抱了几次，她都还是一样惹人怜爱。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不管擁抱了幾次，她都還是一樣惹人憐愛。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00112",
+		linknext = "0067_00114",
+		line = 1447,
+	},
+	["0067_00114"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Mmm! Your butt is feeling mighty fine and juicy again this morning!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“好，今天也是完美又健康的大屁股呢──！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「好，今天也是完美又健康的大屁股呢──！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00113",
+		linknext = "0067_00115",
+		line = 1458,
+	},
+	["0067_00115"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l02050201", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=19, file="tcg07_l02050201", x=-1102, y=-59, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1677", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“That’s right♪ And it looks like I passed my juicy booty on to our daughter!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“没错♪也遗传给女儿了呢！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「沒錯♪也遺傳給女兒了呢！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00114",
+		linknext = "0067_00116",
+		line = 1477,
+	},
+	["0067_00116"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“She’s our little raccoon pup after all!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“狸猫的女儿就是小狸猫呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「狸貓的女兒就是小狸貓呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00115",
+		linknext = "0067_00117",
+		line = 1488,
+	},
+	["0067_00117"] = {
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=19, file="tcg07_l02050101", x=-1102, y=-59, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"cgact", file="cgact", id=19, act="移動", x=1100, y=0, time=300, lv=19},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kirika0015", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"霧香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"霧香", "Kirika"},
+					"“Huh?! My ass isn’t even that big!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"霧香", "雾香"},
+					"“才不大呢！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"霧香"},
+					"「才不大呢！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00116",
+		linknext = "0067_00118",
+		line = 1504,
+	},
+	["0067_00118"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Our daughter has inherited a lot of good qualities from the people around us, too.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我们家的女儿吸收了各种人的专长呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我們家的女兒吸收了各種人的專長呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00117",
+		linknext = "0067_00119",
+		line = 1515,
+	},
+	["0067_00119"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l020101-1", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=19, file="tcg07_l020101-1", x=-2, y=-59, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"cgact", file="cgact", id=19, act="移動", x=-400, y=0, time=800, lv=19},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1678", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Isn’t it wonderful to have such a big family?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“有这么多重要的家人，真是非常棒的一件事呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「有這麼多重要的家人，真是非常棒的一件事呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00118",
+		linknext = "0067_00120",
+		line = 1534,
+	},
+	["0067_00120"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I couldn’t agree more.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"嗯，说得没错。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"嗯，說得沒錯。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00119",
+		linknext = "0067_00121",
+		line = 1544,
+	},
+	["0067_00121"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s exactly like Touka always says. Everyone on this island—we’re all one big family.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就像以前她说的一样，大家都是重要的家人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就像以前她說的一樣，大家都是重要的家人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00120",
+		linknext = "0067_00122",
+		line = 1554,
+	},
+	["0067_00122"] = {
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“All right! Let’s start today’s stair-climbing challenge! Today we’re practicing going down, right?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“今天的楼梯挑战，是下楼吧？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「今天的樓梯挑戰，是下樓吧？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00121",
+		linknext = "0067_00123",
+		line = 1566,
+	},
+	["0067_00123"] = {
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l020401-1", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=19, file="tcg07_l020401-1", x=-402, y=-59, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1679", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“That’s right. Today will be attempt number 3,211!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“是的，是第3211回合的挑战。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「是的，是第3211回合的挑戰。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00122",
+		linknext = "0067_00124",
+		line = 1585,
+	},
+	["0067_00124"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Bring it on, stairs! I’m gonna make sure you master them once and for all!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“嗯，今天一定要成功──！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「嗯，今天一定要成功──！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00123",
+		linknext = "0067_00125",
+		line = 1596,
+	},
+	["0067_00125"] = {
+		{"se", id=0, loop=0, file="se_a098"},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=19, lv=19, time=1000, alphadel=1, style="reset", x=-402, y=-59},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Touka will never give up.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她绝对不会放弃的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她絕對不會放棄的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00124",
+		linknext = "0067_00126",
+		line = 1611,
+	},
+	["0067_00126"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"No matter what happens or how long it takes.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不管发生什么事，都不会放弃。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不管發生什麼事，都不會放棄。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00125",
+		linknext = "0067_00127",
+		line = 1621,
+	},
+	["0067_00127"] = {
+		{"bgm", file="bgm40", vol=100},
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l020201-1", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"bg", id=20, file="tcg07_l020201-1", x=-1002, y=-859, path=":cg/tcg07_l/", lv=20, ev=1, bx=800, by=450},
+		{"transitiontime", time=1000},
+		{"cgact", file="cgact", id=20, act="移動", x=0, y=800, time=20000, lv=20},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1680", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“From now on, I’ll keep trying my best.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“──……我今后也会一点一点继续努力的。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「──……我今後也會一點一點繼續努力的。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00126",
+		linknext = "0067_00128",
+		line = 1640,
+	},
+	["0067_00128"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’ll do anything to make me happy.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"如果是为了我的话，她一定会的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"如果是為了我的話，她一定會的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00127",
+		linknext = "0067_00129",
+		line = 1650,
+	},
+	["0067_00129"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That’s how I know Touka truly hasn’t changed a bit.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"因为桐香，完全都没变。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"因為桐香，完全都沒變。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00128",
+		linknext = "0067_00130",
+		line = 1660,
+	},
+	["0067_00130"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1680b", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“I’ll do it for you. For us. For our whole family.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“为了你。为了我们。为了我们家人的幸福。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「為了你。為了我們。為了我們家人的幸福。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00129",
+		linknext = "0067_00131",
+		line = 1672,
+	},
+	["0067_00131"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Well, that is...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"没错。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"沒錯。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00130",
+		linknext = "0067_00132",
+		line = 1682,
+	},
+	["0067_00132"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"...except for one thing.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"仅此唯一。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"僅此唯一。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00131",
+		linknext = "0067_00133",
+		line = 1692,
+	},
+	["0067_00133"] = {
+		{"cgdel", id=20, lv=20, time=0, alphadel=1, evmaskoff=1},
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07_l020301-1", set="tcg07_l02", path=":ev/tcg07_l02/"},
+		{"bg", id=19, file="tcg07_l020301-1", x=-1002, y=-59, path=":cg/tcg07_l/", lv=19, ev=1, bx=800, by=450},
+		{"transitiontime", time=1000},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1681", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Promise me that you’ll smile with me like this forever... All right, Honey?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“所以，请一直在我身边对我微笑吧……老公？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「所以，請一直在我身邊對我微笑吧……老公？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00132",
+		linknext = "0067_00134",
+		line = 1711,
+	},
+	["0067_00134"] = {
+		{"cgdel", id=19, lv=19, time=0, alphadel=1, evmaskoff=1},
+		{"cgdel", id=29, lv=29, time=0, alphadel=1},
+		{"evset", file="tcg07", set="tcg07", path=":ev/tcg07/"},
+		{"evset", file="tcg07020302-1", set="tcg070203", path=":ev/tcg070203/"},
+		{"bg", id=18, file="tcg07020302-1", x=-42, y=-65, path=":cg/tcg07/", lv=18, ev=1, bx=800, by=450},
+		{"transitiontime", time=1500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Touka found the perfect name for me after all—and I’ll never get tired hearing the joy in her voice every time she says it.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"只有呼唤我的方式，变成了幸福的形状。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"只有呼喚我的方式，變成了幸福的形狀。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0067_00133",
+		linknext = "block_00134",
+		line = 1730,
+	},
+	block_00134 = {
+		{"bgm", stop=1},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"cgdel", id=19, time=0, alphadel=1, lv=5},
+		{"cgdel", id=20, time=0, alphadel=1, lv=5},
+		{"cgdel", id=21, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=3500, rule="eff_043_00000"},
+		{"ex", time=5000, func="wait"},
+		{"movie", id=1, lv=1, path=":mv/", cancel=1, file="ed1"},
+		{"ex", time=5000, func="wait"},
+		{"system_info", scenario="g.02_c24_ma01"},
+		{"eval", exp="g.extraopen=1"},
+		{"eval", exp="g.tokaclear=1"},
+		{"eval", exp="g.clear=1"},
+		{"タイトル"},
+		{"text"},
+		linkback = "0067_00134",
+		line = 1761,
+	},
+	label = {
+		top = { block="0067_00001", label=1 },
+	},
+}

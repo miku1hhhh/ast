@@ -1,0 +1,495 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"REI_01LL",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="rei_01ll_00001", file1="rei_01ll_00101", file3="rei_01ll_00305", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,01,01,-1,05",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="rei_01ll_00001", file1="rei_01ll_00102", file2="rei_01ll_00223", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,01,02,23,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="rei_01ll_00001", file1="rei_01ll_00105", file2="rei_01ll_00209", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,01,05,9,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="rei_01ll_00001", file1="rei_01ll_00106", file2="rei_01ll_00219", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,01,06,19,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 18,
+	},
+	block_00005 = {
+		{"fg", file="rei_01ll_00001", file1="rei_01ll_00106", file2="rei_01ll_00224", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,01,06,24,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 22,
+	},
+	block_00006 = {
+		{"fg", file="rei_01ll_00002", file1="rei_01ll_00101", file3="rei_01ll_00305", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,02,01,-1,05",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 26,
+	},
+	block_00007 = {
+		{"fg", file="rei_01ll_00006", file1="rei_01ll_00105", file3="rei_01ll_00301", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,06,05,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 30,
+	},
+	block_00008 = {
+		{"fg", file="rei_01ll_00006", file1="rei_01ll_00105", file3="rei_01ll_00313", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,06,05,-1,13",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 34,
+	},
+	block_00009 = {
+		{"fg", file="rei_01ll_00006", file1="rei_01ll_00105", file3="rei_01ll_00319", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,06,05,-1,19",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 38,
+	},
+	block_00010 = {
+		{"fg", file="rei_01ll_00006", file1="rei_01ll_00105", file2="rei_01ll_00202", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,06,05,2,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 42,
+	},
+	block_00011 = {
+		{"fg", file="rei_01ll_00006", file1="rei_01ll_00105", file2="rei_01ll_00207", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,06,05,7,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 46,
+	},
+	block_00012 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00103", file3="rei_01ll_00316", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,03,-1,16",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 50,
+	},
+	block_00013 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00103", file3="rei_01ll_00309", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,03,-1,9",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 54,
+	},
+	block_00014 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00103", file2="rei_01ll_00201", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,03,1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 58,
+	},
+	block_00015 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00103", file2="rei_01ll_00214", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,03,14,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 62,
+	},
+	block_00016 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00103", file2="rei_01ll_00214", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,03,14,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 66,
+	},
+	block_00017 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00103", file2="rei_01ll_00216", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,03,16,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 70,
+	},
+	block_00018 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00103", file2="rei_01ll_00219", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,03,19,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 74,
+	},
+	block_00019 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00103", file2="rei_01ll_00207", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,03,7,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 78,
+	},
+	block_00020 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00104", file2="rei_01ll_00219", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,04,19,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 82,
+	},
+	block_00021 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00104", file2="rei_01ll_00228", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,04,28,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 86,
+	},
+	block_00022 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00105", file2="rei_01ll_00215", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,05,15,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 90,
+	},
+	block_00023 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00105", file2="rei_01ll_00207", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,05,7,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 94,
+	},
+	block_00024 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00106", file3="rei_01ll_00313", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,06,-1,13",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 98,
+	},
+	block_00025 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00106", file3="rei_01ll_00305", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,06,-1,5",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 102,
+	},
+	block_00026 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00106", file2="rei_01ll_00214", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,06,14,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 106,
+	},
+	block_00027 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00106", file2="rei_01ll_00223", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,06,23,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 110,
+	},
+	block_00028 = {
+		{"fg", file="rei_01ll_00007", file1="rei_01ll_00106", file2="rei_01ll_00206", path=":fg/rei_01ll/", id=2, lv=5, head="rei_01ll", ch_origin="礼", ch="礼2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st",
+					{"rt2"},
+					"EI_01LL.s25,0,0,0,m,07,06,6,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		line = 114,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

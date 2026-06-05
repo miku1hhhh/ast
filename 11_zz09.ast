@@ -1,0 +1,1139 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ここからオート「A」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "0123_00001",
+		line = 3,
+	},
+	["0123_00001"] = {
+		{"savetitle"},
+		{"eval", exp="g.11_zz09=1"},
+		{"fg", file="kouki_01m_00001", file1="kouki_01m_00101", file2="kouki_01m_00207", path=":fg/kouki_01m/", id=17, lv=17, head="kouki_01m", ch_origin="光姫", ch="光姫17", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"fg", file="kouki_01m_00001", file1="kouki_01m_00101", file2="kouki_01m_00207", path=":fg/kouki_01m/", id=17, lv=17, head="kouki_01m", ch_origin="光姫", ch="光姫17", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"extrans", sync=0, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kouki0204", path=":vo/", ch="kouki"},
+			},
+			ja = {
+				{
+					name = {"光姫"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"光姫", "Kouki"},
+					"“Mic test, one, two, zero, zero",
+					{"gaiji", text="①"},
+					" What you’re about to see is an unused script! This scene was cut due to its length, or maybe its girth!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"光姫"},
+					"“麦克风测试，一、二、零、零",
+					{"gaiji", text="①"},
+					"以下是删减片段！是因为片长或各种问题而被删减的场景！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"光姫"},
+					"「麥克風測試，一、二、零、零",
+					{"gaiji", text="①"},
+					"以下是刪減片段！是因為片長或各種問題而被刪減的場景！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "0123_00002",
+		line = 22,
+	},
+	["0123_00002"] = {
+		{"fg", file="kouki_01m_00002", file1="kouki_01m_00101", file2="kouki_01m_00202", path=":fg/kouki_01m/", id=17, lv=17, head="kouki_01m", ch_origin="光姫", ch="光姫17", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="kouki0205", path=":vo/", ch="kouki"},
+			},
+			ja = {
+				{
+					name = {"光姫"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"光姫", "Kouki"},
+					"“You won’t find this content in the main game, so do with this information what you will. Enjoy!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"光姫"},
+					"“请注意，这些内容并不会在本篇中出现。那就开始吧！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"光姫"},
+					"「請注意，這些內容並不會在本篇中出現。那就開始吧！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00001",
+		linknext = "0123_00003",
+		line = 37,
+	},
+	["0123_00003"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fg", mode=-1, id=17, ch="光姫17", ch_origin="光姫", lv=17, time=0, sync=0},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_043_00000"},
+		{"ex", time=2000, func="wait"},
+		{"bg", id=1, file="bg12_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg12_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_033_00000"},
+		{"bgm", file="bgm11", vol=100},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00211", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Thank you for coming, everybody. I’ve called you together today for an important meeting.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“感谢各位百忙之中抽出时间赶来。今天召集各位为的不是别的，正是──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「感謝大家過來。今天召集各位為的不是別的──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00002",
+		linknext = "0123_00004",
+		line = 63,
+	},
+	["0123_00004"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00203", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“We need to come up with a new character for ",
+					{"exfont", style="italic"},
+					"NUKITASHI 2[/i].”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“召开会议，讨论‘NUKITASHI2’的新角色该如何设计。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「是要召開會議，討論『NUKITASHI2』的新角色該如何設計。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00003",
+		linknext = "0123_00005",
+		line = 75,
+	},
+	["0123_00005"] = {
+		{"fg", file="teshima_01m_00001", file2="teshima_01m_00203", path=":fg/teshima_01m/", id=16, lv=16, head="teshima_01m", ch_origin="手嶋", ch="手嶋16", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="teshima0014", path=":vo/", ch="teshima"},
+			},
+			ja = {
+				{
+					name = {"手嶋"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"手嶋", "Teshima"},
+					"“New blood for ",
+					{"exfont", style="italic"},
+					"NUKITASHI 2[/i], huh? That’s gonna be a toughie...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"手嶋"},
+					"“NUKITASHI2的新角色啊……这可是个难题。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"手嶋"},
+					"「NUKITASHI2的新角色啊……這可是個難題。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00004",
+		linknext = "0123_00006",
+		line = 89,
+	},
+	["0123_00006"] = {
+		{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file2="misaki_01m_00204", file4="misaki_01m_00401", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki1365", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“Yeah... Throwing in an all-new character into a preestablished world...? We’re going to have to be reeeally careful.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“是啊……要在一代已经确立的世界观里加入新角色……需要考虑到多方面的因素。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「說得對……要在一代已經確立的世界裡加入新角色……需要很小心才可以。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00005",
+		linknext = "0123_00007",
+		line = 103,
+	},
+	["0123_00007"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00211", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Exactly... This new character can’t overshadow the current cast, but they can’t just be a wallflower, either. That would be boring.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“嗯，不可以怠慢了现有的角色，但如果只是个乖乖女，又有些缺乏趣味性……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「嗯，不可以忽略現在的角色。但如果只是個乖乖牌，又不有趣……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00006",
+		linknext = "0123_00008",
+		line = 115,
+	},
+	["0123_00008"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We can’t give the newbie ",
+					{"exfont", style="italic"},
+					"too[/i] much personality, or else the existing heroines will get pushed to the wayside, and then the fans will riot.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"如果推出太有个性的角色，盖过之前的女主角们的光芒，可能会招致粉丝的反感。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"如果推出太有個性的角色，蓋過之前女角的光芒，可能會造成粉絲反感。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00007",
+		linknext = "0123_00009",
+		line = 125,
+	},
+	["0123_00009"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We’ll have to maintain a delicate balance.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"重点在于如何取得平衡──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"重點在於如何取得平衡──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00008",
+		linknext = "0123_00010",
+		line = 135,
+	},
+	["0123_00010"] = {
+		{"fg", file="teshima_01m_00001", file2="teshima_01m_00225", path=":fg/teshima_01m/", id=16, lv=16, head="teshima_01m", ch_origin="手嶋", ch="手嶋16", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="teshima0015", path=":vo/", ch="teshima"},
+			},
+			ja = {
+				{
+					name = {"手嶋"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"手嶋", "Teshima"},
+					"“Forget the personality for now, let’s look at the visuals first. That’s gonna be the first thing the users see, however you spin it.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"手嶋"},
+					"“角色的详细设定固然重要，但首先要考虑的是外观吧？毕竟玩家最先看到的就是外观。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"手嶋"},
+					"「角色設定固然重要，但首先是外觀吧？畢竟玩家最先看到的就是外觀。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00009",
+		linknext = "0123_00011",
+		line = 150,
+	},
+	["0123_00011"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00204", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Good idea... ",
+					{"exfont", style="italic"},
+					"NUKITASHI[/i] fans are a magnanimous bunch. As long as she’s cute, I’m sure everyone will like her.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“说得对……〇〇游戏的玩家都很宽容，所以只要脸好看，就愿意照单全收。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「說得對……成人遊戲的玩家都很寬容，所以只要臉好看，就可能照單全收。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00010",
+		linknext = "0123_00012",
+		line = 162,
+	},
+	["0123_00012"] = {
+		{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file2="misaki_01m_00216", file4="misaki_01m_00401", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki1366", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“So, visually, how should we make her distinct...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“问题是要设计成怎样的外观……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「問題是要設計成怎樣的外觀……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00011",
+		linknext = "0123_00013",
+		line = 177,
+	},
+	["0123_00013"] = {
+		{"fg", file="ran_01m_00001", file1="ran_01m_00101", file2="ran_01m_00201", file4="ran_01m_00401", path=":fg/ran_01m/", id=13, lv=13, head="ran_01m", alpha=0, ch_origin="蘭", ch="蘭13", mw="mw", sync=1, a_chr151=1, mode=3, x=795, y=-5},
+		{"fgact", ch="蘭13", id=13, lv=13, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="蘭13", id=13, act="移動", x=-200, y=0, time=700},
+		{"fgact", ch="手嶋16", id=16, act="移動", x=-200, y=0, time=700},
+		{"fgact", ch="美岬6", id=6, act="移動", x=-400, y=0, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ran0227", path=":vo/", ch="ran"},
+			},
+			ja = {
+				{
+					name = {"蘭"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"蘭", "Ran"},
+					"“What do you think of the idea of giving her glasses?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"蘭", "兰"},
+					"“戴眼镜的角色如何？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"蘭"},
+					"「戴眼鏡的角色如何？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00012",
+		linknext = "0123_00014",
+		line = 194,
+	},
+	["0123_00014"] = {
+		{"bgm", file="bgm12", vol=100},
+		{"fgact", ch="蘭13", id=13, lv=13, act="表示アクション", alpha=0, alphadel=1, style="reset", time=200},
+		{"bg", id=2, file="bg12_1l_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="teshima_01l_00001", file2="teshima_01l_00219", path=":fg/teshima_01l/", id=16, lv=16, head="teshima_01l", ch_origin="手嶋", ch="手嶋16", mw="mw", sync=0, mode=3, x=-355, y=-5},
+		{"fg", file="misaki_01l_00001", file1="misaki_01l_00101", file2="misaki_01l_00222", file4="misaki_01l_00401", path=":fg/misaki_01l/", id=6, lv=6, head="misaki_01l", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=345, y=-5},
+		{"transitiontime", time=200},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00222", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=6, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"cgact", file="cgact", id=2, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=2},
+		{"fgact", ch="美岬6", id=6, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"fgact", ch="手嶋16", id=16, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"bg", id=17, file="syuchu_00001", x=0, y=0, lv=17, path=":cg/syuchu/", ev=1, ax=805, ay=455, bx=-5, by=-5},
+		{"cgact", file="cgact", id=17, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, lv=17, x=0, y=0},
+		{"text"},
+		delay = {
+			[200] = {
+				{"bg", id=18, file="syuchu_00002", x=0, y=0, lv=18, path=":cg/syuchu/", ev=1, timestamp=1, delay2=200, ax=805, ay=455, bx=-5, by=-5},
+				{"cgact", file="cgact", id=18, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, timestamp=1, delay2=200, lv=18, x=0, y=0},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="misaki1367", path=":vo/", ch="misaki"},
+				{"vo", file="teshima0016", path=":vo/", ch="teshima"},
+			},
+			ja = {
+				{
+					{"exfont", size="f4"},
+					name = {"淳之介", "淳之介・手嶋・美岬"},
+					"*テキスト*",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			en = {
+				{
+					{"exfont", size="f4"},
+					name = {"淳之介", "Junnosuke"},
+					"“ABSOLUTELY NOT!”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			cn = {
+				{
+					{"exfont", size="f4"},
+					name = {"淳之介"},
+					"“不可能！”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			tw = {
+				{
+					{"exfont", size="f4"},
+					name = {"淳之介"},
+					"「不可能！」",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+		},
+		linkback = "0123_00013",
+		linknext = "0123_00015",
+		line = 226,
+	},
+	["0123_00015"] = {
+		{"cgact", file="cgact", id=17, act="stopact", lv=17, x=0, y=0},
+		{"cgdel", id=17, time=0, alphadel=1, lv=17},
+		{"cgact", file="cgact", id=18, act="stopact", lv=18, x=0, y=0},
+		{"cgdel", id=18, time=0, alphadel=1, lv=18},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, lv=2, time=300, alphadel=1, style="reset"},
+		{"fg", file="ran_01m_00001", file1="ran_01m_00102", file2="ran_01m_00209", file4="ran_01m_00401", path=":fg/ran_01m/", id=13, lv=13, head="ran_01m", ch_origin="蘭", ch="蘭13", mw="mw", sync=0, mode=3, x=695, y=-5},
+		{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file2="misaki_01m_00222", file4="misaki_01m_00401", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"fg", file="teshima_01m_00001", file2="teshima_01m_00219", path=":fg/teshima_01m/", id=16, lv=16, head="teshima_01m", ch_origin="手嶋", ch="手嶋16", mw="mw", sync=0, mode=3, x=-705, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="teshima0017", path=":vo/", ch="teshima"},
+			},
+			ja = {
+				{
+					name = {"手嶋"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"手嶋", "Teshima"},
+					"“Are ya crazy?! In our industry, ‘glasses’ is basically a synonym for ‘unpopular!’ And every man of culture knows it!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"手嶋"},
+					"“你没疯吧！？在这个业界里，眼镜可是没人气的代名词啊！这在任侠界可是常识！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"手嶋"},
+					"「妳沒瘋吧！？在這個業界裡，眼鏡可是沒人氣的代名詞喔！這在俠義界可是常識！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00014",
+		linknext = "0123_00016",
+		line = 250,
+	},
+	["0123_00016"] = {
+		{"se", id=0, loop=0, file="se_a098"},
+		{"transitiontime", time=300},
+		{"fgact", ch="美岬6", id=6, act="振動下", loop=2, size=-25, time=150, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki1368", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“Exactly! In fact, the normal standard number of glasses girls in games these days is ",
+					{"exfont", style="italic"},
+					"ZERO[/i]!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“没错！最近〇〇游戏里没有半个眼镜角色可以说是主流──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「沒錯！最近成人遊戲裡沒有半個眼鏡角色可以說是主流──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00015",
+		linknext = "0123_00017",
+		line = 265,
+	},
+	["0123_00017"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00228", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“It would be the height of stupidity to give a new character ",
+					{"exfont", style="italic"},
+					"glasses[/i], of all things, as a ploy for attention! We’re all on the same page about that, right?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“让备受瞩目的新角色戴眼镜根本就是愚蠢至极！大家也这么觉得吧！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「讓受到關注的新角色戴眼鏡根本愚蠢至極！大家也這麼覺得吧！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00016",
+		linknext = "0123_00018",
+		line = 277,
+	},
+	["0123_00018"] = {
+		{"cgdel", id=1, lv=1, time=0, alphadel=1},
+		{"fg", mode=-1, id=16, ch="手嶋16", ch_origin="手嶋", lv=16, time=0, sync=0},
+		{"fg", mode=-1, id=6, ch="美岬6", ch_origin="美岬", lv=6, time=0, sync=0},
+		{"fg", mode=-1, id=13, ch="蘭13", ch_origin="蘭", lv=13, time=0, sync=0},
+		{"bg", id=1, file="bg12_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"fg", file="teshima_01m_00001", file2="teshima_01m_00219", path=":fg/teshima_01m/", id=16, lv=12, head="teshima_01m", ch_origin="手嶋", ch="手嶋16", mw="mw", sync=0, mode=3, x=-705, y=-5},
+		{"fg", file="misaki_01m_00001", file1="misaki_01m_00101", file2="misaki_01m_00222", file4="misaki_01m_00401", path=":fg/misaki_01m/", id=6, lv=14, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"fg", file="ran_01m_00001", file1="ran_01m_00102", file2="ran_01m_00209", file4="ran_01m_00401", path=":fg/ran_01m/", id=13, lv=16, head="ran_01m", ch_origin="蘭", ch="蘭13", mw="mw", sync=0, mode=3, x=695, y=-5},
+		{"fg", file="schubert_01m_00001", file2="schubert_01m_00205", file4="schubert_01m_00401", file5="schubert_01m_00501", path=":fg/schubert_01m/", id=12, lv=13, head="schubert_01m", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, mode=3, x=-355, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="schubert0426", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schubert"},
+					"“Precisely. I don’t have any data on it, but I’m fairly certain that any new character with glasses would be dead in the water.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯特"},
+					"“对啊。虽然我的数据库里没有，但戴眼镜的角色应该不受欢迎吧。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯特"},
+					"「對啊。雖然我的數據庫裡沒有，但戴眼鏡的角色應該不受歡迎吧。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00017",
+		linknext = "0123_00019",
+		line = 299,
+	},
+	["0123_00019"] = {
+		{"fg", file="mizuhiki_01m_00001", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00229", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=15, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=345, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="mizuhiki0633", path=":vo/", ch="mizuhiki"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+					"“Yeah, I agree. If you were to put a new character with glasses into this game... it would just seem really out of touch.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+					"“我和你们意见一致。如今还在〇〇游戏里推出眼镜角色……嗯，这种行为可以说是没搞懂时代的变迁。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+					"「我的意見也一樣。如今還在成人遊戲裡推出眼鏡角色……嗯，我覺得是沒搞懂時代的變遷。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00018",
+		linknext = "0123_000120",
+		line = 313,
+	},
+	["0123_000120"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00211", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Excellent... It sounds like we’re all agreed... The new character definitely won’t be wearing glasses.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“嗯……新角色不戴眼镜果然是我们的全体意见。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「嗯……新角色不戴眼鏡果然是我們的全體意見。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_00019",
+		linknext = "0123_000121",
+		line = 325,
+	},
+	["0123_000121"] = {
+		{"bg", id=2, file="bg12_1l_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"fgact", ch="美岬6", id=6, lv=14, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="蘭13", id=13, lv=16, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="手嶋16", id=16, lv=12, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fg", file="schubert_01l_00001", file2="schubert_01l_00205", file4="schubert_01l_00401", file5="schubert_01l_00501", path=":fg/schubert_01l/", id=12, lv=13, head="schubert_01l", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"fg", file="mizuhiki_01l_00001", file1="mizuhiki_01l_00101", file2="mizuhiki_01l_00229", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=15, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=300},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00203", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=15, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...By the way, who are you two?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“话说回来，你们是谁？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「話說你們是誰？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_000120",
+		linknext = "0123_000122",
+		line = 350,
+	},
+	["0123_000122"] = {
+		{"fg", file="schubert_01l_00002", file2="schubert_01l_00211", file4="schubert_01l_00401", file5="schubert_01l_00501", path=":fg/schubert_01l/", id=12, lv=13, head="schubert_01l", ch_origin="シューベルト", ch="シューベルト12", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="schubert0427", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schubert"},
+					"“I’m Schubert, a new character!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯特"},
+					"“我是新角色舒伯特。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯特"},
+					"「我是新角色舒伯特。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_000121",
+		linknext = "0123_000123",
+		line = 365,
+	},
+	["0123_000123"] = {
+		{"fg", file="mizuhiki_01l_00001", file1="mizuhiki_01l_00101", file2="mizuhiki_01l_00226", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=15, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="mizuhiki0634", path=":vo/", ch="mizuhiki"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+					"“And I’m Mizuhiki Akino, another new character!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+					"“我是新角色秋野水引。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+					"「我是新角色秋野水引。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_000122",
+		linknext = "0123_000124",
+		line = 380,
+	},
+	["0123_000124"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00203", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=15},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I see... Welcome to the crew.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“这样啊……请多指教。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「這樣啊……請多指教。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_000123",
+		linknext = "0123_000125",
+		line = 392,
+	},
+	["0123_000125"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00204", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=15},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“………………………”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「………………………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_000124",
+		linknext = "0123_000126",
+		line = 404,
+	},
+	["0123_000126"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"......",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"…………………………………………",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"…………………………………………",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0123_000125",
+		linknext = "block_00027",
+		line = 414,
+	},
+	block_00027 = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=12, ch="シューベルト12", ch_origin="シューベルト", lv=13, time=0, sync=0},
+		{"cgdel", id=13, time=0, alphadel=1, lv=5},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=15, ch="水引15", ch_origin="水引", lv=15, time=0, sync=0},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_043_00000"},
+		{"ex", time=2000, func="wait"},
+		{"text"},
+		linkback = "0123_000126",
+		line = 458,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

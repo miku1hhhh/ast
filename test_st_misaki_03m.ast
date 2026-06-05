@@ -1,0 +1,169 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"MISAKI_03M",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="misaki_03m_00000", file1="misaki_03m_00101", path=":fg/misaki_03m/", id=2, lv=5, head="misaki_03m", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_03M.s25,0,0,0,m,0,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="misaki_03m_00001", file1="misaki_03m_00101", path=":fg/misaki_03m/", id=2, lv=5, head="misaki_03m", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_03M.s25,0,0,0,m,01,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="misaki_03m_00001", file1="misaki_03m_00101", path=":fg/misaki_03m/", id=2, lv=5, head="misaki_03m", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_03M.s25,0,0,0,m,01,1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="misaki_03m_00001", file1="misaki_03m_00103", path=":fg/misaki_03m/", id=2, lv=5, head="misaki_03m", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_03M.s25,0,0,0,m,01,3",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 18,
+	},
+	block_00005 = {
+		{"fg", file="misaki_03m_00001", file1="misaki_03m_00105", path=":fg/misaki_03m/", id=2, lv=5, head="misaki_03m", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_03M.s25,0,0,0,m,01,5",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 22,
+	},
+	block_00006 = {
+		{"fg", file="misaki_03m_00002", file1="misaki_03m_00101", path=":fg/misaki_03m/", id=2, lv=5, head="misaki_03m", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_03M.s25,0,0,0,m,02,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 26,
+	},
+	block_00007 = {
+		{"fg", file="misaki_03m_00002", file1="misaki_03m_00104", path=":fg/misaki_03m/", id=2, lv=5, head="misaki_03m", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_03M.s25,0,0,0,m,02,04",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 30,
+	},
+	block_00008 = {
+		{"fg", file="misaki_03m_00002", file1="misaki_03m_00101", path=":fg/misaki_03m/", id=2, lv=5, head="misaki_03m", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_03M.s25,0,0,0,m,02,1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 34,
+	},
+	block_00009 = {
+		{"fg", file="misaki_03m_00002", file1="misaki_03m_00102", path=":fg/misaki_03m/", id=2, lv=5, head="misaki_03m", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_03M.s25,0,0,0,m,02,2",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 38,
+	},
+	block_00010 = {
+		{"fg", file="misaki_03m_00004", file1="misaki_03m_00101", path=":fg/misaki_03m/", id=2, lv=5, head="misaki_03m", ch_origin="美岬", ch="美岬2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/MISAKI_03M.s25,0,0,0,m,04,1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		line = 42,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

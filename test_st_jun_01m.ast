@@ -1,0 +1,289 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"JUN_01M",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="jun_01m_00001", file1="jun_01m_00101", file3="jun_01m_00307", file4="jun_01m_00402", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,01,01,-1,07,02",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="jun_01m_00001", file1="jun_01m_00101", file2="jun_01m_00210", file4="jun_01m_00401", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,01,01,10,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="jun_01m_00002", file1="jun_01m_00101", file2="jun_01m_00203", file4="jun_01m_00401", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,02,01,03,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="jun_01m_00002", file1="jun_01m_00101", file2="jun_01m_00210", file4="jun_01m_00401", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,02,01,10,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 18,
+	},
+	block_00005 = {
+		{"fg", file="jun_01m_00002", file1="jun_01m_00101", file2="jun_01m_00210", file4="jun_01m_00401", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,02,1,10,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 22,
+	},
+	block_00006 = {
+		{"fg", file="jun_01m_00002", file1="jun_01m_00101", file2="jun_01m_00203", file4="jun_01m_00401", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,02,1,3,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 26,
+	},
+	block_00007 = {
+		{"fg", file="jun_01m_00002", file1="jun_01m_00101", file2="jun_01m_00204", file4="jun_01m_00401", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,02,1,4,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 30,
+	},
+	block_00008 = {
+		{"fg", file="jun_01m_00006", file1="jun_01m_00101", file3="jun_01m_00304", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,06,01,-1,04,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 34,
+	},
+	block_00009 = {
+		{"fg", file="jun_01m_00006", file1="jun_01m_00101", file3="jun_01m_00306", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,06,01,-1,06,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 38,
+	},
+	block_00010 = {
+		{"fg", file="jun_01m_00006", file1="jun_01m_00101", file3="jun_01m_00307", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,06,01,-1,07,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 42,
+	},
+	block_00011 = {
+		{"fg", file="jun_01m_00006", file1="jun_01m_00101", file3="jun_01m_00309", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,06,01,-1,09,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 46,
+	},
+	block_00012 = {
+		{"fg", file="jun_01m_00006", file1="jun_01m_00101", file2="jun_01m_00201", file4="jun_01m_00401", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,06,01,01,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 50,
+	},
+	block_00013 = {
+		{"fg", file="jun_01m_00006", file1="jun_01m_00101", file2="jun_01m_00203", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,06,01,03,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 54,
+	},
+	block_00014 = {
+		{"fg", file="jun_01m_00006", file1="jun_01m_00101", file2="jun_01m_00204", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,06,01,04,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 58,
+	},
+	block_00015 = {
+		{"fg", file="jun_01m_00006", file1="jun_01m_00101", file2="jun_01m_00210", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,06,01,10,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 62,
+	},
+	block_00016 = {
+		{"fg", file="jun_01m_00006", file1="jun_01m_00101", file2="jun_01m_00211", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,06,01,11,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 66,
+	},
+	block_00017 = {
+		{"fg", file="jun_01m_00006", file1="jun_01m_00101", file2="jun_01m_00216", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,06,01,16,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 70,
+	},
+	block_00018 = {
+		{"fg", file="jun_01m_00006", file1="jun_01m_00101", file2="jun_01m_00201", path=":fg/jun_01m/", id=2, lv=5, head="jun_01m", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01M.s25,0,0,0,m,06,1,1,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		line = 74,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

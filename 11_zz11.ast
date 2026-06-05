@@ -1,0 +1,1674 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ここからオート「A」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "0125_00001",
+		line = 3,
+	},
+	["0125_00001"] = {
+		{"savetitle"},
+		{"cgdel", id=1, lv=1, time=0, alphadel=1},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bgm", file="bgm24", vol=100},
+		{"bg", id=1, file="bg34_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg34_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1200, rule="eff_033_00000"},
+		{"fg", file="tohka_01m_00001", file1="tohka_01m_00101", file2="tohka_01m_00201", path=":fg/tohka_01m/", id=8, lv=8, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sutohka0138", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Ikuko, you’ve been borrowing games from Junnosuke recently, haven’t you?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“郁子，你最近是不是跟前辈借了游戏来玩？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「郁子，妳最近是不是跟前輩借了遊戲在玩？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "0125_00002",
+		line = 26,
+	},
+	["0125_00002"] = {
+		{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file2="ikuko_02m_00202", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-505, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="suikuko0133", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Yeah, Darling recommended a bunch of adult games for me to play, so I’ve been borrowing them off of him.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“嗯，我问亲爱的借了很多黄油，都是他推荐的。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「嗯，我借了很多成人遊戲來玩。是親愛的推薦的。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00001",
+		linknext = "0125_00003",
+		line = 40,
+	},
+	["0125_00003"] = {
+		{"fg", file="rei_01m_00001", file1="rei_01m_00102", file3="rei_01m_00303", path=":fg/rei_01m/", id=9, lv=9, head="rei_01m", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=495, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="surei0134", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“That’s quite a length to go to just to have something to talk with him about...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“虽说这么做是为了跟淳之介找话题，但真亏你玩得下去……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「雖說是為了跟淳之介找話題，但真虧妳玩得下去……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00002",
+		linknext = "0125_00004",
+		line = 54,
+	},
+	["0125_00004"] = {
+		{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file2="ikuko_01m_00211", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-505, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[4100] = {
+				{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file2="ikuko_02m_00229", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=1, delay2=4100, mode=3, x=-505, y=-5},
+				{"fgact", ch="郁子10", id=10, act="振動下", loop=1, size=12.5, time=250, ease="easeinout_sine", timestamp=1, delay2=4100},
+			},
+			[4099] = {
+				{"transitiontime", time=300, timestamp=1, delay2=4100},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="suikuko0134", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Well, I’ll admit that I was just doing it to get closer to Darling at first... but I’ve actually been getting really into them. I’m even looking up the latest releases myself, now♪”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“呃……一开始的确是为了跟亲爱的打好关系，可最近我已经彻底迷上这种游戏了。现在我还会自己去追新作呢♪”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「呃……一開始的確是為了跟親愛的打好關係，可是最近已經完全迷上了。我還會自己去追新作品呢♪」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00003",
+		linknext = "0125_00005",
+		line = 73,
+	},
+	["0125_00005"] = {
+		{"fg", file="tohka_02m_00001", file1="tohka_02m_00101", file2="tohka_02m_00212", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sutohka0139", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“I noticed that you preordered the same game at several different stores... Why was that?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“之前你好像在不同店铺预约了同一款游戏……那是为什么？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「之前妳好像在不同店鋪預約了同一款遊戲……那是為什麼？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00004",
+		linknext = "0125_00006",
+		line = 88,
+	},
+	["0125_00006"] = {
+		{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file2="ikuko_01m_00204", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-505, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[2500] = {
+				{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file3="ikuko_02m_00312", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=2, delay2=2500, mode=3, x=-505, y=-5},
+			},
+			[2499] = {
+				{"transitiontime", time=300, timestamp=2, delay2=2500},
+			},
+			[5300] = {
+				{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file3="ikuko_02m_00311", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=3, delay2=5300, mode=3, x=-505, y=-5},
+			},
+			[5299] = {
+				{"transitiontime", time=300, timestamp=3, delay2=5300},
+			},
+			[6800] = {
+				{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file3="ikuko_02m_00315", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=4, delay2=6800, mode=3, x=-505, y=-5},
+			},
+			[6799] = {
+				{"transitiontime", time=300, timestamp=4, delay2=6800},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="suikuko0135", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“’Cause they all come with different preorder bonuses! All for different girls... but I don’t know who’s gonna be my waifu until I play the game!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“当然是因为每家店的特典不一样啦。毕竟每款店铺特典的角色都不同……如果不实际玩玩看，怎么知道自己厨的是哪个女孩呢。我说得对吧？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「當然是因為贈品不一樣。畢竟每間店的角色都不同……如果不實際玩玩看，怎麼知道自己推哪個女孩子，對吧？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00005",
+		linknext = "0125_00007",
+		line = 112,
+	},
+	["0125_00007"] = {
+		{"fg", file="rei_01m_00001", file1="rei_01m_00102", file2="rei_01m_00228", path=":fg/rei_01m/", id=9, lv=9, head="rei_01m", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=495, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[2900] = {
+				{"fg", file="rei_02m_00001", file1="rei_02m_00102", file2="rei_02m_00209", path=":fg/rei_02m/", id=9, lv=9, head="rei_02m", ch_origin="礼", ch="礼9", mw="mw", sync=0, timestamp=5, delay2=2900, mode=3, x=495, y=-5},
+			},
+			[2899] = {
+				{"transitiontime", time=300, timestamp=5, delay2=2900},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="surei0135", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Your waifu...? Wow. It sounds like you’re in deep, Ikuko.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“厨……没想到那个郁子竟然会如此沉迷那种游戏……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「推……妳迷成那樣嗎？那個郁子居然……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00006",
+		linknext = "0125_00008",
+		line = 130,
+	},
+	["0125_00008"] = {
+		{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file2="ikuko_01m_00203", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-505, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[2800] = {
+				{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file3="ikuko_02m_00308", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=6, delay2=2800, mode=3, x=-505, y=-5},
+			},
+			[2799] = {
+				{"transitiontime", time=300, timestamp=6, delay2=2800},
+			},
+			[5100] = {
+				{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file3="ikuko_01m_00311", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=7, delay2=5100, mode=3, x=-505, y=-5},
+			},
+			[5099] = {
+				{"transitiontime", time=300, timestamp=7, delay2=5100},
+			},
+			[8200] = {
+				{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file2="ikuko_02m_00229", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=8, delay2=8200, mode=3, x=-505, y=-5},
+				{"fgact", ch="郁子10", id=10, act="振動下", loop=1, size=12.5, time=300, ease="easeinout_sine", timestamp=8, delay2=8200},
+			},
+			[8199] = {
+				{"transitiontime", time=300, timestamp=8, delay2=8200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="suikuko0136", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“The last Friday of every month is Eroge Day, when all the p*rn games drop, so I have a marathon shl*ckfest all weekend, and then on Monday, Darling and I compare notes! It’s a blast!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“每个月的最后一个星期五是黄油发售日，也就是超级色色日，我会用星期五外加一整个周末来一场黄油马拉松，爽个不停，到了星期一再去跟亲爱的讨论感想！这超有趣的！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「從月底星期五的成人遊戲日通稱白金成人日開始到六日的淫蕩成人遊戲馬拉松，星期一再跟親愛的討論感想！這超有趣的！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00007",
+		linknext = "0125_00009",
+		line = 155,
+	},
+	["0125_00009"] = {
+		{"text"},
+		delay = {
+			[2700] = {
+				{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00101", file3="ikuko_02m_00301", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=9, delay2=2700, mode=3, x=-505, y=-5},
+			},
+			[2699] = {
+				{"transitiontime", time=300, timestamp=9, delay2=2700},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="suikuko0137", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“I don’t know if that makes me an eroge otaku, but if that’s what people want to call me, I guess I can’t deny it.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“就连我自己都觉得这样有些过于狂热了。就算被说成黄油宅，我或许也无法还嘴了吧。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「雖然我自己也覺得很狂熱，但這樣的我如果被說是成人遊戲宅也無法回嘴了吧？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00008",
+		linknext = "0125_00010",
+		line = 170,
+	},
+	["0125_00010"] = {
+		{"bgm", stop=1},
+		{"fgact", ch="郁子10", id=10, lv=10, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"bg", id=2, file="bg34_1l_00000", x=-300, y=0, lv=2, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=100},
+		{"fg", file="tohka_02l_00001", file1="tohka_02l_00101", file2="tohka_02l_00203", path=":fg/tohka_02l/", id=8, lv=8, head="tohka_02l", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-305, y=-5},
+		{"transitiontime", time=100},
+		{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=500, ease="easeinout_sine"},
+		{"fg", file="rei_02l_00001", file1="rei_02l_00101", file2="rei_02l_00204", path=":fg/rei_02l/", id=9, lv=9, head="rei_02l", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=295, y=-5},
+		{"transitiontime", time=100},
+		{"fgact", ch="礼9", id=9, act="振動下", loop=1, size=12.5, time=500, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="sutohka0140", path=":vo/"},
+		{"se", id=1, loop=0, file="surei0136", path=":vo/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"桐香＆礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香＆礼"},
+					"“You’re an eroge otaku.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香＆礼"},
+					"““黄油宅。””",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香＆礼"},
+					"「「成人遊戲宅。」」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00009",
+		linknext = "0125_00011",
+		line = 196,
+	},
+	["0125_00011"] = {
+		{"fg", file="ikuko_02f_00001", file1="ikuko_02f_00102", file2="ikuko_02f_00209", path=":fg/ikuko_02f/", id=30, ch="郁子", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="suikuko0138", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Huh?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“咦？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「咦？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00010",
+		linknext = "0125_00012",
+		line = 209,
+	},
+	["0125_00012"] = {
+		{"fg", file="tohka_01l_00001", file1="tohka_01l_00101", file2="tohka_01l_00203", path=":fg/tohka_01l/", id=8, lv=8, head="tohka_01l", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-305, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sutohka0141", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Tell us ten cliches that happen in every eroge s*x scene!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“那么，请你说出十个黄油H场景里经常会出现的现象。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「那請妳說出十個關於成人遊戲H場景的小知識。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00011",
+		linknext = "0125_00013",
+		line = 224,
+	},
+	["0125_00013"] = {
+		{"bgm", file="bgm34", vol=100},
+		{"cgdel", id=2, lv=2, time=300, alphadel=1},
+		{"fgact", ch="礼9", id=9, lv=9, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="桐香8", id=8, lv=8, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"bg", id=1, file="bg03_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=805, ay=455, bx=-5, by=-5},
+		{"transitiontime", time=300},
+		{"fg", file="misaki_01m_00001", file1="misaki_01m_00106", file2="misaki_01m_00222", path=":fg/misaki_01m/", id=6, lv=6, head="misaki_01m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=-705, y=95},
+		{"transitiontime", time=300},
+		{"fgact", ch="美岬6", id=6, act="浮遊", loop=-1, size=7.5, time=75, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=1, act="浮遊横", loop=-1, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"fg", file="rei_01f_00001", file1="rei_01f_00101", file2="rei_01f_00203", path=":fg/rei_01f/", id=30, ch="礼", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="surei0137", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Be quick!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“快跑！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「快跑！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00012",
+		linknext = "0125_00014",
+		line = 251,
+	},
+	["0125_00014"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sumisaki0210", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					{"exfont", size="f4"},
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			en = {
+				{
+					{"exfont", size="f4"},
+					name = {"美岬", "Misaki"},
+					"“Oooooooooooooaaaaaaaah!”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			cn = {
+				{
+					{"exfont", size="f4"},
+					name = {"美岬"},
+					"“噢噢噢噢噢噢噢噢！！”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			tw = {
+				{
+					{"exfont", size="f4"},
+					name = {"美岬"},
+					"「噢噢噢噢噢噢噢噢！！」",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+		},
+		linkback = "0125_00013",
+		linknext = "0125_00015",
+		line = 264,
+	},
+	["0125_00015"] = {
+		{"se", id=5, loop=1, file="sumisaki0211", path=":vo/", vol=70},
+		{"se", id=4, loop=1, file="suhamedori0004", path=":vo/"},
+		{"fg", file="ikuko_01l_00001", file1="ikuko_01l_00102", file2="ikuko_01l_00209", path=":fg/ikuko_01l/", id=10, lv=10, head="ikuko_01l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[1000] = {
+				{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00203", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=10, delay2=1000, mode=3, x=-5, y=-5},
+			},
+			[999] = {
+				{"transitiontime", time=300, timestamp=10, delay2=1000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="suikuko0139", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Huh?! Uhh, err... T-The guy and the heroine always c*m at the same time!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“咦！？啊、呃……主、主角通常会跟女主角一起高〇！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「咦！？啊、呃……主、主角跟女角常常一起高潮！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00014",
+		linknext = "0125_00016",
+		line = 283,
+	},
+	["0125_00016"] = {
+		{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00204", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="suikuko0140", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“The guy always starts talking like a dirty old man!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“主角的语气会突然变得很大叔！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「主角常常突然變成大叔語氣！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00015",
+		linknext = "0125_00017",
+		line = 298,
+	},
+	["0125_00017"] = {
+		{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00203", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="suikuko0141", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Every other word always becomes ‘c*ck,’ ‘c*ck,’ ‘c*ck!’”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“经常会把小●●写成小○○！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「陰莖常常講成小雞雞！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00016",
+		linknext = "0125_00018",
+		line = 313,
+	},
+	["0125_00018"] = {
+		{"fg", file="ikuko_01l_00001", file1="ikuko_01l_00102", file2="ikuko_01l_00204", path=":fg/ikuko_01l/", id=10, lv=10, head="ikuko_01l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="suikuko0142", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Every other other word always becomes ‘p*ssy,’ ‘p*ssy,’ ‘p*ssy!’”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“经常会把小●写成小○！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「陰道常常講成小穴！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00017",
+		linknext = "0125_00019",
+		line = 328,
+	},
+	["0125_00019"] = {
+		{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00216", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="suikuko0143", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“The heroine’s womb always descends for some reason! Like an elevator!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“经常会把子○写得跟电梯似的，动不动就下垂！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「子宮常常像搭電梯一樣往下移動！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00018",
+		linknext = "0125_00020",
+		line = 343,
+	},
+	["0125_00020"] = {
+		{"fg", file="ikuko_01l_00001", file1="ikuko_01l_00102", file2="ikuko_01l_00206", path=":fg/ikuko_01l/", id=10, lv=10, head="ikuko_01l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00203", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=11, delay2=1500, mode=3, x=-5, y=-5},
+				{"fgact", ch="郁子10", id=10, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=11, delay2=1500},
+			},
+			[1499] = {
+				{"transitiontime", time=300, timestamp=11, delay2=1500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="suikuko0144", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“What else...? The text always doesn’t match up with the art!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“还有……CG跟文字常常会有出入！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「還有……畫面跟文字常常有出入！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00019",
+		linknext = "0125_00021",
+		line = 362,
+	},
+	["0125_00021"] = {
+		{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00209", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="郁子10", id=10, act="振動下", loop=1, size=-12.5, time=200, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[1000] = {
+				{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00203", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=12, delay2=1000, mode=3, x=-5, y=-5},
+			},
+			[999] = {
+				{"transitiontime", time=300, timestamp=12, delay2=1000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="suikuko0145", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Like ALWAYS as in never! Why?! What gives?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“没错，常常会有出入，那这是为什么呢！？是什么导致了这个问题！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「明明常常有出入，為什麼！？哪裡不對！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00020",
+		linknext = "0125_00022",
+		line = 381,
+	},
+	["0125_00022"] = {
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file2="rei_02f_00203", path=":fg/rei_02f/", id=30, ch="礼", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="surei0138", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“10 seconds left!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“还有十秒！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「還有十秒！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00021",
+		linknext = "0125_00023",
+		line = 394,
+	},
+	["0125_00023"] = {
+		{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00216", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="郁子10", id=10, act="振動下", loop=1, size=32.5, time=250, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[600] = {
+				{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00215", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=13, delay2=600, mode=3, x=-5, y=-5},
+				{"fgact", ch="郁子10", id=10, act="振動下", loop=1, size=32.5, time=250, ease="easeinout_sine", timestamp=13, delay2=600},
+			},
+			[599] = {
+				{"transitiontime", time=300, timestamp=13, delay2=600},
+			},
+			[2100] = {
+				{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file3="ikuko_02l_00308", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=14, delay2=2100, mode=3, x=-5, y=-5},
+			},
+			[2099] = {
+				{"transitiontime", time=300, timestamp=14, delay2=2100},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="suikuko0146", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Um, uhh... They always never felt anything like this before!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“呃……因为大部分剧本家都没体验过那种感觉！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「呃……常常說『沒體會過這種感覺』！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00022",
+		linknext = "0125_00024",
+		line = 417,
+	},
+	["0125_00024"] = {
+		{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00221", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="suikuko0147", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“The background music’s. Nice. Always!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“还有，BGM通常都挺好听的！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「BGM常常滿好聽的！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00023",
+		linknext = "0125_00025",
+		line = 432,
+	},
+	["0125_00025"] = {
+		{"fg", file="ikuko_01l_00001", file1="ikuko_01l_00102", file2="ikuko_01l_00221", path=":fg/ikuko_01l/", id=10, lv=10, head="ikuko_01l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="suikuko0148", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“The guy’s always still all kinds of hard after c*mming!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“很多男主刚〇完〇还能坚挺如初！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「明明剛射精，卻常常還是很硬！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00024",
+		linknext = "0125_00026",
+		line = 447,
+	},
+	["0125_00026"] = {
+		{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00227", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="suikuko0149", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“The heroine always ",
+					{"exfont", style="italic"},
+					"I’m about to—![/i]’s three clicks before the guy c*ms!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“〇出来的三句之前就已经在说‘我已经──！！’了！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「射精的前三句話常常出現『我已經──！！』！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00025",
+		linknext = "0125_00027",
+		line = 462,
+	},
+	["0125_00027"] = {
+		{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00228", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[2800] = {
+				{"fg", file="ikuko_02l_00001", file1="ikuko_02l_00102", file2="ikuko_02l_00216", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=15, delay2=2800, mode=3, x=-5, y=-5},
+				{"fgact", ch="郁子10", id=10, act="振動下", loop=1, size=12.5, time=250, ease="easeinout_sine", timestamp=15, delay2=2800},
+			},
+			[2799] = {
+				{"transitiontime", time=300, timestamp=15, delay2=2800},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="suikuko0150", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“And, uhh, uhh... T-They’re always... dirty...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“还有，呃、呃……！通、通常都很色……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「還有，呃、呃……！常、常常很色……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00026",
+		linknext = "0125_00028",
+		line = 481,
+	},
+	["0125_00028"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bgm", stop=1},
+		{"se", id=4, stop=1, time=100},
+		{"se", id=5, stop=1, time=100},
+		{"fgact", ch="郁子10", id=10, lv=10, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", id=6, ch="美岬6", act="stopact"},
+		{"fgact", ch="美岬6", id=6, lv=6, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"cgact", file="cgact", id=1, act="stopact", lv=1},
+		{"bg", id=1, file="bg03_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"transitiontime", time=0},
+		{"ex", time=1000, func="wait"},
+		{"se", id=5, stop=1, time=1000},
+		{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00101", file2="ikuko_01m_00227", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="郁子10", id=10, act="振動下", loop=1, size=12.5, time=500, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="suikuko0151", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Arrrrrrrrrrrgh!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“啊～～～～！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「啊～～～～！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00027",
+		linknext = "0125_00029",
+		line = 511,
+	},
+	["0125_00029"] = {
+		{"se", id=5, loop=1, file="sumisaki0212", path=":vo/", vol=70},
+		{"fg", file="misaki_02m_00001", file1="misaki_02m_00106", file2="misaki_02m_00222", path=":fg/misaki_02m/", id=6, lv=6, head="misaki_02m", ch_origin="美岬", ch="美岬6", mw="mw", sync=0, mode=3, x=-705, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="美岬6", id=6, act="浮遊", loop=-1, size=15, time=500, ease="easeinout_sine"},
+		{"fg", file="tohka_02m_00001", file1="tohka_02m_00101", file2="tohka_02m_00220", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", alpha=0, ch_origin="桐香", ch="桐香8", mw="mw", sync=1, a_chr151=1, mode=3, x=595, y=-5},
+		{"fgact", ch="桐香8", id=8, lv=8, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="桐香8", id=8, act="移動", x=-250, y=0, time=700},
+		{"text"},
+		delay = {
+			[7000] = {
+				{"fg", file="tohka_02m_00001", file1="tohka_02m_00101", file3="tohka_02m_00305", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=16, delay2=7000, mode=3, x=345, y=-5},
+				{"fgact", ch="桐香8", id=8, act="浮遊", loop=2, size=15, time=50, ease="easeinout_sine", timestamp=16, delay2=7000},
+			},
+			[6999] = {
+				{"transitiontime", time=300, timestamp=16, delay2=7000},
+			},
+			[7400] = {
+				{"fg", file="tohka_02m_00001", file1="tohka_02m_00101", file2="tohka_02m_00222", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=17, delay2=7400, mode=3, x=345, y=-5},
+			},
+			[7399] = {
+				{"transitiontime", time=300, timestamp=17, delay2=7400},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="sutohka0142", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Sorry. We also would have accepted ‘they’re lax with contraception,’ ‘The guy turns see-through,’ ‘The guy yells “I’m c’mming!” exactly one click out,’ ‘The guy’s c*ck size changes every CG...’”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“很遗憾。其他还有‘男女主的避孕观念让人震惊’、‘通常会把男主的身体画成透明’、‘〇〇场景的前一句台词通常是“要〇了！”’、‘不同CG里，〇〇的大小也往往不同’。 ”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「很可惜。其他還有『常常沒有避孕觀念』、『主角的身體常常變透明』、『射精前一句常常是「要射了！！」』、『陰莖的大小常常隨著圖改變』。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00028",
+		linknext = "0125_00030",
+		line = 537,
+	},
+	["0125_00030"] = {
+		{"fg", file="tohka_02m_00001", file1="tohka_02m_00101", file2="tohka_02m_00228", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=345, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sutohka0143", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“‘When there’s a countdown, you never know if 0 is the moment the protagonist c*ms or if it’s the click after,’ ‘there’s a visible trend in the writer’s fetishes...’”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“还有‘〇〇倒计时的时候，搞不清究竟是变成零的那一刻就〇还是零之后再〇’，以及‘最好〇的场景往往就那么几个’。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「『常常搞不懂是射精倒數變成零時射精還是零之後射精』、『結果使用的場景常常是那幾個』。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00029",
+		linknext = "0125_00031",
+		line = 552,
+	},
+	["0125_00031"] = {
+		{"fg", file="rei_02m_00001", file1="rei_02m_00105", file2="rei_02m_00224", path=":fg/rei_02m/", id=9, lv=9, head="rei_02m", alpha=0, ch_origin="礼", ch="礼9", mw="mw", sync=1, a_chr151=1, mode=3, x=895, y=-5},
+		{"fgact", ch="礼9", id=9, lv=9, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="礼9", id=9, act="移動", x=-200, y=0, time=700},
+		{"text"},
+		delay = {
+			[2000] = {
+				{"fg", file="rei_01m_00001", file1="rei_01m_00101", file2="rei_01m_00228", path=":fg/rei_01m/", id=9, lv=9, head="rei_01m", ch_origin="礼", ch="礼9", mw="mw", sync=0, timestamp=18, delay2=2000, mode=3, x=695, y=-5},
+				{"bg", id=99, file="hame_head_00000", x=9300, y=2000, lv=99, path=":cg/hame_head/", sync=0, ev=1, timestamp=19, delay2=2000, bx=800, by=450},
+				{"cgact", file="cgact", id=99, lv=99, act="汎用アクション", zoom=15, time=0, ax=-9300, ay=-2000, timestamp=19, delay2=2000},
+				{"fgact", ch="礼9", id=9, act="振動下", loop=-1, size=12.5, time=50, ease="easeinout_sine", timestamp=18, delay2=2000},
+			},
+			[1999] = {
+				{"transitiontime", time=300, timestamp=19, delay2=2000},
+			},
+			[4700] = {
+				{"fgact", id=9, ch="礼9", act="stopact", timestamp=20, delay2=4700},
+				{"fg", file="rei_02m_00001", file1="rei_02m_00101", file3="rei_02m_00313", path=":fg/rei_02m/", id=9, lv=9, head="rei_02m", ch_origin="礼", ch="礼9", mw="mw", sync=0, timestamp=20, delay2=4700, mode=3, x=695, y=-5},
+				{"cgact", file="cgact", act="表示アクション", alpha=0, id=99, lv=99, alphadel=1, style="reset", timestamp=21, delay2=4700, zoom=15},
+			},
+			[4699] = {
+				{"transitiontime", time=300, timestamp=21, delay2=4700},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="surei0139", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“And ‘the heroine’s always like “This is my first time doing this, so I don’t know how well this is going to go,” then starts sucking like a vacuum cleaner.’”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“另外，还有‘女主明明说“因为是第一次〇〇所以不知道能不能顺利”，结果却吸到跟真空吸引一样’。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「還有『因為是第一次所以不知道能不能順利，但常常咻溜哧噗哧溜溜溜』也是。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00030",
+		linknext = "0125_00032",
+		line = 578,
+	},
+	["0125_00032"] = {
+		{"fg", file="ikuko_01m_00001", file1="ikuko_01m_00102", file2="ikuko_01m_00215", path=":fg/ikuko_01m/", id=10, lv=10, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="郁子10", id=10, act="振動下", loop=1, size=17.5, time=300, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[2500] = {
+				{"fg", file="ikuko_02m_00001", file1="ikuko_02m_00102", file2="ikuko_02m_00206", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=22, delay2=2500, mode=3, x=-5, y=-5},
+			},
+			[2499] = {
+				{"transitiontime", time=300, timestamp=22, delay2=2500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="suikuko0152", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Ahh, why couldn’t I think of those?! Dammit...!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“呜哇，原来还有这个！真不甘心……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「啊，還有那個啊！真不甘心……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00031",
+		linknext = "0125_00033",
+		line = 597,
+	},
+	["0125_00033"] = {
+		{"se", id=5, stop=1, time=1000},
+		{"fg", file="tohka_01m_00001", file1="tohka_01m_00101", file2="tohka_01m_00220", path=":fg/tohka_01m/", id=8, lv=8, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=345, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="sutohka0144", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Now then... Since you were unable to come up with 10 within the time limit, it’s penalty game time.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“那么……因为你没答出来，所以接下来要开始惩罚游戏了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「那麼……因為妳沒答出來，所以進入懲罰遊戲。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0125_00032",
+		linknext = "0125_00034",
+		line = 613,
+	},
+	["0125_00034"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"fgact", id=6, ch="美岬6", act="stopact"},
+		{"fg", mode=-1, id=6, ch="美岬6", ch_origin="美岬", lv=6, time=0, sync=0},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=8, ch="桐香8", ch_origin="桐香", lv=8, time=0, sync=0},
+		{"fg", mode=-1, id=9, ch="礼9", ch_origin="礼", lv=9, time=0, sync=0},
+		{"fg", mode=-1, id=10, ch="郁子10", ch_origin="郁子", lv=10, time=0, sync=0},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=15, file="blackback_00000", x=0, y=0, lv=15, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=14, file="mcg0101010101", x=0, y=0, path=":cg/mcg01/", lv=14, ev=1, bx=800, by=450},
+		{"cgact", file="cgact", id=14, lv=14, act="汎用アクション", zoom=300, time=0.5, ax=800, ay=450, x=0, y=0},
+		{"bg", id=1, file="bg03_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=15, file="blackback_00000", x=0, y=0, lv=15, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=14, file="mcg0101010101", x=0, y=0, path=":cg/mcg01/", lv=14, ev=1, bx=800, by=450, zoom=300},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=500, rule="eff_012_00000"},
+		{"ex", time=500, func="wait"},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=15, lv=15, time=100, alphadel=1, style="reset"},
+		{"cgact", file="cgact", id=14, lv=14, act="汎用アクション", zoom=100, time=50, ax=800, ay=450, x=0, y=0},
+		{"bg", id=20, file="syuchu_00001", x=0, y=0, lv=20, path=":cg/syuchu/", ev=1, ax=805, ay=455, bx=-5, by=-5},
+		{"cgact", file="cgact", id=20, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, lv=20, x=0, y=0},
+		{"fg", file="misaki_01f_00001", file1="misaki_01f_00101", file2="misaki_01f_00225", path=":fg/misaki_01f/", id=30, ch="美岬", lv=21, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		delay = {
+			[100] = {
+				{"cgact", file="cgact", id=14, act="浮遊横", loop=5, size=5, time=30, ease="easeinout_sine", timestamp=23, delay2=100, lv=14, x=0, y=0, zoom=100},
+			},
+			[200] = {
+				{"bg", id=21, file="syuchu_00002", x=0, y=0, lv=21, path=":cg/syuchu/", ev=1, timestamp=24, delay2=200, ax=805, ay=455, bx=-5, by=-5},
+				{"cgact", file="cgact", id=21, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, timestamp=24, delay2=200, lv=21, x=0, y=0},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="sumisaki0213", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					{"exfont", size="f4"},
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			en = {
+				{
+					{"exfont", size="f4"},
+					name = {"美岬", "Misaki"},
+					"“Why me?!”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			cn = {
+				{
+					{"exfont", size="f4"},
+					name = {"美岬"},
+					"“为什么！？”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			tw = {
+				{
+					{"exfont", size="f4"},
+					name = {"美岬"},
+					"「為什麼！？」",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+		},
+		linkback = "0125_00033",
+		linknext = "block_00035",
+		line = 668,
+	},
+	block_00035 = {
+		{"ex", time=10000, func="wait"},
+		{"text"},
+		linkback = "0125_00034",
+		line = 671,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

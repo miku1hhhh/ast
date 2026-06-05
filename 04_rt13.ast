@@ -1,0 +1,7038 @@
+astver = 2.0
+ast = {
+	["0069_00001"] = {
+		{"savetitle", text="04_rt13", ja="ずちゅう♥　キタ―――!!", en="R-Right there!", cn="插入♥ 来啦！！", tw="插入♥ 來啦！！"},
+		{"eval", exp="g.04_rt13=1"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bg", id=1, file="bg17_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg17_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_033_00000"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"After school, the following week...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"隔天的放学后。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"隔天的放學後。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "0069_00002",
+		line = 19,
+	},
+	["0069_00002"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s time for our training for the Hamedori Raw Outbreak.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"今天是‘Hamedori大量出现hame’的事前研修──也就是训练日。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"今天是『Hamedori大量出現hame』的事前研修──也就是訓練日。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00001",
+		linknext = "0069_00003",
+		line = 29,
+	},
+	["0069_00003"] = {
+		{"bgm", file="bgm08", vol=100},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=7, lv=7, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ7", mw="mw", sync=1, a_chr151=1, mode=3, x=-5, y=95},
+		{"fgact", ch="ハメ7", id=7, lv=7, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ7", id=7, act="移動", x=0, y=-100, time=700},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00219", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=7, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“It’s surprisingly comfy in here...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“这里面，意外地舒适呢……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「這裡面，意外地舒適呢……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00002",
+		linknext = "0069_00004",
+		line = 45,
+	},
+	["0069_00004"] = {
+		{"fgact", ch="ハメ7", id=7, act="浮遊横", loop=2, size=10, time=250, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I try on the Hamedori outfit and I’m shocked at how easy it is to move around in.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我试着穿上了主办方准备的Hamedori君的布偶装，结果意外地方便行动。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我試著穿上了主辦方準備的Hamedori君的布偶裝，結果意外地方便行動。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00003",
+		linknext = "0069_00005",
+		line = 57,
+	},
+	["0069_00005"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"With wings for arms I’m not exactly dexterous, but I can run around with no trouble.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然有手臂呈现翅膀状、导致手掌部分不太自由这个难点，可是腿部却相当灵活。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然有手臂呈現翅膀狀、導致手掌部分不太自由這個難點，可是腿部卻相當靈活。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00004",
+		linknext = "0069_00006",
+		line = 67,
+	},
+	["0069_00006"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The fact that I can move my lower half freely seems... like a deliberate design.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"下半身的可动范围特别大──也不能说我没有感觉到某些特别的意图。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"下半身的可動範圍特別大──也不能說我沒有感覺到某些特別的意圖。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00005",
+		linknext = "0069_00007",
+		line = 77,
+	},
+	["0069_00007"] = {
+		{"fgact", ch="ハメ7", id=7, lv=7, act="表示アクション", alpha=0, alphadel=1, style="reset", time=500},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00102", file2="jun_01f_00203", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=7, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“What a sight...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不过话又说回来……还真是惊人的光景啊……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不過話又說回來……還真是驚人的光景啊……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00006",
+		linknext = "0069_00008",
+		line = 91,
+	},
+	["0069_00008"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I murmur to myself as I look around.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我环顾四周，不禁喃喃自语道。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我環顧四周，不禁喃喃自語道。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00007",
+		linknext = "0069_00009",
+		line = 101,
+	},
+	["0069_00009"] = {
+		{"bg", id=2, file="bg17_1l_00000", x=-200, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=6, lv=6, head="hame_01m", ch_origin="ハメ", ch="ハメ6", mw="mw", sync=0, mode=3, x=395, y=95},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=7, lv=7, head="hame_01m", ch_origin="ハメ", ch="ハメ7", mw="mw", sync=0, mode=3, x=-405, y=95},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=8, lv=8, head="hame_01m", ch_origin="ハメ", ch="ハメ8", mw="mw", sync=0, mode=3, x=-1205, y=95},
+		{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=5, lv=5, head="hame_01m", ch_origin="ハメ", ch="ハメ5", mw="mw", sync=0, mode=3, x=-5, y=-105},
+		{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=4, lv=4, head="hame_01m", ch_origin="ハメ", ch="ハメ4", mw="mw", sync=0, mode=3, x=-805, y=-105},
+		{"transitiontime", time=500},
+		{"cgact", file="cgact", id=2, act="移動", x=395, y=-5, time=20000, lv=2},
+		{"fgact", ch="ハメ6", id=6, act="移動", x=600, y=0, time=20000},
+		{"fgact", ch="ハメ7", id=7, act="移動", x=600, y=0, time=20000},
+		{"fgact", ch="ハメ8", id=8, act="移動", x=600, y=0, time=20000},
+		{"fgact", ch="ハメ5", id=5, act="移動", x=600, y=0, time=20000},
+		{"fgact", ch="ハメ4", id=4, act="移動", x=600, y=0, time=20000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The schoolyard is filled as far as the eye can see with Hamedoris.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"放眼望去──在操场上尽是Hamedori君。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"放眼望去──在操場上盡是Hamedori君。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00008",
+		linknext = "0069_00010",
+		line = 124,
+	},
+	["0069_00010"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Wherever you look, there they are.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"前后左右，不论往哪边望去都是Hamedori君。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"前後左右，不論往哪邊望去都是Hamedori君。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00009",
+		linknext = "0069_00011",
+		line = 134,
+	},
+	["0069_00011"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s almost like...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"怎么说呢，这简直就像是────",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"怎麼說呢，這簡直就像是────",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00010",
+		linknext = "0069_00012",
+		line = 144,
+	},
+	["0069_00012"] = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, lv=2, time=300, alphadel=1, style="reset", x=395, y=-5},
+		{"fgact", ch="ハメ4", id=4, lv=4, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="ハメ5", id=5, lv=5, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="ハメ6", id=6, lv=6, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="ハメ7", id=7, lv=7, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="ハメ8", id=8, lv=8, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=3, lv=3, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ3", mw="mw", sync=1, a_chr151=1, mode=3, x=-5, y=95},
+		{"fgact", ch="ハメ3", id=3, lv=3, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ3", id=3, act="移動", x=0, y=-100, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0271", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "ハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Hamedori"},
+					"“Like some kind of fever dream, right?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "Hamedori君"},
+					"“像是发高烧的时候做的噩梦一样呢……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "Hamedori君"},
+					"「像是發高燒的時候做的噩夢一樣呢……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00011",
+		linknext = "0069_00013",
+		line = 171,
+	},
+	["0069_00013"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"One of the other birds finishes my thought for me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"站在我身边的Hamedori君简直代言了我的心声。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"站在我身邊的Hamedori君簡直代言了我的心聲。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00012",
+		linknext = "0069_00014",
+		line = 181,
+	},
+	["0069_00014"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00219", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Wait... Asa?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“这声音──是麻沙酱吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「這聲音──是麻沙醬嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00013",
+		linknext = "0069_00015",
+		line = 193,
+	},
+	["0069_00015"] = {
+		{"fgact", ch="ハメ3", id=3, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="asane_01f_00001", file1="asane_01f_00101", file2="asane_01f_00220", path=":fg/asane_01f/", id=30, ch="麻沙音", lv=3, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0272", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“That’s my name, don’t wear it out. Your beloved sister, Asa, a.k.a. Asadori!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“没错，正是哥哥钟爱的妹妹麻沙酱，也是Hamedori君喔……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「沒錯，正是哥哥鍾愛的妹妹麻沙醬，也是Hamedori君喔……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00014",
+		linknext = "0069_00016",
+		line = 207,
+	},
+	["0069_00016"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“How did you know it was me?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“真亏你认得出我来啊？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「真虧妳認得出我來啊？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00015",
+		linknext = "0069_00017",
+		line = 219,
+	},
+	["0069_00017"] = {
+		{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=3, lv=3, head="hame_01m", ch_origin="ハメ", ch="ハメ3", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fg", file="asane_01f_00001", file1="asane_01f_00101", file2="asane_01f_00220", path=":fg/asane_01f/", id=30, ch="麻沙音", lv=3, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0273", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“Heh, I don’t think you understand how well I know you. I’d recognize your voice anywhere, no matter what you were wearing!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“嘿，你以为我有多依赖哥哥啊……为了能够让此身撒娇，不论是什么打扮，我都会认出来给你看……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「嘿，你以為我有多依賴哥哥啊……為了能夠讓此身撒嬌，不論是什麼打扮，我都會認出來給你看……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00016",
+		linknext = "0069_00018",
+		line = 235,
+	},
+	["0069_00018"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00214", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Who would’ve thought being a spoiled brat would give you that kind of talent...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“撒娇鬼到了这种地步已经算是一种才能了呢……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「撒嬌鬼到了這種地步已經算是一種才能了呢……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00017",
+		linknext = "0069_00019",
+		line = 247,
+	},
+	["0069_00019"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The Asane in World B knew that I had been switched, so I’m not being entirely flippant here.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"实际上B世界的麻沙音也马上就注意到我交换了，所以搞不好还真不是胡诌的呢。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"實際上B世界的麻沙音也馬上就注意到我交換了，所以搞不好還真不是胡謅的呢。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00018",
+		linknext = "0069_00020",
+		line = 257,
+	},
+	["0069_00020"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“It’s rare to see you getting involved with an event.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“可是……还真是难得啊。麻沙酱居然会参加这种活动。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「可是……還真是難得啊。麻沙醬居然會參加這種活動。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00019",
+		linknext = "0069_00021",
+		line = 269,
+	},
+	["0069_00021"] = {
+		{"fg", file="asane_01f_00001", file1="asane_01f_00101", file2="asane_01f_00209", path=":fg/asane_01f/", id=30, ch="麻沙音", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0274", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“I thought Nanase was asking me to supervise some kind of mass orgy and I thought damn that sounds cool so I obviously accepted...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“不，只是因为奈奈濑姐跟我说了大量的Hamedori如何如何的，问我要不要参加活动，我想说‘那是啥也太棒了吧’就迫不及待地答应了……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「不，只是因為奈奈瀨姊跟我說了大量的Hamedori如何如何的，問我要不要參加活動，我想說『那是啥也太棒了吧』就迫不及待地答應了……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00020",
+		linknext = "0069_00022",
+		line = 282,
+	},
+	["0069_00022"] = {
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=3, lv=3, head="hame_01m", ch_origin="ハメ", ch="ハメ3", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fg", file="asane_01f_00001", file1="asane_01f_00101", file2="asane_01f_00205", path=":fg/asane_01f/", id=30, ch="麻沙音", lv=3, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0275", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“And now... I’m here.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“然后……就变成这样了……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「然後……就變成這樣了……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00021",
+		linknext = "0069_00023",
+		line = 298,
+	},
+	["0069_00023"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00215", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“You gotta listen to what people are saying to you, Sis...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“人家说话怎么可以不好好听呢？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「人家說話怎麼可以不好好聽呢？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00022",
+		linknext = "0069_00024",
+		line = 310,
+	},
+	["0069_00024"] = {
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=4, lv=4, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ4", mw="mw", sync=1, a_chr151=1, mode=3, x=-605, y=-35},
+		{"fgact", ch="ハメ4", id=4, lv=4, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ4", id=4, act="移動", x=200, y=0, time=700},
+		{"fgact", ch="ハメ3", id=3, act="移動", x=400, y=0, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase0308", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬", "ハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Hamedori"},
+					"“You’re one to talk.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "Hamedori君"},
+					"“你有资格说这句话吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "Hamedori君"},
+					"「你有資格說這句話嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00023",
+		linknext = "0069_00025",
+		line = 326,
+	},
+	["0069_00025"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00102", file2="jun_01f_00209", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Oof, I got the verbal smackdown from Hamedori.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“呜哇，居然被Hamedori君干谯了……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「嗚哇，居然被Hamedori君幹譙了……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00024",
+		linknext = "0069_00026",
+		line = 338,
+	},
+	["0069_00026"] = {
+		{"fg", file="hame_02m_00001", path=":fg/hame_02m/", id=3, lv=3, head="hame_02m", ch_origin="ハメ", ch="ハメ3", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=300},
+		{"fg", file="asane_01f_00001", file1="asane_01f_00101", file2="asane_01f_00205", path=":fg/asane_01f/", id=30, ch="麻沙音", lv=3, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0276", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“More like the verbal dick-down!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“那样听起来不就像是被Hamedori君给上了一样吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「那樣聽起來不就像是被Hamedori君給上了一樣嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00025",
+		linknext = "0069_00027",
+		line = 354,
+	},
+	["0069_00027"] = {
+		{"fgact", ch="ハメ4", id=4, act="振動下", loop=1, size=12.5, time=400, ease="easeinout_sine"},
+		{"fg", file="nanase_01f_00001", file1="nanase_01f_00101", file2="nanase_01f_00210", path=":fg/nanase_01f/", id=30, ch="奈々瀬", lv=4, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase0309", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬", "ナナドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanadori"},
+					"“Looks like the Tachibana siblings are exactly the same even when pretending to be Hamedoris. It’s kinda reassuring.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈dori君"},
+					"“唉……就算穿上了布偶装橘兄妹也还是一成不变呢……看着都有种安心感了……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈dori君"},
+					"「唉……就算穿上了布偶裝橘兄妹也還是一成不變呢……看著都有種安心感了……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00026",
+		linknext = "0069_00028",
+		line = 368,
+	},
+	["0069_00028"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00102", file2="jun_01f_00219", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Oh? Is that you, Nanase?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“喔喔……是、是奈奈濑啊……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「喔喔……是、是奈奈瀨啊……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00027",
+		linknext = "0069_00029",
+		line = 380,
+	},
+	["0069_00029"] = {
+		{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=3, lv=3, head="hame_02m", ch_origin="ハメ", ch="ハメ3", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=100},
+		{"fgact", ch="ハメ3", id=3, act="振動下", loop=4, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="asane_01f_00001", file1="asane_01f_00103", file2="asane_01f_00213", path=":fg/asane_01f/", id=30, ch="麻沙音", lv=3, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0277", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“Of course Nanase would exude a perfect high-class slutty aura even from within these gross costumes. And here I thought one of the Hamedoris had gotten way preppier.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“不、不不不愧是奈奈濑姐就算穿着这种猎奇恶心的布偶装也完全无法隐藏那高贵的婊子气场让我不禁感到Hamedori君看起来都有点像辣妹了……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「不、不不不愧是奈奈瀨姊就算穿著這種獵奇噁心的布偶裝也完全無法隱藏那高貴的婊子氣場讓我不禁感到Hamedori君看起來都有點像辣妹了……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00028",
+		linknext = "0069_00030",
+		line = 397,
+	},
+	["0069_00030"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00214", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Oh, come on...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“太勉强了吧？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「太勉強了吧？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00029",
+		linknext = "0069_00031",
+		line = 409,
+	},
+	["0069_00031"] = {
+		{"fgact", ch="ハメ4", id=4, act="移動", x=-300, y=0, time=700},
+		{"fgact", ch="ハメ3", id=3, act="移動", x=300, y=0, time=700},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=5, lv=5, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ5", mw="mw", sync=1, a_chr151=1, mode=3, x=-5, y=195},
+		{"fgact", ch="ハメ5", id=5, lv=5, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ5", id=5, act="移動", x=0, y=-100, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0191", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ", "ハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hamedori"},
+					"“There you are! I’ve been looking for you guys!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "Hamedori君"},
+					"“啊，找到了──！原来大家都在这里啊，让我找了好久喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "Hamedori君"},
+					"「啊，找到了──！原來大家都在這裡啊，讓我找了好久喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00030",
+		linknext = "0069_00032",
+		line = 426,
+	},
+	["0069_00032"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00201", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Ah, you must be Hame-loli.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“啊，是Hame罗莉君耶！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「啊，是Hame羅莉君耶！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00031",
+		linknext = "0069_00033",
+		line = 438,
+	},
+	["0069_00033"] = {
+		{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=5, lv=5, head="hame_01m", ch_origin="ハメ", ch="ハメ5", mw="mw", sync=0, mode=3, x=-5, y=95},
+		{"transitiontime", time=100},
+		{"fgact", ch="ハメ5", id=5, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="hinami_01f_00001", file1="hinami_01f_00101", file2="hinami_01f_00218", path=":fg/hinami_01f/", id=30, ch="ヒナミ", lv=5, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0192", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ", "ヒナドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinadori"},
+					"“I’m not a Hame-loli!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏dori君"},
+					"“我才不是Hame萝莉呢！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛dori君"},
+					"「我才不是Hame蘿莉呢！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00032",
+		linknext = "0069_00034",
+		line = 455,
+	},
+	["0069_00034"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The identity of the person within the costume is immediately obvious to me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就算穿上了布偶装，也毫无误认余地的前辈。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就算穿上了布偶裝，也毫無誤認餘地的前輩。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00033",
+		linknext = "0069_00035",
+		line = 465,
+	},
+	["0069_00035"] = {
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=5, lv=5, head="hame_01m", ch_origin="ハメ", ch="ハメ5", mw="mw", sync=0, mode=3, x=-5, y=95},
+		{"transitiontime", time=300},
+		{"fg", file="hinami_01f_00001", file1="hinami_01f_00101", file2="hinami_01f_00212", path=":fg/hinami_01f/", id=30, ch="ヒナミ", lv=5, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0193", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ", "ヒナドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinadori"},
+					"“Anyway... Who’s that Hamedori that’s been following you around for the last while, Jun?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏dori君"},
+					"“话又说回来……从刚才就一直跟在淳君背后的Hamedori君是哪里来的孩子呢？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛dori君"},
+					"「話又說回來……從剛才就一直跟在淳君背後的Hamedori君是哪裡來的孩子呢？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00034",
+		linknext = "0069_00036",
+		line = 481,
+	},
+	["0069_00036"] = {
+		{"bgm", stop=1},
+		{"fgact", ch="ハメ5", id=5, lv=5, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="ハメ4", id=4, lv=4, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="ハメ3", id=3, lv=3, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00219", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=3, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Huh...?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“咦……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「咦……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00035",
+		linknext = "0069_00037",
+		line = 500,
+	},
+	["0069_00037"] = {
+		{"fg", file="hame_01l_00001", path=":fg/hame_01l/", id=7, lv=7, head="hame_01l", alpha=0, ch_origin="ハメ", ch="ハメ7", mw="mw", sync=1, a_chr151=1, mode=3, x=-405, y=145},
+		{"fgact", ch="ハメ7", id=7, lv=7, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ7", id=7, act="移動", x=0, y=-100, time=700},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00102", file2="jun_01f_00217", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=7, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Whoa, you weren’t kidding! Who the hell are you?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“呜哇、还真的有人！你谁啊！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「嗚哇、還真的有人！你誰啊！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00036",
+		linknext = "0069_00038",
+		line = 515,
+	},
+	["0069_00038"] = {
+		{"bgm", file="bgm10", vol=100},
+		{"fgact", ch="ハメ7", id=7, act="振動下", loop=2, size=12.5, time=250, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino0200", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃", "ハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Hamedori"},
+					"“Hame-hame...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃", "Hamedori君"},
+					"“Hamehame……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃", "Hamedori君"},
+					"「Hamehame……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00037",
+		linknext = "0069_00039",
+		line = 529,
+	},
+	["0069_00039"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00203", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“This seems... indubitable.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不是‘原来原来’吗……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不是『原來原來』嗎……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00038",
+		linknext = "0069_00040",
+		line = 541,
+	},
+	["0069_00040"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00201", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=7, lv=7, head="hame_01m", ch_origin="ハメ", ch="ハメ7", mw="mw", sync=0, mode=3, x=-405, y=45},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“How long have you been there, Fumino?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“文乃……你是什么时候来的啊？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「文乃……妳是什麼時候來的啊？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00039",
+		linknext = "0069_00041",
+		line = 556,
+	},
+	["0069_00041"] = {
+		{"fgact", ch="ハメ7", id=7, act="振動下", loop=1, size=12.5, time=200, ease="easeinout_sine"},
+		{"fg", file="fumino_01f_00007", file1="fumino_01f_00101", file2="fumino_01f_00203", path=":fg/fumino_01f/", id=30, ch="文乃", lv=7, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino0201", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃", "ドスケベジャンヌドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Hame Joan of Dori"},
+					"“I have been following you ever since you put on that costume.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃", "超变态圣女贞德dori君"},
+					"“在淳之介先生以那打扮示人的时候，我就已经随侍在您身后了……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃", "超變態聖女貞德dori君"},
+					"「在淳之介先生以那打扮示人的時候，我就已經隨侍在您身後了……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00040",
+		linknext = "0069_00042",
+		line = 570,
+	},
+	["0069_00042"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“So, a while then... How did you know it was me?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“那不就是一直都在了吗……真亏你认得出我来啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「那不就是一直都在了嗎……真虧妳認得出我來啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00041",
+		linknext = "0069_00043",
+		line = 582,
+	},
+	["0069_00043"] = {
+		{"fg", file="fumino_01f_00007", file1="fumino_01f_00101", file3="fumino_01f_00302", path=":fg/fumino_01f/", id=30, ch="文乃", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"fgact", ch="ハメ7", id=7, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino0202", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃", "ドスケベジャンヌドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Hame Joan of Dori"},
+					"“Any servant worth their salt would recognize their master regardless of his garb.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃", "超变态圣女贞德dori君"},
+					"“若只是换了身衣服就认不出主人，岂敢自称为随从……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃", "超變態聖女貞德dori君"},
+					"「若只是換了身衣服就認不出主人，豈敢自稱為隨從……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00042",
+		linknext = "0069_00044",
+		line = 596,
+	},
+	["0069_00044"] = {
+		{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=3, lv=3, head="hame_02m", ch_origin="ハメ", ch="ハメ3", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="ハメ3", id=3, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="asane_01f_00001", file1="asane_01f_00101", file2="asane_01f_00209", path=":fg/asane_01f/", id=30, ch="麻沙音", lv=3, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0278", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“Hey, are you trying to steal my thunder?! I’ll have you know that I could recognize my brother in there even if he wasn’t in there!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“哼，什么啊，那种程度就自鸣得意了吗！？告诉你，我的话就算哥哥不在里面我也认得出是哥哥啦！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「哼，什麼啊，那種程度就自鳴得意了嗎！？告訴妳，我的話就算哥哥不在裡面我也認得出是哥哥啦！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00043",
+		linknext = "0069_00045",
+		line = 612,
+	},
+	["0069_00045"] = {
+		{"bgm", stop=1},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00214", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Uhhh...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“你到底是认到了什么啊？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「妳到底是認到了什麼啊？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00044",
+		linknext = "0069_00046",
+		line = 625,
+	},
+	["0069_00046"] = {
+		{"fgact", ch="ハメ3", id=3, lv=3, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="ハメ7", id=7, lv=7, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"bg", id=2, file="bg17_1l_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=6, lv=6, head="hame_01m", ch_origin="ハメ", ch="ハメ6", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="ハメ6", id=6, act="振動下", loop=20, size=-25, time=200, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0246", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬", "ハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Hamedori"},
+					"“Good Hamedorning to you all! It’s me, SHO’s wonderful mascot, Hamedori!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬", "Hamedori君"},
+					"“大家～，早午晚上啪啪好～！我是SHO官方吉祥物，Hamedori君hame～！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬", "Hamedori君"},
+					"「大家～，早午晚上啪啪好～！我是SHO官方吉祥物，Hamedori君hame～！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00045",
+		linknext = "0069_00047",
+		line = 646,
+	},
+	["0069_00047"] = {
+		{"bgm", file="bgm02", vol=100},
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"fg", mode=-1, id=6, ch="ハメ6", ch_origin="ハメ", lv=6, time=0, sync=0},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=5, lv=5, head="hame_01m", ch_origin="ハメ", ch="ハメ5", mw="mw", sync=0, mode=3, x=-5, y=95},
+		{"transitiontime", time=300},
+		{"fgact", ch="ハメ5", id=5, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="hinami_01f_00001", file1="hinami_01f_00102", file2="hinami_01f_00209", path=":fg/hinami_01f/", id=30, ch="ヒナミ", lv=5, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0194", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ", "ヒナドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinadori"},
+					"“Whoa, that person’s really good at Hamedori-ing! Think they’re a professional?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏dori君"},
+					"“哇……这个人模仿Hamedori君模仿的好像喔……！是职业的吗！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛dori君"},
+					"「哇……這個人模仿Hamedori君模仿的好像喔……！是職業的嗎！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00046",
+		linknext = "0069_00048",
+		line = 667,
+	},
+	["0069_00048"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00218", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Meesa has no clue who could possibly be in there.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“完全无法想像里面的人是谁呢美岬……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「完全無法想像裡面的人是誰呢美岬……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00047",
+		linknext = "0069_00049",
+		line = 679,
+	},
+	["0069_00049"] = {
+		{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=15, lv=15, head="hame_02m", alpha=0, ch_origin="ハメ", ch="ハメ15", mw="mw", sync=1, a_chr151=1, mode=3, x=795, y=-35},
+		{"fgact", ch="ハメ15", id=15, lv=15, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ15", id=15, act="移動", x=-150, y=0, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hamedori0033", path=":vo/", ch="hamedori"},
+			},
+			ja = {
+				{
+					name = {"ハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ハメドリくん", "Hamedori"},
+					"“Let’s make this Hamedori Raw Outbreak an event to remember!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ハメドリくん", "Hamedori君"},
+					[[“为了"Hamedori君大量出现hame"，大家一起加油吧啪啪～！”]],
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ハメドリくん", "Hamedori君"},
+					[[「為了"Hamedori君大量出現hame"，大家一起加油吧啪啪～！」]],
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00048",
+		linknext = "0069_00050",
+		line = 694,
+	},
+	["0069_00050"] = {
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=3, lv=3, head="hame_01m", ch_origin="ハメ", ch="ハメ3", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=300},
+		{"fg", file="asane_01f_00001", file1="asane_01f_00101", file2="asane_01f_00201", path=":fg/asane_01f/", id=30, ch="麻沙音", lv=3, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0279", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“Whoa, this one’s the real deal.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“啊，真正的真货出现了……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「啊，真正的真貨出現了……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00049",
+		linknext = "0069_00051",
+		line = 709,
+	},
+	["0069_00051"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00207", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=7},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I didn’t know you were involved, Mizuhiki.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“水引酱也参加了喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「水引醬也參加了喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00050",
+		linknext = "0069_00052",
+		line = 721,
+	},
+	["0069_00052"] = {
+		{"bgm", file="bgm02", vol=100},
+		{"fg", mode=-1, id=3, ch="ハメ3", ch_origin="ハメ", lv=3, time=0, sync=0},
+		{"fg", mode=-1, id=5, ch="ハメ5", ch_origin="ハメ", lv=5, time=0, sync=0},
+		{"bg", id=2, file="bg17_1l_00000", x=-300, y=-100, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="hame_02l_00001", path=":fg/hame_02l/", id=15, lv=15, head="hame_02l", ch_origin="ハメ", ch="ハメ15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"fg", file="mizuhiki_01f_00002", file1="mizuhiki_01f_00101", file2="mizuhiki_01f_00209", file4="mizuhiki_01f_00401", path=":fg/mizuhiki_01f/", id=16, lv=16, head="mizuhiki_01f", alpha=0, ch_origin="水引", ch="水引16", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[2000] = {
+				{"fgact", ch="ハメ15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=1, delay2=2000},
+			},
+			[2800] = {
+				{"fg", file="mizuhiki_01f_00002", file1="mizuhiki_01f_00101", file2="mizuhiki_01f_00229", file4="mizuhiki_01f_00401", path=":fg/mizuhiki_01f/", id=16, lv=16, head="mizuhiki_01f", alpha=0, ch_origin="水引", ch="水引16", mw="mw", sync=0, timestamp=2, delay2=2800, mode=3, x=-5, y=-5},
+			},
+			[2799] = {
+				{"transitiontime", time=300, timestamp=2, delay2=2800},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="mizuhiki0518", path=":vo/", ch="mizuhiki"},
+			},
+			ja = {
+				{
+					name = {"水引", "オリジンハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Origin Hamedori"},
+					"“Ah, Tachibana? Yeah! An event of this scale, of course I’m here!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引", "原创Hamedori君"},
+					"“啊，是橘君……？啪好。这种活动，我实在是不能不参加嘛。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引", "原創Hamedori君"},
+					"「啊，是橘君……？啪好。這種活動，我實在是不能不參加嘛。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00051",
+		linknext = "0069_00053",
+		line = 747,
+	},
+	["0069_00053"] = {
+		{"fgact", ch="水引16", id=16, lv=16, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00206", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=16, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I guess... But is this really okay for you?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“或许是吧……但是这样好吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「或許是吧……但是這樣好嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00052",
+		linknext = "0069_00054",
+		line = 761,
+	},
+	["0069_00054"] = {
+		{"fg", file="mizuhiki_01f_00002", file1="mizuhiki_01f_00101", file2="mizuhiki_01f_00228", file4="mizuhiki_01f_00401", path=":fg/mizuhiki_01f/", id=30, ch="水引", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="mizuhiki0519", path=":vo/", ch="mizuhiki"},
+			},
+			ja = {
+				{
+					name = {"水引", "オリジンハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Origin Hamedori"},
+					"“You guys are all with me... and we’re not gonna get attacked suddenly like last time.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引", "原创Hamedori君"},
+					"“因为听说橘君你们也会一起参加……而且应该也不需要担心会像之前一样突然被袭击了嘛。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引", "原創Hamedori君"},
+					"「因為聽說橘君你們也會一起參加……而且應該也不需要擔心會像之前一樣突然被襲擊了嘛。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00053",
+		linknext = "0069_00055",
+		line = 774,
+	},
+	["0069_00055"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00102", file2="jun_01f_00209", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=16},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Attacked?! What the hell happened last time?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“被袭击……！？还发生过那种事情吗……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「被襲擊……！？還發生過那種事情嗎……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00054",
+		linknext = "0069_00056",
+		line = 786,
+	},
+	["0069_00056"] = {
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"fg", file="hame_02m_00001", path=":fg/hame_02m/", id=15, lv=15, head="hame_02m", ch_origin="ハメ", ch="ハメ15", mw="mw", sync=0, mode=3, x=395, y=-35},
+		{"transitiontime", time=300},
+		{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=6, lv=6, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ6", mw="mw", sync=1, a_chr151=1, mode=3, x=-405, y=65},
+		{"fgact", ch="ハメ6", id=6, lv=6, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ6", id=6, act="移動", x=0, y=-100, time=700},
+		{"fg", file="misaki_01f_00001", file1="misaki_01f_00103", file2="misaki_01f_00220", path=":fg/misaki_01f/", id=30, ch="美岬", lv=6, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0247", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬", "ミサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misadori"},
+					"“Ohhh? You didn’t know, Tachidori? Hamedori’s got a special hole built into his little butt for easy access!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬", "美岬dori君"},
+					"“咦咦～？橘dori君你不知道吗hame？Hamedori君在屁股的部分有一个插入用的洞洞喔啪啪！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬", "美岬dori君"},
+					"「咦咦～？橘dori君你不知道嗎hame？Hamedori君在屁股的部分有一個插入用的洞洞喔啪啪！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00055",
+		linknext = "0069_00057",
+		line = 807,
+	},
+	["0069_00057"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00102", file2="jun_01f_00217", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=16},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Wait, really? Holy shit, you’re right!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“咦……？啊、真的……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「咦……？啊、真的……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00056",
+		linknext = "0069_00058",
+		line = 819,
+	},
+	["0069_00058"] = {
+		{"fgact", ch="ハメ6", id=6, act="移動", x=-300, y=0, time=700},
+		{"fgact", ch="ハメ15", id=15, act="移動", x=250, y=0, time=700},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=3, lv=3, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ3", mw="mw", sync=1, a_chr151=1, mode=3, x=-5, y=95},
+		{"fgact", ch="ハメ3", id=3, lv=3, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ3", id=3, act="移動", x=0, y=-100, time=700},
+		{"fg", file="asane_01f_00001", file1="asane_01f_00101", file2="asane_01f_00201", path=":fg/asane_01f/", id=30, ch="麻沙音", lv=3, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0280", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“Oh yeah, they did have that slogan: ‘Finally, a fuckable mascot!’ didn’t they...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“这么说起来，我好像确实看过‘能干的吉祥物（超直球）’这种标语呢……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「這麼說起來，我好像確實看過『能幹的吉祥物（超直球）』這種標語呢……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00057",
+		linknext = "0069_00059",
+		line = 837,
+	},
+	["0069_00059"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00102", file2="jun_01f_00206", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=16},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Every day we stray further from the light... Are you really okay with this, Mizuhiki?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“还真有那种好事分子啊……水引酱……之前都没出事吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「還真有那種好事分子啊……水引醬……之前都沒出事嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00058",
+		linknext = "0069_00060",
+		line = 849,
+	},
+	["0069_00060"] = {
+		{"fgact", ch="ハメ15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="mizuhiki_01f_00002", file1="mizuhiki_01f_00101", file2="mizuhiki_01f_00229", file4="mizuhiki_01f_00401", path=":fg/mizuhiki_01f/", id=30, ch="水引", lv=15, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="mizuhiki0520", path=":vo/", ch="mizuhiki"},
+			},
+			ja = {
+				{
+					name = {"水引", "オリジンハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Origin Hamedori"},
+					"“It’s fine, I attached a sex sleeve to the hole that’ll make short work of any cock that finds its way inside!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引", "原创Hamedori君"},
+					"“我在插入口里面安装了飞机杯……不论是怎样的小鸡鸡，在那个前面都是一击必杀的喔？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引", "原創Hamedori君"},
+					"「我在插入口裡面安裝了飛機杯……不論是怎樣的小雞雞，在那個前面都是一擊必殺的喔？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00059",
+		linknext = "0069_00061",
+		line = 863,
+	},
+	["0069_00061"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00102", file2="jun_01f_00209", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=16},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Whoa... What kind of sleeve could do such a thing?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“这么厉害吗……！究竟安装了什么样的飞机杯……！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「這麼厲害嗎……！究竟安裝了什麼樣的飛機杯……！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00060",
+		linknext = "0069_00062",
+		line = 875,
+	},
+	["0069_00062"] = {
+		{"fgact", ch="ハメ15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="mizuhiki_01f_00002", file1="mizuhiki_01f_00101", file2="mizuhiki_01f_00202", file4="mizuhiki_01f_00401", path=":fg/mizuhiki_01f/", id=30, ch="水引", lv=15, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="mizuhiki0521", path=":vo/", ch="mizuhiki"},
+			},
+			ja = {
+				{
+					name = {"水引", "オリジンハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Origin Hamedori"},
+					"“Hah, maybe it’s an artisanal piece from the master craftsman known as @jun_fappist?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引", "原创Hamedori君"},
+					[[“嘻嘻……该说是名匠"@junonanist"大师的杰作吧？”]],
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引", "原創Hamedori君"},
+					[[「嘻嘻……該說是名匠"@junonanist"大師的傑作吧？」]],
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00061",
+		linknext = "0069_00063",
+		line = 889,
+	},
+	["0069_00063"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00219", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=16},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Huh? Me?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“咦────我的？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「咦────我的？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00062",
+		linknext = "0069_00064",
+		line = 901,
+	},
+	["0069_00064"] = {
+		{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=15, lv=15, head="hame_02m", ch_origin="ハメ", ch="ハメ15", mw="mw", sync=0, mode=3, x=595, y=-5},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01f_00002", file1="mizuhiki_01f_00101", file2="mizuhiki_01f_00202", file4="mizuhiki_01f_00401", path=":fg/mizuhiki_01f/", id=30, ch="水引", lv=15, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="mizuhiki0522", path=":vo/", ch="mizuhiki"},
+			},
+			ja = {
+				{
+					name = {"水引", "オリジンハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Origin Hamedori"},
+					"“Your sex sleeves are on another level to anyone else’s! They’ve got me fully covered—literally! Party in the front, business in the back!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引", "原创Hamedori君"},
+					"“对我而言，说到飞机杯就是橘君的作品了嘛。橘君的飞机杯──不论是我的前面和后面都包裹住了喔？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引", "原創Hamedori君"},
+					"「對我而言，說到飛機杯就是橘君的作品了嘛。橘君的飛機杯──不論是我的前面和後面都包裹住了喔？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00063",
+		linknext = "0069_00065",
+		line = 917,
+	},
+	["0069_00065"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00210", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=16},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Heh, well, my sex sleeves are designed to be all-encompassing!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					[[“呼──因为飞机杯就是该"包容"一切"的东西啊。”]],
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					[[「呼──因為飛機杯就是該"包容"一切"的東西啊。」]],
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00064",
+		linknext = "0069_00066",
+		line = 929,
+	},
+	["0069_00066"] = {
+		{"bgm", stop=1},
+		{"fgact", ch="ハメ6", id=6, act="振動下", loop=1, size=-15, time=150, ease="easeinout_sine"},
+		{"fgact", ch="ハメ3", id=3, act="振動下", loop=1, size=-15, time=150, ease="easeinout_sine"},
+		{"fgact", ch="ハメ15", id=15, act="振動下", loop=1, size=-15, time=150, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1194", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					{"exfont", size="f4"},
+					name = {"礼", "？？？"},
+					"*テキスト*",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			en = {
+				{
+					{"exfont", size="f4"},
+					name = {"礼", "???"},
+					"“HAME—!”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			cn = {
+				{
+					{"exfont", size="f4"},
+					name = {"礼", "？？？"},
+					"“Hame──────！！”",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			tw = {
+				{
+					{"exfont", size="f4"},
+					name = {"礼", "？？？"},
+					"「Hame──────！！」",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+		},
+		linkback = "0069_00065",
+		linknext = "0069_00067",
+		line = 946,
+	},
+	["0069_00067"] = {
+		{"fgact", ch="ハメ3", id=3, lv=3, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="ハメ6", id=6, lv=6, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="ハメ15", id=15, lv=15, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A mysterious cry suddenly interrupts our little conversation.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"正当彼此理解的我们聊在兴头上时──突然，有人发出了一声古怪的嚎叫。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"正當彼此理解的我們聊在興頭上時──突然，有人發出了一聲古怪的嚎叫。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00066",
+		linknext = "0069_00068",
+		line = 962,
+	},
+	["0069_00068"] = {
+		{"bgm", file="bgm09.5", vol=100},
+		{"bg", id=2, file="bg17_1l_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="hame_01l_00002", path=":fg/hame_01l/", id=9, lv=9, head="hame_01l", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1195", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedori"},
+					"“Listen up, you filthy fowl! You know why you’re gathered here!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hamedori君"},
+					"“长相恶心的鸟东西们！来得好啊！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hamedori君"},
+					"「長相噁心的鳥東西們！來得好啊！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00067",
+		linknext = "0069_00069",
+		line = 978,
+	},
+	["0069_00069"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"As soon as I hear that voice, it blows whatever we were just talking about out of my head.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在听到那声音的瞬间──刚才谈论的话题什么的我完全忘得一干二净。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在聽到那聲音的瞬間──剛才談論的話題什麼的我完全忘得一乾二淨。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00068",
+		linknext = "0069_00070",
+		line = 988,
+	},
+	["0069_00070"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This person knows exactly how to do a Hamedori voice.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就算捏出一副Hamedori的声线，我还是能清楚地辨认出来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就算捏出一副Hamedori的聲線，我還是能清楚地辨認出來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00069",
+		linknext = "0069_00071",
+		line = 998,
+	},
+	["0069_00071"] = {
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1196", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedori"},
+					"“It’s time to train for the Hamedori Raw Outbreak!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hamedori君"},
+					[[“从现在开始，我们要施行举办"Hamedori君大量出现hame"的训练啪啪。”]],
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hamedori君"},
+					[[「從現在開始，我們要施行舉辦"Hamedori君大量出現hame"的訓練啪啪。」]],
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00070",
+		linknext = "0069_00072",
+		line = 1011,
+	},
+	["0069_00072"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"...Rei.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"────礼前辈。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"────禮前輩。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00071",
+		linknext = "0069_00073",
+		line = 1021,
+	},
+	["0069_00073"] = {
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=9, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1197", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“I’m your instructor, Hamedo-Rei! Now, if you don’t get in line in the next nineteen seconds, you’re heading straight to the mascot graveyard!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“我是各位的教官Hamedo礼君hame！所有人都给我在19秒以内整好队啪啪！不听话的臭鸟会马上被扔进吉祥物的墓地里！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「我是各位的教官Hamedo禮君hame！所有人都給我在19秒以內整好隊啪啪！不聽話的臭鳥會馬上被扔進吉祥物的墓地裡！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00072",
+		linknext = "0069_00074",
+		line = 1035,
+	},
+	["0069_00074"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, lv=2, time=300, alphadel=1, style="reset"},
+		{"fgact", ch="ハメ9", id=9, lv=9, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"ex", time=500, func="wait"},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=10, lv=10, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ10", mw="mw", sync=1, a_chr151=1, mode=3, x=595, y=195},
+		{"fgact", ch="ハメ10", id=10, lv=10, act="表示アクション", a1=0, a2=255, time=300, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ10", id=10, act="移動", x=0, y=-100, time=300},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=50, ease="easeinout_sine", lv=1},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"ex", time=100, func="wait"},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=8, lv=8, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ8", mw="mw", sync=1, a_chr151=1, mode=3, x=295, y=195},
+		{"fgact", ch="ハメ8", id=8, lv=8, act="表示アクション", a1=0, a2=255, time=300, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ8", id=8, act="移動", x=0, y=-100, time=300},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=50, ease="easeinout_sine", lv=1},
+		{"se", id=1, loop=0, file="se_a098"},
+		{"ex", time=100, func="wait"},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=7, lv=7, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ7", mw="mw", sync=1, a_chr151=1, mode=3, x=-5, y=195},
+		{"fgact", ch="ハメ7", id=7, lv=7, act="表示アクション", a1=0, a2=255, time=300, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ7", id=7, act="移動", x=0, y=-100, time=300},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=50, ease="easeinout_sine", lv=1},
+		{"se", id=2, loop=0, file="se_a098"},
+		{"ex", time=100, func="wait"},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=6, lv=6, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ6", mw="mw", sync=1, a_chr151=1, mode=3, x=-305, y=195},
+		{"fgact", ch="ハメ6", id=6, lv=6, act="表示アクション", a1=0, a2=255, time=300, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ6", id=6, act="移動", x=0, y=-100, time=300},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=50, ease="easeinout_sine", lv=1},
+		{"se", id=3, loop=0, file="se_a098"},
+		{"ex", time=100, func="wait"},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=5, lv=5, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ5", mw="mw", sync=1, a_chr151=1, mode=3, x=-605, y=195},
+		{"fgact", ch="ハメ5", id=5, lv=5, act="表示アクション", a1=0, a2=255, time=300, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ5", id=5, act="移動", x=0, y=-100, time=300},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=50, ease="easeinout_sine", lv=1},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A group of Hamedoris that are presumably FS members line up with military precision as soon as she barks out her orders.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"一听到指令，似乎是FS的Hamedori君们立刻像军队般动作灵活地排好了队伍。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"一聽到指令，似乎是FS的Hamedori君們立刻像軍隊般動作靈活地排好了隊伍。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00073",
+		linknext = "0069_00075",
+		line = 1081,
+	},
+	["0069_00075"] = {
+		{"fg", file="hinami_01f_00001", file1="hinami_01f_00102", file2="hinami_01f_00209", path=":fg/hinami_01f/", id=20, lv=20, head="hinami_01f", alpha=0, ch_origin="ヒナミ", ch="ヒナミ20", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[1700] = {
+				{"fg", file="hinami_01f_00001", file1="hinami_01f_00101", file2="hinami_01f_00201", path=":fg/hinami_01f/", id=20, lv=20, head="hinami_01f", alpha=0, ch_origin="ヒナミ", ch="ヒナミ20", mw="mw", sync=0, timestamp=3, delay2=1700, mode=3, x=-5, y=-5},
+			},
+			[1699] = {
+				{"transitiontime", time=300, timestamp=3, delay2=1700},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="hinami0195", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ", "ヒナドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinadori"},
+					"“Whoa... Quick, get in line! Come on, Jun, over here!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏dori君"},
+					"“哇哇……得快点排好队才行……！好了啦淳君，这边这边！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛dori君"},
+					"「哇哇……得快點排好隊才行……！好了啦淳君，這邊這邊！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00074",
+		linknext = "0069_00076",
+		line = 1098,
+	},
+	["0069_00076"] = {
+		{"fgact", ch="ヒナミ20", id=20, lv=20, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00102", file2="jun_01f_00206", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=20, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Uh, okay...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“啊、嗯嗯……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「啊、嗯嗯……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00075",
+		linknext = "0069_00077",
+		line = 1112,
+	},
+	["0069_00077"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I don’t even have a second to process what’s happening.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"连目瞪口呆的时间都没有。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"連目瞪口呆的時間都沒有。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00076",
+		linknext = "0069_00078",
+		line = 1122,
+	},
+	["0069_00078"] = {
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=4, lv=4, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ4", mw="mw", sync=1, a_chr151=1, mode=3, x=445, y=-5},
+		{"fgact", ch="ハメ4", id=4, lv=4, act="表示アクション", a1=0, a2=255, time=300, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ4", id=4, act="移動", x=0, y=-100, time=400},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=200, func="wait"},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=3, lv=3, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ3", mw="mw", sync=1, a_chr151=1, mode=3, x=-155, y=-105},
+		{"fgact", ch="ハメ3", id=3, lv=3, act="表示アクション", a1=0, a2=255, time=300, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ3", id=3, act="移動", x=0, y=-100, time=400},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Hinami hurries me into the Hamedori lineup.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"被雏见催促着，我以一名Hamedori君的身份被排进了队伍里。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"被雛見催促著，我以一名Hamedori君的身分被排進了隊伍裡。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00077",
+		linknext = "0069_00079",
+		line = 1141,
+	},
+	["0069_00079"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=2},
+		{"fg", mode=-1, id=3, ch="ハメ3", ch_origin="ハメ", lv=3, time=0, sync=0},
+		{"fg", mode=-1, id=4, ch="ハメ4", ch_origin="ハメ", lv=4, time=0, sync=0},
+		{"fg", mode=-1, id=5, ch="ハメ5", ch_origin="ハメ", lv=5, time=0, sync=0},
+		{"fg", mode=-1, id=6, ch="ハメ6", ch_origin="ハメ", lv=6, time=0, sync=0},
+		{"fg", mode=-1, id=7, ch="ハメ7", ch_origin="ハメ", lv=7, time=0, sync=0},
+		{"fg", mode=-1, id=8, ch="ハメ8", ch_origin="ハメ", lv=8, time=0, sync=0},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=10, ch="ハメ10", ch_origin="ハメ", lv=10, time=0, sync=0},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=12, time=0, alphadel=1, lv=5},
+		{"cgdel", id=13, time=0, alphadel=1, lv=5},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"cgdel", id=15, time=0, alphadel=1, lv=5},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=2, file="bg17_1l_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"bg", id=1, file="bg17_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=2, file="bg17_1l_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"extrans", sync=0, time=300},
+		{"ex", time=200, func="wait"},
+		{"fg", file="hame_01l_00002", path=":fg/hame_01l/", id=9, lv=9, head="hame_01l", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=9, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1198", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“Hame! What a miserable bunch of bird-brains we have here! Listen up! I bet you maggots think you’re real Hamedoris.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“Hame！还真是每一个都一脸呆相啊啪啪！听好了hame！你们似乎误以为自己是Hamedori君啪啪──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「Hame！還真是每一個都一臉呆相啊啪啪！聽好了hame！你們似乎誤以為自己是Hamedori君啪啪──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00078",
+		linknext = "0069_00080",
+		line = 1198,
+	},
+	["0069_00080"] = {
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-25, time=150, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=2, act="浮遊", loop=2, size=10, time=75, ease="easeinout_sine", lv=2},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=2, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1199", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“Well you’re not! You’re imitations! Fakes! Sham-edoris! Your Latin name is Birdus Incorrectus!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“但是要我来说的话，你们只是虚假的Hamedori君──冒牌dori君hame！用学名来说的话就是Ashinagashikopako Hametariandorymodoki（长足干不停属拟相干鸟）啪啪！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「但是要我來說的話，你們只是虛假的Hamedori君──冒牌dori君hame！用學名來說的話就是Ashinagashikopako Hametariandorymodoki（長足幹不停屬擬相幹鳥）啪啪！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00079",
+		linknext = "0069_00081",
+		line = 1214,
+	},
+	["0069_00081"] = {
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-25, time=150, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=2, act="浮遊", loop=2, size=10, time=75, ease="easeinout_sine", lv=2},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=2, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1200", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“You disgusting counterfeit birds are gonna be worked to the boner for this Hamedori Raw Fucking Outbreak and it’s my job to make sure you’re fucking fit!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					[[“狠狠地你们这些冒牌臭鸟军团操到干掉、好让你们的性征发育到足以胜任"Hamedori君大量出现不戴套的一员就是我的任务hame！”]],
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					[[「狠狠地你們這些冒牌臭鳥軍團操到乾掉、好讓你們的性徵發育到足以勝任"Hamedori君大量出現不戴套的一員就是我的任務hame！」]],
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00080",
+		linknext = "0069_00082",
+		line = 1230,
+	},
+	["0069_00082"] = {
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"fg", mode=-1, id=9, ch="ハメ9", ch_origin="ハメ", lv=9, time=0, sync=0},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=3, lv=3, head="hame_01m", ch_origin="ハメ", ch="ハメ3", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fg", file="asane_01f_00001", file1="asane_01f_00102", file2="asane_01f_00205", path=":fg/asane_01f/", id=30, ch="麻沙音", lv=3, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0281", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“Is she adding words to the event name?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“活动名是不是改变了……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「活動名是不是改變了……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00081",
+		linknext = "0069_00083",
+		line = 1249,
+	},
+	["0069_00083"] = {
+		{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=6, lv=6, head="hame_01m", ch_origin="ハメ", ch="ハメ6", mw="mw", sync=0, mode=3, x=-705, y=-35},
+		{"transitiontime", time=300},
+		{"fgact", ch="ハメ6", id=6, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="misaki_01f_00001", file1="misaki_01f_00101", file2="misaki_01f_00220", path=":fg/misaki_01f/", id=30, ch="美岬", lv=6, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0248", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬", "ミサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misadori"},
+					"“Odd that Akino isn’t the one giving orders...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬", "美岬dori君"},
+					"“不如说，原来不是由秋野同学来指导啊hame”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬", "美岬dori君"},
+					"「不如說，原來不是由秋野同學來指導啊hame」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00082",
+		linknext = "0069_00084",
+		line = 1265,
+	},
+	["0069_00084"] = {
+		{"fg", file="hame_02m_00001", path=":fg/hame_02m/", id=15, lv=15, head="hame_02m", ch_origin="ハメ", ch="ハメ15", mw="mw", sync=0, mode=3, x=645, y=-35},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01f_00002", file1="mizuhiki_01f_00101", file2="mizuhiki_01f_00229", file4="mizuhiki_01f_00401", path=":fg/mizuhiki_01f/", id=30, ch="水引", lv=15, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="mizuhiki0523", path=":vo/", ch="mizuhiki"},
+			},
+			ja = {
+				{
+					name = {"水引", "オリジンハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Origin Hamedori"},
+					"“Acting and giving orders are two separate skills... You need the right person for the job.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引", "原创Hamedori君"},
+					"“扮演和指导毕竟是不同的领域嘛……这就是所谓适才适所喔”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引", "原創Hamedori君"},
+					"「扮演和指導畢竟是不同的領域嘛……這就是所謂適才適所喔」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00083",
+		linknext = "0069_00085",
+		line = 1280,
+	},
+	["0069_00085"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file3="jun_01f_00301", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=20},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“………………”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「………………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00084",
+		linknext = "0069_00086",
+		line = 1292,
+	},
+	["0069_00086"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Rei’s violent words, the chatter from those around me... Everything passes me by.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"礼前辈的谩骂和大家的闲谈都直接穿过了我的耳朵。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"禮前輩的謾罵和大家的閒談都直接穿過了我的耳朵。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00085",
+		linknext = "0069_00087",
+		line = 1302,
+	},
+	["0069_00087"] = {
+		{"fg", mode=-1, id=3, ch="ハメ3", ch_origin="ハメ", lv=3, time=0, sync=0},
+		{"fg", mode=-1, id=6, ch="ハメ6", ch_origin="ハメ", lv=6, time=0, sync=0},
+		{"fg", mode=-1, id=15, ch="ハメ15", ch_origin="ハメ", lv=15, time=0, sync=0},
+		{"bg", id=2, file="bg17_1l_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300, draw2=1},
+		{"ex", time=300, func="wait"},
+		{"fg", file="hame_01l_00002", path=":fg/hame_01l/", id=9, lv=9, head="hame_01l", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-25, time=150, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=2, act="浮遊", loop=2, size=10, time=75, ease="easeinout_sine", lv=2},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=2, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1201", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“You long-legged quacks! Do you wanna be Hamedori?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“长脚臭鸟！你们想成为Hamedori君吗啪啪！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「長腳臭鳥！你們想成為Hamedori君嗎啪啪！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00086",
+		linknext = "0069_00088",
+		line = 1329,
+	},
+	["0069_00088"] = {
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"fg", mode=-1, id=9, ch="ハメ9", ch_origin="ハメ", lv=9, time=0, sync=0},
+		{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=6, lv=6, head="hame_01m", ch_origin="ハメ", ch="ハメ6", mw="mw", sync=0, mode=3, x=-405, y=-35},
+		{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=13, lv=13, head="hame_02m", ch_origin="ハメ", ch="ハメ13", mw="mw", sync=0, mode=3, x=395, y=-35},
+		{"transitiontime", time=300},
+		{"fgact", ch="ハメ6", id=6, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fgact", ch="ハメ13", id=13, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="04_rt13_0001", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"ミサドリくんとランドリーくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ミサドリくんとランドリーくん", "Misadori & Randori"},
+					"“Hame! Yes! Fuck!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ミサドリくんとランドリーくん", "美dori君和兰dori君"},
+					"“Hame！Yes！啪啪！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ミサドリくんとランドリーくん", "美dori君和蘭dori君"},
+					"「Hame！Yes！啪啪！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00087",
+		linknext = "0069_00089",
+		line = 1350,
+	},
+	["0069_00089"] = {
+		{"fg", file="asane_01f_00001", file1="asane_01f_00101", file2="asane_01f_00205", path=":fg/asane_01f/", id=30, ch="麻沙音", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0282", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“That Fatty-dori is too good at this!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“那只肥鸟的适应力也太高了吧……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「那隻肥鳥的適應力也太高了吧……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00088",
+		linknext = "0069_00090",
+		line = 1363,
+	},
+	["0069_00090"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fg", mode=-1, id=6, ch="ハメ6", ch_origin="ハメ", lv=6, time=0, sync=0},
+		{"fg", mode=-1, id=13, ch="ハメ13", ch_origin="ハメ", lv=13, time=0, sync=0},
+		{"bg", id=2, file="bg17_1l_00000", x=0, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300, draw2=1},
+		{"ex", time=300, func="wait"},
+		{"fg", file="hame_01l_00002", path=":fg/hame_01l/", id=9, lv=9, head="hame_01l", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-25, time=150, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=2, act="浮遊", loop=2, size=10, time=75, ease="easeinout_sine", lv=2},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=2, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1202", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“You haven’t done anything worth crowing about just yet! You’re just standing in line like birds on a wire! When I’m done with you, you’ll be moaning and panting like pros!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“现在的你们只不过是一群臭鸟刚好凑到一起，也就是乌合之众啪啪！等到这场训练结束之后，才能真正成为娇喘声够吓人的呜齁之众hame！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「現在的你們只不過是一群臭鳥剛好湊到一起，也就是烏合之眾啪啪！等到這場訓練結束之後，才能真正成為嬌喘聲夠嚇人的嗚齁之眾hame！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00089",
+		linknext = "0069_00091",
+		line = 1390,
+	},
+	["0069_00091"] = {
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=2},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1203", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“You must prepare your minds and bodies to fully become Hamedori! Prepare your cock heads, ready your perfect gangbang technique!❤”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“为此，身心都变成Hamedori君的觉悟是必不可少的啪啪！就是啊嘿龟头打飞机…完奸发乱",
+					{"gaiji", text="①"},
+					"的精神hame！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「為此，身心都變成Hamedori君的覺悟是必不可少的啪啪！就是啊嘿龜頭打飛機…完姦髮亂",
+					{"gaiji", text="①"},
+					"的精神hame！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00090",
+		linknext = "0069_00092",
+		line = 1403,
+	},
+	["0069_00092"] = {
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=9, lv=9, head="hame_01m", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, mode=3, x=-5, y=-35},
+		{"transitiontime", time=300},
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=2, size=-12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s Rei’s classic drill sergeant rant, but with an avian twist.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"一如往常，只要让她站到人前进行指导，简直是谩骂和谬论的大游行。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"一如往常，只要讓她站到人前進行指導，簡直是謾罵和謬論的大遊行。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00091",
+		linknext = "0069_00093",
+		line = 1419,
+	},
+	["0069_00093"] = {
+		{"fgact", ch="ハメ9", id=9, act="移動", x=200, y=0, time=700},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m used to it by now, and it’s making me kind of nostalgic, to be honest.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"因为我已经习惯了──如今甚至有一种亲切，或者该说是怀念一样的感觉。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"因為我已經習慣了──如今甚至有一種親切，或者該說是懷念一樣的感覺。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00092",
+		linknext = "0069_00094",
+		line = 1430,
+	},
+	["0069_00094"] = {
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=2, size=-12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She did this a lot in World B, and I saw it occasionally way back when I was infiltrating the FS.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在B世界也常常被她说很乱来，真要回溯的话潜入FS的时候也真的被她骂了一顿。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在B世界也常常被她說很亂來，真要回溯的話潛入FS的時候也真的被她罵了一頓。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00093",
+		linknext = "0069_00095",
+		line = 1441,
+	},
+	["0069_00095"] = {
+		{"fgact", ch="ハメ9", id=9, act="移動", x=-600, y=0, time=700},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Looking back, that was the first time I ever came in contact with Rei.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"回想起来，跟礼前辈好好交谈那搞不好是第一次。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"回想起來，跟禮前輩好好交談那搞不好是第一次。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00094",
+		linknext = "0069_00096",
+		line = 1452,
+	},
+	["0069_00096"] = {
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=2, size=-12.5, time=150, ease="easeinout_sine"},
+		{"transitiontime", time=0},
+		{"ex", time=500, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It feels like so long ago...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"感觉已经是很久以前的事情了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"感覺已經是很久以前的事情了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00095",
+		linknext = "0069_00097",
+		line = 1465,
+	},
+	["0069_00097"] = {
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=9, lv=9, head="hame_01m", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, mode=3, x=-405, y=-35},
+		{"transitiontime", time=300},
+		{"fg", file="rei_01f_00001", file1="rei_01f_00101", file2="rei_01f_00203", path=":fg/rei_01f/", id=30, ch="礼", lv=9, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1204", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“I’m going to eye-fuck each and every one of you to see if you have what it takes! When I call your name, start acting like a proper Hamedori! You over there, disgusting penguin! Get to it!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“接下来我会好好视奸你们的适合度啪啪！被我叫到了就努力做出符合Hamedori君的言行吧hame！首先就从你开始！那边那只恶心透顶的企鹅啪啪！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「接下來我會好好視姦你們的適合度啪啪！被我叫到了就努力做出符合Hamedori君的言行吧hame！首先就從你開始！那邊那隻噁心透頂的企鵝啪啪！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00096",
+		linknext = "0069_00098",
+		line = 1481,
+	},
+	["0069_00098"] = {
+		{"fg", file="hame_02m_00001", path=":fg/hame_02m/", id=12, lv=12, head="hame_02m", alpha=0, ch_origin="ハメ", ch="ハメ12", mw="mw", sync=1, a_chr151=1, mode=3, x=395, y=45},
+		{"fgact", ch="ハメ12", id=12, lv=12, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ12", id=12, act="移動", x=0, y=-100, time=700},
+		{"fg", file="susuko_02f_00001", file1="susuko_02f_00101", file2="susuko_02f_00217", path=":fg/susuko_02f/", id=30, ch="スス子", lv=12, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="susuko0400", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子", "ススドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susudori"},
+					"“Fuckahhh! It’s me, Hamedori-su! Sex and fish, I gotta have ’em raw-su!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝dori君"},
+					"“啪好！我是Hameodri君hame嘶～！果然鱼和性爱都是不带塑胶的最好啪啪嘶！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲dori君"},
+					"「啪好！我是Hameodri君hame嘶～！果然魚和性愛都是不帶塑膠的最好啪啪嘶！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00097",
+		linknext = "0069_00099",
+		line = 1497,
+	},
+	["0069_00099"] = {
+		{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=9, lv=9, head="hame_01m", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, mode=3, x=-405, y=-35},
+		{"transitiontime", time=300},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"fgact", ch="ハメ9", id=9, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"fgact", ch="ハメ12", id=12, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=12, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1205", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“What’s with the extra sounds?! Stick to the script! Get rid of ’em!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“语尾太多了hame！摩羯座啊你！？给我去掉hame！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「語尾太多了hame！摩羯座啊妳！？給我去掉hame！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00098",
+		linknext = "0069_00100",
+		line = 1517,
+	},
+	["0069_00100"] = {
+		{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=12, lv=12, head="hame_02m", ch_origin="ハメ", ch="ハメ12", mw="mw", sync=0, mode=3, x=395, y=-55},
+		{"transitiontime", time=100},
+		{"fgact", ch="ハメ12", id=12, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"fg", file="susuko_02f_00001", file1="susuko_02f_00101", file2="susuko_02f_00217", path=":fg/susuko_02f/", id=30, ch="スス子", lv=12, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="susuko0401", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子", "ススドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susudori"},
+					"“Fish and sususu, I gotta su them susu!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝dori君"},
+					"“果然鱼和s丝x都是不带塑胶的最好呢～！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲dori君"},
+					"「果然魚和s絲x都是不帶塑膠的最好呢～！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00099",
+		linknext = "0069_00101",
+		line = 1535,
+	},
+	["0069_00101"] = {
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=9, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1206", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“You know that’s not what I meant, maggot! Are you trying to workshop your standup routine?! Get out of my sight! NEXT!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“你根本没在演吧！！别给我说相声了啪啪！够了hame，下一个！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「妳根本沒在演吧！！別給我說相聲了啪啪！夠了hame，下一個！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00100",
+		linknext = "0069_00102",
+		line = 1549,
+	},
+	["0069_00102"] = {
+		{"fgact", ch="ハメ12", id=12, lv=12, act="表示アクション", alpha=0, alphadel=1, style="reset", time=400},
+		{"fgact", ch="ハメ12", id=12, act="移動", x=200, y=0, time=600},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=500, func="wait"},
+		{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=10, lv=10, head="hame_02m", ch_origin="ハメ", ch="ハメ10", mw="mw", sync=0, mode=3, x=395, y=85},
+		{"fgact", ch="ハメ10", id=10, act="移動", x=0, y=-100, time=700},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=300, func="wait"},
+		{"text"},
+		delay = {
+			[2300] = {
+				{"fg", file="hame_02m_00001", path=":fg/hame_02m/", id=10, lv=10, head="hame_02m", ch_origin="ハメ", ch="ハメ10", mw="mw", sync=0, timestamp=5, delay2=2300, mode=3, x=395, y=-15},
+				{"fg", file="ikuko_02f_00001", file1="ikuko_02f_00101", file3="ikuko_02f_00306", path=":fg/ikuko_02f/", id=20, lv=20, head="ikuko_02f", alpha=0, ch_origin="郁子", ch="郁子20", mw="mw", sync=0, timestamp=4, delay2=2300, mode=3, x=-5, y=-5},
+			},
+			[2299] = {
+				{"transitiontime", time=300, timestamp=5, delay2=2300},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ikuko1295", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子", "イクドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikudori"},
+					"“It’s-a me, Hamedori! Mmm, I’m gonna lay an egg if you look at me like that...❤ Fuckawww!❤”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子", "郁dori君"},
+					"“我是Hamedori君hame……",
+					{"gaiji", text="①"},
+					"啪啪～嗯……不要那样盯着我看，感觉里面都要漏出来了hame……",
+					{"gaiji", text="①"},
+					"啪啪～嗯",
+					{"gaiji", text="①"},
+					"”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子", "郁dori君"},
+					"「我是Hamedori君hame……",
+					{"gaiji", text="①"},
+					"啪啪～嗯……不要那樣盯著我看，感覺裡面都要漏出來了hame……",
+					{"gaiji", text="①"},
+					"啪啪～嗯",
+					{"gaiji", text="①"},
+					"」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00101",
+		linknext = "0069_00103",
+		line = 1574,
+	},
+	["0069_00103"] = {
+		{"fgact", ch="郁子20", id=20, lv=20, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"fgact", ch="ハメ9", id=9, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=12, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=12, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=12, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1207", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“Too sexy! Your parents would be shocked! You’ll deal critical horny damage to anyone not already familiar with this nonsense! NEXT!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“声音太色了吧你的父母真的会吓死啪啪！就连不是啪啪友的一般顾客都会受到附带吮湿hame！下一个！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「聲音太色了吧妳的父母真的會嚇死啪啪！就連不是啪啪友的一般顧客都會受到附帶吮濕hame！下一個！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00102",
+		linknext = "0069_00104",
+		line = 1594,
+	},
+	["0069_00104"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fgact", ch="ハメ10", id=10, lv=10, act="表示アクション", alpha=0, alphadel=1, style="reset", time=400},
+		{"fgact", ch="ハメ10", id=10, act="移動", x=200, y=10, time=600},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=500, func="wait"},
+		{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=11, lv=11, head="hame_02m", alpha=0, ch_origin="ハメ", ch="ハメ11", mw="mw", sync=1, a_chr151=1, mode=3, x=395, y=65},
+		{"fgact", ch="ハメ11", id=11, lv=11, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ11", id=11, act="移動", x=0, y=-100, time=700},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=300, func="wait"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hamedori0034", path=":vo/", ch="hamedori"},
+			},
+			ja = {
+				{
+					name = {"ハメドリくん", "オリジンハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ハメドリくん", "Origin Hamedori"},
+					"“It’s me, the SHO Official Mascot Character, Hamedori!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ハメドリくん", "原创Hamedori君"},
+					"“我是SHO官方吉祥物，Hamedori君hame～！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ハメドリくん", "原創Hamedori君"},
+					"「我是SHO官方吉祥物，Hamedori君hame～！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00103",
+		linknext = "0069_00105",
+		line = 1618,
+	},
+	["0069_00105"] = {
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=9, lv=9, head="hame_01m", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, mode=3, x=-405, y=-35},
+		{"transitiontime", time=300},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=9, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		delay = {
+			[12400] = {
+				{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=9, lv=9, head="hame_01m", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, timestamp=6, delay2=12400, mode=3, x=-405, y=-35},
+				{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine", timestamp=6, delay2=12400},
+			},
+			[12399] = {
+				{"transitiontime", time=300, timestamp=6, delay2=12400},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rei1208", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“Oho, it’s the original! A tried-and-tested classic. However, that just means I’m gonna be more strict with you if you slip up! I’m not into fuck-favoritism! NEXT!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“哎哟，原来是原始个体啪啪啊──真不愧是你hame。可是，就算撸的是原作也绝不会手下留精！我是不会大小马眼的！下一个！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「哎喲，原來是原始個體啪啪啊──真不愧是妳hame。可是，就算撸的是原作也絕不會手下留精！我是不會大小馬眼的！下一個！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00104",
+		linknext = "0069_00106",
+		line = 1638,
+	},
+	["0069_00106"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fgact", ch="ハメ11", id=11, lv=11, act="表示アクション", alpha=0, alphadel=1, style="reset", time=400},
+		{"fgact", ch="ハメ11", id=11, act="移動", x=200, y=0, time=600},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=500, func="wait"},
+		{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=12, lv=12, head="hame_02m", alpha=0, ch_origin="ハメ", ch="ハメ12", mw="mw", sync=1, a_chr151=1, mode=3, x=395, y=105},
+		{"fgact", ch="ハメ12", id=12, lv=12, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ12", id=12, act="移動", x=0, y=-100, time=700},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=300, func="wait"},
+		{"fg", file="tohka_02f_00001", file1="tohka_02f_00101", file2="tohka_02f_00228", path=":fg/tohka_02f/", id=30, ch="桐香", lv=12, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1682", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香", "トウドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Toudori"},
+					"“I love cuckolding!♪ Hey, everyone, grab a partner from a couple nearby!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香", "桐dori君"},
+					"“牛头人最棒了hame～♪大家都去睡心有所属的人吧啪啪～♪”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香", "桐dori君"},
+					"「牛頭人最棒了hame～♪大家都去睡心有所屬的人吧啪啪～♪」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00105",
+		linknext = "0069_00107",
+		line = 1663,
+	},
+	["0069_00107"] = {
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-25, time=250, ease="easeinout_sine"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=9, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1209", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“Excellent! The delivery was a bit stilted, but your words resonated with me!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“太棒了啪啪！演技自然不在话下，就连台词都让人打从内心有共鸣！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「太棒了啪啪！演技自然不在話下，就連台詞都讓人打從內心有共鳴！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00106",
+		linknext = "0069_00108",
+		line = 1677,
+	},
+	["0069_00108"] = {
+		{"fg", file="asane_01f_00001", file1="asane_01f_00101", file2="asane_01f_00205", path=":fg/asane_01f/", id=30, ch="麻沙音", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0283", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“Sounds like fuck-favoritism to me...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“超级大小马眼的吧……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「超級大小馬眼的吧……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00107",
+		linknext = "0069_00109",
+		line = 1690,
+	},
+	["0069_00109"] = {
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=2, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=9, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1210", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“Keep it cumming! NEXT!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“接着上（绝顶）啰啪啪！下一个！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「接著上（絕頂）囉啪啪！下一個！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00108",
+		linknext = "0069_00110",
+		line = 1704,
+	},
+	["0069_00110"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fgact", ch="ハメ12", id=12, lv=12, act="表示アクション", alpha=0, alphadel=1, style="reset", time=400},
+		{"fgact", ch="ハメ12", id=12, act="移動", x=200, y=0, time=600},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"transitiontime", time=0},
+		{"ex", time=500, func="wait"},
+		{"fg", file="hame_02m_00001", path=":fg/hame_02m/", id=10, lv=10, head="hame_02m", alpha=0, ch_origin="ハメ", ch="ハメ10", mw="mw", sync=1, a_chr151=1, mode=3, x=395, y=65},
+		{"fgact", ch="ハメ10", id=10, lv=10, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ10", id=10, act="移動", x=0, y=-100, time=700},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"transitiontime", time=0},
+		{"ex", time=300, func="wait"},
+		{"fg", file="nanase_01f_00001", file1="nanase_01f_00102", file2="nanase_01f_00213", path=":fg/nanase_01f/", id=30, ch="奈々瀬", lv=10, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		delay = {
+			[3500] = {
+				{"fgact", ch="ハメ10", id=10, act="浮遊横", loop=8, size=5, time=100, ease="easeinout_sine", timestamp=7, delay2=3500},
+			},
+			[7000] = {
+				{"fgact", ch="ハメ10", id=10, act="浮遊横", loop=11, size=5, time=150, ease="easeinout_sine", timestamp=8, delay2=7000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="nanase0310", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬", "ナナドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanadori"},
+					"“Uhh, ummm... I’m... Hamedori! T-Time for the intravaginal bucket brigade!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈dori君"},
+					"“呃、呃……我、我是Hamedori君hame～！来、来中出接力赛吧啪啪……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈dori君"},
+					"「呃、呃……我、我是Hamedori君hame～！來、來中出接力賽吧啪啪……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00109",
+		linknext = "0069_00111",
+		line = 1733,
+	},
+	["0069_00111"] = {
+		{"bgm", file="bgm09", vol=100},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"fgact", ch="ハメ9", id=9, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=12, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00301", path=":fg/rei_02f/", id=30, ch="礼", lv=12, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1211", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“What are you so embarrassed about? You become a hero the moment you put on the suit! You’ll never be treated like a big bird if you act like a little chickie! Again!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“害羞个屁啊hame！从穿上了那套服装的瞬间开始你就是英了啪啪！我可不能认同你这种鸡儿算是Hamedori君！给我重干一遍！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「害羞個屁啊hame！從穿上了那套服裝的瞬間開始妳就是英了啪啪！我可不能認同妳這種雞兒算是Hamedori君！給我重幹一遍！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00110",
+		linknext = "0069_00112",
+		line = 1751,
+	},
+	["0069_00112"] = {
+		{"fgact", ch="ハメ10", id=10, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[1700] = {
+				{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=10, lv=10, head="hame_02m", ch_origin="ハメ", ch="ハメ10", mw="mw", sync=0, timestamp=9, delay2=1700, mode=3, x=395, y=-35},
+				{"fgact", ch="ハメ10", id=10, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine", timestamp=9, delay2=1700},
+				{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", timestamp=10, delay2=1700, lv=1},
+				{"fgact", ch="ハメ9", id=9, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", timestamp=11, delay2=1700},
+				{"se", id=0, loop=0, file="se_a098", timestamp=11, delay2=1700},
+			},
+			[8000] = {
+				{"fg", file="nanase_02f_00001", file1="nanase_02f_00102", file3="nanase_02f_00309", path=":fg/nanase_02f/", id=20, lv=20, head="nanase_02f", alpha=0, ch_origin="奈々瀬", ch="奈々瀬20", mw="mw", sync=0, timestamp=13, delay2=8000, mode=3, x=-5, y=-5},
+			},
+			[7999] = {
+				{"transitiontime", time=300, timestamp=13, delay2=8000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="nanase0311", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬", "ナナドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanadori"},
+					"“Nnghhh... This is unit 6969, my cock’s on fire from too much jerking it! Someone call the intravaginal bucket brigade to put me out and get me off!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈dori君"},
+					"“呜咕……──您好这里是1919号……hame！？因为自慰的摩擦导致小鸡鸡着火了啪啪！？乳房队出动！用中出接力赛来灭却下体火吧啪啪！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈dori君"},
+					"「嗚咕……──您好這裡是1919號……hame！？因為自慰的摩擦導致小雞雞著火了啪啪！？乳房隊出動！用中出接力賽來滅卻下體火吧啪啪！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00111",
+		linknext = "0069_00113",
+		line = 1772,
+	},
+	["0069_00113"] = {
+		{"fgact", ch="奈々瀬20", id=20, lv=20, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"fgact", ch="ハメ9", id=9, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"fgact", ch="ハメ10", id=10, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=10, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1212", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“Wonderful! Why didn’t you do that in the first place, maggot?! Bitch out in front of me again and I’ll beakfuck you with a jumbo shrimp! NEXT!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“你看啪！只要肯上就啪得到为什么不一开始就干下去！？下次再给我装在室小心我用炸虾把你那呆子一样的嘴巴小穴啪爆！下一个！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「妳看啪！只要肯上就啪得到為什麼不一開始就幹下去！？下次再給我裝在室小心我用炸蝦把妳那呆子一樣的嘴巴小穴啪爆！下一個！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00112",
+		linknext = "0069_00114",
+		line = 1791,
+	},
+	["0069_00114"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fgact", ch="ハメ10", id=10, lv=10, act="表示アクション", alpha=0, alphadel=1, style="reset", time=400},
+		{"fgact", ch="ハメ10", id=10, act="移動", x=200, y=0, time=600},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=500, func="wait"},
+		{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=12, lv=12, head="hame_02m", alpha=0, ch_origin="ハメ", ch="ハメ12", mw="mw", sync=1, a_chr151=1, mode=3, x=395, y=65},
+		{"fgact", ch="ハメ12", id=12, lv=12, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ12", id=12, act="移動", x=0, y=-100, time=700},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=300, func="wait"},
+		{"fg", file="misaki_01f_00001", file1="misaki_01f_00103", file2="misaki_01f_00220", path=":fg/misaki_01f/", id=30, ch="美岬", lv=12, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0250", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬", "ミサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misadori"},
+					"“It’s me, Hamedori! Sushi shops and brothels, you know I’m going in raw!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬", "美岬dori君"},
+					"“我是Hamedori君hame～！果然在酒吧就不该加冰块、在窑子就不该带套啊啪啪！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬", "美岬dori君"},
+					"「我是Hamedori君hame～！果然在酒吧就不該加冰塊、在窯子就不該帶套啊啪啪！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00113",
+		linknext = "0069_00115",
+		line = 1816,
+	},
+	["0069_00115"] = {
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"fgact", ch="ハメ9", id=9, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=10, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file2="rei_02f_00203", path=":fg/rei_02f/", id=30, ch="礼", lv=10, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1213", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“Too similar! Did you do any practice at all?! Use your time more efficiently!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“太像了啪啪！平时到底做了多少练习啊hame！？给我把时间花在更有意义的事情上啊这只鲍鱼！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「太像了啪啪！平時到底做了多少練習啊hame！？給我把時間花在更有意義的事情上啊這隻鮑魚！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00114",
+		linknext = "0069_00116",
+		line = 1833,
+	},
+	["0069_00116"] = {
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00301", path=":fg/rei_02f/", id=30, ch="礼", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1214", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“Besides, you should never go in raw at a brothel! NEXT!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“还有在窑子里不戴套是不可以的喔！！下一个！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「還有在窯子裡不戴套是不可以的喔！！下一個！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00115",
+		linknext = "0069_00117",
+		line = 1846,
+	},
+	["0069_00117"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fgact", ch="ハメ12", id=12, lv=12, act="表示アクション", alpha=0, alphadel=1, style="reset", time=400},
+		{"fgact", ch="ハメ12", id=12, act="移動", x=200, y=0, time=600},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=500, func="wait"},
+		{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=10, lv=10, head="hame_02m", alpha=0, ch_origin="ハメ", ch="ハメ10", mw="mw", sync=1, a_chr151=1, mode=3, x=395, y=25},
+		{"fgact", ch="ハメ10", id=10, lv=10, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ10", id=10, act="移動", x=0, y=-85, time=700},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=300, func="wait"},
+		{"fg", file="schubert_01f_00001", file2="schubert_01f_00202", file4="schubert_01f_00401", file5="schubert_01f_00501", path=":fg/schubert_01f/", id=30, ch="シューベルト", lv=10, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="schubert0266", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト", "シューベルドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schuberdori"},
+					"“Hame-Hame-Hame, I’m a perverted bird!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯dori君"},
+					"“不管是啪啪还是色色我都会努力的dori～！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯dori君"},
+					"「不管是啪啪還是色色我都會努力的dori～！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00116",
+		linknext = "0069_00118",
+		line = 1871,
+	},
+	["0069_00118"] = {
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"fgact", ch="ハメ9", id=9, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"fgact", ch="ハメ10", id=10, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00102", file2="rei_02f_00228", path=":fg/rei_02f/", id=20, lv=20, head="rei_02f", alpha=0, ch_origin="礼", ch="礼20", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[2000] = {
+				{"fg", file="rei_02f_00001", file1="rei_02f_00102", file3="rei_02f_00317", path=":fg/rei_02f/", id=20, lv=20, head="rei_02f", alpha=0, ch_origin="礼", ch="礼20", mw="mw", sync=0, timestamp=14, delay2=2000, mode=3, x=-5, y=-5},
+			},
+			[1999] = {
+				{"transitiontime", time=300, timestamp=14, delay2=2000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rei1215", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Wow, who the hell are you trying to be? Sounds like you need more data! NEXT!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“谁啊你吓得我都忘记演了hame！！给我好好搜集资料啊啪啪！！至今为止你都听了什么啊hame说真的！！下一个！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「誰啊你嚇得我都忘記演了hame！！給我好好蒐集資料啊啪啪！！至今為止你都聽了什麼啊hame說真的！！下一個！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00117",
+		linknext = "0069_00119",
+		line = 1892,
+	},
+	["0069_00119"] = {
+		{"fgact", ch="礼20", id=20, lv=20, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fgact", ch="ハメ10", id=10, lv=10, act="表示アクション", alpha=0, alphadel=1, style="reset", time=400},
+		{"fgact", ch="ハメ10", id=10, act="移動", x=200, y=0, time=600},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=500, func="wait"},
+		{"fg", file="hame_02m_00002", path=":fg/hame_02m/", id=12, lv=12, head="hame_02m", alpha=0, ch_origin="ハメ", ch="ハメ12", mw="mw", sync=1, a_chr151=1, mode=3, x=395, y=195},
+		{"fgact", ch="ハメ12", id=12, lv=12, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ12", id=12, act="移動", x=0, y=-100, time=700},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=300, func="wait"},
+		{"fg", file="hinami_02f_00001", file1="hinami_02f_00101", file2="hinami_02f_00202", path=":fg/hinami_02f/", id=30, ch="ヒナミ", lv=12, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0196", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ", "ヒナドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinadori"},
+					"“I’m Hamedori!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏dori君"},
+					"“Hame的名字是Hamedori君dori～！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛dori君"},
+					"「Hame的名字是Hamedori君dori～！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00118",
+		linknext = "0069_00120",
+		line = 1919,
+	},
+	["0069_00120"] = {
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"fgact", ch="ハメ9", id=9, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"fgact", ch="ハメ12", id=12, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00103", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=12, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1216", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“Absolutely perfect! Pass!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“无可挑剔！合格啪啪！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「無可挑剔！合格啪啪！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00119",
+		linknext = "0069_00121",
+		line = 1936,
+	},
+	["0069_00121"] = {
+		{"fg", file="schubert_01f_00001", file1="schubert_01f_00102", file2="schubert_01f_00224", file4="schubert_01f_00401", file5="schubert_01f_00501", path=":fg/schubert_01f/", id=30, ch="シューベルト", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="schubert0267", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト", "シューベルドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schuberdori"},
+					"“Wh-What?! This wasn’t in my bird data!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯dori君"},
+					"“为什么dori……！？这种事情，在hame的资料里没有啊dori……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯dori君"},
+					"「為什麼dori……！？這種事情，在hame的資料裡沒有啊dori……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00120",
+		linknext = "0069_00122",
+		line = 1949,
+	},
+	["0069_00122"] = {
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=9, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1217", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“NEXT!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“下一个！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「下一個！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00121",
+		linknext = "0069_00123",
+		line = 1963,
+	},
+	["0069_00123"] = {
+		{"fgact", ch="ハメ12", id=12, lv=12, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=2, size=-12.5, time=150, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Rei methodically goes through every last Hamedori, assessing their performances.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"礼前辈一个接着一个，毫无遗漏地依序确认Hamedori君们的演技。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"禮前輩一個接著一個，毫無遺漏地依序確認Hamedori君們的演技。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00122",
+		linknext = "0069_00124",
+		line = 1977,
+	},
+	["0069_00124"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Squawks and lewd proclamations continue to echo through the schoolyard...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"Hame和啪啪在操场上不断回响──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"Hame和啪啪在操場上不斷迴響──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00123",
+		linknext = "0069_00125",
+		line = 1987,
+	},
+	["0069_00125"] = {
+		{"bgm", stop=1},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file3="jun_01f_00301", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=20},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“………………”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「………………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00124",
+		linknext = "0069_00126",
+		line = 2000,
+	},
+	["0069_00126"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fg", mode=-1, id=9, ch="ハメ9", ch_origin="ハメ", lv=9, time=0, sync=0},
+		{"bg", id=29, file="blackband_00000", x=0, y=0, lv=29, path=":bg/"},
+		{"bg", id=2, file="bg17_1l_00000", x=-25, y=0, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="hame_01l_00002", path=":fg/hame_01l/", id=10, lv=10, head="hame_01l", ch_origin="ハメ", ch="ハメ10", mw="mw", sync=0, mode=3, x=-30, y=-5},
+		{"transitiontime", time=500},
+		{"cgact", file="cgact", id=2, act="移動", x=45, y=-5, time=20000, lv=2},
+		{"fgact", ch="ハメ10", id=10, act="移動", x=50, y=0, time=20000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I wonder what face Rei is making underneath this ridiculous outfit.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在那一脸蠢样的布偶装里面，礼前辈到底是什么样的表情呢？",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在那一臉蠢樣的布偶裝裡面，禮前輩到底是什麼樣的表情呢？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00125",
+		linknext = "0069_00127",
+		line = 2020,
+	},
+	["0069_00127"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"From what I can hear, she seems perfectly normal.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"从声音听来，似乎跟平时没有两样。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"從聲音聽來，似乎跟平時沒有兩樣。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00126",
+		linknext = "0069_00128",
+		line = 2030,
+	},
+	["0069_00128"] = {
+		{"ex", time=500, func="wait"},
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"fg", mode=-1, id=10, ch="ハメ10", ch_origin="ハメ", lv=10, time=0, sync=0},
+		{"cgdel", id=29, lv=29, time=0, alphadel=1},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=9, lv=9, head="hame_01m", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="rei_02f_00001", file1="rei_02f_00101", file3="rei_02f_00317", path=":fg/rei_02f/", id=30, ch="礼", lv=9, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1218", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“NEXT!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“下一个！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「下一個！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00127",
+		linknext = "0069_00129",
+		line = 2053,
+	},
+	["0069_00129"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"How long am I gonna be like this around her?",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"放不下的，就只有我一个吗────",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"放不下的，就只有我一個嗎────",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00128",
+		linknext = "0069_00130",
+		line = 2063,
+	},
+	["0069_00130"] = {
+		{"fg", file="hame_01l_00002", path=":fg/hame_01l/", id=9, lv=9, head="hame_01l", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="rei_01f_00001", file1="rei_01f_00101", file2="rei_01f_00203", path=":fg/rei_01f/", id=30, ch="礼", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1219", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“I said next! That means you! Why are you standing around slack-beaked?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“──喂下一个！就是你hame！发什么呆啊啪啪！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「──喂下一個！就是你hame！發什麼呆啊啪啪！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00129",
+		linknext = "0069_00131",
+		line = 2082,
+	},
+	["0069_00131"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00102", file2="jun_01f_00209", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=20},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Ah! Uh, okay!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“啊……──是、是！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「啊……──是、是！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00130",
+		linknext = "0069_00132",
+		line = 2094,
+	},
+	["0069_00132"] = {
+		{"fg", file="hame_01l_00001", path=":fg/hame_01l/", id=9, lv=9, head="hame_01l", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fg", file="rei_01f_00001", file1="rei_01f_00102", file2="rei_01f_00228", path=":fg/rei_01f/", id=30, ch="礼", lv=9, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei1220", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“...!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“…………！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「…………！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00131",
+		linknext = "0069_00133",
+		line = 2110,
+	},
+	["0069_00133"] = {
+		{"text"},
+		delay = {
+			[4500] = {
+				{"fg", mode=-1, id=9, ch="ハメ9", ch_origin="ハメ", lv=9, time=0, sync=0, timestamp=16, delay2=4500},
+				{"fg", file="hame_01l_00002", path=":fg/hame_01l/", id=9, lv=9, head="hame_01l", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, timestamp=16, delay2=4500, mode=3, x=-5, y=-5},
+				{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine", timestamp=16, delay2=4500},
+				{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", timestamp=17, delay2=4500, lv=1},
+				{"se", id=0, loop=0, file="se_a098", timestamp=17, delay2=4500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rei1221", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼", "ハメドレイくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Hamedo-Rei"},
+					"“What?! That’s not very Hamedori of you! Get with the picture!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼", "Hame奴隶君"},
+					"“‘是’什么啊……hame……。……你以为……那样能算Hamedori君吗！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "Hame奴隸君"},
+					"「『是』什麼啊……hame……。……你以為……那樣能算Hamedori君嗎！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00132",
+		linknext = "0069_00134",
+		line = 2128,
+	},
+	["0069_00134"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m face-to-face with Rei, who’s shouting at me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"礼前辈劈头骂道。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"禮前輩劈頭罵道。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00133",
+		linknext = "0069_00135",
+		line = 2138,
+	},
+	["0069_00135"] = {
+		{"se", id=0, loop=0, file="se_a107"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I don’t think it’s out of surprise or fear... but for some reason my heartbeat is speeding up again.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我记没有被她的声音吓到，也没有感到害怕──可是不知为何，心跳却加速了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我記沒有被她的聲音嚇到，也沒有感到害怕──可是不知為何，心跳卻加速了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00134",
+		linknext = "0069_00136",
+		line = 2149,
+	},
+	["0069_00136"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m not sure what I’m feeling... but now isn’t the time to get hung up on it.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然我自己也不知道那究竟是为什么──不论如何，现在可不是为私情所困的时候。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然我自己也不知道那究竟是為什麼──不論如何，現在可不是為私情所困的時候。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00135",
+		linknext = "0069_00137",
+		line = 2159,
+	},
+	["0069_00137"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m in the schoolyard, and we’re all here to prepare for the event.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这里是操场，而大家是为了参加活动聚集于此的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這裡是操場，而大家是為了參加活動聚集於此的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00136",
+		linknext = "0069_00138",
+		line = 2169,
+	},
+	["0069_00138"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I need to shed the Junnosuke Tachibana part of me and really immerse myself in the role of Hamedori.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我必须舍弃作为橘淳之介的情结，把意识切换成Hamedori君才行。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我必須捨棄作為橘淳之介的情結，把意識切換成Hamedori君才行。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00137",
+		linknext = "0069_00139",
+		line = 2179,
+	},
+	["0069_00139"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I’m going method. I’m Hamedori. Embody the bird. No one will question my performance.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我是Hamedori君。不论有谁说了什么，我都是Hamedori君……。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我是Hamedori君。不論有誰說了什麼，我都是Hamedori君……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00138",
+		linknext = "0069_00140",
+		line = 2189,
+	},
+	["0069_00140"] = {
+		{"ex", time=500, func="wait"},
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00227", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“It’s me, the SHO Official Mascot Character, Hamedori!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我是SHO官方吉祥物，Hamedori君hame～！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我是SHO官方吉祥物，Hamedori君hame～！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00139",
+		linknext = "0069_00141",
+		line = 2205,
+	},
+	["0069_00141"] = {
+		{"fgact", ch="ハメ9", id=9, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"se", id=0, loop=0, file="se_a106", vol=70},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file3="jun_01f_00303", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", lv=1, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Fish and sex, I gotta have ’em raw! I must be British, because I love a big plate of fish’n’tits!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“果然鱼和性爱都是不带塑胶的最棒了啪啪！Fish and 做爱！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「果然魚和性愛都是不帶塑膠的最棒了啪啪！Fish and 做愛！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00140",
+		linknext = "0069_00142",
+		line = 2220,
+	},
+	["0069_00142"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"transitiontime", time=0},
+		{"ex", time=500, func="wait"},
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I try my best and pour everything I have into a Hamedori impression, but...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我尽我所能地模仿了Hamedori君──可是。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我盡我所能地模仿了Hamedori君──可是。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00141",
+		linknext = "0069_00143",
+		line = 2235,
+	},
+	["0069_00143"] = {
+		{"fgact", ch="ハメ9", id=9, lv=9, act="表示アクション", alpha=0, alphadel=1, style="reset", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A dead silence descends on the area immediately.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"随后，现场马上就像被泼了一盆冷水似地静了下来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"隨後，現場馬上就像被潑了一盆冷水似地靜了下來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00142",
+		linknext = "0069_00144",
+		line = 2247,
+	},
+	["0069_00144"] = {
+		{"se", id=0, loop=0, file="se_a238"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I break out in a cold sweat.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我冷汗直流。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我冷汗直流。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00143",
+		linknext = "0069_00145",
+		line = 2258,
+	},
+	["0069_00145"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Was it too much, even for an answer I made up on the spot?",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这──果然，临阵磨枪还是不行吗？",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這──果然，臨陣磨槍還是不行嗎？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00144",
+		linknext = "0069_00146",
+		line = 2268,
+	},
+	["0069_00146"] = {
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=3, lv=3, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ3", mw="mw", sync=1, a_chr151=1, mode=3, x=-605, y=195},
+		{"fgact", ch="ハメ3", id=3, lv=3, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ3", id=3, act="移動", x=0, y=-100, time=700},
+		{"fg", file="asane_02f_00001", file1="asane_02f_00102", file3="asane_02f_00302", path=":fg/asane_02f/", id=30, ch="麻沙音", lv=3, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0284", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“What was that? It sounded so weird...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“刚才的Hamedori君是怎么回事……太奇怪了hame……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「剛才的Hamedori君是怎麼回事……太奇怪了hame……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00145",
+		linknext = "0069_00147",
+		line = 2284,
+	},
+	["0069_00147"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00219", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Huh? When you say it was weird... do you mean that it wasn’t similar enough to the others?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“咦……？说我模仿的Hamedori君很奇怪……是实在太不像了的意思对吧？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「咦……？說我模仿的Hamedori君很奇怪……是實在太不像了的意思對吧？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00146",
+		linknext = "0069_00148",
+		line = 2296,
+	},
+	["0069_00148"] = {
+		{"fg", file="asane_02f_00001", file1="asane_02f_00101", file2="asane_02f_00221", path=":fg/asane_02f/", id=30, ch="麻沙音", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=3},
+		{"bgm", file="bgm31", vol=100},
+		{"se", id=0, loop=0, file="se_d007"},
+		{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=3, lv=3, head="hame_01m", ch_origin="ハメ", ch="ハメ3", mw="mw", sync=0, mode=3, x=-605, y=95},
+		{"transitiontime", time=100},
+		{"fgact", ch="ハメ3", id=3, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"fg", file="asane_02f_00001", file1="asane_02f_00101", file2="asane_02f_00221", path=":fg/asane_02f/", id=30, ch="麻沙音", lv=3, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane0285", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音", "アサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asadori"},
+					"“Nope, it was too similar, bird-brain!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"“是太像了很奇怪的意思啪啪……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音", "麻沙dori君"},
+					"「是太像了很奇怪的意思啪啪……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00147",
+		linknext = "0069_00149",
+		line = 2316,
+	},
+	["0069_00149"] = {
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=13, lv=13, head="hame_01m", ch_origin="ハメ", ch="ハメ13", mw="mw", sync=0, mode=3, x=-5, y=95},
+		{"transitiontime", time=300},
+		{"fg", file="ran_01f_00001", file1="ran_01f_00102", file2="ran_01f_00209", file4="ran_01f_00401", path=":fg/ran_01f/", id=30, ch="蘭", lv=13, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ran0106", path=":vo/", ch="ran"},
+			},
+			ja = {
+				{
+					name = {"蘭", "ランドリーくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"蘭", "Randori"},
+					"“That was so amazing... You were even better than the real thing!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"蘭", "兰dori君"},
+					"“太厉害了hame……简直比本尊还像啪啪……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"蘭", "蘭dori君"},
+					"「太厲害了hame……簡直比本尊還像啪啪……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00148",
+		linknext = "0069_00150",
+		line = 2331,
+	},
+	["0069_00150"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00206", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Huh? No way. Mizuhiki’s here, so that can’t be true.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“咦咦……？不不不，水引酱也在场，这也说得太过头了吧……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「咦咦……？不不不，水引醬也在場，這也說得太過頭了吧……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00149",
+		linknext = "0069_00151",
+		line = 2343,
+	},
+	["0069_00151"] = {
+		{"fg", file="hame_02m_00001", path=":fg/hame_02m/", id=15, lv=15, head="hame_02m", ch_origin="ハメ", ch="ハメ15", mw="mw", sync=0, mode=3, x=645, y=65},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01f_00002", file1="mizuhiki_01f_00101", file2="mizuhiki_01f_00217", file4="mizuhiki_01f_00401", path=":fg/mizuhiki_01f/", id=30, ch="水引", lv=15, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="mizuhiki0524", path=":vo/", ch="mizuhiki"},
+			},
+			ja = {
+				{
+					name = {"水引", "オリジンハメドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Origin Hamedori"},
+					"“No, that was seriously amazing. I thought I was speaking without realizing it. You’re amazing, Tachibana...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引", "原创Hamedori君"},
+					"“不……刚才的真的很厉害hame……连我都以为是我自己说话了啪啪……真不愧是橘君hame……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引", "原創Hamedori君"},
+					"「不……剛才的真的很厲害hame……連我都以為是我自己說話了啪啪……真不愧是橘君hame……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00150",
+		linknext = "0069_00152",
+		line = 2358,
+	},
+	["0069_00152"] = {
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00219", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“For real for real?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“有那么像……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「有那麼像……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00151",
+		linknext = "0069_00153",
+		line = 2370,
+	},
+	["0069_00153"] = {
+		{"fg", file="susuko_02f_00001", file1="susuko_02f_00101", file2="susuko_02f_00225", path=":fg/susuko_02f/", id=30, ch="スス子", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=12},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=2, lv=2, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ2", mw="mw", sync=1, a_chr151=1, mode=3, x=-305, y=-105},
+		{"fgact", ch="ハメ2", id=2, lv=2, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ2", id=2, act="移動", x=0, y=-100, time=700},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="susuko0402", path=":vo/", ch="susuko"},
+			},
+			ja = {
+				{
+					name = {"スス子", "ススドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"スス子", "Susudori"},
+					"“For real! Your parents would be shocked!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"スス子", "丝丝dori君"},
+					"“很厉害喔啪啪嘶！想必连你爸妈都会吓一跳hame！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"スス子", "絲絲dori君"},
+					"「很厲害喔啪啪嘶！想必連你爸媽都會嚇一跳hame！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00152",
+		linknext = "0069_00154",
+		line = 2386,
+	},
+	["0069_00154"] = {
+		{"fg", file="hame_02m_00001", path=":fg/hame_02m/", id=12, lv=12, head="hame_02m", alpha=0, ch_origin="ハメ", ch="ハメ12", mw="mw", sync=1, a_chr151=1, mode=3, x=295, y=-105},
+		{"fgact", ch="ハメ12", id=12, lv=12, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ12", id=12, act="移動", x=0, y=-120, time=700},
+		{"fg", file="schubert_01f_00001", file2="schubert_01f_00209", file4="schubert_01f_00401", file5="schubert_01f_00501", path=":fg/schubert_01f/", id=30, ch="シューベルト", lv=12, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="schubert0268", path=":vo/", ch="schubert"},
+			},
+			ja = {
+				{
+					name = {"シューベルト", "シューベルドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"シューベルト", "Schuberdori"},
+					"“This wasn’t in my Hamedori data!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"シューベルト", "舒伯dori君"},
+					"“Hame的数据里没有啊dori……！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"シューベルト", "舒伯dori君"},
+					"「Hame的數據裡沒有啊dori……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00153",
+		linknext = "0069_00155",
+		line = 2402,
+	},
+	["0069_00155"] = {
+		{"fg", file="hame_02l_00002", path=":fg/hame_02l/", id=16, lv=16, head="hame_02l", alpha=0, ch_origin="ハメ", ch="ハメ16", mw="mw", sync=1, a_chr151=1, mode=3, x=795, y=295},
+		{"fgact", ch="ハメ16", id=16, act="汎用アクション", rotate=-45, time=0, loop=0, ease="none", ax=800, ay=450},
+		{"fgact", ch="ハメ16", id=16, lv=16, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ16", id=16, act="移動", x=-200, y=-200, time=700},
+		{"fgact", ch="ハメ16", id=16, act="浮遊", loop=-1, size=5, time=250, ease="easeinout_sine"},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"fgact", ch="ハメ2", id=2, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"fgact", ch="ハメ3", id=3, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"fgact", ch="ハメ15", id=15, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"fgact", ch="ハメ13", id=13, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"fgact", ch="ハメ12", id=12, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"fg", file="misaki_01f_00001", file1="misaki_01f_00101", file2="misaki_01f_00220", path=":fg/misaki_01f/", id=30, ch="美岬", lv=12, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki0251", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬", "ミサドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misadori"},
+					"“Your voice resonated deep within my ass!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬", "美岬dori君"},
+					"“真是直冲后门的声音呢hame！屌不起！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬", "美岬dori君"},
+					"「真是直衝後門的聲音呢hame！屌不起！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00154",
+		linknext = "0069_00156",
+		line = 2427,
+	},
+	["0069_00156"] = {
+		{"fgact", ch="ハメ3", id=3, act="振動下", loop=-1, size=-25, time=150, ease="easeinout_sine"},
+		{"fgact", ch="ハメ13", id=13, act="浮遊横", loop=-1, size=35, time=300, ease="easeinout_sine"},
+		{"fgact", ch="ハメ15", id=15, act="振動下", loop=-1, size=-100, time=350, ease="easeinout_sine"},
+		{"fgact", ch="ハメ12", id=12, act="振動下", loop=-1, size=-40, time=150, ease="easeinout_sine"},
+		{"fgact", ch="ハメ2", id=2, act="振動下", loop=-1, size=30, time=200, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_d007"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My thoughts are drowned out by the rapturous applause.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"出乎意料地，大受好评。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"出乎意料地，大受好評。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00155",
+		linknext = "0069_00157",
+		line = 2443,
+	},
+	["0069_00157"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I never knew I had such a talent for Hamedori-ing...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"没想到我居然这么有Hamedori君的才能──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"沒想到我居然這麼有Hamedori君的才能──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00156",
+		linknext = "0069_00158",
+		line = 2453,
+	},
+	["0069_00158"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The hellish sight of all these mascots before me combines with a strange sense of emotion...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我看着这副地狱一般的光景，陷入了奇妙的感慨之中。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我看著這副地獄一般的光景，陷入了奇妙的感慨之中。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00157",
+		linknext = "0069_00159",
+		line = 2463,
+	},
+	["0069_00159"] = {
+		{"fgact", id=2, ch="ハメ2", act="stopact"},
+		{"fg", mode=-1, id=2, ch="ハメ2", ch_origin="ハメ", lv=2, time=0, sync=0},
+		{"fgact", id=3, ch="ハメ3", act="stopact"},
+		{"fg", mode=-1, id=3, ch="ハメ3", ch_origin="ハメ", lv=3, time=0, sync=0},
+		{"fgact", id=12, ch="ハメ12", act="stopact"},
+		{"fg", mode=-1, id=12, ch="ハメ12", ch_origin="ハメ", lv=12, time=0, sync=0},
+		{"fgact", id=13, ch="ハメ13", act="stopact"},
+		{"fg", mode=-1, id=13, ch="ハメ13", ch_origin="ハメ", lv=13, time=0, sync=0},
+		{"fgact", id=15, ch="ハメ15", act="stopact"},
+		{"fg", mode=-1, id=15, ch="ハメ15", ch_origin="ハメ", lv=15, time=0, sync=0},
+		{"fgact", id=16, ch="ハメ16", act="stopact"},
+		{"fg", mode=-1, id=16, ch="ハメ16", ch_origin="ハメ", lv=16, time=0, sync=0},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=5, lv=5, head="hame_01m", ch_origin="ハメ", ch="ハメ5", mw="mw", sync=0, mode=3, x=-5, y=195},
+		{"transitiontime", time=500},
+		{"fgact", ch="ハメ5", id=5, act="移動", x=0, y=-100, time=700},
+		{"fg", file="hinami_01f_00001", file1="hinami_01f_00101", file2="hinami_01f_00202", path=":fg/hinami_01f/", id=30, ch="ヒナミ", lv=5, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		delay = {
+			[7500] = {
+				{"fg", file="hame_01m_00002", path=":fg/hame_01m/", id=5, lv=5, head="hame_01m", ch_origin="ハメ", ch="ハメ5", mw="mw", sync=0, timestamp=18, delay2=7500, mode=3, x=-5, y=95},
+				{"fgact", ch="ハメ5", id=5, act="振動下", loop=2, size=12.5, time=300, ease="easeinout_sine", timestamp=18, delay2=7500},
+				{"se", id=0, loop=0, file="se_a094", timestamp=18, delay2=7500},
+			},
+			[9200] = {
+				{"fgact", ch="ハメ5", id=5, act="振動下", loop=2, size=12.5, time=400, ease="easeinout_sine", timestamp=19, delay2=9200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="hinami0197", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ", "ヒナドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinadori"},
+					"“Jun, you’re amazing! Hame-hame-hame! Maybe you’re not so bird-brained after all!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏dori君"},
+					"“不愧是淳君hame。好厉害me。得要啪啪你的头才行hame。啪啪。啪～啪啪……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛dori君"},
+					"「不愧是淳君hame。好厲害me。得要啪啪你的頭才行hame。啪啪。啪～啪啪……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00158",
+		linknext = "0069_00160",
+		line = 2496,
+	},
+	["0069_00160"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Hinami spreads her wings and attempts to pet me, but because of the limited movement of the suit and her short stature, all she manages is stabbing me with the beak.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"雏见伸长了翅膀想要摸摸我的头，可是音为可动范围和身高的关系，感觉比较像是在戳我的鸟喙。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雛見伸長了翅膀想要摸摸我的頭，可是音為可動範圍和身高的關係，感覺比較像是在戳我的鳥喙。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00159",
+		linknext = "0069_00161",
+		line = 2506,
+	},
+	["0069_00161"] = {
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=7, lv=7, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ7", mw="mw", sync=1, a_chr151=1, mode=3, x=-705, y=145},
+		{"fgact", ch="ハメ7", id=7, lv=7, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ7", id=7, act="移動", x=0, y=-100, time=700},
+		{"fg", file="fumino_01f_00007", file1="fumino_01f_00101", file2="fumino_01f_00210", path=":fg/fumino_01f/", id=30, ch="文乃", lv=7, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino0203", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃", "ドスケベジャンヌドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Hame Joan of Dori"},
+					"“That was truly special... In-duck-bitably.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃", "超变态圣女贞德dori君"},
+					"“小的精畏不已……hame……原来……”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃", "超變態聖女貞德dori君"},
+					"「小的精畏不已……hame……原來……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00160",
+		linknext = "0069_00162",
+		line = 2522,
+	},
+	["0069_00162"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fg", file="hame_02m_00001", path=":fg/hame_02m/", id=4, lv=4, head="hame_02m", alpha=0, ch_origin="ハメ", ch="ハメ4", mw="mw", sync=1, a_chr151=1, mode=3, x=695, y=-5},
+		{"fgact", ch="ハメ4", id=4, lv=4, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ4", id=4, act="移動", x=-100, y=0, time=700},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"ex", time=300, func="wait"},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=3, lv=3, head="hame_01m", alpha=0, ch_origin="ハメ", ch="ハメ3", mw="mw", sync=1, a_chr151=1, mode=3, x=-305, y=-105},
+		{"fgact", ch="ハメ3", id=3, lv=3, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ3", id=3, act="移動", x=0, y=-100, time=700},
+		{"se", id=1, loop=0, file="se_a100"},
+		{"ex", time=300, func="wait"},
+		{"fg", file="hame_02m_00001", path=":fg/hame_02m/", id=2, lv=2, head="hame_02m", alpha=0, ch_origin="ハメ", ch="ハメ2", mw="mw", sync=1, a_chr151=1, mode=3, x=295, y=-105},
+		{"fgact", ch="ハメ2", id=2, lv=2, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"fgact", ch="ハメ2", id=2, act="移動", x=0, y=-150, time=700},
+		{"se", id=0, loop=0, file="se_a100"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My friends the Hamedoris gather around me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"眼熟的Hamedori君一个一个聚集了过来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"眼熟的Hamedori君一個一個聚集了過來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00161",
+		linknext = "0069_00163",
+		line = 2548,
+	},
+	["0069_00163"] = {
+		{"fgact", ch="ハメ7", id=7, act="振動下", loop=-1, size=25, time=500, ease="easeinout_sine"},
+		{"fgact", ch="ハメ4", id=4, act="浮遊横", loop=-1, size=500, time=500, ease="easeinout_sine"},
+		{"fgact", ch="ハメ3", id=3, act="振動下", loop=-1, size=-25, time=150, ease="easeinout_sine"},
+		{"fgact", ch="ハメ2", id=2, act="振動下", loop=-1, size=-25, time=150, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We’re still in the middle of training, but the gaggle of birds are all aflutter.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"明明还在训练的中途，却形成了一个鸟群。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"明明還在訓練的中途，卻形成了一個鳥群。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00162",
+		linknext = "0069_00164",
+		line = 2562,
+	},
+	["0069_00164"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"They hame-hame around me, urging me to say the words again.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"大家对我又捧又啪，然后还催着我再来几句。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"大家對我又捧又啪，然後還催著我再來幾句。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00163",
+		linknext = "0069_00165",
+		line = 2572,
+	},
+	["0069_00165"] = {
+		{"fg", file="hame_02m_00001", path=":fg/hame_02m/", id=5, lv=5, head="hame_02m", ch_origin="ハメ", ch="ハメ5", mw="mw", sync=0, mode=3, x=-5, y=95},
+		{"transitiontime", time=300},
+		{"bgm", stop=1},
+		{"fg", file="hinami_01f_00001", file1="hinami_01f_00101", file2="hinami_01f_00210", path=":fg/hinami_01f/", id=30, ch="ヒナミ", lv=5, mw="mw", mode=1, sync=0, x=-5, y=-5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami0198", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ", "ヒナドリくん"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinadori"},
+					"“...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏dori君"},
+					"“………………”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛dori君"},
+					"「………………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00164",
+		linknext = "0069_00166",
+		line = 2589,
+	},
+	["0069_00166"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Meanwhile, Hinami, who had been trying to pet me, looks over in the other direction.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这时──刚才还想要摸我的头的雏见，不知为何把视线转向了一个无关的方向。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這時──剛才還想要摸我的頭的雛見，不知為何把視線轉向了一個無關的方向。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00165",
+		linknext = "0069_00167",
+		line = 2599,
+	},
+	["0069_00167"] = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fgact", id=3, ch="ハメ3", act="stopact"},
+		{"fg", mode=-1, id=3, ch="ハメ3", ch_origin="ハメ", lv=3, time=0, sync=0},
+		{"fgact", id=4, ch="ハメ4", act="stopact"},
+		{"fg", mode=-1, id=4, ch="ハメ4", ch_origin="ハメ", lv=4, time=0, sync=0},
+		{"fgact", id=2, ch="ハメ2", act="stopact"},
+		{"fg", mode=-1, id=2, ch="ハメ2", ch_origin="ハメ", lv=2, time=0, sync=0},
+		{"fg", mode=-1, id=5, ch="ハメ5", ch_origin="ハメ", lv=5, time=0, sync=0},
+		{"fgact", id=7, ch="ハメ7", act="stopact"},
+		{"fg", mode=-1, id=7, ch="ハメ7", ch_origin="ハメ", lv=7, time=0, sync=0},
+		{"bg", id=2, file="bg17_1l_00000", x=200, y=-100, lv=2, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300, draw2=1},
+		{"ex", time=500, func="wait"},
+		{"fg", file="hame_01m_00001", path=":fg/hame_01m/", id=9, lv=9, head="hame_01m", ch_origin="ハメ", ch="ハメ9", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Following her line of sight, I can see one Hamedori standing alone, separate from the bustling group.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我想着怎么了，然后顺着她的视线看去──站在鸟墙之外的一只Hamedori君，正静静地凝视着我们。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我想著怎麼了，然後順著她的視線看去──站在鳥牆之外的一隻Hamedori君，正靜靜地凝視著我們。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00166",
+		linknext = "0069_00168",
+		line = 2626,
+	},
+	["0069_00168"] = {
+		{"ex", time=500, func="wait"},
+		{"fg", file="jun_01f_00001", file1="jun_01f_00101", file2="jun_01f_00206", file4="jun_01f_00401", path=":fg/jun_01f/", id=30, ch="淳之介", mw="mw", mode=1, sync=0, x=-5, y=-5, lv=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Rei?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“礼前辈……？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「禮前輩……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00167",
+		linknext = "0069_00169",
+		line = 2639,
+	},
+	["0069_00169"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Yup, it’s definitely her. She’s being uncharacteristically silent.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不会错的。是刚才还在大呼小叫的礼前辈。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不會錯的。是剛才還在大呼小叫的禮前輩。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00168",
+		linknext = "0069_00170",
+		line = 2649,
+	},
+	["0069_00170"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"To an observer, it’d just look like a weird mascot standing alone in a schoolyard.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"从旁人看来，就只是一个让人不舒服的布偶装呆立在那里而以。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"從旁人看來，就只是一個讓人不舒服的布偶裝呆立在那裡而以。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00169",
+		linknext = "0069_00171",
+		line = 2659,
+	},
+	["0069_00171"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I wonder what face she’s making inside that ridiculous outfit.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在那包裹住全身的Hamedori君的里面，她到底是什么样的表情呢？",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在那包裹住全身的Hamedori君的裡面，她到底是什麼樣的表情呢？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00170",
+		linknext = "0069_00172",
+		line = 2669,
+	},
+	["0069_00172"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Its emotionless eyes stare back, betraying nothing about the state of mind of the suit’s occupant...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"布偶装只有一对完全无机质的眼睛，而从站姿上也读不出任何情绪。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"布偶裝只有一對完全無機質的眼睛，而從站姿上也讀不出任何情緒。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00171",
+		linknext = "0069_00173",
+		line = 2679,
+	},
+	["0069_00173"] = {
+		{"ex", time=500, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But it sure looks lonely over there.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"只是，我隐约地感觉到──那默默伫立的身姿，感起来非常寂寞。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"只是，我隱約地感覺到──那默默佇立的身姿，感起來非常寂寞。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0069_00172",
+		linknext = "block_00173",
+		line = 2690,
+	},
+	block_00173 = {
+		{"bgm", stop=1},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=9, ch="ハメ9", ch_origin="ハメ", lv=9, time=0, sync=0},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=12, time=0, alphadel=1, lv=5},
+		{"cgdel", id=13, time=0, alphadel=1, lv=5},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"cgdel", id=15, time=0, alphadel=1, lv=5},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_043_00000"},
+		{"ex", time=3000, func="wait"},
+		{"excall", file="04_rt14"},
+		{"text"},
+		linkback = "0069_00173",
+		line = 2736,
+	},
+	label = {
+		top = { block="0069_00001", label=1 },
+	},
+}

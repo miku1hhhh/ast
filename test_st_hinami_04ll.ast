@@ -1,0 +1,109 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"HINAMI_04LL",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="hinami_04ll_00001", file1="hinami_04ll_00102", file2="hinami_04ll_00210", path=":fg/hinami_04ll/", id=2, lv=5, head="hinami_04ll", ch_origin="ヒナミ", ch="ヒナミ2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HINAMI_04LL.s25,0,0,0,m,01,02,10,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="hinami_04ll_00001", file1="hinami_04ll_00102", file2="hinami_04ll_00204", path=":fg/hinami_04ll/", id=2, lv=5, head="hinami_04ll", ch_origin="ヒナミ", ch="ヒナミ2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HINAMI_04LL.s25,0,0,0,m,01,02,4,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="hinami_04ll_00001", file1="hinami_04ll_00105", file2="hinami_04ll_00205", path=":fg/hinami_04ll/", id=2, lv=5, head="hinami_04ll", ch_origin="ヒナミ", ch="ヒナミ2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HINAMI_04LL.s25,0,0,0,m,01,05,5,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="hinami_04ll_00001", file1="hinami_04ll_00106", file2="hinami_04ll_00227", path=":fg/hinami_04ll/", id=2, lv=5, head="hinami_04ll", ch_origin="ヒナミ", ch="ヒナミ2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HINAMI_04LL.s25,0,0,0,m,01,06,27,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 18,
+	},
+	block_00005 = {
+		{"fg", file="hinami_04ll_00001", file1="hinami_04ll_00106", file2="hinami_04ll_00208", path=":fg/hinami_04ll/", id=2, lv=5, head="hinami_04ll", ch_origin="ヒナミ", ch="ヒナミ2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HINAMI_04LL.s25,0,0,0,m,01,06,8,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 22,
+	},
+	block_00006 = {
+		{"fg", file="hinami_04ll_00004", file1="hinami_04ll_00101", file3="hinami_04ll_00307", path=":fg/hinami_04ll/", id=2, lv=5, head="hinami_04ll", ch_origin="ヒナミ", ch="ヒナミ2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/HINAMI_04LL.s25,0,0,0,m,04,01,-1,7",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		line = 26,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}
