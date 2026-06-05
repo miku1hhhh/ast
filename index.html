@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Galgame AST 检视器 · GitHub Pages 最终版</title>
+  <title>Galgame AST 检视器 · GitHub Pages</title>
   <style>
     :root {
       --bg: #0a0a16; --panel-bg: #111128; --text: #d4cfc4; --accent: #c8a87c; --accent2: #6fa8b8; --border: #2a2a48;
@@ -92,37 +92,22 @@
   </div>
   <div id="file-list"></div>
   <div id="resource-config">
-    <label>📁 资源根路径</label>
-    <input type="text" id="resource-path" placeholder="./resources" value="./resources">
+    <label>📁 资源根路径 (Raw)</label>
+    <input type="text" id="resource-path" value="https://raw.githubusercontent.com/miku1hhhh/ast/master" style="background:rgba(0,0,0,0.4); border:1px solid var(--border); color:#ddd; padding:4px 8px; border-radius:4px; font-size:11px; width:100%;">
     <div id="test-url-bar">
       <input type="text" id="test-url-input" placeholder="粘贴URL测试">
       <button class="btn" onclick="testImageUrl()">🔍 测试</button>
     </div>
   </div>
   <div class="config-group">
-    <div class="config-row">
-      <label>VO音量</label>
-      <input type="range" id="voVolume" min="0" max="100" value="80" oninput="updateVoVolume()">
-      <span id="voVolLabel">80</span>
-    </div>
-    <div class="config-row">
-      <label>TTS音量</label>
-      <input type="range" id="ttsVolume" min="0" max="100" value="80" oninput="updateTtsVolume()">
-      <span id="ttsVolLabel">80</span>
-    </div>
-    <div class="config-row">
-      <label>TTS语速</label>
-      <input type="range" id="ttsRate" min="0.5" max="2" step="0.1" value="0.9" oninput="updateTtsRate()">
-      <span id="ttsRateLabel">0.9</span>
-    </div>
+    <div class="config-row"><label>VO音量</label><input type="range" id="voVolume" min="0" max="100" value="80" oninput="updateVoVolume()"><span id="voVolLabel">80</span></div>
+    <div class="config-row"><label>TTS音量</label><input type="range" id="ttsVolume" min="0" max="100" value="80" oninput="updateTtsVolume()"><span id="ttsVolLabel">80</span></div>
+    <div class="config-row"><label>TTS语速</label><input type="range" id="ttsRate" min="0.5" max="2" step="0.1" value="0.9" oninput="updateTtsRate()"><span id="ttsRateLabel">0.9</span></div>
   </div>
   <div id="debug-panel"></div>
 </div>
 
-<div id="ast-panel">
-  <div id="ast-header">🌳 AST 结构</div>
-  <div id="ast-tree"></div>
-</div>
+<div id="ast-panel"><div id="ast-header">🌳 AST 结构</div><div id="ast-tree"></div></div>
 
 <div id="game-wrapper">
   <div id="game-container" onclick="advance()">
@@ -451,7 +436,7 @@ window.updateTtsVolume = () => { ttsVolume = $('ttsVolume').value/100; $('ttsVol
 window.updateTtsRate = () => { ttsRate = parseFloat($('ttsRate').value); $('ttsRateLabel').textContent = ttsRate.toFixed(1); };
 
 function buildBaseUrl(cmd, fileKey) {
-  const base = (resourcePathInput.value || './resources').replace(/\/+$/, '');
+  const base = resourcePathInput.value.replace(/\/+$/, '');
   const filename = cmd[fileKey] || '';
   if (cmd.path) {
     let dir = cmd.path.replace(/^:/, '').replace(/\/+$/, '');
@@ -460,7 +445,11 @@ function buildBaseUrl(cmd, fileKey) {
   }
   return `${base}/${filename}`;
 }
-function buildAudioUrl(cmd, fileKey) { return buildBaseUrl(cmd, fileKey) + '.ogg'; }
+function buildAudioUrl(cmd, fileKey) {
+  const base = resourcePathInput.value.replace(/\/+$/, '');
+  const filename = cmd[fileKey] || '';
+  return `${base}${(cmd.path||':vo/').replace(/^:/, '')}${filename}.ogg`;
+}
 window.testImageUrl = () => {
   const url = document.getElementById('test-url-input').value.trim();
   if (!url) return;
@@ -783,7 +772,7 @@ async function loadFileListFromJson() {
       div.onclick = () => loadRemoteFile(f);
       fileList.appendChild(div);
     });
-  } catch (e) { console.log('未找到 filelist.json，可使用内建示例或手动上传'); }
+  } catch (e) { console.log('未找到 filelist.json'); }
 }
 
 async function loadRemoteFile(filename) {
