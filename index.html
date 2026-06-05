@@ -93,7 +93,7 @@
   <div id="file-list"></div>
   <div id="resource-config">
     <label>📁 资源基路径 (raw.githubusercontent.com)</label>
-    <input type="text" id="resource-path" value="https://raw.githubusercontent.com/miku1hhhh/ast/master" style="background:rgba(0,0,0,0.4); border:1px solid var(--border); color:#ddd; padding:4px 8px; border-radius:4px; font-size:11px; width:100%;">
+    <input type="text" id="resource-path" value="https://github.com/miku1hhhh/ast/raw/refs/heads/master" style="background:rgba(0,0,0,0.4); border:1px solid var(--border); color:#ddd; padding:4px 8px; border-radius:4px; font-size:11px; width:100%;">
     <div id="test-url-bar">
       <input type="text" id="test-url-input" placeholder="粘贴URL测试">
       <button class="btn" onclick="testImageUrl()">🔍 测试</button>
@@ -437,22 +437,44 @@ window.updateTtsRate = () => { ttsRate = parseFloat($('ttsRate').value); $('ttsR
 
 // ========== 智能构建资源URL (适配 raw.githubusercontent.com) ==========
 function buildBaseUrl(cmd, fileKey) {
+  // 获取并规范化用户配置的资源基路径
   let base = resourcePathInput.value.replace(/\/+$/, '');
+
+  // 针对 raw 格式进行调整
+  if (base.includes('raw.githubusercontent.com')) {
+    // 确保 base 路径包含 /raw/ 而不是 /blob/ 或 /refs/heads/
+    // 但用户提供的 base 已经是 raw 格式，我们保持不变
+    // 然而，用户提供的 base 是 "https://github.com/miku1hhhh/ast/raw/refs/heads/master"
+    // 我们需要确保路径末尾没有多余的分段
+    if (base.includes('/raw/refs/heads/')) {
+      // 这是用户提供的格式，已经是正确的，无需修改
+    } else if (base.includes('/refs/heads/')) {
+      base = base.replace('/refs/heads/', '/raw/');
+    } else if (base.includes('/blob/')) {
+      base = base.replace('/blob/', '/raw/');
+    }
+  }
+
   const filename = cmd[fileKey] || '';
   let path = cmd.path ? cmd.path.replace(/^:/, '') : '';
-  
-  // 判断是否为CG资源（通常path包含"cg/"）
-  const isCG = path.includes('cg/');
-  
+
+  // 判断是否为CG资源（通常path以"cg/"开头）
+  const isCG = path && path.startsWith('cg/');
+
   let fullPath;
   if (isCG) {
     // CG资源: base + "/resources/" + path + filename
-    fullPath = `${base}/resources/${path}${filename}`;
+    // 确保路径中没有重复的 "resources"
+    let resourcePath = path;
+    if (!resourcePath.startsWith('resources/')) {
+      resourcePath = 'resources/' + resourcePath;
+    }
+    fullPath = `${base}/${resourcePath}${filename}`;
   } else {
     // 普通资源: base + "/" + path + filename
     fullPath = `${base}/${path}${filename}`;
   }
-  
+
   console.log(`[buildBaseUrl] ${fileKey} -> ${fullPath}`);
   return fullPath;
 }
@@ -693,7 +715,7 @@ async function updateGame() {
   if (!bgCmd) bgCmd = findNearestBg(curScene);
   if (bgCmd) {
     const baseUrl = buildBaseUrl(bgCmd, 'file');
-    const isCG = bgCmd.path && bgCmd.path.includes('cg/');
+    const isCG = bgCmd.path && bgCmd.path.startsWith('cg/');
     if (isCG) {
       const loaded = await loadIptLayers(baseUrl, bgLayer);
       if (!loaded) {
