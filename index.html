@@ -93,8 +93,8 @@
   </div>
   <div id="file-list"></div>
   <div id="resource-config">
-    <label>📁 资源基路径 (raw.githubusercontent.com)</label>
-    <input type="text" id="resource-path" value="https://github.com/miku1hhhh/ast/raw/refs/heads/master" style="background:rgba(0,0,0,0.4); border:1px solid var(--border); color:#ddd; padding:4px 8px; border-radius:4px; font-size:11px; width:100%;">
+    <label>📁 资源基路径 (media.githubusercontent.com)</label>
+    <input type="text" id="resource-path" value="https://media.githubusercontent.com/media/miku1hhhh/ast/master" style="background:rgba(0,0,0,0.4); border:1px solid var(--border); color:#ddd; padding:4px 8px; border-radius:4px; font-size:11px; width:100%;">
     <div id="test-url-bar">
       <input type="text" id="test-url-input" placeholder="粘贴URL测试">
       <button class="btn" onclick="testImageUrl()">🔍 测试</button>
@@ -436,14 +436,13 @@ window.updateVoVolume = () => { voVolume = $('voVolume').value/100; $('voVolLabe
 window.updateTtsVolume = () => { ttsVolume = $('ttsVolume').value/100; $('ttsVolLabel').textContent = $('ttsVolume').value; };
 window.updateTtsRate = () => { ttsRate = parseFloat($('ttsRate').value); $('ttsRateLabel').textContent = ttsRate.toFixed(1); };
 
-// ========== 智能构建资源URL (适配 raw.githubusercontent.com) ==========
+// ========== 智能构建资源URL (适配 media.githubusercontent.com) ==========
 function buildBaseUrl(cmd, fileKey) {
-  // 获取并规范化用户配置的资源基路径
   let base = resourcePathInput.value.replace(/\/+$/, '');
   const filename = cmd[fileKey] || '';
   let path = cmd.path ? cmd.path.replace(/^:/, '') : '';
   
-  // 修复：强制为所有图片资源（bg, fg, cg）统一加上 "/resources/" 前缀
+  // 强制为所有图片资源（bg, fg, cg）加上 "/resources/" 前缀
   let resourcePath = path;
   if (!resourcePath.startsWith('resources/')) {
     resourcePath = 'resources/' + resourcePath;
@@ -458,6 +457,7 @@ function buildAudioUrl(cmd, fileKey) {
   let base = resourcePathInput.value.replace(/\/+$/, '');
   const filename = cmd[fileKey] || '';
   let path = cmd.path ? cmd.path.replace(/^:/, '') : '';
+  // 音频文件直接拼接，不加额外前缀
   const fullPath = `${base}/${path}${filename}.ogg`;
   return fullPath;
 }
