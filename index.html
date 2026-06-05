@@ -92,8 +92,8 @@
   </div>
   <div id="file-list"></div>
   <div id="resource-config">
-    <label>📁 资源基路径 (自动处理LFS)</label>
-    <input type="text" id="resource-path" value="https://media.githubusercontent.com/media/miku1hhhh/ast/master" style="background:rgba(0,0,0,0.4); border:1px solid var(--border); color:#ddd; padding:4px 8px; border-radius:4px; font-size:11px; width:100%;">
+    <label>📁 资源基路径 (raw.githubusercontent.com)</label>
+    <input type="text" id="resource-path" value="https://raw.githubusercontent.com/miku1hhhh/ast/master" style="background:rgba(0,0,0,0.4); border:1px solid var(--border); color:#ddd; padding:4px 8px; border-radius:4px; font-size:11px; width:100%;">
     <div id="test-url-bar">
       <input type="text" id="test-url-input" placeholder="粘贴URL测试">
       <button class="btn" onclick="testImageUrl()">🔍 测试</button>
@@ -435,7 +435,7 @@ window.updateVoVolume = () => { voVolume = $('voVolume').value/100; $('voVolLabe
 window.updateTtsVolume = () => { ttsVolume = $('ttsVolume').value/100; $('ttsVolLabel').textContent = $('ttsVolume').value; };
 window.updateTtsRate = () => { ttsRate = parseFloat($('ttsRate').value); $('ttsRateLabel').textContent = ttsRate.toFixed(1); };
 
-// ========== 修改点1: 智能构建资源URL ==========
+// ========== 智能构建资源URL (适配 raw.githubusercontent.com) ==========
 function buildBaseUrl(cmd, fileKey) {
   let base = resourcePathInput.value.replace(/\/+$/, '');
   const filename = cmd[fileKey] || '';
@@ -461,7 +461,6 @@ function buildAudioUrl(cmd, fileKey) {
   let base = resourcePathInput.value.replace(/\/+$/, '');
   const filename = cmd[fileKey] || '';
   let path = cmd.path ? cmd.path.replace(/^:/, '') : '';
-  // 音频文件通常直接放在对应目录下，无需特殊处理
   const fullPath = `${base}/${path}${filename}.ogg`;
   return fullPath;
 }
@@ -671,7 +670,7 @@ function scheduleAutoAdvance() {
   autoPending = setTimeout(() => { if (isAuto) advance(); }, delay);
 }
 
-// ========== 修改点2: 背景加载只使用PNG，不再尝试IPT（CG除外） ==========
+// ========== 背景加载：普通背景只用PNG，CG才尝试IPT ==========
 async function updateGame() {
   clearDelayTimers();
   const scene = sceneData[curScene];
@@ -694,7 +693,6 @@ async function updateGame() {
   if (!bgCmd) bgCmd = findNearestBg(curScene);
   if (bgCmd) {
     const baseUrl = buildBaseUrl(bgCmd, 'file');
-    // 只有CG资源才尝试加载IPT图层，普通背景只加载PNG
     const isCG = bgCmd.path && bgCmd.path.includes('cg/');
     if (isCG) {
       const loaded = await loadIptLayers(baseUrl, bgLayer);
