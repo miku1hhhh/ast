@@ -1,0 +1,2307 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle"},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=5, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"transitiontime", time=0},
+		{"ex", time=1000, func="wait"},
+		{"se", id=0, loop=0, file="se_a277", vol=50},
+		{"bg", id=1, file="bg34_1_00000", x=0, y=0, lv=5, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg34_1_00000", x=0, y=0, lv=5, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_008_00000"},
+		{"transitiontime", time=0},
+		{"ex", time=1000, func="wait"},
+		{"bg", id=2, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00213", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=-15, time=300, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1300] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00211", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, delay2=1300, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=15, time=400, ease="easeinout_sine", delay2=1300},
+			},
+			[3500] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00209", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=1, delay2=3500, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=2, size=25, time=125, ease="easeinout_sine", timestamp=1, delay2=3500},
+			},
+			[5000] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00202", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=2, delay2=5000, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=20, time=500, ease="easeinout_sine", timestamp=2, delay2=5000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「あっ、こっちこっち。待ってたよー。ううん、時間通り。完璧」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 35,
+	},
+	block_00001 = {
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00209", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[900] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00211", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=3, delay2=900, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=20, time=300, ease="easeinout_sine", timestamp=3, delay2=900},
+			},
+			[2700] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00209", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=4, delay2=2700, mode=3, x=-5, y=-5},
+			},
+			[3800] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=20, time=150, ease="easeinout_sine", timestamp=5, delay2=3800},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「友達？　いいじゃんいいじゃん、ってことは2年？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 52,
+	},
+	block_00002 = {
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00211", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="浮遊横", loop=4, size=7.5, time=100, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[700] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00210", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=6, delay2=700, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=3, size=15, time=150, ease="easeinout_sine", timestamp=6, delay2=700},
+			},
+			[1850] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00202", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=7, delay2=1850, mode=3, x=-5, y=-5},
+			},
+			[2200] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=20, time=250, ease="easeinout_sine", timestamp=8, delay2=2200},
+			},
+			[3500] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00101", file2="mizuhiki_01l_00218", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=9, delay2=3500, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=50, time=400, ease="easeinout_sine", timestamp=9, delay2=3500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「……お～！　同じ",
+					{"gaiji", text="①"},
+					"　いいじゃんいいじゃ～ん。よろしくぅ～」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 74,
+	},
+	block_00003 = {
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00210", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1000] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00228", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=10, delay2=1000, mode=3, x=-5, y=-5},
+			},
+			[4800] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00228", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=11, delay2=4800, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=35, time=150, ease="easeinout_sine", timestamp=11, delay2=4800},
+			},
+			[6300] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00211", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=12, delay2=6300, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=6, size=20, time=225, ease="easeinout_sine", timestamp=12, delay2=6300},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「あー。なーんか怪しげな女登場みたいに思ってない？　ねえ思ってるでしょ？　思ってるって顔ぉ～」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 95,
+	},
+	block_00004 = {
+		{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00216", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=40, time=500, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[3400] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00211", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=13, delay2=3400, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=7, size=12.5, time=75, ease="easeinout_sine", timestamp=13, delay2=3400},
+			},
+			[4600] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00202", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=14, delay2=4600, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=29.5, time=350, ease="easeinout_sine", timestamp=14, delay2=4600},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「ワタシ、そういうの分かっちゃう。あはははは」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 113,
+	},
+	block_00005 = {
+		{"bg", id=29, file="blackband_00000", x=0, y=0, lv=5, path=":bg/"},
+		{"bg", id=3, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=1, style="blur", blurx=11, blury=11, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=3, lv=5, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"cgact", file="cgact", id=3, act="移動", x=-45, y=-5, time=8000, lv=5},
+		{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00101", file2="mizuhiki_01ll_00225", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00228", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=15, delay2=1500, mode=3, x=0, y=0},
+			},
+			[3000] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=10, time=150, ease="easeinout_sine", timestamp=16, delay2=3000},
+			},
+			[5300] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00210", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=17, delay2=5300, mode=3, x=0, y=0},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「でさ……ぶっちゃけどう？　学生生活。楽しい？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 133,
+	},
+	block_00006 = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=29, time=300, alphadel=1, style="reset", lv=5, x=0, y=0},
+		{"cgdel", id=3, lv=5, time=300, alphadel=1},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00210", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=0},
+		{"ex", time=800, func="wait"},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00213", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="浮遊横", loop=5, size=5, time=100, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[900] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00219", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=18, delay2=900, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=50, time=300, ease="easeinout_sine", timestamp=18, delay2=900},
+			},
+			[1600] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=50, time=300, ease="easeinout_sine", timestamp=19, delay2=1600},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「うぅ～っ♪　いいじゃんいいじゃん！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 158,
+	},
+	block_00007 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, time=300, alphadel=1, style="reset", lv=5},
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00225", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[500] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00222", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=20, delay2=500, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=750, ease="easeinout_sine", timestamp=20, delay2=500},
+			},
+			[2800] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00209", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=21, delay2=2800, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=21, delay2=2800},
+			},
+			[3900] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00210", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=22, delay2=3900, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=2, size=10, time=150, ease="easeinout_sine", timestamp=22, delay2=3900},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「けどアレだよねぇ～！　ん？　いやさ、ほら」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 181,
+	},
+	block_00008 = {
+		{"bg", id=29, file="blackband_00000", x=0, y=0, lv=5, path=":bg/"},
+		{"bg", id=2, file="bg34_1l_00000", x=0, y=20, lv=5, path=":bg/", sync=1, style="blur", blurx=11, blury=11, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=2, lv=5, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"cgact", file="cgact", id=2, act="移動", x=-55, y=-5, time=15000, lv=5},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00101", file2="mizuhiki_01l_00215", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=15, time=200, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[900] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00101", file2="mizuhiki_01l_00223", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=23, delay2=900, mode=3, x=-5, y=-5},
+			},
+			[1800] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00101", file2="mizuhiki_01l_00215", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=24, delay2=1800, mode=3, x=-5, y=-5},
+			},
+			[2900] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00210", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=25, delay2=2900, mode=3, x=-5, y=-5},
+			},
+			[4500] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00225", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=26, delay2=4500, mode=3, x=-5, y=-5},
+			},
+			[9200] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00210", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=27, delay2=9200, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=27, delay2=9200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「ぶっちゃけ？　ぶっちゃけだよ？　結構ストレスたまったりとか……ない？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 211,
+	},
+	block_00009 = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"se", id=0, loop=0, file="se_b053", vol=60},
+		{"transitiontime", time=0},
+		{"ex", time=300, func="wait"},
+		{"transitiontime", time=0},
+		{"ex", time=1800, func="wait"},
+		{"se", id=0, stop=1, time=400},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=29, time=100, alphadel=1, style="reset", lv=5, x=0, y=0},
+		{"bg", id=3, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=1, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=3, lv=5, act="表示アクション", a1=0, a2=255, time=100, a_chr=151, alpha=255},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00213", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=-30, time=150, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1000] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00217", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=28, delay2=1000, mode=3, x=-5, y=-5},
+			},
+			[1200] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=3, size=20, time=150, ease="easeinout_sine", timestamp=29, delay2=1200},
+			},
+			[2100] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00213", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=30, delay2=2100, mode=3, x=-5, y=-5},
+			},
+			[3700] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00206", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=31, delay2=3700, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=30, time=350, ease="easeinout_sine", timestamp=31, delay2=3700},
+			},
+			[4800] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00205", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=32, delay2=4800, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=40, time=300, ease="easeinout_sine", timestamp=32, delay2=4800},
+			},
+			[5600] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00104", file2="mizuhiki_01ll_00221", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=33, delay2=5600, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=50, time=350, ease="easeinout_sine", timestamp=33, delay2=5600},
+			},
+			[6700] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00104", file2="mizuhiki_01l_00222", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=34, delay2=6700, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=7, size=10, time=125, ease="easeinout_sine", timestamp=34, delay2=6700},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「あるよね！？　分かる！　大変だよね！　宿題！　部活！　委員会！　疲れちゃうよ誰だって」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 257,
+	},
+	block_00010 = {
+		{"cgdel", id=2, lv=5, time=0, alphadel=1},
+		{"bg", id=2, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"bg", id=29, file="blackband_00000", x=0, y=0, lv=5, path=":bg/"},
+		{"cgdel", id=3, lv=5, time=0, alphadel=1},
+		{"bg", id=3, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=0, style="blur", blurx=8, blury=8, ax=1290, ay=730, bx=-490, by=-280},
+		{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00207", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=15, time=250, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1100] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00210", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=35, delay2=1100, mode=3, x=0, y=0},
+			},
+			[2500] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=50, time=500, ease="easeinout_sine", timestamp=36, delay2=2500},
+			},
+			[5400] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00204", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=37, delay2=5400, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=200, ease="easeinout_sine", timestamp=37, delay2=5400},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「……でさ。ストレス解消する、いい方法があるの。……聞きたい？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 283,
+	},
+	block_00011 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=29, time=300, alphadel=1, style="reset", lv=5, x=0, y=0},
+		{"cgdel", id=3, lv=5, time=300, alphadel=1},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00211", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="浮遊横", loop=5, size=10, time=125, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[2600] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00228", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=38, delay2=2600, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=20, time=250, ease="easeinout_sine", timestamp=38, delay2=2600},
+			},
+			[3300] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00207", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=39, delay2=3300, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=20, time=200, ease="easeinout_sine", timestamp=39, delay2=3300},
+			},
+			[4400] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00213", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=40, delay2=4400, mode=3, x=-5, y=-5},
+			},
+			[6600] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00222", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=41, delay2=6600, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=25, time=400, ease="easeinout_sine", timestamp=41, delay2=6600},
+			},
+			[7400] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00213", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=42, delay2=7400, mode=3, x=-5, y=-5},
+			},
+			[8200] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00204", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=43, delay2=8200, mode=3, x=-5, y=-5},
+			},
+			[9400] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00203", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=44, delay2=9400, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=3, size=30, time=200, ease="easeinout_sine", timestamp=44, delay2=9400},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「いや別にヘンなことじゃないから。普通、全然普通。でもこれするだけで気持ちがスッ――としちゃう。いや本当に。本当に！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 322,
+	},
+	block_00012 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, time=300, alphadel=1, style="reset", lv=5},
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00211", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=3, size=7.5, time=75, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[500] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00228", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=45, delay2=500, mode=3, x=-5, y=-5},
+			},
+			[2700] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00211", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=46, delay2=2700, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=30, time=450, ease="easeinout_sine", timestamp=46, delay2=2700},
+			},
+			[3600] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00217", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=47, delay2=3600, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine", timestamp=47, delay2=3600},
+			},
+			[3900] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=-30, time=175, ease="easeinout_sine", timestamp=48, delay2=3900},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「いやめっちゃ疑ってんじゃん！　いいじゃん、そう。そうなの！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 346,
+	},
+	block_00013 = {
+		{"bg", id=29, file="blackband_00000", x=0, y=0, lv=5, path=":bg/"},
+		{"bg", id=2, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=1, style="blur", blurx=11, blury=11, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=2, lv=5, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"cgact", file="cgact", id=2, act="移動", x=25, y=-5, time=7000, lv=5},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00224", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=200},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[2900] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00216", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=49, delay2=2900, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=10, time=350, ease="easeinout_sine", timestamp=49, delay2=2900},
+			},
+			[3800] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00218", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=50, delay2=3800, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=50, delay2=3800},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「みんな最初その反応。みんな！　うん」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 367,
+	},
+	block_00014 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=29, time=300, alphadel=1, style="reset", lv=5, x=0, y=0},
+		{"bg", id=3, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00214", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=15, time=250, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[2000] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00223", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=51, delay2=2000, mode=3, x=-5, y=-5},
+			},
+			[3800] = {
+				{"fgact", ch="水引15", id=15, act="移動", x=-250, y=0, time=700, timestamp=52, delay2=3800},
+			},
+			[4700] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00217", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=53, delay2=4700, mode=3, x=-255, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=-20, time=150, ease="easeinout_sine", timestamp=53, delay2=4700},
+			},
+			[5750] = {
+				{"fgact", ch="水引15", id=15, act="移動", x=400, y=0, time=300, timestamp=54, delay2=5750},
+			},
+			[6150] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00207", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=55, delay2=6150, mode=3, x=145, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=-20, time=200, ease="easeinout_sine", timestamp=55, delay2=6150},
+			},
+			[7200] = {
+				{"fgact", ch="水引15", id=15, act="移動", x=-150, y=0, time=300, timestamp=56, delay2=7200},
+			},
+			[7600] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00214", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=57, delay2=7600, mode=3, x=-5, y=-5},
+			},
+			[9500] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00203", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=58, delay2=9500, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=-25, time=150, ease="easeinout_sine", timestamp=58, delay2=9500},
+			},
+			[11600] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00224", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=59, delay2=11600, mode=3, x=0, y=0},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「いやね、たしかに分かるの。ストレス解消法って『これいいですよー！』『あれいいですよー！』みんな色々言う。けどぶっちゃけ面倒なの。どれも。面倒じゃない？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 405,
+	},
+	block_00015 = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bgm", stop=1},
+		{"cgdel", id=2, lv=5, time=300, alphadel=1},
+		{"se", id=0, loop=0, file="se_b053", vol=60},
+		{"transitiontime", time=0},
+		{"ex", time=300, func="wait"},
+		{"transitiontime", time=0},
+		{"ex", time=1800, func="wait"},
+		{"se", id=0, stop=1, time=400},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00203", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=-30, time=150, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[2800] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00104", file2="mizuhiki_01l_00205", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=60, delay2=2800, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=7, size=10, time=125, ease="easeinout_sine", timestamp=60, delay2=2800},
+			},
+			[4800] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00204", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=61, delay2=4800, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=12.5, time=150, ease="easeinout_sine", timestamp=61, delay2=4800},
+			},
+			[6500] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00224", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=62, delay2=6500, mode=3, x=0, y=0},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「めんどいよね！？　やってらんなくない！？　ただでさえイライラしてるのに。例えばどう？　何やる？　ストレス溜まった時」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 437,
+	},
+	block_00016 = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=12.5, time=150, ease="easeinout_sine"},
+		{"transitiontime", time=0},
+		{"ex", time=800, func="wait"},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00213", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=-40, time=350, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00217", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=63, delay2=1500, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=3, size=25, time=150, ease="easeinout_sine", timestamp=63, delay2=1500},
+			},
+			[2900] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00228", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=64, delay2=2900, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=-24.5, time=300, ease="easeinout_sine", timestamp=64, delay2=2900},
+			},
+			[4700] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00209", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=65, delay2=4700, mode=3, x=0, y=0},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「カラオケ！　分かる！　いいじゃんいいじゃん。え、何歌うの？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 463,
+	},
+	block_00017 = {
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00219", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=-12.5, time=250, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1600] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00202", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=66, delay2=1600, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=5, size=7.5, time=75, ease="easeinout_sine", timestamp=66, delay2=1600},
+			},
+			[2700] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00105", file2="mizuhiki_01ll_00210", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=67, delay2=2700, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=400, ease="easeinout_sine", timestamp=67, delay2=2700},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「……アニソン！　ふふっ……同じ",
+					{"gaiji", text="①"},
+					"」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 481,
+	},
+	block_00018 = {
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00215", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[2700] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00210", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=68, delay2=2700, mode=3, x=-5, y=-5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「でもさ、やっぱカラオケもさ。いつでもはできないじゃん？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 493,
+	},
+	block_00019 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, time=300, alphadel=1, style="reset"},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=3, time=300, alphadel=1, style="reset", lv=5},
+		{"bg", id=29, file="blackband_00000", x=0, y=0, lv=5, path=":bg/"},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00207", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[3000] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00216", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=69, delay2=3000, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=69, delay2=3000},
+			},
+			[3900] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=30, time=450, ease="easeinout_sine", timestamp=70, delay2=3900},
+			},
+			[5000] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00218", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=71, delay2=5000, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=45, time=500, ease="easeinout_sine", timestamp=71, delay2=5000},
+			},
+			[7200] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00207", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=72, delay2=7200, mode=3, x=-5, y=-5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「ワタシイチオシのストレス解消法これね、これ家でもできるの。全然できちゃう。……聞きたい？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 520,
+	},
+	block_00020 = {
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00224", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=7.5, time=100, ease="easeinout_sine"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"fgact", ch="水引15", id=15, lv=5, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300, timestamp=74, delay2=1500},
+				{"bg", id=2, file="bg34_1l_00000", x=-100, y=-150, lv=5, path=":bg/", sync=1, timestamp=73, delay2=1500, style="blur", blurx=11, blury=11, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+				{"cgact", file="cgact", id=2, lv=5, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, timestamp=73, delay2=1500, alpha=255},
+				{"cgact", file="cgact", id=2, act="移動", x=-55, y=-5, time=20000, timestamp=73, delay2=1500, lv=5},
+				{"bg", id=28, file="pm3_00001", x=0, y=0, lv=5, path=":cg/pm3/", timestamp=76, delay2=1500},
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00215", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=14, lv=5, head="mizuhiki_01ll", alpha=0, ch_origin="水引", ch="水引14", mw="mw", sync=1, timestamp=75, delay2=1500, a_chr151=1, mode=3, x=-30, y=-350},
+				{"fgact", ch="水引14", id=14, lv=5, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, timestamp=75, delay2=1500, alpha=255},
+				{"fgact", ch="水引14", id=14, act="移動", x=55, y=-5, time=20000, timestamp=75, delay2=1500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「……ちょっと……。……股の間にさ、おちんちんついてるでしょ？　そう、おちんちん。それをね…………手で…………」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 539,
+	},
+	block_00021 = {
+		{"fgact", ch="水引14", id=14, lv=5, act="表示アクション", alpha=0, alphadel=1, style="reset", time=300},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=28, time=800, alphadel=1, style="reset", lv=5, x=0, y=0},
+		{"bg", id=3, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=1, style="blur", blurx=20, blury=20, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=3, lv=5, act="表示アクション", a1=0, a2=255, time=800, a_chr=151, alpha=255},
+		{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00207", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", alpha=0, ch_origin="水引", ch="水引15", mw="mw", sync=1, a_chr151=1, mode=3, x=0, y=0},
+		{"fgact", ch="水引15", id=15, lv=5, act="表示アクション", a1=0, a2=255, time=800, a_chr=151, alpha=255},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[2600] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=15, time=400, ease="easeinout_sine", timestamp=77, delay2=2600},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「手で………………擦る」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 554,
+	},
+	block_00022 = {
+		{"cgdel", id=2, lv=5, time=1, alphadel=1},
+		{"cgdel", id=3, lv=5, time=300, alphadel=1},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=29, time=300, alphadel=1, style="reset", lv=5, x=0, y=0},
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00209", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=27.5, time=400, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1000] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00213", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=78, delay2=1000, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=6, size=12.5, time=150, ease="easeinout_sine", timestamp=78, delay2=1000},
+			},
+			[3000] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00216", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=79, delay2=3000, mode=3, x=-5, y=-5},
+			},
+			[3800] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=25, time=350, ease="easeinout_sine", timestamp=80, delay2=3800},
+			},
+			[5150] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00217", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=81, delay2=5150, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=-1, size=10, time=50, ease="easeinout_sine", timestamp=81, delay2=5150},
+			},
+			[5600] = {
+				{"fgact", id=15, ch="水引15", act="stopact", timestamp=82, delay2=5600},
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00209", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=82, delay2=5600, mode=3, x=-5, y=-5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「それだけ。おちんちんいっぱい擦る。それするだけで一気にストレスなくなる。フワァ～って気持ちになっちゃう」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 585,
+	},
+	block_00023 = {
+		{"bg", id=2, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00104", file2="mizuhiki_01ll_00211", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="浮遊横", loop=7, size=12.5, time=150, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[2400] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00204", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=83, delay2=2400, mode=3, x=0, y=0},
+			},
+			[3400] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=25, time=350, ease="easeinout_sine", timestamp=84, delay2=3400},
+			},
+			[4700] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00105", file2="mizuhiki_01ll_00217", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=85, delay2=4700, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=-1, size=10, time=50, ease="easeinout_sine", timestamp=85, delay2=4700},
+			},
+			[5400] = {
+				{"fgact", id=15, ch="水引15", act="stopact", timestamp=86, delay2=5400},
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00203", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=86, delay2=5400, mode=3, x=0, y=0},
+			},
+			[6000] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00219", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=87, delay2=6000, mode=3, x=0, y=0},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「いやこれほんと怪しくないの！　ワタシが教えた人みんなやってる。みんな気持ちいいって言う。これね言わないだけでみんなやってるの」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 611,
+	},
+	block_00024 = {
+		{"cgdel", id=2, lv=5, time=300, alphadel=1},
+		{"bg", id=29, file="blackband_00000", x=0, y=0, lv=5, path=":bg/"},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00224", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[2300] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00203", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=88, delay2=2300, mode=3, x=-5, y=-5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「テレビに出てる有名人もやってる。昔の偉人もやってたらしいってことが分かってきてる最近の研究で」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 626,
+	},
+	block_00025 = {
+		{"cgdel", id=29, lv=5, time=0, alphadel=1},
+		{"bg", id=29, file="pm3_00001", x=0, y=0, lv=5, path=":cg/pm3/"},
+		{"bg", id=2, file="bg34_1l_00000", x=-50, y=0, lv=5, path=":bg/", sync=1, style="blur", blurx=5, blury=30, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=2, lv=5, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"cgact", file="cgact", id=2, act="移動", x=95, y=-5, time=10000, lv=5},
+		{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00101", file2="mizuhiki_01ll_00218", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1600] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00101", file2="mizuhiki_01ll_00219", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=89, delay2=1600, mode=3, x=0, y=0},
+			},
+			[3500] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00105", file2="mizuhiki_01ll_00228", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=90, delay2=3500, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=14, size=15, time=150, ease="easeinout_sine", timestamp=90, delay2=3500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「科学的に証明されてるの。おちんちん擦るだけで気持ちよくなるってことが」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 648,
+	},
+	block_00026 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=29, time=300, alphadel=1, style="reset", lv=5, x=0, y=0},
+		{"bg", id=3, file="bg34_1l_00000", x=0, y=-50, lv=5, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00224", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1000] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00210", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=91, delay2=1000, mode=3, x=-5, y=-5},
+			},
+			[2100] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=20, time=250, ease="easeinout_sine", timestamp=92, delay2=2100},
+			},
+			[3400] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00222", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=93, delay2=3400, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=40, time=250, ease="easeinout_sine", timestamp=93, delay2=3400},
+			},
+			[4600] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00219", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=94, delay2=4600, mode=3, x=-5, y=-5},
+			},
+			[6700] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00222", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=95, delay2=6700, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=-40, time=200, ease="easeinout_sine", timestamp=95, delay2=6700},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「1回だけ、ほんと1回だけでいいから試してほしい。おちんちん擦るの、本当たまらない気持ちになるから」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 677,
+	},
+	block_00027 = {
+		{"bg", id=29, file="blackband_00000", x=0, y=0, lv=5, path=":bg/"},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=3, time=300, alphadel=1, style="reset", lv=5},
+		{"cgdel", id=2, lv=5, time=1, alphadel=1},
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00215", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1400] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00214", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=96, delay2=1400, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=30, time=300, ease="easeinout_sine", timestamp=96, delay2=1400},
+			},
+			[4800] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00210", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=97, delay2=4800, mode=3, x=-5, y=-5},
+			},
+			[6400] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00211", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=98, delay2=6400, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=9, size=5, time=100, ease="easeinout_sine", timestamp=98, delay2=6400},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「ただねこれ、もっと気持ちよくなる方法っていうのがあって。知りたい？　……そりゃ知りたいよね！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 702,
+	},
+	block_00028 = {
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00224", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=7.5, time=100, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"bg", id=2, file="bg34_1l_00000", x=-50, y=-50, lv=5, path=":bg/", sync=1, timestamp=99, delay2=1500, style="blur", blurx=11, blury=11, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+				{"cgact", file="cgact", id=2, lv=5, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, timestamp=99, delay2=1500, alpha=255},
+				{"cgact", file="cgact", id=2, act="移動", x=95, y=-5, time=30000, timestamp=99, delay2=1500, lv=5},
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00224", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=100, delay2=1500, mode=3, x=-5, y=-5},
+			},
+			[6200] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=12.5, time=150, ease="easeinout_sine", timestamp=102, delay2=6200},
+			},
+			[7200] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00207", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=103, delay2=7200, mode=3, x=-5, y=-5},
+			},
+			[11200] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00224", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=104, delay2=11200, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=104, delay2=11200},
+			},
+			[11900] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00218", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=105, delay2=11900, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=30, time=300, ease="easeinout_sine", timestamp=105, delay2=11900},
+			},
+			[13000] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00213", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=106, delay2=13000, mode=3, x=-5, y=-5},
+			},
+			[15300] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00105", file2="mizuhiki_01l_00228", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=107, delay2=15300, mode=3, x=-5, y=-5},
+			},
+			[16500] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00105", file2="mizuhiki_01l_00222", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=108, delay2=16500, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=25, time=300, ease="easeinout_sine", timestamp=108, delay2=16500},
+			},
+			[17700] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00105", file2="mizuhiki_01ll_00213", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=109, delay2=17700, mode=3, x=0, y=0},
+			},
+			[18500] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00105", file2="mizuhiki_01ll_00219", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=110, delay2=18500, mode=3, x=0, y=0},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「……ちょっと……。おちんちん擦る時に……エッチな画像…………エッチな画像を……見る。これだけ。そんなバカなって思うかもだけど、ただ擦るよりずっっっっと気持ちよくなる。快感。エクスタシー」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 746,
+	},
+	block_00029 = {
+		{"bg", id=3, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00203", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1600] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00209", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=111, delay2=1600, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=-1, size=10, time=200, ease="easeinout_sine", timestamp=111, delay2=1600},
+			},
+			[3600] = {
+				{"fgact", id=15, ch="水引15", act="stopact", timestamp=112, delay2=3600},
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00203", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=112, delay2=3600, mode=3, x=-5, y=-5},
+			},
+			[5300] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00229", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=113, delay2=5300, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=113, delay2=5300},
+			},
+			[6100] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00228", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=114, delay2=6100, mode=3, x=-5, y=-5},
+			},
+			[8200] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00211", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=115, delay2=8200, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=8, size=15, time=250, ease="easeinout_sine", timestamp=115, delay2=8200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「ワタシの友達なんかね、『俺は画像よりゲームだなぁ』なんて言ってるのもいるの。ね、おかしいと思うでしょ？　ゲームしながらおちんちん擦るって、おかしいよねそんなのね」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 775,
+	},
+	block_00030 = {
+		{"cgdel", id=2, lv=5, time=1, alphadel=1},
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=3, time=300, alphadel=1, style="reset", lv=5},
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00214", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[1200] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00224", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=116, delay2=1200, mode=3, x=-5, y=-5},
+			},
+			[4100] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00105", file2="mizuhiki_01l_00214", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=117, delay2=4100, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=200, ease="easeinout_sine", timestamp=117, delay2=4100},
+			},
+			[5200] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00105", file2="mizuhiki_01ll_00219", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=118, delay2=5200, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=50, time=250, ease="easeinout_sine", timestamp=118, delay2=5200},
+			},
+			[6600] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00106", file2="mizuhiki_01ll_00209", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=119, delay2=6600, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=13, size=15, time=100, ease="easeinout_sine", timestamp=119, delay2=6600},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「でもね。ゲームしながらちんちん擦るの……気持ちいい！　全然違う快感が全然違うの」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 804,
+	},
+	block_00031 = {
+		{"bg", id=2, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=0, style="blur", blurx=11, blury=11, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00202", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=5, size=30, time=350, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[3700] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00207", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=120, delay2=3700, mode=3, x=-5, y=-5},
+			},
+			[4700] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=2, size=15, time=125, ease="easeinout_sine", timestamp=121, delay2=4700},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「ゲームしながらちんちん擦るのは――……言って言って？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 820,
+	},
+	block_00032 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=29, time=300, alphadel=1, style="reset", lv=5, x=0, y=0},
+		{"cgdel", id=2, lv=5, time=0, alphadel=1},
+		{"bg", id=2, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00105", file2="mizuhiki_01ll_00219", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=40, time=350, ease="easeinout_sine"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[900] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=150, time=150, ease="easeinout_sine", timestamp=122, delay2=900},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					{"exfont", size="f4"},
+					name = {"水引"},
+					"「気持ちいい、そう！！」",
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			en = {
+				{
+					{"exfont", size="f4"},
+					name = {"水引", "Mizuhiki"},
+					{"exfont"},
+				},
+			},
+			cn = {
+				{
+					{"exfont", size="f4"},
+					name = {"水引"},
+					{"exfont"},
+				},
+			},
+			tw = {
+				{
+					{"exfont", size="f4"},
+					name = {"水引"},
+					{"exfont"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 838,
+	},
+	block_00033 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, time=300, alphadel=1, style="reset", lv=5},
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00209", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[600] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00229", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=123, delay2=600, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=1, size=15, time=150, ease="easeinout_sine", timestamp=123, delay2=600},
+			},
+			[1400] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00211", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=124, delay2=1400, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=3, size=20, time=200, ease="easeinout_sine", timestamp=124, delay2=1400},
+			},
+			[2600] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00228", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=125, delay2=2600, mode=3, x=-5, y=-5},
+			},
+			[5600] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00203", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=126, delay2=5600, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="浮遊横", loop=4, size=10, time=150, ease="easeinout_sine", timestamp=126, delay2=5600},
+			},
+			[7300] = {
+				{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00101", file2="mizuhiki_01m_00211", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=127, delay2=7300, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=7, size=5, time=75, ease="easeinout_sine", timestamp=127, delay2=7300},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「え？　いやない、ないないない！　エッチなゲーム売りつけたりしませんって！　ウチそういうの扱ってないから。作らないよ今どきエロゲなんて」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 868,
+	},
+	block_00034 = {
+		{"bg", id=2, file="bg34_1l_00000", x=0, y=0, lv=5, path=":bg/", sync=0, ax=1290, ay=730, bx=-490, by=-280},
+		{"transitiontime", time=300},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00207", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=15, time=150, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[800] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=15, time=150, ease="easeinout_sine", timestamp=128, delay2=800},
+			},
+			[1600] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=15, time=150, ease="easeinout_sine", timestamp=129, delay2=1600},
+			},
+			[2400] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=15, time=150, ease="easeinout_sine", timestamp=130, delay2=2400},
+			},
+			[2800] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00213", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=131, delay2=2800, mode=3, x=-5, y=-5},
+			},
+			[3700] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=25, time=150, ease="easeinout_sine", timestamp=132, delay2=3700},
+			},
+			[4300] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00202", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=133, delay2=4300, mode=3, x=-5, y=-5},
+			},
+			[6500] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=40, time=250, ease="easeinout_sine", timestamp=134, delay2=6500},
+			},
+			[7100] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00217", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=135, delay2=7100, mode=3, x=-5, y=-5},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=3, size=-20, time=150, ease="easeinout_sine", timestamp=135, delay2=7100},
+			},
+			[8500] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00218", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=136, delay2=8500, mode=3, x=0, y=0},
+			},
+			[9700] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=40, time=150, ease="easeinout_sine", timestamp=137, delay2=9700},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「画像、映像、音声、ゲーム、もうなんでもいい。好きなものでおちんちん擦っていいの。なんでもいい。手じゃなくて道具で擦ってもいい」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 899,
+	},
+	block_00035 = {
+		{"bg", id=29, file="blackband_00000", x=0, y=0, lv=5, path=":bg/"},
+		{"bg", id=3, file="bg34_1l_00000", x=-100, y=-100, lv=5, path=":bg/", sync=1, style="blur", blurx=11, blury=11, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=3, lv=5, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255},
+		{"cgact", file="cgact", id=3, act="移動", x=-205, y=-5, time=50000, lv=5},
+		{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00101", file2="mizuhiki_01l_00224", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[600] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=138, delay2=600},
+			},
+			[3300] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=139, delay2=3300},
+			},
+			[4500] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00101", file2="mizuhiki_01ll_00223", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=140, delay2=4500, mode=3, x=0, y=0},
+			},
+			[6300] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00101", file2="mizuhiki_01ll_00224", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=141, delay2=6300, mode=3, x=0, y=0},
+			},
+			[8300] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=142, delay2=8300},
+			},
+			[8900] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00101", file2="mizuhiki_01ll_00203", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=143, delay2=8900, mode=3, x=0, y=0},
+			},
+			[9200] = {
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=20, time=350, ease="easeinout_sine", timestamp=144, delay2=9200},
+			},
+			[11100] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00101", file2="mizuhiki_01ll_00205", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=145, delay2=11100, mode=3, x=0, y=0},
+			},
+			[12400] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00101", file2="mizuhiki_01ll_00203", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=146, delay2=12400, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=15, time=250, ease="easeinout_sine", timestamp=146, delay2=12400},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「ただね、1つ。1つだけ約束。いい？　あのね……寸止めだけはやっちゃダメ。これは本当にダメ。大きい、体への負担が。リスクがある」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 932,
+	},
+	block_00036 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=2, time=300, alphadel=1, style="reset", lv=5},
+		{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00101", file2="mizuhiki_01ll_00209", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[2100] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00101", file2="mizuhiki_01ll_00224", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=147, delay2=2100, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=147, delay2=2100},
+			},
+			[3200] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00101", file2="mizuhiki_01ll_00203", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=148, delay2=3200, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=11, size=-25, time=150, ease="easeinout_sine", timestamp=148, delay2=3200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「あと隕石落ちてくる。寸止めしてたら。そう空から。落ちてきたことあるもんこの前。淫石」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 951,
+	},
+	block_00037 = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=29, time=300, alphadel=1, style="reset", lv=5, x=0, y=0},
+		{"cgdel", id=3, lv=5, time=300, alphadel=1},
+		{"fg", file="mizuhiki_01m_00002", file1="mizuhiki_01m_00103", file2="mizuhiki_01m_00202", file4="mizuhiki_01m_00401", path=":fg/mizuhiki_01m/", id=15, lv=5, head="mizuhiki_01m", ch_origin="水引", ch="水引15", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"transitiontime", time=300},
+		{"transitiontime", time=300},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"text"},
+		delay = {
+			[3500] = {
+				{"fg", file="mizuhiki_01l_00002", file1="mizuhiki_01l_00103", file2="mizuhiki_01l_00207", file4="mizuhiki_01l_00401", path=":fg/mizuhiki_01l/", id=15, lv=5, head="mizuhiki_01l", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=149, delay2=3500, mode=3, x=-5, y=-5},
+			},
+			[6400] = {
+				{"fg", file="mizuhiki_01ll_00002", file1="mizuhiki_01ll_00103", file2="mizuhiki_01ll_00217", file4="mizuhiki_01ll_00401", path=":fg/mizuhiki_01ll/", id=15, lv=5, head="mizuhiki_01ll", ch_origin="水引", ch="水引15", mw="mw", sync=0, timestamp=150, delay2=6400, mode=3, x=0, y=0},
+				{"fgact", ch="水引15", id=15, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine", timestamp=150, delay2=6400},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="v", path=":vo/", ch="bmob"},
+			},
+			ja = {
+				{
+					name = {"水引"},
+					"「ね、今日はそういうお話がしたかったの。おちんちん手で擦ってみる。これやってみて！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"水引", "Mizuhiki"},
+				},
+			},
+			cn = {
+				{
+					name = {"水引"},
+				},
+			},
+			tw = {
+				{
+					name = {"水引"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 972,
+	},
+	block_00038 = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"transitiontime", time=0},
+		{"ex", time=3000, func="wait"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=12, time=0, alphadel=1, lv=5},
+		{"cgdel", id=13, time=0, alphadel=1, lv=5},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=15, ch="水引15", ch_origin="水引", lv=5, time=0, sync=0},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=5, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=5, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_043_00000"},
+		{"ex", time=3000, func="wait"},
+		{"text"},
+		linkback = "block_00037",
+		line = 1020,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

@@ -1,0 +1,109 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"DW",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="dw_001-1", file1="dw_00201", path=":fg/dw/", id=2, lv=5, head="dw", ch_origin="dw", ch="dw2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/DW.s25,0,0,0,m,-1,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="dw_001-1", file1="dw_00202", path=":fg/dw/", id=2, lv=5, head="dw", ch_origin="dw", ch="dw2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/DW.s25,0,0,0,m,-1,-1,02",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="dw_00101", file1="dw_002-1", path=":fg/dw/", id=2, lv=5, head="dw", ch_origin="dw", ch="dw2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/DW.s25,0,0,0,m,-1,01,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="dw_00001", path=":fg/dw/", id=2, lv=5, head="dw", ch_origin="dw", ch="dw2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/DW.s25,0,0,0,m,01,-1,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 18,
+	},
+	block_00005 = {
+		{"fg", file="dw_00002", path=":fg/dw/", id=2, lv=5, head="dw", ch_origin="dw", ch="dw2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/DW.s25,0,0,0,m,02,-1,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 22,
+	},
+	block_00006 = {
+		{"fg", file="dw_00002", path=":fg/dw/", id=2, lv=5, head="dw", ch_origin="dw", ch="dw2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/DW.s25,0,0,0,m,2,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		line = 26,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

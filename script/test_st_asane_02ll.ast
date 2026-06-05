@@ -1,0 +1,634 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ASANE_02LL",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="asane_02ll_00000", file1="asane_02ll_00104", file3="asane_02ll_00303", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,0,04,-1,03",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="asane_02ll_00001", file1="asane_02ll_00101", file3="asane_02ll_00303", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,01,01,-1,03",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="asane_02ll_00001", file1="asane_02ll_00101", file3="asane_02ll_00302", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,01,01,-1,2",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="asane_02ll_00001", file1="asane_02ll_00101", file2="asane_02ll_00211", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,01,01,11,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 18,
+	},
+	block_00005 = {
+		{"fg", file="asane_02ll_00001", file1="asane_02ll_00101", file2="asane_02ll_00213", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,01,01,13,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 22,
+	},
+	block_00006 = {
+		{"fg", file="asane_02ll_00001", file1="asane_02ll_00102", file3="asane_02ll_00301", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,01,02,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 26,
+	},
+	block_00007 = {
+		{"fg", file="asane_02ll_00001", file1="asane_02ll_00102", file3="asane_02ll_00302", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,01,02,-1,02",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 30,
+	},
+	block_00008 = {
+		{"fg", file="asane_02ll_00001", file1="asane_02ll_00102", file2="asane_02ll_00219", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,01,02,19,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 34,
+	},
+	block_00009 = {
+		{"fg", file="asane_02ll_00001", file1="asane_02ll_00103", file2="asane_02ll_00213", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,01,03,13,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 38,
+	},
+	block_00010 = {
+		{"fg", file="asane_02ll_00001", file1="asane_02ll_00105", file2="asane_02ll_00213", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,01,05,13,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 42,
+	},
+	block_00011 = {
+		{"fg", file="asane_02ll_00001", file1="asane_02ll_00105", file2="asane_02ll_00225", file4="asane_02ll_00401", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,01,05,25,-1,1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 46,
+	},
+	block_00012 = {
+		{"fg", file="asane_02ll_00002", file1="asane_02ll_00101", file3="asane_02ll_00302", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,02,01,-1,02",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 50,
+	},
+	block_00013 = {
+		{"fg", file="asane_02ll_00002", file1="asane_02ll_00101", file2="asane_02ll_00202", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,02,01,02,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 54,
+	},
+	block_00014 = {
+		{"fg", file="asane_02ll_00002", file1="asane_02ll_00101", file2="asane_02ll_00203", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,02,01,03,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 58,
+	},
+	block_00015 = {
+		{"fg", file="asane_02ll_00002", file1="asane_02ll_00101", file2="asane_02ll_00213", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,02,01,13,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 62,
+	},
+	block_00016 = {
+		{"fg", file="asane_02ll_00002", file1="asane_02ll_00101", file2="asane_02ll_00214", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,02,01,14,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 66,
+	},
+	block_00017 = {
+		{"fg", file="asane_02ll_00002", file1="asane_02ll_00101", file2="asane_02ll_00220", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,02,01,20,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 70,
+	},
+	block_00018 = {
+		{"fg", file="asane_02ll_00002", file1="asane_02ll_00102", file2="asane_02ll_00221", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,02,02,21,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 74,
+	},
+	block_00019 = {
+		{"fg", file="asane_02ll_00002", file1="asane_02ll_00103", file2="asane_02ll_00213", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,02,03,13,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 78,
+	},
+	block_00020 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00101", file2="asane_02ll_00201", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,01,01,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 82,
+	},
+	block_00021 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00101", file2="asane_02ll_00205", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,01,05,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 86,
+	},
+	block_00022 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00101", file2="asane_02ll_00210", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,01,10,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 90,
+	},
+	block_00023 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00101", file2="asane_02ll_00213", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,01,13,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 94,
+	},
+	block_00024 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00101", file2="asane_02ll_00215", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,01,15,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 98,
+	},
+	block_00025 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00101", file2="asane_02ll_00221", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,01,21,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 102,
+	},
+	block_00026 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00101", file2="asane_02ll_00222", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,01,22,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 106,
+	},
+	block_00027 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00101", file2="asane_02ll_00209", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,01,9,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 110,
+	},
+	block_00028 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00102", file2="asane_02ll_00205", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,02,05,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 114,
+	},
+	block_00029 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00102", file2="asane_02ll_00212", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,02,12,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 118,
+	},
+	block_00030 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00102", file2="asane_02ll_00209", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,02,9,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 122,
+	},
+	block_00031 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00103", file2="asane_02ll_00213", file4="asane_02ll_00401", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,03,13,-1,01",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 126,
+	},
+	block_00032 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00104", file3="asane_02ll_00303", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,04,-1,03",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 130,
+	},
+	block_00033 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00104", file2="asane_02ll_00211", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,04,11,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 134,
+	},
+	block_00034 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00104", file2="asane_02ll_00213", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,04,13,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 138,
+	},
+	block_00035 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00104", file2="asane_02ll_00208", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,04,8,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 142,
+	},
+	block_00036 = {
+		{"fg", file="asane_02ll_00003", file1="asane_02ll_00106", file2="asane_02ll_00211", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,03,06,11,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 146,
+	},
+	block_00037 = {
+		{"fg", file="asane_02ll_00004", file1="asane_02ll_00101", file2="asane_02ll_00213", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,04,01,13,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 150,
+	},
+	block_00038 = {
+		{"fg", file="asane_02ll_00008", file1="asane_02ll_00101", file2="asane_02ll_00203", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,08,01,03,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 154,
+	},
+	block_00039 = {
+		{"fg", file="asane_02ll_00008", file1="asane_02ll_00101", file2="asane_02ll_00213", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,08,01,13,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 158,
+	},
+	block_00040 = {
+		{"fg", file="asane_02ll_00008", file1="asane_02ll_00101", file2="asane_02ll_00209", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,08,01,9,-1,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 162,
+	},
+	block_00041 = {
+		{"fg", file="asane_02ll_00008", file1="asane_02ll_00101", file2="asane_02ll_00213", path=":fg/asane_02ll/", id=2, lv=5, head="asane_02ll", ch_origin="麻沙音", ch="麻沙音2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/ASANE_02LL.s25,0,0,0,m,8,01,13,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		line = 166,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

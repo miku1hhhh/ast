@@ -1,0 +1,34 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"JUN_01S",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="jun_01s_00001", file1="jun_01s_00101", file2="jun_01s_00227", file4="jun_01s_00402", path=":fg/jun_01s/", id=2, lv=5, head="jun_01s", ch_origin="淳之介", ch="淳之介2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/JUN_01S.s25,0,0,0,m,01,1,27,-1,02",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		line = 6,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

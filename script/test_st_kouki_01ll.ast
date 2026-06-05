@@ -1,0 +1,64 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"KOUKI_01LL",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="kouki_01ll_00001", file1="kouki_01ll_00101", file2="kouki_01ll_00202", path=":fg/kouki_01ll/", id=2, lv=5, head="kouki_01ll", ch_origin="光姫", ch="光姫2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/KOUKI_01LL.s25,0,0,0,m,01,01,02,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="kouki_01ll_00001", file1="kouki_01ll_00101", file2="kouki_01ll_00218", path=":fg/kouki_01ll/", id=2, lv=5, head="kouki_01ll", ch_origin="光姫", ch="光姫2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/KOUKI_01LL.s25,0,0,0,m,01,01,18,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="kouki_01ll_00001", file1="kouki_01ll_00102", file2="kouki_01ll_00209", path=":fg/kouki_01ll/", id=2, lv=5, head="kouki_01ll", ch_origin="光姫", ch="光姫2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/KOUKI_01LL.s25,0,0,0,m,01,02,09,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		line = 14,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

@@ -1,0 +1,364 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"TOHKA_01LL",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="tohka_01ll_00000", file1="tohka_01ll_00105", file2="tohka_01ll_00228", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,0,05,28,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="tohka_01ll_00000", file1="tohka_01ll_00101", file3="tohka_01ll_00313", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,00,01,-1,13",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00101", file3="tohka_01ll_00301", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,01,-1,01,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00101", file2="tohka_01ll_00201", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,01,01,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 18,
+	},
+	block_00005 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00101", file2="tohka_01ll_00202", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,01,02,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 22,
+	},
+	block_00006 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00101", file2="tohka_01ll_00202", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,01,02,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 26,
+	},
+	block_00007 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00101", file2="tohka_01ll_00204", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,01,04,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 30,
+	},
+	block_00008 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00101", file2="tohka_01ll_00207", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,01,07,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 34,
+	},
+	block_00009 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00101", file2="tohka_01ll_00210", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,01,10,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 38,
+	},
+	block_00010 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00101", file2="tohka_01ll_00212", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,01,12,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 42,
+	},
+	block_00011 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00101", file2="tohka_01ll_00213", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,01,13,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 46,
+	},
+	block_00012 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00101", file2="tohka_01ll_00215", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,01,15,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 50,
+	},
+	block_00013 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00101", file2="tohka_01ll_00228", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,01,28,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 54,
+	},
+	block_00014 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00101", file2="tohka_01ll_00228", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,01,28,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 58,
+	},
+	block_00015 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00103", file2="tohka_01ll_00213", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,03,13,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 62,
+	},
+	block_00016 = {
+		{"fg", file="tohka_01ll_00001", file1="tohka_01ll_00105", file2="tohka_01ll_00213", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,01,05,13,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 66,
+	},
+	block_00017 = {
+		{"fg", file="tohka_01ll_00002", file1="tohka_01ll_00101", file2="tohka_01ll_00201", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,02,01,01,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 70,
+	},
+	block_00018 = {
+		{"fg", file="tohka_01ll_00002", file1="tohka_01ll_00101", file2="tohka_01ll_00206", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,02,01,06,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 74,
+	},
+	block_00019 = {
+		{"fg", file="tohka_01ll_00002", file1="tohka_01ll_00101", file2="tohka_01ll_00228", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,02,01,28,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 78,
+	},
+	block_00020 = {
+		{"fg", file="tohka_01ll_00002", file1="tohka_01ll_00101", file2="tohka_01ll_00209", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,02,01,9,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 82,
+	},
+	block_00021 = {
+		{"fg", file="tohka_01ll_00002", file1="tohka_01ll_00102", file2="tohka_01ll_00216", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,02,02,16,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 86,
+	},
+	block_00022 = {
+		{"fg", file="tohka_01ll_00004", file1="tohka_01ll_00101", file2="tohka_01ll_00213", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,04,01,13,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 90,
+	},
+	block_00023 = {
+		{"fg", file="tohka_01ll_00004", file1="tohka_01ll_00101", file2="tohka_01ll_00228", path=":fg/tohka_01ll/", id=2, lv=5, head="tohka_01ll", ch_origin="桐香", ch="桐香2", mw="mw", sync=0, mode=3, x=0, y=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TOHKA_01LL.s25,0,0,0,m,04,01,28,-1,",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		line = 94,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

@@ -1,0 +1,139 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"bg", id=1, file="grid_00000", x=0, y=0, lv=5, path=":bg/", sync=0},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"TESHIMA_01M",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 3,
+	},
+	block_00001 = {
+		{"fg", file="teshima_01m_00001", file2="teshima_01m_00203", path=":fg/teshima_01m/", id=2, lv=5, head="teshima_01m", ch_origin="手嶋", ch="手嶋2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TESHIMA_01M.s25,0,0,0,m,01,-1,03,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 6,
+	},
+	block_00002 = {
+		{"fg", file="teshima_01m_00001", file2="teshima_01m_00205", path=":fg/teshima_01m/", id=2, lv=5, head="teshima_01m", ch_origin="手嶋", ch="手嶋2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TESHIMA_01M.s25,0,0,0,m,01,-1,05,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 10,
+	},
+	block_00003 = {
+		{"fg", file="teshima_01m_00001", file2="teshima_01m_00214", path=":fg/teshima_01m/", id=2, lv=5, head="teshima_01m", ch_origin="手嶋", ch="手嶋2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TESHIMA_01M.s25,0,0,0,m,01,-1,14,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 14,
+	},
+	block_00004 = {
+		{"fg", file="teshima_01m_00001", file2="teshima_01m_00219", path=":fg/teshima_01m/", id=2, lv=5, head="teshima_01m", ch_origin="手嶋", ch="手嶋2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TESHIMA_01M.s25,0,0,0,m,01,-1,19,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 18,
+	},
+	block_00005 = {
+		{"fg", file="teshima_01m_00001", file2="teshima_01m_00222", path=":fg/teshima_01m/", id=2, lv=5, head="teshima_01m", ch_origin="手嶋", ch="手嶋2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TESHIMA_01M.s25,0,0,0,m,01,-1,22,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 22,
+	},
+	block_00006 = {
+		{"fg", file="teshima_01m_00001", file2="teshima_01m_00225", path=":fg/teshima_01m/", id=2, lv=5, head="teshima_01m", ch_origin="手嶋", ch="手嶋2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TESHIMA_01M.s25,0,0,0,m,01,-1,25,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 26,
+	},
+	block_00007 = {
+		{"fg", file="teshima_01m_00001", file2="teshima_01m_00228", path=":fg/teshima_01m/", id=2, lv=5, head="teshima_01m", ch_origin="手嶋", ch="手嶋2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TESHIMA_01M.s25,0,0,0,m,01,-1,28,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 30,
+	},
+	block_00008 = {
+		{"fg", file="teshima_01m_00001", file1="teshima_01m_00101", file2="teshima_01m_00201", path=":fg/teshima_01m/", id=2, lv=5, head="teshima_01m", ch_origin="手嶋", ch="手嶋2", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"_$L_MONT,2,st/TESHIMA_01M.s25,0,0,0,m,01,01,01,-1",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		line = 34,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

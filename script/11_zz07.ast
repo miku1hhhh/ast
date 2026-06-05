@@ -1,0 +1,1214 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="没シナリオ7　予約回"},
+		{"eval", exp="g.11_zz07=1"},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"bg", id=1, file="bg33_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="bg33_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=600, rule="eff_033_00000"},
+		{"cgdel", id=1, lv=1, time=0, alphadel=1},
+		{"bg", id=1, file="bg33_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bgm", file="bgm05", vol=100},
+		{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00101", file2="ikuko_02m_00229", path=":fg/ikuko_02m/", id=10, lv=8, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[6200] = {
+				{"fg", file="ikuko_01m_00002", file1="ikuko_01m_00101", file3="ikuko_01m_00301", path=":fg/ikuko_01m/", id=10, lv=8, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=1, delay2=6200, mode=3, x=395, y=-5},
+			},
+			[6199] = {
+				{"transitiontime", time=300, timestamp=1, delay2=6200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ikuko2291", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"「『抜きゲーみたいな島に住んでる",
+					{"ruby", text="わたし"},
+					"貧乳",
+					{"/ruby"},
+					"はどうすりゃいいですか？2』発売まで待ちきれないよ～。トーカちゃんはもう予約した？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 21,
+	},
+	block_00001 = {
+		{"fg", file="tohka_01m_00002", file1="tohka_01m_00101", file2="tohka_01m_00202", path=":fg/tohka_01m/", id=8, lv=9, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="桐香8", id=8, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[1300] = {
+				{"fg", file="tohka_01m_00002", file1="tohka_01m_00101", file2="tohka_01m_00207", path=":fg/tohka_01m/", id=8, lv=9, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=2, delay2=1300, mode=3, x=-405, y=-5},
+			},
+			[1299] = {
+				{"transitiontime", time=300, timestamp=2, delay2=1300},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="tohka1989", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"「ええ、もちろん。ソフマップ様で予約したわ」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 31,
+	},
+	block_00002 = {
+		{"fg", file="ikuko_02l_00002", file1="ikuko_02l_00101", file2="ikuko_02l_00221", path=":fg/ikuko_02l/", id=10, lv=8, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[4200] = {
+				{"fg", file="ikuko_02ll_00002", file1="ikuko_02ll_00101", file3="ikuko_02ll_00301", path=":fg/ikuko_02ll/", id=10, lv=8, head="ikuko_02ll", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=3, delay2=4200, mode=3, x=400, y=0},
+			},
+			[4199] = {
+				{"transitiontime", time=300, timestamp=3, delay2=4200},
+			},
+			[11000] = {
+				{"fg", file="ikuko_02ll_00002", file1="ikuko_02ll_00101", file2="ikuko_02ll_00221", path=":fg/ikuko_02ll/", id=10, lv=8, head="ikuko_02ll", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=4, delay2=11000, mode=3, x=400, y=0},
+			},
+			[10999] = {
+				{"transitiontime", time=300, timestamp=4, delay2=11000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ikuko2292", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"「そっか～！　ソフマップ様だとトーカちゃんのめっちゃスケ",
+					{"rt2"},
+					"ベなタペストリーと、それに合わせたエッチなドラマCD『酔",
+					{"rt2"},
+					"いどれ生徒会長の甘えん坊ドリーム～幼児退行した桐香とエ",
+					{"rt2"},
+					"チエチのエチ～』がついてくるもんね！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 47,
+	},
+	block_00003 = {
+		{"fg", file="tohka_01m_00002", file1="tohka_01m_00101", file2="tohka_01m_00202", path=":fg/tohka_01m/", id=8, lv=9, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[1500] = {
+				{"fg", file="tohka_01m_00002", file1="tohka_01m_00101", file2="tohka_01m_00201", path=":fg/tohka_01m/", id=8, lv=9, head="tohka_01m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=5, delay2=1500, mode=3, x=-405, y=-5},
+			},
+			[1499] = {
+				{"transitiontime", time=300, timestamp=5, delay2=1500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="tohka1990", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"「本当に楽しみだわ。そういう郁子はどこで予約を？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 57,
+	},
+	block_00004 = {
+		{"fg", file="ikuko_01m_00002", file1="ikuko_01m_00101", file2="ikuko_01m_00202", path=":fg/ikuko_01m/", id=10, lv=8, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko2293", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"「トレーダー様！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 64,
+	},
+	block_00005 = {
+		{"fg", file="tohka_02l_00002", file1="tohka_02l_00101", file2="tohka_02l_00202", path=":fg/tohka_02l/", id=8, lv=9, head="tohka_02l", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1991", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"「トレーダー様だと郁子のめちゃくちゃ淫らなタペストリーと、ドラマCDの――」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 71,
+	},
+	block_00006 = {
+		{"fg", file="tohka_02ll_00002", file1="tohka_02ll_00101", file2="tohka_02ll_00219", path=":fg/tohka_02ll/", id=8, lv=9, head="tohka_02ll", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-400, y=0},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[8300] = {
+				{"fg", file="tohka_02ll_00002", file1="tohka_02ll_00103", file2="tohka_02ll_00228", path=":fg/tohka_02ll/", id=8, lv=9, head="tohka_02ll", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=6, delay2=8300, mode=3, x=-400, y=0},
+			},
+			[8299] = {
+				{"transitiontime", time=300, timestamp=6, delay2=8300},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="tohka1992", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"「『舐めてイかせろ！　ハメて任せろ！　性器のイクミサ絶頂女王大決戦！　ジュルジュル舐め舐めズコバコハメハメドチャシコドスケベドリームバトル！』がついてくるものね」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 81,
+	},
+	block_00007 = {
+		{"fg", file="tohka_02m_00002", file1="tohka_02m_00103", file2="tohka_02m_00228", path=":fg/tohka_02m/", id=8, lv=9, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-405, y=-5},
+		{"fg", file="ikuko_01m_00002", file1="ikuko_01m_00101", file3="ikuko_01m_00311", path=":fg/ikuko_01m/", id=10, lv=8, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=395, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[3000] = {
+				{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00101", file2="ikuko_02m_00201", path=":fg/ikuko_02m/", id=10, lv=8, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=7, delay2=3000, mode=3, x=395, y=-5},
+			},
+			[2999] = {
+				{"transitiontime", time=300, timestamp=7, delay2=3000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ikuko2294", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"「絶頂女王大決戦、楽しみなんだ～。レイちゃんはどこで予約したの？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 93,
+	},
+	block_00008 = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"transitiontime", time=0},
+		{"ex", time=300, func="wait"},
+		{"fgact", ch="郁子10", id=10, lv=8, act="表示アクション", alpha=0, alphadel=1, style="reset", time=200},
+		{"fgact", ch="桐香8", id=8, lv=9, act="表示アクション", alpha=0, alphadel=1, style="reset", time=200},
+		{"fg", file="rei_02l_00002", file1="rei_02l_00101", file3="rei_02l_00301", path=":fg/rei_02l/", id=9, lv=10, head="rei_02l", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=100},
+		{"cgact", file="cgact", id=1, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", lv=1},
+		{"fgact", ch="礼9", id=9, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine"},
+		{"se", id=0, loop=0, file="se_a098"},
+		{"bg", id=17, file="syuchu_00001", x=0, y=0, lv=17, path=":cg/syuchu/", ev=1, ax=805, ay=455, bx=-5, by=-5},
+		{"cgact", file="cgact", id=17, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, lv=17, x=0, y=0},
+		{"text"},
+		delay = {
+			[200] = {
+				{"bg", id=18, file="syuchu_00002", x=0, y=0, lv=18, path=":cg/syuchu/", ev=1, timestamp=8, delay2=200, ax=805, ay=455, bx=-5, by=-5},
+				{"cgact", file="cgact", id=18, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, timestamp=8, delay2=200, lv=18, x=0, y=0},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rei2438", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					{"exfont", size="f4"},
+					name = {"礼"},
+					[[「ア"マ"ゾ"ン"！！！！」]],
+					{"rt2"},
+					{"exfont"},
+				},
+			},
+			en = {
+				{
+					{"exfont", size="f4"},
+					name = {"礼", "Rei"},
+					{"exfont"},
+				},
+			},
+			cn = {
+				{
+					{"exfont", size="f4"},
+					name = {"礼"},
+					{"exfont"},
+				},
+			},
+			tw = {
+				{
+					{"exfont", size="f4"},
+					name = {"礼", "禮"},
+					{"exfont"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 115,
+	},
+	block_00009 = {
+		{"cgact", file="cgact", id=17, act="stopact", lv=17, x=0, y=0},
+		{"cgdel", id=17, time=0, alphadel=1, lv=17},
+		{"cgact", file="cgact", id=18, act="stopact", lv=18, x=0, y=0},
+		{"cgdel", id=18, time=0, alphadel=1, lv=18},
+		{"fg", file="ikuko_01m_00002", file1="ikuko_01m_00101", file2="ikuko_01m_00205", path=":fg/ikuko_01m/", id=10, lv=8, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=595, y=-5},
+		{"fg", file="tohka_02m_00002", file1="tohka_02m_00101", file2="tohka_02m_00215", path=":fg/tohka_02m/", id=8, lv=9, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"fg", file="rei_02m_00002", file1="rei_02m_00101", file3="rei_02m_00301", path=":fg/rei_02m/", id=9, lv=10, head="rei_02m", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[4000] = {
+				{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00101", file2="ikuko_02m_00210", path=":fg/ikuko_02m/", id=10, lv=8, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=9, delay2=4000, mode=3, x=595, y=-5},
+			},
+			[3999] = {
+				{"transitiontime", time=300, timestamp=9, delay2=4000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ikuko2295", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"「言いたいだけでしょそれ。後で怒られても知らないからねー。ところで予約特典の話なんだけどさ」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 131,
+	},
+	block_00010 = {
+		{"fg", file="rei_01m_00002", file1="rei_01m_00104", file2="rei_01m_00223", path=":fg/rei_01m/", id=9, lv=10, head="rei_01m", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="礼9", id=9, act="振動下", loop=1, size=-12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[3200] = {
+				{"fg", file="rei_02m_00002", file1="rei_02m_00103", file3="rei_02m_00302", path=":fg/rei_02m/", id=9, lv=10, head="rei_02m", ch_origin="礼", ch="礼9", mw="mw", sync=0, timestamp=10, delay2=3200, mode=3, x=-605, y=-5},
+			},
+			[3199] = {
+				{"transitiontime", time=300, timestamp=10, delay2=3200},
+			},
+			[6500] = {
+				{"fg", file="rei_02m_00002", file1="rei_02m_00103", file3="rei_02m_00317", path=":fg/rei_02m/", id=9, lv=10, head="rei_02m", ch_origin="礼", ch="礼9", mw="mw", sync=0, timestamp=11, delay2=6500, mode=3, x=-605, y=-5},
+			},
+			[6499] = {
+				{"transitiontime", time=300, timestamp=11, delay2=6500},
+			},
+			[8100] = {
+				{"fg", file="rei_02l_00002", file1="rei_02l_00103", file3="rei_02l_00317", path=":fg/rei_02l/", id=9, lv=10, head="rei_02l", ch_origin="礼", ch="礼9", mw="mw", sync=0, timestamp=13, delay2=8100, mode=3, x=-305, y=-5},
+				{"fgact", ch="礼9", id=9, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", timestamp=13, delay2=8100},
+				{"se", id=0, loop=0, file="se_a100", timestamp=14, delay2=8100},
+				{"fgact", ch="桐香8", id=8, act="移動", x=200, y=0, time=400, timestamp=12, delay2=8100},
+				{"fgact", ch="郁子10", id=10, act="移動", x=50, y=0, time=400, timestamp=14, delay2=8100},
+			},
+			[8099] = {
+				{"transitiontime", time=300, timestamp=14, delay2=8100},
+			},
+			[9100] = {
+				{"fg", file="rei_02ll_00002", file1="rei_02ll_00103", file3="rei_02ll_00317", path=":fg/rei_02ll/", id=9, lv=10, head="rei_02ll", ch_origin="礼", ch="礼9", mw="mw", sync=0, timestamp=16, delay2=9100, mode=3, x=0, y=0},
+				{"fgact", ch="礼9", id=9, act="浮遊", loop=2, size=5, time=75, ease="easeinout_sine", timestamp=16, delay2=9100},
+				{"se", id=0, loop=0, file="se_a098", timestamp=17, delay2=9100},
+				{"fgact", ch="桐香8", id=8, act="移動", x=250, y=0, time=400, timestamp=15, delay2=9100},
+				{"fgact", ch="郁子10", id=10, act="移動", x=150, y=0, time=400, timestamp=17, delay2=9100},
+				{"bg", id=17, file="syuchu_00001", x=0, y=0, lv=17, path=":cg/syuchu/", ev=1, timestamp=18, delay2=9100, ax=805, ay=455, bx=-5, by=-5},
+				{"cgact", file="cgact", id=17, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, timestamp=18, delay2=9100, lv=17, x=0, y=0},
+			},
+			[9099] = {
+				{"transitiontime", time=300, timestamp=17, delay2=9100},
+			},
+			[9300] = {
+				{"bg", id=18, file="syuchu_00002", x=0, y=0, lv=18, path=":cg/syuchu/", ev=1, timestamp=19, delay2=9300, ax=805, ay=455, bx=-5, by=-5},
+				{"cgact", file="cgact", id=18, act="アルファフェード点滅", loop=-1, alpha="0,256", time=100, alphadel=0, timestamp=19, delay2=9300, lv=18, x=0, y=0},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rei2439", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"「ああぁ待って！　ごめんなさい！　げっちゅ屋！　げっちゅ屋様！　げっちゅ屋様で予約しました！　げっちゅ屋様愛してる！　げっちゅ屋様に！　忠誠を！　誓おォオオオ！！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 163,
+	},
+	block_00011 = {
+		{"cgact", file="cgact", id=17, act="stopact", lv=17, x=0, y=0},
+		{"cgdel", id=17, time=0, alphadel=1, lv=17},
+		{"cgact", file="cgact", id=18, act="stopact", lv=18, x=0, y=0},
+		{"cgdel", id=18, time=0, alphadel=1, lv=18},
+		{"fg", file="ikuko_01m_00002", file1="ikuko_01m_00101", file2="ikuko_01m_00205", path=":fg/ikuko_01m/", id=10, lv=8, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=595, y=-5},
+		{"fg", file="tohka_02m_00002", file1="tohka_02m_00101", file2="tohka_02m_00215", path=":fg/tohka_02m/", id=8, lv=9, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"fg", file="rei_01m_00002", file1="rei_01m_00104", file3="rei_01m_00319", path=":fg/rei_01m/", id=9, lv=10, head="rei_01m", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[6000] = {
+				{"fg", file="rei_01l_00002", file1="rei_01l_00103", file3="rei_01l_00311", path=":fg/rei_01l/", id=9, lv=10, head="rei_01l", ch_origin="礼", ch="礼9", mw="mw", sync=0, timestamp=20, delay2=6000, mode=3, x=-605, y=-5},
+			},
+			[5999] = {
+				{"transitiontime", time=300, timestamp=20, delay2=6000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rei2440", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"「はぁ～特典の私のタペストリーもいいなー！　あのウサギが最高にエモ！　ドラマCD『恋だ！　ビーチだ！　親友が寝てる真横で口淫からの淫行だ！！』も楽しみ――」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 181,
+	},
+	block_00012 = {
+		{"fg", file="rei_02m_00002", file1="rei_02m_00106", file2="rei_02m_00223", path=":fg/rei_02m/", id=9, lv=10, head="rei_02m", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="礼9", id=9, act="振動下", loop=1, size=-12.5, time=250, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[4000] = {
+				{"fg", file="rei_02m_00002", file1="rei_02m_00105", file3="rei_02m_00305", path=":fg/rei_02m/", id=9, lv=10, head="rei_02m", ch_origin="礼", ch="礼9", mw="mw", sync=0, timestamp=21, delay2=4000, mode=3, x=-605, y=-5},
+			},
+			[3999] = {
+				{"transitiontime", time=300, timestamp=21, delay2=4000},
+			},
+			[7300] = {
+				{"fgact", ch="礼9", id=9, act="浮遊横", loop=10, size=5, time=75, ease="easeinout_sine", timestamp=22, delay2=7300},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rei2441", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"「はあああぁ！？　親友が寝てる真横で口淫からの淫行！？　何！？　どういうこと！？　親友ってまさかはわわわわ！？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 193,
+	},
+	block_00013 = {
+		{"fg", file="tohka_02m_00002", file1="tohka_02m_00101", file2="tohka_02m_00228", path=":fg/tohka_02m/", id=8, lv=9, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1993", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"「どんな内容なのかしらね……私もげっちゅ屋様で予約したから楽しみだわ」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 200,
+	},
+	block_00014 = {
+		{"fg", file="rei_01m_00002", file1="rei_01m_00104", file3="rei_01m_00305", path=":fg/rei_01m/", id=9, lv=10, head="rei_01m", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=200},
+		{"fgact", ch="礼9", id=9, act="振動下", loop=1, size=-22.5, time=200, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2442", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"「ふえっ！？　桐香様はソフマップ様で予約されたのであ！？」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 208,
+	},
+	block_00015 = {
+		{"fg", file="tohka_02m_00002", file1="tohka_02m_00103", file2="tohka_02m_00202", path=":fg/tohka_02m/", id=8, lv=9, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[7500] = {
+				{"fg", file="tohka_02m_00002", file1="tohka_02m_00103", file2="tohka_02m_00219", path=":fg/tohka_02m/", id=8, lv=9, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=23, delay2=7500, mode=3, x=-5, y=-5},
+			},
+			[7499] = {
+				{"transitiontime", time=300, timestamp=23, delay2=7500},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="tohka1994", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					[[「だって……礼のドラマCDでは、先輩と礼がまぐわうんでしょう？　それを聞けるなんて……正直"燃える"わ」]],
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 218,
+	},
+	block_00016 = {
+		{"fg", file="ikuko_01m_00002", file1="ikuko_01m_00102", file2="ikuko_01m_00209", path=":fg/ikuko_01m/", id=10, lv=8, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=595, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko2296", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"「その発想はなかったよ……さすがトーカちゃん……！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 225,
+	},
+	block_00017 = {
+		{"fg", file="tohka_02m_00002", file1="tohka_02m_00103", file2="tohka_02m_00202", path=":fg/tohka_02m/", id=8, lv=9, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[2600] = {
+				{"fg", file="tohka_02m_00002", file1="tohka_02m_00103", file3="tohka_02m_00302", path=":fg/tohka_02m/", id=8, lv=9, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=24, delay2=2600, mode=3, x=-5, y=-5},
+			},
+			[2599] = {
+				{"transitiontime", time=300, timestamp=24, delay2=2600},
+			},
+			[9000] = {
+				{"fg", file="tohka_02m_00002", file1="tohka_02m_00105", file3="tohka_02m_00306", path=":fg/tohka_02m/", id=8, lv=9, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, timestamp=25, delay2=9000, mode=3, x=-5, y=-5},
+			},
+			[8999] = {
+				{"transitiontime", time=300, timestamp=25, delay2=9000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="tohka1995", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"「もちろんトレーダー様でも予約済み……右耳で先輩と礼のスケベを味わいつつ、左耳で先輩と郁子のスケベを堪能する……はぁ……考えただけでやばい……！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 238,
+	},
+	block_00018 = {
+		{"fg", file="tohka_02m_00002", file1="tohka_02m_00103", file2="tohka_02m_00202", path=":fg/tohka_02m/", id=8, lv=9, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1996", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"「それでもどことなく物足りない気がしたから、特典がついている店舗すべてで予約してしまったわ」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 245,
+	},
+	block_00019 = {
+		{"fg", file="rei_01m_00002", file1="rei_01m_00104", file2="rei_01m_00223", path=":fg/rei_01m/", id=9, lv=10, head="rei_01m", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2443", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"「業界に貢献しすぎでは！？　テレホンカードでカードバトルができますよ！！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 252,
+	},
+	block_00020 = {
+		{"fg", file="tohka_02m_00002", file1="tohka_02m_00103", file2="tohka_02m_00228", path=":fg/tohka_02m/", id=8, lv=9, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1997", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"「プレイ用保存用布教用観賞用枕の下に敷く用ドミノ用と色々考えていたらたくさん欲しくなってしまって」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 259,
+	},
+	block_00021 = {
+		{"fg", file="ikuko_01m_00002", file1="ikuko_01m_00102", file2="ikuko_01m_00217", path=":fg/ikuko_01m/", id=10, lv=8, head="ikuko_01m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=595, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[1300] = {
+				{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00101", file2="ikuko_02m_00204", path=":fg/ikuko_02m/", id=10, lv=8, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=26, delay2=1300, mode=3, x=595, y=-5},
+			},
+			[1299] = {
+				{"transitiontime", time=300, timestamp=26, delay2=1300},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="ikuko2297", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"「すごい……レイちゃん！　同じビッグスリーとして、これは負けてられないね……！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 269,
+	},
+	block_00022 = {
+		{"fg", file="rei_02m_00002", file1="rei_02m_00103", file3="rei_02m_00311", path=":fg/rei_02m/", id=9, lv=10, head="rei_02m", ch_origin="礼", ch="礼9", mw="mw", sync=0, mode=3, x=-605, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="礼9", id=9, act="振動下", loop=1, size=12.5, time=150, ease="easeinout_sine"},
+		{"text"},
+		delay = {
+			[7200] = {
+				{"fg", file="rei_02l_00002", file1="rei_02l_00103", file3="rei_02l_00301", path=":fg/rei_02l/", id=9, lv=10, head="rei_02l", ch_origin="礼", ch="礼9", mw="mw", sync=0, timestamp=27, delay2=7200, mode=3, x=-505, y=-5},
+				{"fgact", ch="礼9", id=9, act="振動下", loop=-1, size=12.5, time=100, ease="easeinout_sine", timestamp=27, delay2=7200},
+			},
+			[7199] = {
+				{"transitiontime", time=300, timestamp=27, delay2=7200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="rei2444", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"「ああ！　私たちもすべての店舗で予約しよう！　エロゲ業界の未来を担うのは私たちだ！　うおおおおお予約予約予約予約！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 281,
+	},
+	block_00023 = {
+		{"cgdel", id=1, lv=1, time=0, alphadel=1},
+		{"fg", mode=-1, id=8, ch="桐香8", ch_origin="桐香", lv=9, time=0, sync=0},
+		{"fg", mode=-1, id=9, ch="礼9", ch_origin="礼", lv=10, time=0, sync=0},
+		{"fg", mode=-1, id=10, ch="郁子10", ch_origin="郁子", lv=8, time=0, sync=0},
+		{"bg", id=1, file="bg33_1_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"fg", file="tohka_02m_00002", file1="tohka_02m_00103", file2="tohka_02m_00228", path=":fg/tohka_02m/", id=8, lv=8, head="tohka_02m", ch_origin="桐香", ch="桐香8", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"fg", file="rei_02l_00002", file1="rei_02l_00103", file3="rei_02l_00301", path=":fg/rei_02l/", id=9, lv=9, head="rei_02l", ch_origin="礼", ch="礼9", mw="mw", sync=0, timestamp=27, delay2=7200, mode=3, x=-505, y=-5},
+		{"fg", file="ikuko_02m_00007", file1="ikuko_02m_00101", file2="ikuko_02m_00204", path=":fg/ikuko_02m/", id=10, lv=10, head="ikuko_02m", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, timestamp=26, delay2=1300, mode=3, x=595, y=-5},
+		{"fg", file="ikuko_02l_00002", file1="ikuko_02l_00101", file2="ikuko_02l_00218", path=":fg/ikuko_02l/", id=10, lv=10, head="ikuko_02l", ch_origin="郁子", ch="郁子10", mw="mw", sync=0, mode=3, x=495, y=-5},
+		{"transitiontime", time=300},
+		{"fgact", ch="郁子10", id=10, act="振動下", loop=-1, size=12.5, time=100, ease="easeinout_sine"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko2298", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"「予約予約予約予約予約予約予約予約！！」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 297,
+	},
+	block_00024 = {
+		{"bgm", stop=1},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=8, ch="桐香8", ch_origin="桐香", lv=8, time=0, sync=0},
+		{"fgact", id=9, ch="礼9", act="stopact"},
+		{"fg", mode=-1, id=9, ch="礼9", ch_origin="礼", lv=9, time=0, sync=0},
+		{"fgact", id=10, ch="郁子10", act="stopact"},
+		{"fg", mode=-1, id=10, ch="郁子10", ch_origin="郁子", lv=10, time=0, sync=0},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1000, rule="eff_043_00000"},
+		{"ex", time=500, func="wait"},
+		{"fg", file="asane_02m_00001", file1="asane_02m_00101", file2="asane_02m_00229", path=":fg/asane_02m/", id=3, lv=3, head="asane_02m", ch_origin="麻沙音", ch="麻沙音3", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane1633", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音"},
+					"「かくして、FSの財政は崩壊したのであった……」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asane"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 334,
+	},
+	block_00025 = {
+		{"fg", file="asane_02m_00001", file1="asane_02m_00102", file2="asane_02m_00205", path=":fg/asane_02m/", id=3, lv=3, head="asane_02m", ch_origin="麻沙音", ch="麻沙音3", mw="mw", sync=0, mode=3, x=-5, y=-5},
+		{"transitiontime", time=300},
+		{"text"},
+		delay = {
+			[5500] = {
+				{"fg", file="asane_02m_00001", file1="asane_02m_00104", file2="asane_02m_00216", path=":fg/asane_02m/", id=3, lv=3, head="asane_02m", ch_origin="麻沙音", ch="麻沙音3", mw="mw", sync=0, timestamp=28, delay2=5500, mode=3, x=-5, y=-5},
+			},
+			[5499] = {
+				{"transitiontime", time=300, timestamp=28, delay2=5500},
+			},
+			[11000] = {
+				{"fg", file="asane_02m_00001", file1="asane_02m_00104", file2="asane_02m_00206", file4="asane_02m_00401", path=":fg/asane_02m/", id=3, lv=3, head="asane_02m", ch_origin="麻沙音", ch="麻沙音3", mw="mw", sync=0, timestamp=29, delay2=11000, mode=3, x=-5, y=-5},
+				{"fgact", ch="麻沙音3", id=3, act="振動下", loop=1, size=12.5, time=200, ease="easeinout_sine", timestamp=29, delay2=11000},
+				{"se", id=0, loop=0, file="se_a100", timestamp=29, delay2=11000},
+			},
+			[10999] = {
+				{"transitiontime", time=300, timestamp=29, delay2=11000},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="asane1634", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音"},
+					"「あ……メロンブックス様で予約するとアサちゃんのタペストリーがついてきます……でも、恥ずかしいやつなので……えっとぉ……もごもご……なにとぞ……よしなにぃ……」",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asane"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 349,
+	},
+	block_00026 = {
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"fg", mode=-1, id=3, ch="麻沙音3", ch_origin="麻沙音", lv=3, time=0, sync=0},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=12, time=0, alphadel=1, lv=5},
+		{"cgdel", id=13, time=0, alphadel=1, lv=5},
+		{"cgdel", id=14, time=0, alphadel=1, lv=5},
+		{"cgdel", id=15, time=0, alphadel=1, lv=5},
+		{"cgdel", id=16, time=0, alphadel=1, lv=5},
+		{"cgdel", id=17, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=1500, rule="eff_043_00000"},
+		{"ex", time=2000, func="wait"},
+		{"text"},
+		linkback = "block_00025",
+		line = 393,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

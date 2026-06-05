@@ -1,0 +1,9298 @@
+astver = 2.0
+ast = {
+	["0114_00001"] = {
+		{"savetitle", text="10_fk07", ja="黄金乃秋", en="Golden Lays, Golden Days", cn="黄金乃秋", tw="黃金乃秋"},
+		{"eval", exp="g.10_fk07=1"},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"transitiontime", time=100, draw2=1},
+		{"ex", time=100, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"…………………………",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"…………………………",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "0114_00002",
+		line = 16,
+	},
+	["0114_00002"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"……………………",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"……………………",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00001",
+		linknext = "0114_00003",
+		line = 26,
+	},
+	["0114_00003"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"………………",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"………………",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00002",
+		linknext = "0114_00004",
+		line = 36,
+	},
+	["0114_00004"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"…………",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"…………",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00003",
+		linknext = "0114_00005",
+		line = 46,
+	},
+	["0114_00005"] = {
+		{"bg", id=29, file="blackband_00000", x=0, y=0, lv=29, path=":bg/", sync=0},
+		{"transitiontime", time=100},
+		{"bg", id=2, file="bg19_1l_00000", x=-300, y=0, lv=2, path=":bg/", sync=1, style="blur", blurx=11, blury=11, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=2, lv=2, act="表示アクション", a1=0, a2=255, time=1000, a_chr=151, alpha=255},
+		{"cgact", file="cgact", id=2, act="移動", x=595, y=-5, time=50000, lv=2},
+		{"bgm", file="bgm41", vol=100},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A photo album sits in front of me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"⋯⋯在我们的眼前有一本相簿。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"⋯⋯在我們的眼前有一本相簿。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00004",
+		linknext = "0114_00006",
+		line = 62,
+	},
+	["0114_00006"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It holds hundreds of pages. Enough that it’d be impossible to go through it in a single day.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"厚度多达数百页，是一天也看不完的量。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"厚度多達數百頁，是一天也看不完的量。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00005",
+		linknext = "0114_00007",
+		line = 72,
+	},
+	["0114_00007"] = {
+		{"se", id=0, loop=0, file="se_a141"},
+		{"cgdel", id=2, lv=2, time=1000, alphadel=1},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"transitiontime", time=100},
+		{"evset", file="fcg04", set="fcg04", path=":ev/fcg04/"},
+		{"evset", file="fcg04_l01", set="fcg04_l01", path=":ev/fcg04_l01/"},
+		{"bg", id=19, file="fcg04_l_00001", x=267, y=-193, lv=19, path=":cg/fcg04_l/", ev=1, ax=1594, ay=1153, bx=-794, by=-703},
+		{"transitiontime", time=1000},
+		{"cgact", file="cgact", id=19, act="移動", x=-600, y=0, time=30000, lv=19},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0000", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“⋯⋯⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「⋯⋯⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00006",
+		linknext = "0114_00008",
+		line = 96,
+	},
+	["0114_00008"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A girl enthusiastically flips through the pages, scanning each photo intently.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"少女热心的翻着页面，不停地端详着其中的照片。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"少女熱心的翻著頁面，不停地端詳著其中的照片。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00007",
+		linknext = "0114_00009",
+		line = 106,
+	},
+	["0114_00009"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0001", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Mother, why did you marry Father?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“妈妈为什么和爸爸结婚呢？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「媽媽為什麼和爸爸結婚呢？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00008",
+		linknext = "0114_00010",
+		line = 118,
+	},
+	["0114_00010"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She asks the woman sitting next to her.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"接着，向她旁边的女性如此问道。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"接著，向她旁邊的女性如此問道。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00009",
+		linknext = "0114_00011",
+		line = 128,
+	},
+	["0114_00011"] = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=19, lv=19, time=1000, alphadel=1, style="reset", x=-600, y=0},
+		{"bg", id=18, file="fcg04_l_00001", x=-833, y=-693, lv=18, path=":cg/fcg04_l/", ev=1, alpha=0, sync=1, a_chr151=1, ax=1594, ay=1153, bx=-794, by=-703},
+		{"cgact", file="cgact", id=18, lv=18, act="表示アクション", a1=0, a2=255, time=500, a_chr=151, alpha=255, x=-833, y=-693},
+		{"cgact", file="cgact", id=18, act="移動", x=0, y=600, time=30000, lv=18},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1063", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Aside from his hideous wardrobe, he’s the perfect husband.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“爸爸呢，除了衣服很俗气以外，是很完美的人喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「爸爸呢，除了衣服很俗氣以外，是很完美的人喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00010",
+		linknext = "0114_00012",
+		line = 145,
+	},
+	["0114_00012"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She answers, full of confidence.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那名女性自信满满地笑着说。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那名女性自信滿滿地笑著說。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00011",
+		linknext = "0114_00013",
+		line = 155,
+	},
+	["0114_00013"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase1062", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“I don’t think there’s any hope for his fashion sense though. Isn’t that right, Mr. President?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“衣服俗气的这个部分一直都无法获得改善呢⋯⋯社长大人？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「衣服俗氣的這個部分一直都無法獲得改善呢⋯⋯社長大人？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00012",
+		linknext = "0114_00014",
+		line = 167,
+	},
+	["0114_00014"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Hey, don’t say that.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“别说了⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「別說了⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00013",
+		linknext = "0114_00015",
+		line = 178,
+	},
+	["0114_00015"] = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=18, lv=18, time=1000, alphadel=1, style="reset", x=0, y=600},
+		{"evset", file="fcg04", set="fcg04", path=":ev/fcg04/"},
+		{"evset", file="fcg0401", set="fcg0401", path=":ev/fcg0401/"},
+		{"bg", id=17, file="fcg04_00001", x=16, y=191, lv=17, path=":cg/fcg04/", ev=1, ax=856, ay=619, bx=-56, by=-169},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I ended up staying on Seiran Island.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我最终还是没有离开青蓝岛。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我最終還是沒有離開青藍島。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00014",
+		linknext = "0114_00016",
+		line = 195,
+	},
+	["0114_00016"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Nanase, Ikuko, and I left for the city upon our high school graduation, but after university we all returned to the island.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我、奈奈濑、郁子在求学过程中一度离开岛去了都市，但是毕业以后又都回到了岛上。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我、奈奈瀨、郁子在求學過程中一度離開島去了都市，但是畢業以後又都回到了島上。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00015",
+		linknext = "0114_00017",
+		line = 205,
+	},
+	["0114_00017"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"After that, we started up our own company.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"然后我们开了一间公司。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"然後我們開了一間公司。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00016",
+		linknext = "0114_00018",
+		line = 215,
+	},
+	["0114_00018"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Of course, we also named it NLNS.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"公司名字叫株式会社NLNS。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"公司名字叫株式會社NLNS。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00017",
+		linknext = "0114_00019",
+		line = 225,
+	},
+	["0114_00019"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"On paper, we’re a toy maker that wholesales a variety of new adult toys to the SHO, but in reality, we’re an odd jobs shop that handles just about anything.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"表面上是提供SHO各种新型成人情趣道具的玩具制造商，实际上是什么都做的代客服务公司。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"表面上是提供SHO各種新型成人情趣道具的玩具製造商，實際上是什麼都做的代客服務公司。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00018",
+		linknext = "0114_00020",
+		line = 235,
+	},
+	["0114_00020"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0002", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Who’s this girl with the weird face and hand signs?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“这张扮着鬼脸比耶的照片呢⋯⋯？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「這張扮著鬼臉比耶的照片呢⋯⋯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00019",
+		linknext = "0114_00021",
+		line = 247,
+	},
+	["0114_00021"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki1323", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“Oh, wow! This really takes me back! This picture’s from back when we were still attending Minotsuki Academy!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“哇啊，好怀念喔⋯⋯！这是我们还在水乃月的时候呢！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「哇啊，好懷念喔⋯⋯！這是我們還在水乃月的時候呢！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00020",
+		linknext = "0114_00022",
+		line = 259,
+	},
+	["0114_00022"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Our director of Transportation and Ideas, Misaki Hotori.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"畔美岬，负责运输以及企划。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"畔美岬，負責運輸以及企劃。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00021",
+		linknext = "0114_00023",
+		line = 269,
+	},
+	["0114_00023"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She used to just go around in a truck delivering our new goods to different locations.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"原本是开着卡车到处送我们的新商品的⋯⋯",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"原本是開著卡車到處送我們的新商品的⋯⋯",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00022",
+		linknext = "0114_00024",
+		line = 279,
+	},
+	["0114_00024"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"However nowadays, she comes up with novel developments in the adult goods industry that are unrivaled. They’ve all become a smash hit.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"现在则是在开发成人情趣道具上，拥有无人能及崭新的点子王。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"現在則是在開發成人情趣道具上，擁有無人能及嶄新的點子王。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00023",
+		linknext = "0114_00025",
+		line = 289,
+	},
+	["0114_00025"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even though sometimes she can be a little too innovative and end up driving our company to the brink of bankruptcy, she’s truly a well of inspiration.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然有时还因为她的点子太过新潮而让公司接近破产边缘，但是依然瑕不掩瑜，是个优秀的人才。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然有時還因為她的點子太過新潮而讓公司接近破產邊緣，但是依然瑕不掩瑜，是個優秀的人才。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00024",
+		linknext = "0114_00026",
+		line = 299,
+	},
+	["0114_00026"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She also acts as our driver during outings for our “secret business”. Operating any kind of vehicle to safely get us to our destination and back.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"“秘密业务”的时候，不管什么交通工具都能驾驭，将我们送到目的地再带着我们回来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"“秘密業務”的時候，不管什麼交通工具都能駕馭，將我們送到目的地再帶著我們回來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00025",
+		linknext = "0114_00027",
+		line = 309,
+	},
+	["0114_00027"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s just the same as before.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"也就是说，什么都没变。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"也就是說，什麼都沒變。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00026",
+		linknext = "0114_00028",
+		line = 319,
+	},
+	["0114_00028"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s also the same size as before, and she still makes a fuss over how fat she’s getting.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"外观和以前差没多少，本人却一直嚷嚷着“胖了胖了”。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"外觀和以前差沒多少，本人卻一直嚷嚷著「胖了胖了」。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00027",
+		linknext = "0114_00029",
+		line = 329,
+	},
+	["0114_00029"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane1606", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asane"},
+					"“But why does she still have the ahegao for our group photo? Did she overdose on Misakium and have it mess up her brains?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音"},
+					"“为什么我们全部的人都是一脸阿嘿颜呢⋯⋯是因为过分摄取美岬分子所以脑子变得怪怪的关系吗⋯⋯？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音"},
+					"「為什麼我們全部的人都是一臉阿嘿顏呢⋯⋯是因為過分攝取美岬分子所以腦子變得怪怪的關係嗎⋯⋯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00028",
+		linknext = "0114_00030",
+		line = 341,
+	},
+	["0114_00030"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My sister Asane, our highest-earning Chip Designer.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"赚最多的程式组主任是妹妹麻沙酱。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"賺最多的程式組主任是妹妹麻沙醬。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00029",
+		linknext = "0114_00031",
+		line = 351,
+	},
+	["0114_00031"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She can throw together any kind of code imaginable, which does land our company in hot water at times.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她不管是什么程式码都能够为己用，为我们公司带来各种难题⋯⋯",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她不管是什麼程式碼都能夠為己用，為我們公司帶來各種難題⋯⋯",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00030",
+		linknext = "0114_00032",
+		line = 361,
+	},
+	["0114_00032"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But that’s a different story.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不过这不是重点。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不過這不是重點。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00031",
+		linknext = "0114_00033",
+		line = 371,
+	},
+	["0114_00033"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She may have grown noticeably more mature and lost her edge, but she’s still my adorable little sister.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"外观已像个大人样，虽然没有了以前的面貌，但是依然是我可爱的妹妹。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"外觀已像個大人樣，雖然沒有了以前的面貌，但是依然是我可愛的妹妹。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00032",
+		linknext = "0114_00034",
+		line = 381,
+	},
+	["0114_00034"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami1029", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Heehee! I know why! This was when Fumino first came here. We all took a group picture!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“哼哼，让姐姐我来教你⋯⋯！这是文乃酱来到这边时第一次拍的合照呢！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「哼哼，讓姊姊我來教你⋯⋯！這是文乃醬來到這邊時第一次拍的合照呢！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00033",
+		linknext = "0114_00035",
+		line = 393,
+	},
+	["0114_00035"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Hinami Watarai, our Project Manager who handles all our schedules.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"担任项目经理的渡会雏见，凡事行程都交给她管理准没错。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"擔任項目經理的渡會雛見，凡事行程都交給她管理準沒錯。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00034",
+		linknext = "0114_00036",
+		line = 403,
+	},
+	["0114_00036"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Developing new adult goods means we’re always constantly running racing against deadlines.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我们开发新的成人情趣道具时，总是会被时间压得喘不过气来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我們開發新的成人情趣道具時，總是會被時間壓得喘不過氣來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00035",
+		linknext = "0114_00037",
+		line = 413,
+	},
+	["0114_00037"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s always reassuring us in our efforts and when needed, she scolds us as well. She expertly wields both the carrot and the stick to get us on task.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这时能够时而疗愈时而鞭笞大家，一手糖一手鞭子运用自如的就是她了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這時能夠時而療癒時而鞭笞大家，一手糖一手鞭子運用自如的就是她了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00036",
+		linknext = "0114_00038",
+		line = 423,
+	},
+	["0114_00038"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Incidentally for our secret business outings, she leads the charge like always, lugging around her good ol’ folding chair all the while.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"顺带一提，“秘密业务”的时候，她会站在最前面转着折叠椅。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"順帶一提，“秘密業務”的時候，她會站在最前面轉著折疊椅。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00037",
+		linknext = "0114_00039",
+		line = 433,
+	},
+	["0114_00039"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Her appearance remains that of a loli as if she struck up some pact with the Devil.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那个样子充满魅惑，好像恶魔附身赐予的力量一样。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那個樣子充滿魅惑，好像惡魔附身賜予的力量一樣。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00038",
+		linknext = "0114_00040",
+		line = 443,
+	},
+	["0114_00040"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase1063", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“That’s when Fumino was still so gloomy! Wow! Jun looks so young! He still has hair in this picture!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“这时的文乃表情还很生硬呢⋯⋯哇啊，淳好年轻⋯⋯！还没秃耶⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「這時的文乃表情還很生硬呢⋯⋯哇啊，淳好年輕⋯⋯！還沒禿耶⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00039",
+		linknext = "0114_00041",
+		line = 455,
+	},
+	["0114_00041"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Katagiri Nanase, our go-getter and the face of our company.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"跑业务最行的是我们公司活招牌的片桐奈奈濑。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"跑業務最行的是我們公司活招牌的片桐奈奈瀨。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00040",
+		linknext = "0114_00042",
+		line = 465,
+	},
+	["0114_00042"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s incredibly popular with our generation. All she has to do is show her face and the money rolls in. She also does a fine job picking up after Misaki’s messes.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在我们的这个世代中获得压倒性人气，稍微出点小力案件就到手，美岬惹出来的事只要有她大致都能解决。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在我們的這個世代中獲得壓倒性人氣，稍微出點小力案件就到手，美岬惹出來的事只要有她大致都能解決。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00041",
+		linknext = "0114_00043",
+		line = 475,
+	},
+	["0114_00043"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She expertly faces all the criticism and hate hurled at our incompetent CEO. She truly is our superhero.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"代替我这个废物社长首当其冲，是我们公司的超人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"代替我這個廢物社長首當其衝，是我們公司的超人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00042",
+		linknext = "0114_00044",
+		line = 485,
+	},
+	["0114_00044"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Actually, she’s also a one-woman tank during our secret job too. She gets the work done all by herself.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"附带一提，“秘密业务”的时候，大部分仍靠她一人的身手依然宝刀未老。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"附帶一提，“秘密業務”的時候，大部分仍靠她一人的身手依然寶刀未老。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00043",
+		linknext = "0114_00045",
+		line = 495,
+	},
+	["0114_00045"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Over the years, she’s developed a womanly charm and is constantly proposed to. However, she continues to decline them all, stating she’s married to her work.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"多年以后她多了几分大人的魅力，尽管追求者不断上门求婚，她还是以工作为重而不断拒绝追求者。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"多年以後她多了幾分大人的魅力，儘管追求者不斷上門求婚，她還是以工作為重而不斷拒絕追求者。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00044",
+		linknext = "0114_00046",
+		line = 505,
+	},
+	["0114_00046"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Actually, I still have hair!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我才没秃，现在也是⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我才沒禿，現在也是⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00045",
+		linknext = "0114_00047",
+		line = 516,
+	},
+	["0114_00047"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And finally, me. CEO in name only, Junnosuke Tachibana.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"然后形同虚设的社长也就是我，橘淳之介。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"然後形同虛設的社長也就是我，橘淳之介。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00046",
+		linknext = "0114_00048",
+		line = 526,
+	},
+	["0114_00048"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My job is sort of like being the Director of Development. I oversee the production of artistic sex sleeves and vibrators.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"兼任开发部长，现在仍致力于开发艺术性质高的飞机杯和按摩棒。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"兼任開發部長，現在仍致力於開發藝術性質高的飛機杯和按摩棒。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00047",
+		linknext = "0114_00049",
+		line = 536,
+	},
+	["0114_00049"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Amusingly, the handle @jun_fappist that I’ve used for fun online still lives through this endeavor.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"好玩的是，因为嗜好而使用的名字“@junonanist”还活得好好的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"好玩的是，因為嗜好而使用的名字「@junonanist」還活得好好的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00048",
+		linknext = "0114_00050",
+		line = 546,
+	},
+	["0114_00050"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And, as always, I act as the leader and direct my team as we handle our secret activities.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"然后在“秘密业务”时指挥队伍站在最前线。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"然後在“秘密業務”時指揮隊伍站在最前線。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00049",
+		linknext = "0114_00051",
+		line = 556,
+	},
+	["0114_00051"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Our adventures haven’t wrapped up just yet.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我们的冒险依然持续着。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我們的冒險依然持續著。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00050",
+		linknext = "0114_00052",
+		line = 566,
+	},
+	["0114_00052"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even at this age, even with this scarred body, I still haven’t given up the fight.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就算到了这个年纪，就算受伤，我们仍然奋战不懈。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就算到了這個年紀，就算受傷，我們仍然奮戰不懈。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00051",
+		linknext = "0114_00053",
+		line = 576,
+	},
+	["0114_00053"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0003", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“So Father is perfect even if he’s going bald?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“爸爸，就算秃头也完美吗⋯⋯？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「爸爸，就算禿頭也完美嗎⋯⋯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00052",
+		linknext = "0114_00054",
+		line = 588,
+	},
+	["0114_00054"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Last but not least.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"还有。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"還有。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00053",
+		linknext = "0114_00055",
+		line = 598,
+	},
+	["0114_00055"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My biggest supporter both publicly and privately.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"于公于私成为我的支柱的是──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"於公於私成為我的支柱的是──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00054",
+		linknext = "0114_00056",
+		line = 608,
+	},
+	["0114_00056"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1064", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Of course. Other than his wardrobe, I mean. Hehe.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“当然⋯⋯除了衣服以外都很完美⋯⋯嘻嘻⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「當然⋯⋯除了衣服以外都很完美⋯⋯嘻嘻⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00055",
+		linknext = "0114_00057",
+		line = 620,
+	},
+	["0114_00057"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My wife, Fumino Tachibana.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我的妻子，橘文乃──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我的妻子，橘文乃──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00056",
+		linknext = "0114_00058",
+		line = 630,
+	},
+	["0114_00058"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s in charge of all of the accounting. No matter how much into the red we get, with her wifely intuition she always finds a way out. She’s the backbone of the company.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"处理所有行政方面的事务，不管公司营运陷入多苦的状况依然发挥她贤内助的力量扶持着，是我们公司的支柱。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"處理所有行政方面的事務，不管公司營運陷入多苦的狀況依然發揮她賢內助的力量扶持著，是我們公司的支柱。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00057",
+		linknext = "0114_00059",
+		line = 640,
+	},
+	["0114_00059"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Just like with her “secret business,” she was always watching out for us like a hawk.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就算是在进行“秘密业务”的时候，她也以鹰眼的身份从后方掩护着我们。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就算是在進行“秘密業務”的時候，她也以鷹眼的身分從後方掩護著我們。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00058",
+		linknext = "0114_00060",
+		line = 650,
+	},
+	["0114_00060"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1065", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Speaking of clothes. He did start getting better about it. Hmm. Oh, where is that picture?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“就连衣服也都越穿越有品味了⋯⋯啊，是放到哪里去了⋯⋯？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「就連衣服也都越穿越有品味了⋯⋯啊，是放到哪裡去了⋯⋯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00059",
+		linknext = "0114_00061",
+		line = 662,
+	},
+	["0114_00061"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Fumino’s eyesight gradually worsened from reading too many books. And her special powers went with it.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"文乃因为阅读太多书物导致视力下降的同时，栖息在她眼底的那股神秘力量也消失无踪。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"文乃因為閱讀太多書物導致視力下降的同時，棲息在她眼底的那股神秘力量也消失無蹤。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00060",
+		linknext = "0114_00062",
+		line = 672,
+	},
+	["0114_00062"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s been harder for her to find things.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"所以找不到东西的情况也增加了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"所以找不到東西的情況也增加了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00061",
+		linknext = "0114_00063",
+		line = 682,
+	},
+	["0114_00063"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The fires of her once blazing red eyes have finally died down.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"像是在燃烧般的火红的眼睛，现在已充满祥和。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"像是在燃燒般的火紅的眼睛，現在已充滿祥和。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00062",
+		linknext = "0114_00064",
+		line = 692,
+	},
+	["0114_00064"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0004", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Do you mean this picture of Father wearing a fish egg shirt?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“意思是⋯⋯穿着这个鲑鱼卵的衣服的爸爸吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「意思是⋯⋯穿著這個鮭魚卵的衣服的爸爸嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00063",
+		linknext = "0114_00065",
+		line = 704,
+	},
+	["0114_00065"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1066", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Oh, yes. That’s right! You’re so good at finding things. What a clever girl. Yes, you are!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“是呀⋯⋯文佳好会找东西喔⋯⋯真是聪明的孩子⋯⋯乖乖⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「是呀⋯⋯文佳好會找東西喔⋯⋯真是聰明的孩子⋯⋯乖乖⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00064",
+		linknext = "0114_00066",
+		line = 716,
+	},
+	["0114_00066"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0005", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Hehehe!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“嘿嘿⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「嘿嘿⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00065",
+		linknext = "0114_00067",
+		line = 728,
+	},
+	["0114_00067"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But just like this, our daughter helps her find things.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但就像这样，会由女儿帮忙找到东西，所以完全不成问题。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但就像這樣，會由女兒幫忙找到東西，所以完全不成問題。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00066",
+		linknext = "0114_00068",
+		line = 738,
+	},
+	["0114_00068"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"With her smoldering crimson eyes, a spitting-image of her mother’s.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"火红般的眼睛就像她妈妈以前一样。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"火紅般的眼睛就像她媽媽以前一樣。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00067",
+		linknext = "0114_00069",
+		line = 748,
+	},
+	["0114_00069"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0006", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“This album seems to be only of Mother. Don’t you think you took too many pictures, Father?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“不过相簿里几乎都只有妈妈的照片⋯⋯爸爸是不是拍太多了⋯⋯？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「不過相簿裡幾乎都只有媽媽的照片⋯⋯爸爸是不是拍太多了⋯⋯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00068",
+		linknext = "0114_00070",
+		line = 760,
+	},
+	["0114_00070"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Your Mama is just so dang cute! I just couldn’t stop!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“因为你妈妈太可爱了，所以我无法不拍啊──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「因為妳媽媽太可愛了，所以我無法不拍啊──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00069",
+		linknext = "0114_00071",
+		line = 771,
+	},
+	["0114_00071"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0007", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Indubitably.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“原来原来⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「原來原來⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00070",
+		linknext = "0114_00072",
+		line = 783,
+	},
+	["0114_00072"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“And after you were born, Fumika, I just had to take pictures of you, too! You lovely monster, you!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“在生了文佳之后就变成都只拍你了呢⋯⋯！嘿，你这只可爱小怪兽⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「在生了文佳之後就變成都只拍妳了呢⋯⋯！嘿，妳這隻可愛小怪獸⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00071",
+		linknext = "0114_00073",
+		line = 794,
+	},
+	["0114_00073"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0008", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Stop it! That tickles!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“痛痛。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「痛痛。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00072",
+		linknext = "0114_00074",
+		line = 806,
+	},
+	["0114_00074"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“But of course, Fumino remains the cutest! Come here, you!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“当然文乃也是世界第一可爱的唷⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「當然文乃也是世界第一可愛的唷⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00073",
+		linknext = "0114_00075",
+		line = 817,
+	},
+	["0114_00075"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1067", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Oh, I love how you love both of us equally, Junnosuke. My darling!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“女儿和老婆一样爱的淳之介⋯⋯我喜欢⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「女兒和老婆一樣愛的淳之介⋯⋯我喜歡⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00074",
+		linknext = "0114_00076",
+		line = 829,
+	},
+	["0114_00076"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0009", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Are you two really going to crush me, your daughter, to death?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“是想把我给挤死是吗⋯⋯？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「是想把我給擠死是嗎⋯⋯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00075",
+		linknext = "0114_00077",
+		line = 841,
+	},
+	["0114_00077"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Our daughter may look and sound like her mother, but she really takes after me in terms of personality.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"女儿不管是外观还是口气还是能力都像妈妈，只有性格怎么看都是像我。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"女兒不管是外觀還是口氣還是能力都像媽媽，只有性格怎麼看都是像我。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00076",
+		linknext = "0114_00078",
+		line = 851,
+	},
+	["0114_00078"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Her name comes from both Fumino, her mother, and from my benefactor.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"名字是文乃的母亲，也是我的恩人取得。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"名字是文乃的母親，也是我的恩人取得。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00077",
+		linknext = "0114_00079",
+		line = 861,
+	},
+	["0114_00079"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Which makes her downright adorable in my eyes.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"所以对我来说，女儿真的是可爱到不行。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"所以對我來說，女兒真的是可愛到不行。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00078",
+		linknext = "0114_00080",
+		line = 871,
+	},
+	["0114_00080"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami1030", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Everyone sure is taking forever. I’m so hungry I feel like my belly’s going to get distended.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“大家好晚喔，肚子饿到要贴到屁股了啦。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「大家好晚喔，肚子餓到要貼到屁股了啦。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00079",
+		linknext = "0114_00081",
+		line = 883,
+	},
+	["0114_00081"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“So you’ll grow a stomach instead of a butt?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“雏见的屁股的前面是肚子吗⋯⋯？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「雛見的屁股的前面是肚子嗎⋯⋯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00080",
+		linknext = "0114_00082",
+		line = 894,
+	},
+	["0114_00082"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1068", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“We have food here, but how about we stop somewhere to eat before everyone arrives?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“虽然有菜⋯⋯还是大家先到哪里去用餐好了？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「雖然有菜⋯⋯還是大家先到哪裡去用餐好了？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00081",
+		linknext = "0114_00083",
+		line = 906,
+	},
+	["0114_00083"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki1324", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“That sounds fantastic! Let’s buy up all of Seiran Island’s private restaurants.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“好耶！青蓝岛的小店，我们就吃到他上市上柜吧！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「好耶！青藍島的小店，我們就吃到他上市上櫃吧！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00082",
+		linknext = "0114_00084",
+		line = 918,
+	},
+	["0114_00084"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0010", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“I don’t want to eat that much.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“我没有想要吃成那样。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「我沒有想要吃成那樣。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00083",
+		linknext = "0114_00085",
+		line = 930,
+	},
+	["0114_00085"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase1064", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“If it’s Misaki, she probably could...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“不，美岬的话是有可能⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「不，美岬的話是有可能⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00084",
+		linknext = "0114_00086",
+		line = 942,
+	},
+	["0114_00086"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane1607", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asane"},
+					"“You’d do better buying up all their stocks.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音"},
+					"“要先把股票买下来吗⋯⋯？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音"},
+					"「要先把股票買下來嗎⋯⋯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00085",
+		linknext = "0114_00087",
+		line = 954,
+	},
+	["0114_00087"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The way my daughter insists and blankly stares at Misaki is probably because she’s imitating my behavior.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"面无表情的吐槽美岬的这个地方也是看着我学的吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"面無表情的吐槽美岬的這個地方也是看著我學的吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00086",
+		linknext = "0114_00088",
+		line = 964,
+	},
+	["0114_00088"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This is how we still live and work together.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"就这样我们依然彼此互相扶持的生活着。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"就這樣我們依然彼此互相扶持的生活著。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00087",
+		linknext = "0114_00089",
+		line = 974,
+	},
+	["0114_00089"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Seiran Island still isn’t the perfect haven.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"青蓝岛到现在还不是完全的圣域。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"青藍島到現在還不是完全的聖域。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00088",
+		linknext = "0114_00090",
+		line = 984,
+	},
+	["0114_00090"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It still doesn’t offer complete total freedom that suits everyone.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"还没有到不管是什么样的人都能在这生活的自由程度。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"還沒有到不管是什麼樣的人都能在這生活的自由程度。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00089",
+		linknext = "0114_00091",
+		line = 994,
+	},
+	["0114_00091"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But we’re doing our best to make it that way.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我们越是努力应该就能够让这里变得越好。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我們越是努力應該就能夠讓這裡變得越好。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00090",
+		linknext = "0114_00092",
+		line = 1004,
+	},
+	["0114_00092"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1960", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Oh, are you all headed out already? I heard today’s a special day, so I gathered all my courage to come.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“哎，你们要先走了吗？我听闻今天是特别的日子还鼓起勇气来了呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「哎，妳們要先走了嗎？我聽聞今天是特別的日子還鼓起勇氣來了呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00091",
+		linknext = "0114_00093",
+		line = 1016,
+	},
+	["0114_00093"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I can’t get upset at your sudden appearances anymore.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“⋯⋯你这种突然登场的方式我也不会被吓到了。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「⋯⋯妳這種突然登場的方式我也不會被嚇到了。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00092",
+		linknext = "0114_00094",
+		line = 1027,
+	},
+	["0114_00094"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2411", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Excuse us! Yeah, we’re also sick of getting mad at Miss Touka’s habit.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“打扰了⋯⋯为此生气的事我也已经累了，不如道歉还比较快⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「打擾了⋯⋯為此生氣的事我也已經累了，不如道歉還比較快⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00093",
+		linknext = "0114_00095",
+		line = 1039,
+	},
+	["0114_00095"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko2274", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Keep it up and you might be hated for real, Tokie.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“是说差不多要真的讨厌这种作为了，还是停止作为比较好喔，我们家的组长也是。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「是說差不多要真的討厭這種作為了，還是停止作為比較好喔，我們家的組長也是。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00094",
+		linknext = "0114_00096",
+		line = 1051,
+	},
+	["0114_00096"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The former FS members have also arrived.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"姗姗来迟的是前FS的成员们。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"姍姍來遲的是前FS的成員們。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00095",
+		linknext = "0114_00097",
+		line = 1061,
+	},
+	["0114_00097"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"They’re all big fans of Fumika, after all.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不知为何，文佳很受她们欢迎。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不知為何，文佳很受她們歡迎。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00096",
+		linknext = "0114_00098",
+		line = 1071,
+	},
+	["0114_00098"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko2275", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Aww, Fumika! You have your dad’s face for sure. Promise to marry me when you get older!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“啊，文佳果然眼睛的地方很像亲爱的！你长大以后和郁郁结婚好不好？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「啊，文佳果然眼睛的地方很像親愛的！妳長大以後和郁郁結婚好不好？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00097",
+		linknext = "0114_00099",
+		line = 1083,
+	},
+	["0114_00099"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0011", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“But I have to marry Father when I get older!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“我长大了以后不和爸爸结婚不行⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「我長大了以後不和爸爸結婚不行⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00098",
+		linknext = "0114_00100",
+		line = 1095,
+	},
+	["0114_00100"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Have to? Wait, I thought you wanted to?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不做不行⋯⋯？你的意思是不想吧⋯⋯！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不做不行⋯⋯？妳的意思是不想吧⋯⋯！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00099",
+		linknext = "0114_00101",
+		line = 1106,
+	},
+	["0114_00101"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Ikuko now works as the SHO’s Strike Force Commander.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"郁子是现役的SHO强袭部队队长。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"郁子是現役的SHO強襲部隊隊長。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00100",
+		linknext = "0114_00102",
+		line = 1116,
+	},
+	["0114_00102"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It seems like she was scouted as an important executive candidate due to the fact that she graduated with top grades from an SHO-designated school.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"因为她以顶尖成绩毕业于SHO所援助的学校，所以似乎是珍贵的干部候补成员。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"因為她以頂尖成績畢業於SHO所援助的學校，所以似乎是珍貴的幹部候補成員。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00101",
+		linknext = "0114_00103",
+		line = 1126,
+	},
+	["0114_00103"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"However, she keeps denying promotions saying she wouldn’t be able to step on the battlefield, if she accepted.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不过本人却说“要是升官的话就不能打实战了，我才不要”而逃避晋升事宜。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不過本人卻說「要是升官的話就不能打實戰了，我才不要」而逃避晉升事宜。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00102",
+		linknext = "0114_00104",
+		line = 1136,
+	},
+	["0114_00104"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She still lives her life in typical Ikuko fashion. I can’t help but be impressed.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"还真像郁子的作风，傻眼却又更觉钦佩。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"還真像郁子的作風，傻眼卻又更覺欽佩。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00103",
+		linknext = "0114_00105",
+		line = 1146,
+	},
+	["0114_00105"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s matured more than she looks. She’s gotten even taller than Rei, but still rocks the same frizzy hairstyle.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她的外观更像大人，身高也已超过礼前辈，只有一头乱发完全没变。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她的外觀更像大人，身高也已超過禮前輩，只有一頭亂髮完全沒變。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00104",
+		linknext = "0114_00106",
+		line = 1156,
+	},
+	["0114_00106"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2412", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Gosh, it’s like she’s the combined charm of both parents! Oh, she’s so cuuuute! Hey, can I get another hug?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“好像你们可爱的地方全都集中在她身上了⋯⋯！啊啊，惹人怜爱⋯⋯可以再让我抱紧你嘛──！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「好像你們可愛的地方全都集中在她身上了⋯⋯！啊啊，惹人憐愛⋯⋯可以再讓我抱緊妳嘛──！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00105",
+		linknext = "0114_00107",
+		line = 1168,
+	},
+	["0114_00107"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0012", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Hkk!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“抱⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「抱⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00106",
+		linknext = "0114_00108",
+		line = 1180,
+	},
+	["0114_00108"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2413", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Haaaaa...❤ I’ve lived my whole life to do this!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“哈啊啊⋯⋯",
+					{"gaiji", text="①"},
+					"我一定是为了这个而活在这世上的⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「哈啊啊⋯⋯",
+					{"gaiji", text="①"},
+					"我一定是為了這個而活在這世上的⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00107",
+		linknext = "0114_00109",
+		line = 1192,
+	},
+	["0114_00109"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"An aged Rei—mention her age and she’ll cry—also started working for the SHO.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"变老了点（这样说本人会哭，还是不要说出来好）以外，和礼前辈一样进入SHO工作。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"變老了點（這樣說本人會哭，還是不要說出來好）以外，和禮前輩一樣進入SHO工作。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00108",
+		linknext = "0114_00110",
+		line = 1202,
+	},
+	["0114_00110"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She hasn’t done much fighting since graduating from Minotsuki Academy. She’s also lost the title of drill sergeant from hell and is now known internally as everyone’s friendly older sister.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"水乃月学园毕业以后就没再实战了，原本的魔鬼教官样也变成了温柔可人的SHO姐姐风。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"水乃月學園畢業以後就沒再實戰了，原本的魔鬼教官樣也變成了溫柔可人的SHO姊姊風。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00109",
+		linknext = "0114_00111",
+		line = 1212,
+	},
+	["0114_00111"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I wonder if she’ll eventually start running a hideaway cafe like Senba ended up doing.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"以谱系来说，大概是和急流勇退后经营一间隐匿巷弄间的咖啡厅的仙波同学差不多的定位吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"以譜系來說，大概是和急流勇退後經營一間隱匿巷弄間的咖啡廳的仙波同學差不多的定位吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00110",
+		linknext = "0114_00112",
+		line = 1222,
+	},
+	["0114_00112"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Rei now holds the newly created title of Assistant Representative. And just like when she was in the FS, she’s always on the move.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"现在则有“专门辅佐代表”这个新的职称，和以前FS时代时一样来来去去的。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"現在則有“專門輔佐代表”這個新的職稱，和以前FS時代時一樣來來去去的。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00111",
+		linknext = "0114_00113",
+		line = 1232,
+	},
+	["0114_00113"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Hardly surprising given that the new SHO representative is...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"想想也对，毕竟现任的SHO代表是──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"想想也對，畢竟現任的SHO代表是──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00112",
+		linknext = "0114_00114",
+		line = 1242,
+	},
+	["0114_00114"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1961", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Oh, this little girl! This living proof of my rejection! The crystallization of the love between you and Fumino! She’s wonderful! How... Haa... Haa!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“这就是没选我的结果⋯⋯！前辈和文乃的爱的结晶⋯⋯！真是太优秀了⋯⋯啊，啊⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「這就是沒選我的結果⋯⋯！前輩和文乃的愛的結晶⋯⋯！真是太優秀了⋯⋯啊，啊⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00113",
+		linknext = "0114_00115",
+		line = 1254,
+	},
+	["0114_00115"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Don’t pant in front of the child like that.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“不要在小孩子面前啊啊的叫。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「不要在小孩子面前啊啊的叫。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00114",
+		linknext = "0114_00116",
+		line = 1265,
+	},
+	["0114_00116"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0013", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“What is this world coming to?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“没救了⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「沒救了⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00115",
+		linknext = "0114_00117",
+		line = 1277,
+	},
+	["0114_00117"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This woman right here. Touka Reizeiin.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"──这位冷泉院桐香啊。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"──這位冷泉院桐香啊。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00116",
+		linknext = "0114_00118",
+		line = 1287,
+	},
+	["0114_00118"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The youngest leader of the SHO, Touka has demonstrated incredibly shrewd business acumen.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"以最年少之姿成为SHO领导者的桐香，充分的发挥了她的才能。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"以最年少之姿成為SHO領導者的桐香，充分的發揮了她的才能。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00117",
+		linknext = "0114_00119",
+		line = 1297,
+	},
+	["0114_00119"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"As a result, the Reizeiin Administration drained the swamp in one go and rebuilt itself with sound management.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"结果，冷泉院政权将没用的干部们全扫下台，重整经营雄风。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"結果，冷泉院政權將沒用的幹部們全掃下台，重整經營雄風。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00118",
+		linknext = "0114_00120",
+		line = 1307,
+	},
+	["0114_00120"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The powerhouse student council president found herself the most well-loved star since Governor Hitoura.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"自此，当初学园里拥有绝对地位的学生会长，摇身一变成为仁浦氏之后的最受欢迎人物。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"自此，當初學園裡擁有絕對地位的學生會長，搖身一變成為仁浦氏之後的最受歡迎人物。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00119",
+		linknext = "0114_00121",
+		line = 1317,
+	},
+	["0114_00121"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1962", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Tachibana, can you try for a boy next? We can raise him to be our ideal man!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“前辈，接下来生男的给我好嘛⋯⋯！？我要来进行光源氏计划，将他培育成我们理想的对象⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「前輩，接下來生男的給我好嘛⋯⋯！？我要來進行光源氏計畫，將他培育成我們理想的對象⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00120",
+		linknext = "0114_00122",
+		line = 1329,
+	},
+	["0114_00122"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It was scary how much she remained exactly the same.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"很可怕的是她的外观几乎完全没变。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"很可怕的是她的外觀幾乎完全沒變。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00121",
+		linknext = "0114_00123",
+		line = 1339,
+	},
+	["0114_00123"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even now, she looks exactly the same as when I first looked up at her standing in front of the podium.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"现在也像那时在讲台上的容姿一样。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"現在也像那時在講台上的容姿一樣。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00122",
+		linknext = "0114_00124",
+		line = 1349,
+	},
+	["0114_00124"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She has maintained her figure from then. Just like Hinami, if not more so.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"和雏见样──甚至在雏见之上──维持着当时的样貌。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"和雛見樣──甚至在雛見之上──維持著當時的樣貌。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00123",
+		linknext = "0114_00125",
+		line = 1359,
+	},
+	["0114_00125"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Gotta wonder what shady deal she went through to look that young at this age.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“这感觉没什么好下场啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「這感覺沒什麼好下場啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00124",
+		linknext = "0114_00126",
+		line = 1370,
+	},
+	["0114_00126"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"As Touka represents our company’s trading partners, we’re not really in any position to crack jokes like we used to.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"毕竟，她身为我们的交易对象的代表，原本就不是能像这样开玩笑的立场才对⋯⋯",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"畢竟，她身為我們的交易對象的代表，原本就不是能像這樣開玩笑的立場才對⋯⋯",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00125",
+		linknext = "0114_00127",
+		line = 1380,
+	},
+	["0114_00127"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Still, sometimes she’ll drop by our home, making silly small-talk all the while, and then leave as suddenly as she comes.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"尽管如此，她偶尔会像变魔术一样突然出现在橘家，然后聊聊天后再回去。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"儘管如此，她偶爾會像變魔術一樣突然出現在橘家，然後聊聊天後再回去。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00126",
+		linknext = "0114_00128",
+		line = 1390,
+	},
+	["0114_00128"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1069", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Touka, please. Not in front of the child. Don’t go teaching her things she doesn’t need to know. You’re always so... blah, blah... indubitably... and also...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“桐香⋯⋯在孩子的面前说这什么话⋯⋯不要污染小孩子⋯⋯为什么你总是⋯⋯叽叽喳喳，原来原来⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「桐香⋯⋯在孩子的面前說這什麼話⋯⋯不要污染小孩子⋯⋯為什麼妳總是⋯⋯嘰嘰喳喳，原來原來⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00127",
+		linknext = "0114_00129",
+		line = 1402,
+	},
+	["0114_00129"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0014", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“I think you should listen to Mother more too, Auntie Touka. She’s always scolding you and you never learn. And... blah, blah... indubitably... also you...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“桐香阿姨⋯⋯我觉得你这样不好⋯⋯常常惹妈妈生气怎么都不会反省呢⋯⋯叽叽喳喳⋯⋯原来原来⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「桐香阿姨⋯⋯我覺得妳這樣不好⋯⋯常常惹媽媽生氣怎麼都不會反省呢⋯⋯嘰嘰喳喳⋯⋯原來原來⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00128",
+		linknext = "0114_00130",
+		line = 1414,
+	},
+	["0114_00130"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1963", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Okay, okay. I get it. I apologize times infinity! But you also better say sorry for calling me Auntie!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“好⋯⋯好⋯⋯还真不好意思⋯⋯是阿姨真对不起呀⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「好⋯⋯好⋯⋯還真不好意思⋯⋯是阿姨真對不起呀⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00129",
+		linknext = "0114_00131",
+		line = 1426,
+	},
+	["0114_00131"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"This ring-around-the-rosie of arguments has become part of our everyday life.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"像这样被骂也是生活日常。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"像這樣被罵也是生活日常。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00130",
+		linknext = "0114_00132",
+		line = 1436,
+	},
+	["0114_00132"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"If these small squabbles are what lets them all get along, then I’ll gladly turn a blind eye to it. Even if Fumino and Fumika say otherwise.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"如果是这样很好玩的话，我想我还是会继续装没看见吧。虽然这样对我们家的两位来说不太好意思。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"如果是這樣很好玩的話，我想我還是會繼續裝沒看見吧。雖然這樣對我們家的兩位來說不太好意思。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00131",
+		linknext = "0114_00133",
+		line = 1446,
+	},
+	["0114_00133"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase1065", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Jun’s son...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“淳的儿子⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「淳的兒子⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00132",
+		linknext = "0114_00134",
+		line = 1458,
+	},
+	["0114_00134"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“W-What’s up guys?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“大、大家怎么了⋯⋯？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「大、大家怎麼了⋯⋯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00133",
+		linknext = "0114_00135",
+		line = 1469,
+	},
+	["0114_00135"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki1325", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“I-I also think it’s a fantastic idea for you to have another kid! Yes, indeed!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“哇，我也觉得再有一个孩子非常棒⋯⋯！对！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「哇，我也覺得再有一個孩子非常棒⋯⋯！對！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00134",
+		linknext = "0114_00136",
+		line = 1481,
+	},
+	["0114_00136"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami1031", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“I think it would be so nice if you had a son. It’ll make your home even more lively.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“我也是。是男生的话好像也不错⋯⋯家里会因此变得热闹吧⋯⋯？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「我也是。是男生的話好像也不錯⋯⋯家裡會因此變得熱鬧吧⋯⋯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00135",
+		linknext = "0114_00137",
+		line = 1493,
+	},
+	["0114_00137"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane1608", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asane"},
+					"“I’m fine either way. Even if some urgent ‘business’ comes up, I can handle it while babysitting him. Fumika, do you want a little brother?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音"},
+					"“我都可以⋯⋯就算有紧急的“营业”要处理，我来处理就行⋯⋯文佳想要弟弟吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音"},
+					"「我都可以⋯⋯就算有緊急的“營業”要處理，我來處理就行⋯⋯文佳想要弟弟嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00136",
+		linknext = "0114_00138",
+		line = 1505,
+	},
+	["0114_00138"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0015", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“A little brother... I’d be a big sister... Yes! I’d like one, please!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“弟弟⋯⋯比较大⋯⋯姐姐⋯⋯我想要⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「弟弟⋯⋯比較大⋯⋯姊姊⋯⋯我想要⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00137",
+		linknext = "0114_00139",
+		line = 1517,
+	},
+	["0114_00139"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Ugh. She’s not even thinking of her poor mother. So naive!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“唔，不会想到对母体造成负担的，小孩子真是天真无邪啊──！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「唔，不會想到對母體造成負擔的，小孩子真是天真無邪啊──！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00138",
+		linknext = "0114_00140",
+		line = 1528,
+	},
+	["0114_00140"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1070", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“A little brother... Having another child... Being pregnant... I think it would be splendid!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“弟弟⋯⋯做人⋯⋯怀孕⋯⋯说不定是个好主意⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「弟弟⋯⋯做人⋯⋯懷孕⋯⋯說不定是個好主意⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00139",
+		linknext = "0114_00141",
+		line = 1540,
+	},
+	["0114_00141"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Don’t get carried away, Fumino! Come back to reality!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“别随她们起舞了，文乃，回神──！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「別隨她們起舞了，文乃，回神──！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00140",
+		linknext = "0114_00142",
+		line = 1551,
+	},
+	["0114_00142"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2414", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Don’t you want more children, Junnosuke? Especially a boy?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“什么嘛，淳之介，你已经不想要小孩了吗？男孩子唷？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「什麼嘛，淳之介，你已經不想要小孩了嗎？男孩子唷？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00141",
+		linknext = "0114_00143",
+		line = 1563,
+	},
+	["0114_00143"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I mean, yeah. I’ve always dreamt of playing catch with a son. But our finances are—!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“嗯，老实说和儿子玩传接球是我长久以来的梦想，但是经济状况不容许⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「嗯，老實說和兒子玩傳接球是我長久以來的夢想，但是經濟狀況不容許⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00142",
+		linknext = "0114_00144",
+		line = 1574,
+	},
+	["0114_00144"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko2276", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“This has been bugging me... Fumika, why do you speak so formally to your parents? Even though you’re so blunt with us.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“话说回来，文佳为什么和淳之介还有亲戚说话时很有礼貌呢？明明和郁郁说话的时候都没大没小的。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「話說回來，文佳為什麼和淳之介還有親戚說話時很有禮貌呢？明明和郁郁說話的時候都沒大沒小的。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00143",
+		linknext = "0114_00145",
+		line = 1586,
+	},
+	["0114_00145"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0016", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Because Mother always speaks like this when she’s in bed with Father. She always looks so happy when she’s tied up with a rope, saying ‘I’m sorry’ and ‘Forgive me’.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“因为妈妈在床上和爸爸说话都是很有礼貌的⋯⋯被绳子绑住一边说‘真对不起’还有‘请原谅’，而且还一副高兴的表情⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「因為媽媽在床上和爸爸說話都是很有禮貌的⋯⋯被繩子綁住一邊說『真對不起』還有『請原諒』，而且還一副高興的表情⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00144",
+		linknext = "0114_00146",
+		line = 1598,
+	},
+	["0114_00146"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1071", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“F-Fumika! N-No, she must be mishearing things!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“文、文佳⋯⋯！不，不是的，大家别误会了⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「文、文佳⋯⋯！不，不是的，大家別誤會了⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00145",
+		linknext = "0114_00147",
+		line = 1610,
+	},
+	["0114_00147"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Y-Yeah! Sometimes I’M the one that apologizes!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“是、是呀！也有是我道歉的时候啊！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「是、是呀！也有是我道歉的時候啊！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00146",
+		linknext = "0114_00148",
+		line = 1621,
+	},
+	["0114_00148"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1072", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Junnosuke, you—”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“淳之介⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「淳之介⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00147",
+		linknext = "0114_00149",
+		line = 1633,
+	},
+	["0114_00149"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1964", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Looks like you’ll be having a little brother in no time, missy. What do you think, Tachibana?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“呵呵，生弟弟也只是时间的问题而已了吧⋯⋯前辈？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「呵呵，生弟弟也只是時間的問題而已了吧⋯⋯前輩？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00148",
+		linknext = "0114_00150",
+		line = 1645,
+	},
+	["0114_00150"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Ugh! But you all will be the first to hear my complaints then!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“唔，我会向大家不停抱怨喔──！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「唔，我會向大家不停抱怨喔──！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00149",
+		linknext = "0114_00151",
+		line = 1656,
+	},
+	["0114_00151"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Mizuhiki, Shu and Susuko are all as busy as ever.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"水引酱、舒君、丝丝子一如往常的很忙碌的样子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"水引醬、舒君、絲絲子一如往常的很忙碌的樣子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00150",
+		linknext = "0114_00152",
+		line = 1666,
+	},
+	["0114_00152"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Mizuhiki and Susuko especially, since they both joined the SHO officially as publicists. They’re showing great promise in web marketing.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"尤其是水引酱和丝丝子她们正式进入SHO负责SHO的宣传，也在网络行销上发挥不少实力。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"尤其是水引醬和絲絲子她們正式進入SHO負責SHO的宣傳，也在網路行銷上發揮不少實力。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00151",
+		linknext = "0114_00153",
+		line = 1676,
+	},
+	["0114_00153"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"I hear that sometimes, when Mizuhiki gets nostalgic, it’s still her—she’s a “her” now officially—inside Hamedori instead of Rin.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"她──在户籍上的性别已经是“女性”了──偶尔回忆过往时会代替花丸妹进到Hamedori君偶装的里面。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"她──在戶籍上的性別已經是“女性”了──偶爾回憶過往時會代替花丸妹進到Hamedori君偶裝的裡面。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00152",
+		linknext = "0114_00154",
+		line = 1686,
+	},
+	["0114_00154"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Shu is also having a hard time in the Data Management Division. I’m a little worried about him.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"舒君在资讯管理部门，好像过得很辛苦──感觉也有点不安的样子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"舒君在資訊管理部門，好像過得很辛苦──感覺也有點不安的樣子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00153",
+		linknext = "0114_00155",
+		line = 1696,
+	},
+	["0114_00155"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We hang out all the time still.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我们直到现在也很常玩在一起。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我們直到現在也很常玩在一起。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00154",
+		linknext = "0114_00156",
+		line = 1706,
+	},
+	["0114_00156"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Only then can we all forget our social status and have a good time fooling around.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"那时就会忘记社经地位，然后聊些垃圾话自嗨。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"那時就會忘記社經地位，然後聊些垃圾話自嗨。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00155",
+		linknext = "0114_00157",
+		line = 1716,
+	},
+	["0114_00157"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Speaking of which, it seems like there’s a new generation of Blowjob Cockatoos.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"顺带一提，口交鹦鹉现在似乎已经出到第二代了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"順帶一提，口交鸚鵡現在似乎已經出到第二代了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00156",
+		linknext = "0114_00158",
+		line = 1726,
+	},
+	["0114_00158"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"As Susuko put it: “The children are just as squawkative!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"丝丝子说这是因为“孩子们舌功了得”的样子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"絲絲子說這是因為「孩子們舌功了得」的樣子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00157",
+		linknext = "0114_00159",
+		line = 1736,
+	},
+	["0114_00159"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hitoura0169", path=":vo/", ch="hitoura"},
+			},
+			ja = {
+				{
+					name = {"仁浦"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"仁浦", "Hitoura"},
+					"“Um, excuse me. May I come in?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"仁浦"},
+					"“那个⋯⋯我差不多也可以进来了吗⋯⋯？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"仁浦"},
+					"「那個⋯⋯我差不多也可以進來了嗎⋯⋯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00158",
+		linknext = "0114_00160",
+		line = 1748,
+	},
+	["0114_00160"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A hale and hearty old man enters hesitantly.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"看起来老当益壮的老人诚惶诚恐的走了进来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"看起來老當益壯的老人誠惶誠恐的走了進來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00159",
+		linknext = "0114_00161",
+		line = 1758,
+	},
+	["0114_00161"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s former Governor Hitoura.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"是前县长仁浦氏本人。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"是前縣長仁浦氏本人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00160",
+		linknext = "0114_00162",
+		line = 1768,
+	},
+	["0114_00162"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"He’s still keeping himself busy, promoting his popular beverage company Red Nethers. Currently, he’s also been pushing for more athletes to accept his sponsorship.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"这个人现在仍然活跃着，将受欢迎的能量饮料公司‘红色耻部’的规模扩大，现在还积极的赞助运动选手。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"這個人現在仍然活躍著，將受歡迎的能量飲料公司『紅色恥部』的規模擴大，現在還積極的贊助運動選手。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00161",
+		linknext = "0114_00163",
+		line = 1778,
+	},
+	["0114_00163"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"His lofty reasoning is that he wants to “make sure all talent sees the light of day.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"他的理由似乎是‘想减少才能被埋没的人’，真是高尚的想法。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"他的理由似乎是『想減少才能被埋沒的人』，真是高尚的想法。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00162",
+		linknext = "0114_00164",
+		line = 1788,
+	},
+	["0114_00164"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hitoura0170", path=":vo/", ch="hitoura"},
+			},
+			ja = {
+				{
+					name = {"仁浦"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"仁浦", "Hitoura"},
+					"“F-Fumino, um, congratulations on this special occasion. Uh...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"仁浦"},
+					"“文、文乃⋯⋯那个，这次⋯⋯真是恭喜⋯⋯那个⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"仁浦"},
+					"「文、文乃⋯⋯那個，這次⋯⋯真是恭喜⋯⋯那個⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00163",
+		linknext = "0114_00165",
+		line = 1800,
+	},
+	["0114_00165"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1073", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Hmph!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“哼⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「哼⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00164",
+		linknext = "0114_00166",
+		line = 1812,
+	},
+	["0114_00166"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hitoura0171", path=":vo/", ch="hitoura"},
+			},
+			ja = {
+				{
+					name = {"仁浦"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"仁浦", "Hitoura"},
+					"“Damn it. If this is what I deserve, then I might as well accept it. Agh! No, it’s too painful!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"仁浦"},
+					"“呃⋯⋯！如果这是我的业障，那我只好接受了⋯⋯真心酸哪⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"仁浦"},
+					"「呃⋯⋯！如果這是我的業障，那我只好接受了⋯⋯真心酸哪⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00165",
+		linknext = "0114_00167",
+		line = 1824,
+	},
+	["0114_00167"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Hitoura and Fumino still haven’t made up.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"仁浦氏和文乃的关系没有改善多少。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"仁浦氏和文乃的關係沒有改善多少。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00166",
+		linknext = "0114_00168",
+		line = 1834,
+	},
+	["0114_00168"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Hitoura pops in here and there since he wants to see his granddaughter. But Fumino’s reaction is still the same as always.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"现在仁浦氏为了见孙女一面，常常会来露脸，但是关系还是没有什么变化。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"現在仁浦氏為了見孫女一面，常常會來露臉，但是關係還是沒有什麼變化。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00167",
+		linknext = "0114_00169",
+		line = 1844,
+	},
+	["0114_00169"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But it’s clear he’s softened up a great deal.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不过，他不像以前一样那么阴险倒是明智之举。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不過，他不像以前一樣那麼陰險倒是明智之舉。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00168",
+		linknext = "0114_00170",
+		line = 1854,
+	},
+	["0114_00170"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Even Fumino started to tear up at his sobbing during his speech at our wedding.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"事实是结婚典礼上的致词，仁浦氏嚎啕大哭惹得文乃也流下了泪来。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"事實是結婚典禮上的致詞，仁浦氏嚎啕大哭惹得文乃也流下了淚來。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00169",
+		linknext = "0114_00171",
+		line = 1864,
+	},
+	["0114_00171"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0017", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Grandfather! I love you!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“外公⋯⋯！外公，喜欢⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「外公⋯⋯！外公，喜歡⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00170",
+		linknext = "0114_00172",
+		line = 1876,
+	},
+	["0114_00172"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hitoura0172", path=":vo/", ch="hitoura"},
+			},
+			ja = {
+				{
+					name = {"仁浦"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"仁浦", "Hitoura"},
+					"“Aaaah, Fumika! You mean the world to me, too!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"仁浦"},
+					"“喔喔喔，文佳⋯⋯！在这世界上外公也最喜欢你了～～”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"仁浦"},
+					"「喔喔喔，文佳⋯⋯！在這世界上外公也最喜歡妳了～～」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00171",
+		linknext = "0114_00173",
+		line = 1888,
+	},
+	["0114_00173"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami1032", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Wow, even Hitoura’s become a big ol’ softie?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“仁浦大叔也完全变了个样，变成好好先生了呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「仁浦大叔也完全變了個樣，變成好好先生了呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00172",
+		linknext = "0114_00174",
+		line = 1900,
+	},
+	["0114_00174"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki1326", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“To think, he used to be such a hard-nosed politician, always fighting with the country’s elite. And now he’s just your regular grandaddy.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“那个人以前是政府高层非常有手腕的政治家⋯⋯现在就只是个老爷爷了呢。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「那個人以前是政府高層非常有手腕的政治家⋯⋯現在就只是個老爺爺了呢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00173",
+		linknext = "0114_00175",
+		line = 1912,
+	},
+	["0114_00175"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That her daughter loves her grandfather this much is probably why Fumino has softened up as well.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"女儿最喜欢外公，也因为这个原因文乃对他的态度因而软化吧。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"女兒最喜歡外公，也因為這個原因文乃對他的態度因而軟化吧。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00174",
+		linknext = "0114_00176",
+		line = 1922,
+	},
+	["0114_00176"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0018", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“When I get older, I want to marry Grandfather instead!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“我长大要和外公结婚⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「我長大要和外公結婚⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00175",
+		linknext = "0114_00177",
+		line = 1934,
+	},
+	["0114_00177"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hitoura0173", path=":vo/", ch="hitoura"},
+			},
+			ja = {
+				{
+					name = {"仁浦"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"仁浦", "Hitoura"},
+					"“??!?!! I’ll wait for you my dear! I won’t die until that happens!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"仁浦"},
+					"“！！？？我等你，我会一直等你⋯⋯在那之前都不会死掉的⋯⋯！！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"仁浦"},
+					"「！！？？我等妳，我會一直等妳⋯⋯在那之前都不會死掉的⋯⋯！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00176",
+		linknext = "0114_00178",
+		line = 1946,
+	},
+	["0114_00178"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1965", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Fumika, you can’t. He’s the type that will drop you the first second a young woman hits on him.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“不可以唷，文佳。这个人会让年轻女生遭受猛烈攻势让她们差点要升天喔♪”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「不可以唷，文佳。這個人會讓年輕女生遭受猛烈攻勢讓她們差點要升天喔♪」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00177",
+		linknext = "0114_00179",
+		line = 1958,
+	},
+	["0114_00179"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2415", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Ah, you’re talking about that Mizuki girl. For someone so dedicated, she sure has terrible taste in men.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“啊啊，水姬的那个啊⋯⋯那家伙真的一直都有这不良嗜好呢⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「啊啊，水姬的那個啊⋯⋯那傢伙真的一直都有這不良嗜好呢⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00178",
+		linknext = "0114_00180",
+		line = 1970,
+	},
+	["0114_00180"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0019", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Grandfather! How could you!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“我讨厌外公⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「我討厭外公⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00179",
+		linknext = "0114_00181",
+		line = 1982,
+	},
+	["0114_00181"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hitoura0174", path=":vo/", ch="hitoura"},
+			},
+			ja = {
+				{
+					name = {"仁浦"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"仁浦", "Hitoura"},
+					"“...! A-Anything but that! Jun, help me!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"仁浦"},
+					"“──！只有这个⋯⋯我承受不起啊，橘君⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"仁浦"},
+					"「──！只有這個⋯⋯我承受不起啊，橘君⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00180",
+		linknext = "0114_00182",
+		line = 1994,
+	},
+	["0114_00182"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“There’s nothing I can say here, Pops.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“我什么忙也帮不上啊，岳父⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「我什麼忙也幫不上啊，岳父⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00181",
+		linknext = "0114_00183",
+		line = 2005,
+	},
+	["0114_00183"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Speaking of which, about that “other” relative...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"顺带一提，我们的另外一位家人──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"順帶一提，我們的另外一位家人──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00182",
+		linknext = "0114_00184",
+		line = 2015,
+	},
+	["0114_00184"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"A few years back, a letter was delivered to my house.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"数年前寄了一封信到我们家。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"數年前寄了一封信到我們家。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00183",
+		linknext = "0114_00185",
+		line = 2025,
+	},
+	["0114_00185"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It contained only one line.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"上面只写了一句话。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"上面只寫了一句話。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00184",
+		linknext = "0114_00186",
+		line = 2035,
+	},
+	["0114_00186"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"“Sorry ’bout everything. Congrats on your marriage.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"“对不起，恭喜结婚。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"「對不起，恭喜結婚。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00185",
+		linknext = "0114_00187",
+		line = 2045,
+	},
+	["0114_00187"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It said in elegant penmanship.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"如此而已，字写得很好看。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"如此而已，字寫得很好看。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00186",
+		linknext = "0114_00188",
+		line = 2055,
+	},
+	["0114_00188"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"There was no signature or return address.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"没有邮戳也没有寄件人姓名。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"沒有郵戳也沒有寄件人姓名。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00187",
+		linknext = "0114_00189",
+		line = 2065,
+	},
+	["0114_00189"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But it was enough for us.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但是对我们来说，那就很足够了。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但是對我們來說，那就很足夠了。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00188",
+		linknext = "0114_00190",
+		line = 2075,
+	},
+	["0114_00190"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1966", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Oh yeah, Tachibana. I have a job for you. A secret one, to be specific.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“对了，前辈，我还带了一个工作来──是“秘密业务”相关的咨询。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「對了，前輩，我還帶了一個工作來──是“秘密業務”相關的諮詢。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00189",
+		linknext = "0114_00191",
+		line = 2087,
+	},
+	["0114_00191"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Another one?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“⋯⋯又是那方面的工作啊。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「⋯⋯又是那方面的工作啊。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00190",
+		linknext = "0114_00192",
+		line = 2098,
+	},
+	["0114_00192"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase1066", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“It seems like THAT is becoming our main line of work these days.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“怎么有种那边变成了我们的本业的感觉。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「怎麼有種那邊變成了我們的本業的感覺。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00191",
+		linknext = "0114_00193",
+		line = 2110,
+	},
+	["0114_00193"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"The SHO, or rather Touka, acts as our clientele for our secret business.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"于是，SHO──不如说是桐香她们──向我们的“秘密业务”提案。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"於是，SHO──不如說是桐香她們──向我們的“秘密業務”提案。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00192",
+		linknext = "0114_00194",
+		line = 2120,
+	},
+	["0114_00194"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"At first, it was only intended to be a part-time thing, but before I knew it, we started to get involved with trouble from other sources as well.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"最一开始是打工性质，后来发现除了SHO以外，其他地方也会把棘手的事委托给我们。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"最一開始是打工性質，後來發現除了SHO以外，其他地方也會把棘手的事委託給我們。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00193",
+		linknext = "0114_00195",
+		line = 2130,
+	},
+	["0114_00195"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2416", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“I have obtained intel that indicates there seem to be some individuals of unscrupulous character plotting to seize power from the SHO.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“有消息表示想夺取SHO权力的坏人正在谋划不好的事。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「有消息表示想奪取SHO權力的壞人正在謀劃不好的事。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00194",
+		linknext = "0114_00196",
+		line = 2142,
+	},
+	["0114_00196"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko2277", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“I heard they’re timing it right when I’m off overseas giving a pervy speech.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“刚好是郁郁会在国外进行变态演说的时间，所以好像有办法处理⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「剛好是郁郁會在國外進行變態演說的時間，所以好像有辦法處理⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00195",
+		linknext = "0114_00197",
+		line = 2154,
+	},
+	["0114_00197"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"All of their requests are extremely dangerous and difficult affairs.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"每个委托都充满危险性，而且也不是那么轻易就能达成。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"每個委託都充滿危險性，而且也不是那麼輕易就能達成。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00196",
+		linknext = "0114_00198",
+		line = 2164,
+	},
+	["0114_00198"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Always a matter between life-and-death.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"一个不小心，就有生命危险。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"一個不小心，就有生命危險。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00197",
+		linknext = "0114_00199",
+		line = 2174,
+	},
+	["0114_00199"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Touka says at the same time...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"而且──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"而且──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00198",
+		linknext = "0114_00200",
+		line = 2184,
+	},
+	["0114_00200"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1967", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“If we let this slide, our pervy way of life is at risk. Can you take care of it, Tachibana?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“这样下去，大家的变态就会危险了⋯⋯可以拜托你们吗？前辈？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「這樣下去，大家的變態就會危險了⋯⋯可以拜託你們嗎？前輩？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00199",
+		linknext = "0114_00201",
+		line = 2196,
+	},
+	["0114_00201"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Well, when you put it like that, how can we possibly refuse? Right, everyone?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“如果是这样的话⋯⋯就不能不接了吧，是不是啊，大家？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「如果是這樣的話⋯⋯就不能不接了吧，是不是啊，大家？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00200",
+		linknext = "0114_00202",
+		line = 2207,
+	},
+	["0114_00202"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fk07_0000", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"株式会社NLNS"},
+					"*テキスト*",
+					{"rt2"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"株式会社NLNS", "NLNS"},
+					"“Yeah!” “Yep!” “Yes!” “Let’s do it!”",
+					{"rt2"},
+					"“Absolutely!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"株式会社NLNS"},
+					"“是啊。”“嗯。”“没错！”“嘿对⋯⋯”",
+					{"rt2"},
+					"“好⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"株式会社NLNS", "株式會社NLNS"},
+					"「是啊。」「嗯。」「沒錯！」「嘿對⋯⋯」",
+					{"rt2"},
+					"「好⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00201",
+		linknext = "0114_00203",
+		line = 2223,
+	},
+	["0114_00203"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"After all, we live for stuff like this.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"──内心很兴奋。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"──內心很興奮。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00202",
+		linknext = "0114_00204",
+		line = 2233,
+	},
+	["0114_00204"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"When we’re together, anything is possible.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我们全员出动的话什么都做得到。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我們全員出動的話什麼都做得到。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00203",
+		linknext = "0114_00205",
+		line = 2243,
+	},
+	["0114_00205"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"No matter how old we get, that will never change.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"不管几岁都一样。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"不管幾歲都一樣。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00204",
+		linknext = "0114_00206",
+		line = 2253,
+	},
+	["0114_00206"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1968", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Then we’ll cover the costs of today’s party. Just make sure to write ‘SHO’ on the receipt. We’ll pay for everything.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“今天的派对就交给我们吧。收据的抬头写上SHO的话，我们就会全额负担。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「今天的派對就交給我們吧。收據的抬頭寫上SHO的話，我們就會全額負擔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00205",
+		linknext = "0114_00207",
+		line = 2265,
+	},
+	["0114_00207"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2417", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Hold on, Miss Touka! Don’t you remember what accounting’s always crying about? We can’t be burning through the budget like this!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“什么，桐香大小姐！？这样会让管钱的贝卡君哭的啦⋯⋯！？很难报销的钱不会下来呀──！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「什麼，桐香大小姐！？這樣會讓管錢的貝卡君哭的啦⋯⋯！？很難報銷的錢不會下來呀──！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00206",
+		linknext = "0114_00208",
+		line = 2277,
+	},
+	["0114_00208"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko2278", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Don’t worry, Rei. It’s fine! It’s only this one time. Today’s a special day, remember?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“没关系啦，礼酱。就这次嘛⋯⋯今天可是特别的日子呢，不是吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「沒關係啦，禮醬。就這次嘛⋯⋯今天可是特別的日子呢，不是嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00207",
+		linknext = "0114_00209",
+		line = 2289,
+	},
+	["0114_00209"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That’s right. Today is indeed, special.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"对，今天是特别的日子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"對，今天是特別的日子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00208",
+		linknext = "0114_00210",
+		line = 2299,
+	},
+	["0114_00210"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We’re going to have a special guest drop by.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"为什么这么说──因为有位特别的客人要来我们家做客。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"為什麼這麼說──因為有位特別的客人要來我們家做客。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00209",
+		linknext = "0114_00211",
+		line = 2309,
+	},
+	["0114_00211"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami1034", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Ah! Looks like he’s here! Hello! I’ll open the door right now!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“啊，好像来了⋯⋯！好～～我现在开门！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「啊，好像來了⋯⋯！好～～我現在開門！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00210",
+		linknext = "0114_00212",
+		line = 2321,
+	},
+	["0114_00212"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0020", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Father, what kind of person is this special guest?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“爸爸⋯⋯特别的客人是谁呀⋯⋯？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「爸爸⋯⋯特別的客人是誰呀⋯⋯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00211",
+		linknext = "0114_00213",
+		line = 2333,
+	},
+	["0114_00213"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Well, he’s—”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“特别的客人是──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「特別的客人是──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00212",
+		linknext = "0114_00214",
+		line = 2344,
+	},
+	["0114_00214"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1075", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Hehe. He’s Father’s one-and-only Master.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“呵呵，是爸爸的⋯⋯唯一的师父喔。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「呵呵，是爸爸的⋯⋯唯一的師父喔。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00213",
+		linknext = "0114_00215",
+		line = 2356,
+	},
+	["0114_00215"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki1328", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“Come on in. What are you shuffling your feet about for? Hurry up and come inside! Junnosuke has been waiting forever for this moment!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“你在害躁个什么劲啊！赶快过来呀，淳之介可是等你很久了呢～～”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「你在害躁個什麼勁啊！趕快過來呀，淳之介可是等你很久了呢～～」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00214",
+		linknext = "0114_00216",
+		line = 2368,
+	},
+	["0114_00216"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="teshima0010", path=":vo/", ch="teshima"},
+			},
+			ja = {
+				{
+					name = {"手嶋", "？？？"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"手嶋", "???"},
+					"“Stop rushing me, pig bitch! Just looking at ya dumb face is making me angry!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"手嶋", "？？？"},
+					"“喂，等等啊，你这母猪⋯⋯！一看到你的脸我就觉得很不爽⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"手嶋", "？？？"},
+					"「喂，等等啊，妳這母豬⋯⋯！一看到妳的臉我就覺得很不爽⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00215",
+		linknext = "0114_00217",
+		line = 2380,
+	},
+	["0114_00217"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane1610", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asane"},
+					"“Hey, come already, Mr. Master! You and your Masao-looking face.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音"},
+					"“快来呀，师父⋯⋯是说，完全就是小夫的脸耶⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音"},
+					"「快來呀，師父⋯⋯是說，完全就是小夫的臉耶⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00216",
+		linknext = "0114_00218",
+		line = 2392,
+	},
+	["0114_00218"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="teshima0011", path=":vo/", ch="teshima"},
+			},
+			ja = {
+				{
+					name = {"手嶋", "？？？"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"手嶋", "???"},
+					"“God, yer all an annoying bunch of twerps like always, huh! There’s someone I wanted to talk to, first.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"手嶋", "？？？"},
+					"“啧，还是没变啊，一群臭小鬼⋯⋯！我也有想像你们介绍的人──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"手嶋", "？？？"},
+					"「嘖，還是沒變啊，一群臭小鬼⋯⋯！我也有想像妳們介紹的人──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00217",
+		linknext = "0114_00219",
+		line = 2404,
+	},
+	["0114_00219"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"His footsteps come closer.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"脚步声渐渐接近。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"腳步聲漸漸接近。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00218",
+		linknext = "0114_00220",
+		line = 2414,
+	},
+	["0114_00220"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s been decades since we last met. At last, he’s here in front of me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"数十年没见的人，近在眼前。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"數十年沒見的人，近在眼前。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00219",
+		linknext = "0114_00221",
+		line = 2424,
+	},
+	["0114_00221"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“It’s been a while, Master.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“⋯⋯好久不见了，师父。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「⋯⋯好久不見了，師父。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00220",
+		linknext = "0114_00222",
+		line = 2435,
+	},
+	["0114_00222"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="teshima0012", path=":vo/", ch="teshima"},
+			},
+			ja = {
+				{
+					name = {"手嶋"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"手嶋", "Teshima"},
+					"“You’ve gotten bigger... Junnosuke.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"手嶋"},
+					"“唷⋯⋯长大了啊⋯⋯淳之介。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"手嶋"},
+					"「唷⋯⋯長大了啊⋯⋯淳之介。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00221",
+		linknext = "0114_00223",
+		line = 2447,
+	},
+	["0114_00223"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"My master says curtly.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"师父生硬的说道。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"師父生硬的說道。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00222",
+		linknext = "0114_00224",
+		line = 2457,
+	},
+	["0114_00224"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"He’s got a tan now. His face is clearly weathered from all the tough times he must’ve had since.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"虽然岁月的痕迹还有辛劳都刻在了脸上──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"雖然歲月的痕跡還有辛勞都刻在了臉上──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00223",
+		linknext = "0114_00225",
+		line = 2467,
+	},
+	["0114_00225"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"But he looks exactly like he did that day.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"但我觉得他都没有变，还是那天的那个样子。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"但我覺得他都沒有變，還是那天的那個樣子。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00224",
+		linknext = "0114_00226",
+		line = 2477,
+	},
+	["0114_00226"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase1068", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Well, seems like everyone’s here now. I think we can finally begin Jun and Fumino’s fifth anniversary celebration!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“全员都到齐了，那么──淳和文乃，结婚5周年纪念派对要开始啰！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「全員都到齊了，那麼──淳和文乃，結婚5週年紀念派對要開始囉！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00225",
+		linknext = "0114_00227",
+		line = 2489,
+	},
+	["0114_00227"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami1035", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“Yay! Yippee!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“耶！哇咿！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「耶！哇咿！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00226",
+		linknext = "0114_00228",
+		line = 2501,
+	},
+	["0114_00228"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1969", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Let’s start with a commemorative photo. Since we’re all here for once, let’s have one with just the NLNS members, first. Everyone, get close together!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“先拍张纪念照吧。第一张就请NLNS的大家一起，来来来，站好位置。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「先拍張紀念照吧。第一張就請NLNS的大家一起，來來來，站好位置。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00227",
+		linknext = "0114_00229",
+		line = 2513,
+	},
+	["0114_00229"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="teshima0013", path=":vo/", ch="teshima"},
+			},
+			ja = {
+				{
+					name = {"手嶋"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"手嶋", "Teshima"},
+					"“Damn. You kids are so impatient. You all go on ahead, I’ll catch up later—”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"手嶋"},
+					"“真是不会照顾人的一群家伙⋯⋯你在那边等着，等等我去找你碰面──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"手嶋"},
+					"「真是不會照顧人的一群傢伙⋯⋯你在那邊等著，等等我去找你碰面──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00228",
+		linknext = "0114_00230",
+		line = 2525,
+	},
+	["0114_00230"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hitoura0175", path=":vo/", ch="hitoura"},
+			},
+			ja = {
+				{
+					name = {"仁浦"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"仁浦", "Hitoura"},
+					"“Okay, Fumika. How about you come play with me while we wait for them?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"仁浦"},
+					"“文佳，来这边和外公一起玩一边等他们吧⋯⋯！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"仁浦"},
+					"「文佳，來這邊和外公一起玩一邊等他們吧⋯⋯！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00229",
+		linknext = "0114_00231",
+		line = 2537,
+	},
+	["0114_00231"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumika0021", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"文佳"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文佳", "Fumika"},
+					"“Wouldn’t you rather to go play with some young woman, instead?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文佳"},
+					"“外公跟年轻女生分手的话我就过去⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文佳"},
+					"「外公跟年輕女生分手的話我就過去⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00230",
+		linknext = "0114_00232",
+		line = 2549,
+	},
+	["0114_00232"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hitoura0176", path=":vo/", ch="hitoura"},
+			},
+			ja = {
+				{
+					name = {"仁浦"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"仁浦", "Hitoura"},
+					"“Ngh! I’m not sure I can go that far anymore at my age.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"仁浦"},
+					"“唔⋯⋯真是天人交战，这把年纪还要经历这个⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"仁浦"},
+					"「唔⋯⋯真是天人交戰，這把年紀還要經歷這個⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00231",
+		linknext = "0114_00233",
+		line = 2561,
+	},
+	["0114_00233"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2418", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“Hinami. Can you move closer to the front? If you stand that far back, you look like a tiny loli and I can’t take a photo of that!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“雏见，再往里面站点！不这样的话你太萝莉了会照不到～～”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「雛見，再往裡面站點！不這樣的話妳太蘿莉了會照不到～～」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00232",
+		linknext = "0114_00234",
+		line = 2573,
+	},
+	["0114_00234"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="hinami1036", path=":vo/", ch="hinami"},
+			},
+			ja = {
+				{
+					name = {"ヒナミ"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"ヒナミ", "Hinami"},
+					"“But I’m not a loli! Fine. Let’s take a picture together later, then!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"ヒナミ", "雏见"},
+					"“我不是萝莉！嗯，礼酱等等一起拍吧～～”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"ヒナミ", "雛見"},
+					"「我不是蘿莉！嗯，禮醬等等一起拍吧～～」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00233",
+		linknext = "0114_00235",
+		line = 2585,
+	},
+	["0114_00235"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="misaki1329", path=":vo/", ch="misaki"},
+			},
+			ja = {
+				{
+					name = {"美岬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"美岬", "Misaki"},
+					"“Um. Isn’t it proper manners to stick our tongues out and roll our eyes up for photos?! That’s what you always told us to do before. Right, Ikuko?!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"美岬"},
+					"“欸，这种时候应该要摆出阿嘿颜照才是正确的做法吧⋯⋯！？以前不都是这样教我们的吗，郁子酱⋯⋯！？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"美岬"},
+					"「欸，這種時候應該要擺出阿嘿顏照才是正確的做法吧⋯⋯！？以前不都是這樣教我們的嗎，郁子醬⋯⋯！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00234",
+		linknext = "0114_00236",
+		line = 2597,
+	},
+	["0114_00236"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko2279", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“That’s only a Seiran Island thing! You’ve been doing it so much lately, you’re looking like a freak. How ’bout you be normal for once?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“那只有在青蓝岛上啦！最近的美岬酱就算一脸正经还是很突出呢，你好好点不行嘛～～”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「那只有在青藍島上啦！最近的美岬醬就算一臉正經還是很突出呢，妳好好點不行嘛～～」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00235",
+		linknext = "0114_00237",
+		line = 2609,
+	},
+	["0114_00237"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1970", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Looks like the lawful wife and the mistress will be photographed together. Don’t you relish the immorality of it all, Nanase? We should make copies!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“正宫和小三一起照相不会太违背天理吗，奈奈濑⋯⋯！？到时多洗几张照片好了⋯⋯！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「正宮和小三一起照相不會太違背天理嗎，奈奈瀨⋯⋯！？到時多洗幾張照片好了⋯⋯！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00236",
+		linknext = "0114_00238",
+		line = 2621,
+	},
+	["0114_00238"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="nanase1069", path=":vo/", ch="nanase"},
+			},
+			ja = {
+				{
+					name = {"奈々瀬"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"奈々瀬", "Nanase"},
+					"“Stop with the mistress stuff, seriously. Well, I’m all for getting copies, though. They’ll make for a great keepsake. Can I stand by you, Asa?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"奈々瀬", "奈奈濑"},
+					"“我才不是小三呢⋯⋯不过加洗照片这事我赞成，可以留作纪念──我在麻沙酱的旁边可以吗？”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"奈々瀬", "奈奈瀨"},
+					"「我才不是小三呢⋯⋯不過加洗照片這事我贊成，可以留作紀念──我在麻沙醬的旁邊可以嗎？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00237",
+		linknext = "0114_00239",
+		line = 2633,
+	},
+	["0114_00239"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="asane1611", path=":vo/", ch="asane"},
+			},
+			ja = {
+				{
+					name = {"麻沙音"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"麻沙音", "Asane"},
+					"“Of course, my dear! Stand beside me? Pfft. I’m going to crop it down to just you, process the image, remove the noise, and create a life-size cut-out for my spank bank. Hehehe.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"麻沙音"},
+					"“当然可以！我能够在奈奈濑姐的旁边的话，到时候就把奈奈濑姐的地方裁切出来，经过加工让画质清晰，最后做成人形立牌拿来当我晚上的点心用，嘿嘿⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"麻沙音"},
+					"「當然可以！我能夠在奈奈瀨姊的旁邊的話，到時候就把奈奈瀨姊的地方裁切出來，經過加工讓畫質清晰，最後做成人形立牌拿來當我晚上的點心用，嘿嘿⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00238",
+		linknext = "0114_00240",
+		line = 2645,
+	},
+	["0114_00240"] = {
+		{"cgact", file="cgact", act="表示アクション", alpha=0, id=17, lv=17, time=1000, alphadel=1, style="reset", x=16, y=191},
+		{"bg", id=2, file="bg19_1l_00000", x=-300, y=0, lv=2, path=":bg/", sync=1, style="blur", blurx=11, blury=11, alpha=0, a_chr151=1, ax=1290, ay=730, bx=-490, by=-280},
+		{"cgact", file="cgact", id=2, lv=2, act="表示アクション", a1=0, a2=255, time=1000, a_chr=151, alpha=255},
+		{"cgact", file="cgact", id=2, act="移動", x=595, y=-5, time=100000, lv=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“All right, everyone, let me in!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“嘿咻，大家让我过去一下⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「嘿咻，大家讓我過去一下⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00239",
+		linknext = "0114_00241",
+		line = 2661,
+	},
+	["0114_00241"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I should stand here after all.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“这可是我的位置⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「這可是我的位置⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00240",
+		linknext = "0114_00242",
+		line = 2672,
+	},
+	["0114_00242"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1076", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Yes. You should always be on my right.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“是呀⋯⋯我的右手边，总是为你而空⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「是呀⋯⋯我的右手邊，總是為你而空⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00241",
+		linknext = "0114_00243",
+		line = 2684,
+	},
+	["0114_00243"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1077", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Because I belong by your side.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“你的身边就是我的归所。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「你的身邊就是我的歸所。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00242",
+		linknext = "0114_00244",
+		line = 2696,
+	},
+	["0114_00244"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Fumino is always on my left.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我的左手一直都有文乃在。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我的左手一直都有文乃在。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00243",
+		linknext = "0114_00245",
+		line = 2706,
+	},
+	["0114_00245"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s always there supporting me.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"文乃一直扶持着我。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"文乃一直扶持著我。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00244",
+		linknext = "0114_00246",
+		line = 2716,
+	},
+	["0114_00246"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“I can’t believe my little Fumino has grown up so much...”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“那么小的文乃，现在已经长得这么大了⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「那麼小的文乃，現在已經長得這麼大了⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00245",
+		linknext = "0114_00247",
+		line = 2727,
+	},
+	["0114_00247"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1078", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“If you’re worried I’ll get bigger, you can put your fears to rest.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“我还担心自己会不会长大，真的是杞人忧天呢⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「我還擔心自己會不會長大，真的是杞人憂天呢⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00246",
+		linknext = "0114_00248",
+		line = 2739,
+	},
+	["0114_00248"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"She’s always been like this.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"在那之后，一直都是。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"在那之後，一直都是。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00247",
+		linknext = "0114_00249",
+		line = 2749,
+	},
+	["0114_00249"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1079", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Unfortunately, the same goes for my chest too, though.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“虽然胸部却一直没有长进⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「雖然胸部卻一直沒有長進⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00248",
+		linknext = "0114_00250",
+		line = 2761,
+	},
+	["0114_00250"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“But that’s what makes you beautiful. Ever since we first met.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“包括没发育这件事，那都是你的魅力呀。从我们相遇的时候开始就是。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「包括沒發育這件事，那都是妳的魅力呀。從我們相遇的時候開始就是。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00249",
+		linknext = "0114_00251",
+		line = 2772,
+	},
+	["0114_00251"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"And I know she always will be.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"而且我相信今后也是一样。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"而且我相信今後也是一樣。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00250",
+		linknext = "0114_00252",
+		line = 2782,
+	},
+	["0114_00252"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fumino1080", path=":vo/", ch="fumino"},
+			},
+			ja = {
+				{
+					name = {"文乃"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"文乃", "Fumino"},
+					"“Hehe, will you allow me to stay by your side forevermore, Junnosuke?”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"文乃"},
+					"“呵呵⋯⋯今后也请让文乃一直陪在你身边喔，淳之介。”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"文乃"},
+					"「呵呵⋯⋯今後也請讓文乃一直陪在你身邊喔，淳之介。」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00251",
+		linknext = "0114_00253",
+		line = 2794,
+	},
+	["0114_00253"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"淳之介"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"淳之介", "Junnosuke"},
+					"“Yeah, of course.”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"淳之介"},
+					"“啊啊，当然的──”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"淳之介"},
+					"「啊啊，當然的──」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00252",
+		linknext = "0114_00254",
+		line = 2805,
+	},
+	["0114_00254"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"We grip each other’s hands tightly.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"我握紧了她的手。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"我握緊了她的手。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00253",
+		linknext = "0114_00255",
+		line = 2815,
+	},
+	["0114_00255"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"It’s because I still have this strength...",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"啊啊，就是因为有她带给我的力量──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"啊啊，就是因為有她帶給我的力量──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00254",
+		linknext = "0114_00256",
+		line = 2825,
+	},
+	["0114_00256"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"That I’ll never stop fighting till the end.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"──我才能持续奋斗。",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"──我才能持續奮鬥。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00255",
+		linknext = "0114_00257",
+		line = 2835,
+	},
+	["0114_00257"] = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					"Till my last breath. Forever.",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					"直到这辈子死去──",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					"直到這輩子死去──",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00256",
+		linknext = "0114_00258",
+		line = 2845,
+	},
+	["0114_00258"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="ikuko2280", path=":vo/", ch="ikuko"},
+			},
+			ja = {
+				{
+					name = {"郁子"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"郁子", "Ikuko"},
+					"“Okay, on the count of three!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"郁子"},
+					"“好，那要拍啰～～”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"郁子"},
+					"「好，那要拍囉～～」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00257",
+		linknext = "0114_00259",
+		line = 2857,
+	},
+	["0114_00259"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="rei2419", path=":vo/", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"礼"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"礼", "Rei"},
+					"“One, two, three. Say, Cheese!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"礼"},
+					"“一起说耶！”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"礼", "禮"},
+					"「一起說耶！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00258",
+		linknext = "0114_00260",
+		line = 2869,
+	},
+	["0114_00260"] = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="tohka1971", path=":vo/", ch="touka"},
+			},
+			ja = {
+				{
+					name = {"桐香"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"桐香", "Touka"},
+					"“Bouncy, bouncy!❤”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"桐香"},
+					"“立正站好",
+					{"gaiji", text="①"},
+					"”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"桐香"},
+					"「立正站好",
+					{"gaiji", text="①"},
+					"」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00259",
+		linknext = "0114_00261",
+		line = 2881,
+	},
+	["0114_00261"] = {
+		{"se", id=0, loop=0, file="se_a200"},
+		{"cgdel", id=29, lv=29, time=0, alphadel=1},
+		{"bg", id=29, file="whiteback_00000", x=0, y=0, lv=29, path=":bg/", sync=0},
+		{"cgact", file="cgact", id=29, act="アルファフェード点滅", loop=5, alpha="0,256", time=100, alphadel=1, lv=29},
+		{"cgdel", id=2, lv=2, time=0, alphadel=1},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=11, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, time=0, alphadel=1, lv=18},
+		{"evset", file="fcg04", set="fcg04", path=":ev/fcg04/"},
+		{"evset", file="fcg0402", set="fcg0402", path=":ev/fcg0402/"},
+		{"bg", id=18, file="fcg04_00002", x=16, y=91, lv=18, path=":cg/fcg04/", ev=1, ax=856, ay=619, bx=-56, by=-169},
+		{"transitiontime", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fk07_0001", path=":vo/", ch="mob"},
+			},
+			ja = {
+				{
+					name = {"NLNS"},
+					"*テキスト*",
+					{"rt2"},
+				},
+			},
+			en = {
+				{
+					name = {"NLNS"},
+					"“Yay!” “Yay!” “Yaaay!” “Yay!” “Whoooooo!” “Yaaay!”",
+					{"rt2"},
+				},
+			},
+			cn = {
+				{
+					name = {"NLNS"},
+					"“耶！！”“耶～～”“耶⋯⋯！！”“耶！”“嗯哦哦哦哦哦。”“耶⋯⋯”",
+					{"rt2"},
+				},
+			},
+			tw = {
+				{
+					name = {"NLNS"},
+					"「耶！！」「耶～～」「耶⋯⋯！！」「耶！」「嗯哦哦哦哦哦。」「耶⋯⋯」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "0114_00260",
+		linknext = "block_00261",
+		line = 2925,
+	},
+	block_00261 = {
+		{"bgm", stop=1},
+		{"fg", mode=-1, id=30},
+		{"facehide"},
+		{"cgdel", id=2, time=0, alphadel=1, lv=5},
+		{"cgdel", id=3, time=0, alphadel=1, lv=5},
+		{"cgdel", id=4, time=0, alphadel=1, lv=5},
+		{"cgdel", id=5, time=0, alphadel=1, lv=5},
+		{"cgdel", id=6, time=0, alphadel=1, lv=5},
+		{"cgdel", id=7, time=0, alphadel=1, lv=5},
+		{"cgdel", id=8, time=0, alphadel=1, lv=5},
+		{"cgdel", id=9, time=0, alphadel=1, lv=5},
+		{"cgdel", id=10, time=0, alphadel=1, lv=5},
+		{"cgdel", id=18, lv=18, time=0, alphadel=1, evmaskoff=1},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"bg", id=1, file="blackback_00000", x=0, y=0, lv=1, path=":bg/", sync=0, ax=805, ay=455, bx=-5, by=-5},
+		{"msgoff", time=1},
+		{"extrans", sync=0, time=3500, rule="eff_043_00000"},
+		{"ex", time=5000, func="wait"},
+		{"movie", id=1, lv=1, path=":mv/", cancel=1, file="ed3"},
+		{"ex", time=5000, func="wait"},
+		{"eval", exp="g.allclear=1"},
+		{"タイトル"},
+		{"text"},
+		linkback = "0114_00261",
+		line = 2960,
+	},
+	label = {
+		top = { block="0114_00001", label=1 },
+	},
+}
