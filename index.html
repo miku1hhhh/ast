@@ -369,7 +369,7 @@ function extractString(s) {
   return m ? m[1] : null;
 }
 
-// ==================== IPT 解析器 ====================
+// ==================== IPT 解析器 (仅用于CG图层) ====================
 async function loadIptLayers(baseUrl, container) {
   try {
     const iptUrl = baseUrl + '.ipt';
@@ -435,21 +435,37 @@ window.updateVoVolume = () => { voVolume = $('voVolume').value/100; $('voVolLabe
 window.updateTtsVolume = () => { ttsVolume = $('ttsVolume').value/100; $('ttsVolLabel').textContent = $('ttsVolume').value; };
 window.updateTtsRate = () => { ttsRate = parseFloat($('ttsRate').value); $('ttsRateLabel').textContent = ttsRate.toFixed(1); };
 
+// ========== 修改点1: 智能构建资源URL ==========
 function buildBaseUrl(cmd, fileKey) {
-  const base = resourcePathInput.value.replace(/\/+$/, '');
+  let base = resourcePathInput.value.replace(/\/+$/, '');
   const filename = cmd[fileKey] || '';
-  if (cmd.path) {
-    let dir = cmd.path.replace(/^:/, '').replace(/\/+$/, '');
-    if (!dir.startsWith('/')) dir = '/' + dir;
-    return `${base}${dir}/${filename}`;
+  let path = cmd.path ? cmd.path.replace(/^:/, '') : '';
+  
+  // 判断是否为CG资源（通常path包含"cg/"）
+  const isCG = path.includes('cg/');
+  
+  let fullPath;
+  if (isCG) {
+    // CG资源: base + "/resources/" + path + filename
+    fullPath = `${base}/resources/${path}${filename}`;
+  } else {
+    // 普通资源: base + "/" + path + filename
+    fullPath = `${base}/${path}${filename}`;
   }
-  return `${base}/${filename}`;
+  
+  console.log(`[buildBaseUrl] ${fileKey} -> ${fullPath}`);
+  return fullPath;
 }
+
 function buildAudioUrl(cmd, fileKey) {
-  const base = resourcePathInput.value.replace(/\/+$/, '');
+  let base = resourcePathInput.value.replace(/\/+$/, '');
   const filename = cmd[fileKey] || '';
-  return `${base}${(cmd.path||':vo/').replace(/^:/, '')}${filename}.ogg`;
+  let path = cmd.path ? cmd.path.replace(/^:/, '') : '';
+  // 音频文件通常直接放在对应目录下，无需特殊处理
+  const fullPath = `${base}/${path}${filename}.ogg`;
+  return fullPath;
 }
+
 window.testImageUrl = () => {
   const url = document.getElementById('test-url-input').value.trim();
   if (!url) return;
@@ -655,6 +671,7 @@ function scheduleAutoAdvance() {
   autoPending = setTimeout(() => { if (isAuto) advance(); }, delay);
 }
 
+// ========== 修改点2: 背景加载只使用PNG，不再尝试IPT（CG除外） ==========
 async function updateGame() {
   clearDelayTimers();
   const scene = sceneData[curScene];
@@ -677,20 +694,21 @@ async function updateGame() {
   if (!bgCmd) bgCmd = findNearestBg(curScene);
   if (bgCmd) {
     const baseUrl = buildBaseUrl(bgCmd, 'file');
-    const isCG = bgCmd.path && bgCmd.path.includes(':cg/');
+    // 只有CG资源才尝试加载IPT图层，普通背景只加载PNG
+    const isCG = bgCmd.path && bgCmd.path.includes('cg/');
     if (isCG) {
       const loaded = await loadIptLayers(baseUrl, bgLayer);
       if (!loaded) {
         const img = new Image();
-        img.src = baseUrl + '.ipt';
-        img.onerror = () => { img.src = baseUrl + '.png'; };
+        img.src = baseUrl + '.png';
+        img.onerror = () => { console.warn(`Failed to load CG background: ${baseUrl}.png`); };
         img.style.width = '100%'; img.style.height = '100%'; img.style.objectFit = 'cover';
         bgLayer.appendChild(img);
       }
     } else {
       const img = new Image();
       img.src = baseUrl + '.png';
-      img.onerror = () => { img.src = baseUrl + '.ipt'; };
+      img.onerror = () => { console.warn(`Failed to load background: ${baseUrl}.png`); };
       img.style.width = '100%'; img.style.height = '100%'; img.style.objectFit = 'cover';
       bgLayer.appendChild(img);
     }
