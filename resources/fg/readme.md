@@ -19,8 +19,8 @@ fg/                                  ← 资源根目录（可根据项目重命
 ├── hinami_02l/
 │   ├── hinami_02l_00000.png         ← 示例：裸体底图
 │   ├── hinami_02l_00001.png
-│   ├── hinami_02l_00101.png         ← 示例：脸红差分
-│   ├── hinami_02l_00301.png         ← 示例：扩展差分
+│   ├── hinami_02l_00101.png         ← 示例：生理现象差分
+│   ├── hinami_02l_00301.png         ← 示例：表情差分
 │   └── ...
 └── sakura_01m/
     └── ...
@@ -106,16 +106,15 @@ fg/                                  ← 资源根目录（可根据项目重命
 
 ### 在线示例（来自项目仓库）
 
-以下链接可预览 `hinami_02l`（hinami 侧面全身照）的实际资源文件，帮助理解命名与帧号对应关系：
+以下为 `hinami_02l`（hinami 侧面全身照）的实际资源预览，帮助理解命名与帧号对应关系。点击图片可查看原图。
 
-- **裸体底图**（`00000`）  
-  [hinami_02l_00000.png](https://github.com/miku1hhhh/ast/blob/master/resources/fg/hinami_02l/hinami_02l_00000.png)
-- **脸红差分**（`00101`，属于生理现象差分）  
-  [hinami_02l_00101.png](https://github.com/miku1hhhh/ast/blob/master/resources/fg/hinami_02l/hinami_02l_00101.png)
-- **扩展差分**（`00301`，如服装、饰品类变化）  
-  [hinami_02l_00301.png](https://github.com/miku1hhhh/ast/blob/master/resources/fg/hinami_02l/hinami_02l_00301.png)
+| 帧号 | 类型 | 预览 |
+|------|------|------|
+| `00000` | 裸体底图 | <img src="https://github.com/miku1hhhh/ast/raw/refs/heads/master/resources/fg/hinami_02l/hinami_02l_00000.png" width="120" alt="裸体底图"> |
+| `00101` | 生理现象差分（脸红） | <img src="https://github.com/miku1hhhh/ast/raw/refs/heads/master/resources/fg/hinami_02l/hinami_02l_00101.png" width="120" alt="脸红差分"> |
+| `00301` | 表情差分（眼睛/嘴型等） | <img src="https://github.com/miku1hhhh/ast/raw/refs/heads/master/resources/fg/hinami_02l/hinami_02l_00301.png" width="120" alt="表情差分"> |
 
-这些链接展示了一个完整文件夹内三种典型帧号的实际图像。
+> 注：`00301` 属于表情差分（帧号范围 `00200`～`00400`），并非扩展差分。
 
 ## 程序加载建议
 
@@ -169,3 +168,6 @@ render(base, blush, expression)
 | 2026-06-13 | 初始版本，定义命名规范与帧号分段（00000为裸体，00001起始底图） | - |
 | 2026-06-13 | 补充 `hinami_02l` 在线示例链接 | - |
 | 2026-06-13 | 修改表情差分帧号范围为 00200 ~ 00400，扩展差分起始调整至 00401 | - |
+| 2026-06-13 | 修正 `00301` 示例描述为表情差分，并改用 raw 图片预览 | - |
+
+```
