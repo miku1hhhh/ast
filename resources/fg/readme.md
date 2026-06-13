@@ -172,8 +172,7 @@ render(base, blush, expression)
 ​
 
 我不是LOLI
-<audio id="audio" controls="" preload="none">
-<source id="ogg" src="https://img1.readboy.com/hub/listen-speak/202606/0cded50cfc52f24ef85d93a0eebdfaae.ogg">
-</audio>
+
+<audio controls=""><source src="https://img1.readboy.com/hub/listen-speak/202606/0cded50cfc52f24ef85d93a0eebdfaae.ogg" type="audio/ogg">Your browser does not support the audio element.</audio>
 ```
 
