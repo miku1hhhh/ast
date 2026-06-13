@@ -169,5 +169,8 @@ render(base, blush, expression)
 | 2026-06-13 | 补充 `hinami_02l` 在线示例链接 | - |
 | 2026-06-13 | 修改表情差分帧号范围为 00200 ~ 00400，扩展差分起始调整至 00401 | - |
 | 2026-06-13 | 修正 `00301` 示例描述为表情差分，并改用 raw 图片预览 | - |
-
+​<audio id="audio" controls="" preload="none">
+      <source id="ogg" src="https://img1.readboy.com/hub/listen-speak/202606/0cded50cfc52f24ef85d93a0eebdfaae.ogg">
+</audio>
 ```
+我不是LOLI
