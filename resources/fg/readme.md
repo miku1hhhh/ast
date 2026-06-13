@@ -1,4 +1,6 @@
+已添加真实项目链接作为示例，并补全了 README。以下是更新后的完整内容：
 
+```markdown
 # 立绘资源命名与使用规范
 
 本文件夹存放游戏角色立绘的序列帧图片。所有资源均为带透明通道的 PNG 格式，采用 **文件夹分层 + 统一文件名** 的结构，方便程序按角色、姿态、尺寸和差分状态快速索引与动态组合。
@@ -16,7 +18,11 @@ fg/                                  ← 资源根目录（可根据项目重命
 ├── hinami_01l/
 │   ├── hinami_01l_00001.png         ← 该尺寸无裸体，直接从00001开始
 │   └── ...
-├── hinami_02ll/
+├── hinami_02l/
+│   ├── hinami_02l_00000.png         ← 示例：裸体底图
+│   ├── hinami_02l_00001.png
+│   ├── hinami_02l_00101.png         ← 示例：脸红差分
+│   ├── hinami_02l_00301.png         ← 示例：扩展差分
 │   └── ...
 └── sakura_01m/
     └── ...
@@ -100,6 +106,19 @@ fg/                                  ← 资源根目录（可根据项目重命
 | `fg\hinami_02ll\hinami_02ll_00250.png` | hinami 侧面 中央大头照 表情差分（如呆毛变化） |
 | `fg\sakura_01m\sakura_01m_00001.png` | sakura 正面 中型立绘 基础底图 |
 
+### 在线示例（来自项目仓库）
+
+以下链接可预览 `hinami_02l`（hinami 侧面全身照）的实际资源文件，帮助理解命名与帧号对应关系：
+
+- **裸体底图**（`00000`）  
+  [hinami_02l_00000.png](https://github.com/miku1hhhh/ast/blob/master/resources/fg/hinami_02l/hinami_02l_00000.png)
+- **脸红差分**（`00101`，属于生理现象差分）  
+  [hinami_02l_00101.png](https://github.com/miku1hhhh/ast/blob/master/resources/fg/hinami_02l/hinami_02l_00101.png)
+- **扩展差分**（`00301`，如服装、饰品类变化）  
+  [hinami_02l_00301.png](https://github.com/miku1hhhh/ast/blob/master/resources/fg/hinami_02l/hinami_02l_00301.png)
+
+这些链接展示了一个完整文件夹内三种典型帧号的实际图像。
+
 ## 程序加载建议
 
 在游戏引擎中，可以通过拼接字符串定位资源：
@@ -146,8 +165,7 @@ render(base, blush, expression)
 
 ## 维护记录
 
-| 日期 | 修改内容 | 修改人 |
+| 日期 | 修改内容 | 修改人(import deepseek as ds，import miku1hhhh as mh) |
 |------|----------|--------|
-| 2026-06-13 | 初始版本，定义命名规范与帧号分段（00000为裸体，00001起始底图） | deepseek & miku1hhhh |
-
-```
+| 2026-06-13 | 初始版本，定义命名规范与帧号分段（00000为裸体，00001起始底图） | ds mh|
+| 2026-06-13 | 补充 `hinami_02l` 在线示例链接 | mh ds |
