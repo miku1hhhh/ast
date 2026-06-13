@@ -110,7 +110,7 @@ fg/                                  ← 资源根目录（可根据项目重命
 
 | 帧号 | 类型 | 预览 |
 |------|------|------|
-| `00000` | 裸体底图 | <img src="https://github.com/miku1hhhh/ast/raw/refs/heads/master/resources/fg/hinami_02l/hinami_02l_00000.png" width="120" alt="裸体底图"> |
+| `00000` | 裸体底图 | <img src="https://github.com/miku1hhhh/ast/raw/refs/heads/master/resources/fg/hinami_02f/hinami_02f_00000.png" width="120" alt="裸体底图"> |
 | `00101` | 生理现象差分（脸红） | <img src="https://github.com/miku1hhhh/ast/raw/refs/heads/master/resources/fg/hinami_02l/hinami_02l_00101.png" width="120" alt="脸红差分"> |
 | `00301` | 表情差分（眼睛/嘴型等） | <img src="https://github.com/miku1hhhh/ast/raw/refs/heads/master/resources/fg/hinami_02l/hinami_02l_00301.png" width="120" alt="表情差分"> |
 
